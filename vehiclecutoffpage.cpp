@@ -27,10 +27,10 @@ void VehicleCutoffPage::updatePage()
     setlabelstates(this->ui->ACMStateM2lbl,this->database->AX3CT_AuxInvStatus_I16);
     setlabelstates(this->ui->ACMStateTC2lbl,this->database->AX4CT_AuxInvStatus_I16);
 
-    setlabelstates(this->ui->EBStateMP1lbl,this->database->TR1CT_EBOK_B1);
-    setlabelstates(this->ui->EBStateM1lbl,this->database->TR2CT_EBOK_B1);
-    setlabelstates(this->ui->EBStateM2lbl,this->database->TR3CT_EBOK_B1);
-    setlabelstates(this->ui->EBStateMP2lbl,this->database->TR4CT_EBOK_B1);
+    setlabelstates(this->ui->EBStateMP1lbl,this->database->TR1CT_EBOK_B1,this->database->CTTR1_EBCutOff_B1);
+    setlabelstates(this->ui->EBStateM1lbl,this->database->TR2CT_EBOK_B1,this->database->CTTR2_EBCutOff_B1);
+    setlabelstates(this->ui->EBStateM2lbl,this->database->TR3CT_EBOK_B1,this->database->CTTR3_EBCutOff_B1);
+    setlabelstates(this->ui->EBStateMP2lbl,this->database->TR4CT_EBOK_B1,this->database->CTTR4_EBCutOff_B1);
 
     if(this->database->CTHM_Forward_B1)
     {

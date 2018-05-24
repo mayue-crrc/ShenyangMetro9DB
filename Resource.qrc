@@ -83,5 +83,6 @@
         <file>images/unsupply.bmp</file>
         <file>images/doornormalbtn.png</file>
         <file>images/faulthelp.bmp</file>
+        <file>images/HBApply.png</file>
     </qresource>
 </RCC>

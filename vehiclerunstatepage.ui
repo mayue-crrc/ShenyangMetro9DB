@@ -942,16 +942,14 @@ color:black;
    <property name="geometry">
     <rect>
      <x>173</x>
-     <y>144</y>
-     <width>41</width>
-     <height>31</height>
+     <y>154</y>
+     <width>45</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255,255,153);
-border:2px solid black;
-font: 20px  &quot;微软雅黑&quot;;
-color:black;
+    <string notr="true">background-color: transparent;
+border-image: url(:/images/images/Brelease.png);
 </string>
    </property>
    <property name="text">
@@ -964,10 +962,10 @@ color:black;
   <widget class="QLabel" name="Tc1bg2lbl">
    <property name="geometry">
     <rect>
-     <x>233</x>
-     <y>144</y>
-     <width>41</width>
-     <height>31</height>
+     <x>230</x>
+     <y>154</y>
+     <width>45</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -987,14 +985,15 @@ color:black;
   <widget class="QLabel" name="Tc1BCUlbl">
    <property name="geometry">
     <rect>
-     <x>200</x>
+     <x>195</x>
      <y>200</y>
-     <width>51</width>
+     <width>61</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true">background-color:transparent;
+border-image: url(:/images/images/PBFault.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -1348,10 +1347,10 @@ color:black;
   <widget class="QLabel" name="Mp1bg2lbl">
    <property name="geometry">
     <rect>
-     <x>345</x>
-     <y>144</y>
-     <width>41</width>
-     <height>31</height>
+     <x>340</x>
+     <y>154</y>
+     <width>45</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1371,9 +1370,9 @@ color:black;
   <widget class="QLabel" name="Mp1BCUlbl">
    <property name="geometry">
     <rect>
-     <x>310</x>
+     <x>305</x>
      <y>200</y>
-     <width>51</width>
+     <width>61</width>
      <height>31</height>
     </rect>
    </property>
@@ -1460,9 +1459,9 @@ color:black;
    <property name="geometry">
     <rect>
      <x>285</x>
-     <y>144</y>
-     <width>41</width>
-     <height>31</height>
+     <y>154</y>
+     <width>45</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -2150,7 +2149,7 @@ border-image: url(:/images/images/TC2Direction.bmp);
     <rect>
      <x>420</x>
      <y>200</y>
-     <width>51</width>
+     <width>61</width>
      <height>31</height>
     </rect>
    </property>
@@ -2168,9 +2167,9 @@ border-image: url(:/images/images/TC2Direction.bmp);
    <property name="geometry">
     <rect>
      <x>397</x>
-     <y>144</y>
-     <width>41</width>
-     <height>31</height>
+     <y>154</y>
+     <width>45</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -2190,10 +2189,10 @@ color:black;
   <widget class="QLabel" name="M1bg2lbl">
    <property name="geometry">
     <rect>
-     <x>457</x>
-     <y>144</y>
-     <width>41</width>
-     <height>31</height>
+     <x>450</x>
+     <y>154</y>
+     <width>45</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -2623,9 +2622,9 @@ color:black;
    <property name="geometry">
     <rect>
      <x>510</x>
-     <y>144</y>
-     <width>41</width>
-     <height>31</height>
+     <y>154</y>
+     <width>45</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -2724,10 +2723,10 @@ color:black;
   <widget class="QLabel" name="M2bg1lbl">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>144</y>
-     <width>41</width>
-     <height>31</height>
+     <x>565</x>
+     <y>154</y>
+     <width>45</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -2749,7 +2748,7 @@ color:black;
     <rect>
      <x>530</x>
      <y>200</y>
-     <width>51</width>
+     <width>61</width>
      <height>31</height>
     </rect>
    </property>
@@ -3153,9 +3152,9 @@ color:black;
   <widget class="QLabel" name="Mp2BCUlbl">
    <property name="geometry">
     <rect>
-     <x>650</x>
+     <x>640</x>
      <y>200</y>
-     <width>51</width>
+     <width>61</width>
      <height>31</height>
     </rect>
    </property>
@@ -3191,10 +3190,10 @@ color:black;
   <widget class="QLabel" name="Mp2bg1lbl">
    <property name="geometry">
     <rect>
-     <x>682</x>
-     <y>144</y>
-     <width>41</width>
-     <height>31</height>
+     <x>680</x>
+     <y>154</y>
+     <width>45</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -3237,9 +3236,9 @@ color:black;
    <property name="geometry">
     <rect>
      <x>622</x>
-     <y>144</y>
-     <width>41</width>
-     <height>31</height>
+     <y>154</y>
+     <width>45</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -3666,7 +3665,7 @@ color:black;
   <widget class="QLabel" name="Tc2TrainCodelbl">
    <property name="geometry">
     <rect>
-     <x>738</x>
+     <x>740</x>
      <y>230</y>
      <width>91</width>
      <height>31</height>
@@ -3688,10 +3687,10 @@ color:black;
   <widget class="QLabel" name="Tc2bg1lbl">
    <property name="geometry">
     <rect>
-     <x>795</x>
-     <y>144</y>
-     <width>41</width>
-     <height>31</height>
+     <x>790</x>
+     <y>154</y>
+     <width>45</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -3711,9 +3710,9 @@ color:black;
   <widget class="QLabel" name="Tc2BCUlbl">
    <property name="geometry">
     <rect>
-     <x>760</x>
+     <x>755</x>
      <y>200</y>
-     <width>51</width>
+     <width>61</width>
      <height>31</height>
     </rect>
    </property>
@@ -3731,9 +3730,9 @@ color:black;
    <property name="geometry">
     <rect>
      <x>735</x>
-     <y>144</y>
-     <width>41</width>
-     <height>31</height>
+     <y>154</y>
+     <width>45</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="styleSheet">

@@ -20,17 +20,17 @@
 #define PANTODOWNMP2 "border-image: url(:/images/images/PantoDownMP2.bmp);"
 #define PANTOUPMP2 "border-image: url(:/images/images/PantoUpMP2.bmp);"
 
-#define PBAPPLY "border-image: url(:/images/images/PBapply.png);"
-#define PBBYPASS "border-image: url(:/images/images/PBbypass.png);"
-#define PBFAULT "border-image: url(:/images/images/PBFault.png);"
-#define PBRELEASE "border-image: url(:/images/images/PBRelease.png);"
-#define PBUNKNOWN "border-image: url(:/images/images/PBunknown.png);" // BCU offline
+#define PBAPPLY "background-color:transparent;border-image: url(:/images/images/PBapply.png);"
+#define PBBYPASS "background-color:transparent;border-image: url(:/images/images/PBbypass.png);"
+#define PBFAULT "background-color:transparent;border-image: url(:/images/images/PBFault.png);"
+#define PBRELEASE "background-color:transparent;border-image: url(:/images/images/PBRelease.png);"
+#define PBUNKNOWN "background-color:transparent;border-image: url(:/images/images/PBunknown.png);" // BCU offline
 
-#define BAPPLY "border-image: url(:/images/images/BApply.png);"
-#define BBYPASS "border-image: url(:/images/images/Bbypass.png);"
-#define BFAULT "border-image: url(:/images/images/Bfault.png);"
-#define BRELEASE "border-image: url(:/images/images/Brelease.png);"
-#define BUNKNOWN "border-image: url(:/images/images/Bunknown.png);"   // BCU offline or no vaild status
+#define BAPPLY "background-color:transparent;border-image: url(:/images/images/BApply.png);"
+#define BBYPASS "background-color:transparent;border-image: url(:/images/images/Bbypass.png);"
+#define BFAULT "background-color:transparent;border-image: url(:/images/images/Bfault.png);"
+#define BRELEASE "background-color:transparent;border-image: url(:/images/images/Brelease.png);"
+#define BUNKNOWN "background-color:transparent;border-image: url(:/images/images/Bunknown.png);"   // BCU offline or no vaild status
 
 #define ACPFAULT "border-image: url(:/images/images/ACPFault.png);"
 #define ACPRUN "border-image: url(:/images/images/ACPRun.png);"
