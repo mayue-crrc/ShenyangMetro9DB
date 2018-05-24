@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Navigator</class>
+ <widget class="QWidget" name="Navigator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>82</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: black;
+}
+QLabel
+{
+	border:1px solid white;
+}
+
+QPushButton
+{
+	font: 20px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 100, 255);
+	border-radius:8px;
+	
+	border-top: 2px solid lightgray;	
+	border-left: 2px solid lightgray;
+}</string>
+  </property>
+  <widget class="QPushButton" name="NButton1">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>17</y>
+     <width>120</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>一般信息</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>7</y>
+     <width>1018</width>
+     <height>72</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="NButton2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>17</y>
+     <width>120</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>制动</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="NButton3">
+   <property name="geometry">
+    <rect>
+     <x>265</x>
+     <y>17</y>
+     <width>120</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>牵引</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="NButton4">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>17</y>
+     <width>120</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>辅助</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="NButton5">
+   <property name="geometry">
+    <rect>
+     <x>515</x>
+     <y>17</y>
+     <width>120</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>空调</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="NButton6">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>17</y>
+     <width>120</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>故障履历</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="NButton7">
+   <property name="geometry">
+    <rect>
+     <x>765</x>
+     <y>17</y>
+     <width>120</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>当前车况</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="NButton8">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>17</y>
+     <width>120</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>维修菜单</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>NButton1</zorder>
+  <zorder>NButton2</zorder>
+  <zorder>NButton3</zorder>
+  <zorder>NButton4</zorder>
+  <zorder>NButton5</zorder>
+  <zorder>NButton6</zorder>
+  <zorder>NButton7</zorder>
+  <zorder>NButton8</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

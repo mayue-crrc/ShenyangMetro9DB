@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MaintainceWheelsetPage</class>
+ <widget class="QWidget" name="MaintainceWheelsetPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>595</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color:black;
+}
+QPushButton
+{
+ color:white;font:18px,&quot;微软雅黑&quot;;border-top:2px solid  white;border-left: 2px solid white;border-bottom:2px solid transparent;border-right: 2px solid;
+border-radius:8px; transparent;background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgba(150,228,250,255),stop:0.7 rgba(20,108,140,255) ,stop:1 rgba(100,238,240,255));
+
+}
+</string>
+  </property>
+  <widget class="QPushButton" name="returnBtn">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>530</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 20px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 128, 0);
+    border-top: 2px solid white;
+	border-left: 2px solid white;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>520</y>
+     <width>1018</width>
+     <height>72</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color: rgb(0, 0, 0);
+
+	border:1px solid white;
+</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Trainlbl">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+border:2px solid white;
+color:white;
+font:24px &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl1">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>20</y>
+     <width>115</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+border:2px solid white;
+color:white;
+font:24px &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl2">
+   <property name="geometry">
+    <rect>
+     <x>285</x>
+     <y>20</y>
+     <width>115</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+border:2px solid white;
+color:white;
+font:24px &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl3">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>20</y>
+     <width>115</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+border:2px solid white;
+color:white;
+font:24px &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl4">
+   <property name="geometry">
+    <rect>
+     <x>515</x>
+     <y>20</y>
+     <width>115</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+border:2px solid white;
+color:white;
+font:24px &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl5">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>20</y>
+     <width>115</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+border:2px solid white;
+color:white;
+font:24px &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl6">
+   <property name="geometry">
+    <rect>
+     <x>745</x>
+     <y>20</y>
+     <width>115</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+border:2px solid white;
+color:white;
+font:24px &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="TC1SelectBtn">
+   <property name="geometry">
+    <rect>
+     <x>175</x>
+     <y>30</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>选择</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="TC2SelectBtn">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>30</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:18px;</string>
+   </property>
+   <property name="text">
+    <string>选择</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="MP1SelectBtn">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>30</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:18px;</string>
+   </property>
+   <property name="text">
+    <string>选择</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="M1SelectBtn">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>30</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:18px;</string>
+   </property>
+   <property name="text">
+    <string>选择</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="M2SelectBtn">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>30</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:18px;</string>
+   </property>
+   <property name="text">
+    <string>选择</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="MP2SelectBtn">
+   <property name="geometry">
+    <rect>
+     <x>635</x>
+     <y>30</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:18px;</string>
+   </property>
+   <property name="text">
+    <string>选择</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ALLSelectBtn">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>30</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:18px;</string>
+   </property>
+   <property name="text">
+    <string>所有轴</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl7">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>140</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+font:24px &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>轮径设定值</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="WheelVallbl">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>140</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color:rgb(0,255,255);
+font:24px &quot;微软雅黑&quot;;
+border:2px solid white
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl7_2">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>140</y>
+     <width>191</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+font:24px &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>(770--850mm)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TC1Wheellbl">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>30</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+font:16px &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>840</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TC2Wheellbl">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>30</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+font:16px &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>840</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TC1Wheelinputlbl">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>50</y>
+     <width>61</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: blue;
+color:white;
+font:16px &quot;微软雅黑&quot;;
+border:2px solid white</string>
+   </property>
+   <property name="text">
+    <string>--</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MP1Wheelinputlbl">
+   <property name="geometry">
+    <rect>
+     <x>335</x>
+     <y>50</y>
+     <width>61</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: blue;
+color:white;
+font:16px &quot;微软雅黑&quot;;
+border:2px solid white</string>
+   </property>
+   <property name="text">
+    <string>--</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MP1Wheellbl">
+   <property name="geometry">
+    <rect>
+     <x>335</x>
+     <y>30</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+font:16px &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>840</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="M1Wheellbl">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>30</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+font:16px &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>840</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="M1Wheelinputlbl">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>50</y>
+     <width>61</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: blue;
+color:white;
+font:16px &quot;微软雅黑&quot;;
+border:2px solid white</string>
+   </property>
+   <property name="text">
+    <string>--</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="M2Wheellbl">
+   <property name="geometry">
+    <rect>
+     <x>565</x>
+     <y>30</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+font:16px &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>840</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="M2Wheelinputlbl">
+   <property name="geometry">
+    <rect>
+     <x>565</x>
+     <y>50</y>
+     <width>61</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: blue;
+color:white;
+font:16px &quot;微软雅黑&quot;;
+border:2px solid white</string>
+   </property>
+   <property name="text">
+    <string>--</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MP2Wheellbl">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>30</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+font:16px &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>840</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MP2Wheelinputlbl">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>50</y>
+     <width>61</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: blue;
+color:white;
+font:16px &quot;微软雅黑&quot;;
+border:2px solid white</string>
+   </property>
+   <property name="text">
+    <string>--</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TC2Wheelinputlbl">
+   <property name="geometry">
+    <rect>
+     <x>795</x>
+     <y>50</y>
+     <width>61</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: blue;
+color:white;
+font:16px &quot;微软雅黑&quot;;
+border:2px solid white</string>
+   </property>
+   <property name="text">
+    <string>--</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="confirmBtn">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>450</y>
+     <width>270</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ReSeleclBtn">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>140</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:18px;</string>
+   </property>
+   <property name="text">
+    <string>参考值设定</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>Trainlbl</zorder>
+  <zorder>lbl1</zorder>
+  <zorder>lbl2</zorder>
+  <zorder>lbl3</zorder>
+  <zorder>lbl4</zorder>
+  <zorder>lbl5</zorder>
+  <zorder>lbl6</zorder>
+  <zorder>TC1SelectBtn</zorder>
+  <zorder>TC2SelectBtn</zorder>
+  <zorder>MP1SelectBtn</zorder>
+  <zorder>M1SelectBtn</zorder>
+  <zorder>M2SelectBtn</zorder>
+  <zorder>MP2SelectBtn</zorder>
+  <zorder>ALLSelectBtn</zorder>
+  <zorder>lbl7</zorder>
+  <zorder>WheelVallbl</zorder>
+  <zorder>lbl7_2</zorder>
+  <zorder>TC1Wheellbl</zorder>
+  <zorder>TC2Wheellbl</zorder>
+  <zorder>TC1Wheelinputlbl</zorder>
+  <zorder>MP1Wheelinputlbl</zorder>
+  <zorder>MP1Wheellbl</zorder>
+  <zorder>M1Wheellbl</zorder>
+  <zorder>M1Wheelinputlbl</zorder>
+  <zorder>M2Wheellbl</zorder>
+  <zorder>M2Wheelinputlbl</zorder>
+  <zorder>MP2Wheellbl</zorder>
+  <zorder>MP2Wheelinputlbl</zorder>
+  <zorder>TC2Wheelinputlbl</zorder>
+  <zorder>confirmBtn</zorder>
+  <zorder>ReSeleclBtn</zorder>
+  <zorder>returnBtn</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

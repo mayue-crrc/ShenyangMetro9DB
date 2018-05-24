@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MaintainceAllPortsPage</class>
+ <widget class="QWidget" name="MaintainceAllPortsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>686</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+		background-color:black;
+}
+QPushButton
+{
+	font: 20px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 128, 128);
+	border-top: 2px solid white;	
+	border-left: 2px solid white;
+border-radius:8px;
+}</string>
+  </property>
+  <widget class="QPushButton" name="returnBtn">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>703</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 20px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 128, 0);
+    border-top: 2px solid white;
+	border-left: 2px solid white;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CCUABtn">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>20</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>CCUA</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CCUBBtn">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>70</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>CCUB</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="RIOMBtn">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>120</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>RIOM</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="HMIBtn">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>170</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>HMI</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ERMBtn">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>220</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>ERM</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ACUBtn">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>370</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>ACU</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="EBCUBtn">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>420</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>EBCU</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PIDSBtn">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>470</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>PIDS</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="EDCUBtn">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>520</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>EDCU</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CCUDBtn">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>570</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>CCU-D</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SIVBtn">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>270</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>ACM</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="WMSATCBtn">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>620</y>
+     <width>81</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>WMS
+ATC</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="DCUBtn">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>320</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>DCU</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

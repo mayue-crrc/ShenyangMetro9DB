@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VehicleCutoffPage</class>
+ <widget class="QWidget" name="VehicleCutoffPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>686</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color:black;
+}
+QLabel
+{
+font:24px  &quot;微软雅黑&quot;;
+color:black;
+border:2px solid white;
+background-color:rgb(255,255,153);
+}
+QPushButton
+{
+font: 20px, &quot;微软雅黑&quot;;color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>611</y>
+     <width>1018</width>
+     <height>72</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color: rgb(0, 0, 0);
+
+	border:1px solid white;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="returnBtn">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>621</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 20px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 128, 0);
+    border-top: 2px solid white;
+	border-left: 2px solid white;
+	border-radius:8px ;
+}</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>60</y>
+     <width>841</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+border:1px solid white;
+border-radius:15px;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string>电制动切除</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>481</y>
+     <width>841</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+border:1px solid white;
+border-radius:15px;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string>ACM切除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ACMCUTTC1Btn">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>490</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>切除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ACMCUTM1Btn">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>490</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>切除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ACMCUTM2Btn">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>490</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>切除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ACMCUTTC2Btn">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>490</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>切除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="EBMP1Btn">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>70</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>切除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="EBM1Btn">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>70</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>切除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="EBM2Btn">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>70</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>切除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="EBMP2Btn">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>70</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>切除</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="EBStateMP1lbl">
+   <property name="geometry">
+    <rect>
+     <x>295</x>
+     <y>160</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>电制动</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="EBStateM1lbl">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>160</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>电制动</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="EBStateM2lbl">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>160</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>电制动</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="EBStateMP2lbl">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>160</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>电制动</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="CabTC1lbl">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>140</y>
+     <width>31</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/images/TC1traingraphKeynoact.bmp);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TrainNumTC2lbl">
+   <property name="geometry">
+    <rect>
+     <x>732</x>
+     <y>140</y>
+     <width>111</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(255,255,153);
+
+</string>
+   </property>
+   <property name="text">
+    <string>09016</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TrainNumTC1lbl">
+   <property name="geometry">
+    <rect>
+     <x>172</x>
+     <y>140</y>
+     <width>111</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(255,255,153);
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>09011</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="CabTC2lbl">
+   <property name="geometry">
+    <rect>
+     <x>844</x>
+     <y>140</y>
+     <width>31</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/images/TC2traingraphKeyact.bmp);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ACMStateM1lbl">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>400</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:green;
+border-left:3px solid white;
+border-top:3px solid white;
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>ACM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ACMStateTC2lbl">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>400</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:green;
+border-left:3px solid white;
+border-top:3px solid white;
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>ACM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="DirectTC1lbl">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>280</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/images/TC1traingraphDirection.bmp);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TrainNumM2lbl">
+   <property name="geometry">
+    <rect>
+     <x>508</x>
+     <y>140</y>
+     <width>111</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(255,255,153);
+</string>
+   </property>
+   <property name="text">
+    <string>09014</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TrainNumM1lbl">
+   <property name="geometry">
+    <rect>
+     <x>396</x>
+     <y>140</y>
+     <width>111</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(255,255,153);
+</string>
+   </property>
+   <property name="text">
+    <string>09013</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TrainNumMP1lbl">
+   <property name="geometry">
+    <rect>
+     <x>284</x>
+     <y>140</y>
+     <width>111</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(255,255,153);
+
+</string>
+   </property>
+   <property name="text">
+    <string>09012</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ACMStateTC1lbl">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>400</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:green;
+border-left:3px solid white;
+border-top:3px solid white;
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>ACM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ACMStateM2lbl">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>400</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:green;
+border-left:3px solid white;
+border-top:3px solid white;
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>ACM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="DirectTC2lbl">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>280</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border-image: url(:/images/images/TC2traingraphDirection.bmp);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TrainNumMP2lbl">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>140</y>
+     <width>111</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(255,255,153);
+</string>
+   </property>
+   <property name="text">
+    <string>09015</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>CabTC2lbl</zorder>
+  <zorder>DirectTC2lbl</zorder>
+  <zorder>TrainNumMP2lbl</zorder>
+  <zorder>TrainNumM1lbl</zorder>
+  <zorder>TrainNumTC1lbl</zorder>
+  <zorder>TrainNumMP1lbl</zorder>
+  <zorder>TrainNumTC2lbl</zorder>
+  <zorder>DirectTC1lbl</zorder>
+  <zorder>TrainNumM2lbl</zorder>
+  <zorder>CabTC1lbl</zorder>
+  <zorder>label</zorder>
+  <zorder>returnBtn</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>ACMCUTTC1Btn</zorder>
+  <zorder>ACMCUTM1Btn</zorder>
+  <zorder>ACMCUTM2Btn</zorder>
+  <zorder>ACMCUTTC2Btn</zorder>
+  <zorder>EBMP1Btn</zorder>
+  <zorder>EBM1Btn</zorder>
+  <zorder>EBM2Btn</zorder>
+  <zorder>EBMP2Btn</zorder>
+  <zorder>EBStateMP1lbl</zorder>
+  <zorder>EBStateM1lbl</zorder>
+  <zorder>EBStateM2lbl</zorder>
+  <zorder>EBStateMP2lbl</zorder>
+  <zorder>ACMStateM1lbl</zorder>
+  <zorder>ACMStateTC2lbl</zorder>
+  <zorder>ACMStateTC1lbl</zorder>
+  <zorder>ACMStateM2lbl</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CtrlTraingraph</class>
+ <widget class="QWidget" name="CtrlTraingraph">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>837</width>
+    <height>91</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color:black;
+}
+QLabel
+{
+	font:20px &quot;微软雅黑&quot;;
+	border:2px solid white;
+	background-color: rgb(255,255,153);
+
+}</string>
+  </property>
+  <widget class="QLabel" name="tc1lbl">
+   <property name="geometry">
+    <rect>
+     <x>111</x>
+     <y>20</y>
+     <width>100</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1001</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mp1lbl">
+   <property name="geometry">
+    <rect>
+     <x>214</x>
+     <y>20</y>
+     <width>100</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1002</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="m1lbl">
+   <property name="geometry">
+    <rect>
+     <x>317</x>
+     <y>20</y>
+     <width>100</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1003</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="m2lbl">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>20</y>
+     <width>100</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1004</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mp2lbl">
+   <property name="geometry">
+    <rect>
+     <x>523</x>
+     <y>20</y>
+     <width>100</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1005</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tc2lbl">
+   <property name="geometry">
+    <rect>
+     <x>626</x>
+     <y>20</y>
+     <width>100</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1006</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tc1keylbl">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>31</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/images/TC1traingraphKeynoact.bmp);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tc2keylbl">
+   <property name="geometry">
+    <rect>
+     <x>725</x>
+     <y>20</y>
+     <width>31</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/images/TC2traingraphKeynoact.bmp);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tc1directionlbl">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/images/TC1traingraphDirection.bmp);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tc2directionlbl">
+   <property name="geometry">
+    <rect>
+     <x>755</x>
+     <y>20</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/images/TC2traingraphDirection.bmp);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tc1wheel1lbl">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>65</y>
+     <width>14</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:black;
+border-radius:7px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tc1wheel2lbl">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>65</y>
+     <width>14</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:black;
+border-radius:7px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tc2wheel1lbl">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>65</y>
+     <width>14</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:black;
+border-radius:7px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tc2wheel2lbl">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>65</y>
+     <width>14</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:black;
+border-radius:7px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mp1wheel2lbl">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>65</y>
+     <width>14</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:black;
+border-radius:7px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mp1wheel1lbl">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>65</y>
+     <width>14</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:black;
+border-radius:7px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="m1wheel1lbl">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>65</y>
+     <width>14</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:black;
+border-radius:7px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="m1wheel2lbl">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>65</y>
+     <width>14</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:black;
+border-radius:7px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="m2wheel2lbl">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>65</y>
+     <width>14</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:black;
+border-radius:7px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="m2wheel1lbl">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>65</y>
+     <width>14</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:black;
+border-radius:7px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mp2wheel1lbl">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>65</y>
+     <width>14</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:black;
+border-radius:7px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mp2wheel2lbl">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>65</y>
+     <width>14</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:black;
+border-radius:7px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

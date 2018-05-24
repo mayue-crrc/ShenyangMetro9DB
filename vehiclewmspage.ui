@@ -1,0 +1,2099 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VehicleWMSPage</class>
+ <widget class="QWidget" name="VehicleWMSPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>686</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color:black;
+}
+QLabel
+{
+font:24px  &quot;微软雅黑&quot;;
+color:black;
+background-color:rgb(255,255,153);
+}
+QPushButton
+{
+	border-radius:8px;
+font: 20px, &quot;微软雅黑&quot;;color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;
+}</string>
+  </property>
+  <widget class="QLabel" name="TrainNumTC1lbl">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>38</y>
+     <width>119</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(255,255,153);
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>09011
+
+</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TrainNumMP1lbl">
+   <property name="geometry">
+    <rect>
+     <x>268</x>
+     <y>38</y>
+     <width>119</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(255,255,153);
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>09012
+
+</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TrainNumM2lbl">
+   <property name="geometry">
+    <rect>
+     <x>528</x>
+     <y>38</y>
+     <width>119</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(255,255,153);
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>09014
+
+</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TrainNumTC2lbl">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>38</y>
+     <width>119</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(255,255,153);
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>09016
+
+</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TrainNumM1lbl">
+   <property name="geometry">
+    <rect>
+     <x>398</x>
+     <y>38</y>
+     <width>119</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(255,255,153);
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>09013
+
+</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TrainNumMP2lbl">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>38</y>
+     <width>119</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(255,255,153);
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>09015
+
+</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Tc1Directionlbl">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>38</y>
+     <width>31</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255,255,153);
+border-image: url(:/images/images/TC1Direction.bmp);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Tc1Cablbl">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>38</y>
+     <width>41</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255,255,153);
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Tc2Cablbl">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>38</y>
+     <width>41</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255,255,153);
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Tc2Directionlbl">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>38</y>
+     <width>31</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255,255,153);
+border-image: url(:/images/images/TC2Direction.bmp);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="HBOXTC1lbl">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>38</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>H柜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="RBOXTC1lbl">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>38</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>R柜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>388</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>框架水罐进气阀门</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="FBOXTC1lbl">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>308</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>F柜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="FBOXMP1lbl">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>308</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>F柜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="RBOXMP1lbl">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>38</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>R柜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="FBOXM1lbl">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>308</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>F柜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="RBOXM1lbl">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>38</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>R柜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Area1TC1lbl">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>90</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>1区</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Area2TC1lbl">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>248</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>2区</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Area1MP1lbl">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>90</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>1区</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Area2MP1lbl">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>248</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>2区</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Area1M1lbl">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>90</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>1区</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Area2M1lbl">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>248</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>2区</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Area2M2lbl">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>90</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>2区</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Area1M2lbl">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>248</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>1区</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Area1MP2lbl">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>248</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>1区</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Area2MP2lbl">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>90</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>2区</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Area1TC2lbl">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>248</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>1区</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Area2TC2lbl">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>90</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>2区</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="RBOXM2lbl">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>308</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>R柜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="FBOXM2lbl">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>38</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>F柜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="RBOXMP2lbl">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>308</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>R柜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="FBOXMP2lbl">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>38</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>F柜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="RBOXTC2lbl">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>308</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>R柜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="FBOXTC2lbl">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>38</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>F柜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="HBOXTC2lbl">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>308</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>H柜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="DBOXTC2lbl">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>38</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>D柜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cabTC1lbl">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>148</y>
+     <width>31</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>司
+机
+室</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cabTC2lbl">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>148</y>
+     <width>31</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>司
+机
+室</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="DBOXTC1lbl">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>308</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>D柜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_2">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>418</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>框架水罐出气阀门</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_3">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>448</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>框架1号氮气瓶压力</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_4">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>478</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>框架2号氮气瓶压力</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_5">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>508</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>框架水罐加热器</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_6">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>538</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>框架水罐液位</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_7">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>568</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>框架水罐温度</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="returnBtn">
+   <property name="geometry">
+    <rect>
+     <x>907</x>
+     <y>620</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 20px, &quot;微软雅黑&quot;;
+    color: white;
+		border-radius:8px;
+background-color: rgb(0, 128, 0);
+    border-top: 2px solid white;
+	border-left: 2px solid white;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>610</y>
+     <width>1018</width>
+     <height>72</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color: rgb(0, 0, 0);
+
+	border:1px solid white;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_8">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>448</y>
+     <width>171</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_9">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>478</y>
+     <width>171</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_10">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>388</y>
+     <width>171</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_11">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>418</y>
+     <width>171</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_12">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>508</y>
+     <width>171</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_13">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>568</y>
+     <width>171</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_14">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>538</y>
+     <width>171</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_15">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>568</y>
+     <width>170</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_16">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>448</y>
+     <width>170</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_17">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>538</y>
+     <width>170</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_18">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>388</y>
+     <width>170</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_19">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>478</y>
+     <width>170</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_20">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>418</y>
+     <width>170</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_21">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>508</y>
+     <width>170</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="S1Albl">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>390</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="S1Blbl">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>390</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="S2Blbl">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>420</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="S2Albl">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>420</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="S3Blbl">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>450</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="S3Albl">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>450</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="S4Blbl">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>480</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="S4Albl">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>480</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="S5Blbl">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>510</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="S5Albl">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>510</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="S6Blbl">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>540</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="S6Albl">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>540</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="S7Blbl">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>570</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="S7Albl">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>570</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_22">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>360</y>
+     <width>170</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>B</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_23">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>360</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_24">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>360</y>
+     <width>171</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;
+color:white;
+background-color:black;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>A</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ABTC1lbl">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>190</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>AB</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ABTC2lbl">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>190</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>AB</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="PHMP1lbl">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>190</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>PH</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="PHMP2lbl">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>190</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>PH</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="PBM1lbl">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>190</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>PB</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="PBM2lbl">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>190</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>PB</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>TrainNumTC1lbl</zorder>
+  <zorder>TrainNumMP1lbl</zorder>
+  <zorder>TrainNumM2lbl</zorder>
+  <zorder>TrainNumTC2lbl</zorder>
+  <zorder>TrainNumM1lbl</zorder>
+  <zorder>TrainNumMP2lbl</zorder>
+  <zorder>Tc1Directionlbl</zorder>
+  <zorder>Tc1Cablbl</zorder>
+  <zorder>Tc2Cablbl</zorder>
+  <zorder>Tc2Directionlbl</zorder>
+  <zorder>HBOXTC1lbl</zorder>
+  <zorder>RBOXTC1lbl</zorder>
+  <zorder>lbl</zorder>
+  <zorder>FBOXTC1lbl</zorder>
+  <zorder>FBOXMP1lbl</zorder>
+  <zorder>RBOXMP1lbl</zorder>
+  <zorder>FBOXM1lbl</zorder>
+  <zorder>RBOXM1lbl</zorder>
+  <zorder>Area1TC1lbl</zorder>
+  <zorder>Area2TC1lbl</zorder>
+  <zorder>Area1MP1lbl</zorder>
+  <zorder>Area2MP1lbl</zorder>
+  <zorder>Area1M1lbl</zorder>
+  <zorder>Area2M1lbl</zorder>
+  <zorder>Area2M2lbl</zorder>
+  <zorder>Area1M2lbl</zorder>
+  <zorder>Area1MP2lbl</zorder>
+  <zorder>Area2MP2lbl</zorder>
+  <zorder>Area1TC2lbl</zorder>
+  <zorder>Area2TC2lbl</zorder>
+  <zorder>RBOXM2lbl</zorder>
+  <zorder>FBOXM2lbl</zorder>
+  <zorder>RBOXMP2lbl</zorder>
+  <zorder>FBOXMP2lbl</zorder>
+  <zorder>RBOXTC2lbl</zorder>
+  <zorder>FBOXTC2lbl</zorder>
+  <zorder>HBOXTC2lbl</zorder>
+  <zorder>DBOXTC2lbl</zorder>
+  <zorder>cabTC1lbl</zorder>
+  <zorder>cabTC2lbl</zorder>
+  <zorder>DBOXTC1lbl</zorder>
+  <zorder>lbl_2</zorder>
+  <zorder>lbl_3</zorder>
+  <zorder>lbl_4</zorder>
+  <zorder>lbl_5</zorder>
+  <zorder>lbl_6</zorder>
+  <zorder>lbl_7</zorder>
+  <zorder>label</zorder>
+  <zorder>lbl_8</zorder>
+  <zorder>lbl_9</zorder>
+  <zorder>lbl_10</zorder>
+  <zorder>lbl_11</zorder>
+  <zorder>lbl_12</zorder>
+  <zorder>lbl_13</zorder>
+  <zorder>lbl_14</zorder>
+  <zorder>lbl_15</zorder>
+  <zorder>lbl_16</zorder>
+  <zorder>lbl_17</zorder>
+  <zorder>lbl_18</zorder>
+  <zorder>lbl_19</zorder>
+  <zorder>lbl_20</zorder>
+  <zorder>lbl_21</zorder>
+  <zorder>S1Albl</zorder>
+  <zorder>S1Blbl</zorder>
+  <zorder>S2Blbl</zorder>
+  <zorder>S2Albl</zorder>
+  <zorder>S3Blbl</zorder>
+  <zorder>S3Albl</zorder>
+  <zorder>S4Blbl</zorder>
+  <zorder>S4Albl</zorder>
+  <zorder>S5Blbl</zorder>
+  <zorder>S5Albl</zorder>
+  <zorder>S6Blbl</zorder>
+  <zorder>S6Albl</zorder>
+  <zorder>S7Blbl</zorder>
+  <zorder>S7Albl</zorder>
+  <zorder>lbl_22</zorder>
+  <zorder>lbl_23</zorder>
+  <zorder>lbl_24</zorder>
+  <zorder>ABTC1lbl</zorder>
+  <zorder>ABTC2lbl</zorder>
+  <zorder>PHMP1lbl</zorder>
+  <zorder>PHMP2lbl</zorder>
+  <zorder>PBM1lbl</zorder>
+  <zorder>PBM2lbl</zorder>
+  <zorder>returnBtn</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

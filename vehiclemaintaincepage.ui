@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VehicleMaintaincePage</class>
+ <widget class="QWidget" name="VehicleMaintaincePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>604</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 20px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 128, 128);
+	border-radius:8px;border-top: 2px solid white;	
+	border-left: 2px solid white;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>10</y>
+     <width>51</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+font: 20px, &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>记录</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label2">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>50</y>
+     <width>521</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+border: 2px solid  white;
+border-radius: 12px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label4">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>270</y>
+     <width>521</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+border: 2px solid  white;
+border-radius: 12px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label3">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>230</y>
+     <width>51</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+font: 20px, &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>检查</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label5">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>450</y>
+     <width>141</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+font: 20px, &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>参数设定和检查</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label6">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>490</y>
+     <width>521</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+border: 2px solid  white;
+border-radius: 12px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="FaultRecordBtn">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>65</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>故障记录</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="APRunningTimeBtn">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>65</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>空压机
+运行时间</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Consumption">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>65</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>能耗</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="DistainceBtn">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>135</y>
+     <width>151</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>行驶距离</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="TCMSVisionBtn">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>285</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>软件版本</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PortsDataBtn">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>285</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>传输数据检查</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="RIOMIOBtn">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>360</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>接口数据检查</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="HMICheckBtn">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>360</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>显示检查</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="WheelSetBtn">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>500</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>轮径设定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SystimeSetBtn">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>500</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>时钟设定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="LoadBtn">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>360</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>载荷</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label7">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>50</y>
+     <width>211</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+border: 2px solid  white;
+border-radius: 12px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label8">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>10</y>
+     <width>51</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+font: 20px, &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>测试</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BrakeTestBtn">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>65</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>制动自检</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="RuntestBtn">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>540</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:black;
+color:black;
+border:black solid;</string>
+   </property>
+   <property name="text">
+    <string>试运行</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="TCMSStateBtn">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>285</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>传输检查</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="HMIInitBtn">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>390</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:black;
+color:black;
+border:black solid;</string>
+   </property>
+   <property name="text">
+    <string>初始设定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="DataManagementBtn">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>135</y>
+     <width>151</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>记录数据管理</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="AllDataBtn">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>260</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:black;
+color:black;
+border:black solid;</string>
+   </property>
+   <property name="text">
+    <string>传输检查</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="TrainNumBtn">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>500</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>车号设定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="TestPageBtn">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>135</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>试运行</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
