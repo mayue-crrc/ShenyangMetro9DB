@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclerunstatepage.ui'
 **
-** Created: Thu May 24 20:34:43 2018
+** Created: Fri May 25 08:12:16 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -560,11 +560,8 @@ public:
         Tc1bg2lbl = new QLabel(VehicleRunStatePage);
         Tc1bg2lbl->setObjectName(QString::fromUtf8("Tc1bg2lbl"));
         Tc1bg2lbl->setGeometry(QRect(230, 154, 45, 25));
-        Tc1bg2lbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
-"border:2px solid black;\n"
-"font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
-"color:black;\n"
-""));
+        Tc1bg2lbl->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"border-image: url(:/images/images/BApply.png);"));
         Tc1bg2lbl->setAlignment(Qt::AlignCenter);
         Tc1BCUlbl = new QLabel(VehicleRunStatePage);
         Tc1BCUlbl->setObjectName(QString::fromUtf8("Tc1BCUlbl"));
@@ -693,16 +690,15 @@ public:
         Mp1bg2lbl = new QLabel(VehicleRunStatePage);
         Mp1bg2lbl->setObjectName(QString::fromUtf8("Mp1bg2lbl"));
         Mp1bg2lbl->setGeometry(QRect(340, 154, 45, 25));
-        Mp1bg2lbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
-"border:2px solid black;\n"
-"font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
-"color:black;\n"
+        Mp1bg2lbl->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"border-image: url(:/images/images/Bbypass.png);\n"
 ""));
         Mp1bg2lbl->setAlignment(Qt::AlignCenter);
         Mp1BCUlbl = new QLabel(VehicleRunStatePage);
         Mp1BCUlbl->setObjectName(QString::fromUtf8("Mp1BCUlbl"));
         Mp1BCUlbl->setGeometry(QRect(305, 200, 61, 31));
-        Mp1BCUlbl->setStyleSheet(QString::fromUtf8(""));
+        Mp1BCUlbl->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
+"border-image: url(:/images/images/Bbypass.png);"));
         Mp1BCUlbl->setAlignment(Qt::AlignCenter);
         Mp1Door8lbl = new QLabel(VehicleRunStatePage);
         Mp1Door8lbl->setObjectName(QString::fromUtf8("Mp1Door8lbl"));
@@ -734,10 +730,8 @@ public:
         Mp1bg1lbl = new QLabel(VehicleRunStatePage);
         Mp1bg1lbl->setObjectName(QString::fromUtf8("Mp1bg1lbl"));
         Mp1bg1lbl->setGeometry(QRect(285, 154, 45, 25));
-        Mp1bg1lbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
-"border:2px solid black;\n"
-"font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
-"color:black;\n"
+        Mp1bg1lbl->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"border-image: url(:/images/images/Bfault.png);\n"
 ""));
         Mp1bg1lbl->setAlignment(Qt::AlignCenter);
         Mp1Door6lbl = new QLabel(VehicleRunStatePage);

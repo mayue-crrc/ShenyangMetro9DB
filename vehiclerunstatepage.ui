@@ -969,11 +969,8 @@ border-image: url(:/images/images/Brelease.png);
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255,255,153);
-border:2px solid black;
-font: 20px  &quot;微软雅黑&quot;;
-color:black;
-</string>
+    <string notr="true">background-color: transparent;
+border-image: url(:/images/images/BApply.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -1354,10 +1351,8 @@ color:black;
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255,255,153);
-border:2px solid black;
-font: 20px  &quot;微软雅黑&quot;;
-color:black;
+    <string notr="true">background-color: transparent;
+border-image: url(:/images/images/Bbypass.png);
 </string>
    </property>
    <property name="text">
@@ -1377,7 +1372,8 @@ color:black;
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true">background-color:transparent;
+border-image: url(:/images/images/Bbypass.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -1465,10 +1461,8 @@ color:black;
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255,255,153);
-border:2px solid black;
-font: 20px  &quot;微软雅黑&quot;;
-color:black;
+    <string notr="true">background-color: transparent;
+border-image: url(:/images/images/Bfault.png);
 </string>
    </property>
    <property name="text">

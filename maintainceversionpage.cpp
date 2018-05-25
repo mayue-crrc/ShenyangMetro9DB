@@ -109,7 +109,7 @@ void MaintainceVersionPage::updatePage()
     case VTCUPAGE:
         {
             QList<QString> namestr,versionstr;
-            namestr<<"DCU"<<"BCU"<<"ACM"<<""<<""<<""<<""<<""<<""<<"";
+            namestr<<"DCU"<<"BCU"<<"ACM"<<"CCU-D\n牵引记录仪"<<""<<""<<""<<""<<""<<"";
             versionstr<<"--"<<QString::number(this->database->TR1CT_DCUMVersion_I16)<<QString::number(this->database->TR2CT_DCUMVersion_I16)
                       <<QString::number(this->database->TR3CT_DCUMVersion_I16)<<QString::number(this->database->TR4CT_DCUMVersion_I16)<<"--"
                       <<QString::number(this->database->BR1CT_TcMVBVersion_U8/16)+"."+QString::number(this->database->BR1CT_TcMVBVersion_U8%16)<<"--"
@@ -124,8 +124,10 @@ void MaintainceVersionPage::updatePage()
                       QString::number(this->database->AX3CT_SWVersion3_I16)+"."+QString::number(this->database->AX3CT_SWVersion4_I16)<<
                       "--"<<QString::number(this->database->AX4CT_SWVersion1_I16)+"."+QString::number(this->database->AX4CT_SWVersion2_I16)+"."+
                       QString::number(this->database->AX4CT_SWVersion3_I16)+"."+QString::number(this->database->AX4CT_SWVersion4_I16)
-                      <<""<<""<<""<<""<<""<<""
-                      <<""<<""<<""<<""<<""<<""
+                      <<QString::number(this->database->CD1CT_SoftWareVersion1_I16)+"."+QString::number(this->database->CD1CT_SoftWareVersion2_I16)+"."+
+                      QString::number(this->database->CD1CT_SoftWareVersion3_I16)+"."+QString::number(this->database->CD1CT_SoftWareVersion4_I16)<<"--"<<"--"<<"--"<<"--"
+                      <<QString::number(this->database->CD2CT_SoftWareVersion1_I16)+"."+QString::number(this->database->CD2CT_SoftWareVersion2_I16)+"."+
+                      QString::number(this->database->CD2CT_SoftWareVersion3_I16)+"."+QString::number(this->database->CD2CT_SoftWareVersion4_I16)                      <<""<<""<<""<<""<<""<<""
                       <<""<<""<<""<<""<<""<<""
                       <<""<<""<<""<<""<<""<<""
                       <<""<<""<<""<<""<<""<<""
@@ -232,7 +234,7 @@ void MaintainceVersionPage::updatePage()
         {
 
             QList<QString> namestr,versionstr;
-            namestr<<"HVAC"<<"ATC"<<"PIS"<<"CCU-D"<<"WMS"<<""<<""<<""<<""<<"";
+            namestr<<"HVAC"<<"ATC"<<"PIS"<<"WMS"<<""<<""<<""<<""<<""<<"";
             versionstr<<QString::number(this->database->AC1CT_SWVersionHighByteX_U8)+"."+QString::number(this->database->AC1CT_SWVersionHighByteY_U8)
                     <<QString::number(this->database->AC2CT_SWVersionHighByteX_U8)+"."+QString::number(this->database->AC2CT_SWVersionHighByteY_U8)
                     <<QString::number(this->database->AC3CT_SWVersionHighByteX_U8)+"."+QString::number(this->database->AC3CT_SWVersionHighByteY_U8)
@@ -248,11 +250,8 @@ void MaintainceVersionPage::updatePage()
                       <<QString::number(this->database->PA2CT_SoftwareVersion0_U8)+"."+
                       QString::number(this->database->PA2CT_SoftwareVersion1_U8)+"."+
                       QString::number(this->database->PA2CT_SoftwareVersion2_U8)
-                      <<QString::number(this->database->CD1CT_SoftWareVersion1_I16)+"."+QString::number(this->database->CD1CT_SoftWareVersion2_I16)+"."+
-                      QString::number(this->database->CD1CT_SoftWareVersion3_I16)+"."+QString::number(this->database->CD1CT_SoftWareVersion4_I16)<<"--"<<"--"<<"--"<<"--"
-                      <<QString::number(this->database->CD2CT_SoftWareVersion1_I16)+"."+QString::number(this->database->CD2CT_SoftWareVersion2_I16)+"."+
-                      QString::number(this->database->CD2CT_SoftWareVersion3_I16)+"."+QString::number(this->database->CD2CT_SoftWareVersion4_I16)
                       <<"--"<<"--"<<"--"<<"--"<<"--"<<QString::number(this->database->WSCT_GWSWVersion_U16)
+                      <<""<<""<<""<<""<<""<<""
                       <<""<<""<<""<<""<<""<<""
                       <<""<<""<<""<<""<<""<<""
                       <<""<<""<<""<<""<<""<<""
@@ -280,7 +279,7 @@ void MaintainceVersionPage::ButtonsPressEvent()
     if(BtnName == "TCMS")
     {
         m_CurrentPage = VTCMSPAGE;
-    }else if(BtnName == "牵引")
+    }else if(BtnName == "牵引辅助制动")
     {
         m_CurrentPage = VTCUPAGE;
     }else if(BtnName == "车门")

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintainceversionpage.ui'
 **
-** Created: Thu Apr 19 11:15:44 2018
+** Created: Fri May 25 13:51:20 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -149,19 +149,19 @@ public:
 ""));
         TCMSVBtn = new QPushButton(MaintainceVersionPage);
         TCMSVBtn->setObjectName(QString::fromUtf8("TCMSVBtn"));
-        TCMSVBtn->setGeometry(QRect(900, 50, 120, 61));
+        TCMSVBtn->setGeometry(QRect(895, 50, 125, 61));
         TCMSVBtn->setFocusPolicy(Qt::NoFocus);
         TCUVBtn = new QPushButton(MaintainceVersionPage);
         TCUVBtn->setObjectName(QString::fromUtf8("TCUVBtn"));
-        TCUVBtn->setGeometry(QRect(900, 120, 120, 61));
+        TCUVBtn->setGeometry(QRect(895, 120, 125, 61));
         TCUVBtn->setFocusPolicy(Qt::NoFocus);
         EDCUVBtn = new QPushButton(MaintainceVersionPage);
         EDCUVBtn->setObjectName(QString::fromUtf8("EDCUVBtn"));
-        EDCUVBtn->setGeometry(QRect(900, 190, 120, 61));
+        EDCUVBtn->setGeometry(QRect(895, 190, 125, 61));
         EDCUVBtn->setFocusPolicy(Qt::NoFocus);
         OtherVBtn = new QPushButton(MaintainceVersionPage);
         OtherVBtn->setObjectName(QString::fromUtf8("OtherVBtn"));
-        OtherVBtn->setGeometry(QRect(900, 260, 120, 61));
+        OtherVBtn->setGeometry(QRect(895, 260, 125, 61));
         OtherVBtn->setFocusPolicy(Qt::NoFocus);
         line1_1Versionlbl = new QLabel(MaintainceVersionPage);
         line1_1Versionlbl->setObjectName(QString::fromUtf8("line1_1Versionlbl"));
@@ -189,7 +189,7 @@ public:
         line1_6Versionlbl->setAlignment(Qt::AlignCenter);
         line1namebl = new QLabel(MaintainceVersionPage);
         line1namebl->setObjectName(QString::fromUtf8("line1namebl"));
-        line1namebl->setGeometry(QRect(20, 20, 91, 21));
+        line1namebl->setGeometry(QRect(20, 10, 91, 41));
         line1namebl->setAlignment(Qt::AlignCenter);
         line2_5Versionlbl = new QLabel(MaintainceVersionPage);
         line2_5Versionlbl->setObjectName(QString::fromUtf8("line2_5Versionlbl"));
@@ -209,7 +209,7 @@ public:
         line2_4Versionlbl->setAlignment(Qt::AlignCenter);
         line2namebl = new QLabel(MaintainceVersionPage);
         line2namebl->setObjectName(QString::fromUtf8("line2namebl"));
-        line2namebl->setGeometry(QRect(20, 70, 91, 21));
+        line2namebl->setGeometry(QRect(20, 60, 91, 41));
         line2namebl->setAlignment(Qt::AlignCenter);
         line2_2Versionlbl = new QLabel(MaintainceVersionPage);
         line2_2Versionlbl->setObjectName(QString::fromUtf8("line2_2Versionlbl"));
@@ -241,7 +241,7 @@ public:
         line3_4Versionlbl->setAlignment(Qt::AlignCenter);
         line3namebl = new QLabel(MaintainceVersionPage);
         line3namebl->setObjectName(QString::fromUtf8("line3namebl"));
-        line3namebl->setGeometry(QRect(20, 120, 91, 21));
+        line3namebl->setGeometry(QRect(20, 110, 91, 41));
         line3namebl->setAlignment(Qt::AlignCenter);
         line3_6Versionlbl = new QLabel(MaintainceVersionPage);
         line3_6Versionlbl->setObjectName(QString::fromUtf8("line3_6Versionlbl"));
@@ -269,7 +269,7 @@ public:
         line4_4Versionlbl->setAlignment(Qt::AlignCenter);
         line4namebl = new QLabel(MaintainceVersionPage);
         line4namebl->setObjectName(QString::fromUtf8("line4namebl"));
-        line4namebl->setGeometry(QRect(20, 170, 91, 21));
+        line4namebl->setGeometry(QRect(20, 160, 91, 41));
         line4namebl->setAlignment(Qt::AlignCenter);
         line4_6Versionlbl = new QLabel(MaintainceVersionPage);
         line4_6Versionlbl->setObjectName(QString::fromUtf8("line4_6Versionlbl"));
@@ -297,7 +297,7 @@ public:
         line5_4Versionlbl->setAlignment(Qt::AlignCenter);
         line5namebl = new QLabel(MaintainceVersionPage);
         line5namebl->setObjectName(QString::fromUtf8("line5namebl"));
-        line5namebl->setGeometry(QRect(20, 220, 91, 21));
+        line5namebl->setGeometry(QRect(20, 210, 91, 41));
         line5namebl->setAlignment(Qt::AlignCenter);
         line5_6Versionlbl = new QLabel(MaintainceVersionPage);
         line5_6Versionlbl->setObjectName(QString::fromUtf8("line5_6Versionlbl"));
@@ -325,7 +325,7 @@ public:
         line6_4Versionlbl->setAlignment(Qt::AlignCenter);
         line6namebl = new QLabel(MaintainceVersionPage);
         line6namebl->setObjectName(QString::fromUtf8("line6namebl"));
-        line6namebl->setGeometry(QRect(20, 270, 91, 21));
+        line6namebl->setGeometry(QRect(20, 260, 91, 41));
         line6namebl->setAlignment(Qt::AlignCenter);
         line6_6Versionlbl = new QLabel(MaintainceVersionPage);
         line6_6Versionlbl->setObjectName(QString::fromUtf8("line6_6Versionlbl"));
@@ -353,7 +353,7 @@ public:
         line7_4Versionlbl->setAlignment(Qt::AlignCenter);
         line7namebl = new QLabel(MaintainceVersionPage);
         line7namebl->setObjectName(QString::fromUtf8("line7namebl"));
-        line7namebl->setGeometry(QRect(20, 320, 91, 21));
+        line7namebl->setGeometry(QRect(20, 310, 91, 41));
         line7namebl->setAlignment(Qt::AlignCenter);
         line7_6Versionlbl = new QLabel(MaintainceVersionPage);
         line7_6Versionlbl->setObjectName(QString::fromUtf8("line7_6Versionlbl"));
@@ -381,7 +381,7 @@ public:
         line8_4Versionlbl->setAlignment(Qt::AlignCenter);
         line8namebl = new QLabel(MaintainceVersionPage);
         line8namebl->setObjectName(QString::fromUtf8("line8namebl"));
-        line8namebl->setGeometry(QRect(20, 370, 91, 21));
+        line8namebl->setGeometry(QRect(20, 360, 91, 41));
         line8namebl->setAlignment(Qt::AlignCenter);
         line8_6Versionlbl = new QLabel(MaintainceVersionPage);
         line8_6Versionlbl->setObjectName(QString::fromUtf8("line8_6Versionlbl"));
@@ -409,7 +409,7 @@ public:
         line9_4Versionlbl->setAlignment(Qt::AlignCenter);
         line9namebl = new QLabel(MaintainceVersionPage);
         line9namebl->setObjectName(QString::fromUtf8("line9namebl"));
-        line9namebl->setGeometry(QRect(20, 420, 91, 21));
+        line9namebl->setGeometry(QRect(20, 410, 91, 41));
         line9namebl->setAlignment(Qt::AlignCenter);
         line9_6Versionlbl = new QLabel(MaintainceVersionPage);
         line9_6Versionlbl->setObjectName(QString::fromUtf8("line9_6Versionlbl"));
@@ -437,7 +437,7 @@ public:
         line10_4Versionlbl->setAlignment(Qt::AlignCenter);
         line10namebl = new QLabel(MaintainceVersionPage);
         line10namebl->setObjectName(QString::fromUtf8("line10namebl"));
-        line10namebl->setGeometry(QRect(20, 470, 91, 21));
+        line10namebl->setGeometry(QRect(20, 460, 91, 41));
         line10namebl->setAlignment(Qt::AlignCenter);
         line10_6Versionlbl = new QLabel(MaintainceVersionPage);
         line10_6Versionlbl->setObjectName(QString::fromUtf8("line10_6Versionlbl"));
@@ -531,7 +531,7 @@ public:
         returnBtn->setText(QApplication::translate("MaintainceVersionPage", "\350\277\224\345\233\236", 0, QApplication::UnicodeUTF8));
         label->setText(QString());
         TCMSVBtn->setText(QApplication::translate("MaintainceVersionPage", "TCMS", 0, QApplication::UnicodeUTF8));
-        TCUVBtn->setText(QApplication::translate("MaintainceVersionPage", "\347\211\265\345\274\225", 0, QApplication::UnicodeUTF8));
+        TCUVBtn->setText(QApplication::translate("MaintainceVersionPage", "\347\211\265\345\274\225\350\276\205\345\212\251\345\210\266\345\212\250", 0, QApplication::UnicodeUTF8));
         EDCUVBtn->setText(QApplication::translate("MaintainceVersionPage", "\350\275\246\351\227\250", 0, QApplication::UnicodeUTF8));
         OtherVBtn->setText(QApplication::translate("MaintainceVersionPage", "\345\205\266\344\273\226", 0, QApplication::UnicodeUTF8));
         line1_1Versionlbl->setText(QString());
