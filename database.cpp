@@ -82,7 +82,7 @@ Database::Database()
     HMiCT_ACDETestStartFlag_B1 = false;
 
     HMiCT_HMISWVerH_U8 = 1;
-    HMiCT_HMISWVerL_U8 = 15;
+    HMiCT_HMISWVerL_U8 = 16;
 
     for(int i =0; i< 12;i++)
     {
