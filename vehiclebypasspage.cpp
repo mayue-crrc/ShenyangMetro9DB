@@ -19,10 +19,10 @@ VehicleBypassPage::~VehicleBypassPage()
 }
 void VehicleBypassPage::updatePage()
 {
-    setSignalBypass(this->ui->BrakeNOTReleaseTC1lbl,this->ui->BrakeNOTReleaseTC1lbl_2,this->database->DICT_TC1DI3CH16BrkRlsByPass_B1);
-    setSignalBypass(this->ui->BrakeNOTReleaseTC2lbl,this->ui->BrakeNOTReleaseTC2lbl_2,this->database->DICT_TC2DI3CH16BrkRlsByPass_B1);
-    setSignalBypass(this->ui->StopBrakeTC1lbl,this->ui->StopBrakeTC1lbl_2,this->database->DICT_TC1DI3CH14BrkRlsByPass_B1);
-    setSignalBypass(this->ui->StopBrakeTC2lbl,this->ui->StopBrakeTC2lbl_2,this->database->DICT_TC2DI3CH14BrkRlsByPass_B1);
+    setSignalBypass(this->ui->BrakeNOTReleaseTC1lbl,this->ui->BrakeNOTReleaseTC1lbl_2,this->database->DICT_TC1DI3CH14BrkRlsByPass_B1);
+    setSignalBypass(this->ui->BrakeNOTReleaseTC2lbl,this->ui->BrakeNOTReleaseTC2lbl_2,this->database->DICT_TC2DI3CH14BrkRlsByPass_B1);
+    setSignalBypass(this->ui->StopBrakeTC1lbl,this->ui->StopBrakeTC1lbl_2,this->database->DICT_TC1DI3CH11ParkingBrkByPass_B1);
+    setSignalBypass(this->ui->StopBrakeTC2lbl,this->ui->StopBrakeTC2lbl_2,this->database->DICT_TC2DI3CH11ParkingBrkByPass_B1);
     setSignalBypass(this->ui->ALLTrainCloseTC1lbl,this->ui->ALLTrainCloseTC1lbl_2,this->database->DICT_TC1DI4CH12CarDoorSafeLoopByPass_B1);
     setSignalBypass(this->ui->ALLTrainCloseTC2lbl,this->ui->ALLTrainCloseTC2lbl_2,this->database->DICT_TC2DI4CH12CarDoorSafeLoopByPass_B1);
     setSignalBypass(this->ui->AlarmTC1lbl,this->ui->AlarmTC1lbl_2,this->database->DICT_TC1DI1CH7CabActive_B1);
