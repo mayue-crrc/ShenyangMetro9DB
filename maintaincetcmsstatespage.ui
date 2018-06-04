@@ -1011,7 +1011,7 @@ background-color: rgb(0, 0, 0);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="DCULbl_m1">
+  <widget class="QLabel" name="DCULbl_mp1">
    <property name="geometry">
     <rect>
      <x>280</x>
@@ -1250,7 +1250,7 @@ background-color: rgb(0, 0, 0);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="DCULbl_mp1">
+  <widget class="QLabel" name="DCULbl_m1">
    <property name="geometry">
     <rect>
      <x>404</x>
@@ -1390,7 +1390,7 @@ background-color: rgb(0, 0, 0);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="DCULbl_mp2">
+  <widget class="QLabel" name="DCULbl_m2">
    <property name="geometry">
     <rect>
      <x>560</x>
@@ -1708,7 +1708,7 @@ background-color: rgb(0, 0, 0);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="DCULbl_m2">
+  <widget class="QLabel" name="DCULbl_mp2">
    <property name="geometry">
     <rect>
      <x>680</x>
@@ -2399,7 +2399,7 @@ background-color: rgb(0, 0, 0);
   <zorder>DOOR1Lbl_m1</zorder>
   <zorder>DOOR8Lbl_m1</zorder>
   <zorder>EDCU4Lbl_mp1</zorder>
-  <zorder>DCULbl_m1</zorder>
+  <zorder>DCULbl_mp1</zorder>
   <zorder>EDCU5Lbl_m1</zorder>
   <zorder>EBCULbl_mp1</zorder>
   <zorder>RIOMLbl_m1</zorder>
@@ -2410,14 +2410,14 @@ background-color: rgb(0, 0, 0);
   <zorder>DOOR5Lbl_mp1</zorder>
   <zorder>DOOR4Lbl_mp1</zorder>
   <zorder>EDCU6Lbl_m1</zorder>
-  <zorder>DCULbl_mp1</zorder>
+  <zorder>DCULbl_m1</zorder>
   <zorder>DOOR7Lbl_mp1</zorder>
   <zorder>DOOR8Lbl_mp1</zorder>
   <zorder>DOOR6Lbl_mp1</zorder>
   <zorder>EDCU8Lbl_m2</zorder>
   <zorder>RIOMLbl_m2</zorder>
   <zorder>ACULbl_m2</zorder>
-  <zorder>DCULbl_mp2</zorder>
+  <zorder>DCULbl_m2</zorder>
   <zorder>EBCULbl_mp2</zorder>
   <zorder>EDCU7Lbl_m2</zorder>
   <zorder>DOOR3Lbl_mp2</zorder>
@@ -2432,7 +2432,7 @@ background-color: rgb(0, 0, 0);
   <zorder>RIOMLbl_mp2</zorder>
   <zorder>ACULbl_mp2</zorder>
   <zorder>EDCU10Lbl_mp2</zorder>
-  <zorder>DCULbl_m2</zorder>
+  <zorder>DCULbl_mp2</zorder>
   <zorder>DOOR8Lbl_m2</zorder>
   <zorder>DOOR4Lbl_m2</zorder>
   <zorder>DOOR1Lbl_m2</zorder>

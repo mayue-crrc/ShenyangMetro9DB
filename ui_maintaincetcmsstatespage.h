@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincetcmsstatespage.ui'
 **
-** Created: Thu Apr 19 11:15:43 2018
+** Created: Mon Jun 4 08:38:05 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -73,7 +73,7 @@ public:
     QLabel *label_8;
     QLabel *DOOR8Lbl_m1;
     QLabel *EDCU4Lbl_mp1;
-    QLabel *DCULbl_m1;
+    QLabel *DCULbl_mp1;
     QLabel *EDCU5Lbl_m1;
     QLabel *EBCULbl_mp1;
     QLabel *RIOMLbl_m1;
@@ -85,14 +85,14 @@ public:
     QLabel *DOOR5Lbl_mp1;
     QLabel *DOOR4Lbl_mp1;
     QLabel *EDCU6Lbl_m1;
-    QLabel *DCULbl_mp1;
+    QLabel *DCULbl_m1;
     QLabel *DOOR7Lbl_mp1;
     QLabel *DOOR8Lbl_mp1;
     QLabel *DOOR6Lbl_mp1;
     QLabel *EDCU8Lbl_m2;
     QLabel *RIOMLbl_m2;
     QLabel *ACULbl_m2;
-    QLabel *DCULbl_mp2;
+    QLabel *DCULbl_m2;
     QLabel *EBCULbl_mp2;
     QLabel *EDCU7Lbl_m2;
     QLabel *DOOR3Lbl_mp2;
@@ -108,7 +108,7 @@ public:
     QLabel *RIOMLbl_mp2;
     QLabel *ACULbl_mp2;
     QLabel *EDCU10Lbl_mp2;
-    QLabel *DCULbl_m2;
+    QLabel *DCULbl_mp2;
     QLabel *label_11;
     QLabel *DOOR8Lbl_m2;
     QLabel *DOOR4Lbl_m2;
@@ -463,12 +463,12 @@ public:
         EDCU4Lbl_mp1->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 255, 0);	\n"
 ""));
         EDCU4Lbl_mp1->setAlignment(Qt::AlignCenter);
-        DCULbl_m1 = new QLabel(MaintainceTCMSStatesPage);
-        DCULbl_m1->setObjectName(QString::fromUtf8("DCULbl_m1"));
-        DCULbl_m1->setGeometry(QRect(280, 160, 71, 21));
-        DCULbl_m1->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 255, 0);	\n"
+        DCULbl_mp1 = new QLabel(MaintainceTCMSStatesPage);
+        DCULbl_mp1->setObjectName(QString::fromUtf8("DCULbl_mp1"));
+        DCULbl_mp1->setGeometry(QRect(280, 160, 71, 21));
+        DCULbl_mp1->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 255, 0);	\n"
 ""));
-        DCULbl_m1->setAlignment(Qt::AlignCenter);
+        DCULbl_mp1->setAlignment(Qt::AlignCenter);
         EDCU5Lbl_m1 = new QLabel(MaintainceTCMSStatesPage);
         EDCU5Lbl_m1->setObjectName(QString::fromUtf8("EDCU5Lbl_m1"));
         EDCU5Lbl_m1->setGeometry(QRect(404, 320, 71, 21));
@@ -536,12 +536,12 @@ public:
         EDCU6Lbl_m1->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 255, 0);	\n"
 ""));
         EDCU6Lbl_m1->setAlignment(Qt::AlignCenter);
-        DCULbl_mp1 = new QLabel(MaintainceTCMSStatesPage);
-        DCULbl_mp1->setObjectName(QString::fromUtf8("DCULbl_mp1"));
-        DCULbl_mp1->setGeometry(QRect(404, 160, 71, 21));
-        DCULbl_mp1->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 255, 0);	\n"
+        DCULbl_m1 = new QLabel(MaintainceTCMSStatesPage);
+        DCULbl_m1->setObjectName(QString::fromUtf8("DCULbl_m1"));
+        DCULbl_m1->setGeometry(QRect(404, 160, 71, 21));
+        DCULbl_m1->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 255, 0);	\n"
 ""));
-        DCULbl_mp1->setAlignment(Qt::AlignCenter);
+        DCULbl_m1->setAlignment(Qt::AlignCenter);
         DOOR7Lbl_mp1 = new QLabel(MaintainceTCMSStatesPage);
         DOOR7Lbl_mp1->setObjectName(QString::fromUtf8("DOOR7Lbl_mp1"));
         DOOR7Lbl_mp1->setGeometry(QRect(332, 397, 21, 21));
@@ -578,12 +578,12 @@ public:
         ACULbl_m2->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 255, 0);	\n"
 ""));
         ACULbl_m2->setAlignment(Qt::AlignCenter);
-        DCULbl_mp2 = new QLabel(MaintainceTCMSStatesPage);
-        DCULbl_mp2->setObjectName(QString::fromUtf8("DCULbl_mp2"));
-        DCULbl_mp2->setGeometry(QRect(560, 160, 71, 21));
-        DCULbl_mp2->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 255, 0);	\n"
+        DCULbl_m2 = new QLabel(MaintainceTCMSStatesPage);
+        DCULbl_m2->setObjectName(QString::fromUtf8("DCULbl_m2"));
+        DCULbl_m2->setGeometry(QRect(560, 160, 71, 21));
+        DCULbl_m2->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 255, 0);	\n"
 ""));
-        DCULbl_mp2->setAlignment(Qt::AlignCenter);
+        DCULbl_m2->setAlignment(Qt::AlignCenter);
         EBCULbl_mp2 = new QLabel(MaintainceTCMSStatesPage);
         EBCULbl_mp2->setObjectName(QString::fromUtf8("EBCULbl_mp2"));
         EBCULbl_mp2->setGeometry(QRect(560, 200, 71, 21));
@@ -674,12 +674,12 @@ public:
         EDCU10Lbl_mp2->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 255, 0);	\n"
 ""));
         EDCU10Lbl_mp2->setAlignment(Qt::AlignCenter);
-        DCULbl_m2 = new QLabel(MaintainceTCMSStatesPage);
-        DCULbl_m2->setObjectName(QString::fromUtf8("DCULbl_m2"));
-        DCULbl_m2->setGeometry(QRect(680, 160, 71, 21));
-        DCULbl_m2->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 255, 0);	\n"
+        DCULbl_mp2 = new QLabel(MaintainceTCMSStatesPage);
+        DCULbl_mp2->setObjectName(QString::fromUtf8("DCULbl_mp2"));
+        DCULbl_mp2->setGeometry(QRect(680, 160, 71, 21));
+        DCULbl_mp2->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 255, 0);	\n"
 ""));
-        DCULbl_m2->setAlignment(Qt::AlignCenter);
+        DCULbl_mp2->setAlignment(Qt::AlignCenter);
         label_11 = new QLabel(MaintainceTCMSStatesPage);
         label_11->setObjectName(QString::fromUtf8("label_11"));
         label_11->setGeometry(QRect(560, 390, 95, 59));
@@ -921,7 +921,7 @@ public:
         DOOR1Lbl_m1->raise();
         DOOR8Lbl_m1->raise();
         EDCU4Lbl_mp1->raise();
-        DCULbl_m1->raise();
+        DCULbl_mp1->raise();
         EDCU5Lbl_m1->raise();
         EBCULbl_mp1->raise();
         RIOMLbl_m1->raise();
@@ -932,14 +932,14 @@ public:
         DOOR5Lbl_mp1->raise();
         DOOR4Lbl_mp1->raise();
         EDCU6Lbl_m1->raise();
-        DCULbl_mp1->raise();
+        DCULbl_m1->raise();
         DOOR7Lbl_mp1->raise();
         DOOR8Lbl_mp1->raise();
         DOOR6Lbl_mp1->raise();
         EDCU8Lbl_m2->raise();
         RIOMLbl_m2->raise();
         ACULbl_m2->raise();
-        DCULbl_mp2->raise();
+        DCULbl_m2->raise();
         EBCULbl_mp2->raise();
         EDCU7Lbl_m2->raise();
         DOOR3Lbl_mp2->raise();
@@ -954,7 +954,7 @@ public:
         RIOMLbl_mp2->raise();
         ACULbl_mp2->raise();
         EDCU10Lbl_mp2->raise();
-        DCULbl_m2->raise();
+        DCULbl_mp2->raise();
         DOOR8Lbl_m2->raise();
         DOOR4Lbl_m2->raise();
         DOOR1Lbl_m2->raise();
@@ -1043,7 +1043,7 @@ public:
         label_8->setText(QString());
         DOOR8Lbl_m1->setText(QApplication::translate("MaintainceTCMSStatesPage", "8", 0, QApplication::UnicodeUTF8));
         EDCU4Lbl_mp1->setText(QApplication::translate("MaintainceTCMSStatesPage", "EDCU4", 0, QApplication::UnicodeUTF8));
-        DCULbl_m1->setText(QApplication::translate("MaintainceTCMSStatesPage", "DCU", 0, QApplication::UnicodeUTF8));
+        DCULbl_mp1->setText(QApplication::translate("MaintainceTCMSStatesPage", "DCU", 0, QApplication::UnicodeUTF8));
         EDCU5Lbl_m1->setText(QApplication::translate("MaintainceTCMSStatesPage", "EDCU5", 0, QApplication::UnicodeUTF8));
         EBCULbl_mp1->setText(QApplication::translate("MaintainceTCMSStatesPage", "EBCU", 0, QApplication::UnicodeUTF8));
         RIOMLbl_m1->setText(QApplication::translate("MaintainceTCMSStatesPage", "RIOM", 0, QApplication::UnicodeUTF8));
@@ -1055,14 +1055,14 @@ public:
         DOOR5Lbl_mp1->setText(QApplication::translate("MaintainceTCMSStatesPage", "5", 0, QApplication::UnicodeUTF8));
         DOOR4Lbl_mp1->setText(QApplication::translate("MaintainceTCMSStatesPage", "4", 0, QApplication::UnicodeUTF8));
         EDCU6Lbl_m1->setText(QApplication::translate("MaintainceTCMSStatesPage", "EDCU6", 0, QApplication::UnicodeUTF8));
-        DCULbl_mp1->setText(QApplication::translate("MaintainceTCMSStatesPage", "DCU", 0, QApplication::UnicodeUTF8));
+        DCULbl_m1->setText(QApplication::translate("MaintainceTCMSStatesPage", "DCU", 0, QApplication::UnicodeUTF8));
         DOOR7Lbl_mp1->setText(QApplication::translate("MaintainceTCMSStatesPage", "7", 0, QApplication::UnicodeUTF8));
         DOOR8Lbl_mp1->setText(QApplication::translate("MaintainceTCMSStatesPage", "8", 0, QApplication::UnicodeUTF8));
         DOOR6Lbl_mp1->setText(QApplication::translate("MaintainceTCMSStatesPage", "6", 0, QApplication::UnicodeUTF8));
         EDCU8Lbl_m2->setText(QApplication::translate("MaintainceTCMSStatesPage", "EDCU8", 0, QApplication::UnicodeUTF8));
         RIOMLbl_m2->setText(QApplication::translate("MaintainceTCMSStatesPage", "RIOM", 0, QApplication::UnicodeUTF8));
         ACULbl_m2->setText(QApplication::translate("MaintainceTCMSStatesPage", "HVAC", 0, QApplication::UnicodeUTF8));
-        DCULbl_mp2->setText(QApplication::translate("MaintainceTCMSStatesPage", "DCU", 0, QApplication::UnicodeUTF8));
+        DCULbl_m2->setText(QApplication::translate("MaintainceTCMSStatesPage", "DCU", 0, QApplication::UnicodeUTF8));
         EBCULbl_mp2->setText(QApplication::translate("MaintainceTCMSStatesPage", "EBCU", 0, QApplication::UnicodeUTF8));
         EDCU7Lbl_m2->setText(QApplication::translate("MaintainceTCMSStatesPage", "EDCU7", 0, QApplication::UnicodeUTF8));
         DOOR3Lbl_mp2->setText(QApplication::translate("MaintainceTCMSStatesPage", "3", 0, QApplication::UnicodeUTF8));
@@ -1078,7 +1078,7 @@ public:
         RIOMLbl_mp2->setText(QApplication::translate("MaintainceTCMSStatesPage", "RIOM", 0, QApplication::UnicodeUTF8));
         ACULbl_mp2->setText(QApplication::translate("MaintainceTCMSStatesPage", "HVAC", 0, QApplication::UnicodeUTF8));
         EDCU10Lbl_mp2->setText(QApplication::translate("MaintainceTCMSStatesPage", "EDCU10", 0, QApplication::UnicodeUTF8));
-        DCULbl_m2->setText(QApplication::translate("MaintainceTCMSStatesPage", "DCU", 0, QApplication::UnicodeUTF8));
+        DCULbl_mp2->setText(QApplication::translate("MaintainceTCMSStatesPage", "DCU", 0, QApplication::UnicodeUTF8));
         label_11->setText(QString());
         DOOR8Lbl_m2->setText(QApplication::translate("MaintainceTCMSStatesPage", "8", 0, QApplication::UnicodeUTF8));
         DOOR4Lbl_m2->setText(QApplication::translate("MaintainceTCMSStatesPage", "4", 0, QApplication::UnicodeUTF8));

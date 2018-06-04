@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclebypasspage.ui'
 **
-** Created: Thu Apr 19 11:15:44 2018
+** Created: Mon Jun 4 08:38:05 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -519,7 +519,7 @@ public:
         AlarmTC2lbl_2->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
         AlarmTC1lbl_2->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
         EmloopTC1lbl->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
-        LBL1_5->setText(QApplication::translate("VehicleBypassPage", "\347\264\247\346\200\245\347\216\257\347\272\277\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
+        LBL1_5->setText(QApplication::translate("VehicleBypassPage", "\347\264\247\346\200\245\345\210\266\345\212\250\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
         EmloopTC2lbl->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
         linelbl1_5->setText(QString());
         EmloopTC2lbl_2->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
