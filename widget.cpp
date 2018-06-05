@@ -250,7 +250,7 @@ Widget::Widget(QWidget *parent) :
     this->vehicleUnactivePage->hide();
 
     this->maintainceFaultShowPage = new MaintainceFaultShowPage(this);
-    this->maintainceFaultShowPage->setMyBase(uLargeMiddle,QString("故障筛选显示"));
+    this->maintainceFaultShowPage->setMyBase(uLargeMiddle,QString("故障筛选"));
     this->maintainceFaultShowPage->hide();
 
     this->maintainceFaultQueryPage = new MaintainceFaultQueryPage(this);
@@ -369,7 +369,7 @@ void Widget::updatePage()
     this->crrcFault->getLocalDateTime(this->database->HMI_DateTime_foruse);
 
     // refresh the fault list every 2/3 second, the code which occupies cpu time a lot should not execute at the same cycle
-    static int faultdelaycnt = 45;
+    static int faultdelaycnt = 0;
     // fault scan delay 15s, then start thread!!
     if ((faultdelaycnt++ > 45) && counter%2 == 1 && this->database->PUBPORT_CCUOnline_B1 )
     {

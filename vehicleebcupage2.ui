@@ -69,9 +69,9 @@ QPushButton
   <widget class="QLabel" name="PLoadMP1lbl">
    <property name="geometry">
     <rect>
-     <x>310</x>
+     <x>290</x>
      <y>260</y>
-     <width>41</width>
+     <width>91</width>
      <height>31</height>
     </rect>
    </property>
@@ -139,9 +139,9 @@ border-radius:8px;</string>
   <widget class="QLabel" name="PLoadM1lbl">
    <property name="geometry">
     <rect>
-     <x>430</x>
+     <x>410</x>
      <y>260</y>
-     <width>41</width>
+     <width>91</width>
      <height>31</height>
     </rect>
    </property>
@@ -309,9 +309,9 @@ border-radius:8px;</string>
   <widget class="QLabel" name="PLoadMP2lbl">
    <property name="geometry">
     <rect>
-     <x>680</x>
+     <x>660</x>
      <y>260</y>
-     <width>41</width>
+     <width>91</width>
      <height>31</height>
     </rect>
    </property>
@@ -341,9 +341,9 @@ border-radius:8px;</string>
   <widget class="QLabel" name="PLoadTC2lbl">
    <property name="geometry">
     <rect>
-     <x>800</x>
+     <x>780</x>
      <y>260</y>
-     <width>41</width>
+     <width>91</width>
      <height>31</height>
     </rect>
    </property>
@@ -679,9 +679,9 @@ background-color:lightgray;
   <widget class="QLabel" name="PLoadM2lbl">
    <property name="geometry">
     <rect>
-     <x>560</x>
+     <x>540</x>
      <y>260</y>
-     <width>41</width>
+     <width>91</width>
      <height>31</height>
     </rect>
    </property>
@@ -973,9 +973,9 @@ background-color:lightgray;
   <widget class="QLabel" name="PLoadTC1lbl">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>170</x>
      <y>260</y>
-     <width>41</width>
+     <width>91</width>
      <height>31</height>
     </rect>
    </property>

@@ -24,9 +24,10 @@ public:
 private:
     Ui::VehicleACPage2 *ui;
     QList<QPushButton* > SelectButtons,ModeButtons;
-    void setlabelstates(QLabel* lbl,bool states);
-    void setlabelctrl(QLabel* lbl,bool net,bool local);
+    void setlabelstates(QLabel* lbl,bool states,bool isonline);
+    void setlabelctrl(QLabel* lbl,bool net,bool local,bool isonline);
     void setlabelstates(QLabel* lbl,QList<bool> states);
+    void setlabelvalue(QLabel* lbl,signed char value,bool isonline);
 
     bool m_confirmclick;
     QString BtnName,TrainBtnName;

@@ -20,10 +20,11 @@ public:
 
 private:
     Ui::VehicleACPage *ui;
-    void setlabelstates(QLabel* lbl,bool states);
-    void setlabelstates(QLabel* lbl,bool states1,bool states2);
-    void setlabelctrl(QLabel* lbl,bool net,bool local);
+    void setlabelstates(QLabel* lbl,bool states,bool isonline);
+    void setlabelstates(QLabel* lbl,bool states1,bool states2,bool isonline);
+    void setlabelctrl(QLabel* lbl,bool net,bool local,bool isonline);
     void setlabelstates(QLabel* lbl,QList<bool> states);
+    void setlabelvalue(QLabel* lbl,signed char value,bool isonline);
 
 private slots:
     void on_NextPageBtn_pressed();

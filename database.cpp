@@ -81,8 +81,8 @@ Database::Database()
     HMiCT_ACDETestStopFlag_B1 = false;
     HMiCT_ACDETestStartFlag_B1 = false;
 
-    HMiCT_HMISWVerH_U8 = 1;
-    HMiCT_HMISWVerL_U8 = 19;
+    HMiCT_HMISWVerH_U8 = 2;
+    HMiCT_HMISWVerL_U8 = 0;
 
     for(int i =0; i< 12;i++)
     {
@@ -1342,6 +1342,8 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->AC1CT_AutoMode_B1 = this->crrcMvb->getBool(0x910,0,5);
         this->AC1CT_PreWork_B1 = this->crrcMvb->getBool(0x910,1,4);
         this->AC1CT_EmVentilation_B1 = this->crrcMvb->getBool(0x910,1,5);
+        this->AC1CT_InsideFire_B1 = this->crrcMvb->getBool(0x910,2,1);
+        this->AC1CT_OutsideFire_B1 = this->crrcMvb->getBool(0x910,2,2);
         this->AC1CT_NetCtrlMode_B1 = this->crrcMvb->getBool(0x910,2,4);
         this->AC1CT_LocalCtrlMode_B1 = this->crrcMvb->getBool(0x910,2,5);
         this->AC1CT_MinorFlt_B1 = this->crrcMvb->getBool(0x910,21,5);
@@ -1387,6 +1389,8 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->AC2CT_AutoMode_B1 = this->crrcMvb->getBool(0x920,0,5);
         this->AC2CT_PreWork_B1 = this->crrcMvb->getBool(0x920,1,4);
         this->AC2CT_EmVentilation_B1 = this->crrcMvb->getBool(0x920,1,5);
+        this->AC2CT_InsideFire_B1 = this->crrcMvb->getBool(0x920,2,1);
+        this->AC2CT_OutsideFire_B1 = this->crrcMvb->getBool(0x920,2,2);
         this->AC2CT_NetCtrlMode_B1 = this->crrcMvb->getBool(0x920,2,4);
         this->AC2CT_LocalCtrlMode_B1 = this->crrcMvb->getBool(0x920,2,5);
         this->AC2CT_MinorFlt_B1 = this->crrcMvb->getBool(0x920,21,5);
@@ -1432,6 +1436,8 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->AC3CT_AutoMode_B1 = this->crrcMvb->getBool(0x930,0,5);
         this->AC3CT_PreWork_B1 = this->crrcMvb->getBool(0x930,1,4);
         this->AC3CT_EmVentilation_B1 = this->crrcMvb->getBool(0x930,1,5);
+        this->AC3CT_InsideFire_B1 = this->crrcMvb->getBool(0x930,2,1);
+        this->AC3CT_OutsideFire_B1 = this->crrcMvb->getBool(0x930,2,2);
         this->AC3CT_NetCtrlMode_B1 = this->crrcMvb->getBool(0x930,2,4);
         this->AC3CT_LocalCtrlMode_B1 = this->crrcMvb->getBool(0x930,2,5);
         this->AC3CT_MinorFlt_B1 = this->crrcMvb->getBool(0x930,21,5);
@@ -1478,6 +1484,8 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->AC4CT_AutoMode_B1 = this->crrcMvb->getBool(0x940,0,5);
         this->AC4CT_PreWork_B1 = this->crrcMvb->getBool(0x940,1,4);
         this->AC4CT_EmVentilation_B1 = this->crrcMvb->getBool(0x940,1,5);
+        this->AC4CT_InsideFire_B1 = this->crrcMvb->getBool(0x940,2,1);
+        this->AC4CT_OutsideFire_B1 = this->crrcMvb->getBool(0x940,2,2);
         this->AC4CT_NetCtrlMode_B1 = this->crrcMvb->getBool(0x940,2,4);
         this->AC4CT_LocalCtrlMode_B1 = this->crrcMvb->getBool(0x940,2,5);
         this->AC4CT_MinorFlt_B1 = this->crrcMvb->getBool(0x940,21,5);
@@ -1524,6 +1532,8 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->AC5CT_AutoMode_B1 = this->crrcMvb->getBool(0x950,0,5);
         this->AC5CT_PreWork_B1 = this->crrcMvb->getBool(0x950,1,4);
         this->AC5CT_EmVentilation_B1 = this->crrcMvb->getBool(0x950,1,5);
+        this->AC5CT_InsideFire_B1 = this->crrcMvb->getBool(0x950,2,1);
+        this->AC5CT_OutsideFire_B1 = this->crrcMvb->getBool(0x950,2,2);
         this->AC5CT_NetCtrlMode_B1 = this->crrcMvb->getBool(0x950,2,4);
         this->AC5CT_LocalCtrlMode_B1 = this->crrcMvb->getBool(0x950,2,5);
         this->AC5CT_MinorFlt_B1 = this->crrcMvb->getBool(0x950,21,5);
@@ -1570,6 +1580,8 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->AC6CT_AutoMode_B1 = this->crrcMvb->getBool(0x960,0,5);
         this->AC6CT_PreWork_B1 = this->crrcMvb->getBool(0x960,1,4);
         this->AC6CT_EmVentilation_B1 = this->crrcMvb->getBool(0x960,1,5);
+        this->AC6CT_InsideFire_B1 = this->crrcMvb->getBool(0x960,2,1);
+        this->AC6CT_OutsideFire_B1 = this->crrcMvb->getBool(0x960,2,2);
         this->AC6CT_NetCtrlMode_B1 = this->crrcMvb->getBool(0x960,2,4);
         this->AC6CT_LocalCtrlMode_B1 = this->crrcMvb->getBool(0x960,2,5);
         this->AC6CT_MinorFlt_B1 = this->crrcMvb->getBool(0x960,21,5);
@@ -2264,6 +2276,13 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->BR1CT_BCU2Master_B1 = this->crrcMvb->getBool(0x630,5,0);
         this->BR2CT_BCU3Master_B1 = this->crrcMvb->getBool(0x640,5,0);
         this->BR2CT_BCU4Master_B1 = this->crrcMvb->getBool(0x660,5,0);
+
+        this->BCU1_3Online = (this->BR1CT_BCU1Master_B1 && this->CTHM_BCU1On_B1) ||
+                             (this->BR1CT_BCU2Master_B1 && this->CTHM_BCU2On_B1) ;
+
+        this->BCU4_6Online = (this->BR2CT_BCU3Master_B1 && this->CTHM_BCU3On_B1) ||
+                             (this->BR2CT_BCU4Master_B1 && this->CTHM_BCU4On_B1) ;
+
 
         temp_virtualports.clear();
         temp_realports.clear();

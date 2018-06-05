@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclecutoffhelppage.ui'
 **
-** Created: Sat Apr 21 16:54:36 2018
+** Created: Tue Jun 5 15:02:25 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -238,7 +238,7 @@ public:
         label_18->setText(QApplication::translate("VehicleCutOffHelpPage", "\346\214\211\351\222\256\346\234\252\346\214\211\344\270\213,\347\202\271\345\207\273\n"
 "\346\214\211\351\222\256,\345\217\221\351\200\201\345\210\207\351\231\244\346\214\207\344\273\244", 0, QApplication::UnicodeUTF8));
         label_19->setText(QApplication::translate("VehicleCutOffHelpPage", "\345\210\207\351\231\244", 0, QApplication::UnicodeUTF8));
-        label_20->setText(QApplication::translate("VehicleCutOffHelpPage", "\346\226\255\347\224\265", 0, QApplication::UnicodeUTF8));
+        label_20->setText(QApplication::translate("VehicleCutOffHelpPage", "\345\210\207\351\231\244", 0, QApplication::UnicodeUTF8));
         label_21->setText(QString());
         label_22->setText(QApplication::translate("VehicleCutOffHelpPage", "ACM\346\225\205\351\232\234", 0, QApplication::UnicodeUTF8));
         label_23->setText(QApplication::translate("VehicleCutOffHelpPage", "ACM", 0, QApplication::UnicodeUTF8));

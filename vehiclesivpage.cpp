@@ -16,38 +16,39 @@ VehicleSIVPage::~VehicleSIVPage()
 void VehicleSIVPage::updatePage()
 {
     //ACM 状态
-    setlabelstates(this->ui->ACMTC1lbl,this->database->AX1CT_AuxInvStatus_I16);
-    setlabelstates(this->ui->ACMM1lbl,this->database->AX2CT_AuxInvStatus_I16);
-    setlabelstates(this->ui->ACMM2lbl,this->database->AX3CT_AuxInvStatus_I16);
-    setlabelstates(this->ui->ACMTC2lbl,this->database->AX4CT_AuxInvStatus_I16);
+    setlabelstates(this->ui->ACMTC1lbl,this->database->AX1CT_AuxInvStatus_I16,this->database->CTHM_ACU1On_B1);
+    setlabelstates(this->ui->ACMM1lbl,this->database->AX2CT_AuxInvStatus_I16,this->database->CTHM_ACU2On_B1);
+    setlabelstates(this->ui->ACMM2lbl,this->database->AX3CT_AuxInvStatus_I16,this->database->CTHM_ACU3On_B1);
+    setlabelstates(this->ui->ACMTC2lbl,this->database->AX4CT_AuxInvStatus_I16,this->database->CTHM_ACU4On_B1);
 
     //负载电压
-    setlabelstates(this->ui->LOADVTC1lbl,this->database->AX1CT_AuxInvVoltageValid_B1,(float)this->database->AX1CT_AuxInvLoadVoltage_I16/10,1);
-    setlabelstates(this->ui->LOADVM1lbl,this->database->AX2CT_AuxInvVoltageValid_B1,(float)this->database->AX2CT_AuxInvLoadVoltage_I16/10,1);
-    setlabelstates(this->ui->LOADVM2lbl,this->database->AX3CT_AuxInvVoltageValid_B1,(float)this->database->AX3CT_AuxInvLoadVoltage_I16/10,1);
-    setlabelstates(this->ui->LOADVTC2lbl,this->database->AX4CT_AuxInvVoltageValid_B1,(float)this->database->AX4CT_AuxInvLoadVoltage_I16/10,1);
+    setlabelstates(this->ui->LOADVTC1lbl,this->database->AX1CT_AuxInvVoltageValid_B1,(float)this->database->AX1CT_AuxInvLoadVoltage_I16/10,1,this->database->CTHM_ACU1On_B1);
+    setlabelstates(this->ui->LOADVM1lbl,this->database->AX2CT_AuxInvVoltageValid_B1,(float)this->database->AX2CT_AuxInvLoadVoltage_I16/10,1,this->database->CTHM_ACU2On_B1);
+    setlabelstates(this->ui->LOADVM2lbl,this->database->AX3CT_AuxInvVoltageValid_B1,(float)this->database->AX3CT_AuxInvLoadVoltage_I16/10,1,this->database->CTHM_ACU3On_B1);
+    setlabelstates(this->ui->LOADVTC2lbl,this->database->AX4CT_AuxInvVoltageValid_B1,(float)this->database->AX4CT_AuxInvLoadVoltage_I16/10,1,this->database->CTHM_ACU4On_B1);
 
     //负载电流
-    this->ui->LOADATC1lbl->setText(QString::number(this->database->AX1CT_AuxInvLoadCurrent_I16));
-    this->ui->LOADAM1lbl->setText(QString::number(this->database->AX2CT_AuxInvLoadCurrent_I16));
-    this->ui->LOADAM2lbl->setText(QString::number(this->database->AX3CT_AuxInvLoadCurrent_I16));
-    this->ui->LOADATC2lbl->setText(QString::number(this->database->AX4CT_AuxInvLoadCurrent_I16));
+    setlabelstates(this->ui->LOADATC1lbl,true,(float)this->database->AX1CT_AuxInvLoadCurrent_I16,0,this->database->CTHM_ACU1On_B1);
+    setlabelstates(this->ui->LOADAM1lbl,true,(float)this->database->AX2CT_AuxInvLoadCurrent_I16,0,this->database->CTHM_ACU2On_B1);
+    setlabelstates(this->ui->LOADAM2lbl,true,(float)this->database->AX3CT_AuxInvLoadCurrent_I16,0,this->database->CTHM_ACU3On_B1);
+    setlabelstates(this->ui->LOADATC2lbl,true,(float)this->database->AX4CT_AuxInvLoadCurrent_I16,0,this->database->CTHM_ACU4On_B1);
 
     //直流电压
-    setlabelstates(this->ui->DCVTC1lbl,this->database->AX1CT_DCVoltageValid_B1,(float)this->database->AX1CT_DCVoltage_I16/10,1);
-    setlabelstates(this->ui->DCVM1lbl,this->database->AX2CT_DCVoltageValid_B1,(float)this->database->AX2CT_DCVoltage_I16/10,1);
-    setlabelstates(this->ui->DCVM2lbl,this->database->AX3CT_DCVoltageValid_B1,(float)this->database->AX3CT_DCVoltage_I16/10,1);
-    setlabelstates(this->ui->DCVTC2lbl,this->database->AX4CT_DCVoltageValid_B1,(float)this->database->AX4CT_DCVoltage_I16/10,1);
+    setlabelstates(this->ui->DCVTC1lbl,this->database->AX1CT_DCVoltageValid_B1,(float)this->database->AX1CT_DCVoltage_I16/10,1,this->database->CTHM_ACU1On_B1);
+    setlabelstates(this->ui->DCVM1lbl,this->database->AX2CT_DCVoltageValid_B1,(float)this->database->AX2CT_DCVoltage_I16/10,1,this->database->CTHM_ACU2On_B1);
+    setlabelstates(this->ui->DCVM2lbl,this->database->AX3CT_DCVoltageValid_B1,(float)this->database->AX3CT_DCVoltage_I16/10,1,this->database->CTHM_ACU3On_B1);
+    setlabelstates(this->ui->DCVTC2lbl,this->database->AX4CT_DCVoltageValid_B1,(float)this->database->AX4CT_DCVoltage_I16/10,1,this->database->CTHM_ACU4On_B1);
 
     //直流电流
-    this->ui->DCATC1lbl->setText(QString::number((float)this->database->AX1CT_DCCurrent_I16/10,10,1));
-    this->ui->DCAM1lbl->setText(QString::number((float)this->database->AX2CT_DCCurrent_I16/10,10,1));
-    this->ui->DCAM2lbl->setText(QString::number((float)this->database->AX3CT_DCCurrent_I16/10,10,1));
-    this->ui->DCATC2lbl->setText(QString::number((float)this->database->AX4CT_DCCurrent_I16/10,10,1));
-
+    setlabelstates(this->ui->DCATC1lbl,true,(float)this->database->AX1CT_DCCurrent_I16/10,1,this->database->CTHM_ACU1On_B1);
+    setlabelstates(this->ui->DCAM1lbl,true,(float)this->database->AX2CT_DCCurrent_I16/10,1,this->database->CTHM_ACU2On_B1);
+    setlabelstates(this->ui->DCAM2lbl,true,(float)this->database->AX3CT_DCCurrent_I16/10,1,this->database->CTHM_ACU3On_B1);
+    setlabelstates(this->ui->DCATC2lbl,true,(float)this->database->AX4CT_DCCurrent_I16/10,1,this->database->CTHM_ACU4On_B1);
     //蓄电池温度
-    setlabelstates(this->ui->BCTTC1lbl,this->database->AX1CT_BatteryTempValid_B1,(float)this->database->AX1CT_BatteryTemp_I16/100,2);
-    setlabelstates(this->ui->BCTTC2lbl,this->database->AX4CT_BatteryTempValid_B1,(float)this->database->AX4CT_BatteryTemp_I16/100,2);
+    setlabelstates(this->ui->BCTTC1lbl,this->database->AX1CT_BatteryTempValid_B1,(float)this->database->AX1CT_BatteryTemp_I16/100,2,this->database->CTHM_ACU1On_B1);
+    setlabelstates(this->ui->BCTM1lbl,this->database->AX2CT_BatteryTempValid_B1,(float)this->database->AX2CT_BatteryTemp_I16/100,2,this->database->CTHM_ACU2On_B1);
+    setlabelstates(this->ui->BCTM2lbl,this->database->AX3CT_BatteryTempValid_B1,(float)this->database->AX3CT_BatteryTemp_I16/100,2,this->database->CTHM_ACU3On_B1);
+    setlabelstates(this->ui->BCTTC2lbl,this->database->AX4CT_BatteryTempValid_B1,(float)this->database->AX4CT_BatteryTemp_I16/100,2,this->database->CTHM_ACU4On_B1);
 
     //接触器
     //if(this->database->AX1CT_ACMLineActived_B1)
@@ -60,9 +61,13 @@ void VehicleSIVPage::updatePage()
     }
 
 }
-void VehicleSIVPage::setlabelstates(QLabel* lbl,bool state)
+void VehicleSIVPage::setlabelstates(QLabel* lbl,bool state,bool isonline)
 {
-    if(state)
+    if(!isonline)
+    {
+        lbl->setStyleSheet(LABELWHITE);
+    }
+    else if(state)
     {
         lbl->setStyleSheet(LABELGREEN);
     }else
@@ -70,26 +75,42 @@ void VehicleSIVPage::setlabelstates(QLabel* lbl,bool state)
         lbl->setStyleSheet(LABELGRAY);
     }
 }
-void VehicleSIVPage::setlabelstates(QLabel* lbl,int states)
+void VehicleSIVPage::setlabelstates(QLabel* lbl,int states,bool isonline)
 {
-    if(states >= 20)
+    if(!isonline)
+    {
+        lbl->setStyleSheet(LABELWHITE);
+    }
+    else if(states >= 20)
     {
         lbl->setStyleSheet(LABELRED);
-    }else if(states <= 12  &&  states>=4)
+    }
+    else if(states == 9)
     {
         lbl->setStyleSheet(LABELGREEN);
-    }else
+
+    }else if(states <= 12  &&  states>=4)
     {
         lbl->setStyleSheet(LABELGRAY);
+    }else
+    {
+        lbl->setStyleSheet(LABELWHITE);
     }
 }
-void VehicleSIVPage::setlabelstates(QLabel* lbl,bool valid,float value,int per)
+void VehicleSIVPage::setlabelstates(QLabel* lbl,bool valid,float value,int per,bool isonline)
 {
-    if(!valid)
+    if(!isonline)
     {
         lbl->setText("--");
+        lbl->setStyleSheet(LABELWHITE);
+    }
+    else if(!valid)
+    {
+        lbl->setText("--");
+        lbl->setStyleSheet(LABELBLUE);
     }else
     {
         lbl->setText(QString::number(value,10,per));
+        lbl->setStyleSheet(LABELBLUE);
     }
 }

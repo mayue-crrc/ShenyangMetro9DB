@@ -25,6 +25,30 @@ Header::Header(QWidget *parent) :
     powerresethelpPage->move ((QApplication::desktop()->width() - powerresethelpPage->width())/2,(QApplication::desktop()->height() - powerresethelpPage->height())/2);
     powerresethelpPage->hide();
 
+    vehicleHVACHelpPage = new VehicleHVACHelpPage();
+    vehicleHVACHelpPage->setGeometry(112,80,powerresethelpPage->width(),powerresethelpPage->height());
+    vehicleHVACHelpPage->setWindowFlags(Qt::FramelessWindowHint);
+    vehicleHVACHelpPage->move ((QApplication::desktop()->width() - powerresethelpPage->width())/2,(QApplication::desktop()->height() - powerresethelpPage->height())/2);
+    vehicleHVACHelpPage->hide();
+
+    vehicleBCUHelpPage = new VehicleBCUHelpPage();
+    vehicleBCUHelpPage->setGeometry(112,80,powerresethelpPage->width(),powerresethelpPage->height());
+    vehicleBCUHelpPage->setWindowFlags(Qt::FramelessWindowHint);
+    vehicleBCUHelpPage->move ((QApplication::desktop()->width() - powerresethelpPage->width())/2,(QApplication::desktop()->height() - powerresethelpPage->height())/2);
+    vehicleBCUHelpPage->hide();
+
+    vehicleDCUHelpPage = new VehicleDCUHelpPage();
+    vehicleDCUHelpPage->setGeometry(112,80,powerresethelpPage->width(),powerresethelpPage->height());
+    vehicleDCUHelpPage->setWindowFlags(Qt::FramelessWindowHint);
+    vehicleDCUHelpPage->move ((QApplication::desktop()->width() - powerresethelpPage->width())/2,(QApplication::desktop()->height() - powerresethelpPage->height())/2);
+    vehicleDCUHelpPage->hide();
+
+    vehicleACUHelpPage = new VehicleACUHelpPage();
+    vehicleACUHelpPage->setGeometry(112,80,powerresethelpPage->width(),powerresethelpPage->height());
+    vehicleACUHelpPage->setWindowFlags(Qt::FramelessWindowHint);
+    vehicleACUHelpPage->move ((QApplication::desktop()->width() - powerresethelpPage->width())/2,(QApplication::desktop()->height() - powerresethelpPage->height())/2);
+    vehicleACUHelpPage->hide();
+
     faulthelpPage = new VehicleFaultHelpPage();
     faulthelpPage->setGeometry(112,180,faulthelpPage->width(),faulthelpPage->height());
     faulthelpPage->setWindowFlags(Qt::FramelessWindowHint);
@@ -250,6 +274,54 @@ void Header::on_HelpItemBtn_pressed()
     }else
     {
         this->faulthelpPage->close();
+    }
+
+    if(this->currentPage == uVehicleACPage || this->currentPage == uVehicleACPage2)
+    {
+        if(!this->vehicleHVACHelpPage->isActiveWindow())
+        {
+            this->vehicleHVACHelpPage->close();
+        }
+        this->vehicleHVACHelpPage->show();
+    }else
+    {
+        this->vehicleHVACHelpPage->close();
+    }
+
+    if(this->currentPage == uVehicleEBCUPage || this->currentPage == uVehicleEBCUPage2)
+    {
+        if(!this->vehicleBCUHelpPage->isActiveWindow())
+        {
+            this->vehicleBCUHelpPage->close();
+        }
+        this->vehicleBCUHelpPage->show();
+    }else
+    {
+        this->vehicleBCUHelpPage->close();
+    }
+
+    if(this->currentPage == uVehicleDCUPage)
+    {
+        if(!this->vehicleDCUHelpPage->isActiveWindow())
+        {
+            this->vehicleDCUHelpPage->close();
+        }
+        this->vehicleDCUHelpPage->show();
+    }else
+    {
+        this->vehicleDCUHelpPage->close();
+    }
+
+    if(this->currentPage == uVehicleSIVPage)
+    {
+        if(!this->vehicleACUHelpPage->isActiveWindow())
+        {
+            this->vehicleACUHelpPage->close();
+        }
+        this->vehicleACUHelpPage->show();
+    }else
+    {
+        this->vehicleACUHelpPage->close();
     }
 }
 

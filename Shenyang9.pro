@@ -118,7 +118,11 @@ SOURCES += main.cpp\
     h8.cpp \
     command.c \
     maintaincefaultshowpage.cpp \
-    maintaincefaultquerypage.cpp
+    maintaincefaultquerypage.cpp \
+    vehiclehvachelppage.cpp \
+    vehiclebcuhelppage.cpp \
+    vehicledcuhelppage.cpp \
+    vehicleacuhelppage.cpp
 
 HEADERS  += widget.h \
     mybase.h \
@@ -227,7 +231,11 @@ HEADERS  += widget.h \
     h8.h \
     command.h \
     maintaincefaultshowpage.h \
-    maintaincefaultquerypage.h
+    maintaincefaultquerypage.h \
+    vehiclehvachelppage.h \
+    vehiclebcuhelppage.h \
+    vehicledcuhelppage.h \
+    vehicleacuhelppage.h
 
 FORMS    += widget.ui \
     header.ui \
@@ -280,7 +288,11 @@ FORMS    += widget.ui \
     vehiclefaulthelppage.ui \
     vehicleunactivepage.ui \
     maintaincefaultshowpage.ui \
-    maintaincefaultquerypage.ui
+    maintaincefaultquerypage.ui \
+    vehiclehvachelppage.ui \
+    vehiclebcuhelppage.ui \
+    vehicledcuhelppage.ui \
+    vehicleacuhelppage.ui
 
 RESOURCES += \
     Resource.qrc

@@ -330,7 +330,7 @@ border-radius:10px</string>
     <string notr="true">font: 20px, &quot;微软雅黑&quot;;color: white;background-color:orange;border-top: 2px solid white;border-left: 2px solid white;</string>
    </property>
    <property name="text">
-    <string>断电</string>
+    <string>切除</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

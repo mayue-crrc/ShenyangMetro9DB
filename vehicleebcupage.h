@@ -20,7 +20,9 @@ private:
     Ui::VehicleEBCUPage *ui;
 
     void setlabelstates(QLabel* lbl,bool state);
-    void setlabelstates(QLabel* lbl,bool p1,bool p2);
+    void setlabelstates(QLabel* lbl,bool state,bool isonline);
+    void setlabelstates(QLabel* lbl,bool p1,bool p2,bool isonline);
+    void setonlinestates(QLabel* lbl,bool state);
 
 private slots:
     void on_NextPageBtn_pressed();

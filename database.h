@@ -431,7 +431,8 @@ public:
     // EBCU-CCU 6i0-6i6
     //BCU 1,3,4,6 . 6i6
     unsigned char BR1CT_TcMVBVersion_U8,BR1CT_MMVBVersion_U8,BR2CT_TcMVBVersion_U8,BR2CT_MMVBVersion_U8;
-    bool BR1CT_BCU1Master_B1,BR1CT_BCU2Master_B1,BR2CT_BCU3Master_B1,BR2CT_BCU4Master_B1,BR1CT_24HourNoSelfTest_B1,BR2CT_24HourNoSelfTest_B1;
+    bool BR1CT_BCU1Master_B1,BR1CT_BCU2Master_B1,BR2CT_BCU3Master_B1,BR2CT_BCU4Master_B1,BR1CT_24HourNoSelfTest_B1,BR2CT_24HourNoSelfTest_B1,
+        BCU1_3Online,BCU4_6Online;
     //tc1 bg1
     unsigned short int BR1CT_TC1Bg1LfSgn_U16,
     BR1CT_TC1Bg1BCP1Pressure_U16,BR1CT_TC1Bg1BCP2Pressure_U16,BR1CT_TC1Bg1TotalPressure_U16,
@@ -657,6 +658,7 @@ public:
     //HVAC1
     bool AC1CT_HVACStopped_B1,AC1CT_Ventilation_B1,AC1CT_MannualMode_B1,AC1CT_AutoMode_B1,
         AC1CT_NetCtrlMode_B1,AC1CT_LocalCtrlMode_B1,AC1CT_PreWork_B1,AC1CT_EmVentilation_B1,
+        AC1CT_InsideFire_B1,AC1CT_OutsideFire_B1,
         AC1CT_Unit1Compressor1On_B1,AC1CT_Unit1Compressor2On_B1,AC1CT_Unit1Ventilator1On_B1,
         AC1CT_Unit1Ventilator2On_B1,AC1CT_Unit1Condenser1On_B1,AC1CT_Unit1Condenser2On_B1,
         AC1CT_Unit2Compressor1On_B1,AC1CT_Unit2Compressor2On_B1,AC1CT_Unit2Ventilator1On_B1,
@@ -675,6 +677,7 @@ public:
     //HVAC2
     bool AC2CT_HVACStopped_B1,AC2CT_Ventilation_B1,AC2CT_MannualMode_B1,AC2CT_AutoMode_B1,
         AC2CT_NetCtrlMode_B1,AC2CT_LocalCtrlMode_B1,AC2CT_PreWork_B1,AC2CT_EmVentilation_B1,
+        AC2CT_InsideFire_B1,AC2CT_OutsideFire_B1,
         AC2CT_Unit1Compressor1On_B1,AC2CT_Unit1Compressor2On_B1,AC2CT_Unit1Ventilator1On_B1,
         AC2CT_Unit1Ventilator2On_B1,AC2CT_Unit1Condenser1On_B1,AC2CT_Unit1Condenser2On_B1,
         AC2CT_Unit2Compressor1On_B1,AC2CT_Unit2Compressor2On_B1,AC2CT_Unit2Ventilator1On_B1,
@@ -693,6 +696,7 @@ public:
     //HVAC3
     bool AC3CT_HVACStopped_B1,AC3CT_Ventilation_B1,AC3CT_MannualMode_B1,AC3CT_AutoMode_B1,
         AC3CT_NetCtrlMode_B1,AC3CT_LocalCtrlMode_B1,AC3CT_PreWork_B1,AC3CT_EmVentilation_B1,
+        AC3CT_InsideFire_B1,AC3CT_OutsideFire_B1,
         AC3CT_Unit1Compressor1On_B1,AC3CT_Unit1Compressor2On_B1,AC3CT_Unit1Ventilator1On_B1,
         AC3CT_Unit1Ventilator2On_B1,AC3CT_Unit1Condenser1On_B1,AC3CT_Unit1Condenser2On_B1,
         AC3CT_Unit2Compressor1On_B1,AC3CT_Unit2Compressor2On_B1,AC3CT_Unit2Ventilator1On_B1,
@@ -711,6 +715,7 @@ public:
     //HVAC4
     bool AC4CT_HVACStopped_B1,AC4CT_Ventilation_B1,AC4CT_MannualMode_B1,AC4CT_AutoMode_B1,
         AC4CT_NetCtrlMode_B1,AC4CT_LocalCtrlMode_B1,AC4CT_PreWork_B1,AC4CT_EmVentilation_B1,
+        AC4CT_InsideFire_B1,AC4CT_OutsideFire_B1,
         AC4CT_Unit1Compressor1On_B1,AC4CT_Unit1Compressor2On_B1,AC4CT_Unit1Ventilator1On_B1,
         AC4CT_Unit1Ventilator2On_B1,AC4CT_Unit1Condenser1On_B1,AC4CT_Unit1Condenser2On_B1,
         AC4CT_Unit2Compressor1On_B1,AC4CT_Unit2Compressor2On_B1,AC4CT_Unit2Ventilator1On_B1,
@@ -729,6 +734,7 @@ public:
     //HVAC5
     bool AC5CT_HVACStopped_B1,AC5CT_Ventilation_B1,AC5CT_MannualMode_B1,AC5CT_AutoMode_B1,
         AC5CT_NetCtrlMode_B1,AC5CT_LocalCtrlMode_B1,AC5CT_PreWork_B1,AC5CT_EmVentilation_B1,
+        AC5CT_InsideFire_B1,AC5CT_OutsideFire_B1,
         AC5CT_Unit1Compressor1On_B1,AC5CT_Unit1Compressor2On_B1,AC5CT_Unit1Ventilator1On_B1,
         AC5CT_Unit1Ventilator2On_B1,AC5CT_Unit1Condenser1On_B1,AC5CT_Unit1Condenser2On_B1,
         AC5CT_Unit2Compressor1On_B1,AC5CT_Unit2Compressor2On_B1,AC5CT_Unit2Ventilator1On_B1,
@@ -747,6 +753,7 @@ public:
     //HVAC6
     bool AC6CT_HVACStopped_B1,AC6CT_Ventilation_B1,AC6CT_MannualMode_B1,AC6CT_AutoMode_B1,
         AC6CT_NetCtrlMode_B1,AC6CT_LocalCtrlMode_B1,AC6CT_PreWork_B1,AC6CT_EmVentilation_B1,
+        AC6CT_InsideFire_B1,AC6CT_OutsideFire_B1,
         AC6CT_Unit1Compressor1On_B1,AC6CT_Unit1Compressor2On_B1,AC6CT_Unit1Ventilator1On_B1,
         AC6CT_Unit1Ventilator2On_B1,AC6CT_Unit1Condenser1On_B1,AC6CT_Unit1Condenser2On_B1,
         AC6CT_Unit2Compressor1On_B1,AC6CT_Unit2Compressor2On_B1,AC6CT_Unit2Ventilator1On_B1,

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicleacpage2.ui'
 **
-** Created: Thu Apr 19 11:15:44 2018
+** Created: Tue Jun 5 15:54:04 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -125,14 +125,20 @@ public:
         TempM1lbl = new QLabel(VehicleACPage2);
         TempM1lbl->setObjectName(QString::fromUtf8("TempM1lbl"));
         TempM1lbl->setGeometry(QRect(430, 160, 71, 31));
+        TempM1lbl->setStyleSheet(QString::fromUtf8("background-color:blue;\n"
+""));
         TempM1lbl->setAlignment(Qt::AlignCenter);
         TempMP1lbl = new QLabel(VehicleACPage2);
         TempMP1lbl->setObjectName(QString::fromUtf8("TempMP1lbl"));
         TempMP1lbl->setGeometry(QRect(310, 160, 71, 31));
+        TempMP1lbl->setStyleSheet(QString::fromUtf8("background-color:blue;\n"
+""));
         TempMP1lbl->setAlignment(Qt::AlignCenter);
         TempM2lbl = new QLabel(VehicleACPage2);
         TempM2lbl->setObjectName(QString::fromUtf8("TempM2lbl"));
         TempM2lbl->setGeometry(QRect(550, 160, 71, 31));
+        TempM2lbl->setStyleSheet(QString::fromUtf8("background-color:blue;\n"
+""));
         TempM2lbl->setAlignment(Qt::AlignCenter);
         ACModeTC1lbl = new QLabel(VehicleACPage2);
         ACModeTC1lbl->setObjectName(QString::fromUtf8("ACModeTC1lbl"));
@@ -164,6 +170,8 @@ public:
         TempMP2lbl = new QLabel(VehicleACPage2);
         TempMP2lbl->setObjectName(QString::fromUtf8("TempMP2lbl"));
         TempMP2lbl->setGeometry(QRect(670, 160, 71, 31));
+        TempMP2lbl->setStyleSheet(QString::fromUtf8("background-color:blue;\n"
+""));
         TempMP2lbl->setAlignment(Qt::AlignCenter);
         lbl1_3 = new QLabel(VehicleACPage2);
         lbl1_3->setObjectName(QString::fromUtf8("lbl1_3"));
@@ -193,6 +201,8 @@ public:
         TempTC1lbl = new QLabel(VehicleACPage2);
         TempTC1lbl->setObjectName(QString::fromUtf8("TempTC1lbl"));
         TempTC1lbl->setGeometry(QRect(190, 160, 71, 31));
+        TempTC1lbl->setStyleSheet(QString::fromUtf8("background-color:blue;\n"
+""));
         TempTC1lbl->setAlignment(Qt::AlignCenter);
         ACReduceM1lbl = new QLabel(VehicleACPage2);
         ACReduceM1lbl->setObjectName(QString::fromUtf8("ACReduceM1lbl"));
@@ -211,6 +221,8 @@ public:
         TempTC2lbl = new QLabel(VehicleACPage2);
         TempTC2lbl->setObjectName(QString::fromUtf8("TempTC2lbl"));
         TempTC2lbl->setGeometry(QRect(790, 160, 71, 31));
+        TempTC2lbl->setStyleSheet(QString::fromUtf8("background-color:blue;\n"
+""));
         TempTC2lbl->setAlignment(Qt::AlignCenter);
         ACControlMP2lbl = new QLabel(VehicleACPage2);
         ACControlMP2lbl->setObjectName(QString::fromUtf8("ACControlMP2lbl"));
@@ -264,26 +276,38 @@ public:
         SettingTempM2lbl = new QLabel(VehicleACPage2);
         SettingTempM2lbl->setObjectName(QString::fromUtf8("SettingTempM2lbl"));
         SettingTempM2lbl->setGeometry(QRect(550, 215, 71, 31));
+        SettingTempM2lbl->setStyleSheet(QString::fromUtf8("background-color:blue;\n"
+""));
         SettingTempM2lbl->setAlignment(Qt::AlignCenter);
         SettingTempTC2lbl = new QLabel(VehicleACPage2);
         SettingTempTC2lbl->setObjectName(QString::fromUtf8("SettingTempTC2lbl"));
         SettingTempTC2lbl->setGeometry(QRect(790, 215, 71, 31));
+        SettingTempTC2lbl->setStyleSheet(QString::fromUtf8("background-color:blue;\n"
+""));
         SettingTempTC2lbl->setAlignment(Qt::AlignCenter);
         SettingTempMP1lbl = new QLabel(VehicleACPage2);
         SettingTempMP1lbl->setObjectName(QString::fromUtf8("SettingTempMP1lbl"));
         SettingTempMP1lbl->setGeometry(QRect(310, 215, 71, 31));
+        SettingTempMP1lbl->setStyleSheet(QString::fromUtf8("background-color:blue;\n"
+""));
         SettingTempMP1lbl->setAlignment(Qt::AlignCenter);
         SettingTempMP2lbl = new QLabel(VehicleACPage2);
         SettingTempMP2lbl->setObjectName(QString::fromUtf8("SettingTempMP2lbl"));
         SettingTempMP2lbl->setGeometry(QRect(670, 215, 71, 31));
+        SettingTempMP2lbl->setStyleSheet(QString::fromUtf8("background-color:blue;\n"
+""));
         SettingTempMP2lbl->setAlignment(Qt::AlignCenter);
         SettingTempM1lbl = new QLabel(VehicleACPage2);
         SettingTempM1lbl->setObjectName(QString::fromUtf8("SettingTempM1lbl"));
         SettingTempM1lbl->setGeometry(QRect(430, 215, 71, 31));
+        SettingTempM1lbl->setStyleSheet(QString::fromUtf8("background-color:blue;\n"
+""));
         SettingTempM1lbl->setAlignment(Qt::AlignCenter);
         SettingTempTC1lbl = new QLabel(VehicleACPage2);
         SettingTempTC1lbl->setObjectName(QString::fromUtf8("SettingTempTC1lbl"));
         SettingTempTC1lbl->setGeometry(QRect(190, 215, 71, 31));
+        SettingTempTC1lbl->setStyleSheet(QString::fromUtf8("background-color:blue;\n"
+""));
         SettingTempTC1lbl->setAlignment(Qt::AlignCenter);
         lbl1_15 = new QLabel(VehicleACPage2);
         lbl1_15->setObjectName(QString::fromUtf8("lbl1_15"));

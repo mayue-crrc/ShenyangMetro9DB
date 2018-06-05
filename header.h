@@ -9,6 +9,10 @@
 #include "vehiclepowerresethelppage.h"
 #include "vehiclefaulthelppage.h"
 #include "qhash.h"
+#include "vehiclehvachelppage.h"
+#include "vehiclebcuhelppage.h"
+#include "vehicledcuhelppage.h"
+#include "vehicleacuhelppage.h"
 namespace Ui {
     class Header;
 }
@@ -31,6 +35,10 @@ private:
     VehicleCutOffHelpPage* cutoffhelpPage;
     VehiclePowerResetHelpPage* powerresethelpPage;
     VehicleFaultHelpPage* faulthelpPage;
+    VehicleHVACHelpPage* vehicleHVACHelpPage;
+    VehicleBCUHelpPage* vehicleBCUHelpPage;
+    VehicleDCUHelpPage* vehicleDCUHelpPage;
+    VehicleACUHelpPage* vehicleACUHelpPage;
     CrrcFault* m_crrcFault;
     QHash<int, QString> m_StationIDHash;
 private slots:

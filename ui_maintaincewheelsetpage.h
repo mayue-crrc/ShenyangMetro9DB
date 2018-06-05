@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincewheelsetpage.ui'
 **
-** Created: Thu Apr 19 11:15:44 2018
+** Created: Tue Jun 5 14:08:19 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -57,6 +57,8 @@ public:
     QLabel *TC2Wheelinputlbl;
     QPushButton *confirmBtn;
     QPushButton *ReSeleclBtn;
+    QLabel *ReWheelinputlbl;
+    QLabel *ReWheellbl;
 
     void setupUi(QWidget *MaintainceWheelsetPage)
     {
@@ -97,7 +99,7 @@ public:
 ""));
         Trainlbl = new QLabel(MaintainceWheelsetPage);
         Trainlbl->setObjectName(QString::fromUtf8("Trainlbl"));
-        Trainlbl->setGeometry(QRect(40, 20, 131, 61));
+        Trainlbl->setGeometry(QRect(35, 20, 131, 61));
         Trainlbl->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "border:2px solid white;\n"
 "color:white;\n"
@@ -106,7 +108,7 @@ public:
         Trainlbl->setAlignment(Qt::AlignCenter);
         lbl1 = new QLabel(MaintainceWheelsetPage);
         lbl1->setObjectName(QString::fromUtf8("lbl1"));
-        lbl1->setGeometry(QRect(170, 20, 115, 61));
+        lbl1->setGeometry(QRect(165, 20, 115, 61));
         lbl1->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "border:2px solid white;\n"
 "color:white;\n"
@@ -115,7 +117,7 @@ public:
         lbl1->setAlignment(Qt::AlignCenter);
         lbl2 = new QLabel(MaintainceWheelsetPage);
         lbl2->setObjectName(QString::fromUtf8("lbl2"));
-        lbl2->setGeometry(QRect(285, 20, 115, 61));
+        lbl2->setGeometry(QRect(280, 20, 115, 61));
         lbl2->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "border:2px solid white;\n"
 "color:white;\n"
@@ -124,7 +126,7 @@ public:
         lbl2->setAlignment(Qt::AlignCenter);
         lbl3 = new QLabel(MaintainceWheelsetPage);
         lbl3->setObjectName(QString::fromUtf8("lbl3"));
-        lbl3->setGeometry(QRect(400, 20, 115, 61));
+        lbl3->setGeometry(QRect(395, 20, 115, 61));
         lbl3->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "border:2px solid white;\n"
 "color:white;\n"
@@ -133,7 +135,7 @@ public:
         lbl3->setAlignment(Qt::AlignCenter);
         lbl4 = new QLabel(MaintainceWheelsetPage);
         lbl4->setObjectName(QString::fromUtf8("lbl4"));
-        lbl4->setGeometry(QRect(515, 20, 115, 61));
+        lbl4->setGeometry(QRect(510, 20, 115, 61));
         lbl4->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "border:2px solid white;\n"
 "color:white;\n"
@@ -142,7 +144,7 @@ public:
         lbl4->setAlignment(Qt::AlignCenter);
         lbl5 = new QLabel(MaintainceWheelsetPage);
         lbl5->setObjectName(QString::fromUtf8("lbl5"));
-        lbl5->setGeometry(QRect(630, 20, 115, 61));
+        lbl5->setGeometry(QRect(625, 20, 115, 61));
         lbl5->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "border:2px solid white;\n"
 "color:white;\n"
@@ -151,7 +153,7 @@ public:
         lbl5->setAlignment(Qt::AlignCenter);
         lbl6 = new QLabel(MaintainceWheelsetPage);
         lbl6->setObjectName(QString::fromUtf8("lbl6"));
-        lbl6->setGeometry(QRect(745, 20, 115, 61));
+        lbl6->setGeometry(QRect(740, 20, 115, 61));
         lbl6->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "border:2px solid white;\n"
 "color:white;\n"
@@ -160,37 +162,37 @@ public:
         lbl6->setAlignment(Qt::AlignCenter);
         TC1SelectBtn = new QPushButton(MaintainceWheelsetPage);
         TC1SelectBtn->setObjectName(QString::fromUtf8("TC1SelectBtn"));
-        TC1SelectBtn->setGeometry(QRect(175, 30, 40, 40));
+        TC1SelectBtn->setGeometry(QRect(170, 30, 40, 40));
         TC1SelectBtn->setFocusPolicy(Qt::NoFocus);
         TC1SelectBtn->setStyleSheet(QString::fromUtf8(""));
         TC2SelectBtn = new QPushButton(MaintainceWheelsetPage);
         TC2SelectBtn->setObjectName(QString::fromUtf8("TC2SelectBtn"));
-        TC2SelectBtn->setGeometry(QRect(750, 30, 40, 40));
+        TC2SelectBtn->setGeometry(QRect(745, 30, 40, 40));
         TC2SelectBtn->setFocusPolicy(Qt::NoFocus);
         TC2SelectBtn->setStyleSheet(QString::fromUtf8("font:18px;"));
         MP1SelectBtn = new QPushButton(MaintainceWheelsetPage);
         MP1SelectBtn->setObjectName(QString::fromUtf8("MP1SelectBtn"));
-        MP1SelectBtn->setGeometry(QRect(290, 30, 40, 40));
+        MP1SelectBtn->setGeometry(QRect(285, 30, 40, 40));
         MP1SelectBtn->setFocusPolicy(Qt::NoFocus);
         MP1SelectBtn->setStyleSheet(QString::fromUtf8("font:18px;"));
         M1SelectBtn = new QPushButton(MaintainceWheelsetPage);
         M1SelectBtn->setObjectName(QString::fromUtf8("M1SelectBtn"));
-        M1SelectBtn->setGeometry(QRect(405, 30, 40, 40));
+        M1SelectBtn->setGeometry(QRect(400, 30, 40, 40));
         M1SelectBtn->setFocusPolicy(Qt::NoFocus);
         M1SelectBtn->setStyleSheet(QString::fromUtf8("font:18px;"));
         M2SelectBtn = new QPushButton(MaintainceWheelsetPage);
         M2SelectBtn->setObjectName(QString::fromUtf8("M2SelectBtn"));
-        M2SelectBtn->setGeometry(QRect(520, 30, 40, 40));
+        M2SelectBtn->setGeometry(QRect(515, 30, 40, 40));
         M2SelectBtn->setFocusPolicy(Qt::NoFocus);
         M2SelectBtn->setStyleSheet(QString::fromUtf8("font:18px;"));
         MP2SelectBtn = new QPushButton(MaintainceWheelsetPage);
         MP2SelectBtn->setObjectName(QString::fromUtf8("MP2SelectBtn"));
-        MP2SelectBtn->setGeometry(QRect(635, 30, 40, 40));
+        MP2SelectBtn->setGeometry(QRect(630, 30, 40, 40));
         MP2SelectBtn->setFocusPolicy(Qt::NoFocus);
         MP2SelectBtn->setStyleSheet(QString::fromUtf8("font:18px;"));
         ALLSelectBtn = new QPushButton(MaintainceWheelsetPage);
         ALLSelectBtn->setObjectName(QString::fromUtf8("ALLSelectBtn"));
-        ALLSelectBtn->setGeometry(QRect(890, 30, 91, 41));
+        ALLSelectBtn->setGeometry(QRect(100, 150, 101, 41));
         ALLSelectBtn->setFocusPolicy(Qt::NoFocus);
         ALLSelectBtn->setStyleSheet(QString::fromUtf8("font:18px;"));
         lbl7 = new QLabel(MaintainceWheelsetPage);
@@ -223,7 +225,7 @@ public:
         lbl7_2->setAlignment(Qt::AlignCenter);
         TC1Wheellbl = new QLabel(MaintainceWheelsetPage);
         TC1Wheellbl->setObjectName(QString::fromUtf8("TC1Wheellbl"));
-        TC1Wheellbl->setGeometry(QRect(220, 30, 61, 20));
+        TC1Wheellbl->setGeometry(QRect(215, 30, 61, 20));
         TC1Wheellbl->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "color:white;\n"
 "font:16px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
@@ -231,7 +233,7 @@ public:
         TC1Wheellbl->setAlignment(Qt::AlignCenter);
         TC2Wheellbl = new QLabel(MaintainceWheelsetPage);
         TC2Wheellbl->setObjectName(QString::fromUtf8("TC2Wheellbl"));
-        TC2Wheellbl->setGeometry(QRect(790, 30, 61, 20));
+        TC2Wheellbl->setGeometry(QRect(785, 30, 61, 20));
         TC2Wheellbl->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "color:white;\n"
 "font:16px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
@@ -239,7 +241,7 @@ public:
         TC2Wheellbl->setAlignment(Qt::AlignCenter);
         TC1Wheelinputlbl = new QLabel(MaintainceWheelsetPage);
         TC1Wheelinputlbl->setObjectName(QString::fromUtf8("TC1Wheelinputlbl"));
-        TC1Wheelinputlbl->setGeometry(QRect(220, 50, 61, 21));
+        TC1Wheelinputlbl->setGeometry(QRect(215, 50, 61, 21));
         TC1Wheelinputlbl->setStyleSheet(QString::fromUtf8("background-color: blue;\n"
 "color:white;\n"
 "font:16px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
@@ -247,7 +249,7 @@ public:
         TC1Wheelinputlbl->setAlignment(Qt::AlignCenter);
         MP1Wheelinputlbl = new QLabel(MaintainceWheelsetPage);
         MP1Wheelinputlbl->setObjectName(QString::fromUtf8("MP1Wheelinputlbl"));
-        MP1Wheelinputlbl->setGeometry(QRect(335, 50, 61, 21));
+        MP1Wheelinputlbl->setGeometry(QRect(330, 50, 61, 21));
         MP1Wheelinputlbl->setStyleSheet(QString::fromUtf8("background-color: blue;\n"
 "color:white;\n"
 "font:16px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
@@ -255,7 +257,7 @@ public:
         MP1Wheelinputlbl->setAlignment(Qt::AlignCenter);
         MP1Wheellbl = new QLabel(MaintainceWheelsetPage);
         MP1Wheellbl->setObjectName(QString::fromUtf8("MP1Wheellbl"));
-        MP1Wheellbl->setGeometry(QRect(335, 30, 61, 20));
+        MP1Wheellbl->setGeometry(QRect(330, 30, 61, 20));
         MP1Wheellbl->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "color:white;\n"
 "font:16px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
@@ -263,7 +265,7 @@ public:
         MP1Wheellbl->setAlignment(Qt::AlignCenter);
         M1Wheellbl = new QLabel(MaintainceWheelsetPage);
         M1Wheellbl->setObjectName(QString::fromUtf8("M1Wheellbl"));
-        M1Wheellbl->setGeometry(QRect(450, 30, 61, 20));
+        M1Wheellbl->setGeometry(QRect(445, 30, 61, 20));
         M1Wheellbl->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "color:white;\n"
 "font:16px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
@@ -271,7 +273,7 @@ public:
         M1Wheellbl->setAlignment(Qt::AlignCenter);
         M1Wheelinputlbl = new QLabel(MaintainceWheelsetPage);
         M1Wheelinputlbl->setObjectName(QString::fromUtf8("M1Wheelinputlbl"));
-        M1Wheelinputlbl->setGeometry(QRect(450, 50, 61, 21));
+        M1Wheelinputlbl->setGeometry(QRect(445, 50, 61, 21));
         M1Wheelinputlbl->setStyleSheet(QString::fromUtf8("background-color: blue;\n"
 "color:white;\n"
 "font:16px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
@@ -279,7 +281,7 @@ public:
         M1Wheelinputlbl->setAlignment(Qt::AlignCenter);
         M2Wheellbl = new QLabel(MaintainceWheelsetPage);
         M2Wheellbl->setObjectName(QString::fromUtf8("M2Wheellbl"));
-        M2Wheellbl->setGeometry(QRect(565, 30, 61, 20));
+        M2Wheellbl->setGeometry(QRect(560, 30, 61, 20));
         M2Wheellbl->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "color:white;\n"
 "font:16px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
@@ -287,7 +289,7 @@ public:
         M2Wheellbl->setAlignment(Qt::AlignCenter);
         M2Wheelinputlbl = new QLabel(MaintainceWheelsetPage);
         M2Wheelinputlbl->setObjectName(QString::fromUtf8("M2Wheelinputlbl"));
-        M2Wheelinputlbl->setGeometry(QRect(565, 50, 61, 21));
+        M2Wheelinputlbl->setGeometry(QRect(560, 50, 61, 21));
         M2Wheelinputlbl->setStyleSheet(QString::fromUtf8("background-color: blue;\n"
 "color:white;\n"
 "font:16px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
@@ -295,7 +297,7 @@ public:
         M2Wheelinputlbl->setAlignment(Qt::AlignCenter);
         MP2Wheellbl = new QLabel(MaintainceWheelsetPage);
         MP2Wheellbl->setObjectName(QString::fromUtf8("MP2Wheellbl"));
-        MP2Wheellbl->setGeometry(QRect(680, 30, 61, 20));
+        MP2Wheellbl->setGeometry(QRect(675, 30, 61, 20));
         MP2Wheellbl->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "color:white;\n"
 "font:16px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
@@ -303,7 +305,7 @@ public:
         MP2Wheellbl->setAlignment(Qt::AlignCenter);
         MP2Wheelinputlbl = new QLabel(MaintainceWheelsetPage);
         MP2Wheelinputlbl->setObjectName(QString::fromUtf8("MP2Wheelinputlbl"));
-        MP2Wheelinputlbl->setGeometry(QRect(680, 50, 61, 21));
+        MP2Wheelinputlbl->setGeometry(QRect(675, 50, 61, 21));
         MP2Wheelinputlbl->setStyleSheet(QString::fromUtf8("background-color: blue;\n"
 "color:white;\n"
 "font:16px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
@@ -311,7 +313,7 @@ public:
         MP2Wheelinputlbl->setAlignment(Qt::AlignCenter);
         TC2Wheelinputlbl = new QLabel(MaintainceWheelsetPage);
         TC2Wheelinputlbl->setObjectName(QString::fromUtf8("TC2Wheelinputlbl"));
-        TC2Wheelinputlbl->setGeometry(QRect(795, 50, 61, 21));
+        TC2Wheelinputlbl->setGeometry(QRect(790, 50, 61, 21));
         TC2Wheelinputlbl->setStyleSheet(QString::fromUtf8("background-color: blue;\n"
 "color:white;\n"
 "font:16px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
@@ -324,10 +326,27 @@ public:
         confirmBtn->setStyleSheet(QString::fromUtf8(""));
         ReSeleclBtn = new QPushButton(MaintainceWheelsetPage);
         ReSeleclBtn->setObjectName(QString::fromUtf8("ReSeleclBtn"));
-        ReSeleclBtn->setGeometry(QRect(80, 140, 121, 51));
+        ReSeleclBtn->setGeometry(QRect(880, 25, 71, 51));
         ReSeleclBtn->setFocusPolicy(Qt::NoFocus);
         ReSeleclBtn->setStyleSheet(QString::fromUtf8("font:18px;"));
+        ReWheelinputlbl = new QLabel(MaintainceWheelsetPage);
+        ReWheelinputlbl->setObjectName(QString::fromUtf8("ReWheelinputlbl"));
+        ReWheelinputlbl->setGeometry(QRect(955, 50, 61, 21));
+        ReWheelinputlbl->setStyleSheet(QString::fromUtf8("background-color: blue;\n"
+"color:white;\n"
+"font:16px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"border:2px solid white"));
+        ReWheelinputlbl->setAlignment(Qt::AlignCenter);
+        ReWheellbl = new QLabel(MaintainceWheelsetPage);
+        ReWheellbl->setObjectName(QString::fromUtf8("ReWheellbl"));
+        ReWheellbl->setGeometry(QRect(955, 30, 61, 20));
+        ReWheellbl->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
+"color:white;\n"
+"font:16px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+""));
+        ReWheellbl->setAlignment(Qt::AlignCenter);
         label->raise();
+        returnBtn->raise();
         Trainlbl->raise();
         lbl1->raise();
         lbl2->raise();
@@ -359,7 +378,8 @@ public:
         TC2Wheelinputlbl->raise();
         confirmBtn->raise();
         ReSeleclBtn->raise();
-        returnBtn->raise();
+        ReWheelinputlbl->raise();
+        ReWheellbl->raise();
 
         retranslateUi(MaintainceWheelsetPage);
 
@@ -401,7 +421,10 @@ public:
         MP2Wheelinputlbl->setText(QApplication::translate("MaintainceWheelsetPage", "--", 0, QApplication::UnicodeUTF8));
         TC2Wheelinputlbl->setText(QApplication::translate("MaintainceWheelsetPage", "--", 0, QApplication::UnicodeUTF8));
         confirmBtn->setText(QApplication::translate("MaintainceWheelsetPage", "\347\241\256\345\256\232", 0, QApplication::UnicodeUTF8));
-        ReSeleclBtn->setText(QApplication::translate("MaintainceWheelsetPage", "\345\217\202\350\200\203\345\200\274\350\256\276\345\256\232", 0, QApplication::UnicodeUTF8));
+        ReSeleclBtn->setText(QApplication::translate("MaintainceWheelsetPage", "\345\217\202\350\200\203\345\200\274\n"
+"\350\256\276\345\256\232", 0, QApplication::UnicodeUTF8));
+        ReWheelinputlbl->setText(QApplication::translate("MaintainceWheelsetPage", "--", 0, QApplication::UnicodeUTF8));
+        ReWheellbl->setText(QApplication::translate("MaintainceWheelsetPage", "840", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

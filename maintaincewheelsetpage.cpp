@@ -66,6 +66,7 @@ void MaintainceWheelsetPage::updatePage()
     this->ui->MP2Wheellbl->setText(QString::number(this->database->CTHM_WheelDig5FedBk_U8+770));
     this->ui->M1Wheellbl->setText(QString::number(this->database->CTHM_WheelDig3FedBk_U8+770));
     this->ui->M2Wheellbl->setText(QString::number(this->database->CTHM_WheelDig4FedBk_U8+770));
+    this->ui->ReWheellbl->setText(QString::number(this->database->CTHM_WheelDigReFedBk_U8+770));
 
 }
 
@@ -206,6 +207,8 @@ void MaintainceWheelsetPage::on_confirmBtn_pressed()
             resetSaveFlg();
             this->database->HMiCT_WheelDiaRe_U8 = tmp_value-770;
             this->database->HMiCT_SAVEWheelDigRe_B1 = true;
+            this->ui->ReWheelinputlbl->setText(this->ui->WheelVallbl->text());
+
             logger()->info("修改参考轮径: "+QString::number(tmp_value));
 
             break;

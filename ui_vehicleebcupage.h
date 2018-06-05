@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicleebcupage.ui'
 **
-** Created: Thu Apr 19 11:15:44 2018
+** Created: Tue Jun 5 19:29:42 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -624,12 +624,12 @@ public:
         SMP1_1lbl->setText(QApplication::translate("VehicleEBCUPage", "S", 0, QApplication::UnicodeUTF8));
         SM2_2lbl->setText(QApplication::translate("VehicleEBCUPage", "S", 0, QApplication::UnicodeUTF8));
         SM1_1lbl->setText(QApplication::translate("VehicleEBCUPage", "S", 0, QApplication::UnicodeUTF8));
-        HoldBRKM1lbl_1->setText(QString());
-        HoldBRKMP2lbl_2->setText(QString());
-        HoldBRKM2lbl_2->setText(QString());
-        HoldBRKTC1lbl_1->setText(QString());
-        HoldBRKMP1lbl_1->setText(QString());
-        HoldBRKTC2lbl_2->setText(QString());
+        HoldBRKM1lbl_1->setText(QApplication::translate("VehicleEBCUPage", "1", 0, QApplication::UnicodeUTF8));
+        HoldBRKMP2lbl_2->setText(QApplication::translate("VehicleEBCUPage", "2", 0, QApplication::UnicodeUTF8));
+        HoldBRKM2lbl_2->setText(QApplication::translate("VehicleEBCUPage", "2", 0, QApplication::UnicodeUTF8));
+        HoldBRKTC1lbl_1->setText(QApplication::translate("VehicleEBCUPage", "1", 0, QApplication::UnicodeUTF8));
+        HoldBRKMP1lbl_1->setText(QApplication::translate("VehicleEBCUPage", "1", 0, QApplication::UnicodeUTF8));
+        HoldBRKTC2lbl_2->setText(QApplication::translate("VehicleEBCUPage", "2", 0, QApplication::UnicodeUTF8));
         lbl1_6->setText(QApplication::translate("VehicleEBCUPage", "\344\277\235\346\214\201\345\210\266\345\212\250", 0, QApplication::UnicodeUTF8));
         lbl1_7->setText(QString());
         lbl1_8->setText(QString());
@@ -654,12 +654,12 @@ public:
         AllBRKBypassM2lbl->setText(QString());
         AllBRKBypassTC1lbl->setText(QString());
         AllBRKBypassTC2lbl->setText(QString());
-        HoldBRKMP2lbl_1->setText(QString());
-        HoldBRKM1lbl_2->setText(QString());
-        HoldBRKTC2lbl_1->setText(QString());
-        HoldBRKMP1lbl_2->setText(QString());
-        HoldBRKTC1lbl_2->setText(QString());
-        HoldBRKM2lbl_1->setText(QString());
+        HoldBRKMP2lbl_1->setText(QApplication::translate("VehicleEBCUPage", "1", 0, QApplication::UnicodeUTF8));
+        HoldBRKM1lbl_2->setText(QApplication::translate("VehicleEBCUPage", "2", 0, QApplication::UnicodeUTF8));
+        HoldBRKTC2lbl_1->setText(QApplication::translate("VehicleEBCUPage", "1", 0, QApplication::UnicodeUTF8));
+        HoldBRKMP1lbl_2->setText(QApplication::translate("VehicleEBCUPage", "2", 0, QApplication::UnicodeUTF8));
+        HoldBRKTC1lbl_2->setText(QApplication::translate("VehicleEBCUPage", "2", 0, QApplication::UnicodeUTF8));
+        HoldBRKM2lbl_1->setText(QApplication::translate("VehicleEBCUPage", "1", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

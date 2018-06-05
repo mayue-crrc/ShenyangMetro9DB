@@ -79,6 +79,10 @@ border-top: 2px solid white;
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue;
+</string>
+   </property>
    <property name="text">
     <string>23</string>
    </property>
@@ -95,6 +99,10 @@ border-top: 2px solid white;
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue;
+</string>
+   </property>
    <property name="text">
     <string>23</string>
    </property>
@@ -110,6 +118,10 @@ border-top: 2px solid white;
      <width>71</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue;
+</string>
    </property>
    <property name="text">
     <string>23</string>
@@ -232,6 +244,10 @@ border-top: 2px solid white;
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue;
+</string>
+   </property>
    <property name="text">
     <string>23</string>
    </property>
@@ -343,6 +359,10 @@ border-top: 2px solid white;
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue;
+</string>
+   </property>
    <property name="text">
     <string>23</string>
    </property>
@@ -412,6 +432,10 @@ border-top: 2px solid white;
      <width>71</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue;
+</string>
    </property>
    <property name="text">
     <string>23</string>
@@ -607,6 +631,10 @@ border-radius:8px;</string>
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue;
+</string>
+   </property>
    <property name="text">
     <string>23</string>
    </property>
@@ -622,6 +650,10 @@ border-radius:8px;</string>
      <width>71</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue;
+</string>
    </property>
    <property name="text">
     <string>23</string>
@@ -639,6 +671,10 @@ border-radius:8px;</string>
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue;
+</string>
+   </property>
    <property name="text">
     <string>23</string>
    </property>
@@ -654,6 +690,10 @@ border-radius:8px;</string>
      <width>71</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue;
+</string>
    </property>
    <property name="text">
     <string>23</string>
@@ -671,6 +711,10 @@ border-radius:8px;</string>
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue;
+</string>
+   </property>
    <property name="text">
     <string>23</string>
    </property>
@@ -686,6 +730,10 @@ border-radius:8px;</string>
      <width>71</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue;
+</string>
    </property>
    <property name="text">
     <string>23</string>

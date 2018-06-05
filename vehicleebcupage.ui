@@ -904,7 +904,7 @@ QPushButton
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>1</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -920,7 +920,7 @@ QPushButton
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>2</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -936,7 +936,7 @@ QPushButton
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>2</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -952,7 +952,7 @@ QPushButton
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>1</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -968,7 +968,7 @@ QPushButton
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>1</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -984,7 +984,7 @@ QPushButton
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>2</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -1320,7 +1320,7 @@ border-radius:8px;</string>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>1</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -1336,7 +1336,7 @@ border-radius:8px;</string>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>2</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -1352,7 +1352,7 @@ border-radius:8px;</string>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>1</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -1368,7 +1368,7 @@ border-radius:8px;</string>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>2</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -1384,7 +1384,7 @@ border-radius:8px;</string>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>2</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -1400,7 +1400,7 @@ border-radius:8px;</string>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>1</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

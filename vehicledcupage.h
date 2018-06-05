@@ -19,9 +19,9 @@ public:
 
 private:
     Ui::VehicleDCUPage *ui;
-    void setlabelstates(QLabel* lbl,bool state);
-    void setlabelstates(QLabel* lbl,int states);
-    void setlabelstates(QLabel* lbl,bool valid,float value,int per);
+    void setlabelstates(QLabel* lbl,bool state,bool isonline);
+    void setlabelstates(QLabel* lbl,int states,bool isonline);
+    void setlabelstates(QLabel* lbl,bool valid,float value,int per,bool isonline);
 };
 
 #endif // VEHICLEDCUPAGE_H

@@ -54,6 +54,7 @@
 #define LABELRED "	font: 20px, \"微软雅黑\";color:black;background-color:red;"
 #define LABELORANGE "	font: 20px, \"微软雅黑\";color:white;background-color:orange;"
 #define LABELWHITE "	font: 20px, \"微软雅黑\";color:black;background-color:white;"
+#define LABELBLACK "	font: 20px, \"微软雅黑\";color:white;background-color:black;"
 
 enum pagePosition
 {

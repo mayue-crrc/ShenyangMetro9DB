@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclesivpage.ui'
 **
-** Created: Thu Apr 19 11:15:44 2018
+** Created: Tue Jun 5 20:23:57 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -61,6 +61,8 @@ public:
     QLabel *ACMTC2lbl;
     QLabel *lbl1_17;
     QLabel *ACMKMlbl;
+    QLabel *BCTM1lbl;
+    QLabel *BCTM2lbl;
 
     void setupUi(QWidget *VehicleSIVPage)
     {
@@ -251,11 +253,19 @@ public:
         ACMKMlbl->setGeometry(QRect(490, 95, 61, 31));
         ACMKMlbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/ACMKMclose.bmp);"));
         ACMKMlbl->setAlignment(Qt::AlignCenter);
+        BCTM1lbl = new QLabel(VehicleSIVPage);
+        BCTM1lbl->setObjectName(QString::fromUtf8("BCTM1lbl"));
+        BCTM1lbl->setGeometry(QRect(410, 430, 61, 31));
+        BCTM1lbl->setAlignment(Qt::AlignCenter);
+        BCTM2lbl = new QLabel(VehicleSIVPage);
+        BCTM2lbl->setObjectName(QString::fromUtf8("BCTM2lbl"));
+        BCTM2lbl->setGeometry(QRect(560, 430, 61, 31));
+        BCTM2lbl->setAlignment(Qt::AlignCenter);
+        lbl1_10->raise();
         lbl1_11->raise();
         lbl1_9->raise();
-        lbl1_10->raise();
-        lbl1_12->raise();
         lbl1_8->raise();
+        lbl1_12->raise();
         BCTTC1lbl->raise();
         LOADVM2lbl->raise();
         LOADVTC2lbl->raise();
@@ -289,6 +299,8 @@ public:
         ACMTC2lbl->raise();
         lbl1_17->raise();
         ACMKMlbl->raise();
+        BCTM1lbl->raise();
+        BCTM2lbl->raise();
 
         retranslateUi(VehicleSIVPage);
 
@@ -336,6 +348,8 @@ public:
         ACMTC2lbl->setText(QApplication::translate("VehicleSIVPage", "ACM", 0, QApplication::UnicodeUTF8));
         lbl1_17->setText(QString());
         ACMKMlbl->setText(QString());
+        BCTM1lbl->setText(QString());
+        BCTM2lbl->setText(QString());
     } // retranslateUi
 
 };

@@ -19,8 +19,12 @@ public:
 
 private:
     Ui::VehicleEBCUPage2 *ui;
-    void setlabelstates(QLabel* lbl,int value);
-    void setlabelstates(QLabel* lbl,bool valid,int value);
+    void setlabelstates(QLabel* lbl,int value,bool isonline);
+    void setlabelstates(QLabel* lbl,bool valid,int value,bool isonline);
+    void setlabelstates(QLabel* lbl,bool state,bool isonline);
+    void setlabelstates(QLabel* lbl,bool state);
+    QString DefaultLoadTC1,DefaultLoadMP1,DefaultLoadM1,DefaultLoadM2,DefaultLoadMP2,DefaultLoadTC2;
+    QString DefaultFullLoadTC1,DefaultFullLoadMP1,DefaultFullLoadM1,DefaultFullLoadM2,DefaultFullLoadMP2,DefaultFullLoadTC2;
 private slots:
     void on_NextPageBtn_pressed();
 };
