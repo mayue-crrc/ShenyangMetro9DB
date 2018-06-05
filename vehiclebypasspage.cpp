@@ -31,8 +31,8 @@ void VehicleBypassPage::updatePage()
     setSignalBypass(this->ui->EmloopTC2lbl,this->ui->EmloopTC2lbl_2,this->database->DICT_TC2DI1CH13EmLoopByPass1_B1);
     setSignalBypass(this->ui->ZeroSpeedTC1lbl,this->ui->ZeroSpeedTC1lbl_2,this->database->DICT_TC1DI2CH23ZeroSpeedTL_B1);
     setSignalBypass(this->ui->ZeroSpeedTC2lbl,this->ui->ZeroSpeedTC2lbl_2,this->database->DICT_TC2DI2CH23ZeroSpeedTL_B1);
-    setSignalBypass(this->ui->Emloop2TC1lbl,this->ui->EmloopTC1lbl_2,this->database->DICT_TC1DI1CH14EmLoopByPass2_B1);
-    setSignalBypass(this->ui->Emloop2TC2lbl,this->ui->EmloopTC2lbl_2,this->database->DICT_TC2DI1CH14EmLoopByPass2_B1);
+    setSignalBypass(this->ui->Emloop2TC1lbl,this->ui->Emloop2TC1lbl_2,this->database->DICT_TC1DI1CH14EmLoopByPass2_B1);
+    setSignalBypass(this->ui->Emloop2TC2lbl,this->ui->Emloop2TC2lbl_2,this->database->DICT_TC2DI1CH14EmLoopByPass2_B1);
 }
 
 void VehicleBypassPage::on_returnBtn_pressed()

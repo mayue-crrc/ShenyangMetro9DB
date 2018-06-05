@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclebypasspage.ui'
 **
-** Created: Mon Jun 4 08:38:05 2018
+** Created: Tue Jun 5 09:18:19 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -58,15 +58,15 @@ public:
     QLabel *LBL1_6;
     QLabel *Emloop2TC2lbl;
     QLabel *linelbl1_6;
-    QLabel *ZeroSpeedTC2lbl_2;
-    QLabel *ZeroSpeedTC1lbl_2;
+    QLabel *Emloop2TC2lbl_2;
+    QLabel *Emloop2TC1lbl_2;
     QLabel *label;
     QPushButton *returnBtn;
     QLabel *ZeroSpeedTC2lbl;
     QLabel *ZeroSpeedTC1lbl;
     QLabel *LBL1_7;
-    QLabel *ZeroSpeedTC2lbl_4;
-    QLabel *ZeroSpeedTC1lbl_4;
+    QLabel *ZeroSpeedTC2lbl_2;
+    QLabel *ZeroSpeedTC1lbl_2;
     QLabel *linelbl1_7;
 
     void setupUi(QWidget *VehicleBypassPage)
@@ -353,24 +353,24 @@ public:
         linelbl1_6->setStyleSheet(QString::fromUtf8("border: 2px solid white;\n"
 ""));
         linelbl1_6->setAlignment(Qt::AlignCenter);
-        ZeroSpeedTC2lbl_2 = new QLabel(VehicleBypassPage);
-        ZeroSpeedTC2lbl_2->setObjectName(QString::fromUtf8("ZeroSpeedTC2lbl_2"));
-        ZeroSpeedTC2lbl_2->setGeometry(QRect(712, 370, 105, 43));
-        ZeroSpeedTC2lbl_2->setStyleSheet(QString::fromUtf8("font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+        Emloop2TC2lbl_2 = new QLabel(VehicleBypassPage);
+        Emloop2TC2lbl_2->setObjectName(QString::fromUtf8("Emloop2TC2lbl_2"));
+        Emloop2TC2lbl_2->setGeometry(QRect(712, 370, 105, 43));
+        Emloop2TC2lbl_2->setStyleSheet(QString::fromUtf8("font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color: white;\n"
 "background-color: green;\n"
 "border:2px,black,solid;\n"
 "border-radius:8px;"));
-        ZeroSpeedTC2lbl_2->setAlignment(Qt::AlignCenter);
-        ZeroSpeedTC1lbl_2 = new QLabel(VehicleBypassPage);
-        ZeroSpeedTC1lbl_2->setObjectName(QString::fromUtf8("ZeroSpeedTC1lbl_2"));
-        ZeroSpeedTC1lbl_2->setGeometry(QRect(220, 369, 105, 43));
-        ZeroSpeedTC1lbl_2->setStyleSheet(QString::fromUtf8("font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+        Emloop2TC2lbl_2->setAlignment(Qt::AlignCenter);
+        Emloop2TC1lbl_2 = new QLabel(VehicleBypassPage);
+        Emloop2TC1lbl_2->setObjectName(QString::fromUtf8("Emloop2TC1lbl_2"));
+        Emloop2TC1lbl_2->setGeometry(QRect(220, 369, 105, 43));
+        Emloop2TC1lbl_2->setStyleSheet(QString::fromUtf8("font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color: white;\n"
 "background-color: green;\n"
 "border:2px,black,solid;\n"
 "border-radius:8px;"));
-        ZeroSpeedTC1lbl_2->setAlignment(Qt::AlignCenter);
+        Emloop2TC1lbl_2->setAlignment(Qt::AlignCenter);
         label = new QLabel(VehicleBypassPage);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(3, 520, 1018, 72));
@@ -417,41 +417,41 @@ public:
 "color: white;\n"
 ""));
         LBL1_7->setAlignment(Qt::AlignCenter);
-        ZeroSpeedTC2lbl_4 = new QLabel(VehicleBypassPage);
-        ZeroSpeedTC2lbl_4->setObjectName(QString::fromUtf8("ZeroSpeedTC2lbl_4"));
-        ZeroSpeedTC2lbl_4->setGeometry(QRect(710, 440, 105, 43));
-        ZeroSpeedTC2lbl_4->setStyleSheet(QString::fromUtf8("font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+        ZeroSpeedTC2lbl_2 = new QLabel(VehicleBypassPage);
+        ZeroSpeedTC2lbl_2->setObjectName(QString::fromUtf8("ZeroSpeedTC2lbl_2"));
+        ZeroSpeedTC2lbl_2->setGeometry(QRect(710, 440, 105, 43));
+        ZeroSpeedTC2lbl_2->setStyleSheet(QString::fromUtf8("font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color: white;\n"
 "background-color: green;\n"
 "border:2px,black,solid;\n"
 "border-radius:8px;"));
-        ZeroSpeedTC2lbl_4->setAlignment(Qt::AlignCenter);
-        ZeroSpeedTC1lbl_4 = new QLabel(VehicleBypassPage);
-        ZeroSpeedTC1lbl_4->setObjectName(QString::fromUtf8("ZeroSpeedTC1lbl_4"));
-        ZeroSpeedTC1lbl_4->setGeometry(QRect(218, 439, 105, 43));
-        ZeroSpeedTC1lbl_4->setStyleSheet(QString::fromUtf8("font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+        ZeroSpeedTC2lbl_2->setAlignment(Qt::AlignCenter);
+        ZeroSpeedTC1lbl_2 = new QLabel(VehicleBypassPage);
+        ZeroSpeedTC1lbl_2->setObjectName(QString::fromUtf8("ZeroSpeedTC1lbl_2"));
+        ZeroSpeedTC1lbl_2->setGeometry(QRect(218, 439, 105, 43));
+        ZeroSpeedTC1lbl_2->setStyleSheet(QString::fromUtf8("font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color: white;\n"
 "background-color: green;\n"
 "border:2px,black,solid;\n"
 "border-radius:8px;"));
-        ZeroSpeedTC1lbl_4->setAlignment(Qt::AlignCenter);
+        ZeroSpeedTC1lbl_2->setAlignment(Qt::AlignCenter);
         linelbl1_7 = new QLabel(VehicleBypassPage);
         linelbl1_7->setObjectName(QString::fromUtf8("linelbl1_7"));
         linelbl1_7->setGeometry(QRect(340, 460, 350, 2));
         linelbl1_7->setStyleSheet(QString::fromUtf8("border: 2px solid white;\n"
 ""));
         linelbl1_7->setAlignment(Qt::AlignCenter);
-        ZeroSpeedTC1lbl_4->raise();
+        ZeroSpeedTC1lbl_2->raise();
         EmloopTC2lbl_2->raise();
         StopBrakeTC2lbl_2->raise();
         ALLTrainCloseTC1lbl_2->raise();
         StopBrakeTC1lbl_2->raise();
-        ZeroSpeedTC2lbl_2->raise();
-        ZeroSpeedTC1lbl_2->raise();
+        Emloop2TC2lbl_2->raise();
+        Emloop2TC1lbl_2->raise();
         AlarmTC1lbl_2->raise();
         BrakeNOTReleaseTC1lbl_2->raise();
         ALLTrainCloseTC2lbl_2->raise();
-        ZeroSpeedTC2lbl_4->raise();
+        ZeroSpeedTC2lbl_2->raise();
         EmloopTC1lbl_2->raise();
         BrakeNOTReleaseTC2lbl_2->raise();
         AlarmTC2lbl_2->raise();
@@ -528,15 +528,15 @@ public:
         LBL1_6->setText(QApplication::translate("VehicleBypassPage", "\347\264\247\346\200\245\347\216\257\347\272\277\347\237\255\346\216\245", 0, QApplication::UnicodeUTF8));
         Emloop2TC2lbl->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
         linelbl1_6->setText(QString());
-        ZeroSpeedTC2lbl_2->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
-        ZeroSpeedTC1lbl_2->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
+        Emloop2TC2lbl_2->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
+        Emloop2TC1lbl_2->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("VehicleBypassPage", "TextLabel", 0, QApplication::UnicodeUTF8));
         returnBtn->setText(QApplication::translate("VehicleBypassPage", "\350\277\224\345\233\236", 0, QApplication::UnicodeUTF8));
         ZeroSpeedTC2lbl->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
         ZeroSpeedTC1lbl->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
         LBL1_7->setText(QApplication::translate("VehicleBypassPage", "\350\275\246\350\276\206\351\233\266\351\200\237\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
-        ZeroSpeedTC2lbl_4->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
-        ZeroSpeedTC1lbl_4->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
+        ZeroSpeedTC2lbl_2->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
+        ZeroSpeedTC1lbl_2->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
         linelbl1_7->setText(QString());
     } // retranslateUi
 

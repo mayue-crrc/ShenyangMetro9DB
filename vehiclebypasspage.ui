@@ -770,7 +770,7 @@ border-radius:8px;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="ZeroSpeedTC2lbl_2">
+  <widget class="QLabel" name="Emloop2TC2lbl_2">
    <property name="geometry">
     <rect>
      <x>712</x>
@@ -793,7 +793,7 @@ border-radius:8px;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="ZeroSpeedTC1lbl_2">
+  <widget class="QLabel" name="Emloop2TC1lbl_2">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -930,7 +930,7 @@ color: white;
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="ZeroSpeedTC2lbl_4">
+  <widget class="QLabel" name="ZeroSpeedTC2lbl_2">
    <property name="geometry">
     <rect>
      <x>710</x>
@@ -953,7 +953,7 @@ border-radius:8px;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="ZeroSpeedTC1lbl_4">
+  <widget class="QLabel" name="ZeroSpeedTC1lbl_2">
    <property name="geometry">
     <rect>
      <x>218</x>
@@ -996,17 +996,17 @@ border-radius:8px;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <zorder>ZeroSpeedTC1lbl_4</zorder>
+  <zorder>ZeroSpeedTC1lbl_2</zorder>
   <zorder>EmloopTC2lbl_2</zorder>
   <zorder>StopBrakeTC2lbl_2</zorder>
   <zorder>ALLTrainCloseTC1lbl_2</zorder>
   <zorder>StopBrakeTC1lbl_2</zorder>
-  <zorder>ZeroSpeedTC2lbl_2</zorder>
-  <zorder>ZeroSpeedTC1lbl_2</zorder>
+  <zorder>Emloop2TC2lbl_2</zorder>
+  <zorder>Emloop2TC1lbl_2</zorder>
   <zorder>AlarmTC1lbl_2</zorder>
   <zorder>BrakeNOTReleaseTC1lbl_2</zorder>
   <zorder>ALLTrainCloseTC2lbl_2</zorder>
-  <zorder>ZeroSpeedTC2lbl_4</zorder>
+  <zorder>ZeroSpeedTC2lbl_2</zorder>
   <zorder>EmloopTC1lbl_2</zorder>
   <zorder>BrakeNOTReleaseTC2lbl_2</zorder>
   <zorder>AlarmTC2lbl_2</zorder>
