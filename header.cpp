@@ -19,6 +19,12 @@ Header::Header(QWidget *parent) :
     cutoffhelpPage->move ((QApplication::desktop()->width() - cutoffhelpPage->width())/2,(QApplication::desktop()->height() - cutoffhelpPage->height())/2);
     cutoffhelpPage->hide();
 
+    vehicleResetHelpPage = new VehicleResetHelpPage();
+    vehicleResetHelpPage->setGeometry(112,80,cutoffhelpPage->width(),cutoffhelpPage->height());
+    vehicleResetHelpPage->setWindowFlags(Qt::FramelessWindowHint);
+    vehicleResetHelpPage->move ((QApplication::desktop()->width() - cutoffhelpPage->width())/2,(QApplication::desktop()->height() - cutoffhelpPage->height())/2);
+    vehicleResetHelpPage->hide();
+
     powerresethelpPage = new VehiclePowerResetHelpPage();
     powerresethelpPage->setGeometry(112,80,powerresethelpPage->width(),powerresethelpPage->height());
     powerresethelpPage->setWindowFlags(Qt::FramelessWindowHint);
@@ -251,6 +257,17 @@ void Header::on_HelpItemBtn_pressed()
         this->cutoffhelpPage->close();
     }
 
+    if(this->currentPage == uVehicleResetPage)
+    {
+        if(!this->vehicleResetHelpPage->isActiveWindow())
+        {
+            this->vehicleResetHelpPage->close();
+        }
+        this->vehicleResetHelpPage->show();
+    }else
+    {
+        this->vehicleResetHelpPage->close();
+    }
 
     if(this->currentPage == uVehiclePowerResetPage)
     {

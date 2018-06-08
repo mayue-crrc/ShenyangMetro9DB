@@ -68,6 +68,8 @@
 #define RUNPAGEBUTTONUP "font: 18px  \"微软雅黑\";color: black;border:2px solid white;background-color: yellow;border-radius: 15px;"
 #define RUNPAGEBUTTONDOWN "font: 18px  \"微软雅黑\";color: black;border:2px solid white;background-color: orange;border-radius: 15px;"
 
+#define PButtonALARM   "font: 20px, \"微软雅黑\";color: black;background-color: yellow;	border-radius:8px;border-top: 2px solid white;border-left: 2px solid white;"
+
 VehicleRunStatePage::VehicleRunStatePage(QWidget *parent) :
     MyBase(parent),
     ui(new Ui::VehicleRunStatePage)
@@ -91,6 +93,8 @@ void VehicleRunStatePage::updatePage()
     updateTrainStatus();
 
     updateRunStatus();
+
+    updateButtonsStatus();
 
     if(CrrcFault::getCrrcFault() == NULL)
     {
@@ -769,6 +773,14 @@ void VehicleRunStatePage::updateTrainStatus()
     this->ui->OutTempMP2lbl->setText(QString::number(this->database->AC5CT_FreshAirTemp_U8-30)+"℃");
     this->ui->OutTempTC2lbl->setText(QString::number(this->database->AC6CT_FreshAirTemp_U8-30)+"℃");
 
+    //乘车率
+    this->ui->LoadTC1lbl->setText(this->database->PLoad_TC1+"%");
+    this->ui->LoadMP1lbl->setText(this->database->PLoad_MP1+"%");
+    this->ui->LoadM1lbl->setText(this->database->PLoad_M1+"%");
+    this->ui->LoadM2lbl->setText(this->database->PLoad_M2+"%");
+    this->ui->LoadMP2lbl->setText(this->database->PLoad_MP2+"%");
+    this->ui->LoadTC2lbl->setText(this->database->PLoad_TC2+"%");
+
     //车间电源
     if(this->database->CTHM_WorkshopPowerSupply_B1)
     {
@@ -818,6 +830,66 @@ void VehicleRunStatePage::updateTrainStatus()
                  this->database->WSCT_Car4Zone1LightFire_B1&&this->database->WSCT_Car4Zone2LightFire_B1;
     setFireStatus(this->ui->M2FireAlarmlbl,Firestatus,(bool)this->database->WSCT_M2Fault);
     Firestatus = false;
+}
+
+void VehicleRunStatePage::updateButtonsStatus()
+{
+    //切除按键
+    if(this->database->HMiCT_Mp1DynamicBrkCut_B1||this->database->HMiCT_M1DynamicBrkCut_B1||
+       this->database->HMiCT_M2DynamicBrkCut_B1||this->database->HMiCT_Mp2DynamicBrkCut_B1||
+       this->database->HMiCT_ACU1Cutoff_B1||this->database->HMiCT_ACU2Cutoff_B1||
+       this->database->HMiCT_ACU3Cutoff_B1||this->database->HMiCT_ACU4Cutoff_B1)
+    {
+        this->ui->CutPageBtn->setStyleSheet(PButtonALARM);
+    }else
+    {
+        this->ui->CutPageBtn->setStyleSheet(PButtonUP);
+
+    }
+
+    //复位按键
+    if(this->database->HMiCT_ACU1Reset_B1||this->database->HMiCT_ACU2Reset_B1||
+       this->database->HMiCT_ACU3Reset_B1||this->database->HMiCT_ACU4Reset_B1||
+       this->database->HMiCT_Mp1DCUFaultReset_B1||this->database->HMiCT_M1DCUFaultReset_B1||
+       this->database->HMiCT_M2DCUFaultReset_B1||this->database->HMiCT_Mp2DCUFaultReset_B1)
+    {
+        this->ui->ResetPageBtn->setStyleSheet(PButtonALARM);
+    }else
+    {
+        this->ui->ResetPageBtn->setStyleSheet(PButtonUP);
+    }
+    //液磁复位按键
+    bool tmp = false;
+    for (int i = 0; i<12 ;i++)
+    {
+        tmp = tmp||this->database->HMiCT_PowerOFF_B1[i]||this->database->HMiCT_PowerON_B1[i];
+    }
+    if(tmp)
+    {
+        this->ui->LMResetPageBtn->setStyleSheet(PButtonALARM);
+
+    }else
+    {
+        this->ui->LMResetPageBtn->setStyleSheet(PButtonUP);
+
+    }
+
+    //bypass 按键
+    if(this->database->DICT_TC1DI3CH14BrkRlsByPass_B1||this->database->DICT_TC2DI3CH14BrkRlsByPass_B1||
+        this->database->DICT_TC1DI3CH11ParkingBrkByPass_B1||this->database->DICT_TC2DI3CH11ParkingBrkByPass_B1||
+        this->database->DICT_TC1DI4CH12CarDoorSafeLoopByPass_B1||this->database->DICT_TC2DI4CH12CarDoorSafeLoopByPass_B1||
+        this->database->DICT_TC1DI1CH7CabActive_B1||this->database->DICT_TC2DI1CH7CabActive_B1||
+        this->database->DICT_TC1DI1CH13EmLoopByPass1_B1||this->database->DICT_TC2DI1CH13EmLoopByPass1_B1||
+        this->database->DICT_TC1DI2CH23ZeroSpeedTL_B1||this->database->DICT_TC2DI2CH23ZeroSpeedTL_B1||
+        this->database->DICT_TC1DI1CH14EmLoopByPass2_B1||this->database->DICT_TC2DI1CH14EmLoopByPass2_B1)
+    {
+        this->ui->ByPassPageBtn->setStyleSheet(PButtonALARM);
+
+    }else
+    {
+        this->ui->ByPassPageBtn->setStyleSheet(PButtonUP);
+    }
+
 }
 
 void VehicleRunStatePage::setPBStatus(QLabel* lbl,QList<bool> status)
@@ -982,7 +1054,7 @@ void VehicleRunStatePage::setDOORsubStatus(QLabel* lbl,bool status)
         lbl->setStyleSheet(LABELGREEN);
     }else
     {
-        lbl->setStyleSheet(LABELYELLOW);
+        lbl->setStyleSheet(LABELPINK);
 
     }
 }
@@ -992,16 +1064,20 @@ void VehicleRunStatePage::setFireStatus(QLabel* lbl,bool status,bool fault)
     if(this->database->CTHM_WMS2On_B1 == false)
     {
         lbl->setStyleSheet(FIREOFFLINE);
+        lbl->hide();
     }
     else if(fault)
     {
         lbl->setStyleSheet(FIREFAULT);
+        lbl->show();
     }else if(status)
     {
         lbl->setStyleSheet(FIREALARM);
+        lbl->show();
     }else
     {
         lbl->setStyleSheet(FIRENOALARM);
+        lbl->hide();
 
     }
 

@@ -1,6 +1,6 @@
 #include "maintainceloadpage.h"
 #include "ui_maintainceloadpage.h"
-#include "MainGetDefaultPara.h"
+//#include "MainGetDefaultPara.h"
 
 MaintainceLoadPage::MaintainceLoadPage(QWidget *parent) :
     MyBase(parent),
@@ -15,12 +15,12 @@ MaintainceLoadPage::MaintainceLoadPage(QWidget *parent) :
     DefaultLoadMP2 = MainGetDefaultPara::getString("/DefaultLoad/load_MP2");
     DefaultLoadTC2 = MainGetDefaultPara::getString("/DefaultLoad/load_TC2");
 
-    DefaultFullLoadTC1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_TC1");
-    DefaultFullLoadMP1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_MP1");
-    DefaultFullLoadM1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_M1");
-    DefaultFullLoadM2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_M2");
-    DefaultFullLoadMP2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_MP2");
-    DefaultFullLoadTC2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_TC2");
+//    DefaultFullLoadTC1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_TC1");
+//    DefaultFullLoadMP1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_MP1");
+//    DefaultFullLoadM1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_M1");
+//    DefaultFullLoadM2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_M2");
+//    DefaultFullLoadMP2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_MP2");
+//    DefaultFullLoadTC2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_TC2");
 }
 
 MaintainceLoadPage::~MaintainceLoadPage()
@@ -69,10 +69,10 @@ void MaintainceLoadPage::updatePage()
     this->ui->PassagerNumMP2lbl->setText(QString::number(tmp_pkgmp2/60*1000,10,0));
     this->ui->PassagerNumTC2lbl->setText(QString::number(tmp_pkgtc2/60*1000,10,0));
 
-    this->ui->PperWeightTC1lbl->setText(QString::number((float)(tmp_pkgtc1/(DefaultFullLoadTC1.toFloat()))*100,10,2)+"%");
-    this->ui->PperWeightMP1lbl->setText(QString::number((float)(tmp_pkgmp1/(DefaultFullLoadMP1.toFloat()))*100,10,2)+"%");
-    this->ui->PperWeightM1lbl->setText(QString::number((float)(tmp_pkgm1/(DefaultFullLoadM1.toFloat()))*100,10,2)+"%");
-    this->ui->PperWeightM2lbl->setText(QString::number((float)(tmp_pkgm2/(DefaultFullLoadM2.toFloat()))*100,10,2)+"%");
-    this->ui->PperWeightMP2lbl->setText(QString::number((float)(tmp_pkgmp2/(DefaultFullLoadMP2.toFloat()))*100,10,2)+"%");
-    this->ui->PperWeightTC2lbl->setText(QString::number((float)(tmp_pkgtc2/(DefaultFullLoadTC2.toFloat()))*100,10,2)+"%");
+    this->ui->PperWeightTC1lbl->setText(this->database->PLoad_TC1+"%");
+    this->ui->PperWeightMP1lbl->setText(this->database->PLoad_MP1+"%");
+    this->ui->PperWeightM1lbl->setText(this->database->PLoad_M1+"%");
+    this->ui->PperWeightM2lbl->setText(this->database->PLoad_M2+"%");
+    this->ui->PperWeightMP2lbl->setText(this->database->PLoad_MP2+"%");
+    this->ui->PperWeightTC2lbl->setText(this->database->PLoad_TC2+"%");
 }

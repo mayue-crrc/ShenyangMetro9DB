@@ -31,47 +31,6 @@ border-left: 2px solid white;
   <widget class="QPushButton" name="LMResetPageBtn">
    <property name="geometry">
     <rect>
-     <x>11</x>
-     <y>160</y>
-     <width>80</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color:yellow;
-color:black;</string>
-   </property>
-   <property name="text">
-    <string>液磁
-复位</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="ByPassPageBtn">
-   <property name="geometry">
-    <rect>
-     <x>11</x>
-     <y>230</y>
-     <width>80</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color:yellow;
-color:black;</string>
-   </property>
-   <property name="text">
-    <string>旁路</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="CutPageBtn">
-   <property name="geometry">
-    <rect>
      <x>10</x>
      <y>300</y>
      <width>80</width>
@@ -82,7 +41,48 @@ color:black;</string>
     <enum>Qt::NoFocus</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:red;</string>
+    <string notr="true">background-color: rgb(0, 128, 128);
+color:white;</string>
+   </property>
+   <property name="text">
+    <string>液磁
+复位</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ByPassPageBtn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>370</y>
+     <width>80</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 128, 128);
+color:white;</string>
+   </property>
+   <property name="text">
+    <string>旁路</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CutPageBtn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>80</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(0,128,128);</string>
    </property>
    <property name="text">
     <string>切除
@@ -1003,7 +1003,7 @@ border-image: url(:/images/images/PBFault.png);</string>
    <property name="geometry">
     <rect>
      <x>178</x>
-     <y>230</y>
+     <y>240</y>
      <width>91</width>
      <height>31</height>
     </rect>
@@ -1025,7 +1025,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>280</y>
+     <y>270</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -1044,7 +1044,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>320</y>
+     <y>340</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -1258,7 +1258,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>322</x>
-     <y>280</y>
+     <y>270</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -1300,7 +1300,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>290</x>
-     <y>230</y>
+     <y>240</y>
      <width>91</width>
      <height>31</height>
     </rect>
@@ -1637,7 +1637,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>290</x>
-     <y>320</y>
+     <y>340</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -1656,7 +1656,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>350</x>
-     <y>320</y>
+     <y>340</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -2104,7 +2104,7 @@ border-image: url(:/images/images/TC2Direction.bmp);
    <property name="geometry">
     <rect>
      <x>462</x>
-     <y>320</y>
+     <y>340</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -2123,7 +2123,7 @@ border-image: url(:/images/images/TC2Direction.bmp);
    <property name="geometry">
     <rect>
      <x>402</x>
-     <y>320</y>
+     <y>340</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -2207,7 +2207,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>402</x>
-     <y>230</y>
+     <y>240</y>
      <width>91</width>
      <height>31</height>
     </rect>
@@ -2229,7 +2229,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>434</x>
-     <y>280</y>
+     <y>270</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -2639,7 +2639,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>546</x>
-     <y>280</y>
+     <y>270</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -2658,7 +2658,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>514</x>
-     <y>230</y>
+     <y>240</y>
      <width>91</width>
      <height>31</height>
     </rect>
@@ -2680,7 +2680,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>574</x>
-     <y>320</y>
+     <y>340</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -2699,7 +2699,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>514</x>
-     <y>320</y>
+     <y>340</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -3128,7 +3128,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>626</x>
-     <y>320</y>
+     <y>340</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -3166,7 +3166,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>686</x>
-     <y>320</y>
+     <y>340</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -3208,7 +3208,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>626</x>
-     <y>230</y>
+     <y>240</y>
      <width>91</width>
      <height>31</height>
     </rect>
@@ -3253,7 +3253,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>658</x>
-     <y>280</y>
+     <y>270</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -3640,7 +3640,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>770</x>
-     <y>280</y>
+     <y>270</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -3660,7 +3660,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>740</x>
-     <y>230</y>
+     <y>240</y>
      <width>91</width>
      <height>31</height>
     </rect>
@@ -3785,7 +3785,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>770</x>
-     <y>320</y>
+     <y>340</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -3904,19 +3904,19 @@ border-radius: 15px;</string>
    <property name="geometry">
     <rect>
      <x>175</x>
-     <y>280</y>
-     <width>31</width>
+     <y>300</y>
+     <width>45</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255,255,153);
-font: 10px  &quot;微软雅黑&quot;;
+font: 15px  &quot;微软雅黑&quot;;
 color:black;
 </string>
    </property>
    <property name="text">
-    <string>123</string>
+    <string>-23℃</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -3925,20 +3925,20 @@ color:black;
   <widget class="QLabel" name="LoadTC1lbl">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>280</y>
-     <width>31</width>
+     <x>230</x>
+     <y>300</y>
+     <width>45</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255,255,153);
-font: 10px  &quot;微软雅黑&quot;;
+font: 15px  &quot;微软雅黑&quot;;
 color:black;
 </string>
    </property>
    <property name="text">
-    <string>100%</string>
+    <string>103.3%</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -3948,14 +3948,14 @@ color:black;
    <property name="geometry">
     <rect>
      <x>735</x>
-     <y>280</y>
-     <width>31</width>
+     <y>300</y>
+     <width>45</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255,255,153);
-font: 10px  &quot;微软雅黑&quot;;
+font: 15px  &quot;微软雅黑&quot;;
 color:black;
 </string>
    </property>
@@ -3969,20 +3969,20 @@ color:black;
   <widget class="QLabel" name="LoadTC2lbl">
    <property name="geometry">
     <rect>
-     <x>800</x>
-     <y>280</y>
-     <width>31</width>
+     <x>790</x>
+     <y>300</y>
+     <width>45</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255,255,153);
-font: 10px  &quot;微软雅黑&quot;;
+font: 15px  &quot;微软雅黑&quot;;
 color:black;
 </string>
    </property>
    <property name="text">
-    <string>100%</string>
+    <string/>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -3992,14 +3992,14 @@ color:black;
    <property name="geometry">
     <rect>
      <x>290</x>
-     <y>280</y>
-     <width>31</width>
+     <y>300</y>
+     <width>45</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255,255,153);
-font: 10px  &quot;微软雅黑&quot;;
+font: 15px  &quot;微软雅黑&quot;;
 color:black;
 </string>
    </property>
@@ -4013,20 +4013,20 @@ color:black;
   <widget class="QLabel" name="LoadMP1lbl">
    <property name="geometry">
     <rect>
-     <x>355</x>
-     <y>280</y>
-     <width>31</width>
+     <x>340</x>
+     <y>300</y>
+     <width>45</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255,255,153);
-font: 10px  &quot;微软雅黑&quot;;
+font: 15px  &quot;微软雅黑&quot;;
 color:black;
 </string>
    </property>
    <property name="text">
-    <string>100%</string>
+    <string>100</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -4035,15 +4035,15 @@ color:black;
   <widget class="QLabel" name="OutTempMP2lbl">
    <property name="geometry">
     <rect>
-     <x>625</x>
-     <y>280</y>
-     <width>31</width>
+     <x>620</x>
+     <y>300</y>
+     <width>45</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255,255,153);
-font: 10px  &quot;微软雅黑&quot;;
+font: 15px  &quot;微软雅黑&quot;;
 color:black;
 </string>
    </property>
@@ -4057,20 +4057,20 @@ color:black;
   <widget class="QLabel" name="LoadMP2lbl">
    <property name="geometry">
     <rect>
-     <x>690</x>
-     <y>280</y>
-     <width>31</width>
+     <x>670</x>
+     <y>300</y>
+     <width>45</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255,255,153);
-font: 10px  &quot;微软雅黑&quot;;
+font: 15px  &quot;微软雅黑&quot;;
 color:black;
 </string>
    </property>
    <property name="text">
-    <string>100%</string>
+    <string/>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -4080,15 +4080,16 @@ color:black;
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>280</y>
-     <width>31</width>
+     <y>300</y>
+     <width>45</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255,255,153);
-font: 10px  &quot;微软雅黑&quot;;
+font: 15px  &quot;微软雅黑&quot;;
 color:black;
+
 </string>
    </property>
    <property name="text">
@@ -4101,20 +4102,21 @@ color:black;
   <widget class="QLabel" name="LoadM1lbl">
    <property name="geometry">
     <rect>
-     <x>465</x>
-     <y>280</y>
-     <width>31</width>
+     <x>450</x>
+     <y>300</y>
+     <width>45</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255,255,153);
-font: 10px  &quot;微软雅黑&quot;;
+font: 15px  &quot;微软雅黑&quot;;
 color:black;
+
 </string>
    </property>
    <property name="text">
-    <string>100%</string>
+    <string>100</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -4123,16 +4125,17 @@ color:black;
   <widget class="QLabel" name="OutTempM2lbl">
    <property name="geometry">
     <rect>
-     <x>515</x>
-     <y>280</y>
-     <width>31</width>
+     <x>510</x>
+     <y>300</y>
+     <width>45</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255,255,153);
-font: 10px  &quot;微软雅黑&quot;;
+font: 15px  &quot;微软雅黑&quot;;
 color:black;
+
 </string>
    </property>
    <property name="text">
@@ -4145,20 +4148,20 @@ color:black;
   <widget class="QLabel" name="LoadM2lbl">
    <property name="geometry">
     <rect>
-     <x>580</x>
-     <y>280</y>
-     <width>31</width>
+     <x>560</x>
+     <y>300</y>
+     <width>45</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255,255,153);
-font: 10px  &quot;微软雅黑&quot;;
+font: 15px  &quot;微软雅黑&quot;;
 color:black;
 </string>
    </property>
    <property name="text">
-    <string>100%</string>
+    <string/>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -4168,7 +4171,7 @@ color:black;
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>370</y>
+     <y>230</y>
      <width>80</width>
      <height>60</height>
     </rect>
@@ -4177,7 +4180,7 @@ color:black;
     <enum>Qt::NoFocus</enum>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:red;</string>
+    <string notr="true">background-color:rgb(0,128,128);</string>
    </property>
    <property name="text">
     <string>复位
@@ -4208,196 +4211,6 @@ border-radius: 15px;</string>
 蜂鸣器</string>
    </property>
   </widget>
-  <zorder>statebglbl</zorder>
-  <zorder>LMResetPageBtn</zorder>
-  <zorder>ByPassPageBtn</zorder>
-  <zorder>CutPageBtn</zorder>
-  <zorder>FirePageBtn</zorder>
-  <zorder>PIDSmodebg</zorder>
-  <zorder>WashModelbl</zorder>
-  <zorder>SpeedLimitlbl</zorder>
-  <zorder>EBBtnlbl</zorder>
-  <zorder>Idlelbl</zorder>
-  <zorder>HoldbrakeCutlbl</zorder>
-  <zorder>DC24VLowlbl</zorder>
-  <zorder>Deadmanlbl</zorder>
-  <zorder>EmergencyRunlbl</zorder>
-  <zorder>Tc1bglbl</zorder>
-  <zorder>Mp1bglbl</zorder>
-  <zorder>M1bglbl</zorder>
-  <zorder>M2bglbl</zorder>
-  <zorder>Mp2bglbl</zorder>
-  <zorder>Tc2bglbl</zorder>
-  <zorder>Tc1Cablbl</zorder>
-  <zorder>Tc2Cablbl</zorder>
-  <zorder>Tc1Door1lbl</zorder>
-  <zorder>Tc1Door3lbl</zorder>
-  <zorder>Tc1Door5lbl</zorder>
-  <zorder>Tc1Door7lbl</zorder>
-  <zorder>Tc1Door4lbl</zorder>
-  <zorder>Tc1Door6lbl</zorder>
-  <zorder>Tc1Door8lbl</zorder>
-  <zorder>Tc1Door2lbl</zorder>
-  <zorder>Tc1Door3lbl_sub</zorder>
-  <zorder>Tc1Door5lbl_sub</zorder>
-  <zorder>Tc1Door7lbl_sub</zorder>
-  <zorder>Tc1Door1lbl_sub</zorder>
-  <zorder>Tc1Door2lbl_sub</zorder>
-  <zorder>Tc1Door6lbl_sub</zorder>
-  <zorder>Tc1Door8lbl_sub</zorder>
-  <zorder>Tc1Door4lbl_sub</zorder>
-  <zorder>Tc1CabLeftDoorlbl</zorder>
-  <zorder>Tc1CabRightDoorlbl</zorder>
-  <zorder>Tc1Cabdoorlbl</zorder>
-  <zorder>Tc1bg1lbl</zorder>
-  <zorder>Tc1bg2lbl</zorder>
-  <zorder>Tc1BCUlbl</zorder>
-  <zorder>Tc1TrainCodelbl</zorder>
-  <zorder>Tc1FireAlarmlbl</zorder>
-  <zorder>Tc1Acplbl</zorder>
-  <zorder>Tc1SIVlbl</zorder>
-  <zorder>Tc1BCMlbl</zorder>
-  <zorder>Tc2CabRightDoorlbl</zorder>
-  <zorder>Tc2Cabdoorlbl</zorder>
-  <zorder>Tc2CabLeftDoorlbl</zorder>
-  <zorder>Mp1Door3lbl</zorder>
-  <zorder>Mp1Door7lbl</zorder>
-  <zorder>Mp1Door5lbl</zorder>
-  <zorder>Mp1Door4lbl</zorder>
-  <zorder>Mp1FireAlarmlbl</zorder>
-  <zorder>Mp1Door6lbl_sub</zorder>
-  <zorder>Mp1TrainCodelbl</zorder>
-  <zorder>Mp1Door1lbl</zorder>
-  <zorder>Mp1bg2lbl</zorder>
-  <zorder>Mp1BCUlbl</zorder>
-  <zorder>Mp1Door8lbl</zorder>
-  <zorder>Mp1Door7lbl_sub</zorder>
-  <zorder>Mp1Door4lbl_sub</zorder>
-  <zorder>Mp1bg1lbl</zorder>
-  <zorder>Mp1Door6lbl</zorder>
-  <zorder>Mp1Door5lbl_sub</zorder>
-  <zorder>Mp1Door3lbl_sub</zorder>
-  <zorder>Mp1Door2lbl</zorder>
-  <zorder>Mp1Door1lbl_sub</zorder>
-  <zorder>Mp1Door2lbl_sub</zorder>
-  <zorder>Mp1Door8lbl_sub</zorder>
-  <zorder>Mp1Breakerlbl</zorder>
-  <zorder>Mp1Motor1lbl</zorder>
-  <zorder>Mp1supplylbl</zorder>
-  <zorder>M1Door6lbl</zorder>
-  <zorder>M1Door6lbl_sub</zorder>
-  <zorder>M1Door7lbl</zorder>
-  <zorder>M1Door8lbl_sub</zorder>
-  <zorder>M1Door4lbl_sub</zorder>
-  <zorder>M1Door3lbl</zorder>
-  <zorder>M1Door5lbl_sub</zorder>
-  <zorder>M1Door1lbl_sub</zorder>
-  <zorder>M1Door1lbl</zorder>
-  <zorder>M1Door5lbl</zorder>
-  <zorder>M1Door4lbl</zorder>
-  <zorder>M1Door8lbl</zorder>
-  <zorder>M1Door2lbl</zorder>
-  <zorder>M1Door3lbl_sub</zorder>
-  <zorder>M1Door2lbl_sub</zorder>
-  <zorder>M1Door7lbl_sub</zorder>
-  <zorder>Tc1Directionlbl</zorder>
-  <zorder>Tc2Directionlbl</zorder>
-  <zorder>M1Motor1lbl</zorder>
-  <zorder>M1Breakerlbl</zorder>
-  <zorder>M1BCUlbl</zorder>
-  <zorder>M1bg1lbl</zorder>
-  <zorder>M1bg2lbl</zorder>
-  <zorder>M1TrainCodelbl</zorder>
-  <zorder>M1FireAlarmlbl</zorder>
-  <zorder>M2Door8lbl_sub</zorder>
-  <zorder>M2Door8lbl</zorder>
-  <zorder>M2Door6lbl</zorder>
-  <zorder>M2Door2lbl_sub</zorder>
-  <zorder>M2Door4lbl_sub</zorder>
-  <zorder>M2Door7lbl_sub</zorder>
-  <zorder>M2Door1lbl_sub</zorder>
-  <zorder>M2Door1lbl</zorder>
-  <zorder>M2Door7lbl</zorder>
-  <zorder>M2Door2lbl</zorder>
-  <zorder>M2Door5lbl_sub</zorder>
-  <zorder>M2Door4lbl</zorder>
-  <zorder>M2Door5lbl</zorder>
-  <zorder>M2Door3lbl</zorder>
-  <zorder>M2Door3lbl_sub</zorder>
-  <zorder>M2Door6lbl_sub</zorder>
-  <zorder>M2bg2lbl</zorder>
-  <zorder>M2FireAlarmlbl</zorder>
-  <zorder>M2TrainCodelbl</zorder>
-  <zorder>M2Breakerlbl</zorder>
-  <zorder>M2Motor1lbl</zorder>
-  <zorder>M2bg1lbl</zorder>
-  <zorder>M2BCUlbl</zorder>
-  <zorder>Mp2Door7lbl_sub</zorder>
-  <zorder>Mp2Door5lbl_sub</zorder>
-  <zorder>Mp2Door5lbl</zorder>
-  <zorder>Mp2Door8lbl</zorder>
-  <zorder>Mp2Door3lbl_sub</zorder>
-  <zorder>Mp2Door6lbl</zorder>
-  <zorder>Mp2Door1lbl</zorder>
-  <zorder>Mp2Door7lbl</zorder>
-  <zorder>Mp2Door2lbl_sub</zorder>
-  <zorder>Mp2Door8lbl_sub</zorder>
-  <zorder>Mp2Door4lbl_sub</zorder>
-  <zorder>Mp2Door2lbl</zorder>
-  <zorder>Mp2Door1lbl_sub</zorder>
-  <zorder>Mp2Door4lbl</zorder>
-  <zorder>Mp2Door3lbl</zorder>
-  <zorder>Mp2Door6lbl_sub</zorder>
-  <zorder>Mp2Motor1lbl</zorder>
-  <zorder>Mp2BCUlbl</zorder>
-  <zorder>Mp2Breakerlbl</zorder>
-  <zorder>Mp2bg1lbl</zorder>
-  <zorder>Mp2TrainCodelbl</zorder>
-  <zorder>Mp2bg2lbl</zorder>
-  <zorder>Mp2FireAlarmlbl</zorder>
-  <zorder>Tc2Door7lbl_sub</zorder>
-  <zorder>Tc2Door5lbl_sub</zorder>
-  <zorder>Tc2Door5lbl</zorder>
-  <zorder>Tc2Door8lbl</zorder>
-  <zorder>Tc2Door3lbl_sub</zorder>
-  <zorder>Tc2Door6lbl</zorder>
-  <zorder>Tc2Door1lbl</zorder>
-  <zorder>Tc2Door7lbl</zorder>
-  <zorder>Tc2Door2lbl_sub</zorder>
-  <zorder>Tc2Door8lbl_sub</zorder>
-  <zorder>Tc2Door4lbl_sub</zorder>
-  <zorder>Tc2Door2lbl</zorder>
-  <zorder>Tc2Door1lbl_sub</zorder>
-  <zorder>Tc2Door4lbl</zorder>
-  <zorder>Tc2Door3lbl</zorder>
-  <zorder>Tc2Door6lbl_sub</zorder>
-  <zorder>Tc2FireAlarmlbl</zorder>
-  <zorder>Tc2TrainCodelbl</zorder>
-  <zorder>Tc2bg1lbl</zorder>
-  <zorder>Tc2BCUlbl</zorder>
-  <zorder>Tc2bg2lbl</zorder>
-  <zorder>Tc2BCMlbl</zorder>
-  <zorder>Tc2SIVlbl</zorder>
-  <zorder>Tc2Acplbl</zorder>
-  <zorder>Mp1Pantolbl</zorder>
-  <zorder>Mp2Pantolbl</zorder>
-  <zorder>MainKMlbl</zorder>
-  <zorder>M1SIVlbl</zorder>
-  <zorder>M2SIVlbl</zorder>
-  <zorder>OutTempTC1lbl</zorder>
-  <zorder>LoadTC1lbl</zorder>
-  <zorder>OutTempTC2lbl</zorder>
-  <zorder>LoadTC2lbl</zorder>
-  <zorder>OutTempMP1lbl</zorder>
-  <zorder>LoadMP1lbl</zorder>
-  <zorder>OutTempMP2lbl</zorder>
-  <zorder>LoadMP2lbl</zorder>
-  <zorder>OutTempM1lbl</zorder>
-  <zorder>LoadM1lbl</zorder>
-  <zorder>OutTempM2lbl</zorder>
-  <zorder>LoadM2lbl</zorder>
-  <zorder>ResetPageBtn</zorder>
-  <zorder>BuzzerBtn</zorder>
  </widget>
  <resources/>
  <connections/>

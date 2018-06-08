@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'vehicleresetpage.h'
 **
-** Created: Tue Jun 5 18:05:54 2018
+** Created: Fri Jun 8 11:13:02 2018
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_VehicleResetPage[] = {
        4,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -33,26 +33,16 @@ static const uint qt_meta_data_VehicleResetPage[] = {
  // slots: signature, parameters, type, tag, flags
       18,   17,   17,   17, 0x08,
       42,   17,   17,   17, 0x08,
-      65,   17,   17,   17, 0x08,
-      88,   17,   17,   17, 0x08,
-     112,   17,   17,   17, 0x08,
-     140,   17,   17,   17, 0x08,
-     167,   17,   17,   17, 0x08,
-     194,   17,   17,   17, 0x08,
-     222,   17,   17,   17, 0x08,
+      70,   17,   17,   17, 0x08,
+      90,   17,   17,   17, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_VehicleResetPage[] = {
-    "VehicleResetPage\0\0on_VVVFMP2Btn_pressed()\0"
-    "on_VVVFM2Btn_pressed()\0on_VVVFM1Btn_pressed()\0"
-    "on_VVVFMP1Btn_pressed()\0"
-    "on_ACMRESETTC2Btn_pressed()\0"
-    "on_ACMRESETM2Btn_pressed()\0"
-    "on_ACMRESETM1Btn_pressed()\0"
+    "VehicleResetPage\0\0on_VVVFMP1Btn_pressed()\0"
     "on_ACMRESETTC1Btn_pressed()\0"
-    "on_returnBtn_pressed()\0"
+    "ButtonsPressEvent()\0on_returnBtn_pressed()\0"
 };
 
 const QMetaObject VehicleResetPage::staticMetaObject = {
@@ -84,18 +74,13 @@ int VehicleResetPage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: on_VVVFMP2Btn_pressed(); break;
-        case 1: on_VVVFM2Btn_pressed(); break;
-        case 2: on_VVVFM1Btn_pressed(); break;
-        case 3: on_VVVFMP1Btn_pressed(); break;
-        case 4: on_ACMRESETTC2Btn_pressed(); break;
-        case 5: on_ACMRESETM2Btn_pressed(); break;
-        case 6: on_ACMRESETM1Btn_pressed(); break;
-        case 7: on_ACMRESETTC1Btn_pressed(); break;
-        case 8: on_returnBtn_pressed(); break;
+        case 0: on_VVVFMP1Btn_pressed(); break;
+        case 1: on_ACMRESETTC1Btn_pressed(); break;
+        case 2: ButtonsPressEvent(); break;
+        case 3: on_returnBtn_pressed(); break;
         default: ;
         }
-        _id -= 9;
+        _id -= 4;
     }
     return _id;
 }

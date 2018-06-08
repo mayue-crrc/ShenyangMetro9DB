@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclerunstatepage.ui'
 **
-** Created: Tue Jun 5 15:25:33 2018
+** Created: Wed Jun 6 11:56:44 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -235,21 +235,21 @@ public:
 "}"));
         LMResetPageBtn = new QPushButton(VehicleRunStatePage);
         LMResetPageBtn->setObjectName(QString::fromUtf8("LMResetPageBtn"));
-        LMResetPageBtn->setGeometry(QRect(11, 160, 80, 60));
+        LMResetPageBtn->setGeometry(QRect(10, 300, 80, 60));
         LMResetPageBtn->setFocusPolicy(Qt::NoFocus);
-        LMResetPageBtn->setStyleSheet(QString::fromUtf8("background-color:yellow;\n"
-"color:black;"));
+        LMResetPageBtn->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 128, 128);\n"
+"color:white;"));
         ByPassPageBtn = new QPushButton(VehicleRunStatePage);
         ByPassPageBtn->setObjectName(QString::fromUtf8("ByPassPageBtn"));
-        ByPassPageBtn->setGeometry(QRect(11, 230, 80, 60));
+        ByPassPageBtn->setGeometry(QRect(10, 370, 80, 60));
         ByPassPageBtn->setFocusPolicy(Qt::NoFocus);
-        ByPassPageBtn->setStyleSheet(QString::fromUtf8("background-color:yellow;\n"
-"color:black;"));
+        ByPassPageBtn->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 128, 128);\n"
+"color:white;"));
         CutPageBtn = new QPushButton(VehicleRunStatePage);
         CutPageBtn->setObjectName(QString::fromUtf8("CutPageBtn"));
-        CutPageBtn->setGeometry(QRect(10, 300, 80, 60));
+        CutPageBtn->setGeometry(QRect(10, 160, 80, 60));
         CutPageBtn->setFocusPolicy(Qt::NoFocus);
-        CutPageBtn->setStyleSheet(QString::fromUtf8("background-color:red;"));
+        CutPageBtn->setStyleSheet(QString::fromUtf8("background-color:rgb(0,128,128);"));
         FirePageBtn = new QPushButton(VehicleRunStatePage);
         FirePageBtn->setObjectName(QString::fromUtf8("FirePageBtn"));
         FirePageBtn->setGeometry(QRect(11, 440, 80, 60));
@@ -571,7 +571,7 @@ public:
         Tc1BCUlbl->setAlignment(Qt::AlignCenter);
         Tc1TrainCodelbl = new QLabel(VehicleRunStatePage);
         Tc1TrainCodelbl->setObjectName(QString::fromUtf8("Tc1TrainCodelbl"));
-        Tc1TrainCodelbl->setGeometry(QRect(178, 230, 91, 31));
+        Tc1TrainCodelbl->setGeometry(QRect(178, 240, 91, 31));
         Tc1TrainCodelbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
 "font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
@@ -579,12 +579,12 @@ public:
         Tc1TrainCodelbl->setAlignment(Qt::AlignCenter);
         Tc1FireAlarmlbl = new QLabel(VehicleRunStatePage);
         Tc1FireAlarmlbl->setObjectName(QString::fromUtf8("Tc1FireAlarmlbl"));
-        Tc1FireAlarmlbl->setGeometry(QRect(210, 280, 31, 31));
+        Tc1FireAlarmlbl->setGeometry(QRect(210, 270, 31, 31));
         Tc1FireAlarmlbl->setStyleSheet(QString::fromUtf8(""));
         Tc1FireAlarmlbl->setAlignment(Qt::AlignCenter);
         Tc1Acplbl = new QLabel(VehicleRunStatePage);
         Tc1Acplbl->setObjectName(QString::fromUtf8("Tc1Acplbl"));
-        Tc1Acplbl->setGeometry(QRect(210, 320, 31, 31));
+        Tc1Acplbl->setGeometry(QRect(210, 340, 31, 31));
         Tc1Acplbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/ACPUnknow.bmp);"));
         Tc1Acplbl->setAlignment(Qt::AlignCenter);
         Tc1SIVlbl = new QLabel(VehicleRunStatePage);
@@ -658,7 +658,7 @@ public:
         Mp1Door4lbl->setAlignment(Qt::AlignCenter);
         Mp1FireAlarmlbl = new QLabel(VehicleRunStatePage);
         Mp1FireAlarmlbl->setObjectName(QString::fromUtf8("Mp1FireAlarmlbl"));
-        Mp1FireAlarmlbl->setGeometry(QRect(322, 280, 31, 31));
+        Mp1FireAlarmlbl->setGeometry(QRect(322, 270, 31, 31));
         Mp1FireAlarmlbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/FireAlarm.png);"));
         Mp1FireAlarmlbl->setAlignment(Qt::AlignCenter);
         Mp1Door6lbl_sub = new QLabel(VehicleRunStatePage);
@@ -672,7 +672,7 @@ public:
         Mp1Door6lbl_sub->setAlignment(Qt::AlignCenter);
         Mp1TrainCodelbl = new QLabel(VehicleRunStatePage);
         Mp1TrainCodelbl->setObjectName(QString::fromUtf8("Mp1TrainCodelbl"));
-        Mp1TrainCodelbl->setGeometry(QRect(290, 230, 91, 31));
+        Mp1TrainCodelbl->setGeometry(QRect(290, 240, 91, 31));
         Mp1TrainCodelbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
 "font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
@@ -799,12 +799,12 @@ public:
         Mp1Door8lbl_sub->setAlignment(Qt::AlignCenter);
         Mp1Breakerlbl = new QLabel(VehicleRunStatePage);
         Mp1Breakerlbl->setObjectName(QString::fromUtf8("Mp1Breakerlbl"));
-        Mp1Breakerlbl->setGeometry(QRect(290, 320, 31, 31));
+        Mp1Breakerlbl->setGeometry(QRect(290, 340, 31, 31));
         Mp1Breakerlbl->setStyleSheet(QString::fromUtf8(""));
         Mp1Breakerlbl->setAlignment(Qt::AlignCenter);
         Mp1Motor1lbl = new QLabel(VehicleRunStatePage);
         Mp1Motor1lbl->setObjectName(QString::fromUtf8("Mp1Motor1lbl"));
-        Mp1Motor1lbl->setGeometry(QRect(350, 320, 31, 31));
+        Mp1Motor1lbl->setGeometry(QRect(350, 340, 31, 31));
         Mp1Motor1lbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/MotorUnknow.png);"));
         Mp1Motor1lbl->setAlignment(Qt::AlignCenter);
         Mp1supplylbl = new QLabel(VehicleRunStatePage);
@@ -972,12 +972,12 @@ public:
         Tc2Directionlbl->setAlignment(Qt::AlignCenter);
         M1Motor1lbl = new QLabel(VehicleRunStatePage);
         M1Motor1lbl->setObjectName(QString::fromUtf8("M1Motor1lbl"));
-        M1Motor1lbl->setGeometry(QRect(462, 320, 31, 31));
+        M1Motor1lbl->setGeometry(QRect(462, 340, 31, 31));
         M1Motor1lbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/MotorUnknow.bmp);"));
         M1Motor1lbl->setAlignment(Qt::AlignCenter);
         M1Breakerlbl = new QLabel(VehicleRunStatePage);
         M1Breakerlbl->setObjectName(QString::fromUtf8("M1Breakerlbl"));
-        M1Breakerlbl->setGeometry(QRect(402, 320, 31, 31));
+        M1Breakerlbl->setGeometry(QRect(402, 340, 31, 31));
         M1Breakerlbl->setStyleSheet(QString::fromUtf8(""));
         M1Breakerlbl->setAlignment(Qt::AlignCenter);
         M1BCUlbl = new QLabel(VehicleRunStatePage);
@@ -1005,7 +1005,7 @@ public:
         M1bg2lbl->setAlignment(Qt::AlignCenter);
         M1TrainCodelbl = new QLabel(VehicleRunStatePage);
         M1TrainCodelbl->setObjectName(QString::fromUtf8("M1TrainCodelbl"));
-        M1TrainCodelbl->setGeometry(QRect(402, 230, 91, 31));
+        M1TrainCodelbl->setGeometry(QRect(402, 240, 91, 31));
         M1TrainCodelbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
 "font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
@@ -1013,7 +1013,7 @@ public:
         M1TrainCodelbl->setAlignment(Qt::AlignCenter);
         M1FireAlarmlbl = new QLabel(VehicleRunStatePage);
         M1FireAlarmlbl->setObjectName(QString::fromUtf8("M1FireAlarmlbl"));
-        M1FireAlarmlbl->setGeometry(QRect(434, 280, 31, 31));
+        M1FireAlarmlbl->setGeometry(QRect(434, 270, 31, 31));
         M1FireAlarmlbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/FireAlarm.png);"));
         M1FireAlarmlbl->setAlignment(Qt::AlignCenter);
         M2Door8lbl_sub = new QLabel(VehicleRunStatePage);
@@ -1171,12 +1171,12 @@ public:
         M2bg2lbl->setAlignment(Qt::AlignCenter);
         M2FireAlarmlbl = new QLabel(VehicleRunStatePage);
         M2FireAlarmlbl->setObjectName(QString::fromUtf8("M2FireAlarmlbl"));
-        M2FireAlarmlbl->setGeometry(QRect(546, 280, 31, 31));
+        M2FireAlarmlbl->setGeometry(QRect(546, 270, 31, 31));
         M2FireAlarmlbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/FireAlarm.png);"));
         M2FireAlarmlbl->setAlignment(Qt::AlignCenter);
         M2TrainCodelbl = new QLabel(VehicleRunStatePage);
         M2TrainCodelbl->setObjectName(QString::fromUtf8("M2TrainCodelbl"));
-        M2TrainCodelbl->setGeometry(QRect(514, 230, 91, 31));
+        M2TrainCodelbl->setGeometry(QRect(514, 240, 91, 31));
         M2TrainCodelbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
 "font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
@@ -1184,12 +1184,12 @@ public:
         M2TrainCodelbl->setAlignment(Qt::AlignCenter);
         M2Breakerlbl = new QLabel(VehicleRunStatePage);
         M2Breakerlbl->setObjectName(QString::fromUtf8("M2Breakerlbl"));
-        M2Breakerlbl->setGeometry(QRect(574, 320, 31, 31));
+        M2Breakerlbl->setGeometry(QRect(574, 340, 31, 31));
         M2Breakerlbl->setStyleSheet(QString::fromUtf8(""));
         M2Breakerlbl->setAlignment(Qt::AlignCenter);
         M2Motor1lbl = new QLabel(VehicleRunStatePage);
         M2Motor1lbl->setObjectName(QString::fromUtf8("M2Motor1lbl"));
-        M2Motor1lbl->setGeometry(QRect(514, 320, 31, 31));
+        M2Motor1lbl->setGeometry(QRect(514, 340, 31, 31));
         M2Motor1lbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/MotorUnknow.bmp);"));
         M2Motor1lbl->setAlignment(Qt::AlignCenter);
         M2bg1lbl = new QLabel(VehicleRunStatePage);
@@ -1352,7 +1352,7 @@ public:
         Mp2Door6lbl_sub->setAlignment(Qt::AlignCenter);
         Mp2Motor1lbl = new QLabel(VehicleRunStatePage);
         Mp2Motor1lbl->setObjectName(QString::fromUtf8("Mp2Motor1lbl"));
-        Mp2Motor1lbl->setGeometry(QRect(626, 320, 31, 31));
+        Mp2Motor1lbl->setGeometry(QRect(626, 340, 31, 31));
         Mp2Motor1lbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/MotorUnknow.bmp);"));
         Mp2Motor1lbl->setAlignment(Qt::AlignCenter);
         Mp2BCUlbl = new QLabel(VehicleRunStatePage);
@@ -1362,7 +1362,7 @@ public:
         Mp2BCUlbl->setAlignment(Qt::AlignCenter);
         Mp2Breakerlbl = new QLabel(VehicleRunStatePage);
         Mp2Breakerlbl->setObjectName(QString::fromUtf8("Mp2Breakerlbl"));
-        Mp2Breakerlbl->setGeometry(QRect(686, 320, 31, 31));
+        Mp2Breakerlbl->setGeometry(QRect(686, 340, 31, 31));
         Mp2Breakerlbl->setStyleSheet(QString::fromUtf8(""));
         Mp2Breakerlbl->setAlignment(Qt::AlignCenter);
         Mp2bg1lbl = new QLabel(VehicleRunStatePage);
@@ -1376,7 +1376,7 @@ public:
         Mp2bg1lbl->setAlignment(Qt::AlignCenter);
         Mp2TrainCodelbl = new QLabel(VehicleRunStatePage);
         Mp2TrainCodelbl->setObjectName(QString::fromUtf8("Mp2TrainCodelbl"));
-        Mp2TrainCodelbl->setGeometry(QRect(626, 230, 91, 31));
+        Mp2TrainCodelbl->setGeometry(QRect(626, 240, 91, 31));
         Mp2TrainCodelbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
 "font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
@@ -1393,7 +1393,7 @@ public:
         Mp2bg2lbl->setAlignment(Qt::AlignCenter);
         Mp2FireAlarmlbl = new QLabel(VehicleRunStatePage);
         Mp2FireAlarmlbl->setObjectName(QString::fromUtf8("Mp2FireAlarmlbl"));
-        Mp2FireAlarmlbl->setGeometry(QRect(658, 280, 31, 31));
+        Mp2FireAlarmlbl->setGeometry(QRect(658, 270, 31, 31));
         Mp2FireAlarmlbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/FireAlarm.png);"));
         Mp2FireAlarmlbl->setAlignment(Qt::AlignCenter);
         Tc2Door7lbl_sub = new QLabel(VehicleRunStatePage);
@@ -1542,13 +1542,13 @@ public:
         Tc2Door6lbl_sub->setAlignment(Qt::AlignCenter);
         Tc2FireAlarmlbl = new QLabel(VehicleRunStatePage);
         Tc2FireAlarmlbl->setObjectName(QString::fromUtf8("Tc2FireAlarmlbl"));
-        Tc2FireAlarmlbl->setGeometry(QRect(770, 280, 31, 31));
+        Tc2FireAlarmlbl->setGeometry(QRect(770, 270, 31, 31));
         Tc2FireAlarmlbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/FireAlarm.png);\n"
 ""));
         Tc2FireAlarmlbl->setAlignment(Qt::AlignCenter);
         Tc2TrainCodelbl = new QLabel(VehicleRunStatePage);
         Tc2TrainCodelbl->setObjectName(QString::fromUtf8("Tc2TrainCodelbl"));
-        Tc2TrainCodelbl->setGeometry(QRect(740, 230, 91, 31));
+        Tc2TrainCodelbl->setGeometry(QRect(740, 240, 91, 31));
         Tc2TrainCodelbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
 "font: 20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
@@ -1589,7 +1589,7 @@ public:
         Tc2SIVlbl->setAlignment(Qt::AlignCenter);
         Tc2Acplbl = new QLabel(VehicleRunStatePage);
         Tc2Acplbl->setObjectName(QString::fromUtf8("Tc2Acplbl"));
-        Tc2Acplbl->setGeometry(QRect(770, 320, 31, 31));
+        Tc2Acplbl->setGeometry(QRect(770, 340, 31, 31));
         Tc2Acplbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/ACPUnknow.bmp);"));
         Tc2Acplbl->setAlignment(Qt::AlignCenter);
         Mp1Pantolbl = new QLabel(VehicleRunStatePage);
@@ -1623,105 +1623,108 @@ public:
         M2SIVlbl->setAlignment(Qt::AlignCenter);
         OutTempTC1lbl = new QLabel(VehicleRunStatePage);
         OutTempTC1lbl->setObjectName(QString::fromUtf8("OutTempTC1lbl"));
-        OutTempTC1lbl->setGeometry(QRect(175, 280, 31, 31));
+        OutTempTC1lbl->setGeometry(QRect(175, 300, 45, 31));
         OutTempTC1lbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
-"font: 10px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"font: 15px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
 ""));
         OutTempTC1lbl->setAlignment(Qt::AlignCenter);
         LoadTC1lbl = new QLabel(VehicleRunStatePage);
         LoadTC1lbl->setObjectName(QString::fromUtf8("LoadTC1lbl"));
-        LoadTC1lbl->setGeometry(QRect(240, 280, 31, 31));
+        LoadTC1lbl->setGeometry(QRect(230, 300, 45, 31));
         LoadTC1lbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
-"font: 10px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"font: 15px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
 ""));
         LoadTC1lbl->setAlignment(Qt::AlignCenter);
         OutTempTC2lbl = new QLabel(VehicleRunStatePage);
         OutTempTC2lbl->setObjectName(QString::fromUtf8("OutTempTC2lbl"));
-        OutTempTC2lbl->setGeometry(QRect(735, 280, 31, 31));
+        OutTempTC2lbl->setGeometry(QRect(735, 300, 45, 31));
         OutTempTC2lbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
-"font: 10px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"font: 15px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
 ""));
         OutTempTC2lbl->setAlignment(Qt::AlignCenter);
         LoadTC2lbl = new QLabel(VehicleRunStatePage);
         LoadTC2lbl->setObjectName(QString::fromUtf8("LoadTC2lbl"));
-        LoadTC2lbl->setGeometry(QRect(800, 280, 31, 31));
+        LoadTC2lbl->setGeometry(QRect(790, 300, 45, 31));
         LoadTC2lbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
-"font: 10px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"font: 15px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
 ""));
         LoadTC2lbl->setAlignment(Qt::AlignCenter);
         OutTempMP1lbl = new QLabel(VehicleRunStatePage);
         OutTempMP1lbl->setObjectName(QString::fromUtf8("OutTempMP1lbl"));
-        OutTempMP1lbl->setGeometry(QRect(290, 280, 31, 31));
+        OutTempMP1lbl->setGeometry(QRect(290, 300, 45, 31));
         OutTempMP1lbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
-"font: 10px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"font: 15px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
 ""));
         OutTempMP1lbl->setAlignment(Qt::AlignCenter);
         LoadMP1lbl = new QLabel(VehicleRunStatePage);
         LoadMP1lbl->setObjectName(QString::fromUtf8("LoadMP1lbl"));
-        LoadMP1lbl->setGeometry(QRect(355, 280, 31, 31));
+        LoadMP1lbl->setGeometry(QRect(340, 300, 45, 31));
         LoadMP1lbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
-"font: 10px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"font: 15px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
 ""));
         LoadMP1lbl->setAlignment(Qt::AlignCenter);
         OutTempMP2lbl = new QLabel(VehicleRunStatePage);
         OutTempMP2lbl->setObjectName(QString::fromUtf8("OutTempMP2lbl"));
-        OutTempMP2lbl->setGeometry(QRect(625, 280, 31, 31));
+        OutTempMP2lbl->setGeometry(QRect(620, 300, 45, 31));
         OutTempMP2lbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
-"font: 10px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"font: 15px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
 ""));
         OutTempMP2lbl->setAlignment(Qt::AlignCenter);
         LoadMP2lbl = new QLabel(VehicleRunStatePage);
         LoadMP2lbl->setObjectName(QString::fromUtf8("LoadMP2lbl"));
-        LoadMP2lbl->setGeometry(QRect(690, 280, 31, 31));
+        LoadMP2lbl->setGeometry(QRect(670, 300, 45, 31));
         LoadMP2lbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
-"font: 10px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"font: 15px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
 ""));
         LoadMP2lbl->setAlignment(Qt::AlignCenter);
         OutTempM1lbl = new QLabel(VehicleRunStatePage);
         OutTempM1lbl->setObjectName(QString::fromUtf8("OutTempM1lbl"));
-        OutTempM1lbl->setGeometry(QRect(400, 280, 31, 31));
+        OutTempM1lbl->setGeometry(QRect(400, 300, 45, 31));
         OutTempM1lbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
-"font: 10px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"font: 15px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
+"\n"
 ""));
         OutTempM1lbl->setAlignment(Qt::AlignCenter);
         LoadM1lbl = new QLabel(VehicleRunStatePage);
         LoadM1lbl->setObjectName(QString::fromUtf8("LoadM1lbl"));
-        LoadM1lbl->setGeometry(QRect(465, 280, 31, 31));
+        LoadM1lbl->setGeometry(QRect(450, 300, 45, 31));
         LoadM1lbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
-"font: 10px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"font: 15px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
+"\n"
 ""));
         LoadM1lbl->setAlignment(Qt::AlignCenter);
         OutTempM2lbl = new QLabel(VehicleRunStatePage);
         OutTempM2lbl->setObjectName(QString::fromUtf8("OutTempM2lbl"));
-        OutTempM2lbl->setGeometry(QRect(515, 280, 31, 31));
+        OutTempM2lbl->setGeometry(QRect(510, 300, 45, 31));
         OutTempM2lbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
-"font: 10px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"font: 15px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
+"\n"
 ""));
         OutTempM2lbl->setAlignment(Qt::AlignCenter);
         LoadM2lbl = new QLabel(VehicleRunStatePage);
         LoadM2lbl->setObjectName(QString::fromUtf8("LoadM2lbl"));
-        LoadM2lbl->setGeometry(QRect(580, 280, 31, 31));
+        LoadM2lbl->setGeometry(QRect(560, 300, 45, 31));
         LoadM2lbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255,255,153);\n"
-"font: 10px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"font: 15px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:black;\n"
 ""));
         LoadM2lbl->setAlignment(Qt::AlignCenter);
         ResetPageBtn = new QPushButton(VehicleRunStatePage);
         ResetPageBtn->setObjectName(QString::fromUtf8("ResetPageBtn"));
-        ResetPageBtn->setGeometry(QRect(10, 370, 80, 60));
+        ResetPageBtn->setGeometry(QRect(10, 230, 80, 60));
         ResetPageBtn->setFocusPolicy(Qt::NoFocus);
-        ResetPageBtn->setStyleSheet(QString::fromUtf8("background-color:red;"));
+        ResetPageBtn->setStyleSheet(QString::fromUtf8("background-color:rgb(0,128,128);"));
         BuzzerBtn = new QPushButton(VehicleRunStatePage);
         BuzzerBtn->setObjectName(QString::fromUtf8("BuzzerBtn"));
         BuzzerBtn->setGeometry(QRect(940, 249, 80, 71));
@@ -1731,196 +1734,6 @@ public:
 "border:2px solid white;\n"
 "background-color: yellow;\n"
 "border-radius: 15px;"));
-        statebglbl->raise();
-        LMResetPageBtn->raise();
-        ByPassPageBtn->raise();
-        CutPageBtn->raise();
-        FirePageBtn->raise();
-        PIDSmodebg->raise();
-        WashModelbl->raise();
-        SpeedLimitlbl->raise();
-        EBBtnlbl->raise();
-        Idlelbl->raise();
-        HoldbrakeCutlbl->raise();
-        DC24VLowlbl->raise();
-        Deadmanlbl->raise();
-        EmergencyRunlbl->raise();
-        Tc1bglbl->raise();
-        Mp1bglbl->raise();
-        M1bglbl->raise();
-        M2bglbl->raise();
-        Mp2bglbl->raise();
-        Tc2bglbl->raise();
-        Tc1Cablbl->raise();
-        Tc2Cablbl->raise();
-        Tc1Door1lbl->raise();
-        Tc1Door3lbl->raise();
-        Tc1Door5lbl->raise();
-        Tc1Door7lbl->raise();
-        Tc1Door4lbl->raise();
-        Tc1Door6lbl->raise();
-        Tc1Door8lbl->raise();
-        Tc1Door2lbl->raise();
-        Tc1Door3lbl_sub->raise();
-        Tc1Door5lbl_sub->raise();
-        Tc1Door7lbl_sub->raise();
-        Tc1Door1lbl_sub->raise();
-        Tc1Door2lbl_sub->raise();
-        Tc1Door6lbl_sub->raise();
-        Tc1Door8lbl_sub->raise();
-        Tc1Door4lbl_sub->raise();
-        Tc1CabLeftDoorlbl->raise();
-        Tc1CabRightDoorlbl->raise();
-        Tc1Cabdoorlbl->raise();
-        Tc1bg1lbl->raise();
-        Tc1bg2lbl->raise();
-        Tc1BCUlbl->raise();
-        Tc1TrainCodelbl->raise();
-        Tc1FireAlarmlbl->raise();
-        Tc1Acplbl->raise();
-        Tc1SIVlbl->raise();
-        Tc1BCMlbl->raise();
-        Tc2CabRightDoorlbl->raise();
-        Tc2Cabdoorlbl->raise();
-        Tc2CabLeftDoorlbl->raise();
-        Mp1Door3lbl->raise();
-        Mp1Door7lbl->raise();
-        Mp1Door5lbl->raise();
-        Mp1Door4lbl->raise();
-        Mp1FireAlarmlbl->raise();
-        Mp1Door6lbl_sub->raise();
-        Mp1TrainCodelbl->raise();
-        Mp1Door1lbl->raise();
-        Mp1bg2lbl->raise();
-        Mp1BCUlbl->raise();
-        Mp1Door8lbl->raise();
-        Mp1Door7lbl_sub->raise();
-        Mp1Door4lbl_sub->raise();
-        Mp1bg1lbl->raise();
-        Mp1Door6lbl->raise();
-        Mp1Door5lbl_sub->raise();
-        Mp1Door3lbl_sub->raise();
-        Mp1Door2lbl->raise();
-        Mp1Door1lbl_sub->raise();
-        Mp1Door2lbl_sub->raise();
-        Mp1Door8lbl_sub->raise();
-        Mp1Breakerlbl->raise();
-        Mp1Motor1lbl->raise();
-        Mp1supplylbl->raise();
-        M1Door6lbl->raise();
-        M1Door6lbl_sub->raise();
-        M1Door7lbl->raise();
-        M1Door8lbl_sub->raise();
-        M1Door4lbl_sub->raise();
-        M1Door3lbl->raise();
-        M1Door5lbl_sub->raise();
-        M1Door1lbl_sub->raise();
-        M1Door1lbl->raise();
-        M1Door5lbl->raise();
-        M1Door4lbl->raise();
-        M1Door8lbl->raise();
-        M1Door2lbl->raise();
-        M1Door3lbl_sub->raise();
-        M1Door2lbl_sub->raise();
-        M1Door7lbl_sub->raise();
-        Tc1Directionlbl->raise();
-        Tc2Directionlbl->raise();
-        M1Motor1lbl->raise();
-        M1Breakerlbl->raise();
-        M1BCUlbl->raise();
-        M1bg1lbl->raise();
-        M1bg2lbl->raise();
-        M1TrainCodelbl->raise();
-        M1FireAlarmlbl->raise();
-        M2Door8lbl_sub->raise();
-        M2Door8lbl->raise();
-        M2Door6lbl->raise();
-        M2Door2lbl_sub->raise();
-        M2Door4lbl_sub->raise();
-        M2Door7lbl_sub->raise();
-        M2Door1lbl_sub->raise();
-        M2Door1lbl->raise();
-        M2Door7lbl->raise();
-        M2Door2lbl->raise();
-        M2Door5lbl_sub->raise();
-        M2Door4lbl->raise();
-        M2Door5lbl->raise();
-        M2Door3lbl->raise();
-        M2Door3lbl_sub->raise();
-        M2Door6lbl_sub->raise();
-        M2bg2lbl->raise();
-        M2FireAlarmlbl->raise();
-        M2TrainCodelbl->raise();
-        M2Breakerlbl->raise();
-        M2Motor1lbl->raise();
-        M2bg1lbl->raise();
-        M2BCUlbl->raise();
-        Mp2Door7lbl_sub->raise();
-        Mp2Door5lbl_sub->raise();
-        Mp2Door5lbl->raise();
-        Mp2Door8lbl->raise();
-        Mp2Door3lbl_sub->raise();
-        Mp2Door6lbl->raise();
-        Mp2Door1lbl->raise();
-        Mp2Door7lbl->raise();
-        Mp2Door2lbl_sub->raise();
-        Mp2Door8lbl_sub->raise();
-        Mp2Door4lbl_sub->raise();
-        Mp2Door2lbl->raise();
-        Mp2Door1lbl_sub->raise();
-        Mp2Door4lbl->raise();
-        Mp2Door3lbl->raise();
-        Mp2Door6lbl_sub->raise();
-        Mp2Motor1lbl->raise();
-        Mp2BCUlbl->raise();
-        Mp2Breakerlbl->raise();
-        Mp2bg1lbl->raise();
-        Mp2TrainCodelbl->raise();
-        Mp2bg2lbl->raise();
-        Mp2FireAlarmlbl->raise();
-        Tc2Door7lbl_sub->raise();
-        Tc2Door5lbl_sub->raise();
-        Tc2Door5lbl->raise();
-        Tc2Door8lbl->raise();
-        Tc2Door3lbl_sub->raise();
-        Tc2Door6lbl->raise();
-        Tc2Door1lbl->raise();
-        Tc2Door7lbl->raise();
-        Tc2Door2lbl_sub->raise();
-        Tc2Door8lbl_sub->raise();
-        Tc2Door4lbl_sub->raise();
-        Tc2Door2lbl->raise();
-        Tc2Door1lbl_sub->raise();
-        Tc2Door4lbl->raise();
-        Tc2Door3lbl->raise();
-        Tc2Door6lbl_sub->raise();
-        Tc2FireAlarmlbl->raise();
-        Tc2TrainCodelbl->raise();
-        Tc2bg1lbl->raise();
-        Tc2BCUlbl->raise();
-        Tc2bg2lbl->raise();
-        Tc2BCMlbl->raise();
-        Tc2SIVlbl->raise();
-        Tc2Acplbl->raise();
-        Mp1Pantolbl->raise();
-        Mp2Pantolbl->raise();
-        MainKMlbl->raise();
-        M1SIVlbl->raise();
-        M2SIVlbl->raise();
-        OutTempTC1lbl->raise();
-        LoadTC1lbl->raise();
-        OutTempTC2lbl->raise();
-        LoadTC2lbl->raise();
-        OutTempMP1lbl->raise();
-        LoadMP1lbl->raise();
-        OutTempMP2lbl->raise();
-        LoadMP2lbl->raise();
-        OutTempM1lbl->raise();
-        LoadM1lbl->raise();
-        OutTempM2lbl->raise();
-        LoadM2lbl->raise();
-        ResetPageBtn->raise();
-        BuzzerBtn->raise();
 
         retranslateUi(VehicleRunStatePage);
 
@@ -2118,18 +1931,18 @@ public:
 "\345\231\250\346\226\255\345\274\200", 0, QApplication::UnicodeUTF8));
         M1SIVlbl->setText(QString());
         M2SIVlbl->setText(QString());
-        OutTempTC1lbl->setText(QApplication::translate("VehicleRunStatePage", "123", 0, QApplication::UnicodeUTF8));
-        LoadTC1lbl->setText(QApplication::translate("VehicleRunStatePage", "100%", 0, QApplication::UnicodeUTF8));
+        OutTempTC1lbl->setText(QApplication::translate("VehicleRunStatePage", "-23\342\204\203", 0, QApplication::UnicodeUTF8));
+        LoadTC1lbl->setText(QApplication::translate("VehicleRunStatePage", "103.3%", 0, QApplication::UnicodeUTF8));
         OutTempTC2lbl->setText(QApplication::translate("VehicleRunStatePage", "123", 0, QApplication::UnicodeUTF8));
-        LoadTC2lbl->setText(QApplication::translate("VehicleRunStatePage", "100%", 0, QApplication::UnicodeUTF8));
+        LoadTC2lbl->setText(QString());
         OutTempMP1lbl->setText(QApplication::translate("VehicleRunStatePage", "123", 0, QApplication::UnicodeUTF8));
-        LoadMP1lbl->setText(QApplication::translate("VehicleRunStatePage", "100%", 0, QApplication::UnicodeUTF8));
+        LoadMP1lbl->setText(QApplication::translate("VehicleRunStatePage", "100", 0, QApplication::UnicodeUTF8));
         OutTempMP2lbl->setText(QApplication::translate("VehicleRunStatePage", "123", 0, QApplication::UnicodeUTF8));
-        LoadMP2lbl->setText(QApplication::translate("VehicleRunStatePage", "100%", 0, QApplication::UnicodeUTF8));
+        LoadMP2lbl->setText(QString());
         OutTempM1lbl->setText(QApplication::translate("VehicleRunStatePage", "123", 0, QApplication::UnicodeUTF8));
-        LoadM1lbl->setText(QApplication::translate("VehicleRunStatePage", "100%", 0, QApplication::UnicodeUTF8));
+        LoadM1lbl->setText(QApplication::translate("VehicleRunStatePage", "100", 0, QApplication::UnicodeUTF8));
         OutTempM2lbl->setText(QApplication::translate("VehicleRunStatePage", "123", 0, QApplication::UnicodeUTF8));
-        LoadM2lbl->setText(QApplication::translate("VehicleRunStatePage", "100%", 0, QApplication::UnicodeUTF8));
+        LoadM2lbl->setText(QString());
         ResetPageBtn->setText(QApplication::translate("VehicleRunStatePage", "\345\244\215\344\275\215\n"
 "\347\225\214\351\235\242", 0, QApplication::UnicodeUTF8));
         BuzzerBtn->setText(QApplication::translate("VehicleRunStatePage", "\351\227\264\345\243\201\351\227\250\345\274\200\n"

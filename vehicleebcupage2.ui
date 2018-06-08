@@ -309,7 +309,7 @@ border-radius:8px;</string>
   <widget class="QLabel" name="PLoadMP2lbl">
    <property name="geometry">
     <rect>
-     <x>660</x>
+     <x>650</x>
      <y>260</y>
      <width>91</width>
      <height>31</height>
@@ -341,7 +341,7 @@ border-radius:8px;</string>
   <widget class="QLabel" name="PLoadTC2lbl">
    <property name="geometry">
     <rect>
-     <x>780</x>
+     <x>770</x>
      <y>260</y>
      <width>91</width>
      <height>31</height>
@@ -679,7 +679,7 @@ background-color:lightgray;
   <widget class="QLabel" name="PLoadM2lbl">
    <property name="geometry">
     <rect>
-     <x>540</x>
+     <x>530</x>
      <y>260</y>
      <width>91</width>
      <height>31</height>
@@ -1088,22 +1088,79 @@ background-color:lightgray;
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <zorder>lbl1_13</zorder>
-  <zorder>lbl1_4</zorder>
-  <zorder>lbl1_14</zorder>
-  <zorder>lbl1_9</zorder>
-  <zorder>lbl1_6</zorder>
-  <zorder>lbl1_7</zorder>
-  <zorder>lbl1_5</zorder>
-  <zorder>lbl1_15</zorder>
-  <zorder>lbl1</zorder>
-  <zorder>lbl1_2</zorder>
-  <zorder>lbl1_8</zorder>
-  <zorder>lbl1_12</zorder>
-  <zorder>lbl1_10</zorder>
+  <widget class="QLabel" name="MRPMP1bg1lbl">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>470</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MRPM1bg1lbl">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>470</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MRPM2bg1lbl">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>470</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MRPMP2bg1lbl">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>470</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
   <zorder>lbl1_11</zorder>
-  <zorder>lbl1_3</zorder>
+  <zorder>lbl1_8</zorder>
+  <zorder>lbl1_9</zorder>
+  <zorder>lbl1_10</zorder>
+  <zorder>lbl1_12</zorder>
+  <zorder>lbl1_14</zorder>
+  <zorder>lbl1_7</zorder>
   <zorder>ASPM1_2lbl</zorder>
+  <zorder>lbl1_2</zorder>
   <zorder>PLoadMP1lbl</zorder>
   <zorder>NextPageBtn</zorder>
   <zorder>BCPM1_1lbl</zorder>
@@ -1111,6 +1168,7 @@ background-color:lightgray;
   <zorder>PLoadM1lbl</zorder>
   <zorder>ASPM1_1lbl</zorder>
   <zorder>BCPMP1_1lbl</zorder>
+  <zorder>lbl1_6</zorder>
   <zorder>LoadTC1lbl</zorder>
   <zorder>ACPTC2_1lbl</zorder>
   <zorder>BCPMP2_2lbl</zorder>
@@ -1124,15 +1182,20 @@ background-color:lightgray;
   <zorder>LoadMP2lbl</zorder>
   <zorder>ASPMP1_2lbl</zorder>
   <zorder>ASPTC1_1lbl</zorder>
+  <zorder>lbl1</zorder>
   <zorder>BCPM1_2lbl</zorder>
+  <zorder>lbl1_13</zorder>
   <zorder>MRPTC2lbl</zorder>
+  <zorder>lbl1_3</zorder>
   <zorder>ASPTC1_2lbl</zorder>
+  <zorder>lbl1_5</zorder>
   <zorder>LoadM1lbl</zorder>
   <zorder>BCPMP2_1lbl</zorder>
   <zorder>PLoadM2lbl</zorder>
   <zorder>MRPM2lbl</zorder>
   <zorder>ASPTC2_2lbl</zorder>
   <zorder>ACPTC1_1lbl</zorder>
+  <zorder>lbl1_4</zorder>
   <zorder>ASPM2_2lbl</zorder>
   <zorder>ASPMP2_1lbl</zorder>
   <zorder>LoadTC2lbl</zorder>
@@ -1150,6 +1213,11 @@ background-color:lightgray;
   <zorder>MRPMP1lbl</zorder>
   <zorder>MRPTC1bg1lbl</zorder>
   <zorder>MRPTC2bg1lbl</zorder>
+  <zorder>lbl1_15</zorder>
+  <zorder>MRPMP1bg1lbl</zorder>
+  <zorder>MRPM1bg1lbl</zorder>
+  <zorder>MRPM2bg1lbl</zorder>
+  <zorder>MRPMP2bg1lbl</zorder>
  </widget>
  <resources/>
  <connections/>

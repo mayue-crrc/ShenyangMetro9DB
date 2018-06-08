@@ -3,7 +3,7 @@
 
 #include "mybase.h"
 #include "qlabel.h"
-
+#include "qpushbutton.h"
 namespace Ui {
     class VehicleCutoffPage;
 }
@@ -19,20 +19,25 @@ public:
 private:
     Ui::VehicleCutoffPage *ui;
     void updatePage();
-    void setlabelstates(QLabel* lbl,int states);
-    void setlabelstates(QLabel* lbl,bool state,bool state2);
+    void setlabelstates(QLabel* lbl,int states,bool isonline);
+    void setlabelstates(QLabel* lbl,bool state,bool state2,bool isonline);
+    void setlabelstates(QLabel* lbl,bool state);
 
+    QList<QPushButton *> buttons;
+
+    bool Buttonstatus[6];
+    int m_BtnID;
 private slots:
 
-
-    void on_ACMCUTTC2Btn_pressed();
-    void on_ACMCUTM2Btn_pressed();
-    void on_ACMCUTM1Btn_pressed();
-    void on_ACMCUTTC1Btn_pressed();
-    void on_EBMP2Btn_pressed();
-    void on_EBM2Btn_pressed();
-    void on_EBM1Btn_pressed();
-    void on_EBMP1Btn_pressed();
+    void on_ResetACMBtn_released();
+    void on_ResetACMBtn_pressed();
+    void on_CutoffACMBtn_released();
+    void on_CutoffACMBtn_pressed();
+    void on_ResetEBBtn_released();
+    void on_ResetEBBtn_pressed();
+    void on_CutoffEBBtn_released();
+    void on_CutoffEBBtn_pressed();
+    void ButtonsPressEvent();
     void on_returnBtn_pressed();
 };
 

@@ -1,15 +1,15 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'vehiclebypasspage.h'
+** Meta object code from reading C++ file 'vehicleresethelppage.h'
 **
-** Created: Fri Jun 8 09:08:41 2018
+** Created: Fri Jun 8 11:30:06 2018
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "vehiclebypasspage.h"
+#include "vehicleresethelppage.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'vehiclebypasspage.h' doesn't include <QObject>."
+#error "The header file 'vehicleresethelppage.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 62
 #error "This file was generated using the moc from 4.6.3. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -17,7 +17,7 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-static const uint qt_meta_data_VehicleBypassPage[] = {
+static const uint qt_meta_data_VehicleResetHelpPage[] = {
 
  // content:
        4,       // revision
@@ -31,45 +31,45 @@ static const uint qt_meta_data_VehicleBypassPage[] = {
        0,       // signalCount
 
  // slots: signature, parameters, type, tag, flags
-      19,   18,   18,   18, 0x08,
+      22,   21,   21,   21, 0x08,
 
        0        // eod
 };
 
-static const char qt_meta_stringdata_VehicleBypassPage[] = {
-    "VehicleBypassPage\0\0on_returnBtn_pressed()\0"
+static const char qt_meta_stringdata_VehicleResetHelpPage[] = {
+    "VehicleResetHelpPage\0\0on_pushButton_pressed()\0"
 };
 
-const QMetaObject VehicleBypassPage::staticMetaObject = {
-    { &MyBase::staticMetaObject, qt_meta_stringdata_VehicleBypassPage,
-      qt_meta_data_VehicleBypassPage, 0 }
+const QMetaObject VehicleResetHelpPage::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_VehicleResetHelpPage,
+      qt_meta_data_VehicleResetHelpPage, 0 }
 };
 
 #ifdef Q_NO_DATA_RELOCATION
-const QMetaObject &VehicleBypassPage::getStaticMetaObject() { return staticMetaObject; }
+const QMetaObject &VehicleResetHelpPage::getStaticMetaObject() { return staticMetaObject; }
 #endif //Q_NO_DATA_RELOCATION
 
-const QMetaObject *VehicleBypassPage::metaObject() const
+const QMetaObject *VehicleResetHelpPage::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
 }
 
-void *VehicleBypassPage::qt_metacast(const char *_clname)
+void *VehicleResetHelpPage::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_VehicleBypassPage))
-        return static_cast<void*>(const_cast< VehicleBypassPage*>(this));
-    return MyBase::qt_metacast(_clname);
+    if (!strcmp(_clname, qt_meta_stringdata_VehicleResetHelpPage))
+        return static_cast<void*>(const_cast< VehicleResetHelpPage*>(this));
+    return QWidget::qt_metacast(_clname);
 }
 
-int VehicleBypassPage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int VehicleResetHelpPage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = MyBase::qt_metacall(_c, _id, _a);
+    _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: on_returnBtn_pressed(); break;
+        case 0: on_pushButton_pressed(); break;
         default: ;
         }
         _id -= 1;

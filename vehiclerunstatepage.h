@@ -24,6 +24,8 @@ private:
     Ui::VehicleRunStatePage *ui;
     void updateTrainStatus();
     void updateRunStatus();
+    void updateButtonsStatus();
+
     void setPBStatus(QLabel* lbl,QList<bool> status);
     void setBStatus(QLabel* lbl,QList<bool> status);
     void setMotorStatus(QLabel* lbl,bool isunknown,signed short int status);

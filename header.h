@@ -13,6 +13,7 @@
 #include "vehiclebcuhelppage.h"
 #include "vehicledcuhelppage.h"
 #include "vehicleacuhelppage.h"
+#include "vehicleresethelppage.h"
 namespace Ui {
     class Header;
 }
@@ -39,6 +40,7 @@ private:
     VehicleBCUHelpPage* vehicleBCUHelpPage;
     VehicleDCUHelpPage* vehicleDCUHelpPage;
     VehicleACUHelpPage* vehicleACUHelpPage;
+    VehicleResetHelpPage* vehicleResetHelpPage;
     CrrcFault* m_crrcFault;
     QHash<int, QString> m_StationIDHash;
 private slots:

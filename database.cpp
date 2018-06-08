@@ -89,6 +89,20 @@ Database::Database()
         HMiCT_PowerOFF_B1[i] = false;
         HMiCT_PowerON_B1[i] = false;
     }
+
+    DefaultLoadTC1 = MainGetDefaultPara::getString("/DefaultLoad/load_TC1");
+    DefaultLoadMP1 = MainGetDefaultPara::getString("/DefaultLoad/load_MP1");
+    DefaultLoadM1 = MainGetDefaultPara::getString("/DefaultLoad/load_M1");
+    DefaultLoadM2 = MainGetDefaultPara::getString("/DefaultLoad/load_M2");
+    DefaultLoadMP2 = MainGetDefaultPara::getString("/DefaultLoad/load_MP2");
+    DefaultLoadTC2 = MainGetDefaultPara::getString("/DefaultLoad/load_TC2");
+
+    DefaultFullLoadTC1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_TC1");
+    DefaultFullLoadMP1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_MP1");
+    DefaultFullLoadM1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_M1");
+    DefaultFullLoadM2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_M2");
+    DefaultFullLoadMP2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_MP2");
+    DefaultFullLoadTC2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_TC2");
 }
 
 void Database::copyPort(unsigned short int sink, unsigned short int source)
@@ -814,6 +828,19 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->CTHM_AcDeTime_U16 = crrcMvb->getUnsignedInt(0x21A,12);
         this->CTHM_AcDeTestOn_B1 = crrcMvb->getBool(0x21A,15,0);
 
+        float tmp_pkgtc1 = ((float)this->CTHM_TC1Load_U16/100 - DefaultLoadTC1.toFloat());
+        float tmp_pkgmp1 = ((float)this->CTHM_MP1Load_U16/100 - DefaultLoadMP1.toFloat());
+        float tmp_pkgm1 = ((float)this->CTHM_M1Load_U16/100 - DefaultLoadM1.toFloat());
+        float tmp_pkgm2 = ((float)this->CTHM_M2Load_U16/100 - DefaultLoadM2.toFloat());
+        float tmp_pkgmp2 = ((float)this->CTHM_MP2Load_U16/100 - DefaultLoadMP2.toFloat());
+        float tmp_pkgtc2 = ((float)this->CTHM_TC2Load_U16/100 - DefaultLoadTC2.toFloat());
+
+        PLoad_TC1 = QString::number((float)(tmp_pkgtc1/(DefaultFullLoadTC1.toFloat()))*100,10,1);
+        PLoad_MP1 = QString::number((float)(tmp_pkgmp1/(DefaultFullLoadMP1.toFloat()))*100,10,1);
+        PLoad_M1 = QString::number((float)(tmp_pkgm1/(DefaultFullLoadM1.toFloat()))*100,10,1);
+        PLoad_M2 = QString::number((float)(tmp_pkgm2/(DefaultFullLoadM2.toFloat()))*100,10,1);
+        PLoad_MP2 = QString::number((float)(tmp_pkgmp2/(DefaultFullLoadMP2.toFloat()))*100,10,1);
+        PLoad_TC2 = QString::number((float)(tmp_pkgtc2/(DefaultFullLoadTC2.toFloat()))*100,10,1);
     }
 
     /////*******HMI -- CCU**********///////

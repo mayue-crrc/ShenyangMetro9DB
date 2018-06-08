@@ -831,7 +831,8 @@ background-color: rgb(0, 0, 0);
     <string notr="true">border-color:black;</string>
    </property>
    <property name="text">
-    <string>只有所有转向架自检条件满足时，才可执行制动自检,将手柄拉到快速制动位</string>
+    <string>所有转向架自检条件满足，且手柄落到快速制动位时
+点击“制动自检请求“按钮开始自检</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

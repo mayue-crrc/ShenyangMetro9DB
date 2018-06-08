@@ -36,7 +36,7 @@ QPushButton
     <rect>
      <x>170</x>
      <y>50</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -52,7 +52,7 @@ QPushButton
     <rect>
      <x>220</x>
      <y>50</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -68,7 +68,7 @@ QPushButton
     <rect>
      <x>340</x>
      <y>50</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -84,7 +84,7 @@ QPushButton
     <rect>
      <x>290</x>
      <y>50</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -100,7 +100,7 @@ QPushButton
     <rect>
      <x>460</x>
      <y>50</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -116,7 +116,7 @@ QPushButton
     <rect>
      <x>410</x>
      <y>50</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -132,7 +132,7 @@ QPushButton
     <rect>
      <x>580</x>
      <y>50</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -148,7 +148,7 @@ QPushButton
     <rect>
      <x>770</x>
      <y>50</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -164,7 +164,7 @@ QPushButton
     <rect>
      <x>530</x>
      <y>50</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -180,7 +180,7 @@ QPushButton
     <rect>
      <x>650</x>
      <y>50</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -196,7 +196,7 @@ QPushButton
     <rect>
      <x>700</x>
      <y>50</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -212,7 +212,7 @@ QPushButton
     <rect>
      <x>820</x>
      <y>50</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -247,7 +247,7 @@ QPushButton
     <rect>
      <x>220</x>
      <y>120</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -263,7 +263,7 @@ QPushButton
     <rect>
      <x>410</x>
      <y>120</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -279,7 +279,7 @@ QPushButton
     <rect>
      <x>530</x>
      <y>120</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -295,7 +295,7 @@ QPushButton
     <rect>
      <x>820</x>
      <y>120</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -311,7 +311,7 @@ QPushButton
     <rect>
      <x>650</x>
      <y>120</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -327,7 +327,7 @@ QPushButton
     <rect>
      <x>580</x>
      <y>120</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -343,7 +343,7 @@ QPushButton
     <rect>
      <x>770</x>
      <y>120</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -359,7 +359,7 @@ QPushButton
     <rect>
      <x>170</x>
      <y>120</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -375,7 +375,7 @@ QPushButton
     <rect>
      <x>700</x>
      <y>120</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -391,7 +391,7 @@ QPushButton
     <rect>
      <x>290</x>
      <y>120</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -407,7 +407,7 @@ QPushButton
     <rect>
      <x>340</x>
      <y>120</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -423,7 +423,7 @@ QPushButton
     <rect>
      <x>460</x>
      <y>120</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -477,7 +477,7 @@ QPushButton
     <rect>
      <x>190</x>
      <y>190</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -493,7 +493,7 @@ QPushButton
     <rect>
      <x>310</x>
      <y>190</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -509,7 +509,7 @@ QPushButton
     <rect>
      <x>430</x>
      <y>190</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -525,7 +525,7 @@ QPushButton
     <rect>
      <x>560</x>
      <y>190</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -541,7 +541,7 @@ QPushButton
     <rect>
      <x>680</x>
      <y>190</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -557,7 +557,7 @@ QPushButton
     <rect>
      <x>800</x>
      <y>190</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -573,7 +573,7 @@ QPushButton
     <rect>
      <x>310</x>
      <y>260</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -589,7 +589,7 @@ QPushButton
     <rect>
      <x>560</x>
      <y>260</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -605,7 +605,7 @@ QPushButton
     <rect>
      <x>680</x>
      <y>260</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -621,7 +621,7 @@ QPushButton
     <rect>
      <x>190</x>
      <y>260</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -637,7 +637,7 @@ QPushButton
     <rect>
      <x>800</x>
      <y>260</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -653,7 +653,7 @@ QPushButton
     <rect>
      <x>430</x>
      <y>260</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -707,7 +707,7 @@ QPushButton
     <rect>
      <x>770</x>
      <y>330</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -723,7 +723,7 @@ QPushButton
     <rect>
      <x>340</x>
      <y>330</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -739,7 +739,7 @@ QPushButton
     <rect>
      <x>460</x>
      <y>330</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -755,7 +755,7 @@ QPushButton
     <rect>
      <x>530</x>
      <y>330</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -771,7 +771,7 @@ QPushButton
     <rect>
      <x>700</x>
      <y>330</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -787,7 +787,7 @@ QPushButton
     <rect>
      <x>820</x>
      <y>330</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -803,7 +803,7 @@ QPushButton
     <rect>
      <x>170</x>
      <y>330</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -819,7 +819,7 @@ QPushButton
     <rect>
      <x>220</x>
      <y>330</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -835,7 +835,7 @@ QPushButton
     <rect>
      <x>650</x>
      <y>330</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -851,7 +851,7 @@ QPushButton
     <rect>
      <x>290</x>
      <y>330</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -867,7 +867,7 @@ QPushButton
     <rect>
      <x>580</x>
      <y>330</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -883,7 +883,7 @@ QPushButton
     <rect>
      <x>410</x>
      <y>330</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -899,7 +899,7 @@ QPushButton
     <rect>
      <x>410</x>
      <y>400</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -913,9 +913,9 @@ QPushButton
   <widget class="QLabel" name="HoldBRKMP2lbl_2">
    <property name="geometry">
     <rect>
-     <x>660</x>
+     <x>650</x>
      <y>400</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -929,9 +929,9 @@ QPushButton
   <widget class="QLabel" name="HoldBRKM2lbl_2">
    <property name="geometry">
     <rect>
-     <x>540</x>
+     <x>530</x>
      <y>400</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -947,7 +947,7 @@ QPushButton
     <rect>
      <x>170</x>
      <y>400</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -963,7 +963,7 @@ QPushButton
     <rect>
      <x>290</x>
      <y>400</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -977,9 +977,9 @@ QPushButton
   <widget class="QLabel" name="HoldBRKTC2lbl_2">
    <property name="geometry">
     <rect>
-     <x>780</x>
+     <x>770</x>
      <y>400</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -1181,7 +1181,7 @@ border-radius:8px;</string>
     <rect>
      <x>430</x>
      <y>470</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -1216,7 +1216,7 @@ border-radius:8px;</string>
     <rect>
      <x>310</x>
      <y>470</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -1251,7 +1251,7 @@ border-radius:8px;</string>
     <rect>
      <x>680</x>
      <y>470</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -1267,7 +1267,7 @@ border-radius:8px;</string>
     <rect>
      <x>560</x>
      <y>470</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -1283,7 +1283,7 @@ border-radius:8px;</string>
     <rect>
      <x>190</x>
      <y>470</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -1297,9 +1297,9 @@ border-radius:8px;</string>
   <widget class="QLabel" name="AllBRKBypassTC2lbl">
    <property name="geometry">
     <rect>
-     <x>800</x>
+     <x>790</x>
      <y>470</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -1313,9 +1313,9 @@ border-radius:8px;</string>
   <widget class="QLabel" name="HoldBRKMP2lbl_1">
    <property name="geometry">
     <rect>
-     <x>710</x>
+     <x>700</x>
      <y>400</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -1331,7 +1331,7 @@ border-radius:8px;</string>
     <rect>
      <x>460</x>
      <y>400</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -1345,9 +1345,9 @@ border-radius:8px;</string>
   <widget class="QLabel" name="HoldBRKTC2lbl_1">
    <property name="geometry">
     <rect>
-     <x>830</x>
+     <x>820</x>
      <y>400</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -1363,7 +1363,7 @@ border-radius:8px;</string>
     <rect>
      <x>340</x>
      <y>400</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -1379,7 +1379,7 @@ border-radius:8px;</string>
     <rect>
      <x>220</x>
      <y>400</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -1393,9 +1393,9 @@ border-radius:8px;</string>
   <widget class="QLabel" name="HoldBRKM2lbl_1">
    <property name="geometry">
     <rect>
-     <x>590</x>
+     <x>580</x>
      <y>400</y>
-     <width>41</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -1406,20 +1406,20 @@ border-radius:8px;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <zorder>lbl1_10</zorder>
+  <zorder>lbl1_7</zorder>
+  <zorder>lbl1_8</zorder>
+  <zorder>lbl1_9</zorder>
+  <zorder>lbl1_14</zorder>
+  <zorder>lbl1_12</zorder>
+  <zorder>lbl1_11</zorder>
   <zorder>lbl1</zorder>
   <zorder>lbl1_3</zorder>
-  <zorder>lbl1_14</zorder>
-  <zorder>lbl1_9</zorder>
-  <zorder>lbl1_8</zorder>
   <zorder>lbl1_2</zorder>
-  <zorder>lbl1_11</zorder>
   <zorder>lbl1_4</zorder>
-  <zorder>lbl1_7</zorder>
-  <zorder>lbl1_10</zorder>
   <zorder>lbl1_5</zorder>
   <zorder>lbl1_6</zorder>
   <zorder>lbl1_15</zorder>
-  <zorder>lbl1_12</zorder>
   <zorder>lbl1_13</zorder>
   <zorder>BRKApplyTC1_1lbl</zorder>
   <zorder>BRKApplyTC1_2lbl</zorder>

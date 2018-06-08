@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicleebcupage2.ui'
 **
-** Created: Tue Jun 5 18:50:57 2018
+** Created: Wed Jun 6 13:43:22 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -86,6 +86,10 @@ public:
     QLabel *MRPTC1bg1lbl;
     QLabel *MRPTC2bg1lbl;
     QLabel *lbl1_15;
+    QLabel *MRPMP1bg1lbl;
+    QLabel *MRPM1bg1lbl;
+    QLabel *MRPM2bg1lbl;
+    QLabel *MRPMP2bg1lbl;
 
     void setupUi(QWidget *VehicleEBCUPage2)
     {
@@ -182,7 +186,7 @@ public:
         BCPTC1_2lbl->setAlignment(Qt::AlignCenter);
         PLoadMP2lbl = new QLabel(VehicleEBCUPage2);
         PLoadMP2lbl->setObjectName(QString::fromUtf8("PLoadMP2lbl"));
-        PLoadMP2lbl->setGeometry(QRect(660, 260, 91, 31));
+        PLoadMP2lbl->setGeometry(QRect(650, 260, 91, 31));
         PLoadMP2lbl->setAlignment(Qt::AlignCenter);
         MRPTC1lbl = new QLabel(VehicleEBCUPage2);
         MRPTC1lbl->setObjectName(QString::fromUtf8("MRPTC1lbl"));
@@ -190,7 +194,7 @@ public:
         MRPTC1lbl->setAlignment(Qt::AlignCenter);
         PLoadTC2lbl = new QLabel(VehicleEBCUPage2);
         PLoadTC2lbl->setObjectName(QString::fromUtf8("PLoadTC2lbl"));
-        PLoadTC2lbl->setGeometry(QRect(780, 260, 91, 31));
+        PLoadTC2lbl->setGeometry(QRect(770, 260, 91, 31));
         PLoadTC2lbl->setAlignment(Qt::AlignCenter);
         BCPTC2_2lbl = new QLabel(VehicleEBCUPage2);
         BCPTC2_2lbl->setObjectName(QString::fromUtf8("BCPTC2_2lbl"));
@@ -278,7 +282,7 @@ public:
         BCPMP2_1lbl->setAlignment(Qt::AlignCenter);
         PLoadM2lbl = new QLabel(VehicleEBCUPage2);
         PLoadM2lbl->setObjectName(QString::fromUtf8("PLoadM2lbl"));
-        PLoadM2lbl->setGeometry(QRect(540, 260, 91, 31));
+        PLoadM2lbl->setGeometry(QRect(530, 260, 91, 31));
         PLoadM2lbl->setAlignment(Qt::AlignCenter);
         MRPM2lbl = new QLabel(VehicleEBCUPage2);
         MRPM2lbl->setObjectName(QString::fromUtf8("MRPM2lbl"));
@@ -380,22 +384,31 @@ public:
         lbl1_15->setGeometry(QRect(20, 460, 131, 51));
         lbl1_15->setStyleSheet(QString::fromUtf8("background-color:black;"));
         lbl1_15->setAlignment(Qt::AlignCenter);
-        lbl1_13->raise();
-        lbl1_4->raise();
-        lbl1_14->raise();
-        lbl1_9->raise();
-        lbl1_6->raise();
-        lbl1_7->raise();
-        lbl1_5->raise();
-        lbl1_15->raise();
-        lbl1->raise();
-        lbl1_2->raise();
-        lbl1_8->raise();
-        lbl1_12->raise();
-        lbl1_10->raise();
+        MRPMP1bg1lbl = new QLabel(VehicleEBCUPage2);
+        MRPMP1bg1lbl->setObjectName(QString::fromUtf8("MRPMP1bg1lbl"));
+        MRPMP1bg1lbl->setGeometry(QRect(310, 470, 41, 31));
+        MRPMP1bg1lbl->setAlignment(Qt::AlignCenter);
+        MRPM1bg1lbl = new QLabel(VehicleEBCUPage2);
+        MRPM1bg1lbl->setObjectName(QString::fromUtf8("MRPM1bg1lbl"));
+        MRPM1bg1lbl->setGeometry(QRect(430, 470, 41, 31));
+        MRPM1bg1lbl->setAlignment(Qt::AlignCenter);
+        MRPM2bg1lbl = new QLabel(VehicleEBCUPage2);
+        MRPM2bg1lbl->setObjectName(QString::fromUtf8("MRPM2bg1lbl"));
+        MRPM2bg1lbl->setGeometry(QRect(560, 470, 41, 31));
+        MRPM2bg1lbl->setAlignment(Qt::AlignCenter);
+        MRPMP2bg1lbl = new QLabel(VehicleEBCUPage2);
+        MRPMP2bg1lbl->setObjectName(QString::fromUtf8("MRPMP2bg1lbl"));
+        MRPMP2bg1lbl->setGeometry(QRect(680, 470, 41, 31));
+        MRPMP2bg1lbl->setAlignment(Qt::AlignCenter);
         lbl1_11->raise();
-        lbl1_3->raise();
+        lbl1_8->raise();
+        lbl1_9->raise();
+        lbl1_10->raise();
+        lbl1_12->raise();
+        lbl1_14->raise();
+        lbl1_7->raise();
         ASPM1_2lbl->raise();
+        lbl1_2->raise();
         PLoadMP1lbl->raise();
         NextPageBtn->raise();
         BCPM1_1lbl->raise();
@@ -403,6 +416,7 @@ public:
         PLoadM1lbl->raise();
         ASPM1_1lbl->raise();
         BCPMP1_1lbl->raise();
+        lbl1_6->raise();
         LoadTC1lbl->raise();
         ACPTC2_1lbl->raise();
         BCPMP2_2lbl->raise();
@@ -416,15 +430,20 @@ public:
         LoadMP2lbl->raise();
         ASPMP1_2lbl->raise();
         ASPTC1_1lbl->raise();
+        lbl1->raise();
         BCPM1_2lbl->raise();
+        lbl1_13->raise();
         MRPTC2lbl->raise();
+        lbl1_3->raise();
         ASPTC1_2lbl->raise();
+        lbl1_5->raise();
         LoadM1lbl->raise();
         BCPMP2_1lbl->raise();
         PLoadM2lbl->raise();
         MRPM2lbl->raise();
         ASPTC2_2lbl->raise();
         ACPTC1_1lbl->raise();
+        lbl1_4->raise();
         ASPM2_2lbl->raise();
         ASPMP2_1lbl->raise();
         LoadTC2lbl->raise();
@@ -442,6 +461,11 @@ public:
         MRPMP1lbl->raise();
         MRPTC1bg1lbl->raise();
         MRPTC2bg1lbl->raise();
+        lbl1_15->raise();
+        MRPMP1bg1lbl->raise();
+        MRPM1bg1lbl->raise();
+        MRPM2bg1lbl->raise();
+        MRPMP2bg1lbl->raise();
 
         retranslateUi(VehicleEBCUPage2);
 
@@ -522,6 +546,10 @@ public:
         MRPTC1bg1lbl->setText(QString());
         MRPTC2bg1lbl->setText(QString());
         lbl1_15->setText(QApplication::translate("VehicleEBCUPage2", "MR\345\216\213(Bar)", 0, QApplication::UnicodeUTF8));
+        MRPMP1bg1lbl->setText(QString());
+        MRPM1bg1lbl->setText(QString());
+        MRPM2bg1lbl->setText(QString());
+        MRPMP2bg1lbl->setText(QString());
     } // retranslateUi
 
 };

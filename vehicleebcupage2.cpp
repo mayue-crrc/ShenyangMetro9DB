@@ -102,6 +102,10 @@ void VehicleEBCUPage2::updatePage()
 
     //MR 压力
     setlabelstates(ui->MRPTC1bg1lbl,this->database->BR1CT_TC1Bg1TotalPresureValid_B1,this->database->BR1CT_TC1Bg1TotalPressure_U16,this->database->BCU1_3Online);
+    setlabelstates(ui->MRPMP1bg1lbl,this->database->BR1CT_MP1Bg1TotalPresureValid_B1,this->database->BR1CT_MP1Bg1TotalPressure_U16,this->database->BCU1_3Online);
+    setlabelstates(ui->MRPM1bg1lbl,this->database->BR1CT_M1Bg1TotalPresureValid_B1,this->database->BR1CT_M1Bg1TotalPressure_U16,this->database->BCU1_3Online);
+    setlabelstates(ui->MRPM2bg1lbl,this->database->BR2CT_M2Bg1TotalPresureValid_B1,this->database->BR2CT_M2Bg1TotalPressure_U16,this->database->BCU4_6Online);
+    setlabelstates(ui->MRPMP2bg1lbl,this->database->BR2CT_MP2Bg1TotalPresureValid_B1,this->database->BR2CT_MP2Bg1TotalPressure_U16,this->database->BCU4_6Online);
     setlabelstates(ui->MRPTC2bg1lbl,this->database->BR2CT_TC2Bg1TotalPresureValid_B1,this->database->BR2CT_TC2Bg1TotalPressure_U16,this->database->BCU4_6Online);
 
 }

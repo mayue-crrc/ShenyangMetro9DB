@@ -3,7 +3,7 @@
 
 #include "mybase.h"
 #include "qlabel.h"
-
+#include "qpushbutton.h"
 namespace Ui {
     class VehicleResetPage;
 }
@@ -18,18 +18,20 @@ public:
     void updatePage();
 private:
     Ui::VehicleResetPage *ui;
-    int DCU2sTimer[4],ACM2sTimer[4];
-    void setlabelstates(QLabel* lbl,int states);
+    int DCU2sTimer,ACM2sTimer;
+    void setlabelstates(QLabel* lbl,int states,bool isonline);
+
+    QList<QPushButton *> buttons;
+    bool Buttonstatus[6];
+    int m_BtnID;
 
 private slots:
-    void on_VVVFMP2Btn_pressed();
-    void on_VVVFM2Btn_pressed();
-    void on_VVVFM1Btn_pressed();
+
     void on_VVVFMP1Btn_pressed();
-    void on_ACMRESETTC2Btn_pressed();
-    void on_ACMRESETM2Btn_pressed();
-    void on_ACMRESETM1Btn_pressed();
     void on_ACMRESETTC1Btn_pressed();
+
+    void ButtonsPressEvent();
+
     void on_returnBtn_pressed();
 };
 

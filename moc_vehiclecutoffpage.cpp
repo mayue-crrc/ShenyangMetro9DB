@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'vehiclecutoffpage.h'
 **
-** Created: Tue Jun 5 18:05:53 2018
+** Created: Fri Jun 8 11:13:01 2018
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_VehicleCutoffPage[] = {
        4,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
+      10,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -34,23 +34,26 @@ static const uint qt_meta_data_VehicleCutoffPage[] = {
       19,   18,   18,   18, 0x08,
       45,   18,   18,   18, 0x08,
       70,   18,   18,   18, 0x08,
-      95,   18,   18,   18, 0x08,
-     121,   18,   18,   18, 0x08,
-     143,   18,   18,   18, 0x08,
-     164,   18,   18,   18, 0x08,
-     185,   18,   18,   18, 0x08,
-     207,   18,   18,   18, 0x08,
+      97,   18,   18,   18, 0x08,
+     123,   18,   18,   18, 0x08,
+     148,   18,   18,   18, 0x08,
+     172,   18,   18,   18, 0x08,
+     198,   18,   18,   18, 0x08,
+     223,   18,   18,   18, 0x08,
+     243,   18,   18,   18, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_VehicleCutoffPage[] = {
-    "VehicleCutoffPage\0\0on_ACMCUTTC2Btn_pressed()\0"
-    "on_ACMCUTM2Btn_pressed()\0"
-    "on_ACMCUTM1Btn_pressed()\0"
-    "on_ACMCUTTC1Btn_pressed()\0"
-    "on_EBMP2Btn_pressed()\0on_EBM2Btn_pressed()\0"
-    "on_EBM1Btn_pressed()\0on_EBMP1Btn_pressed()\0"
+    "VehicleCutoffPage\0\0on_ResetACMBtn_released()\0"
+    "on_ResetACMBtn_pressed()\0"
+    "on_CutoffACMBtn_released()\0"
+    "on_CutoffACMBtn_pressed()\0"
+    "on_ResetEBBtn_released()\0"
+    "on_ResetEBBtn_pressed()\0"
+    "on_CutoffEBBtn_released()\0"
+    "on_CutoffEBBtn_pressed()\0ButtonsPressEvent()\0"
     "on_returnBtn_pressed()\0"
 };
 
@@ -83,18 +86,19 @@ int VehicleCutoffPage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: on_ACMCUTTC2Btn_pressed(); break;
-        case 1: on_ACMCUTM2Btn_pressed(); break;
-        case 2: on_ACMCUTM1Btn_pressed(); break;
-        case 3: on_ACMCUTTC1Btn_pressed(); break;
-        case 4: on_EBMP2Btn_pressed(); break;
-        case 5: on_EBM2Btn_pressed(); break;
-        case 6: on_EBM1Btn_pressed(); break;
-        case 7: on_EBMP1Btn_pressed(); break;
-        case 8: on_returnBtn_pressed(); break;
+        case 0: on_ResetACMBtn_released(); break;
+        case 1: on_ResetACMBtn_pressed(); break;
+        case 2: on_CutoffACMBtn_released(); break;
+        case 3: on_CutoffACMBtn_pressed(); break;
+        case 4: on_ResetEBBtn_released(); break;
+        case 5: on_ResetEBBtn_pressed(); break;
+        case 6: on_CutoffEBBtn_released(); break;
+        case 7: on_CutoffEBBtn_pressed(); break;
+        case 8: ButtonsPressEvent(); break;
+        case 9: on_returnBtn_pressed(); break;
         default: ;
         }
-        _id -= 9;
+        _id -= 10;
     }
     return _id;
 }

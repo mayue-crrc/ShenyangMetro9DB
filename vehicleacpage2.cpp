@@ -341,10 +341,10 @@ void VehicleACPage2::setlabelstates(QLabel* lbl,bool states,bool isonline)
         lbl->setStyleSheet(LABELWHITE);
     }else if(states)
     {
-        lbl->setStyleSheet("font: 20px, \"微软雅黑\";color:gray;background-color:black;border:1px solid black");
+        lbl->setStyleSheet("font: 20px, \"微软雅黑\";background-color:gray;border:1px solid black");
     }else
     {
-        lbl->setStyleSheet("font: 20px, \"微软雅黑\";color:white;background-color:black;border:1px solid white");
+        lbl->setStyleSheet("font: 20px, \"微软雅黑\";background-color:black;border:1px solid white");
     }
 }
 

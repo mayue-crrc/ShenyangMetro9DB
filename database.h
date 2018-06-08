@@ -811,9 +811,10 @@ public:
 
     // HMI use
     // define using time from loacl and vcu
-
+    QString PLoad_TC1,PLoad_MP1,PLoad_M1,PLoad_M2,PLoad_MP2,PLoad_TC2;
     QDateTime HMI_DateTime_foruse;
-
+    QString DefaultLoadTC1,DefaultLoadMP1,DefaultLoadM1,DefaultLoadM2,DefaultLoadMP2,DefaultLoadTC2;
+    QString DefaultFullLoadTC1,DefaultFullLoadMP1,DefaultFullLoadM1,DefaultFullLoadM2,DefaultFullLoadMP2,DefaultFullLoadTC2;
 private:
     CrrcMvb* crrcMvb;
     //virtual for edcu

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclehvachelppage.ui'
 **
-** Created: Tue Jun 5 20:46:27 2018
+** Created: Wed Jun 6 13:45:32 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -113,7 +113,7 @@ public:
         label->setAlignment(Qt::AlignCenter);
         label_98 = new QLabel(VehicleHVACHelpPage);
         label_98->setObjectName(QString::fromUtf8("label_98"));
-        label_98->setGeometry(QRect(-40, 570, 800, 600));
+        label_98->setGeometry(QRect(0, 0, 800, 600));
         label_98->setStyleSheet(QString::fromUtf8("border:3px solid white;\n"
 "border-radius:10px"));
         label_98->setAlignment(Qt::AlignCenter);
