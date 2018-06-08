@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclebypasspage.ui'
 **
-** Created: Fri Jun 8 15:09:57 2018
+** Created: Fri Jun 8 15:51:49 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -497,6 +497,56 @@ public:
 "color: white;\n"
 ""));
         LBL1_9->setAlignment(Qt::AlignCenter);
+        LBL1_8->raise();
+        LBL1_9->raise();
+        BrakeNOTReleaseTC1lbl->raise();
+        BrakeNOTReleaseTC1lbl_2->raise();
+        BrakeNOTReleaseTC2lbl->raise();
+        BrakeNOTReleaseTC2lbl_2->raise();
+        linelbl1->raise();
+        StopBrakeTC1lbl->raise();
+        StopBrakeTC2lbl->raise();
+        linelbl1_2->raise();
+        StopBrakeTC2lbl_2->raise();
+        StopBrakeTC1lbl_2->raise();
+        ALLTrainCloseTC1lbl->raise();
+        ALLTrainCloseTC2lbl->raise();
+        linelbl1_3->raise();
+        ALLTrainCloseTC2lbl_2->raise();
+        ALLTrainCloseTC1lbl_2->raise();
+        AlarmTC1lbl->raise();
+        AlarmTC2lbl->raise();
+        linelbl1_4->raise();
+        AlarmTC2lbl_2->raise();
+        AlarmTC1lbl_2->raise();
+        EmloopTC1lbl->raise();
+        EmloopTC2lbl->raise();
+        linelbl1_5->raise();
+        EmloopTC2lbl_2->raise();
+        EmloopTC1lbl_2->raise();
+        Emloop2TC1lbl->raise();
+        Emloop2TC2lbl->raise();
+        linelbl1_6->raise();
+        Emloop2TC2lbl_2->raise();
+        Emloop2TC1lbl_2->raise();
+        label->raise();
+        returnBtn->raise();
+        ZeroSpeedTC2lbl->raise();
+        ZeroSpeedTC1lbl->raise();
+        ZeroSpeedTC2lbl_2->raise();
+        ZeroSpeedTC1lbl_2->raise();
+        linelbl1_7->raise();
+        ZeroSpeedTC2lbl_3->raise();
+        ZeroSpeedTC2lbl_4->raise();
+        ZeroSpeedTC2lbl_5->raise();
+        ZeroSpeedTC2lbl_6->raise();
+        LBL1->raise();
+        LBL1_6->raise();
+        LBL1_5->raise();
+        LBL1_3->raise();
+        LBL1_4->raise();
+        LBL1_7->raise();
+        LBL1_2->raise();
 
         retranslateUi(VehicleBypassPage);
 

@@ -85,11 +85,14 @@ QPushButton
   <widget class="QLabel" name="PANTOMP1_1lbl">
    <property name="geometry">
     <rect>
-     <x>310</x>
-     <y>40</y>
-     <width>41</width>
-     <height>31</height>
+     <x>290</x>
+     <y>10</y>
+     <width>81</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/images/PantoDownMP1.bmp);</string>
    </property>
    <property name="text">
     <string/>
@@ -388,11 +391,14 @@ QPushButton
   <widget class="QLabel" name="PANTOMP2_1lbl">
    <property name="geometry">
     <rect>
-     <x>680</x>
-     <y>40</y>
-     <width>41</width>
-     <height>31</height>
+     <x>660</x>
+     <y>10</y>
+     <width>81</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/images/PantoUpMP2.bmp);</string>
    </property>
    <property name="text">
     <string/>
@@ -694,18 +700,21 @@ QPushButton
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <zorder>lbl1_14</zorder>
-  <zorder>lbl1_11</zorder>
   <zorder>lbl1_8</zorder>
-  <zorder>lbl1_10</zorder>
+  <zorder>lbl1_6</zorder>
+  <zorder>lbl1_5</zorder>
   <zorder>lbl1_15</zorder>
+  <zorder>lbl1_11</zorder>
+  <zorder>lbl1_10</zorder>
+  <zorder>lbl1_4</zorder>
+  <zorder>lbl1_3</zorder>
+  <zorder>lbl1_14</zorder>
   <zorder>lbl1_12</zorder>
   <zorder>lbl1_9</zorder>
+  <zorder>lbl1_2</zorder>
   <zorder>MOTORIM2lbl</zorder>
   <zorder>KMM2lbl</zorder>
   <zorder>PANTOMP1_1lbl</zorder>
-  <zorder>lbl1_6</zorder>
-  <zorder>lbl1_5</zorder>
   <zorder>VDCM2lbl</zorder>
   <zorder>HSBCM2lbl</zorder>
   <zorder>VDCMP2lbl</zorder>
@@ -717,14 +726,11 @@ QPushButton
   <zorder>HSBCMP2lbl</zorder>
   <zorder>MOTORIMP2lbl</zorder>
   <zorder>VDCMP1lbl</zorder>
-  <zorder>lbl1_4</zorder>
   <zorder>KMMP2lbl</zorder>
   <zorder>MOTORIM1lbl</zorder>
   <zorder>PANTOMP2_1lbl</zorder>
   <zorder>HSBCMP1lbl</zorder>
-  <zorder>lbl1_3</zorder>
   <zorder>HSBCM1lbl</zorder>
-  <zorder>lbl1_2</zorder>
   <zorder>TCUEBMP1lbl</zorder>
   <zorder>TCUEBM2lbl</zorder>
   <zorder>TCUEBMP2lbl</zorder>

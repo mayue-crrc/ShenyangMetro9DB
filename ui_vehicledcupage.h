@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicledcupage.ui'
 **
-** Created: Thu Apr 19 11:15:44 2018
+** Created: Fri Jun 8 16:07:19 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -99,7 +99,8 @@ public:
         lbl1_9->setAlignment(Qt::AlignCenter);
         PANTOMP1_1lbl = new QLabel(VehicleDCUPage);
         PANTOMP1_1lbl->setObjectName(QString::fromUtf8("PANTOMP1_1lbl"));
-        PANTOMP1_1lbl->setGeometry(QRect(310, 40, 41, 31));
+        PANTOMP1_1lbl->setGeometry(QRect(290, 10, 81, 61));
+        PANTOMP1_1lbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/PantoDownMP1.bmp);"));
         PANTOMP1_1lbl->setAlignment(Qt::AlignCenter);
         lbl1_6 = new QLabel(VehicleDCUPage);
         lbl1_6->setObjectName(QString::fromUtf8("lbl1_6"));
@@ -176,7 +177,8 @@ public:
         MOTORIM1lbl->setAlignment(Qt::AlignCenter);
         PANTOMP2_1lbl = new QLabel(VehicleDCUPage);
         PANTOMP2_1lbl->setObjectName(QString::fromUtf8("PANTOMP2_1lbl"));
-        PANTOMP2_1lbl->setGeometry(QRect(680, 40, 41, 31));
+        PANTOMP2_1lbl->setGeometry(QRect(660, 10, 81, 61));
+        PANTOMP2_1lbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/PantoUpMP2.bmp);"));
         PANTOMP2_1lbl->setAlignment(Qt::AlignCenter);
         HSBCMP1lbl = new QLabel(VehicleDCUPage);
         HSBCMP1lbl->setObjectName(QString::fromUtf8("HSBCMP1lbl"));
@@ -253,18 +255,21 @@ public:
         TCUIVMP1lbl->setObjectName(QString::fromUtf8("TCUIVMP1lbl"));
         TCUIVMP1lbl->setGeometry(QRect(310, 320, 41, 31));
         TCUIVMP1lbl->setAlignment(Qt::AlignCenter);
-        lbl1_14->raise();
-        lbl1_11->raise();
         lbl1_8->raise();
-        lbl1_10->raise();
+        lbl1_6->raise();
+        lbl1_5->raise();
         lbl1_15->raise();
+        lbl1_11->raise();
+        lbl1_10->raise();
+        lbl1_4->raise();
+        lbl1_3->raise();
+        lbl1_14->raise();
         lbl1_12->raise();
         lbl1_9->raise();
+        lbl1_2->raise();
         MOTORIM2lbl->raise();
         KMM2lbl->raise();
         PANTOMP1_1lbl->raise();
-        lbl1_6->raise();
-        lbl1_5->raise();
         VDCM2lbl->raise();
         HSBCM2lbl->raise();
         VDCMP2lbl->raise();
@@ -276,14 +281,11 @@ public:
         HSBCMP2lbl->raise();
         MOTORIMP2lbl->raise();
         VDCMP1lbl->raise();
-        lbl1_4->raise();
         KMMP2lbl->raise();
         MOTORIM1lbl->raise();
         PANTOMP2_1lbl->raise();
         HSBCMP1lbl->raise();
-        lbl1_3->raise();
         HSBCM1lbl->raise();
-        lbl1_2->raise();
         TCUEBMP1lbl->raise();
         TCUEBM2lbl->raise();
         TCUEBMP2lbl->raise();
