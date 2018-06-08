@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclewmspage.ui'
 **
-** Created: Thu Apr 19 11:15:44 2018
+** Created: Fri Jun 8 15:09:57 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -110,6 +110,10 @@ public:
     QLabel *PHMP2lbl;
     QLabel *PBM1lbl;
     QLabel *PBM2lbl;
+    QLabel *PHMP2lbl_2;
+    QLabel *Area1MP2lbl_2;
+    QLabel *Area1M2lbl_2;
+    QLabel *Area1M2lbl_3;
 
     void setupUi(QWidget *VehicleWMSPage)
     {
@@ -890,92 +894,42 @@ public:
 "font:20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 ""));
         PBM2lbl->setAlignment(Qt::AlignCenter);
-        TrainNumTC1lbl->raise();
-        TrainNumMP1lbl->raise();
-        TrainNumM2lbl->raise();
-        TrainNumTC2lbl->raise();
-        TrainNumM1lbl->raise();
-        TrainNumMP2lbl->raise();
-        Tc1Directionlbl->raise();
-        Tc1Cablbl->raise();
-        Tc2Cablbl->raise();
-        Tc2Directionlbl->raise();
-        HBOXTC1lbl->raise();
-        RBOXTC1lbl->raise();
-        lbl->raise();
-        FBOXTC1lbl->raise();
-        FBOXMP1lbl->raise();
-        RBOXMP1lbl->raise();
-        FBOXM1lbl->raise();
-        RBOXM1lbl->raise();
-        Area1TC1lbl->raise();
-        Area2TC1lbl->raise();
-        Area1MP1lbl->raise();
-        Area2MP1lbl->raise();
-        Area1M1lbl->raise();
-        Area2M1lbl->raise();
-        Area2M2lbl->raise();
-        Area1M2lbl->raise();
-        Area1MP2lbl->raise();
-        Area2MP2lbl->raise();
-        Area1TC2lbl->raise();
-        Area2TC2lbl->raise();
-        RBOXM2lbl->raise();
-        FBOXM2lbl->raise();
-        RBOXMP2lbl->raise();
-        FBOXMP2lbl->raise();
-        RBOXTC2lbl->raise();
-        FBOXTC2lbl->raise();
-        HBOXTC2lbl->raise();
-        DBOXTC2lbl->raise();
-        cabTC1lbl->raise();
-        cabTC2lbl->raise();
-        DBOXTC1lbl->raise();
-        lbl_2->raise();
-        lbl_3->raise();
-        lbl_4->raise();
-        lbl_5->raise();
-        lbl_6->raise();
-        lbl_7->raise();
-        label->raise();
-        lbl_8->raise();
-        lbl_9->raise();
-        lbl_10->raise();
-        lbl_11->raise();
-        lbl_12->raise();
-        lbl_13->raise();
-        lbl_14->raise();
-        lbl_15->raise();
-        lbl_16->raise();
-        lbl_17->raise();
-        lbl_18->raise();
-        lbl_19->raise();
-        lbl_20->raise();
-        lbl_21->raise();
-        S1Albl->raise();
-        S1Blbl->raise();
-        S2Blbl->raise();
-        S2Albl->raise();
-        S3Blbl->raise();
-        S3Albl->raise();
-        S4Blbl->raise();
-        S4Albl->raise();
-        S5Blbl->raise();
-        S5Albl->raise();
-        S6Blbl->raise();
-        S6Albl->raise();
-        S7Blbl->raise();
-        S7Albl->raise();
-        lbl_22->raise();
-        lbl_23->raise();
-        lbl_24->raise();
-        ABTC1lbl->raise();
-        ABTC2lbl->raise();
-        PHMP1lbl->raise();
-        PHMP2lbl->raise();
-        PBM1lbl->raise();
-        PBM2lbl->raise();
-        returnBtn->raise();
+        PHMP2lbl_2 = new QLabel(VehicleWMSPage);
+        PHMP2lbl_2->setObjectName(QString::fromUtf8("PHMP2lbl_2"));
+        PHMP2lbl_2->setGeometry(QRect(900, 420, 81, 41));
+        PHMP2lbl_2->setStyleSheet(QString::fromUtf8("border-radius:8px;\n"
+"color:white;\n"
+"background-color:green;\n"
+"font:20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+""));
+        PHMP2lbl_2->setAlignment(Qt::AlignCenter);
+        Area1MP2lbl_2 = new QLabel(VehicleWMSPage);
+        Area1MP2lbl_2->setObjectName(QString::fromUtf8("Area1MP2lbl_2"));
+        Area1MP2lbl_2->setGeometry(QRect(900, 520, 81, 41));
+        Area1MP2lbl_2->setStyleSheet(QString::fromUtf8("border-radius:8px;\n"
+"color:white;\n"
+"background-color:red;\n"
+"font:20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+""));
+        Area1MP2lbl_2->setAlignment(Qt::AlignCenter);
+        Area1M2lbl_2 = new QLabel(VehicleWMSPage);
+        Area1M2lbl_2->setObjectName(QString::fromUtf8("Area1M2lbl_2"));
+        Area1M2lbl_2->setGeometry(QRect(890, 460, 101, 41));
+        Area1M2lbl_2->setStyleSheet(QString::fromUtf8("color:white;\n"
+"background-color:black;\n"
+"font-size:18px;\n"
+"\n"
+""));
+        Area1M2lbl_2->setAlignment(Qt::AlignCenter);
+        Area1M2lbl_3 = new QLabel(VehicleWMSPage);
+        Area1M2lbl_3->setObjectName(QString::fromUtf8("Area1M2lbl_3"));
+        Area1M2lbl_3->setGeometry(QRect(890, 560, 101, 41));
+        Area1M2lbl_3->setStyleSheet(QString::fromUtf8("color:white;\n"
+"background-color:black;\n"
+"font-size:18px;\n"
+"\n"
+""));
+        Area1M2lbl_3->setAlignment(Qt::AlignCenter);
 
         retranslateUi(VehicleWMSPage);
 
@@ -1087,6 +1041,10 @@ public:
         PHMP2lbl->setText(QApplication::translate("VehicleWMSPage", "PH", 0, QApplication::UnicodeUTF8));
         PBM1lbl->setText(QApplication::translate("VehicleWMSPage", "PB", 0, QApplication::UnicodeUTF8));
         PBM2lbl->setText(QApplication::translate("VehicleWMSPage", "PB", 0, QApplication::UnicodeUTF8));
+        PHMP2lbl_2->setText(QString());
+        Area1MP2lbl_2->setText(QString());
+        Area1M2lbl_2->setText(QApplication::translate("VehicleWMSPage", "\346\227\240\347\201\253\347\201\276\346\212\245\350\255\246", 0, QApplication::UnicodeUTF8));
+        Area1M2lbl_3->setText(QApplication::translate("VehicleWMSPage", "\346\234\211\347\201\253\347\201\276\346\212\245\350\255\246", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

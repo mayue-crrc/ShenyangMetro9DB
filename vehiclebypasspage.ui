@@ -996,50 +996,140 @@ border-radius:8px;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <zorder>ZeroSpeedTC1lbl_2</zorder>
-  <zorder>EmloopTC2lbl_2</zorder>
-  <zorder>StopBrakeTC2lbl_2</zorder>
-  <zorder>ALLTrainCloseTC1lbl_2</zorder>
-  <zorder>StopBrakeTC1lbl_2</zorder>
-  <zorder>Emloop2TC2lbl_2</zorder>
-  <zorder>Emloop2TC1lbl_2</zorder>
-  <zorder>AlarmTC1lbl_2</zorder>
-  <zorder>BrakeNOTReleaseTC1lbl_2</zorder>
-  <zorder>ALLTrainCloseTC2lbl_2</zorder>
-  <zorder>ZeroSpeedTC2lbl_2</zorder>
-  <zorder>EmloopTC1lbl_2</zorder>
-  <zorder>BrakeNOTReleaseTC2lbl_2</zorder>
-  <zorder>AlarmTC2lbl_2</zorder>
-  <zorder>linelbl1</zorder>
-  <zorder>linelbl1_3</zorder>
-  <zorder>linelbl1_7</zorder>
-  <zorder>linelbl1_6</zorder>
-  <zorder>linelbl1_4</zorder>
-  <zorder>linelbl1_5</zorder>
-  <zorder>linelbl1_2</zorder>
-  <zorder>BrakeNOTReleaseTC1lbl</zorder>
-  <zorder>BrakeNOTReleaseTC2lbl</zorder>
-  <zorder>LBL1</zorder>
-  <zorder>StopBrakeTC1lbl</zorder>
-  <zorder>LBL1_2</zorder>
-  <zorder>StopBrakeTC2lbl</zorder>
-  <zorder>ALLTrainCloseTC1lbl</zorder>
-  <zorder>LBL1_3</zorder>
-  <zorder>ALLTrainCloseTC2lbl</zorder>
-  <zorder>AlarmTC1lbl</zorder>
-  <zorder>LBL1_4</zorder>
-  <zorder>AlarmTC2lbl</zorder>
-  <zorder>EmloopTC1lbl</zorder>
-  <zorder>LBL1_5</zorder>
-  <zorder>EmloopTC2lbl</zorder>
-  <zorder>Emloop2TC1lbl</zorder>
-  <zorder>LBL1_6</zorder>
-  <zorder>Emloop2TC2lbl</zorder>
-  <zorder>label</zorder>
-  <zorder>returnBtn</zorder>
-  <zorder>ZeroSpeedTC2lbl</zorder>
-  <zorder>ZeroSpeedTC1lbl</zorder>
-  <zorder>LBL1_7</zorder>
+  <widget class="QLabel" name="ZeroSpeedTC2lbl_3">
+   <property name="geometry">
+    <rect>
+     <x>878</x>
+     <y>359</y>
+     <width>105</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20px  &quot;微软雅黑&quot;;
+color: white;
+background-color: green;
+border:2px,black,solid;
+border-radius:8px;</string>
+   </property>
+   <property name="text">
+    <string>旁路</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ZeroSpeedTC2lbl_4">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>360</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20px  &quot;微软雅黑&quot;;
+color: white;
+background-color: green;
+border:2px  solid black;
+border-radius:8px;</string>
+   </property>
+   <property name="text">
+    <string>旁路</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ZeroSpeedTC2lbl_5">
+   <property name="geometry">
+    <rect>
+     <x>878</x>
+     <y>439</y>
+     <width>105</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20px  &quot;微软雅黑&quot;;
+color: white;
+background-color: yellow;
+border:2px,black,solid;
+border-radius:8px;</string>
+   </property>
+   <property name="text">
+    <string>旁路</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ZeroSpeedTC2lbl_6">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>440</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20px  &quot;微软雅黑&quot;;
+color: black;
+background-color: yellow;
+border:2px  solid black;
+border-radius:8px;</string>
+   </property>
+   <property name="text">
+    <string>旁路</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LBL1_8">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>410</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20px  &quot;微软雅黑&quot;;
+color: white;
+</string>
+   </property>
+   <property name="text">
+    <string>未旁路</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LBL1_9">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>490</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20px  &quot;微软雅黑&quot;;
+color: white;
+</string>
+   </property>
+   <property name="text">
+    <string>旁路</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

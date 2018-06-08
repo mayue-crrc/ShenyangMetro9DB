@@ -1060,6 +1060,60 @@ color:black;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <zorder>lbl1_9</zorder>
+  <zorder>lbl1_10</zorder>
+  <zorder>label</zorder>
+  <zorder>returnBtn</zorder>
+  <zorder>MTempM2lbl</zorder>
+  <zorder>MTempM1lbl</zorder>
+  <zorder>MTempMP1lbl</zorder>
+  <zorder>MTempMP2lbl</zorder>
+  <zorder>lbl1</zorder>
+  <zorder>lbl1_2</zorder>
+  <zorder>BCPTC11lbl</zorder>
+  <zorder>BCPTC12lbl</zorder>
+  <zorder>BCPMP12lbl</zorder>
+  <zorder>BCPMP11lbl</zorder>
+  <zorder>BCPM12lbl</zorder>
+  <zorder>BCPM11lbl</zorder>
+  <zorder>BCPM21lbl</zorder>
+  <zorder>BCPM22lbl</zorder>
+  <zorder>BCPMP21lbl</zorder>
+  <zorder>BCPMP22lbl</zorder>
+  <zorder>BCPTC21lbl</zorder>
+  <zorder>BCPTC22lbl</zorder>
+  <zorder>lbl1_3</zorder>
+  <zorder>Speedlbl</zorder>
+  <zorder>lbl1_4</zorder>
+  <zorder>lbl1_5</zorder>
+  <zorder>lbl1_6</zorder>
+  <zorder>ASpeedlbl</zorder>
+  <zorder>lbl1_7</zorder>
+  <zorder>levellbl</zorder>
+  <zorder>lbl1_8</zorder>
+  <zorder>lbl1_11</zorder>
+  <zorder>lbl1_12</zorder>
+  <zorder>lbl1_13</zorder>
+  <zorder>A40Speedlbl</zorder>
+  <zorder>lbl1_14</zorder>
+  <zorder>A80Speedlbl</zorder>
+  <zorder>lbl1_15</zorder>
+  <zorder>InitSpeedlbl</zorder>
+  <zorder>lbl1_16</zorder>
+  <zorder>AveSpeedlbl</zorder>
+  <zorder>lbl1_17</zorder>
+  <zorder>BrakeDistancelbl</zorder>
+  <zorder>lbl1_18</zorder>
+  <zorder>Braketimelbl</zorder>
+  <zorder>lbl1_19</zorder>
+  <zorder>lbl1_20</zorder>
+  <zorder>lbl1_21</zorder>
+  <zorder>lbl1_22</zorder>
+  <zorder>lbl1_23</zorder>
+  <zorder>StartTestBtn</zorder>
+  <zorder>StopTestBtn</zorder>
+  <zorder>Teststatuslbl</zorder>
+  <zorder>Teststatuslbl_2</zorder>
  </widget>
  <resources/>
  <connections/>

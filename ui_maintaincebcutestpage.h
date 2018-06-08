@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincebcutestpage.ui'
 **
-** Created: Wed Jun 6 13:32:22 2018
+** Created: Fri Jun 8 15:11:24 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -66,6 +66,24 @@ public:
     QLabel *label_5;
     QPushButton *pushButton;
     QLabel *testresTC2J1lbl_2;
+    QLabel *testresTC1J2lbl_2;
+    QLabel *testresTC1J2lbl_3;
+    QLabel *testresTC1J2lbl_4;
+    QLabel *testresTC1J2lbl_5;
+    QLabel *testresTC1J2lbl_6;
+    QLabel *testresTC1J2lbl_7;
+    QLabel *testresTC1J2lbl_8;
+    QLabel *testresTC1J2lbl_9;
+    QLabel *testresTC1J2lbl_10;
+    QLabel *testresTC1J2lbl_11;
+    QLabel *untestin24hourTC1lbl_2;
+    QLabel *testresTC1J2lbl_12;
+    QLabel *untestin24hourTC1lbl_3;
+    QLabel *testresTC1J2lbl_13;
+    QLabel *testconditionTC1J1lbl_2;
+    QLabel *testresTC1J2lbl_14;
+    QLabel *testconditionTC1J1lbl_3;
+    QLabel *testresTC1J2lbl_15;
 
     void setupUi(QWidget *MaintainceBCUTestPage)
     {
@@ -300,15 +318,131 @@ public:
         label_5->setAlignment(Qt::AlignCenter);
         pushButton = new QPushButton(MaintainceBCUTestPage);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(60, 370, 191, 51));
+        pushButton->setGeometry(QRect(700, 250, 151, 51));
         pushButton->setFocusPolicy(Qt::NoFocus);
         pushButton->setStyleSheet(QString::fromUtf8("font:20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\""));
         testresTC2J1lbl_2 = new QLabel(MaintainceBCUTestPage);
         testresTC2J1lbl_2->setObjectName(QString::fromUtf8("testresTC2J1lbl_2"));
-        testresTC2J1lbl_2->setGeometry(QRect(30, 240, 831, 71));
+        testresTC2J1lbl_2->setGeometry(QRect(30, 240, 621, 71));
         testresTC2J1lbl_2->setStyleSheet(QString::fromUtf8("border-color:black;"));
         testresTC2J1lbl_2->setAlignment(Qt::AlignCenter);
+        testresTC1J2lbl_2 = new QLabel(MaintainceBCUTestPage);
+        testresTC1J2lbl_2->setObjectName(QString::fromUtf8("testresTC1J2lbl_2"));
+        testresTC1J2lbl_2->setGeometry(QRect(60, 430, 91, 31));
+        testresTC1J2lbl_2->setStyleSheet(QString::fromUtf8("color:green;\n"
+"font-size:18px;"));
+        testresTC1J2lbl_2->setAlignment(Qt::AlignCenter);
+        testresTC1J2lbl_3 = new QLabel(MaintainceBCUTestPage);
+        testresTC1J2lbl_3->setObjectName(QString::fromUtf8("testresTC1J2lbl_3"));
+        testresTC1J2lbl_3->setGeometry(QRect(60, 470, 91, 31));
+        testresTC1J2lbl_3->setStyleSheet(QString::fromUtf8("color:red;\n"
+"font-size:18px;"));
+        testresTC1J2lbl_3->setAlignment(Qt::AlignCenter);
+        testresTC1J2lbl_4 = new QLabel(MaintainceBCUTestPage);
+        testresTC1J2lbl_4->setObjectName(QString::fromUtf8("testresTC1J2lbl_4"));
+        testresTC1J2lbl_4->setGeometry(QRect(60, 390, 91, 31));
+        testresTC1J2lbl_4->setStyleSheet(QString::fromUtf8("color:white;\n"
+"font-size:18px;"));
+        testresTC1J2lbl_4->setAlignment(Qt::AlignCenter);
+        testresTC1J2lbl_5 = new QLabel(MaintainceBCUTestPage);
+        testresTC1J2lbl_5->setObjectName(QString::fromUtf8("testresTC1J2lbl_5"));
+        testresTC1J2lbl_5->setGeometry(QRect(300, 390, 91, 31));
+        testresTC1J2lbl_5->setStyleSheet(QString::fromUtf8("color:white;\n"
+"font-size:18px;"));
+        testresTC1J2lbl_5->setAlignment(Qt::AlignCenter);
+        testresTC1J2lbl_6 = new QLabel(MaintainceBCUTestPage);
+        testresTC1J2lbl_6->setObjectName(QString::fromUtf8("testresTC1J2lbl_6"));
+        testresTC1J2lbl_6->setGeometry(QRect(300, 430, 91, 31));
+        testresTC1J2lbl_6->setStyleSheet(QString::fromUtf8("color:white;\n"
+"font-size:18px;"));
+        testresTC1J2lbl_6->setAlignment(Qt::AlignCenter);
+        testresTC1J2lbl_7 = new QLabel(MaintainceBCUTestPage);
+        testresTC1J2lbl_7->setObjectName(QString::fromUtf8("testresTC1J2lbl_7"));
+        testresTC1J2lbl_7->setGeometry(QRect(160, 390, 91, 31));
+        testresTC1J2lbl_7->setStyleSheet(QString::fromUtf8("color:white;\n"
+"font-size:18px;\n"
+"border:transparent;"));
+        testresTC1J2lbl_7->setAlignment(Qt::AlignCenter);
+        testresTC1J2lbl_8 = new QLabel(MaintainceBCUTestPage);
+        testresTC1J2lbl_8->setObjectName(QString::fromUtf8("testresTC1J2lbl_8"));
+        testresTC1J2lbl_8->setGeometry(QRect(160, 430, 91, 31));
+        testresTC1J2lbl_8->setStyleSheet(QString::fromUtf8("color:white;\n"
+"font-size:18px;\n"
+"border:transparent;"));
+        testresTC1J2lbl_8->setAlignment(Qt::AlignCenter);
+        testresTC1J2lbl_9 = new QLabel(MaintainceBCUTestPage);
+        testresTC1J2lbl_9->setObjectName(QString::fromUtf8("testresTC1J2lbl_9"));
+        testresTC1J2lbl_9->setGeometry(QRect(160, 470, 91, 31));
+        testresTC1J2lbl_9->setStyleSheet(QString::fromUtf8("color:white;\n"
+"font-size:18px;\n"
+"border:transparent;"));
+        testresTC1J2lbl_9->setAlignment(Qt::AlignCenter);
+        testresTC1J2lbl_10 = new QLabel(MaintainceBCUTestPage);
+        testresTC1J2lbl_10->setObjectName(QString::fromUtf8("testresTC1J2lbl_10"));
+        testresTC1J2lbl_10->setGeometry(QRect(400, 390, 111, 31));
+        testresTC1J2lbl_10->setStyleSheet(QString::fromUtf8("color:white;\n"
+"font-size:18px;\n"
+"border:transparent;"));
+        testresTC1J2lbl_10->setAlignment(Qt::AlignCenter);
+        testresTC1J2lbl_11 = new QLabel(MaintainceBCUTestPage);
+        testresTC1J2lbl_11->setObjectName(QString::fromUtf8("testresTC1J2lbl_11"));
+        testresTC1J2lbl_11->setGeometry(QRect(400, 430, 61, 31));
+        testresTC1J2lbl_11->setStyleSheet(QString::fromUtf8("color:white;\n"
+"font-size:18px;\n"
+"border:transparent;"));
+        testresTC1J2lbl_11->setAlignment(Qt::AlignCenter);
+        untestin24hourTC1lbl_2 = new QLabel(MaintainceBCUTestPage);
+        untestin24hourTC1lbl_2->setObjectName(QString::fromUtf8("untestin24hourTC1lbl_2"));
+        untestin24hourTC1lbl_2->setGeometry(QRect(530, 390, 291, 30));
+        untestin24hourTC1lbl_2->setStyleSheet(QString::fromUtf8(""));
+        untestin24hourTC1lbl_2->setAlignment(Qt::AlignCenter);
+        testresTC1J2lbl_12 = new QLabel(MaintainceBCUTestPage);
+        testresTC1J2lbl_12->setObjectName(QString::fromUtf8("testresTC1J2lbl_12"));
+        testresTC1J2lbl_12->setGeometry(QRect(830, 390, 141, 31));
+        testresTC1J2lbl_12->setStyleSheet(QString::fromUtf8("color:white;\n"
+"font-size:18px;\n"
+"border:transparent;"));
+        testresTC1J2lbl_12->setAlignment(Qt::AlignCenter);
+        untestin24hourTC1lbl_3 = new QLabel(MaintainceBCUTestPage);
+        untestin24hourTC1lbl_3->setObjectName(QString::fromUtf8("untestin24hourTC1lbl_3"));
+        untestin24hourTC1lbl_3->setGeometry(QRect(530, 430, 291, 30));
+        untestin24hourTC1lbl_3->setStyleSheet(QString::fromUtf8("background-color:red;"));
+        untestin24hourTC1lbl_3->setAlignment(Qt::AlignCenter);
+        testresTC1J2lbl_13 = new QLabel(MaintainceBCUTestPage);
+        testresTC1J2lbl_13->setObjectName(QString::fromUtf8("testresTC1J2lbl_13"));
+        testresTC1J2lbl_13->setGeometry(QRect(830, 430, 141, 31));
+        testresTC1J2lbl_13->setStyleSheet(QString::fromUtf8("color:white;\n"
+"font-size:18px;\n"
+"border:transparent;"));
+        testresTC1J2lbl_13->setAlignment(Qt::AlignCenter);
+        testconditionTC1J1lbl_2 = new QLabel(MaintainceBCUTestPage);
+        testconditionTC1J1lbl_2->setObjectName(QString::fromUtf8("testconditionTC1J1lbl_2"));
+        testconditionTC1J1lbl_2->setGeometry(QRect(300, 470, 30, 30));
+        testconditionTC1J1lbl_2->setStyleSheet(QString::fromUtf8("color:black;\n"
+"background-color:red;"));
+        testconditionTC1J1lbl_2->setAlignment(Qt::AlignCenter);
+        testresTC1J2lbl_14 = new QLabel(MaintainceBCUTestPage);
+        testresTC1J2lbl_14->setObjectName(QString::fromUtf8("testresTC1J2lbl_14"));
+        testresTC1J2lbl_14->setGeometry(QRect(340, 470, 121, 31));
+        testresTC1J2lbl_14->setStyleSheet(QString::fromUtf8("color:white;\n"
+"font-size:18px;\n"
+"border:transparent;"));
+        testresTC1J2lbl_14->setAlignment(Qt::AlignCenter);
+        testconditionTC1J1lbl_3 = new QLabel(MaintainceBCUTestPage);
+        testconditionTC1J1lbl_3->setObjectName(QString::fromUtf8("testconditionTC1J1lbl_3"));
+        testconditionTC1J1lbl_3->setGeometry(QRect(480, 470, 30, 30));
+        testconditionTC1J1lbl_3->setStyleSheet(QString::fromUtf8("color:white;\n"
+"background-color:green;"));
+        testconditionTC1J1lbl_3->setAlignment(Qt::AlignCenter);
+        testresTC1J2lbl_15 = new QLabel(MaintainceBCUTestPage);
+        testresTC1J2lbl_15->setObjectName(QString::fromUtf8("testresTC1J2lbl_15"));
+        testresTC1J2lbl_15->setGeometry(QRect(520, 470, 121, 31));
+        testresTC1J2lbl_15->setStyleSheet(QString::fromUtf8("color:white;\n"
+"font-size:18px;\n"
+"border:transparent;"));
+        testresTC1J2lbl_15->setAlignment(Qt::AlignCenter);
         label->raise();
+        returnBtn->raise();
         lbl_5->raise();
         lbl_6->raise();
         label_2->raise();
@@ -337,19 +471,36 @@ public:
         label_5->raise();
         pushButton->raise();
         testresTC2J1lbl_2->raise();
-        returnBtn->raise();
-        testconditionM1J2lbl->raise();
-        testconditionM1J1lbl->raise();
-        testconditionTC1J2lbl->raise();
-        testconditionM2J1lbl->raise();
+        testresTC1J2lbl_2->raise();
+        testresTC1J2lbl_3->raise();
+        testresTC1J2lbl_4->raise();
+        testresTC1J2lbl_5->raise();
+        testresTC1J2lbl_6->raise();
+        testresTC1J2lbl_7->raise();
+        testresTC1J2lbl_8->raise();
+        testresTC1J2lbl_9->raise();
+        testresTC1J2lbl_10->raise();
+        testresTC1J2lbl_11->raise();
+        untestin24hourTC1lbl_2->raise();
+        testresTC1J2lbl_12->raise();
+        untestin24hourTC1lbl_3->raise();
+        testresTC1J2lbl_13->raise();
+        testresTC1J2lbl_14->raise();
+        testresTC1J2lbl_15->raise();
         testconditionMP1J2lbl->raise();
-        testconditionMP2J2lbl->raise();
-        testconditionTC2J1lbl->raise();
-        testconditionTC1J1lbl->raise();
+        testconditionTC1J1lbl_2->raise();
+        testconditionTC1J1lbl_3->raise();
         testconditionTC2J2lbl->raise();
-        testconditionMP1J1lbl->raise();
         testconditionM2J2lbl->raise();
+        testconditionM1J2lbl->raise();
+        testconditionMP2J2lbl->raise();
+        testconditionMP1J1lbl->raise();
+        testconditionM1J1lbl->raise();
+        testconditionM2J1lbl->raise();
         testconditionMP2J1lbl->raise();
+        testconditionTC1J1lbl->raise();
+        testconditionTC1J2lbl->raise();
+        testconditionTC2J1lbl->raise();
 
         retranslateUi(MaintainceBCUTestPage);
 
@@ -402,6 +553,24 @@ public:
         pushButton->setText(QApplication::translate("MaintainceBCUTestPage", "\345\210\266\345\212\250\350\207\252\346\243\200\350\257\267\346\261\202", 0, QApplication::UnicodeUTF8));
         testresTC2J1lbl_2->setText(QApplication::translate("MaintainceBCUTestPage", "\346\211\200\346\234\211\350\275\254\345\220\221\346\236\266\350\207\252\346\243\200\346\235\241\344\273\266\346\273\241\350\266\263\357\274\214\344\270\224\346\211\213\346\237\204\350\220\275\345\210\260\345\277\253\351\200\237\345\210\266\345\212\250\344\275\215\346\227\266\n"
 "\347\202\271\345\207\273\342\200\234\345\210\266\345\212\250\350\207\252\346\243\200\350\257\267\346\261\202\342\200\234\346\214\211\351\222\256\345\274\200\345\247\213\350\207\252\346\243\200", 0, QApplication::UnicodeUTF8));
+        testresTC1J2lbl_2->setText(QApplication::translate("MaintainceBCUTestPage", "\350\207\252\346\243\200\346\210\220\345\212\237", 0, QApplication::UnicodeUTF8));
+        testresTC1J2lbl_3->setText(QApplication::translate("MaintainceBCUTestPage", "\350\207\252\346\243\200\345\244\261\350\264\245", 0, QApplication::UnicodeUTF8));
+        testresTC1J2lbl_4->setText(QApplication::translate("MaintainceBCUTestPage", "\350\207\252\346\243\200\344\270\255\346\226\255", 0, QApplication::UnicodeUTF8));
+        testresTC1J2lbl_5->setText(QApplication::translate("MaintainceBCUTestPage", "\350\207\252\346\243\200\344\270\255", 0, QApplication::UnicodeUTF8));
+        testresTC1J2lbl_6->setText(QApplication::translate("MaintainceBCUTestPage", "\357\274\215\357\274\215", 0, QApplication::UnicodeUTF8));
+        testresTC1J2lbl_7->setText(QApplication::translate("MaintainceBCUTestPage", "\357\274\232\350\207\252\346\243\200\344\270\255\346\226\255", 0, QApplication::UnicodeUTF8));
+        testresTC1J2lbl_8->setText(QApplication::translate("MaintainceBCUTestPage", "\357\274\232\350\207\252\346\243\200\346\210\220\345\212\237", 0, QApplication::UnicodeUTF8));
+        testresTC1J2lbl_9->setText(QApplication::translate("MaintainceBCUTestPage", "\357\274\232\350\207\252\346\243\200\345\244\261\350\264\245", 0, QApplication::UnicodeUTF8));
+        testresTC1J2lbl_10->setText(QApplication::translate("MaintainceBCUTestPage", "\357\274\232\350\207\252\346\243\200\350\277\233\350\241\214\344\270\255", 0, QApplication::UnicodeUTF8));
+        testresTC1J2lbl_11->setText(QApplication::translate("MaintainceBCUTestPage", "\357\274\232\346\234\252\347\237\245", 0, QApplication::UnicodeUTF8));
+        untestin24hourTC1lbl_2->setText(QString());
+        testresTC1J2lbl_12->setText(QApplication::translate("MaintainceBCUTestPage", "\357\274\23224\345\260\217\346\227\266\345\267\262\350\207\252\346\243\200", 0, QApplication::UnicodeUTF8));
+        untestin24hourTC1lbl_3->setText(QString());
+        testresTC1J2lbl_13->setText(QApplication::translate("MaintainceBCUTestPage", "\357\274\23224\345\260\217\346\227\266\346\234\252\350\207\252\346\243\200", 0, QApplication::UnicodeUTF8));
+        testconditionTC1J1lbl_2->setText(QApplication::translate("MaintainceBCUTestPage", "1", 0, QApplication::UnicodeUTF8));
+        testresTC1J2lbl_14->setText(QApplication::translate("MaintainceBCUTestPage", "\357\274\232\350\207\252\346\243\200\346\234\252\345\260\261\347\273\252", 0, QApplication::UnicodeUTF8));
+        testconditionTC1J1lbl_3->setText(QApplication::translate("MaintainceBCUTestPage", "1", 0, QApplication::UnicodeUTF8));
+        testresTC1J2lbl_15->setText(QApplication::translate("MaintainceBCUTestPage", "\357\274\232\350\207\252\346\243\200\345\260\261\347\273\252", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

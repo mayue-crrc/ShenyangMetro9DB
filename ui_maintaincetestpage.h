@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincetestpage.ui'
 **
-** Created: Fri Jun 8 11:45:28 2018
+** Created: Fri Jun 8 15:09:57 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -404,6 +404,60 @@ public:
         Teststatuslbl_2->setGeometry(QRect(170, 430, 731, 81));
         Teststatuslbl_2->setStyleSheet(QString::fromUtf8("background-color:black; font:16px;"));
         Teststatuslbl_2->setAlignment(Qt::AlignCenter);
+        lbl1_9->raise();
+        lbl1_10->raise();
+        label->raise();
+        returnBtn->raise();
+        MTempM2lbl->raise();
+        MTempM1lbl->raise();
+        MTempMP1lbl->raise();
+        MTempMP2lbl->raise();
+        lbl1->raise();
+        lbl1_2->raise();
+        BCPTC11lbl->raise();
+        BCPTC12lbl->raise();
+        BCPMP12lbl->raise();
+        BCPMP11lbl->raise();
+        BCPM12lbl->raise();
+        BCPM11lbl->raise();
+        BCPM21lbl->raise();
+        BCPM22lbl->raise();
+        BCPMP21lbl->raise();
+        BCPMP22lbl->raise();
+        BCPTC21lbl->raise();
+        BCPTC22lbl->raise();
+        lbl1_3->raise();
+        Speedlbl->raise();
+        lbl1_4->raise();
+        lbl1_5->raise();
+        lbl1_6->raise();
+        ASpeedlbl->raise();
+        lbl1_7->raise();
+        levellbl->raise();
+        lbl1_8->raise();
+        lbl1_11->raise();
+        lbl1_12->raise();
+        lbl1_13->raise();
+        A40Speedlbl->raise();
+        lbl1_14->raise();
+        A80Speedlbl->raise();
+        lbl1_15->raise();
+        InitSpeedlbl->raise();
+        lbl1_16->raise();
+        AveSpeedlbl->raise();
+        lbl1_17->raise();
+        BrakeDistancelbl->raise();
+        lbl1_18->raise();
+        Braketimelbl->raise();
+        lbl1_19->raise();
+        lbl1_20->raise();
+        lbl1_21->raise();
+        lbl1_22->raise();
+        lbl1_23->raise();
+        StartTestBtn->raise();
+        StopTestBtn->raise();
+        Teststatuslbl->raise();
+        Teststatuslbl_2->raise();
 
         retranslateUi(MaintainceTestPage);
 

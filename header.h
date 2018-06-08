@@ -14,6 +14,7 @@
 #include "vehicledcuhelppage.h"
 #include "vehicleacuhelppage.h"
 #include "vehicleresethelppage.h"
+#include "ctrlbrightnessadjust.h"
 namespace Ui {
     class Header;
 }
@@ -41,9 +42,11 @@ private:
     VehicleDCUHelpPage* vehicleDCUHelpPage;
     VehicleACUHelpPage* vehicleACUHelpPage;
     VehicleResetHelpPage* vehicleResetHelpPage;
+    CtrlBrightnessAdjust* ctrlBrightnessAdjust;
     CrrcFault* m_crrcFault;
     QHash<int, QString> m_StationIDHash;
 private slots:
+    void on_LogoBtn_pressed();
     void on_CurrentFaultBtn_pressed();
     void on_HelpItemBtn_pressed();
 };

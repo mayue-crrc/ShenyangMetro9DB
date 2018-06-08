@@ -356,27 +356,27 @@ font: 24px, &quot;微软雅黑&quot;;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="logo">
+  <widget class="QPushButton" name="LogoBtn">
    <property name="geometry">
     <rect>
-     <x>1</x>
+     <x>0</x>
      <y>5</y>
-     <width>72</width>
-     <height>72</height>
+     <width>71</width>
+     <height>70</height>
     </rect>
    </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/images/images/logo.bmp);
-</string>
+    <string notr="true">background-color:black;
+border-image: url(:/images/images/logo.bmp);
+border:2px solid black;
+color: rgb(255, 0, 0);
+font: 24px, &quot;微软雅黑&quot;;</string>
    </property>
    <property name="text">
     <string/>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
    </property>
   </widget>
  </widget>

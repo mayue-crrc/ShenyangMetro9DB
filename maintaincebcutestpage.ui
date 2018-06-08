@@ -802,9 +802,9 @@ background-color: rgb(0, 0, 0);
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>370</y>
-     <width>191</width>
+     <x>700</x>
+     <y>250</y>
+     <width>151</width>
      <height>51</height>
     </rect>
    </property>
@@ -823,7 +823,7 @@ background-color: rgb(0, 0, 0);
     <rect>
      <x>30</x>
      <y>240</y>
-     <width>831</width>
+     <width>621</width>
      <height>71</height>
     </rect>
    </property>
@@ -838,7 +838,375 @@ background-color: rgb(0, 0, 0);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QLabel" name="testresTC1J2lbl_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>430</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:green;
+font-size:18px;</string>
+   </property>
+   <property name="text">
+    <string>自检成功</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="testresTC1J2lbl_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>470</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:red;
+font-size:18px;</string>
+   </property>
+   <property name="text">
+    <string>自检失败</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="testresTC1J2lbl_4">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>390</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+font-size:18px;</string>
+   </property>
+   <property name="text">
+    <string>自检中断</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="testresTC1J2lbl_5">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>390</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+font-size:18px;</string>
+   </property>
+   <property name="text">
+    <string>自检中</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="testresTC1J2lbl_6">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>430</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+font-size:18px;</string>
+   </property>
+   <property name="text">
+    <string>－－</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="testresTC1J2lbl_7">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>390</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+font-size:18px;
+border:transparent;</string>
+   </property>
+   <property name="text">
+    <string>：自检中断</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="testresTC1J2lbl_8">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>430</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+font-size:18px;
+border:transparent;</string>
+   </property>
+   <property name="text">
+    <string>：自检成功</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="testresTC1J2lbl_9">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>470</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+font-size:18px;
+border:transparent;</string>
+   </property>
+   <property name="text">
+    <string>：自检失败</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="testresTC1J2lbl_10">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>390</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+font-size:18px;
+border:transparent;</string>
+   </property>
+   <property name="text">
+    <string>：自检进行中</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="testresTC1J2lbl_11">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>430</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+font-size:18px;
+border:transparent;</string>
+   </property>
+   <property name="text">
+    <string>：未知</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="untestin24hourTC1lbl_2">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>390</y>
+     <width>291</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="testresTC1J2lbl_12">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>390</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+font-size:18px;
+border:transparent;</string>
+   </property>
+   <property name="text">
+    <string>：24小时已自检</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="untestin24hourTC1lbl_3">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>430</y>
+     <width>291</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:red;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="testresTC1J2lbl_13">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>430</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+font-size:18px;
+border:transparent;</string>
+   </property>
+   <property name="text">
+    <string>：24小时未自检</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="testconditionTC1J1lbl_2">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>470</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:black;
+background-color:red;</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="testresTC1J2lbl_14">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>470</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+font-size:18px;
+border:transparent;</string>
+   </property>
+   <property name="text">
+    <string>：自检未就绪</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="testconditionTC1J1lbl_3">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>470</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:green;</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="testresTC1J2lbl_15">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>470</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+font-size:18px;
+border:transparent;</string>
+   </property>
+   <property name="text">
+    <string>：自检就绪</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
   <zorder>label</zorder>
+  <zorder>returnBtn</zorder>
   <zorder>lbl_5</zorder>
   <zorder>lbl_6</zorder>
   <zorder>label_2</zorder>
@@ -867,19 +1235,36 @@ background-color: rgb(0, 0, 0);
   <zorder>label_5</zorder>
   <zorder>pushButton</zorder>
   <zorder>testresTC2J1lbl_2</zorder>
-  <zorder>returnBtn</zorder>
-  <zorder>testconditionM1J2lbl</zorder>
-  <zorder>testconditionM1J1lbl</zorder>
-  <zorder>testconditionTC1J2lbl</zorder>
-  <zorder>testconditionM2J1lbl</zorder>
+  <zorder>testresTC1J2lbl_2</zorder>
+  <zorder>testresTC1J2lbl_3</zorder>
+  <zorder>testresTC1J2lbl_4</zorder>
+  <zorder>testresTC1J2lbl_5</zorder>
+  <zorder>testresTC1J2lbl_6</zorder>
+  <zorder>testresTC1J2lbl_7</zorder>
+  <zorder>testresTC1J2lbl_8</zorder>
+  <zorder>testresTC1J2lbl_9</zorder>
+  <zorder>testresTC1J2lbl_10</zorder>
+  <zorder>testresTC1J2lbl_11</zorder>
+  <zorder>untestin24hourTC1lbl_2</zorder>
+  <zorder>testresTC1J2lbl_12</zorder>
+  <zorder>untestin24hourTC1lbl_3</zorder>
+  <zorder>testresTC1J2lbl_13</zorder>
+  <zorder>testresTC1J2lbl_14</zorder>
+  <zorder>testresTC1J2lbl_15</zorder>
   <zorder>testconditionMP1J2lbl</zorder>
-  <zorder>testconditionMP2J2lbl</zorder>
-  <zorder>testconditionTC2J1lbl</zorder>
-  <zorder>testconditionTC1J1lbl</zorder>
+  <zorder>testconditionTC1J1lbl_2</zorder>
+  <zorder>testconditionTC1J1lbl_3</zorder>
   <zorder>testconditionTC2J2lbl</zorder>
-  <zorder>testconditionMP1J1lbl</zorder>
   <zorder>testconditionM2J2lbl</zorder>
+  <zorder>testconditionM1J2lbl</zorder>
+  <zorder>testconditionMP2J2lbl</zorder>
+  <zorder>testconditionMP1J1lbl</zorder>
+  <zorder>testconditionM1J1lbl</zorder>
+  <zorder>testconditionM2J1lbl</zorder>
   <zorder>testconditionMP2J1lbl</zorder>
+  <zorder>testconditionTC1J1lbl</zorder>
+  <zorder>testconditionTC1J2lbl</zorder>
+  <zorder>testconditionTC2J1lbl</zorder>
  </widget>
  <resources/>
  <connections/>

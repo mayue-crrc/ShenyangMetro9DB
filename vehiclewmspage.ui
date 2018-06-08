@@ -2007,92 +2007,98 @@ font:20px  &quot;微软雅黑&quot;;
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <zorder>TrainNumTC1lbl</zorder>
-  <zorder>TrainNumMP1lbl</zorder>
-  <zorder>TrainNumM2lbl</zorder>
-  <zorder>TrainNumTC2lbl</zorder>
-  <zorder>TrainNumM1lbl</zorder>
-  <zorder>TrainNumMP2lbl</zorder>
-  <zorder>Tc1Directionlbl</zorder>
-  <zorder>Tc1Cablbl</zorder>
-  <zorder>Tc2Cablbl</zorder>
-  <zorder>Tc2Directionlbl</zorder>
-  <zorder>HBOXTC1lbl</zorder>
-  <zorder>RBOXTC1lbl</zorder>
-  <zorder>lbl</zorder>
-  <zorder>FBOXTC1lbl</zorder>
-  <zorder>FBOXMP1lbl</zorder>
-  <zorder>RBOXMP1lbl</zorder>
-  <zorder>FBOXM1lbl</zorder>
-  <zorder>RBOXM1lbl</zorder>
-  <zorder>Area1TC1lbl</zorder>
-  <zorder>Area2TC1lbl</zorder>
-  <zorder>Area1MP1lbl</zorder>
-  <zorder>Area2MP1lbl</zorder>
-  <zorder>Area1M1lbl</zorder>
-  <zorder>Area2M1lbl</zorder>
-  <zorder>Area2M2lbl</zorder>
-  <zorder>Area1M2lbl</zorder>
-  <zorder>Area1MP2lbl</zorder>
-  <zorder>Area2MP2lbl</zorder>
-  <zorder>Area1TC2lbl</zorder>
-  <zorder>Area2TC2lbl</zorder>
-  <zorder>RBOXM2lbl</zorder>
-  <zorder>FBOXM2lbl</zorder>
-  <zorder>RBOXMP2lbl</zorder>
-  <zorder>FBOXMP2lbl</zorder>
-  <zorder>RBOXTC2lbl</zorder>
-  <zorder>FBOXTC2lbl</zorder>
-  <zorder>HBOXTC2lbl</zorder>
-  <zorder>DBOXTC2lbl</zorder>
-  <zorder>cabTC1lbl</zorder>
-  <zorder>cabTC2lbl</zorder>
-  <zorder>DBOXTC1lbl</zorder>
-  <zorder>lbl_2</zorder>
-  <zorder>lbl_3</zorder>
-  <zorder>lbl_4</zorder>
-  <zorder>lbl_5</zorder>
-  <zorder>lbl_6</zorder>
-  <zorder>lbl_7</zorder>
-  <zorder>label</zorder>
-  <zorder>lbl_8</zorder>
-  <zorder>lbl_9</zorder>
-  <zorder>lbl_10</zorder>
-  <zorder>lbl_11</zorder>
-  <zorder>lbl_12</zorder>
-  <zorder>lbl_13</zorder>
-  <zorder>lbl_14</zorder>
-  <zorder>lbl_15</zorder>
-  <zorder>lbl_16</zorder>
-  <zorder>lbl_17</zorder>
-  <zorder>lbl_18</zorder>
-  <zorder>lbl_19</zorder>
-  <zorder>lbl_20</zorder>
-  <zorder>lbl_21</zorder>
-  <zorder>S1Albl</zorder>
-  <zorder>S1Blbl</zorder>
-  <zorder>S2Blbl</zorder>
-  <zorder>S2Albl</zorder>
-  <zorder>S3Blbl</zorder>
-  <zorder>S3Albl</zorder>
-  <zorder>S4Blbl</zorder>
-  <zorder>S4Albl</zorder>
-  <zorder>S5Blbl</zorder>
-  <zorder>S5Albl</zorder>
-  <zorder>S6Blbl</zorder>
-  <zorder>S6Albl</zorder>
-  <zorder>S7Blbl</zorder>
-  <zorder>S7Albl</zorder>
-  <zorder>lbl_22</zorder>
-  <zorder>lbl_23</zorder>
-  <zorder>lbl_24</zorder>
-  <zorder>ABTC1lbl</zorder>
-  <zorder>ABTC2lbl</zorder>
-  <zorder>PHMP1lbl</zorder>
-  <zorder>PHMP2lbl</zorder>
-  <zorder>PBM1lbl</zorder>
-  <zorder>PBM2lbl</zorder>
-  <zorder>returnBtn</zorder>
+  <widget class="QLabel" name="PHMP2lbl_2">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>420</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Area1MP2lbl_2">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>520</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:red;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Area1M2lbl_2">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>460</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:black;
+font-size:18px;
+
+</string>
+   </property>
+   <property name="text">
+    <string>无火灾报警</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Area1M2lbl_3">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>560</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:black;
+font-size:18px;
+
+</string>
+   </property>
+   <property name="text">
+    <string>有火灾报警</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

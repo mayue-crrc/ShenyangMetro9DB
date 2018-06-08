@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'header.h'
 **
-** Created: Fri Jun 8 11:27:42 2018
+** Created: Fri Jun 8 14:20:59 2018
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_Header[] = {
        4,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -32,13 +32,15 @@ static const uint qt_meta_data_Header[] = {
 
  // slots: signature, parameters, type, tag, flags
        8,    7,    7,    7, 0x08,
-      37,    7,    7,    7, 0x08,
+      29,    7,    7,    7, 0x08,
+      58,    7,    7,    7, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_Header[] = {
-    "Header\0\0on_CurrentFaultBtn_pressed()\0"
+    "Header\0\0on_LogoBtn_pressed()\0"
+    "on_CurrentFaultBtn_pressed()\0"
     "on_HelpItemBtn_pressed()\0"
 };
 
@@ -71,11 +73,12 @@ int Header::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: on_CurrentFaultBtn_pressed(); break;
-        case 1: on_HelpItemBtn_pressed(); break;
+        case 0: on_LogoBtn_pressed(); break;
+        case 1: on_CurrentFaultBtn_pressed(); break;
+        case 2: on_HelpItemBtn_pressed(); break;
         default: ;
         }
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }

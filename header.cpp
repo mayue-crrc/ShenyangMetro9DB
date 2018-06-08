@@ -20,9 +20,9 @@ Header::Header(QWidget *parent) :
     cutoffhelpPage->hide();
 
     vehicleResetHelpPage = new VehicleResetHelpPage();
-    vehicleResetHelpPage->setGeometry(112,80,cutoffhelpPage->width(),cutoffhelpPage->height());
+    vehicleResetHelpPage->setGeometry(112,80,vehicleResetHelpPage->width(),vehicleResetHelpPage->height());
     vehicleResetHelpPage->setWindowFlags(Qt::FramelessWindowHint);
-    vehicleResetHelpPage->move ((QApplication::desktop()->width() - cutoffhelpPage->width())/2,(QApplication::desktop()->height() - cutoffhelpPage->height())/2);
+    vehicleResetHelpPage->move ((QApplication::desktop()->width() - vehicleResetHelpPage->width())/2,(QApplication::desktop()->height() - vehicleResetHelpPage->height())/2);
     vehicleResetHelpPage->hide();
 
     powerresethelpPage = new VehiclePowerResetHelpPage();
@@ -32,28 +32,34 @@ Header::Header(QWidget *parent) :
     powerresethelpPage->hide();
 
     vehicleHVACHelpPage = new VehicleHVACHelpPage();
-    vehicleHVACHelpPage->setGeometry(112,80,powerresethelpPage->width(),powerresethelpPage->height());
+    vehicleHVACHelpPage->setGeometry(112,80,vehicleHVACHelpPage->width(),vehicleHVACHelpPage->height());
     vehicleHVACHelpPage->setWindowFlags(Qt::FramelessWindowHint);
-    vehicleHVACHelpPage->move ((QApplication::desktop()->width() - powerresethelpPage->width())/2,(QApplication::desktop()->height() - powerresethelpPage->height())/2);
+    vehicleHVACHelpPage->move ((QApplication::desktop()->width() - vehicleHVACHelpPage->width())/2,(QApplication::desktop()->height() - vehicleHVACHelpPage->height())/2);
     vehicleHVACHelpPage->hide();
 
     vehicleBCUHelpPage = new VehicleBCUHelpPage();
-    vehicleBCUHelpPage->setGeometry(112,80,powerresethelpPage->width(),powerresethelpPage->height());
+    vehicleBCUHelpPage->setGeometry(112,80,vehicleBCUHelpPage->width(),vehicleBCUHelpPage->height());
     vehicleBCUHelpPage->setWindowFlags(Qt::FramelessWindowHint);
-    vehicleBCUHelpPage->move ((QApplication::desktop()->width() - powerresethelpPage->width())/2,(QApplication::desktop()->height() - powerresethelpPage->height())/2);
+    vehicleBCUHelpPage->move ((QApplication::desktop()->width() - vehicleBCUHelpPage->width())/2,(QApplication::desktop()->height() - vehicleBCUHelpPage->height())/2);
     vehicleBCUHelpPage->hide();
 
     vehicleDCUHelpPage = new VehicleDCUHelpPage();
-    vehicleDCUHelpPage->setGeometry(112,80,powerresethelpPage->width(),powerresethelpPage->height());
+    vehicleDCUHelpPage->setGeometry(112,80,vehicleDCUHelpPage->width(),vehicleDCUHelpPage->height());
     vehicleDCUHelpPage->setWindowFlags(Qt::FramelessWindowHint);
-    vehicleDCUHelpPage->move ((QApplication::desktop()->width() - powerresethelpPage->width())/2,(QApplication::desktop()->height() - powerresethelpPage->height())/2);
+    vehicleDCUHelpPage->move ((QApplication::desktop()->width() - vehicleDCUHelpPage->width())/2,(QApplication::desktop()->height() - vehicleDCUHelpPage->height())/2);
     vehicleDCUHelpPage->hide();
 
     vehicleACUHelpPage = new VehicleACUHelpPage();
-    vehicleACUHelpPage->setGeometry(112,80,powerresethelpPage->width(),powerresethelpPage->height());
+    vehicleACUHelpPage->setGeometry(112,80,vehicleACUHelpPage->width(),vehicleACUHelpPage->height());
     vehicleACUHelpPage->setWindowFlags(Qt::FramelessWindowHint);
-    vehicleACUHelpPage->move ((QApplication::desktop()->width() - powerresethelpPage->width())/2,(QApplication::desktop()->height() - powerresethelpPage->height())/2);
+    vehicleACUHelpPage->move ((QApplication::desktop()->width() - vehicleACUHelpPage->width())/2,(QApplication::desktop()->height() - vehicleACUHelpPage->height())/2);
     vehicleACUHelpPage->hide();
+
+    ctrlBrightnessAdjust = new CtrlBrightnessAdjust();
+    ctrlBrightnessAdjust->setGeometry(212,200,ctrlBrightnessAdjust->width(),ctrlBrightnessAdjust->height());
+    ctrlBrightnessAdjust->setWindowFlags(Qt::FramelessWindowHint);
+    ctrlBrightnessAdjust->move ((QApplication::desktop()->width() - ctrlBrightnessAdjust->width())/2,(QApplication::desktop()->height() - ctrlBrightnessAdjust->height())/2);
+    ctrlBrightnessAdjust->hide();
 
     faulthelpPage = new VehicleFaultHelpPage();
     faulthelpPage->setGeometry(112,180,faulthelpPage->width(),faulthelpPage->height());
@@ -345,4 +351,9 @@ void Header::on_HelpItemBtn_pressed()
 void Header::on_CurrentFaultBtn_pressed()
 {
 
+}
+
+void Header::on_LogoBtn_pressed()
+{
+    this->ctrlBrightnessAdjust->show();
 }

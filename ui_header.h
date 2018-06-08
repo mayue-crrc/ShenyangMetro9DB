@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'header.ui'
 **
-** Created: Thu Apr 19 11:15:43 2018
+** Created: Fri Jun 8 14:00:42 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -40,7 +40,7 @@ public:
     QLabel *DateTime;
     QPushButton *HelpItemBtn;
     QPushButton *CurrentFaultBtn;
-    QLabel *logo;
+    QPushButton *LogoBtn;
 
     void setupUi(QWidget *Header)
     {
@@ -162,13 +162,15 @@ public:
 "border:2px solid black;\n"
 "color: rgb(255, 0, 0);\n"
 "font: 24px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
-        logo = new QLabel(Header);
-        logo->setObjectName(QString::fromUtf8("logo"));
-        logo->setGeometry(QRect(1, 5, 72, 72));
-        logo->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/logo.bmp);\n"
-""));
-        logo->setAlignment(Qt::AlignCenter);
-        logo->setWordWrap(true);
+        LogoBtn = new QPushButton(Header);
+        LogoBtn->setObjectName(QString::fromUtf8("LogoBtn"));
+        LogoBtn->setGeometry(QRect(0, 5, 71, 70));
+        LogoBtn->setFocusPolicy(Qt::NoFocus);
+        LogoBtn->setStyleSheet(QString::fromUtf8("background-color:black;\n"
+"border-image: url(:/images/images/logo.bmp);\n"
+"border:2px solid black;\n"
+"color: rgb(255, 0, 0);\n"
+"font: 24px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
 
         retranslateUi(Header);
 
@@ -194,7 +196,7 @@ public:
         DateTime->setText(QString());
         HelpItemBtn->setText(QString());
         CurrentFaultBtn->setText(QString());
-        logo->setText(QString());
+        LogoBtn->setText(QString());
     } // retranslateUi
 
 };
