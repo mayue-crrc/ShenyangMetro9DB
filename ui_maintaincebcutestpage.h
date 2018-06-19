@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincebcutestpage.ui'
 **
-** Created: Fri Jun 8 15:11:24 2018
+** Created: Tue Jun 19 19:01:09 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -394,7 +394,7 @@ public:
         untestin24hourTC1lbl_2 = new QLabel(MaintainceBCUTestPage);
         untestin24hourTC1lbl_2->setObjectName(QString::fromUtf8("untestin24hourTC1lbl_2"));
         untestin24hourTC1lbl_2->setGeometry(QRect(530, 390, 291, 30));
-        untestin24hourTC1lbl_2->setStyleSheet(QString::fromUtf8(""));
+        untestin24hourTC1lbl_2->setStyleSheet(QString::fromUtf8("background-color:white;"));
         untestin24hourTC1lbl_2->setAlignment(Qt::AlignCenter);
         testresTC1J2lbl_12 = new QLabel(MaintainceBCUTestPage);
         testresTC1J2lbl_12->setObjectName(QString::fromUtf8("testresTC1J2lbl_12"));

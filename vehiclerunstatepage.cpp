@@ -191,7 +191,7 @@ void VehicleRunStatePage::updateRunStatus()
         this->ui->Deadmanlbl->hide();
     }
     //紧急运行
-    if(this->database->DICT_TC1DI1CH17EmOperition_B1 == true || this->database->DICT_TC2DI1CH17EmOperition_B1 == true)
+    if(this->database->CTHM_EmgMode_B1 == true)
     {
         this->ui->EmergencyRunlbl->show();
     }else

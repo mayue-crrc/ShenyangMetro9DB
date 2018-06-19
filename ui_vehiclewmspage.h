@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclewmspage.ui'
 **
-** Created: Fri Jun 8 15:09:57 2018
+** Created: Tue Jun 19 18:59:19 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -930,6 +930,96 @@ public:
 "\n"
 ""));
         Area1M2lbl_3->setAlignment(Qt::AlignCenter);
+        label->raise();
+        TrainNumTC1lbl->raise();
+        TrainNumMP1lbl->raise();
+        TrainNumM2lbl->raise();
+        TrainNumTC2lbl->raise();
+        TrainNumM1lbl->raise();
+        TrainNumMP2lbl->raise();
+        Tc1Directionlbl->raise();
+        Tc1Cablbl->raise();
+        Tc2Cablbl->raise();
+        Tc2Directionlbl->raise();
+        HBOXTC1lbl->raise();
+        RBOXTC1lbl->raise();
+        lbl->raise();
+        FBOXTC1lbl->raise();
+        FBOXMP1lbl->raise();
+        RBOXMP1lbl->raise();
+        FBOXM1lbl->raise();
+        RBOXM1lbl->raise();
+        Area1TC1lbl->raise();
+        Area2TC1lbl->raise();
+        Area1MP1lbl->raise();
+        Area2MP1lbl->raise();
+        Area1M1lbl->raise();
+        Area2M1lbl->raise();
+        Area2M2lbl->raise();
+        Area1M2lbl->raise();
+        Area1MP2lbl->raise();
+        Area2MP2lbl->raise();
+        Area1TC2lbl->raise();
+        Area2TC2lbl->raise();
+        RBOXM2lbl->raise();
+        FBOXM2lbl->raise();
+        RBOXMP2lbl->raise();
+        FBOXMP2lbl->raise();
+        RBOXTC2lbl->raise();
+        FBOXTC2lbl->raise();
+        HBOXTC2lbl->raise();
+        DBOXTC2lbl->raise();
+        cabTC1lbl->raise();
+        cabTC2lbl->raise();
+        DBOXTC1lbl->raise();
+        lbl_2->raise();
+        lbl_3->raise();
+        lbl_4->raise();
+        lbl_5->raise();
+        lbl_6->raise();
+        lbl_7->raise();
+        returnBtn->raise();
+        lbl_8->raise();
+        lbl_9->raise();
+        lbl_10->raise();
+        lbl_11->raise();
+        lbl_12->raise();
+        lbl_13->raise();
+        lbl_14->raise();
+        lbl_15->raise();
+        lbl_16->raise();
+        lbl_17->raise();
+        lbl_18->raise();
+        lbl_19->raise();
+        lbl_20->raise();
+        lbl_21->raise();
+        S1Albl->raise();
+        S1Blbl->raise();
+        S2Blbl->raise();
+        S2Albl->raise();
+        S3Blbl->raise();
+        S3Albl->raise();
+        S4Blbl->raise();
+        S4Albl->raise();
+        S5Blbl->raise();
+        S5Albl->raise();
+        S6Blbl->raise();
+        S6Albl->raise();
+        S7Blbl->raise();
+        S7Albl->raise();
+        lbl_22->raise();
+        lbl_23->raise();
+        lbl_24->raise();
+        ABTC1lbl->raise();
+        ABTC2lbl->raise();
+        PHMP1lbl->raise();
+        PHMP2lbl->raise();
+        PBM1lbl->raise();
+        PBM2lbl->raise();
+        PHMP2lbl_2->raise();
+        Area1MP2lbl_2->raise();
+        Area1M2lbl_2->raise();
+        Area1M2lbl_3->raise();
 
         retranslateUi(VehicleWMSPage);
 

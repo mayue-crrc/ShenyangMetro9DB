@@ -1130,44 +1130,44 @@ color: white;
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <zorder>ZeroSpeedTC1lbl_2</zorder>
+  <zorder>ZeroSpeedTC2lbl_2</zorder>
+  <zorder>StopBrakeTC1lbl_2</zorder>
+  <zorder>StopBrakeTC2lbl_2</zorder>
+  <zorder>Emloop2TC2lbl_2</zorder>
+  <zorder>AlarmTC1lbl_2</zorder>
+  <zorder>Emloop2TC1lbl_2</zorder>
+  <zorder>EmloopTC1lbl_2</zorder>
+  <zorder>ALLTrainCloseTC1lbl_2</zorder>
+  <zorder>BrakeNOTReleaseTC1lbl_2</zorder>
+  <zorder>BrakeNOTReleaseTC2lbl_2</zorder>
+  <zorder>EmloopTC2lbl_2</zorder>
+  <zorder>ALLTrainCloseTC2lbl_2</zorder>
+  <zorder>AlarmTC2lbl_2</zorder>
   <zorder>LBL1_8</zorder>
   <zorder>LBL1_9</zorder>
   <zorder>BrakeNOTReleaseTC1lbl</zorder>
-  <zorder>BrakeNOTReleaseTC1lbl_2</zorder>
   <zorder>BrakeNOTReleaseTC2lbl</zorder>
-  <zorder>BrakeNOTReleaseTC2lbl_2</zorder>
   <zorder>linelbl1</zorder>
   <zorder>StopBrakeTC1lbl</zorder>
   <zorder>StopBrakeTC2lbl</zorder>
   <zorder>linelbl1_2</zorder>
-  <zorder>StopBrakeTC2lbl_2</zorder>
-  <zorder>StopBrakeTC1lbl_2</zorder>
   <zorder>ALLTrainCloseTC1lbl</zorder>
   <zorder>ALLTrainCloseTC2lbl</zorder>
   <zorder>linelbl1_3</zorder>
-  <zorder>ALLTrainCloseTC2lbl_2</zorder>
-  <zorder>ALLTrainCloseTC1lbl_2</zorder>
   <zorder>AlarmTC1lbl</zorder>
   <zorder>AlarmTC2lbl</zorder>
   <zorder>linelbl1_4</zorder>
-  <zorder>AlarmTC2lbl_2</zorder>
-  <zorder>AlarmTC1lbl_2</zorder>
   <zorder>EmloopTC1lbl</zorder>
   <zorder>EmloopTC2lbl</zorder>
   <zorder>linelbl1_5</zorder>
-  <zorder>EmloopTC2lbl_2</zorder>
-  <zorder>EmloopTC1lbl_2</zorder>
   <zorder>Emloop2TC1lbl</zorder>
   <zorder>Emloop2TC2lbl</zorder>
   <zorder>linelbl1_6</zorder>
-  <zorder>Emloop2TC2lbl_2</zorder>
-  <zorder>Emloop2TC1lbl_2</zorder>
   <zorder>label</zorder>
   <zorder>returnBtn</zorder>
   <zorder>ZeroSpeedTC2lbl</zorder>
   <zorder>ZeroSpeedTC1lbl</zorder>
-  <zorder>ZeroSpeedTC2lbl_2</zorder>
-  <zorder>ZeroSpeedTC1lbl_2</zorder>
   <zorder>linelbl1_7</zorder>
   <zorder>ZeroSpeedTC2lbl_3</zorder>
   <zorder>ZeroSpeedTC2lbl_4</zorder>

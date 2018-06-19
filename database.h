@@ -196,7 +196,7 @@ public:
         ,CTHM_TC1Active_B1,CTHM_TC2Active_B1,CTHM_Traction_B1,CTHM_Brake_B1
         ,CTHM_FastBrake_B1,CTHM_EmgyBrake_B1,CTHM_Backward_B1,CTHM_Forward_B1,
         CTHM_SAVETimeFedBk_B1,CTHM_SAVETrainNumFedBk_B1,CTHM_SAVELineNumFedBk_B1,CTHM_SAVEFirstStationFedBk_B1
-        ,CTHM_SAVELastStationFedBk_B1,CTHM_WorkshopPowerSupply_B1,CTHM_BatteryLow_B1 ,CTHM_AcDeTestOn_B1;
+        ,CTHM_SAVELastStationFedBk_B1,CTHM_WorkshopPowerSupply_B1,CTHM_BatteryLow_B1 ,CTHM_AcDeTestOn_B1,CTHM_EmgMode_B1;
 
     unsigned char CTHM_Grade_U8,CTHM_CurrentStation_U8,CTHM_NextStation_U8
                 ,CTHM_CCU1SWVer_U8,CTHM_CCU1MVBVer_U8,CTHM_CCU1SDBVer_U8,CTHM_CCU1VxWorksVer_U8,CTHM_CCU1FPGAVer_U8
