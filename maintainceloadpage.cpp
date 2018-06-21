@@ -48,12 +48,19 @@ void MaintainceLoadPage::updatePage()
     this->ui->EmptyTrainWeightMP2lbl->setText(DefaultLoadMP2);
     this->ui->EmptyTrainWeightTC2lbl->setText(DefaultLoadTC2);
 
-    float tmp_pkgtc1 = ((float)this->database->CTHM_TC1Load_U16/100 - DefaultLoadTC1.toFloat());
-    float tmp_pkgmp1 = ((float)this->database->CTHM_MP1Load_U16/100 - DefaultLoadMP1.toFloat());
-    float tmp_pkgm1 = ((float)this->database->CTHM_M1Load_U16/100 - DefaultLoadM1.toFloat());
-    float tmp_pkgm2 = ((float)this->database->CTHM_M2Load_U16/100 - DefaultLoadM2.toFloat());
-    float tmp_pkgmp2 = ((float)this->database->CTHM_MP2Load_U16/100 - DefaultLoadMP2.toFloat());
-    float tmp_pkgtc2 = ((float)this->database->CTHM_TC2Load_U16/100 - DefaultLoadTC2.toFloat());
+    float tmp_pkgtc1 = ((float)this->database->CTHM_TC1Load_U16/100 - DefaultLoadTC1.toFloat()*1.05);
+    float tmp_pkgmp1 = ((float)this->database->CTHM_MP1Load_U16/100 - DefaultLoadMP1.toFloat()*1.1);
+    float tmp_pkgm1 = ((float)this->database->CTHM_M1Load_U16/100 - DefaultLoadM1.toFloat()*1.1);
+    float tmp_pkgm2 = ((float)this->database->CTHM_M2Load_U16/100 - DefaultLoadM2.toFloat()*1.1);
+    float tmp_pkgmp2 = ((float)this->database->CTHM_MP2Load_U16/100 - DefaultLoadMP2.toFloat()*1.1);
+    float tmp_pkgtc2 = ((float)this->database->CTHM_TC2Load_U16/100 - DefaultLoadTC2.toFloat()*1.05);
+
+    tmp_pkgtc1 = tmp_pkgtc1>0?tmp_pkgtc1:0;
+    tmp_pkgmp1 = tmp_pkgmp1>0?tmp_pkgmp1:0;
+    tmp_pkgm1 = tmp_pkgm1>0?tmp_pkgm1:0;
+    tmp_pkgm2 = tmp_pkgm2>0?tmp_pkgm2:0;
+    tmp_pkgmp2 = tmp_pkgmp2>0?tmp_pkgmp2:0;
+    tmp_pkgtc2 = tmp_pkgtc2>0?tmp_pkgtc2:0;
 
     this->ui->PkgWeightTC1lbl->setText(QString::number(tmp_pkgtc1*1000));
     this->ui->PkgWeightMP1lbl->setText(QString::number(tmp_pkgmp1*1000));

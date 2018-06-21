@@ -166,7 +166,7 @@ void MaintainceBCUTestPage::setlabelstates(QLabel* lbl,QList<bool> states)
     {
         lbl->setText("自检成功");
         lbl->setStyleSheet("color:green");
-    }else if(states.at(1))
+    }else if(states.at(3))
     {
         lbl->setText("自检中");
         lbl->setStyleSheet("color:white");

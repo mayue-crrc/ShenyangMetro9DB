@@ -27,6 +27,10 @@ VehicleResetPage::VehicleResetPage(QWidget *parent) :
         Buttonstatus[i] = false;
     }
 
+    ACMBtnflg = false;
+    DCUBtnflg = false;
+
+
 }
 
 VehicleResetPage::~VehicleResetPage()
@@ -36,11 +40,12 @@ VehicleResetPage::~VehicleResetPage()
 void VehicleResetPage::updatePage()
 {
     // acm reset 2s
-    if(!this->ui->ACMRESETTC1Btn->isEnabled())
+    if(ACMBtnflg)
     {
         if(ACM2sTimer++>6)
         {
             ACM2sTimer = 0;
+            ACMBtnflg =false;
             this->ui->ACMRESETTC1Btn->setDisabled(false);
             this->ui->ACMRESETTC1Btn->setStyleSheet(VCBUTTON_UP);
             this->database->HMiCT_ACU1Reset_B1 = false;
@@ -59,11 +64,12 @@ void VehicleResetPage::updatePage()
 
 
     //vvvf fault reset 2s
-    if(this->database->HMiCT_Mp1DCUFaultReset_B1)
+    if(DCUBtnflg)
     {
         if(DCU2sTimer++>6)
         {
             DCU2sTimer = 0;
+            DCUBtnflg = false;
             this->ui->VVVFMP1Btn->setDisabled(false);
             this->ui->VVVFMP1Btn->setStyleSheet(VCBUTTON_UP);
             this->database->HMiCT_Mp1DCUFaultReset_B1 = false;
@@ -155,6 +161,8 @@ void VehicleResetPage::on_returnBtn_pressed()
 
 void VehicleResetPage::on_ACMRESETTC1Btn_pressed()
 {
+    ACMBtnflg = true;
+
     this->ui->ACMRESETTC1Btn->setStyleSheet(VCBUTTON_DOWN);
     this->database->HMiCT_ACU1Reset_B1 = Buttonstatus[0];
     this->database->HMiCT_ACU2Reset_B1 = Buttonstatus[2];
@@ -169,6 +177,9 @@ void VehicleResetPage::on_ACMRESETTC1Btn_pressed()
 
 void VehicleResetPage::on_VVVFMP1Btn_pressed()
 {
+
+    DCUBtnflg = true;
+
     this->ui->VVVFMP1Btn->setStyleSheet(VCBUTTON_DOWN);
     this->database->HMiCT_Mp1DCUFaultReset_B1 = Buttonstatus[1];
     this->database->HMiCT_M1DCUFaultReset_B1 = Buttonstatus[2];

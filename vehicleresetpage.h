@@ -24,7 +24,7 @@ private:
     QList<QPushButton *> buttons;
     bool Buttonstatus[6];
     int m_BtnID;
-
+    bool ACMBtnflg,DCUBtnflg;
 private slots:
 
     void on_VVVFMP1Btn_pressed();

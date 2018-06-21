@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicleebcupage2.ui'
 **
-** Created: Wed Jun 6 13:43:22 2018
+** Created: Wed Jun 20 19:02:28 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -400,6 +400,7 @@ public:
         MRPMP2bg1lbl->setObjectName(QString::fromUtf8("MRPMP2bg1lbl"));
         MRPMP2bg1lbl->setGeometry(QRect(680, 470, 41, 31));
         MRPMP2bg1lbl->setAlignment(Qt::AlignCenter);
+        lbl1_13->raise();
         lbl1_11->raise();
         lbl1_8->raise();
         lbl1_9->raise();
@@ -432,7 +433,6 @@ public:
         ASPTC1_1lbl->raise();
         lbl1->raise();
         BCPM1_2lbl->raise();
-        lbl1_13->raise();
         MRPTC2lbl->raise();
         lbl1_3->raise();
         ASPTC1_2lbl->raise();

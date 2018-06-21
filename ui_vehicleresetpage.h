@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicleresetpage.ui'
 **
-** Created: Fri Jun 8 11:11:00 2018
+** Created: Thu Jun 21 10:35:32 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -75,7 +75,7 @@ public:
 "}"));
         EBStateMP2lbl = new QLabel(VehicleResetPage);
         EBStateMP2lbl->setObjectName(QString::fromUtf8("EBStateMP2lbl"));
-        EBStateMP2lbl->setGeometry(QRect(625, 150, 91, 51));
+        EBStateMP2lbl->setGeometry(QRect(620, 150, 91, 51));
         EBStateMP2lbl->setStyleSheet(QString::fromUtf8("color:white;\n"
 "background-color:green;\n"
 "border-left:3px solid white;\n"

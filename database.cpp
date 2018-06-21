@@ -82,7 +82,7 @@ Database::Database()
     HMiCT_ACDETestStartFlag_B1 = false;
 
     HMiCT_HMISWVerH_U8 = 2;
-    HMiCT_HMISWVerL_U8 = 3;
+    HMiCT_HMISWVerL_U8 = 10;
 
     for(int i =0; i< 12;i++)
     {
@@ -830,12 +830,19 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->CTHM_AcDeTime_U16 = crrcMvb->getUnsignedInt(0x21A,12);
         this->CTHM_AcDeTestOn_B1 = crrcMvb->getBool(0x21A,15,0);
 
-        float tmp_pkgtc1 = ((float)this->CTHM_TC1Load_U16/100 - DefaultLoadTC1.toFloat());
-        float tmp_pkgmp1 = ((float)this->CTHM_MP1Load_U16/100 - DefaultLoadMP1.toFloat());
-        float tmp_pkgm1 = ((float)this->CTHM_M1Load_U16/100 - DefaultLoadM1.toFloat());
-        float tmp_pkgm2 = ((float)this->CTHM_M2Load_U16/100 - DefaultLoadM2.toFloat());
-        float tmp_pkgmp2 = ((float)this->CTHM_MP2Load_U16/100 - DefaultLoadMP2.toFloat());
-        float tmp_pkgtc2 = ((float)this->CTHM_TC2Load_U16/100 - DefaultLoadTC2.toFloat());
+        float tmp_pkgtc1 = ((float)this->CTHM_TC1Load_U16/100 - DefaultLoadTC1.toFloat()*1.05);
+        float tmp_pkgmp1 = ((float)this->CTHM_MP1Load_U16/100 - DefaultLoadMP1.toFloat()*1.1);
+        float tmp_pkgm1 = ((float)this->CTHM_M1Load_U16/100 - DefaultLoadM1.toFloat()*1.1);
+        float tmp_pkgm2 = ((float)this->CTHM_M2Load_U16/100 - DefaultLoadM2.toFloat()*1.1);
+        float tmp_pkgmp2 = ((float)this->CTHM_MP2Load_U16/100 - DefaultLoadMP2.toFloat()*1.1);
+        float tmp_pkgtc2 = ((float)this->CTHM_TC2Load_U16/100 - DefaultLoadTC2.toFloat()*1.05);
+
+        tmp_pkgtc1 = tmp_pkgtc1>0?tmp_pkgtc1:0;
+        tmp_pkgmp1 = tmp_pkgmp1>0?tmp_pkgmp1:0;
+        tmp_pkgm1 = tmp_pkgm1>0?tmp_pkgm1:0;
+        tmp_pkgm2 = tmp_pkgm2>0?tmp_pkgm2:0;
+        tmp_pkgmp2 = tmp_pkgmp2>0?tmp_pkgmp2:0;
+        tmp_pkgtc2 = tmp_pkgtc2>0?tmp_pkgtc2:0;
 
         PLoad_TC1 = QString::number((float)(tmp_pkgtc1/(DefaultFullLoadTC1.toFloat()))*100,10,1);
         PLoad_MP1 = QString::number((float)(tmp_pkgmp1/(DefaultFullLoadMP1.toFloat()))*100,10,1);
@@ -1659,60 +1666,7 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
     /////*******EDCU -- CCU**********///////
     {
 
-        //**** 同列2个门控器有效 或运算
-        DR1CT_DCU8Valid_B1 = (this->crrcMvb->getBool(0x710,0,0) || this->crrcMvb->getBool(0x720,0,0)) ;
-        DR1CT_DCU7Valid_B1 = (this->crrcMvb->getBool(0x710,0,1) || this->crrcMvb->getBool(0x720,0,1)) ;
-        DR1CT_DCU6Valid_B1 = (this->crrcMvb->getBool(0x710,0,2) || this->crrcMvb->getBool(0x720,0,2)) ;
-        DR1CT_DCU5Valid_B1 = (this->crrcMvb->getBool(0x710,0,3) || this->crrcMvb->getBool(0x720,0,3)) ;
-        DR1CT_DCU4Valid_B1 = (this->crrcMvb->getBool(0x710,0,4) || this->crrcMvb->getBool(0x720,0,4)) ;
-        DR1CT_DCU3Valid_B1 = (this->crrcMvb->getBool(0x710,0,5) || this->crrcMvb->getBool(0x720,0,5)) ;
-        DR1CT_DCU2Valid_B1 = (this->crrcMvb->getBool(0x710,0,6) || this->crrcMvb->getBool(0x720,0,6)) ;
-        DR1CT_DCU1Valid_B1 = (this->crrcMvb->getBool(0x710,0,7) || this->crrcMvb->getBool(0x720,0,7)) ;
 
-        DR2CT_DCU8Valid_B1 = (this->crrcMvb->getBool(0x730,0,0) || this->crrcMvb->getBool(0x740,0,0)) ;
-        DR2CT_DCU7Valid_B1 = (this->crrcMvb->getBool(0x730,0,1) || this->crrcMvb->getBool(0x740,0,1)) ;
-        DR2CT_DCU6Valid_B1 = (this->crrcMvb->getBool(0x730,0,2) || this->crrcMvb->getBool(0x740,0,2)) ;
-        DR2CT_DCU5Valid_B1 = (this->crrcMvb->getBool(0x730,0,3) || this->crrcMvb->getBool(0x740,0,3)) ;
-        DR2CT_DCU4Valid_B1 = (this->crrcMvb->getBool(0x730,0,4) || this->crrcMvb->getBool(0x740,0,4)) ;
-        DR2CT_DCU3Valid_B1 = (this->crrcMvb->getBool(0x730,0,5) || this->crrcMvb->getBool(0x740,0,5)) ;
-        DR2CT_DCU2Valid_B1 = (this->crrcMvb->getBool(0x730,0,6) || this->crrcMvb->getBool(0x740,0,6)) ;
-        DR2CT_DCU1Valid_B1 = (this->crrcMvb->getBool(0x730,0,7) || this->crrcMvb->getBool(0x740,0,7)) ;
-
-        DR3CT_DCU8Valid_B1 = (this->crrcMvb->getBool(0x750,0,0) || this->crrcMvb->getBool(0x760,0,0)) ;
-        DR3CT_DCU7Valid_B1 = (this->crrcMvb->getBool(0x750,0,1) || this->crrcMvb->getBool(0x760,0,1)) ;
-        DR3CT_DCU6Valid_B1 = (this->crrcMvb->getBool(0x750,0,2) || this->crrcMvb->getBool(0x760,0,2)) ;
-        DR3CT_DCU5Valid_B1 = (this->crrcMvb->getBool(0x750,0,3) || this->crrcMvb->getBool(0x760,0,3)) ;
-        DR3CT_DCU4Valid_B1 = (this->crrcMvb->getBool(0x750,0,4) || this->crrcMvb->getBool(0x760,0,4)) ;
-        DR3CT_DCU3Valid_B1 = (this->crrcMvb->getBool(0x750,0,5) || this->crrcMvb->getBool(0x760,0,5)) ;
-        DR3CT_DCU2Valid_B1 = (this->crrcMvb->getBool(0x750,0,6) || this->crrcMvb->getBool(0x760,0,6)) ;
-        DR3CT_DCU1Valid_B1 = (this->crrcMvb->getBool(0x750,0,7) || this->crrcMvb->getBool(0x760,0,7)) ;
-
-        DR4CT_DCU8Valid_B1 = (this->crrcMvb->getBool(0x770,0,0) || this->crrcMvb->getBool(0x780,0,0)) ;
-        DR4CT_DCU7Valid_B1 = (this->crrcMvb->getBool(0x770,0,1) || this->crrcMvb->getBool(0x780,0,1)) ;
-        DR4CT_DCU6Valid_B1 = (this->crrcMvb->getBool(0x770,0,2) || this->crrcMvb->getBool(0x780,0,2)) ;
-        DR4CT_DCU5Valid_B1 = (this->crrcMvb->getBool(0x770,0,3) || this->crrcMvb->getBool(0x780,0,3)) ;
-        DR4CT_DCU4Valid_B1 = (this->crrcMvb->getBool(0x770,0,4) || this->crrcMvb->getBool(0x780,0,4)) ;
-        DR4CT_DCU3Valid_B1 = (this->crrcMvb->getBool(0x770,0,5) || this->crrcMvb->getBool(0x780,0,5)) ;
-        DR4CT_DCU2Valid_B1 = (this->crrcMvb->getBool(0x770,0,6) || this->crrcMvb->getBool(0x780,0,6)) ;
-        DR4CT_DCU1Valid_B1 = (this->crrcMvb->getBool(0x770,0,7) || this->crrcMvb->getBool(0x780,0,7)) ;
-
-        DR5CT_DCU8Valid_B1 = (this->crrcMvb->getBool(0x790,0,0) || this->crrcMvb->getBool(0x7a0,0,0)) ;
-        DR5CT_DCU7Valid_B1 = (this->crrcMvb->getBool(0x790,0,1) || this->crrcMvb->getBool(0x7a0,0,1)) ;
-        DR5CT_DCU6Valid_B1 = (this->crrcMvb->getBool(0x790,0,2) || this->crrcMvb->getBool(0x7a0,0,2)) ;
-        DR5CT_DCU5Valid_B1 = (this->crrcMvb->getBool(0x790,0,3) || this->crrcMvb->getBool(0x7a0,0,3)) ;
-        DR5CT_DCU4Valid_B1 = (this->crrcMvb->getBool(0x790,0,4) || this->crrcMvb->getBool(0x7a0,0,4)) ;
-        DR5CT_DCU3Valid_B1 = (this->crrcMvb->getBool(0x790,0,5) || this->crrcMvb->getBool(0x7a0,0,5)) ;
-        DR5CT_DCU2Valid_B1 = (this->crrcMvb->getBool(0x790,0,6) || this->crrcMvb->getBool(0x7a0,0,6)) ;
-        DR5CT_DCU1Valid_B1 = (this->crrcMvb->getBool(0x790,0,7) || this->crrcMvb->getBool(0x7a0,0,7)) ;
-
-        DR6CT_DCU8Valid_B1 = (this->crrcMvb->getBool(0x7b0,0,0) || this->crrcMvb->getBool(0x7c0,0,0)) ;
-        DR6CT_DCU7Valid_B1 = (this->crrcMvb->getBool(0x7b0,0,1) || this->crrcMvb->getBool(0x7c0,0,1)) ;
-        DR6CT_DCU6Valid_B1 = (this->crrcMvb->getBool(0x7b0,0,2) || this->crrcMvb->getBool(0x7c0,0,2)) ;
-        DR6CT_DCU5Valid_B1 = (this->crrcMvb->getBool(0x7b0,0,3) || this->crrcMvb->getBool(0x7c0,0,3)) ;
-        DR6CT_DCU4Valid_B1 = (this->crrcMvb->getBool(0x7b0,0,4) || this->crrcMvb->getBool(0x7c0,0,4)) ;
-        DR6CT_DCU3Valid_B1 = (this->crrcMvb->getBool(0x7b0,0,5) || this->crrcMvb->getBool(0x7c0,0,5)) ;
-        DR6CT_DCU2Valid_B1 = (this->crrcMvb->getBool(0x7b0,0,6) || this->crrcMvb->getBool(0x7c0,0,6)) ;
-        DR6CT_DCU1Valid_B1 = (this->crrcMvb->getBool(0x7b0,0,7) || this->crrcMvb->getBool(0x7c0,0,7)) ;
         //****
         this->DR1CT_LifeSignal_U16 = crrcMvb->getUnsignedInt(0x710,20);
         this->DR1CT_MDCUStatus_U8= crrcMvb->getUnsignedChar(0x710,22);
@@ -1916,7 +1870,7 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         temp_realports.clear();
         temp_virtualports<<0xf750<<0xf751;
         temp_realports<<0x750<<0x751<<0x760<<0x761;
-        this->createEDCUList(this->CTHM_EDCU5On_B1,this->CTHM_EDCU5On_B1,temp_virtualports,temp_realports);
+        this->createEDCUList(this->CTHM_EDCU5On_B1,this->CTHM_EDCU6On_B1,temp_virtualports,temp_realports);
         //*****TODO realdata from virual port
         this->DR5_6CT_SwVersion1_U8 = crrcMvb->getUnsignedChar(0xf750,10);
         this->DR5_6CT_SwVersion2_U8 = crrcMvb->getUnsignedChar(0xf750,11);
@@ -2295,6 +2249,60 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
 
 
         //*****
+        //**** 门控器有效
+        DR1CT_DCU8Valid_B1 = this->crrcMvb->getBool(0xf710,0,0);
+        DR1CT_DCU7Valid_B1 = this->crrcMvb->getBool(0xf710,0,1);
+        DR1CT_DCU6Valid_B1 = this->crrcMvb->getBool(0xf710,0,2);
+        DR1CT_DCU5Valid_B1 = this->crrcMvb->getBool(0xf710,0,3);
+        DR1CT_DCU4Valid_B1 = this->crrcMvb->getBool(0xf710,0,4);
+        DR1CT_DCU3Valid_B1 = this->crrcMvb->getBool(0xf710,0,5);
+        DR1CT_DCU2Valid_B1 = this->crrcMvb->getBool(0xf710,0,6);
+        DR1CT_DCU1Valid_B1 = this->crrcMvb->getBool(0xf710,0,7);
+
+        DR2CT_DCU8Valid_B1 = this->crrcMvb->getBool(0xf730,0,0);
+        DR2CT_DCU7Valid_B1 = this->crrcMvb->getBool(0xf730,0,1);
+        DR2CT_DCU6Valid_B1 = this->crrcMvb->getBool(0xf730,0,2);
+        DR2CT_DCU5Valid_B1 = this->crrcMvb->getBool(0xf730,0,3);
+        DR2CT_DCU4Valid_B1 = this->crrcMvb->getBool(0xf730,0,4);
+        DR2CT_DCU3Valid_B1 = this->crrcMvb->getBool(0xf730,0,5);
+        DR2CT_DCU2Valid_B1 = this->crrcMvb->getBool(0xf730,0,6);
+        DR2CT_DCU1Valid_B1 = this->crrcMvb->getBool(0xf730,0,7);
+
+        DR3CT_DCU8Valid_B1 = this->crrcMvb->getBool(0xf750,0,0);
+        DR3CT_DCU7Valid_B1 = this->crrcMvb->getBool(0xf750,0,1);
+        DR3CT_DCU6Valid_B1 = this->crrcMvb->getBool(0xf750,0,2);
+        DR3CT_DCU5Valid_B1 = this->crrcMvb->getBool(0xf750,0,3);
+        DR3CT_DCU4Valid_B1 = this->crrcMvb->getBool(0xf750,0,4);
+        DR3CT_DCU3Valid_B1 = this->crrcMvb->getBool(0xf750,0,5);
+        DR3CT_DCU2Valid_B1 = this->crrcMvb->getBool(0xf750,0,6);
+        DR3CT_DCU1Valid_B1 = this->crrcMvb->getBool(0xf750,0,7);
+
+        DR4CT_DCU8Valid_B1 = this->crrcMvb->getBool(0xf770,0,0);
+        DR4CT_DCU7Valid_B1 = this->crrcMvb->getBool(0xf770,0,1);
+        DR4CT_DCU6Valid_B1 = this->crrcMvb->getBool(0xf770,0,2);
+        DR4CT_DCU5Valid_B1 = this->crrcMvb->getBool(0xf770,0,3);
+        DR4CT_DCU4Valid_B1 = this->crrcMvb->getBool(0xf770,0,4);
+        DR4CT_DCU3Valid_B1 = this->crrcMvb->getBool(0xf770,0,5);
+        DR4CT_DCU2Valid_B1 = this->crrcMvb->getBool(0xf770,0,6);
+        DR4CT_DCU1Valid_B1 = this->crrcMvb->getBool(0xf770,0,7);
+
+        DR5CT_DCU8Valid_B1 = this->crrcMvb->getBool(0xf790,0,0);
+        DR5CT_DCU7Valid_B1 = this->crrcMvb->getBool(0xf790,0,1);
+        DR5CT_DCU6Valid_B1 = this->crrcMvb->getBool(0xf790,0,2);
+        DR5CT_DCU5Valid_B1 = this->crrcMvb->getBool(0xf790,0,3);
+        DR5CT_DCU4Valid_B1 = this->crrcMvb->getBool(0xf790,0,4);
+        DR5CT_DCU3Valid_B1 = this->crrcMvb->getBool(0xf790,0,5);
+        DR5CT_DCU2Valid_B1 = this->crrcMvb->getBool(0xf790,0,6);
+        DR5CT_DCU1Valid_B1 = this->crrcMvb->getBool(0xf790,0,7);
+
+        DR6CT_DCU8Valid_B1 = this->crrcMvb->getBool(0xf7b0,0,0);
+        DR6CT_DCU7Valid_B1 = this->crrcMvb->getBool(0xf7b0,0,1);
+        DR6CT_DCU6Valid_B1 = this->crrcMvb->getBool(0xf7b0,0,2) ;
+        DR6CT_DCU5Valid_B1 = this->crrcMvb->getBool(0xf7b0,0,3);
+        DR6CT_DCU4Valid_B1 = this->crrcMvb->getBool(0xf7b0,0,4);
+        DR6CT_DCU3Valid_B1 = this->crrcMvb->getBool(0xf7b0,0,5);
+        DR6CT_DCU2Valid_B1 = this->crrcMvb->getBool(0xf7b0,0,6);
+        DR6CT_DCU1Valid_B1 = this->crrcMvb->getBool(0xf7b0,0,7) ;
 
     }
 

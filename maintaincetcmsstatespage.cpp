@@ -103,59 +103,59 @@ void MaintainceTCMSStatesPage::updatePage()
     setlabelstates(ui->RIOMLbl_tc2,tmp_riom);
     tmp_riom.clear();
 
-    setlabelstates(ui->DOOR1Lbl_tc1,this->database->DR1CT_DCU1Valid_B1);
-    setlabelstates(ui->DOOR2Lbl_tc1,this->database->DR1CT_DCU2Valid_B1);
-    setlabelstates(ui->DOOR3Lbl_tc1,this->database->DR1CT_DCU3Valid_B1);
-    setlabelstates(ui->DOOR4Lbl_tc1,this->database->DR1CT_DCU4Valid_B1);
-    setlabelstates(ui->DOOR5Lbl_tc1,this->database->DR1CT_DCU5Valid_B1);
-    setlabelstates(ui->DOOR6Lbl_tc1,this->database->DR1CT_DCU6Valid_B1);
-    setlabelstates(ui->DOOR7Lbl_tc1,this->database->DR1CT_DCU7Valid_B1);
-    setlabelstates(ui->DOOR8Lbl_tc1,this->database->DR1CT_DCU8Valid_B1);
+//    setlabelstates(ui->DOOR1Lbl_tc1,this->database->DR1CT_DCU1Valid_B1);
+//    setlabelstates(ui->DOOR2Lbl_tc1,this->database->DR1CT_DCU2Valid_B1);
+//    setlabelstates(ui->DOOR3Lbl_tc1,this->database->DR1CT_DCU3Valid_B1);
+//    setlabelstates(ui->DOOR4Lbl_tc1,this->database->DR1CT_DCU4Valid_B1);
+//    setlabelstates(ui->DOOR5Lbl_tc1,this->database->DR1CT_DCU5Valid_B1);
+//    setlabelstates(ui->DOOR6Lbl_tc1,this->database->DR1CT_DCU6Valid_B1);
+//    setlabelstates(ui->DOOR7Lbl_tc1,this->database->DR1CT_DCU7Valid_B1);
+//    setlabelstates(ui->DOOR8Lbl_tc1,this->database->DR1CT_DCU8Valid_B1);
 
-    setlabelstates(ui->DOOR1Lbl_mp1,this->database->DR2CT_DCU1Valid_B1);
-    setlabelstates(ui->DOOR2Lbl_mp1,this->database->DR2CT_DCU2Valid_B1);
-    setlabelstates(ui->DOOR3Lbl_mp1,this->database->DR2CT_DCU3Valid_B1);
-    setlabelstates(ui->DOOR4Lbl_mp1,this->database->DR2CT_DCU4Valid_B1);
-    setlabelstates(ui->DOOR5Lbl_mp1,this->database->DR2CT_DCU5Valid_B1);
-    setlabelstates(ui->DOOR6Lbl_mp1,this->database->DR2CT_DCU6Valid_B1);
-    setlabelstates(ui->DOOR7Lbl_mp1,this->database->DR2CT_DCU7Valid_B1);
-    setlabelstates(ui->DOOR8Lbl_mp1,this->database->DR2CT_DCU8Valid_B1);
+//    setlabelstates(ui->DOOR1Lbl_mp1,this->database->DR2CT_DCU1Valid_B1);
+//    setlabelstates(ui->DOOR2Lbl_mp1,this->database->DR2CT_DCU2Valid_B1);
+//    setlabelstates(ui->DOOR3Lbl_mp1,this->database->DR2CT_DCU3Valid_B1);
+//    setlabelstates(ui->DOOR4Lbl_mp1,this->database->DR2CT_DCU4Valid_B1);
+//    setlabelstates(ui->DOOR5Lbl_mp1,this->database->DR2CT_DCU5Valid_B1);
+//    setlabelstates(ui->DOOR6Lbl_mp1,this->database->DR2CT_DCU6Valid_B1);
+//    setlabelstates(ui->DOOR7Lbl_mp1,this->database->DR2CT_DCU7Valid_B1);
+//    setlabelstates(ui->DOOR8Lbl_mp1,this->database->DR2CT_DCU8Valid_B1);
 
-    setlabelstates(ui->DOOR1Lbl_m1,this->database->DR3CT_DCU1Valid_B1);
-    setlabelstates(ui->DOOR2Lbl_m1,this->database->DR3CT_DCU2Valid_B1);
-    setlabelstates(ui->DOOR3Lbl_m1,this->database->DR3CT_DCU3Valid_B1);
-    setlabelstates(ui->DOOR4Lbl_m1,this->database->DR3CT_DCU4Valid_B1);
-    setlabelstates(ui->DOOR5Lbl_m1,this->database->DR3CT_DCU5Valid_B1);
-    setlabelstates(ui->DOOR6Lbl_m1,this->database->DR3CT_DCU6Valid_B1);
-    setlabelstates(ui->DOOR7Lbl_m1,this->database->DR3CT_DCU7Valid_B1);
-    setlabelstates(ui->DOOR8Lbl_m1,this->database->DR3CT_DCU8Valid_B1);
+//    setlabelstates(ui->DOOR1Lbl_m1,this->database->DR3CT_DCU1Valid_B1);
+//    setlabelstates(ui->DOOR2Lbl_m1,this->database->DR3CT_DCU2Valid_B1);
+//    setlabelstates(ui->DOOR3Lbl_m1,this->database->DR3CT_DCU3Valid_B1);
+//    setlabelstates(ui->DOOR4Lbl_m1,this->database->DR3CT_DCU4Valid_B1);
+//    setlabelstates(ui->DOOR5Lbl_m1,this->database->DR3CT_DCU5Valid_B1);
+//    setlabelstates(ui->DOOR6Lbl_m1,this->database->DR3CT_DCU6Valid_B1);
+//    setlabelstates(ui->DOOR7Lbl_m1,this->database->DR3CT_DCU7Valid_B1);
+//    setlabelstates(ui->DOOR8Lbl_m1,this->database->DR3CT_DCU8Valid_B1);
 
-    setlabelstates(ui->DOOR1Lbl_m2,this->database->DR4CT_DCU1Valid_B1);
-    setlabelstates(ui->DOOR2Lbl_m2,this->database->DR4CT_DCU2Valid_B1);
-    setlabelstates(ui->DOOR3Lbl_m2,this->database->DR4CT_DCU3Valid_B1);
-    setlabelstates(ui->DOOR4Lbl_m2,this->database->DR4CT_DCU4Valid_B1);
-    setlabelstates(ui->DOOR5Lbl_m2,this->database->DR4CT_DCU5Valid_B1);
-    setlabelstates(ui->DOOR6Lbl_m2,this->database->DR4CT_DCU6Valid_B1);
-    setlabelstates(ui->DOOR7Lbl_m2,this->database->DR4CT_DCU7Valid_B1);
-    setlabelstates(ui->DOOR8Lbl_m2,this->database->DR4CT_DCU8Valid_B1);
+//    setlabelstates(ui->DOOR1Lbl_m2,this->database->DR4CT_DCU1Valid_B1);
+//    setlabelstates(ui->DOOR2Lbl_m2,this->database->DR4CT_DCU2Valid_B1);
+//    setlabelstates(ui->DOOR3Lbl_m2,this->database->DR4CT_DCU3Valid_B1);
+//    setlabelstates(ui->DOOR4Lbl_m2,this->database->DR4CT_DCU4Valid_B1);
+//    setlabelstates(ui->DOOR5Lbl_m2,this->database->DR4CT_DCU5Valid_B1);
+//    setlabelstates(ui->DOOR6Lbl_m2,this->database->DR4CT_DCU6Valid_B1);
+//    setlabelstates(ui->DOOR7Lbl_m2,this->database->DR4CT_DCU7Valid_B1);
+//    setlabelstates(ui->DOOR8Lbl_m2,this->database->DR4CT_DCU8Valid_B1);
 
-    setlabelstates(ui->DOOR1Lbl_mp2,this->database->DR5CT_DCU1Valid_B1);
-    setlabelstates(ui->DOOR2Lbl_mp2,this->database->DR5CT_DCU2Valid_B1);
-    setlabelstates(ui->DOOR3Lbl_mp2,this->database->DR5CT_DCU3Valid_B1);
-    setlabelstates(ui->DOOR4Lbl_mp2,this->database->DR5CT_DCU4Valid_B1);
-    setlabelstates(ui->DOOR5Lbl_mp2,this->database->DR5CT_DCU5Valid_B1);
-    setlabelstates(ui->DOOR6Lbl_mp2,this->database->DR5CT_DCU6Valid_B1);
-    setlabelstates(ui->DOOR7Lbl_mp2,this->database->DR5CT_DCU7Valid_B1);
-    setlabelstates(ui->DOOR8Lbl_mp2,this->database->DR5CT_DCU8Valid_B1);
+//    setlabelstates(ui->DOOR1Lbl_mp2,this->database->DR5CT_DCU1Valid_B1);
+//    setlabelstates(ui->DOOR2Lbl_mp2,this->database->DR5CT_DCU2Valid_B1);
+//    setlabelstates(ui->DOOR3Lbl_mp2,this->database->DR5CT_DCU3Valid_B1);
+//    setlabelstates(ui->DOOR4Lbl_mp2,this->database->DR5CT_DCU4Valid_B1);
+//    setlabelstates(ui->DOOR5Lbl_mp2,this->database->DR5CT_DCU5Valid_B1);
+//    setlabelstates(ui->DOOR6Lbl_mp2,this->database->DR5CT_DCU6Valid_B1);
+//    setlabelstates(ui->DOOR7Lbl_mp2,this->database->DR5CT_DCU7Valid_B1);
+//    setlabelstates(ui->DOOR8Lbl_mp2,this->database->DR5CT_DCU8Valid_B1);
 
-    setlabelstates(ui->DOOR1Lbl_tc2,this->database->DR6CT_DCU1Valid_B1);
-    setlabelstates(ui->DOOR2Lbl_tc2,this->database->DR6CT_DCU2Valid_B1);
-    setlabelstates(ui->DOOR3Lbl_tc2,this->database->DR6CT_DCU3Valid_B1);
-    setlabelstates(ui->DOOR4Lbl_tc2,this->database->DR6CT_DCU4Valid_B1);
-    setlabelstates(ui->DOOR5Lbl_tc2,this->database->DR6CT_DCU5Valid_B1);
-    setlabelstates(ui->DOOR6Lbl_tc2,this->database->DR6CT_DCU6Valid_B1);
-    setlabelstates(ui->DOOR7Lbl_tc2,this->database->DR6CT_DCU7Valid_B1);
-    setlabelstates(ui->DOOR8Lbl_tc2,this->database->DR6CT_DCU8Valid_B1);
+//    setlabelstates(ui->DOOR1Lbl_tc2,this->database->DR6CT_DCU1Valid_B1);
+//    setlabelstates(ui->DOOR2Lbl_tc2,this->database->DR6CT_DCU2Valid_B1);
+//    setlabelstates(ui->DOOR3Lbl_tc2,this->database->DR6CT_DCU3Valid_B1);
+//    setlabelstates(ui->DOOR4Lbl_tc2,this->database->DR6CT_DCU4Valid_B1);
+//    setlabelstates(ui->DOOR5Lbl_tc2,this->database->DR6CT_DCU5Valid_B1);
+//    setlabelstates(ui->DOOR6Lbl_tc2,this->database->DR6CT_DCU6Valid_B1);
+//    setlabelstates(ui->DOOR7Lbl_tc2,this->database->DR6CT_DCU7Valid_B1);
+//    setlabelstates(ui->DOOR8Lbl_tc2,this->database->DR6CT_DCU8Valid_B1);
 }
 
 void MaintainceTCMSStatesPage::on_returnBtn_pressed()
