@@ -81,19 +81,19 @@ void VehicleEBCUPage::updatePage()
     setonlinestates(ui->SMP2_2lbl,this->database->BR2CT_MP2Bg2BoogieDataValid_B1);
     setonlinestates(ui->STC2_1lbl,this->database->BR2CT_TC2Bg1BoogieDataValid_B1);
 
-    //保持制动 6模块采集RIOM整车保持制动信号 绿色＝正常 灰色＝apply
-    setlabelstates(ui->HoldBRKTC1lbl_1,!this->database->BR1CT_TC1Bg1HoldingBrkApplied_B1,this->database->BCU1_3Online);
-    setlabelstates(ui->HoldBRKTC1lbl_2,!this->database->BR1CT_TC1Bg2HoldingBrkApplied_B1,this->database->BCU1_3Online);
-    setlabelstates(ui->HoldBRKMP1lbl_1,!this->database->BR1CT_MP1Bg1HoldingBrkApplied_B1,this->database->BCU1_3Online);
-    setlabelstates(ui->HoldBRKMP1lbl_2,!this->database->BR1CT_MP1Bg2HoldingBrkApplied_B1,this->database->BCU1_3Online);
-    setlabelstates(ui->HoldBRKM1lbl_1,!this->database->BR1CT_M1Bg1HoldingBrkApplied_B1,this->database->BCU1_3Online);
-    setlabelstates(ui->HoldBRKM1lbl_2,!this->database->BR1CT_M1Bg2HoldingBrkApplied_B1,this->database->BCU1_3Online);
-    setlabelstates(ui->HoldBRKM2lbl_1,!this->database->BR2CT_M2Bg1HoldingBrkApplied_B1,this->database->BCU4_6Online);
-    setlabelstates(ui->HoldBRKM2lbl_2,!this->database->BR2CT_M2Bg2HoldingBrkApplied_B1,this->database->BCU4_6Online);
-    setlabelstates(ui->HoldBRKMP2lbl_1,!this->database->BR2CT_MP2Bg1HoldingBrkApplied_B1,this->database->BCU4_6Online);
-    setlabelstates(ui->HoldBRKMP2lbl_2,!this->database->BR2CT_MP2Bg2HoldingBrkApplied_B1,this->database->BCU4_6Online);
-    setlabelstates(ui->HoldBRKTC2lbl_1,!this->database->BR2CT_TC2Bg1HoldingBrkApplied_B1,this->database->BCU4_6Online);
-    setlabelstates(ui->HoldBRKTC2lbl_2,!this->database->BR2CT_TC2Bg2HoldingBrkApplied_B1,this->database->BCU4_6Online);
+    //保持制动  绿色＝施加 灰色＝缓解
+    setlabelstates(ui->HoldBRKTC1lbl_1,this->database->BR1CT_TC1Bg1HoldingBrkApplied_B1,this->database->BCU1_3Online);
+    setlabelstates(ui->HoldBRKTC1lbl_2,this->database->BR1CT_TC1Bg2HoldingBrkApplied_B1,this->database->BCU1_3Online);
+    setlabelstates(ui->HoldBRKMP1lbl_1,this->database->BR1CT_MP1Bg1HoldingBrkApplied_B1,this->database->BCU1_3Online);
+    setlabelstates(ui->HoldBRKMP1lbl_2,this->database->BR1CT_MP1Bg2HoldingBrkApplied_B1,this->database->BCU1_3Online);
+    setlabelstates(ui->HoldBRKM1lbl_1,this->database->BR1CT_M1Bg1HoldingBrkApplied_B1,this->database->BCU1_3Online);
+    setlabelstates(ui->HoldBRKM1lbl_2,this->database->BR1CT_M1Bg2HoldingBrkApplied_B1,this->database->BCU1_3Online);
+    setlabelstates(ui->HoldBRKM2lbl_1,this->database->BR2CT_M2Bg1HoldingBrkApplied_B1,this->database->BCU4_6Online);
+    setlabelstates(ui->HoldBRKM2lbl_2,this->database->BR2CT_M2Bg2HoldingBrkApplied_B1,this->database->BCU4_6Online);
+    setlabelstates(ui->HoldBRKMP2lbl_1,this->database->BR2CT_MP2Bg1HoldingBrkApplied_B1,this->database->BCU4_6Online);
+    setlabelstates(ui->HoldBRKMP2lbl_2,this->database->BR2CT_MP2Bg2HoldingBrkApplied_B1,this->database->BCU4_6Online);
+    setlabelstates(ui->HoldBRKTC2lbl_1,this->database->BR2CT_TC2Bg1HoldingBrkApplied_B1,this->database->BCU4_6Online);
+    setlabelstates(ui->HoldBRKTC2lbl_2,this->database->BR2CT_TC2Bg2HoldingBrkApplied_B1,this->database->BCU4_6Online);
 
     //整车制动隔离 6模块采集RIOM整车整车制动隔离信号 绿色＝正常 灰色＝隔离
 

@@ -73,19 +73,12 @@ void VehicleEBCUPage2::updatePage()
 
     //乘车率
 
-    float tmp_pkgtc1 = ((float)this->database->CTHM_TC1Load_U16/100 - DefaultLoadTC1.toFloat());
-    float tmp_pkgmp1 = ((float)this->database->CTHM_MP1Load_U16/100 - DefaultLoadMP1.toFloat());
-    float tmp_pkgm1 = ((float)this->database->CTHM_M1Load_U16/100 - DefaultLoadM1.toFloat());
-    float tmp_pkgm2 = ((float)this->database->CTHM_M2Load_U16/100 - DefaultLoadM2.toFloat());
-    float tmp_pkgmp2 = ((float)this->database->CTHM_MP2Load_U16/100 - DefaultLoadMP2.toFloat());
-    float tmp_pkgtc2 = ((float)this->database->CTHM_TC2Load_U16/100 - DefaultLoadTC2.toFloat());
-
-    this->ui->PLoadTC1lbl->setText(QString::number((float)(tmp_pkgtc1/(DefaultFullLoadTC1.toFloat()))*100,10,2)+"%");
-    this->ui->PLoadMP1lbl->setText(QString::number((float)(tmp_pkgmp1/(DefaultFullLoadMP1.toFloat()))*100,10,2)+"%");
-    this->ui->PLoadM1lbl->setText(QString::number((float)(tmp_pkgm1/(DefaultFullLoadM1.toFloat()))*100,10,2)+"%");
-    this->ui->PLoadM2lbl->setText(QString::number((float)(tmp_pkgm2/(DefaultFullLoadM2.toFloat()))*100,10,2)+"%");
-    this->ui->PLoadMP2lbl->setText(QString::number((float)(tmp_pkgmp2/(DefaultFullLoadMP2.toFloat()))*100,10,2)+"%");
-    this->ui->PLoadTC2lbl->setText(QString::number((float)(tmp_pkgtc2/(DefaultFullLoadTC2.toFloat()))*100,10,2)+"%");
+    this->ui->PLoadTC1lbl->setText(this->database->PLoad_TC1+"%");
+    this->ui->PLoadMP1lbl->setText(this->database->PLoad_MP1+"%");
+    this->ui->PLoadM1lbl->setText(this->database->PLoad_M1+"%");
+    this->ui->PLoadM2lbl->setText(this->database->PLoad_M2+"%");
+    this->ui->PLoadMP2lbl->setText(this->database->PLoad_MP2+"%");
+    this->ui->PLoadTC2lbl->setText(this->database->PLoad_TC2+"%");
 
     //空压机状态
     setlabelstates(ui->ACPTC1_1lbl,this->database->DICT_TC1DI2CH19CompressorOperition_B1);

@@ -665,7 +665,7 @@ border-radius:10px</string>
 </string>
    </property>
    <property name="text">
-    <string>：缓解</string>
+    <string>：施加</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -762,7 +762,7 @@ border-radius:10px</string>
 </string>
    </property>
    <property name="text">
-    <string>：施加</string>
+    <string>：缓解</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -801,7 +801,7 @@ border-radius:10px</string>
 </string>
    </property>
    <property name="text">
-    <string>：施加</string>
+    <string>：缓解</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -879,7 +879,7 @@ border-radius:10px</string>
 </string>
    </property>
    <property name="text">
-    <string>：缓解</string>
+    <string>：施加</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

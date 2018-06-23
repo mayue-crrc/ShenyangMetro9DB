@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclebcuhelppage.ui'
 **
-** Created: Tue Jun 5 20:05:28 2018
+** Created: Sat Jun 23 11:44:10 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -521,18 +521,18 @@ public:
         label_3->setText(QApplication::translate("VehicleBCUHelpPage", "\347\275\221\345\205\263\351\230\200/\346\231\272\350\203\275\351\230\200", 0, QApplication::UnicodeUTF8));
         label_32->setText(QString());
         label_5->setText(QApplication::translate("VehicleBCUHelpPage", "\344\277\235\346\214\201\345\210\266\345\212\250", 0, QApplication::UnicodeUTF8));
-        label_33->setText(QApplication::translate("VehicleBCUHelpPage", "\357\274\232\347\274\223\350\247\243", 0, QApplication::UnicodeUTF8));
+        label_33->setText(QApplication::translate("VehicleBCUHelpPage", "\357\274\232\346\226\275\345\212\240", 0, QApplication::UnicodeUTF8));
         label_50->setText(QApplication::translate("VehicleBCUHelpPage", "\357\274\232\346\234\252\347\237\245", 0, QApplication::UnicodeUTF8));
         label_20->setText(QApplication::translate("VehicleBCUHelpPage", "1", 0, QApplication::UnicodeUTF8));
         label_21->setText(QApplication::translate("VehicleBCUHelpPage", "1", 0, QApplication::UnicodeUTF8));
         label_35->setText(QApplication::translate("VehicleBCUHelpPage", "1", 0, QApplication::UnicodeUTF8));
-        label_36->setText(QApplication::translate("VehicleBCUHelpPage", "\357\274\232\346\226\275\345\212\240", 0, QApplication::UnicodeUTF8));
+        label_36->setText(QApplication::translate("VehicleBCUHelpPage", "\357\274\232\347\274\223\350\247\243", 0, QApplication::UnicodeUTF8));
         label_22->setText(QString());
-        label_37->setText(QApplication::translate("VehicleBCUHelpPage", "\357\274\232\346\226\275\345\212\240", 0, QApplication::UnicodeUTF8));
+        label_37->setText(QApplication::translate("VehicleBCUHelpPage", "\357\274\232\347\274\223\350\247\243", 0, QApplication::UnicodeUTF8));
         label_39->setText(QString());
         label_24->setText(QString());
         label_51->setText(QApplication::translate("VehicleBCUHelpPage", "\357\274\232\346\234\252\347\237\245", 0, QApplication::UnicodeUTF8));
-        label_44->setText(QApplication::translate("VehicleBCUHelpPage", "\357\274\232\347\274\223\350\247\243", 0, QApplication::UnicodeUTF8));
+        label_44->setText(QApplication::translate("VehicleBCUHelpPage", "\357\274\232\346\226\275\345\212\240", 0, QApplication::UnicodeUTF8));
         label_27->setText(QString());
         label_52->setText(QApplication::translate("VehicleBCUHelpPage", "\357\274\232\351\232\224\347\246\273", 0, QApplication::UnicodeUTF8));
         label_53->setText(QString());

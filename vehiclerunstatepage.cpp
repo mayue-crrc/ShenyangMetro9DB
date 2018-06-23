@@ -793,41 +793,41 @@ void VehicleRunStatePage::updateTrainStatus()
     }
     //火灾
     bool Firestatus;
-    Firestatus = this->database->WSCT_Car1DFire_B1&&this->database->WSCT_Car1FFire_B1&&this->database->WSCT_Car1HFire_B1&&
-                 this->database->WSCT_Car1RFire_B1&&this->database->WSCT_Car1CabFire_B1&&
-                 this->database->WSCT_Car1Zone1HeavyFire_B1&&this->database->WSCT_Car1Zone2HeavyFire_B1&&
-                 this->database->WSCT_Car1Zone1LightFire_B1&&this->database->WSCT_Car1Zone2LightFire_B1;
+    Firestatus = this->database->WSCT_Car1DFire_B1||this->database->WSCT_Car1FFire_B1||this->database->WSCT_Car1HFire_B1||
+                 this->database->WSCT_Car1RFire_B1||this->database->WSCT_Car1CabFire_B1||
+                 this->database->WSCT_Car1Zone1HeavyFire_B1||this->database->WSCT_Car1Zone2HeavyFire_B1||
+                 this->database->WSCT_Car1Zone1LightFire_B1||this->database->WSCT_Car1Zone2LightFire_B1;
     setFireStatus(this->ui->Tc1FireAlarmlbl,Firestatus,(bool)this->database->WSCT_TC1Fault);
     Firestatus = false;
 
-    Firestatus = this->database->WSCT_Car6DFire_B1&&this->database->WSCT_Car6FFire_B1&&this->database->WSCT_Car6HFire_B1&&
-                 this->database->WSCT_Car6RFire_B1&&this->database->WSCT_Car6CabFire_B1&&
-                 this->database->WSCT_Car6Zone1HeavyFire_B1&&this->database->WSCT_Car6Zone2HeavyFire_B1&&
-                 this->database->WSCT_Car6Zone1LightFire_B1&&this->database->WSCT_Car6Zone2LightFire_B1;
+    Firestatus = this->database->WSCT_Car6DFire_B1||this->database->WSCT_Car6FFire_B1||this->database->WSCT_Car6HFire_B1||
+                 this->database->WSCT_Car6RFire_B1||this->database->WSCT_Car6CabFire_B1||
+                 this->database->WSCT_Car6Zone1HeavyFire_B1||this->database->WSCT_Car6Zone2HeavyFire_B1||
+                 this->database->WSCT_Car6Zone1LightFire_B1||this->database->WSCT_Car6Zone2LightFire_B1;
     setFireStatus(this->ui->Tc2FireAlarmlbl,Firestatus,(bool)this->database->WSCT_TC2Fault);
     Firestatus = false;
 
-    Firestatus = this->database->WSCT_Car2FFire_B1&&this->database->WSCT_Car2RFire_B1&&
-                 this->database->WSCT_Car2Zone1HeavyFire_B1&&this->database->WSCT_Car2Zone2HeavyFire_B1&&
-                 this->database->WSCT_Car2Zone1LightFire_B1&&this->database->WSCT_Car2Zone2LightFire_B1;
+    Firestatus = this->database->WSCT_Car2FFire_B1||this->database->WSCT_Car2RFire_B1||
+                 this->database->WSCT_Car2Zone1HeavyFire_B1||this->database->WSCT_Car2Zone2HeavyFire_B1||
+                 this->database->WSCT_Car2Zone1LightFire_B1||this->database->WSCT_Car2Zone2LightFire_B1;
     setFireStatus(this->ui->Mp1FireAlarmlbl,Firestatus,(bool)this->database->WSCT_MP1Fault);
     Firestatus = false;
 
-    Firestatus = this->database->WSCT_Car5FFire_B1&&this->database->WSCT_Car5RFire_B1&&
-                 this->database->WSCT_Car5Zone1HeavyFire_B1&&this->database->WSCT_Car5Zone2HeavyFire_B1&&
-                 this->database->WSCT_Car5Zone1LightFire_B1&&this->database->WSCT_Car5Zone2LightFire_B1;
+    Firestatus = this->database->WSCT_Car5FFire_B1||this->database->WSCT_Car5RFire_B1||
+                 this->database->WSCT_Car5Zone1HeavyFire_B1||this->database->WSCT_Car5Zone2HeavyFire_B1||
+                 this->database->WSCT_Car5Zone1LightFire_B1||this->database->WSCT_Car5Zone2LightFire_B1;
     setFireStatus(this->ui->Mp2FireAlarmlbl,Firestatus,(bool)this->database->WSCT_MP2Fault);
     Firestatus = false;
 
-    Firestatus = this->database->WSCT_Car3FFire_B1&&this->database->WSCT_Car3RFire_B1&&
-                 this->database->WSCT_Car3Zone1HeavyFire_B1&&this->database->WSCT_Car3Zone2HeavyFire_B1&&
-                 this->database->WSCT_Car3Zone1LightFire_B1&&this->database->WSCT_Car3Zone2LightFire_B1;
+    Firestatus = this->database->WSCT_Car3FFire_B1||this->database->WSCT_Car3RFire_B1||
+                 this->database->WSCT_Car3Zone1HeavyFire_B1||this->database->WSCT_Car3Zone2HeavyFire_B1||
+                 this->database->WSCT_Car3Zone1LightFire_B1||this->database->WSCT_Car3Zone2LightFire_B1;
     setFireStatus(this->ui->M1FireAlarmlbl,Firestatus,(bool)this->database->WSCT_M1Fault);
     Firestatus = false;
 
-    Firestatus = this->database->WSCT_Car4FFire_B1&&this->database->WSCT_Car4RFire_B1&&
-                 this->database->WSCT_Car4Zone1HeavyFire_B1&&this->database->WSCT_Car4Zone2HeavyFire_B1&&
-                 this->database->WSCT_Car4Zone1LightFire_B1&&this->database->WSCT_Car4Zone2LightFire_B1;
+    Firestatus = this->database->WSCT_Car4FFire_B1||this->database->WSCT_Car4RFire_B1||
+                 this->database->WSCT_Car4Zone1HeavyFire_B1||this->database->WSCT_Car4Zone2HeavyFire_B1||
+                 this->database->WSCT_Car4Zone1LightFire_B1||this->database->WSCT_Car4Zone2LightFire_B1;
     setFireStatus(this->ui->M2FireAlarmlbl,Firestatus,(bool)this->database->WSCT_M2Fault);
     Firestatus = false;
 }
