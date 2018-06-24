@@ -269,7 +269,7 @@ border-radius:10px</string>
     </rect>
    </property>
    <property name="text">
-    <string>制动隔离</string>
+    <string>制动隔离开关</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -495,7 +495,7 @@ border-radius:10px</string>
     </rect>
    </property>
    <property name="text">
-    <string>停放制动隔离</string>
+    <string>停放隔离开关</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

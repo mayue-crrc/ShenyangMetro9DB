@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclehelppage.ui'
 **
-** Created: Fri Jun 8 11:50:55 2018
+** Created: Sun Jun 24 12:04:12 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -146,6 +146,8 @@ public:
     QLabel *label_119;
     QLabel *label_120;
     QLabel *label_121;
+    QLabel *label_122;
+    QLabel *label_123;
 
     void setupUi(QWidget *VehicleHelpPage)
     {
@@ -839,6 +841,17 @@ public:
         label_121->setGeometry(QRect(720, 380, 25, 91));
         label_121->setStyleSheet(QString::fromUtf8("background-color:orange;"));
         label_121->setAlignment(Qt::AlignCenter);
+        label_122 = new QLabel(VehicleHelpPage);
+        label_122->setObjectName(QString::fromUtf8("label_122"));
+        label_122->setGeometry(QRect(710, 80, 40, 25));
+        label_122->setStyleSheet(QString::fromUtf8("background-color:white;"));
+        label_122->setAlignment(Qt::AlignCenter);
+        label_123 = new QLabel(VehicleHelpPage);
+        label_123->setObjectName(QString::fromUtf8("label_123"));
+        label_123->setGeometry(QRect(689, 110, 81, 21));
+        label_123->setStyleSheet(QString::fromUtf8("	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+""));
+        label_123->setAlignment(Qt::AlignCenter);
         label_98->raise();
         pushButton->raise();
         label->raise();
@@ -961,6 +974,8 @@ public:
         label_119->raise();
         label_120->raise();
         label_121->raise();
+        label_122->raise();
+        label_123->raise();
 
         retranslateUi(VehicleHelpPage);
 
@@ -1096,6 +1111,8 @@ public:
         label_119->setText(QString());
         label_120->setText(QApplication::translate("VehicleHelpPage", "\345\217\270\346\234\272\345\256\244\346\277\200\346\264\273", 0, QApplication::UnicodeUTF8));
         label_121->setText(QString());
+        label_122->setText(QString());
+        label_123->setText(QApplication::translate("VehicleHelpPage", "\345\274\223\347\212\266\346\200\201\346\234\252\347\237\245", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

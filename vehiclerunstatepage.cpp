@@ -19,6 +19,7 @@
 #define PANTOUPMP1 "border-image: url(:/images/images/PantoUpMP1.bmp);"
 #define PANTODOWNMP2 "border-image: url(:/images/images/PantoDownMP2.bmp);"
 #define PANTOUPMP2 "border-image: url(:/images/images/PantoUpMP2.bmp);"
+#define PANTOUNKNOWN "background-color:white;"
 
 #define PBAPPLY "background-color:transparent;border-image: url(:/images/images/PBapply.png);"
 #define PBBYPASS "background-color:transparent;border-image: url(:/images/images/PBbypass.png);"
@@ -69,6 +70,7 @@
 #define RUNPAGEBUTTONDOWN "font: 18px  \"微软雅黑\";color: black;border:2px solid white;background-color: orange;border-radius: 15px;"
 
 #define PButtonALARM   "font: 20px, \"微软雅黑\";color: black;background-color: yellow;	border-radius:8px;border-top: 2px solid white;border-left: 2px solid white;"
+#define PButtonFIRE   "font: 20px, \"微软雅黑\";color: white;background-color: red;	border-radius:8px;border-top: 2px solid white;border-left: 2px solid white;"
 
 VehicleRunStatePage::VehicleRunStatePage(QWidget *parent) :
     MyBase(parent),
@@ -234,6 +236,34 @@ void VehicleRunStatePage::updateRunStatus()
         this->ui->BuzzerBtn->hide();
         this->database->HMiCT_PWDoorAlarmStop_B1 = false;
     }
+
+    //广播模式
+    if(this->database->CTHM_PIS1On_B1 == true || this->database->CTHM_PIS2On_B1 == true)
+    {
+        if(this->database->PAiCT_BroadcastFullAuto_B1)
+        {
+            this->ui->PIDSmodebg->setText("全自动\n广播");
+        }else if(this->database->PAiCT_BroadcastHalfAuto_B1)
+        {
+            this->ui->PIDSmodebg->setText("半自动\n广播");
+        }else if(this->database->PAiCT_BroadcastMannual_B1)
+        {
+            this->ui->PIDSmodebg->setText("手动\n广播");
+        }else if(this->database->PAiCT_Broadcast_B1)
+        {
+            this->ui->PIDSmodebg->setText("人工\n广播");
+        }else if(this->database->PAiCT_OCCBroadcast_B1)
+        {
+            this->ui->PIDSmodebg->setText("OCC\n广播");
+        }else if(this->database->PAiCT_BroadcastHalfAuto_B1)
+        {
+            this->ui->PIDSmodebg->setText("广播模\n式未知");
+        }
+    }else
+    {
+        this->ui->PIDSmodebg->setText("广播\n离线");
+    }
+
 }
 
 void VehicleRunStatePage::updateTrainStatus()
@@ -332,11 +362,23 @@ void VehicleRunStatePage::updateTrainStatus()
     }else if(database->DICT_MP1DI1CH4PanDownStatus_B1)
     {
         this->ui->Mp1Pantolbl->setStyleSheet(PANTODOWNMP1);
+    }else if(this->database->CTHM_MP1PanStatusUnknown_B1)
+    {
+        this->ui->Mp1Pantolbl->setStyleSheet(PANTOUNKNOWN);
+    }else
+    {
+        this->ui->Mp1Pantolbl->setStyleSheet(PANTODOWNMP1);
     }
     if(database->DICT_MP2DI1CH3PanUpStatus_B1)
     {
         this->ui->Mp2Pantolbl->setStyleSheet(PANTOUPMP2);
     }else if(database->DICT_MP2DI1CH4PanDownStatus_B1)
+    {
+        this->ui->Mp2Pantolbl->setStyleSheet(PANTODOWNMP2);
+    }else if(this->database->CTHM_MP2PanStatusUnknown_B1)
+    {
+        this->ui->Mp2Pantolbl->setStyleSheet(PANTOUNKNOWN);
+    }else
     {
         this->ui->Mp2Pantolbl->setStyleSheet(PANTODOWNMP2);
     }
@@ -791,43 +833,50 @@ void VehicleRunStatePage::updateTrainStatus()
         this->ui->Mp1supplylbl->hide();
         //this->ui->Mp2supplylbl->hide();
     }
+
     //火灾
     bool Firestatus;
     Firestatus = this->database->WSCT_Car1DFire_B1||this->database->WSCT_Car1FFire_B1||this->database->WSCT_Car1HFire_B1||
                  this->database->WSCT_Car1RFire_B1||this->database->WSCT_Car1CabFire_B1||
                  this->database->WSCT_Car1Zone1HeavyFire_B1||this->database->WSCT_Car1Zone2HeavyFire_B1||
-                 this->database->WSCT_Car1Zone1LightFire_B1||this->database->WSCT_Car1Zone2LightFire_B1;
+                 this->database->WSCT_Car1Zone1LightFire_B1||this->database->WSCT_Car1Zone2LightFire_B1||
+                 (this->database->DICT_TC1DI5CH6ABFire1_B1&&this->database->DICT_TC1DI5CH7ABFire2_B1);
     setFireStatus(this->ui->Tc1FireAlarmlbl,Firestatus,(bool)this->database->WSCT_TC1Fault);
     Firestatus = false;
 
     Firestatus = this->database->WSCT_Car6DFire_B1||this->database->WSCT_Car6FFire_B1||this->database->WSCT_Car6HFire_B1||
                  this->database->WSCT_Car6RFire_B1||this->database->WSCT_Car6CabFire_B1||
                  this->database->WSCT_Car6Zone1HeavyFire_B1||this->database->WSCT_Car6Zone2HeavyFire_B1||
-                 this->database->WSCT_Car6Zone1LightFire_B1||this->database->WSCT_Car6Zone2LightFire_B1;
+                 this->database->WSCT_Car6Zone1LightFire_B1||this->database->WSCT_Car6Zone2LightFire_B1||
+                 (this->database->DICT_TC2DI5CH6ABFire1_B1&&this->database->DICT_TC2DI5CH7ABFire2_B1);
     setFireStatus(this->ui->Tc2FireAlarmlbl,Firestatus,(bool)this->database->WSCT_TC2Fault);
     Firestatus = false;
 
     Firestatus = this->database->WSCT_Car2FFire_B1||this->database->WSCT_Car2RFire_B1||
                  this->database->WSCT_Car2Zone1HeavyFire_B1||this->database->WSCT_Car2Zone2HeavyFire_B1||
-                 this->database->WSCT_Car2Zone1LightFire_B1||this->database->WSCT_Car2Zone2LightFire_B1;
+                 this->database->WSCT_Car2Zone1LightFire_B1||this->database->WSCT_Car2Zone2LightFire_B1||
+                 (this->database->DICT_MP1DI1CH22PHFire1_B1&&this->database->DICT_MP1DI1CH23PHFire2_B1);
     setFireStatus(this->ui->Mp1FireAlarmlbl,Firestatus,(bool)this->database->WSCT_MP1Fault);
     Firestatus = false;
 
     Firestatus = this->database->WSCT_Car5FFire_B1||this->database->WSCT_Car5RFire_B1||
                  this->database->WSCT_Car5Zone1HeavyFire_B1||this->database->WSCT_Car5Zone2HeavyFire_B1||
-                 this->database->WSCT_Car5Zone1LightFire_B1||this->database->WSCT_Car5Zone2LightFire_B1;
+                 this->database->WSCT_Car5Zone1LightFire_B1||this->database->WSCT_Car5Zone2LightFire_B1||
+                 (this->database->DICT_MP2DI1CH22PHFire1_B1&&this->database->DICT_MP2DI1CH23PHFire2_B1);
     setFireStatus(this->ui->Mp2FireAlarmlbl,Firestatus,(bool)this->database->WSCT_MP2Fault);
     Firestatus = false;
 
     Firestatus = this->database->WSCT_Car3FFire_B1||this->database->WSCT_Car3RFire_B1||
                  this->database->WSCT_Car3Zone1HeavyFire_B1||this->database->WSCT_Car3Zone2HeavyFire_B1||
-                 this->database->WSCT_Car3Zone1LightFire_B1||this->database->WSCT_Car3Zone2LightFire_B1;
+                 this->database->WSCT_Car3Zone1LightFire_B1||this->database->WSCT_Car3Zone2LightFire_B1||
+                 (this->database->DICT_M1DI1CH13PHFire1_B1&&this->database->DICT_M1DI1CH14PHFire2_B1);
     setFireStatus(this->ui->M1FireAlarmlbl,Firestatus,(bool)this->database->WSCT_M1Fault);
     Firestatus = false;
 
     Firestatus = this->database->WSCT_Car4FFire_B1||this->database->WSCT_Car4RFire_B1||
                  this->database->WSCT_Car4Zone1HeavyFire_B1||this->database->WSCT_Car4Zone2HeavyFire_B1||
-                 this->database->WSCT_Car4Zone1LightFire_B1||this->database->WSCT_Car4Zone2LightFire_B1;
+                 this->database->WSCT_Car4Zone1LightFire_B1||this->database->WSCT_Car4Zone2LightFire_B1||
+                 (this->database->DICT_M2DI1CH13PHFire1_B1&&this->database->DICT_M2DI1CH14PHFire2_B1);
     setFireStatus(this->ui->M2FireAlarmlbl,Firestatus,(bool)this->database->WSCT_M2Fault);
     Firestatus = false;
 }
@@ -889,7 +938,42 @@ void VehicleRunStatePage::updateButtonsStatus()
     {
         this->ui->ByPassPageBtn->setStyleSheet(PButtonUP);
     }
+    //fire button
 
+    bool Firestatus ;
+   Firestatus = this->database->WSCT_Car1DFire_B1||this->database->WSCT_Car1FFire_B1||this->database->WSCT_Car1HFire_B1||
+         this->database->WSCT_Car1RFire_B1||this->database->WSCT_Car1CabFire_B1||
+         this->database->WSCT_Car1Zone1HeavyFire_B1||this->database->WSCT_Car1Zone2HeavyFire_B1||
+         this->database->WSCT_Car1Zone1LightFire_B1||this->database->WSCT_Car1Zone2LightFire_B1||
+         (this->database->DICT_TC1DI5CH6ABFire1_B1&&this->database->DICT_TC1DI5CH7ABFire2_B1)||
+         this->database->WSCT_Car6DFire_B1||this->database->WSCT_Car6FFire_B1||this->database->WSCT_Car6HFire_B1||
+         this->database->WSCT_Car6RFire_B1||this->database->WSCT_Car6CabFire_B1||
+         this->database->WSCT_Car6Zone1HeavyFire_B1||this->database->WSCT_Car6Zone2HeavyFire_B1||
+         this->database->WSCT_Car6Zone1LightFire_B1||this->database->WSCT_Car6Zone2LightFire_B1||
+         (this->database->DICT_TC2DI5CH6ABFire1_B1&&this->database->DICT_TC2DI5CH7ABFire2_B1)||
+         this->database->WSCT_Car2FFire_B1||this->database->WSCT_Car2RFire_B1||
+         this->database->WSCT_Car2Zone1HeavyFire_B1||this->database->WSCT_Car2Zone2HeavyFire_B1||
+         this->database->WSCT_Car2Zone1LightFire_B1||this->database->WSCT_Car2Zone2LightFire_B1||
+         (this->database->DICT_MP1DI1CH22PHFire1_B1&&this->database->DICT_MP1DI1CH23PHFire2_B1)||
+         this->database->WSCT_Car5FFire_B1||this->database->WSCT_Car5RFire_B1||
+         this->database->WSCT_Car5Zone1HeavyFire_B1||this->database->WSCT_Car5Zone2HeavyFire_B1||
+         this->database->WSCT_Car5Zone1LightFire_B1||this->database->WSCT_Car5Zone2LightFire_B1||
+         (this->database->DICT_MP2DI1CH22PHFire1_B1&&this->database->DICT_MP2DI1CH23PHFire2_B1)||
+         this->database->WSCT_Car3FFire_B1||this->database->WSCT_Car3RFire_B1||
+         this->database->WSCT_Car3Zone1HeavyFire_B1||this->database->WSCT_Car3Zone2HeavyFire_B1||
+         this->database->WSCT_Car3Zone1LightFire_B1||this->database->WSCT_Car3Zone2LightFire_B1||
+         (this->database->DICT_M1DI1CH13PHFire1_B1&&this->database->DICT_M1DI1CH14PHFire2_B1)||
+         this->database->WSCT_Car4FFire_B1||this->database->WSCT_Car4RFire_B1||
+         this->database->WSCT_Car4Zone1HeavyFire_B1||this->database->WSCT_Car4Zone2HeavyFire_B1||
+         this->database->WSCT_Car4Zone1LightFire_B1||this->database->WSCT_Car4Zone2LightFire_B1||
+         (this->database->DICT_M2DI1CH13PHFire1_B1&&this->database->DICT_M2DI1CH14PHFire2_B1);
+    if(Firestatus)
+    {
+        this->ui->FirePageBtn->setStyleSheet(PButtonFIRE);
+    }else
+    {
+        this->ui->FirePageBtn->setStyleSheet(PButtonUP);
+    }
 }
 
 void VehicleRunStatePage::setPBStatus(QLabel* lbl,QList<bool> status)
@@ -1066,13 +1150,13 @@ void VehicleRunStatePage::setFireStatus(QLabel* lbl,bool status,bool fault)
         lbl->setStyleSheet(FIREOFFLINE);
         lbl->hide();
     }
-    else if(fault)
-    {
-        lbl->setStyleSheet(FIREFAULT);
-        lbl->show();
-    }else if(status)
+    else if(status)
     {
         lbl->setStyleSheet(FIREALARM);
+        lbl->show();
+    }else if(fault)
+    {
+        lbl->setStyleSheet(FIREFAULT);
         lbl->show();
     }else
     {

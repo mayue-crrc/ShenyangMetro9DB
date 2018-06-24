@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclerunstatepage.ui'
 **
-** Created: Wed Jun 6 11:56:44 2018
+** Created: Sun Jun 24 12:37:41 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -1594,12 +1594,12 @@ public:
         Tc2Acplbl->setAlignment(Qt::AlignCenter);
         Mp1Pantolbl = new QLabel(VehicleRunStatePage);
         Mp1Pantolbl->setObjectName(QString::fromUtf8("Mp1Pantolbl"));
-        Mp1Pantolbl->setGeometry(QRect(290, 28, 91, 61));
+        Mp1Pantolbl->setGeometry(QRect(290, 48, 91, 41));
         Mp1Pantolbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/PantoDownMP1.bmp);"));
         Mp1Pantolbl->setAlignment(Qt::AlignCenter);
         Mp2Pantolbl = new QLabel(VehicleRunStatePage);
         Mp2Pantolbl->setObjectName(QString::fromUtf8("Mp2Pantolbl"));
-        Mp2Pantolbl->setGeometry(QRect(630, 28, 91, 61));
+        Mp2Pantolbl->setGeometry(QRect(630, 48, 91, 41));
         Mp2Pantolbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/PantoDownMP1.bmp);"));
         Mp2Pantolbl->setAlignment(Qt::AlignCenter);
         MainKMlbl = new QLabel(VehicleRunStatePage);

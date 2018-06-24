@@ -3804,9 +3804,9 @@ color:black;
    <property name="geometry">
     <rect>
      <x>290</x>
-     <y>28</y>
+     <y>48</y>
      <width>91</width>
-     <height>61</height>
+     <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -3823,9 +3823,9 @@ color:black;
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>28</y>
+     <y>48</y>
      <width>91</width>
-     <height>61</height>
+     <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">

@@ -82,7 +82,7 @@ Database::Database()
     HMiCT_ACDETestStartFlag_B1 = false;
 
     HMiCT_HMISWVerH_U8 = 2;
-    HMiCT_HMISWVerL_U8 = 12;
+    HMiCT_HMISWVerL_U8 = 14;
 
     for(int i =0; i< 12;i++)
     {
@@ -781,7 +781,8 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->CTHM_Forward_B1 = crrcMvb->getBool(0x218,13,5);
         this->CTHM_WorkshopPowerSupply_B1 = crrcMvb->getBool(0x218,13,6);
         this->CTHM_BatteryLow_B1 = crrcMvb->getBool(0x218,13,7);
-        this->CTHM_EmgMode_B1 = crrcMvb->getBool(0x218,14,0);
+        this->CTHM_MP1PanStatusUnknown_B1 = crrcMvb->getBool(0x218,14,0);
+        this->CTHM_MP2PanStatusUnknown_B1 = crrcMvb->getBool(0x218,14,1);
 
 
         this->CTHM_LineNum_U8 = crrcMvb->getUnsignedChar(0x218,20);
@@ -1213,6 +1214,11 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         DT2CT_ERMMVBSWVer_U8 = crrcMvb->getUnsignedChar(0x320,3);
         DT2CT_ERMSDBVer_U8 = crrcMvb->getUnsignedChar(0x320,4);
         DT2CT_ERMFPGAVer_U8 = crrcMvb->getUnsignedChar(0x320,5);
+
+        //CCU-CRM FAULT
+        this->CTDT_Mp1ADDLowPanto_B1 = crrcMvb->getBool(0x318,3,3);
+        this->CTDT_Mp2ADDLowPanto_B1 = crrcMvb->getBool(0x318,3,4);
+
     }
 
 

@@ -236,7 +236,7 @@ QPushButton
     <string notr="true">background-color:black;</string>
    </property>
    <property name="text">
-    <string>常用制动施加</string>
+    <string>常用制动</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -466,7 +466,7 @@ QPushButton
     <string notr="true">background-color:black;</string>
    </property>
    <property name="text">
-    <string>停放制动施加</string>
+    <string>停放制动</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

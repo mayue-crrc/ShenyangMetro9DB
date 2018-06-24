@@ -49,7 +49,7 @@ void VehicleDCUPage::updatePage()
     setlabelstates(this->ui->TCUEBM2lbl,this->database->TR3CT_TBEValid_B1,(float)this->database->TR3CT_DCUMBrkForce_I16/100,2,this->database->CTHM_DCUM3On_B1);
     setlabelstates(this->ui->TCUEBMP2lbl,this->database->TR4CT_TBEValid_B1,(float)this->database->TR4CT_DCUMBrkForce_I16/100,2,this->database->CTHM_DCUM4On_B1);
 
-    if(this->database->DICT_MP1DI1CH5PanDownandADD_B1)
+    if(this->database->CTDT_Mp1ADDLowPanto_B1)
     {
         this->ui->PANTOMP1_1lbl->setStyleSheet(PANTODOWNMP1);
     }else
@@ -58,7 +58,7 @@ void VehicleDCUPage::updatePage()
     }
 
 
-    if(this->database->DICT_MP2DI1CH5PanDownandADD_B1)
+    if(this->database->CTDT_Mp2ADDLowPanto_B1)
     {
         this->ui->PANTOMP2_1lbl->setStyleSheet(PANTODOWNMP2);
     }else

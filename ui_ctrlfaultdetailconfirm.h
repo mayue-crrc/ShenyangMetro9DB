@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'ctrlfaultdetailconfirm.ui'
 **
-** Created: Thu Apr 19 11:15:44 2018
+** Created: Sun Jun 24 11:45:54 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -83,7 +83,7 @@ public:
 "	background-color:black;"));
         FaultAllConfirmBtn = new QPushButton(CtrlFaultDetailConfirm);
         FaultAllConfirmBtn->setObjectName(QString::fromUtf8("FaultAllConfirmBtn"));
-        FaultAllConfirmBtn->setGeometry(QRect(10, 250, 41, 41));
+        FaultAllConfirmBtn->setGeometry(QRect(10, 250, 121, 41));
         FaultAllConfirmBtn->setFocusPolicy(Qt::NoFocus);
         FaultAllConfirmBtn->setStyleSheet(QString::fromUtf8("border:black;\n"
 "background-color:black;"));
@@ -117,7 +117,8 @@ public:
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p>\n"
 "<p style=\"-qt-paragraph-type:e"
-                        "mpty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p></td></tr></table></body></html>", 0, QApplication::UnicodeUTF8));
+                        "mpty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p></td></tr></table></body></html>", 0, QApplication::UnicodeUTF8));
         FaultAllConfirmBtn->setText(QString());
     } // retranslateUi
 

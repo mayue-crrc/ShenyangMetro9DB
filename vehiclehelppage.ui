@@ -2382,6 +2382,45 @@ border:2px solid white ;
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QLabel" name="label_122">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>80</y>
+     <width>40</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_123">
+   <property name="geometry">
+    <rect>
+     <x>689</x>
+     <y>110</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 16px, &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>弓状态未知</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
   <zorder>label_98</zorder>
   <zorder>pushButton</zorder>
   <zorder>label</zorder>
@@ -2504,6 +2543,8 @@ border:2px solid white ;
   <zorder>label_119</zorder>
   <zorder>label_120</zorder>
   <zorder>label_121</zorder>
+  <zorder>label_122</zorder>
+  <zorder>label_123</zorder>
  </widget>
  <resources/>
  <connections/>

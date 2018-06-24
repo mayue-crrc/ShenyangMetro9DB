@@ -140,7 +140,7 @@ void Header::updatePage()
         }
     }else
     {
-        tmp = "--";
+        tmp = "手动模式";
     }
 
     this->ui->DrivingMode->setText(tmp);

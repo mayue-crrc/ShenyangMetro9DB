@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicleebcupage.ui'
 **
-** Created: Wed Jun 6 13:32:22 2018
+** Created: Sun Jun 24 11:42:56 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -583,7 +583,7 @@ public:
         BRKApplyMP2_2lbl->setText(QApplication::translate("VehicleEBCUPage", "2", 0, QApplication::UnicodeUTF8));
         BRKApplyMP2_1lbl->setText(QApplication::translate("VehicleEBCUPage", "1", 0, QApplication::UnicodeUTF8));
         BRKApplyTC2_1lbl->setText(QApplication::translate("VehicleEBCUPage", "1", 0, QApplication::UnicodeUTF8));
-        lbl1->setText(QApplication::translate("VehicleEBCUPage", "\345\270\270\347\224\250\345\210\266\345\212\250\346\226\275\345\212\240", 0, QApplication::UnicodeUTF8));
+        lbl1->setText(QApplication::translate("VehicleEBCUPage", "\345\270\270\347\224\250\345\210\266\345\212\250", 0, QApplication::UnicodeUTF8));
         BRKBypassTC1_2lbl->setText(QApplication::translate("VehicleEBCUPage", "2", 0, QApplication::UnicodeUTF8));
         BRKBypassM1_1lbl->setText(QApplication::translate("VehicleEBCUPage", "1", 0, QApplication::UnicodeUTF8));
         BRKBypassM2_2lbl->setText(QApplication::translate("VehicleEBCUPage", "2", 0, QApplication::UnicodeUTF8));
@@ -597,7 +597,7 @@ public:
         BRKBypassMP1_2lbl->setText(QApplication::translate("VehicleEBCUPage", "2", 0, QApplication::UnicodeUTF8));
         BRKBypassM1_2lbl->setText(QApplication::translate("VehicleEBCUPage", "2", 0, QApplication::UnicodeUTF8));
         lbl1_2->setText(QApplication::translate("VehicleEBCUPage", "\345\210\266\345\212\250\351\232\224\347\246\273\345\274\200\345\205\263", 0, QApplication::UnicodeUTF8));
-        lbl1_3->setText(QApplication::translate("VehicleEBCUPage", "\345\201\234\346\224\276\345\210\266\345\212\250\346\226\275\345\212\240", 0, QApplication::UnicodeUTF8));
+        lbl1_3->setText(QApplication::translate("VehicleEBCUPage", "\345\201\234\346\224\276\345\210\266\345\212\250", 0, QApplication::UnicodeUTF8));
         StopBRKTC1lbl->setText(QString());
         StopBRKMP1lbl->setText(QString());
         StopBRKM1lbl->setText(QString());
