@@ -130,7 +130,7 @@ void MaintainceRIOMDetailPage::updatePage()
                 <<this->database->DICT_TC1DI2CH13ATOButton_B1<<this->database->DICT_TC1DI2CH14BMMode_B1<<this->database->DICT_TC1DI2CH15RMMode_B1
                 <<this->database->DICT_TC1DI2CH16ATCReset_B1<<this->database->DICT_TC1DI2CH17ATCTraction_B1<<this->database->DICT_TC1DI2CH18ATCBrake_B1
                 <<this->database->DICT_TC1DI2CH19CompressorOperition_B1<<this->database->DICT_TC1DI2CH20ComOverflow_B1<<this->database->DICT_TC1DI2CH21ComHeating_B1
-                <<this->database->DICT_TC1DI2CH22ComSupplyFlt_B1<<this->database->DICT_TC1DI2CH23ZeroSpeedTL_B1<<SPARE
+                <<this->database->DICT_TC1DI2CH22ComSupplyFlt_B1<<this->database->DICT_TC1DI2CH23ZeroSpeedTL_B1<<this->database->DICT_TC1DI2CH24CabKey_B1
 
                 <<this->database->DICT_TC2DI2CH1Forward_B1<<this->database->DICT_TC2DI2CH2Backward_B1<<this->database->DICT_TC2DI2CH3Traction_B1
                 <<this->database->DICT_TC2DI2CH4Brake_B1<<this->database->DICT_TC2DI2CH5QuickBrk_B1<<this->database->DICT_TC2DI2CH6CabActive_B1
@@ -139,7 +139,7 @@ void MaintainceRIOMDetailPage::updatePage()
                 <<this->database->DICT_TC2DI2CH13ATOButton_B1<<this->database->DICT_TC2DI2CH14BMMode_B1<<this->database->DICT_TC2DI2CH15RMMode_B1
                 <<this->database->DICT_TC2DI2CH16ATCReset_B1<<this->database->DICT_TC2DI2CH17ATCTraction_B1<<this->database->DICT_TC2DI2CH18ATCBrake_B1
                 <<this->database->DICT_TC2DI2CH19CompressorOperition_B1<<this->database->DICT_TC2DI2CH20ComOverflow_B1<<this->database->DICT_TC2DI2CH21ComHeating_B1
-                <<this->database->DICT_TC2DI2CH22ComSupplyFlt_B1<<this->database->DICT_TC2DI2CH23ZeroSpeedTL_B1<<SPARE;
+                <<this->database->DICT_TC2DI2CH22ComSupplyFlt_B1<<this->database->DICT_TC2DI2CH23ZeroSpeedTL_B1<<this->database->DICT_TC2DI2CH24CabKey_B1;
 
         TCDI3Data<<this->database->DICT_TC1DI3CH1Bg1CutOff_B1<<this->database->DICT_TC1DI3CH2Bg2CutOff_B1<<this->database->DICT_TC1DI3CH3EBCUCutOff_B1
                 <<this->database->DICT_TC1DI3CH4NotZeroSpeed_B1<<this->database->DICT_TC1DI3CH5Spd88_B1<<this->database->DICT_TC1DI3CH6TotalAirPreLow_B1
@@ -297,7 +297,7 @@ void MaintainceRIOMDetailPage::ButtonsPressEvent()
                 <<"向前"<<"向后"<<"牵引"<<"制动"<<"快速制动"<<"司机室钥匙激活"
                 <<"ATC切除"<<"ZVRD"<<"FRD1"<<"BM按钮动作"<<"RM按钮动作"<<"ATB按钮动作"
                 <<"ATO按钮动作"<<"BM继电器"<<"RM继电器"<<"ATC复位"<<"牵引(信号)"<<"制动(信号)"
-                <<"空压机运行"<<"空压机过流"<<"空压机润滑油加热"<<"空压机供电异常"<<"车辆零速旁路"<<"保留";
+                <<"空压机运行"<<"空压机过流"<<"空压机润滑油加热"<<"空压机供电异常"<<"车辆零速旁路"<<"司机室钥匙";
         this->di1->initialName(Di2name,"DI2","TC");
         this->di1->show();
         this->do1->hide();

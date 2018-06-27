@@ -82,7 +82,7 @@ Database::Database()
     HMiCT_ACDETestStartFlag_B1 = false;
 
     HMiCT_HMISWVerH_U8 = 2;
-    HMiCT_HMISWVerL_U8 = 14;
+    HMiCT_HMISWVerL_U8 = 16;
 
     for(int i =0; i< 12;i++)
     {
@@ -263,6 +263,7 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->DICT_TC1DI1CH2Backward_B1 = crrcMvb->getBool(0x111,22,6);
         this->DICT_TC1DI1CH1Forward_B1 = crrcMvb->getBool(0x111,22,7);
 
+        this->DICT_TC1DI2CH24CabKey_B1 = crrcMvb->getBool(0x111,23,0);
         this->DICT_TC1DI2CH23ZeroSpeedTL_B1 = crrcMvb->getBool(0x111,23,1);
         this->DICT_TC1DI2CH22ComSupplyFlt_B1 = crrcMvb->getBool(0x111,23,2);
         this->DICT_TC1DI2CH21ComHeating_B1 = crrcMvb->getBool(0x111,23,3);
@@ -547,6 +548,7 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->DICT_TC2DI1CH2Backward_B1 = crrcMvb->getBool(0x161,22,6);
         this->DICT_TC2DI1CH1Forward_B1 = crrcMvb->getBool(0x161,22,7);
 
+        this->DICT_TC2DI2CH24CabKey_B1 = crrcMvb->getBool(0x161,23,0);
         this->DICT_TC2DI2CH23ZeroSpeedTL_B1 = crrcMvb->getBool(0x161,23,1);
         this->DICT_TC2DI2CH22ComSupplyFlt_B1 = crrcMvb->getBool(0x161,23,2);
         this->DICT_TC2DI2CH21ComHeating_B1 = crrcMvb->getBool(0x161,23,3);
