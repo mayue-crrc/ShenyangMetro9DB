@@ -471,14 +471,14 @@ void VehicleRunStatePage::updateTrainStatus()
     setDOORStatus(this->ui->Tc1Door8lbl,DOORstatus);
     DOORstatus.clear();
 
-    this->setDOORsubStatus(this->ui->Tc1Door1lbl_sub,this->database->DR1_2CT_DCU1GreenOutputFeedback_B1||this->database->DR1_2CT_DCU1GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Tc1Door2lbl_sub,this->database->DR1_2CT_DCU2GreenOutputFeedback_B1||this->database->DR1_2CT_DCU2GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Tc1Door3lbl_sub,this->database->DR1_2CT_DCU3GreenOutputFeedback_B1||this->database->DR1_2CT_DCU3GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Tc1Door4lbl_sub,this->database->DR1_2CT_DCU4GreenOutputFeedback_B1||this->database->DR1_2CT_DCU4GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Tc1Door5lbl_sub,this->database->DR1_2CT_DCU5GreenOutputFeedback_B1||this->database->DR1_2CT_DCU5GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Tc1Door6lbl_sub,this->database->DR1_2CT_DCU6GreenOutputFeedback_B1||this->database->DR1_2CT_DCU6GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Tc1Door7lbl_sub,this->database->DR1_2CT_DCU7GreenOutputFeedback_B1||this->database->DR1_2CT_DCU7GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Tc1Door8lbl_sub,this->database->DR1_2CT_DCU8GreenOutputFeedback_B1||this->database->DR1_2CT_DCU8GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Tc1Door1lbl_sub,this->database->DR1_2CT_DCU1GreenOutputFeedback_B1&&this->database->DR1_2CT_DCU1GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Tc1Door2lbl_sub,this->database->DR1_2CT_DCU2GreenOutputFeedback_B1&&this->database->DR1_2CT_DCU2GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Tc1Door3lbl_sub,this->database->DR1_2CT_DCU3GreenOutputFeedback_B1&&this->database->DR1_2CT_DCU3GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Tc1Door4lbl_sub,this->database->DR1_2CT_DCU4GreenOutputFeedback_B1&&this->database->DR1_2CT_DCU4GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Tc1Door5lbl_sub,this->database->DR1_2CT_DCU5GreenOutputFeedback_B1&&this->database->DR1_2CT_DCU5GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Tc1Door6lbl_sub,this->database->DR1_2CT_DCU6GreenOutputFeedback_B1&&this->database->DR1_2CT_DCU6GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Tc1Door7lbl_sub,this->database->DR1_2CT_DCU7GreenOutputFeedback_B1&&this->database->DR1_2CT_DCU7GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Tc1Door8lbl_sub,this->database->DR1_2CT_DCU8GreenOutputFeedback_B1&&this->database->DR1_2CT_DCU8GreenInputFeedback_B1);
 
     //mp1
     DOORstatus<<database->DR3_4CT_DCU1Isolate_B1<<database->DR3_4CT_DCU1Fault_U8<<database->DR3_4CT_DCU1EmUnlock_B1
@@ -521,14 +521,14 @@ void VehicleRunStatePage::updateTrainStatus()
     setDOORStatus(this->ui->Mp1Door8lbl,DOORstatus);
     DOORstatus.clear();
 
-    this->setDOORsubStatus(this->ui->Mp1Door1lbl_sub,this->database->DR3_4CT_DCU1GreenOutputFeedback_B1||this->database->DR3_4CT_DCU1GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Mp1Door2lbl_sub,this->database->DR3_4CT_DCU2GreenOutputFeedback_B1||this->database->DR3_4CT_DCU2GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Mp1Door3lbl_sub,this->database->DR3_4CT_DCU3GreenOutputFeedback_B1||this->database->DR3_4CT_DCU3GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Mp1Door4lbl_sub,this->database->DR3_4CT_DCU4GreenOutputFeedback_B1||this->database->DR3_4CT_DCU4GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Mp1Door5lbl_sub,this->database->DR3_4CT_DCU5GreenOutputFeedback_B1||this->database->DR3_4CT_DCU5GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Mp1Door6lbl_sub,this->database->DR3_4CT_DCU6GreenOutputFeedback_B1||this->database->DR3_4CT_DCU6GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Mp1Door7lbl_sub,this->database->DR3_4CT_DCU7GreenOutputFeedback_B1||this->database->DR3_4CT_DCU7GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Mp1Door8lbl_sub,this->database->DR3_4CT_DCU8GreenOutputFeedback_B1||this->database->DR3_4CT_DCU8GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Mp1Door1lbl_sub,this->database->DR3_4CT_DCU1GreenOutputFeedback_B1&&this->database->DR3_4CT_DCU1GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Mp1Door2lbl_sub,this->database->DR3_4CT_DCU2GreenOutputFeedback_B1&&this->database->DR3_4CT_DCU2GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Mp1Door3lbl_sub,this->database->DR3_4CT_DCU3GreenOutputFeedback_B1&&this->database->DR3_4CT_DCU3GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Mp1Door4lbl_sub,this->database->DR3_4CT_DCU4GreenOutputFeedback_B1&&this->database->DR3_4CT_DCU4GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Mp1Door5lbl_sub,this->database->DR3_4CT_DCU5GreenOutputFeedback_B1&&this->database->DR3_4CT_DCU5GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Mp1Door6lbl_sub,this->database->DR3_4CT_DCU6GreenOutputFeedback_B1&&this->database->DR3_4CT_DCU6GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Mp1Door7lbl_sub,this->database->DR3_4CT_DCU7GreenOutputFeedback_B1&&this->database->DR3_4CT_DCU7GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Mp1Door8lbl_sub,this->database->DR3_4CT_DCU8GreenOutputFeedback_B1&&this->database->DR3_4CT_DCU8GreenInputFeedback_B1);
     //m1
     DOORstatus<<database->DR5_6CT_DCU1Isolate_B1<<database->DR5_6CT_DCU1Fault_U8<<database->DR5_6CT_DCU1EmUnlock_B1
             <<database->DR5_6CT_DCU1ObstacleDetcted_B1<<database->DR5_6CT_DCU1TotallyOpen_B1<<database->DR5_6CT_DCU1TotallyClose_B1;
@@ -569,14 +569,14 @@ void VehicleRunStatePage::updateTrainStatus()
             <<database->DR5_6CT_DCU8ObstacleDetcted_B1<<database->DR5_6CT_DCU8TotallyOpen_B1<<database->DR5_6CT_DCU8TotallyClose_B1;
     setDOORStatus(this->ui->M1Door8lbl,DOORstatus);
     DOORstatus.clear();
-    this->setDOORsubStatus(this->ui->M1Door1lbl_sub,this->database->DR5_6CT_DCU1GreenOutputFeedback_B1||this->database->DR5_6CT_DCU1GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->M1Door2lbl_sub,this->database->DR5_6CT_DCU2GreenOutputFeedback_B1||this->database->DR5_6CT_DCU2GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->M1Door3lbl_sub,this->database->DR5_6CT_DCU3GreenOutputFeedback_B1||this->database->DR5_6CT_DCU3GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->M1Door4lbl_sub,this->database->DR5_6CT_DCU4GreenOutputFeedback_B1||this->database->DR5_6CT_DCU4GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->M1Door5lbl_sub,this->database->DR5_6CT_DCU5GreenOutputFeedback_B1||this->database->DR5_6CT_DCU5GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->M1Door6lbl_sub,this->database->DR5_6CT_DCU6GreenOutputFeedback_B1||this->database->DR5_6CT_DCU6GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->M1Door7lbl_sub,this->database->DR5_6CT_DCU7GreenOutputFeedback_B1||this->database->DR5_6CT_DCU7GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->M1Door8lbl_sub,this->database->DR5_6CT_DCU8GreenOutputFeedback_B1||this->database->DR5_6CT_DCU8GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->M1Door1lbl_sub,this->database->DR5_6CT_DCU1GreenOutputFeedback_B1&&this->database->DR5_6CT_DCU1GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->M1Door2lbl_sub,this->database->DR5_6CT_DCU2GreenOutputFeedback_B1&&this->database->DR5_6CT_DCU2GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->M1Door3lbl_sub,this->database->DR5_6CT_DCU3GreenOutputFeedback_B1&&this->database->DR5_6CT_DCU3GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->M1Door4lbl_sub,this->database->DR5_6CT_DCU4GreenOutputFeedback_B1&&this->database->DR5_6CT_DCU4GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->M1Door5lbl_sub,this->database->DR5_6CT_DCU5GreenOutputFeedback_B1&&this->database->DR5_6CT_DCU5GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->M1Door6lbl_sub,this->database->DR5_6CT_DCU6GreenOutputFeedback_B1&&this->database->DR5_6CT_DCU6GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->M1Door7lbl_sub,this->database->DR5_6CT_DCU7GreenOutputFeedback_B1&&this->database->DR5_6CT_DCU7GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->M1Door8lbl_sub,this->database->DR5_6CT_DCU8GreenOutputFeedback_B1&&this->database->DR5_6CT_DCU8GreenInputFeedback_B1);
     //m2
     DOORstatus<<database->DR7_8CT_DCU1Isolate_B1<<database->DR7_8CT_DCU1Fault_U8<<database->DR7_8CT_DCU1EmUnlock_B1
             <<database->DR7_8CT_DCU1ObstacleDetcted_B1<<database->DR7_8CT_DCU1TotallyOpen_B1<<database->DR7_8CT_DCU1TotallyClose_B1;
@@ -617,14 +617,14 @@ void VehicleRunStatePage::updateTrainStatus()
             <<database->DR7_8CT_DCU8ObstacleDetcted_B1<<database->DR7_8CT_DCU8TotallyOpen_B1<<database->DR7_8CT_DCU8TotallyClose_B1;
     setDOORStatus(this->ui->M2Door8lbl,DOORstatus);
     DOORstatus.clear();
-    this->setDOORsubStatus(this->ui->M2Door1lbl_sub,this->database->DR7_8CT_DCU1GreenOutputFeedback_B1||this->database->DR7_8CT_DCU1GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->M2Door2lbl_sub,this->database->DR7_8CT_DCU2GreenOutputFeedback_B1||this->database->DR7_8CT_DCU2GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->M2Door3lbl_sub,this->database->DR7_8CT_DCU3GreenOutputFeedback_B1||this->database->DR7_8CT_DCU3GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->M2Door4lbl_sub,this->database->DR7_8CT_DCU4GreenOutputFeedback_B1||this->database->DR7_8CT_DCU4GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->M2Door5lbl_sub,this->database->DR7_8CT_DCU5GreenOutputFeedback_B1||this->database->DR7_8CT_DCU5GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->M2Door6lbl_sub,this->database->DR7_8CT_DCU6GreenOutputFeedback_B1||this->database->DR7_8CT_DCU6GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->M2Door7lbl_sub,this->database->DR7_8CT_DCU7GreenOutputFeedback_B1||this->database->DR7_8CT_DCU7GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->M2Door8lbl_sub,this->database->DR7_8CT_DCU8GreenOutputFeedback_B1||this->database->DR7_8CT_DCU8GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->M2Door1lbl_sub,this->database->DR7_8CT_DCU1GreenOutputFeedback_B1&&this->database->DR7_8CT_DCU1GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->M2Door2lbl_sub,this->database->DR7_8CT_DCU2GreenOutputFeedback_B1&&this->database->DR7_8CT_DCU2GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->M2Door3lbl_sub,this->database->DR7_8CT_DCU3GreenOutputFeedback_B1&&this->database->DR7_8CT_DCU3GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->M2Door4lbl_sub,this->database->DR7_8CT_DCU4GreenOutputFeedback_B1&&this->database->DR7_8CT_DCU4GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->M2Door5lbl_sub,this->database->DR7_8CT_DCU5GreenOutputFeedback_B1&&this->database->DR7_8CT_DCU5GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->M2Door6lbl_sub,this->database->DR7_8CT_DCU6GreenOutputFeedback_B1&&this->database->DR7_8CT_DCU6GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->M2Door7lbl_sub,this->database->DR7_8CT_DCU7GreenOutputFeedback_B1&&this->database->DR7_8CT_DCU7GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->M2Door8lbl_sub,this->database->DR7_8CT_DCU8GreenOutputFeedback_B1&&this->database->DR7_8CT_DCU8GreenInputFeedback_B1);
     //mp2
     DOORstatus<<database->DR9_10CT_DCU1Isolate_B1<<database->DR9_10CT_DCU1Fault_U8<<database->DR9_10CT_DCU1EmUnlock_B1
             <<database->DR9_10CT_DCU1ObstacleDetcted_B1<<database->DR9_10CT_DCU1TotallyOpen_B1<<database->DR9_10CT_DCU1TotallyClose_B1;
@@ -665,14 +665,14 @@ void VehicleRunStatePage::updateTrainStatus()
             <<database->DR9_10CT_DCU8ObstacleDetcted_B1<<database->DR9_10CT_DCU8TotallyOpen_B1<<database->DR9_10CT_DCU8TotallyClose_B1;
     setDOORStatus(this->ui->Mp2Door8lbl,DOORstatus);
     DOORstatus.clear();
-    this->setDOORsubStatus(this->ui->Mp2Door1lbl_sub,this->database->DR9_10CT_DCU1GreenOutputFeedback_B1||this->database->DR9_10CT_DCU1GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Mp2Door2lbl_sub,this->database->DR9_10CT_DCU2GreenOutputFeedback_B1||this->database->DR9_10CT_DCU2GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Mp2Door3lbl_sub,this->database->DR9_10CT_DCU3GreenOutputFeedback_B1||this->database->DR9_10CT_DCU3GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Mp2Door4lbl_sub,this->database->DR9_10CT_DCU4GreenOutputFeedback_B1||this->database->DR9_10CT_DCU4GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Mp2Door5lbl_sub,this->database->DR9_10CT_DCU5GreenOutputFeedback_B1||this->database->DR9_10CT_DCU5GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Mp2Door6lbl_sub,this->database->DR9_10CT_DCU6GreenOutputFeedback_B1||this->database->DR9_10CT_DCU6GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Mp2Door7lbl_sub,this->database->DR9_10CT_DCU7GreenOutputFeedback_B1||this->database->DR9_10CT_DCU7GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Mp2Door8lbl_sub,this->database->DR9_10CT_DCU8GreenOutputFeedback_B1||this->database->DR9_10CT_DCU8GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Mp2Door1lbl_sub,this->database->DR9_10CT_DCU1GreenOutputFeedback_B1&&this->database->DR9_10CT_DCU1GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Mp2Door2lbl_sub,this->database->DR9_10CT_DCU2GreenOutputFeedback_B1&&this->database->DR9_10CT_DCU2GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Mp2Door3lbl_sub,this->database->DR9_10CT_DCU3GreenOutputFeedback_B1&&this->database->DR9_10CT_DCU3GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Mp2Door4lbl_sub,this->database->DR9_10CT_DCU4GreenOutputFeedback_B1&&this->database->DR9_10CT_DCU4GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Mp2Door5lbl_sub,this->database->DR9_10CT_DCU5GreenOutputFeedback_B1&&this->database->DR9_10CT_DCU5GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Mp2Door6lbl_sub,this->database->DR9_10CT_DCU6GreenOutputFeedback_B1&&this->database->DR9_10CT_DCU6GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Mp2Door7lbl_sub,this->database->DR9_10CT_DCU7GreenOutputFeedback_B1&&this->database->DR9_10CT_DCU7GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Mp2Door8lbl_sub,this->database->DR9_10CT_DCU8GreenOutputFeedback_B1&&this->database->DR9_10CT_DCU8GreenInputFeedback_B1);
     //Tc2
     DOORstatus<<database->DR11_12CT_DCU1Isolate_B1<<database->DR11_12CT_DCU1Fault_U8<<database->DR11_12CT_DCU1EmUnlock_B1
             <<database->DR11_12CT_DCU1ObstacleDetcted_B1<<database->DR11_12CT_DCU1TotallyOpen_B1<<database->DR11_12CT_DCU1TotallyClose_B1;
@@ -713,14 +713,14 @@ void VehicleRunStatePage::updateTrainStatus()
             <<database->DR11_12CT_DCU8ObstacleDetcted_B1<<database->DR11_12CT_DCU8TotallyOpen_B1<<database->DR11_12CT_DCU8TotallyClose_B1;
     setDOORStatus(this->ui->Tc2Door8lbl,DOORstatus);
     DOORstatus.clear();
-    this->setDOORsubStatus(this->ui->Tc2Door1lbl_sub,this->database->DR11_12CT_DCU1GreenOutputFeedback_B1||this->database->DR11_12CT_DCU1GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Tc2Door2lbl_sub,this->database->DR11_12CT_DCU2GreenOutputFeedback_B1||this->database->DR11_12CT_DCU2GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Tc2Door3lbl_sub,this->database->DR11_12CT_DCU3GreenOutputFeedback_B1||this->database->DR11_12CT_DCU3GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Tc2Door4lbl_sub,this->database->DR11_12CT_DCU4GreenOutputFeedback_B1||this->database->DR11_12CT_DCU4GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Tc2Door5lbl_sub,this->database->DR11_12CT_DCU5GreenOutputFeedback_B1||this->database->DR11_12CT_DCU5GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Tc2Door6lbl_sub,this->database->DR11_12CT_DCU6GreenOutputFeedback_B1||this->database->DR11_12CT_DCU6GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Tc2Door7lbl_sub,this->database->DR11_12CT_DCU7GreenOutputFeedback_B1||this->database->DR11_12CT_DCU7GreenInputFeedback_B1);
-    this->setDOORsubStatus(this->ui->Tc2Door8lbl_sub,this->database->DR11_12CT_DCU8GreenOutputFeedback_B1||this->database->DR11_12CT_DCU8GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Tc2Door1lbl_sub,this->database->DR11_12CT_DCU1GreenOutputFeedback_B1&&this->database->DR11_12CT_DCU1GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Tc2Door2lbl_sub,this->database->DR11_12CT_DCU2GreenOutputFeedback_B1&&this->database->DR11_12CT_DCU2GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Tc2Door3lbl_sub,this->database->DR11_12CT_DCU3GreenOutputFeedback_B1&&this->database->DR11_12CT_DCU3GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Tc2Door4lbl_sub,this->database->DR11_12CT_DCU4GreenOutputFeedback_B1&&this->database->DR11_12CT_DCU4GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Tc2Door5lbl_sub,this->database->DR11_12CT_DCU5GreenOutputFeedback_B1&&this->database->DR11_12CT_DCU5GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Tc2Door6lbl_sub,this->database->DR11_12CT_DCU6GreenOutputFeedback_B1&&this->database->DR11_12CT_DCU6GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Tc2Door7lbl_sub,this->database->DR11_12CT_DCU7GreenOutputFeedback_B1&&this->database->DR11_12CT_DCU7GreenInputFeedback_B1);
+    this->setDOORsubStatus(this->ui->Tc2Door8lbl_sub,this->database->DR11_12CT_DCU8GreenOutputFeedback_B1&&this->database->DR11_12CT_DCU8GreenInputFeedback_B1);
     //方向
     if(this->database->CTHM_Forward_B1)
     {

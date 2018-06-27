@@ -15,12 +15,20 @@ MaintainceLoadPage::MaintainceLoadPage(QWidget *parent) :
     DefaultLoadMP2 = MainGetDefaultPara::getString("/DefaultLoad/load_MP2");
     DefaultLoadTC2 = MainGetDefaultPara::getString("/DefaultLoad/load_TC2");
 
-//    DefaultFullLoadTC1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_TC1");
-//    DefaultFullLoadMP1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_MP1");
-//    DefaultFullLoadM1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_M1");
-//    DefaultFullLoadM2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_M2");
-//    DefaultFullLoadMP2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_MP2");
-//    DefaultFullLoadTC2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_TC2");
+    DefaultFullLoadTC1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_TC1");
+    DefaultFullLoadMP1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_MP1");
+    DefaultFullLoadM1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_M1");
+    DefaultFullLoadM2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_M2");
+    DefaultFullLoadMP2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_MP2");
+    DefaultFullLoadTC2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_TC2");
+
+//    DefaultLoadTC1=QString::number(31.151);
+//    DefaultLoadMP1=QString::number(33.77);
+//    DefaultLoadM1=QString::number(34.16);
+//    DefaultLoadM2=QString::number(34.307);
+//    DefaultLoadMP2=QString::number(34.31);
+//    DefaultLoadTC2=QString::number(31.068);
+
 }
 
 MaintainceLoadPage::~MaintainceLoadPage()
@@ -62,12 +70,12 @@ void MaintainceLoadPage::updatePage()
     tmp_pkgmp2 = tmp_pkgmp2>0?tmp_pkgmp2:0;
     tmp_pkgtc2 = tmp_pkgtc2>0?tmp_pkgtc2:0;
 
-    this->ui->PkgWeightTC1lbl->setText(QString::number(tmp_pkgtc1*1000));
-    this->ui->PkgWeightMP1lbl->setText(QString::number(tmp_pkgmp1*1000));
-    this->ui->PkgWeightM1lbl->setText(QString::number(tmp_pkgm1*1000));
-    this->ui->PkgWeightM2lbl->setText(QString::number(tmp_pkgm2*1000));
-    this->ui->PkgWeightMP2lbl->setText(QString::number(tmp_pkgmp2*1000));
-    this->ui->PkgWeightTC2lbl->setText(QString::number(tmp_pkgtc2*1000));
+    this->ui->PkgWeightTC1lbl->setText(QString::number(tmp_pkgtc1*1000,10,0));
+    this->ui->PkgWeightMP1lbl->setText(QString::number(tmp_pkgmp1*1000,10,0));
+    this->ui->PkgWeightM1lbl->setText(QString::number(tmp_pkgm1*1000,10,0));
+    this->ui->PkgWeightM2lbl->setText(QString::number(tmp_pkgm2*1000,10,0));
+    this->ui->PkgWeightMP2lbl->setText(QString::number(tmp_pkgmp2*1000,10,0));
+    this->ui->PkgWeightTC2lbl->setText(QString::number(tmp_pkgtc2*1000,10,0));
 
     this->ui->PassagerNumTC1lbl->setText(QString::number(tmp_pkgtc1/60*1000,10,0));
     this->ui->PassagerNumMP1lbl->setText(QString::number(tmp_pkgmp1/60*1000,10,0));

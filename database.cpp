@@ -82,7 +82,7 @@ Database::Database()
     HMiCT_ACDETestStartFlag_B1 = false;
 
     HMiCT_HMISWVerH_U8 = 2;
-    HMiCT_HMISWVerL_U8 = 16;
+    HMiCT_HMISWVerL_U8 = 17;
 
     for(int i =0; i< 12;i++)
     {
@@ -103,6 +103,20 @@ Database::Database()
     DefaultFullLoadM2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_M2");
     DefaultFullLoadMP2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_MP2");
     DefaultFullLoadTC2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_TC2");
+
+//    DefaultLoadTC1=QString::number(31.151);
+//    DefaultLoadMP1=QString::number(33.77);
+//    DefaultLoadM1=QString::number(34.16);
+//    DefaultLoadM2=QString::number(34.307);
+//    DefaultLoadMP2=QString::number(34.31);
+//    DefaultLoadTC2=QString::number(31.068);
+
+//    DefaultFullLoadTC1=QString::number(17.4);
+//    DefaultFullLoadMP1=QString::number(19.5);
+//    DefaultFullLoadM1=QString::number(19.5);
+//    DefaultFullLoadM2=QString::number(19.5);
+//    DefaultFullLoadMP2=QString::number(19.5);
+//    DefaultFullLoadTC2=QString::number(17.4);
 }
 
 void Database::copyPort(unsigned short int sink, unsigned short int source)
