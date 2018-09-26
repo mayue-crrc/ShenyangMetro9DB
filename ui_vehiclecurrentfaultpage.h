@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclecurrentfaultpage.ui'
 **
-** Created: Thu Apr 19 11:15:44 2018
+** Created: Wed Sep 26 10:14:32 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -120,30 +120,40 @@ public:
 "font:18px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color: rgb(0,255,255);\n"
 "border:1px solid black;\n"
+"}\n"
+"QPushButton\n"
+"{\n"
+"	font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"    color: white;\n"
+"	background-color: rgb(0, 128, 128);\n"
+"	border-top: 2px solid white;	\n"
+"	border-left: 2px solid white;\n"
+"border-radius:8px;\n"
 "}"));
         lbl1_13 = new QLabel(VehicleCurrentFaultPage);
         lbl1_13->setObjectName(QString::fromUtf8("lbl1_13"));
         lbl1_13->setGeometry(QRect(910, 390, 101, 131));
-        lbl1_13->setStyleSheet(QString::fromUtf8("background-color:lightgray;\n"
+        lbl1_13->setStyleSheet(QString::fromUtf8("background-color:gray;\n"
 "border-radius:10px;\n"
 "font:14px;\n"
-"color:brown;"));
+"color:yellow;\n"
+"background-color:darkgray;"));
         lbl1_13->setAlignment(Qt::AlignCenter);
         PrePageBtn = new QPushButton(VehicleCurrentFaultPage);
         PrePageBtn->setObjectName(QString::fromUtf8("PrePageBtn"));
         PrePageBtn->setGeometry(QRect(920, 400, 81, 51));
         PrePageBtn->setFocusPolicy(Qt::NoFocus);
         PrePageBtn->setStyleSheet(QString::fromUtf8("font:30px;\n"
-"color:white;\n"
-"background-color:brown;\n"
+"color:black;\n"
+"background-color:orange;\n"
 "border-radius:8px;"));
         NextPageBtn = new QPushButton(VehicleCurrentFaultPage);
         NextPageBtn->setObjectName(QString::fromUtf8("NextPageBtn"));
         NextPageBtn->setGeometry(QRect(920, 460, 81, 51));
         NextPageBtn->setFocusPolicy(Qt::NoFocus);
         NextPageBtn->setStyleSheet(QString::fromUtf8("font:30px;\n"
-"color:white;\n"
-"background-color:brown;\n"
+"color:black;\n"
+"background-color:orange;\n"
 "border-radius:8px;"));
         lbl1_14 = new QLabel(VehicleCurrentFaultPage);
         lbl1_14->setObjectName(QString::fromUtf8("lbl1_14"));
@@ -586,8 +596,8 @@ public:
     {
         VehicleCurrentFaultPage->setWindowTitle(QApplication::translate("VehicleCurrentFaultPage", "Form", 0, QApplication::UnicodeUTF8));
         lbl1_13->setText(QString());
-        PrePageBtn->setText(QApplication::translate("VehicleCurrentFaultPage", "\342\226\262", 0, QApplication::UnicodeUTF8));
-        NextPageBtn->setText(QApplication::translate("VehicleCurrentFaultPage", "\342\226\274", 0, QApplication::UnicodeUTF8));
+        PrePageBtn->setText(QApplication::translate("VehicleCurrentFaultPage", "\357\270\277", 0, QApplication::UnicodeUTF8));
+        NextPageBtn->setText(QApplication::translate("VehicleCurrentFaultPage", "\357\271\200", 0, QApplication::UnicodeUTF8));
         lbl1_14->setText(QString());
         lbl1_15->setText(QString());
         lbl1_16->setText(QApplication::translate("VehicleCurrentFaultPage", "\350\275\246\345\217\267", 0, QApplication::UnicodeUTF8));

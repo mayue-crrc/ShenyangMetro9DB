@@ -26,10 +26,12 @@ background-color:green;
 }
 QPushButton
 {
-	background-color:brown ;
-	border-radius:8px;
-border-top: 2px solid white;	
+	font: 20px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 128, 128);
+	border-top: 2px solid white;	
 	border-left: 2px solid white;
+border-radius:8px;
 }</string>
   </property>
   <widget class="QLabel" name="ACModeMP2lbl">
@@ -508,10 +510,11 @@ border-top: 2px solid white;
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:lightgray;
+    <string notr="true">background-color:gray;
 border-radius:10px;
 font:14px;
-color:brown;</string>
+color:yellow;
+background-color:darkgray;</string>
    </property>
    <property name="text">
     <string>
@@ -560,12 +563,12 @@ color:brown;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font:30px;
-color:white;
-background-color:brown;
+color:black;
+background-color:orange;
 border-radius:8px;</string>
    </property>
    <property name="text">
-    <string>▲</string>
+    <string>︿</string>
    </property>
   </widget>
   <widget class="QLabel" name="ACReduceMP1lbl">

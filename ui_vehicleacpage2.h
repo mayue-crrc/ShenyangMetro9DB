@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicleacpage2.ui'
 **
-** Created: Tue Jun 5 15:54:04 2018
+** Created: Wed Sep 26 10:14:32 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -107,10 +107,12 @@ public:
 "}\n"
 "QPushButton\n"
 "{\n"
-"	background-color:brown ;\n"
-"	border-radius:8px;\n"
-"border-top: 2px solid white;	\n"
+"	font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"    color: white;\n"
+"	background-color: rgb(0, 128, 128);\n"
+"	border-top: 2px solid white;	\n"
 "	border-left: 2px solid white;\n"
+"border-radius:8px;\n"
 "}"));
         ACModeMP2lbl = new QLabel(VehicleACPage2);
         ACModeMP2lbl->setObjectName(QString::fromUtf8("ACModeMP2lbl"));
@@ -241,10 +243,11 @@ public:
         lbl1_13 = new QLabel(VehicleACPage2);
         lbl1_13->setObjectName(QString::fromUtf8("lbl1_13"));
         lbl1_13->setGeometry(QRect(910, 250, 101, 151));
-        lbl1_13->setStyleSheet(QString::fromUtf8("background-color:lightgray;\n"
+        lbl1_13->setStyleSheet(QString::fromUtf8("background-color:gray;\n"
 "border-radius:10px;\n"
 "font:14px;\n"
-"color:brown;"));
+"color:yellow;\n"
+"background-color:darkgray;"));
         lbl1_13->setAlignment(Qt::AlignCenter);
         ACReduceTC2lbl = new QLabel(VehicleACPage2);
         ACReduceTC2lbl->setObjectName(QString::fromUtf8("ACReduceTC2lbl"));
@@ -256,8 +259,8 @@ public:
         NextPageBtn->setGeometry(QRect(920, 260, 81, 51));
         NextPageBtn->setFocusPolicy(Qt::NoFocus);
         NextPageBtn->setStyleSheet(QString::fromUtf8("font:30px;\n"
-"color:white;\n"
-"background-color:brown;\n"
+"color:black;\n"
+"background-color:orange;\n"
 "border-radius:8px;"));
         ACReduceMP1lbl = new QLabel(VehicleACPage2);
         ACReduceMP1lbl->setObjectName(QString::fromUtf8("ACReduceMP1lbl"));
@@ -571,7 +574,7 @@ public:
 "\n"
 "\347\254\2542\351\241\265/\345\205\2612\351\241\265", 0, QApplication::UnicodeUTF8));
         ACReduceTC2lbl->setText(QString());
-        NextPageBtn->setText(QApplication::translate("VehicleACPage2", "\342\226\262", 0, QApplication::UnicodeUTF8));
+        NextPageBtn->setText(QApplication::translate("VehicleACPage2", "\357\270\277", 0, QApplication::UnicodeUTF8));
         ACReduceMP1lbl->setText(QString());
         ACControlM1lbl->setText(QApplication::translate("VehicleACPage2", "\351\233\206\346\216\247", 0, QApplication::UnicodeUTF8));
         ACModeMP1lbl->setText(QApplication::translate("VehicleACPage2", "\350\207\252\345\206\267", 0, QApplication::UnicodeUTF8));

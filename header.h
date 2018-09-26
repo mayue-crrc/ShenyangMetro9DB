@@ -15,6 +15,7 @@
 #include "vehicleacuhelppage.h"
 #include "vehicleresethelppage.h"
 #include "ctrlbrightnessadjust.h"
+#include "vehiclebcuhelppage2.h"
 namespace Ui {
     class Header;
 }
@@ -39,6 +40,8 @@ private:
     VehicleFaultHelpPage* faulthelpPage;
     VehicleHVACHelpPage* vehicleHVACHelpPage;
     VehicleBCUHelpPage* vehicleBCUHelpPage;
+    VehicleBCUHelpPage2* vehicleBCUHelpPage2;
+
     VehicleDCUHelpPage* vehicleDCUHelpPage;
     VehicleACUHelpPage* vehicleACUHelpPage;
     VehicleResetHelpPage* vehicleResetHelpPage;

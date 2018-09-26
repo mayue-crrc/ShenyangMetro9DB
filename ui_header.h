@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'header.ui'
 **
-** Created: Fri Jun 8 14:00:42 2018
+** Created: Wed Sep 26 13:11:56 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -61,7 +61,7 @@ public:
         PageName->setObjectName(QString::fromUtf8("PageName"));
         PageName->setGeometry(QRect(73, 1, 72, 80));
         PageName->setStyleSheet(QString::fromUtf8("border: 2px solid rgb(255, 255, 255);\n"
-"font: 24px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+"font: 22px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
         PageName->setAlignment(Qt::AlignCenter);
         PageName->setWordWrap(true);
         Label1 = new QLabel(Header);
@@ -74,8 +74,8 @@ public:
         DrivingMode->setObjectName(QString::fromUtf8("DrivingMode"));
         DrivingMode->setGeometry(QRect(144, 41, 90, 40));
         DrivingMode->setStyleSheet(QString::fromUtf8("border: 2px solid rgb(255, 255, 255);\n"
-"	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
-""));
+"	font: 18px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"color:yellow;"));
         DrivingMode->setAlignment(Qt::AlignCenter);
         Label2 = new QLabel(Header);
         Label2->setObjectName(QString::fromUtf8("Label2"));
@@ -87,8 +87,8 @@ public:
         NetVoltage->setObjectName(QString::fromUtf8("NetVoltage"));
         NetVoltage->setGeometry(QRect(234, 41, 72, 40));
         NetVoltage->setStyleSheet(QString::fromUtf8("border: 2px solid rgb(255, 255, 255);\n"
-"	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
-""));
+"	font: 18px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"color:yellow;"));
         NetVoltage->setAlignment(Qt::AlignCenter);
         Label3 = new QLabel(Header);
         Label3->setObjectName(QString::fromUtf8("Label3"));
@@ -100,8 +100,8 @@ public:
         Speed->setObjectName(QString::fromUtf8("Speed"));
         Speed->setGeometry(QRect(306, 41, 84, 40));
         Speed->setStyleSheet(QString::fromUtf8("border: 2px solid rgb(255, 255, 255);\n"
-"	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
-""));
+"	font: 18px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"color:yellow;"));
         Speed->setAlignment(Qt::AlignCenter);
         Label4 = new QLabel(Header);
         Label4->setObjectName(QString::fromUtf8("Label4"));
@@ -125,7 +125,8 @@ public:
         CurrentStation = new QLabel(Header);
         CurrentStation->setObjectName(QString::fromUtf8("CurrentStation"));
         CurrentStation->setGeometry(QRect(480, 41, 121, 40));
-        CurrentStation->setStyleSheet(QString::fromUtf8("	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+        CurrentStation->setStyleSheet(QString::fromUtf8("	font: 18px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"color:yellow;\n"
 "border: 2px solid rgb(255, 255, 255);\n"
 ""));
         CurrentStation->setAlignment(Qt::AlignCenter);
@@ -138,8 +139,8 @@ public:
         NextStation = new QLabel(Header);
         NextStation->setObjectName(QString::fromUtf8("NextStation"));
         NextStation->setGeometry(QRect(601, 41, 121, 40));
-        NextStation->setStyleSheet(QString::fromUtf8("	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
-"border: 2px solid rgb(255, 255, 255);\n"
+        NextStation->setStyleSheet(QString::fromUtf8("	font: 18px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"color:yellow;border: 2px solid rgb(255, 255, 255);\n"
 ""));
         NextStation->setAlignment(Qt::AlignCenter);
         DateTime = new QLabel(Header);
@@ -182,7 +183,7 @@ public:
         Header->setWindowTitle(QApplication::translate("Header", "Form", 0, QApplication::UnicodeUTF8));
         PageName->setText(QString());
         Label1->setText(QApplication::translate("Header", "\346\223\215\344\275\234\346\250\241\345\274\217", 0, QApplication::UnicodeUTF8));
-        DrivingMode->setText(QString());
+        DrivingMode->setText(QApplication::translate("Header", "\344\272\272\345\267\245\351\251\276\351\251\266", 0, QApplication::UnicodeUTF8));
         Label2->setText(QApplication::translate("Header", "\347\275\221\345\216\213", 0, QApplication::UnicodeUTF8));
         NetVoltage->setText(QString());
         Label3->setText(QApplication::translate("Header", "\351\200\237\345\272\246", 0, QApplication::UnicodeUTF8));

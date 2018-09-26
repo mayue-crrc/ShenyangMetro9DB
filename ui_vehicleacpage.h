@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicleacpage.ui'
 **
-** Created: Fri Jun 8 16:07:19 2018
+** Created: Wed Sep 26 10:14:32 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -159,25 +159,29 @@ public:
 "}\n"
 "QPushButton\n"
 "{\n"
-"	background-color:orange ;\n"
+"	font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"    color: white;\n"
+"	background-color: rgb(0, 128, 128);\n"
 "	border-top: 2px solid white;	\n"
 "	border-left: 2px solid white;\n"
+"border-radius:8px;\n"
 "}"));
         NextPageBtn = new QPushButton(VehicleACPage);
         NextPageBtn->setObjectName(QString::fromUtf8("NextPageBtn"));
         NextPageBtn->setGeometry(QRect(920, 320, 81, 51));
         NextPageBtn->setFocusPolicy(Qt::NoFocus);
         NextPageBtn->setStyleSheet(QString::fromUtf8("font:30px;\n"
-"color:white;\n"
-"background-color:brown;\n"
+"color:black;\n"
+"background-color:orange;\n"
 "border-radius:8px;"));
         lbl1_13 = new QLabel(VehicleACPage);
         lbl1_13->setObjectName(QString::fromUtf8("lbl1_13"));
         lbl1_13->setGeometry(QRect(910, 250, 101, 151));
-        lbl1_13->setStyleSheet(QString::fromUtf8("background-color:lightgray;\n"
+        lbl1_13->setStyleSheet(QString::fromUtf8("background-color:gray;\n"
 "border-radius:10px;\n"
 "font:14px;\n"
-"color:brown;"));
+"color:yellow;\n"
+"background-color:darkgray;"));
         lbl1_13->setAlignment(Qt::AlignCenter);
         lbl1 = new QLabel(VehicleACPage);
         lbl1->setObjectName(QString::fromUtf8("lbl1"));
@@ -808,7 +812,7 @@ public:
     void retranslateUi(QWidget *VehicleACPage)
     {
         VehicleACPage->setWindowTitle(QApplication::translate("VehicleACPage", "Form", 0, QApplication::UnicodeUTF8));
-        NextPageBtn->setText(QApplication::translate("VehicleACPage", "\342\226\274", 0, QApplication::UnicodeUTF8));
+        NextPageBtn->setText(QApplication::translate("VehicleACPage", "\357\271\200", 0, QApplication::UnicodeUTF8));
         lbl1_13->setText(QApplication::translate("VehicleACPage", "\n"
 "\n"
 "\n"

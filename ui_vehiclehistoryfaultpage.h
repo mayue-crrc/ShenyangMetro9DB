@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclehistoryfaultpage.ui'
 **
-** Created: Thu Apr 19 11:15:44 2018
+** Created: Wed Sep 26 10:14:32 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -129,6 +129,14 @@ public:
 "font:18px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color: rgb(0,255,255);\n"
 "border:1px solid black;\n"
+"}QPushButton\n"
+"{\n"
+"	font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"    color: white;\n"
+"	background-color: rgb(0, 128, 128);\n"
+"	border-top: 2px solid white;	\n"
+"	border-left: 2px solid white;\n"
+"border-radius:8px;\n"
 "}"));
         lbl1_15 = new QLabel(VehicleHistoryFaultPage);
         lbl1_15->setObjectName(QString::fromUtf8("lbl1_15"));
@@ -276,8 +284,8 @@ public:
         NextPageBtn->setGeometry(QRect(920, 460, 81, 51));
         NextPageBtn->setFocusPolicy(Qt::NoFocus);
         NextPageBtn->setStyleSheet(QString::fromUtf8("font:30px;\n"
-"color:white;\n"
-"background-color:brown;\n"
+"color:black;\n"
+"background-color:orange;\n"
 "border-radius:8px;"));
         faultCode_row6 = new QLabel(VehicleHistoryFaultPage);
         faultCode_row6->setObjectName(QString::fromUtf8("faultCode_row6"));
@@ -324,10 +332,11 @@ public:
         lbl1_13 = new QLabel(VehicleHistoryFaultPage);
         lbl1_13->setObjectName(QString::fromUtf8("lbl1_13"));
         lbl1_13->setGeometry(QRect(910, 390, 101, 131));
-        lbl1_13->setStyleSheet(QString::fromUtf8("background-color:lightgray;\n"
+        lbl1_13->setStyleSheet(QString::fromUtf8("background-color:gray;\n"
 "border-radius:10px;\n"
 "font:14px;\n"
-"color:brown;"));
+"color:yellow;\n"
+"background-color:darkgray;"));
         lbl1_13->setAlignment(Qt::AlignCenter);
         lbl1_14 = new QLabel(VehicleHistoryFaultPage);
         lbl1_14->setObjectName(QString::fromUtf8("lbl1_14"));
@@ -392,8 +401,8 @@ public:
         PrePageBtn->setGeometry(QRect(920, 400, 81, 51));
         PrePageBtn->setFocusPolicy(Qt::NoFocus);
         PrePageBtn->setStyleSheet(QString::fromUtf8("font:30px;\n"
-"color:white;\n"
-"background-color:brown;\n"
+"color:black;\n"
+"background-color:orange;\n"
 "border-radius:8px;"));
         m1wheel2lbl = new QLabel(VehicleHistoryFaultPage);
         m1wheel2lbl->setObjectName(QString::fromUtf8("m1wheel2lbl"));
@@ -780,7 +789,7 @@ public:
         faultCode_row1->setText(QString());
         tc1directionlbl->setText(QString());
         mp1wheel1lbl->setText(QString());
-        NextPageBtn->setText(QApplication::translate("VehicleHistoryFaultPage", "\342\226\274", 0, QApplication::UnicodeUTF8));
+        NextPageBtn->setText(QApplication::translate("VehicleHistoryFaultPage", "\357\271\200", 0, QApplication::UnicodeUTF8));
         faultCode_row6->setText(QString());
         m1wheel1lbl->setText(QString());
         faultName_row9->setText(QString());
@@ -799,7 +808,7 @@ public:
         tc2directionlbl->setText(QString());
         faultCode_row8->setText(QString());
         faultName_row1->setText(QString());
-        PrePageBtn->setText(QApplication::translate("VehicleHistoryFaultPage", "\342\226\262", 0, QApplication::UnicodeUTF8));
+        PrePageBtn->setText(QApplication::translate("VehicleHistoryFaultPage", "\357\270\277", 0, QApplication::UnicodeUTF8));
         m1wheel2lbl->setText(QString());
         faultName_row6->setText(QString());
         mp2wheel2lbl->setText(QString());

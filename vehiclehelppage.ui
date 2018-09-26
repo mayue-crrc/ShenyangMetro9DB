@@ -62,7 +62,7 @@ QLabel
     </rect>
    </property>
    <property name="text">
-    <string>VVVF</string>
+    <string>DCU</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

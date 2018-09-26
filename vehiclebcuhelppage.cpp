@@ -6,10 +6,12 @@ VehicleBCUHelpPage::VehicleBCUHelpPage(QWidget *parent) :
     ui(new Ui::VehicleBCUHelpPage)
 {
     ui->setupUi(this);
+
 }
 
 VehicleBCUHelpPage::~VehicleBCUHelpPage()
 {
+
     delete ui;
 }
 

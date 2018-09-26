@@ -81,7 +81,7 @@ void VehicleEBCUPage::updatePage()
     setonlinestates(ui->SMP2_2lbl,this->database->BR2CT_MP2Bg2BoogieDataValid_B1);
     setonlinestates(ui->STC2_1lbl,this->database->BR2CT_TC2Bg1BoogieDataValid_B1);
 
-    //保持制动  绿色＝施加 灰色＝缓解
+    //保持制动  粉色＝施加 灰色＝缓解
     setlabelstates(ui->HoldBRKTC1lbl_1,this->database->BR1CT_TC1Bg1HoldingBrkApplied_B1,this->database->BCU1_3Online);
     setlabelstates(ui->HoldBRKTC1lbl_2,this->database->BR1CT_TC1Bg2HoldingBrkApplied_B1,this->database->BCU1_3Online);
     setlabelstates(ui->HoldBRKMP1lbl_1,this->database->BR1CT_MP1Bg1HoldingBrkApplied_B1,this->database->BCU1_3Online);
@@ -104,6 +104,37 @@ void VehicleEBCUPage::updatePage()
     setlabelstates(ui->AllBRKBypassMP2lbl,!this->database->DICT_MP2DI1CH8BrkAllCutOff_B1);
     setlabelstates(ui->AllBRKBypassTC2lbl,!this->database->DICT_TC2DI3CH3EBCUCutOff_B1);
 
+    //制动强迫缓解指令输出 6模块采集RIOM整车整车强迫缓解信号 绿色＝guan 灰色＝kai
+    if((this->database->CTHM_TC1Active_B1 && this->database->DICT_TC1DI3CH12ForceRlsBtn_B1 ) ||
+       (this->database->CTHM_TC2Active_B1 && this->database->DICT_TC2DI3CH12ForceRlsBtn_B1))
+    {
+        this->ui->ForceBRKResTC1_1lbl->setStyleSheet(LABELGRAY);
+        this->ui->ForceBRKResTC1_2lbl->setStyleSheet(LABELGRAY);
+        this->ui->ForceBRKResTC2_1lbl->setStyleSheet(LABELGRAY);
+        this->ui->ForceBRKResTC2_2lbl->setStyleSheet(LABELGRAY);
+        this->ui->ForceBRKResMP1_1lbl->setStyleSheet(LABELGRAY);
+        this->ui->ForceBRKResMP1_2lbl->setStyleSheet(LABELGRAY);
+        this->ui->ForceBRKResMP2_1lbl->setStyleSheet(LABELGRAY);
+        this->ui->ForceBRKResMP2_2lbl->setStyleSheet(LABELGRAY);
+        this->ui->ForceBRKResM1_1lbl->setStyleSheet(LABELGRAY);
+        this->ui->ForceBRKResM1_2lbl->setStyleSheet(LABELGRAY);
+        this->ui->ForceBRKResM2_1lbl->setStyleSheet(LABELGRAY);
+        this->ui->ForceBRKResM2_2lbl->setStyleSheet(LABELGRAY);
+    }else
+    {
+        this->ui->ForceBRKResTC1_1lbl->setStyleSheet(LABELLIGHTGREEN);
+        this->ui->ForceBRKResTC1_2lbl->setStyleSheet(LABELLIGHTGREEN);
+        this->ui->ForceBRKResTC2_1lbl->setStyleSheet(LABELLIGHTGREEN);
+        this->ui->ForceBRKResTC2_2lbl->setStyleSheet(LABELLIGHTGREEN);
+        this->ui->ForceBRKResMP1_1lbl->setStyleSheet(LABELLIGHTGREEN);
+        this->ui->ForceBRKResMP1_2lbl->setStyleSheet(LABELLIGHTGREEN);
+        this->ui->ForceBRKResMP2_1lbl->setStyleSheet(LABELLIGHTGREEN);
+        this->ui->ForceBRKResMP2_2lbl->setStyleSheet(LABELLIGHTGREEN);
+        this->ui->ForceBRKResM1_1lbl->setStyleSheet(LABELLIGHTGREEN);
+        this->ui->ForceBRKResM1_2lbl->setStyleSheet(LABELLIGHTGREEN);
+        this->ui->ForceBRKResM2_1lbl->setStyleSheet(LABELLIGHTGREEN);
+        this->ui->ForceBRKResM2_2lbl->setStyleSheet(LABELLIGHTGREEN);
+    }
 
 }
 void VehicleEBCUPage::setlabelstates(QLabel* lbl,bool state,bool isonline)
@@ -114,7 +145,21 @@ void VehicleEBCUPage::setlabelstates(QLabel* lbl,bool state,bool isonline)
     }
     else if(state)
     {
-        lbl->setStyleSheet(LABELGREEN);
+        lbl->setStyleSheet(LABELLIGHTGREEN);
+    }else
+    {
+        lbl->setStyleSheet(LABELGRAY);
+    }
+}
+void VehicleEBCUPage::setHoldlabelstates(QLabel* lbl,bool state,bool isonline)
+{
+    if(!isonline)
+    {
+        lbl->setStyleSheet(LABELWHITE);
+    }
+    else if(state)
+    {
+        lbl->setStyleSheet(LABELPINK);
     }else
     {
         lbl->setStyleSheet(LABELGRAY);
@@ -131,7 +176,7 @@ void VehicleEBCUPage::setlabelstates(QLabel* lbl,bool p1,bool p2,bool isonline)
         lbl->setStyleSheet(LABELGRAY);
     }else if(p2)
     {
-        lbl->setStyleSheet(LABELGREEN);
+        lbl->setStyleSheet(LABELLIGHTGREEN);
 
     }else
     {
@@ -142,7 +187,7 @@ void VehicleEBCUPage::setlabelstates(QLabel* lbl,bool state)
 {
     if(state)
     {
-        lbl->setStyleSheet(LABELGREEN);
+        lbl->setStyleSheet(LABELLIGHTGREEN);
     }else
     {
         lbl->setStyleSheet(LABELGRAY);
@@ -152,7 +197,7 @@ void VehicleEBCUPage::setonlinestates(QLabel* lbl,bool state)
 {
     if(state)
     {
-        lbl->setStyleSheet(LABELGREEN);
+        lbl->setStyleSheet(LABELLIGHTGREEN);
     }else
     {
         lbl->setStyleSheet(LABELWHITE);

@@ -73,16 +73,16 @@ void VehicleEBCUPage2::updatePage()
 
     //乘车率
 
-    this->ui->PLoadTC1lbl->setText(this->database->PLoad_TC1+"%");
-    this->ui->PLoadMP1lbl->setText(this->database->PLoad_MP1+"%");
-    this->ui->PLoadM1lbl->setText(this->database->PLoad_M1+"%");
-    this->ui->PLoadM2lbl->setText(this->database->PLoad_M2+"%");
-    this->ui->PLoadMP2lbl->setText(this->database->PLoad_MP2+"%");
-    this->ui->PLoadTC2lbl->setText(this->database->PLoad_TC2+"%");
+    this->ui->PLoadTC1lbl->setText(this->database->PLoad_TC1);
+    this->ui->PLoadMP1lbl->setText(this->database->PLoad_MP1);
+    this->ui->PLoadM1lbl->setText(this->database->PLoad_M1);
+    this->ui->PLoadM2lbl->setText(this->database->PLoad_M2);
+    this->ui->PLoadMP2lbl->setText(this->database->PLoad_MP2);
+    this->ui->PLoadTC2lbl->setText(this->database->PLoad_TC2);
 
     //空压机状态
-    setlabelstates(ui->ACPTC1_1lbl,this->database->DICT_TC1DI2CH19CompressorOperition_B1);
-    setlabelstates(ui->ACPTC2_1lbl,this->database->DICT_TC2DI2CH19CompressorOperition_B1);
+    setACPlabelstates(ui->ACPTC1_1lbl,this->database->DICT_TC1DI2CH19CompressorOperition_B1,this->database->DICT_TC1DI2CH22ComSupplyFlt_B1);
+    setACPlabelstates(ui->ACPTC2_1lbl,this->database->DICT_TC2DI2CH19CompressorOperition_B1,this->database->DICT_TC2DI2CH22ComSupplyFlt_B1);
 
 
     //停放制动缸 压力
@@ -107,11 +107,11 @@ void VehicleEBCUPage2::setlabelstates(QLabel* lbl,int value,bool isonline)
     if(!isonline)
     {
         lbl->setText("--");
-        lbl->setStyleSheet("background-color:white;color:black");
+        //lbl->setStyleSheet("background-color:white;color:black");
     }else
     {
-        lbl->setText(QString::number((float)(value)/100,10,2));
-        lbl->setStyleSheet("background-color:blue;color:white");
+        lbl->setText(QString::number((float)(value)/100,10,0));
+        //lbl->setStyleSheet("background-color:blue;color:white");
     }
 }
 void VehicleEBCUPage2::setlabelstates(QLabel* lbl,bool valid,int value,bool isonline)
@@ -119,15 +119,15 @@ void VehicleEBCUPage2::setlabelstates(QLabel* lbl,bool valid,int value,bool ison
     if(!isonline)
     {
         lbl->setText("--");
-        lbl->setStyleSheet("background-color:white;color:black");
+        //lbl->setStyleSheet("background-color:white;color:black");
     }else if(!valid)
     {
         lbl->setText("--");
-        lbl->setStyleSheet("background-color:blue;color:white");
+        //lbl->setStyleSheet("background-color:blue;color:white");
     }else
     {
-        lbl->setText(QString::number((float)(value)/100,10,2));
-        lbl->setStyleSheet("background-color:blue;color:white");
+        lbl->setText(QString::number((float)(value)/100,10,1));
+        //lbl->setStyleSheet("background-color:blue;color:white");
     }
 
 }
@@ -139,17 +139,20 @@ void VehicleEBCUPage2::setlabelstates(QLabel* lbl,bool state,bool isonline)
     }
     else if(state)
     {
-        lbl->setStyleSheet(LABELGREEN);
+        lbl->setStyleSheet(LABELLIGHTGREEN);
     }else
     {
         lbl->setStyleSheet(LABELGRAY);
     }
 }
-void VehicleEBCUPage2::setlabelstates(QLabel* lbl,bool state)
+void VehicleEBCUPage2::setACPlabelstates(QLabel* lbl,bool state,bool state2)
 {
-    if(state)
+    if(state2)
     {
-        lbl->setStyleSheet(LABELGREEN);
+        lbl->setStyleSheet(LABELRED);
+    }else if(state)
+    {
+        lbl->setStyleSheet(LABELLIGHTGREEN);
     }else
     {
         lbl->setStyleSheet(LABELGRAY);

@@ -22,7 +22,7 @@ private:
     void setlabelstates(QLabel* lbl,int value,bool isonline);
     void setlabelstates(QLabel* lbl,bool valid,int value,bool isonline);
     void setlabelstates(QLabel* lbl,bool state,bool isonline);
-    void setlabelstates(QLabel* lbl,bool state);
+    void setACPlabelstates(QLabel* lbl,bool state,bool state2);
     QString DefaultLoadTC1,DefaultLoadMP1,DefaultLoadM1,DefaultLoadM2,DefaultLoadMP2,DefaultLoadTC2;
     QString DefaultFullLoadTC1,DefaultFullLoadMP1,DefaultFullLoadM1,DefaultFullLoadM2,DefaultFullLoadMP2,DefaultFullLoadTC2;
 private slots:

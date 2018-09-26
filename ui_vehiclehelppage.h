@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclehelppage.ui'
 **
-** Created: Sun Jun 24 12:04:12 2018
+** Created: Tue Sep 25 10:07:05 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -986,7 +986,7 @@ public:
     {
         VehicleHelpPage->setWindowTitle(QApplication::translate("VehicleHelpPage", "Form", 0, QApplication::UnicodeUTF8));
         pushButton->setText(QApplication::translate("VehicleHelpPage", "\350\277\224\345\233\236", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("VehicleHelpPage", "VVVF", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("VehicleHelpPage", "DCU", 0, QApplication::UnicodeUTF8));
         label_2->setText(QApplication::translate("VehicleHelpPage", "\347\251\272\346\260\224\345\210\266\345\212\250", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("VehicleHelpPage", "\345\201\234\346\224\276\345\210\266\345\212\250", 0, QApplication::UnicodeUTF8));
         label_4->setText(QApplication::translate("VehicleHelpPage", "ACM", 0, QApplication::UnicodeUTF8));

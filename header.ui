@@ -36,7 +36,7 @@ QLabel
    </property>
    <property name="styleSheet">
     <string notr="true">border: 2px solid rgb(255, 255, 255);
-font: 24px, &quot;微软雅黑&quot;;</string>
+font: 22px, &quot;微软雅黑&quot;;</string>
    </property>
    <property name="text">
     <string/>
@@ -79,11 +79,11 @@ font: 24px, &quot;微软雅黑&quot;;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border: 2px solid rgb(255, 255, 255);
-	font: 16px, &quot;微软雅黑&quot;;
-</string>
+	font: 18px, &quot;微软雅黑&quot;;
+color:yellow;</string>
    </property>
    <property name="text">
-    <string/>
+    <string>人工驾驶</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -120,8 +120,8 @@ font: 24px, &quot;微软雅黑&quot;;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border: 2px solid rgb(255, 255, 255);
-	font: 16px, &quot;微软雅黑&quot;;
-</string>
+	font: 18px, &quot;微软雅黑&quot;;
+color:yellow;</string>
    </property>
    <property name="text">
     <string/>
@@ -161,8 +161,8 @@ font: 24px, &quot;微软雅黑&quot;;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border: 2px solid rgb(255, 255, 255);
-	font: 16px, &quot;微软雅黑&quot;;
-</string>
+	font: 18px, &quot;微软雅黑&quot;;
+color:yellow;</string>
    </property>
    <property name="text">
     <string/>
@@ -242,7 +242,8 @@ font: 24px, &quot;微软雅黑&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">	font: 16px, &quot;微软雅黑&quot;;
+    <string notr="true">	font: 18px, &quot;微软雅黑&quot;;
+color:yellow;
 border: 2px solid rgb(255, 255, 255);
 </string>
    </property>
@@ -283,8 +284,8 @@ border: 2px solid rgb(255, 255, 255);
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">	font: 16px, &quot;微软雅黑&quot;;
-border: 2px solid rgb(255, 255, 255);
+    <string notr="true">	font: 18px, &quot;微软雅黑&quot;;
+color:yellow;border: 2px solid rgb(255, 255, 255);
 </string>
    </property>
    <property name="text">

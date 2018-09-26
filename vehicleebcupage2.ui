@@ -23,12 +23,16 @@ QLabel
 	font: 20px, &quot;微软雅黑&quot;;
 	color:white;
 background-color:blue;
+
 }
 QPushButton
 {
-	background-color:brown ;
+	font: 20px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 128, 128);
 	border-top: 2px solid white;	
 	border-left: 2px solid white;
+border-radius:8px;
 }</string>
   </property>
   <widget class="QLabel" name="ASPM1_2lbl">
@@ -60,7 +64,7 @@ QPushButton
     <string notr="true">background-color:black;</string>
    </property>
    <property name="text">
-    <string>BC压(Bar)</string>
+    <string>BC压(bar)</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -96,12 +100,12 @@ QPushButton
    </property>
    <property name="styleSheet">
     <string notr="true">font:30px;
-color:white;
-background-color:brown;
+color:black;
+background-color:orange;
 border-radius:8px;</string>
    </property>
    <property name="text">
-    <string>▲</string>
+    <string>︿</string>
    </property>
   </widget>
   <widget class="QLabel" name="BCPM1_1lbl">
@@ -217,7 +221,7 @@ border-radius:8px;</string>
    </property>
    <property name="text">
     <string>停放制动
-缸压(Bar)</string>
+缸压(bar)</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -483,7 +487,7 @@ border-radius:8px;</string>
    </property>
    <property name="text">
     <string>空簧压力
-(Bar)</string>
+(bar)</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -516,11 +520,10 @@ border-radius:8px;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color:gray;
-font:14px;
 border-radius:10px;
-color:brown;
-background-color:lightgray;
-</string>
+font:14px;
+color:yellow;
+background-color:darkgray;</string>
    </property>
    <property name="text">
     <string>
@@ -565,7 +568,7 @@ background-color:lightgray;
     <string notr="true">background-color:black;</string>
    </property>
    <property name="text">
-    <string>载荷(1T)</string>
+    <string>载荷(T)</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -619,7 +622,7 @@ background-color:lightgray;
     <string notr="true">background-color:black;</string>
    </property>
    <property name="text">
-    <string>空气压缩机</string>
+    <string>压缩机</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -1082,7 +1085,7 @@ background-color:lightgray;
     <string notr="true">background-color:black;</string>
    </property>
    <property name="text">
-    <string>MR压(Bar)</string>
+    <string>MR压(bar)</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

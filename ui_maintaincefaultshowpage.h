@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincefaultshowpage.ui'
 **
-** Created: Thu Apr 19 11:15:44 2018
+** Created: Wed Sep 26 10:14:32 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -325,8 +325,8 @@ public:
         NextPageBtn->setGeometry(QRect(925, 460, 81, 51));
         NextPageBtn->setFocusPolicy(Qt::NoFocus);
         NextPageBtn->setStyleSheet(QString::fromUtf8("font:30px;\n"
-"color:white;\n"
-"background-color:brown;\n"
+"color:black;\n"
+"background-color:orange;\n"
 "border-radius:8px;"));
         lbl1_17 = new QLabel(MaintainceFaultShowPage);
         lbl1_17->setObjectName(QString::fromUtf8("lbl1_17"));
@@ -369,8 +369,8 @@ public:
         PrePageBtn->setGeometry(QRect(925, 400, 81, 51));
         PrePageBtn->setFocusPolicy(Qt::NoFocus);
         PrePageBtn->setStyleSheet(QString::fromUtf8("font:30px;\n"
-"color:white;\n"
-"background-color:brown;\n"
+"color:black;\n"
+"background-color:orange;\n"
 "border-radius:8px;"));
         tc2directionlbl = new QLabel(MaintainceFaultShowPage);
         tc2directionlbl->setObjectName(QString::fromUtf8("tc2directionlbl"));
@@ -821,13 +821,13 @@ public:
         startTime_row1->setText(QString());
         faultpagelbl->setText(QApplication::translate("MaintainceFaultShowPage", "\347\254\2541\351\241\265/\345\205\2611\351\241\265", 0, QApplication::UnicodeUTF8));
         faultName_row6->setText(QString());
-        NextPageBtn->setText(QApplication::translate("MaintainceFaultShowPage", "\342\226\274", 0, QApplication::UnicodeUTF8));
+        NextPageBtn->setText(QApplication::translate("MaintainceFaultShowPage", "\357\271\200", 0, QApplication::UnicodeUTF8));
         lbl1_17->setText(QApplication::translate("MaintainceFaultShowPage", "\344\273\243\347\240\201", 0, QApplication::UnicodeUTF8));
         tc1wheel1lbl->setText(QString());
         m2lbl->setText(QApplication::translate("MaintainceFaultShowPage", "1004", 0, QApplication::UnicodeUTF8));
         faultLevel_row7->setText(QString());
         tc2wheel2lbl->setText(QString());
-        PrePageBtn->setText(QApplication::translate("MaintainceFaultShowPage", "\342\226\262", 0, QApplication::UnicodeUTF8));
+        PrePageBtn->setText(QApplication::translate("MaintainceFaultShowPage", "\357\270\277", 0, QApplication::UnicodeUTF8));
         tc2directionlbl->setText(QString());
         metroCode_row1_5->setText(QString());
         faultName_row3->setText(QString());

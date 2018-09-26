@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicleebcupage2.ui'
 **
-** Created: Wed Jun 20 19:02:28 2018
+** Created: Wed Sep 26 15:36:24 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -105,12 +105,16 @@ public:
 "	font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "	color:white;\n"
 "background-color:blue;\n"
+"\n"
 "}\n"
 "QPushButton\n"
 "{\n"
-"	background-color:brown ;\n"
+"	font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"    color: white;\n"
+"	background-color: rgb(0, 128, 128);\n"
 "	border-top: 2px solid white;	\n"
 "	border-left: 2px solid white;\n"
+"border-radius:8px;\n"
 "}"));
         ASPM1_2lbl = new QLabel(VehicleEBCUPage2);
         ASPM1_2lbl->setObjectName(QString::fromUtf8("ASPM1_2lbl"));
@@ -130,8 +134,8 @@ public:
         NextPageBtn->setGeometry(QRect(920, 260, 81, 51));
         NextPageBtn->setFocusPolicy(Qt::NoFocus);
         NextPageBtn->setStyleSheet(QString::fromUtf8("font:30px;\n"
-"color:white;\n"
-"background-color:brown;\n"
+"color:black;\n"
+"background-color:orange;\n"
 "border-radius:8px;"));
         BCPM1_1lbl = new QLabel(VehicleEBCUPage2);
         BCPM1_1lbl->setObjectName(QString::fromUtf8("BCPM1_1lbl"));
@@ -238,11 +242,10 @@ public:
         lbl1_13->setObjectName(QString::fromUtf8("lbl1_13"));
         lbl1_13->setGeometry(QRect(910, 250, 101, 151));
         lbl1_13->setStyleSheet(QString::fromUtf8("background-color:gray;\n"
-"font:14px;\n"
 "border-radius:10px;\n"
-"color:brown;\n"
-"background-color:lightgray;\n"
-""));
+"font:14px;\n"
+"color:yellow;\n"
+"background-color:darkgray;"));
         lbl1_13->setAlignment(Qt::AlignCenter);
         MRPTC2lbl = new QLabel(VehicleEBCUPage2);
         MRPTC2lbl->setObjectName(QString::fromUtf8("MRPTC2lbl"));
@@ -476,9 +479,9 @@ public:
     {
         VehicleEBCUPage2->setWindowTitle(QApplication::translate("VehicleEBCUPage2", "Form", 0, QApplication::UnicodeUTF8));
         ASPM1_2lbl->setText(QString());
-        lbl1_2->setText(QApplication::translate("VehicleEBCUPage2", "BC\345\216\213(Bar)", 0, QApplication::UnicodeUTF8));
+        lbl1_2->setText(QApplication::translate("VehicleEBCUPage2", "BC\345\216\213(bar)", 0, QApplication::UnicodeUTF8));
         PLoadMP1lbl->setText(QString());
-        NextPageBtn->setText(QApplication::translate("VehicleEBCUPage2", "\342\226\262", 0, QApplication::UnicodeUTF8));
+        NextPageBtn->setText(QApplication::translate("VehicleEBCUPage2", "\357\270\277", 0, QApplication::UnicodeUTF8));
         BCPM1_1lbl->setText(QString());
         MRPM1lbl->setText(QString());
         PLoadM1lbl->setText(QString());
@@ -486,7 +489,7 @@ public:
         BCPMP1_1lbl->setText(QString());
         lbl1_8->setText(QString());
         lbl1_6->setText(QApplication::translate("VehicleEBCUPage2", "\345\201\234\346\224\276\345\210\266\345\212\250\n"
-"\347\274\270\345\216\213(Bar)", 0, QApplication::UnicodeUTF8));
+"\347\274\270\345\216\213(bar)", 0, QApplication::UnicodeUTF8));
         LoadTC1lbl->setText(QString());
         ACPTC2_1lbl->setText(QString());
         BCPMP2_2lbl->setText(QString());
@@ -503,7 +506,7 @@ public:
         ASPMP1_2lbl->setText(QString());
         ASPTC1_1lbl->setText(QString());
         lbl1->setText(QApplication::translate("VehicleEBCUPage2", "\347\251\272\347\260\247\345\216\213\345\212\233\n"
-"(Bar)", 0, QApplication::UnicodeUTF8));
+"(bar)", 0, QApplication::UnicodeUTF8));
         BCPM1_2lbl->setText(QString());
         lbl1_13->setText(QApplication::translate("VehicleEBCUPage2", "\n"
 "\n"
@@ -514,10 +517,10 @@ public:
 "\n"
 "\347\254\2542\351\241\265/\345\205\2612\351\241\265", 0, QApplication::UnicodeUTF8));
         MRPTC2lbl->setText(QString());
-        lbl1_3->setText(QApplication::translate("VehicleEBCUPage2", "\350\275\275\350\215\267(1T)", 0, QApplication::UnicodeUTF8));
+        lbl1_3->setText(QApplication::translate("VehicleEBCUPage2", "\350\275\275\350\215\267(T)", 0, QApplication::UnicodeUTF8));
         ASPTC1_2lbl->setText(QString());
         lbl1_11->setText(QString());
-        lbl1_5->setText(QApplication::translate("VehicleEBCUPage2", "\347\251\272\346\260\224\345\216\213\347\274\251\346\234\272", 0, QApplication::UnicodeUTF8));
+        lbl1_5->setText(QApplication::translate("VehicleEBCUPage2", "\345\216\213\347\274\251\346\234\272", 0, QApplication::UnicodeUTF8));
         LoadM1lbl->setText(QString());
         lbl1_12->setText(QString());
         BCPMP2_1lbl->setText(QString());
@@ -545,7 +548,7 @@ public:
         lbl1_14->setText(QString());
         MRPTC1bg1lbl->setText(QString());
         MRPTC2bg1lbl->setText(QString());
-        lbl1_15->setText(QApplication::translate("VehicleEBCUPage2", "MR\345\216\213(Bar)", 0, QApplication::UnicodeUTF8));
+        lbl1_15->setText(QApplication::translate("VehicleEBCUPage2", "MR\345\216\213(bar)", 0, QApplication::UnicodeUTF8));
         MRPMP1bg1lbl->setText(QString());
         MRPM1bg1lbl->setText(QString());
         MRPM2bg1lbl->setText(QString());

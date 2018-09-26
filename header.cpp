@@ -43,6 +43,12 @@ Header::Header(QWidget *parent) :
     vehicleBCUHelpPage->move ((QApplication::desktop()->width() - vehicleBCUHelpPage->width())/2,(QApplication::desktop()->height() - vehicleBCUHelpPage->height())/2);
     vehicleBCUHelpPage->hide();
 
+    vehicleBCUHelpPage2 = new VehicleBCUHelpPage2();
+    vehicleBCUHelpPage2->setGeometry(112,80,vehicleBCUHelpPage2->width(),vehicleBCUHelpPage2->height());
+    vehicleBCUHelpPage2->setWindowFlags(Qt::FramelessWindowHint);
+    vehicleBCUHelpPage2->move ((QApplication::desktop()->width() - vehicleBCUHelpPage2->width())/2,(QApplication::desktop()->height() - vehicleBCUHelpPage2->height())/2);
+    vehicleBCUHelpPage2->hide();
+
     vehicleDCUHelpPage = new VehicleDCUHelpPage();
     vehicleDCUHelpPage->setGeometry(112,80,vehicleDCUHelpPage->width(),vehicleDCUHelpPage->height());
     vehicleDCUHelpPage->setWindowFlags(Qt::FramelessWindowHint);
@@ -107,8 +113,8 @@ void Header::updatePage()
     if(m_crrcFault == NULL)
         return;
     this->ui->DateTime->setText(this->database->HMI_DateTime_foruse.date().toString("yyyy-MM-dd")+"\n"+this->database->HMI_DateTime_foruse.time().toString("hh:mm:ss"));
-    this->ui->NetVoltage->setText(QString::number((float)this->database->CTHM_CatenaryVoltage_U16/10,10,1) + "V");
-    this->ui->Speed->setText(QString::number(this->database->CTHM_TrainSpeed_U16/10)+"km/h");
+    this->ui->NetVoltage->setText(QString::number(this->database->CTHM_CatenaryVoltage_U16/10));
+    this->ui->Speed->setText(QString::number(this->database->CTHM_TrainSpeed_U16/10));
 
     QString tmp ;
     if(this->database->CTHM_ATC1On_B1)
@@ -228,7 +234,7 @@ void Header::updatePage()
 }
 void Header::showEvent(QShowEvent *)
 {
-    this->ui->PageName->setText("一般信息");
+    this->ui->PageName->setText("一般\n信息");
 }
 
 void Header::setPageName(QString name)
@@ -311,7 +317,7 @@ void Header::on_HelpItemBtn_pressed()
         this->vehicleHVACHelpPage->close();
     }
 
-    if(this->currentPage == uVehicleEBCUPage || this->currentPage == uVehicleEBCUPage2)
+    if(this->currentPage == uVehicleEBCUPage)
     {
         if(!this->vehicleBCUHelpPage->isActiveWindow())
         {
@@ -345,6 +351,18 @@ void Header::on_HelpItemBtn_pressed()
     }else
     {
         this->vehicleACUHelpPage->close();
+    }
+
+    if(this->currentPage == uVehicleEBCUPage2)
+    {
+        if(!this->vehicleBCUHelpPage2->isActiveWindow())
+        {
+            this->vehicleBCUHelpPage2->close();
+        }
+        this->vehicleBCUHelpPage2->show();
+    }else
+    {
+        this->vehicleBCUHelpPage2->close();
     }
 }
 

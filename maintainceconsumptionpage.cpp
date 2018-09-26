@@ -122,9 +122,9 @@ void MaintainceConsumptionPage::updatePage()
                                                            this->database->DT1CT_ACM2ConsEnergy_U32+
                                                            this->database->DT1CT_ACM4ConsEnergy_U32-
                                                            this->database->DT1CT_DCU1RegBrkEnergy_U32-
-                                                           this->database->DT1CT_DCU1RegBrkEnergy_U32-
-                                                           this->database->DT1CT_DCU1RegBrkEnergy_U32-
-                                                           this->database->DT1CT_DCU1RegBrkEnergy_U32));
+                                                           this->database->DT1CT_DCU2RegBrkEnergy_U32-
+                                                           this->database->DT1CT_DCU3RegBrkEnergy_U32-
+                                                           this->database->DT1CT_DCU4RegBrkEnergy_U32));
 
 }
 void MaintainceConsumptionPage::timer2sEvent()

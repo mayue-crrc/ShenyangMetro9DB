@@ -632,12 +632,12 @@ color:white;
    </property>
    <property name="styleSheet">
     <string notr="true">font:30px;
-color:white;
-background-color:brown;
+color:black;
+background-color:orange;
 border-radius:8px;</string>
    </property>
    <property name="text">
-    <string>▼</string>
+    <string>﹀</string>
    </property>
   </widget>
   <widget class="QLabel" name="lbl1_17">
@@ -760,12 +760,12 @@ border:2px solid white;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font:30px;
-color:white;
-background-color:brown;
+color:black;
+background-color:orange;
 border-radius:8px;</string>
    </property>
    <property name="text">
-    <string>▲</string>
+    <string>︿</string>
    </property>
   </widget>
   <widget class="QLabel" name="tc2directionlbl">

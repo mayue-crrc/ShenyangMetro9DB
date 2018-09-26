@@ -24,6 +24,14 @@ background-color:black;
 font:18px &quot;微软雅黑&quot;;
 color: rgb(0,255,255);
 border:1px solid black;
+}QPushButton
+{
+	font: 20px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 128, 128);
+	border-top: 2px solid white;	
+	border-left: 2px solid white;
+border-radius:8px;
 }</string>
   </property>
   <widget class="QLabel" name="lbl1_15">
@@ -489,12 +497,12 @@ border:2px solid white;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font:30px;
-color:white;
-background-color:brown;
+color:black;
+background-color:orange;
 border-radius:8px;</string>
    </property>
    <property name="text">
-    <string>▼</string>
+    <string>﹀</string>
    </property>
   </widget>
   <widget class="QLabel" name="faultCode_row6">
@@ -647,10 +655,11 @@ color:black;
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:lightgray;
+    <string notr="true">background-color:gray;
 border-radius:10px;
 font:14px;
-color:brown;</string>
+color:yellow;
+background-color:darkgray;</string>
    </property>
    <property name="text">
     <string/>
@@ -871,12 +880,12 @@ color:black;
    </property>
    <property name="styleSheet">
     <string notr="true">font:30px;
-color:white;
-background-color:brown;
+color:black;
+background-color:orange;
 border-radius:8px;</string>
    </property>
    <property name="text">
-    <string>▲</string>
+    <string>︿</string>
    </property>
   </widget>
   <widget class="QLabel" name="m1wheel2lbl">

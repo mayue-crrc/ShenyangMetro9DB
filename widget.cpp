@@ -110,41 +110,41 @@ Widget::Widget(QWidget *parent) :
     this->navigator->show();
 
     this->vehicleRunStatePage = new VehicleRunStatePage(this);
-    this->vehicleRunStatePage->setMyBase(uMiddle,QString("一般信息"));    
+    this->vehicleRunStatePage->setMyBase(uMiddle,QString("一般\n信息"));
     this->vehicleRunStatePage->show();
 
     this->vehicleMaintaincePage = new VehicleMaintaincePage(this);
-    this->vehicleMaintaincePage->setMyBase(uMiddle,QString("维护菜单"));
+    this->vehicleMaintaincePage->setMyBase(uMiddle,QString("维护\n菜单"));
     this->vehicleMaintaincePage->hide();
 
     this->maintaincePortsDataPage = new MaintaincePortsDataPage(this);
-    this->maintaincePortsDataPage->setMyBase(uLargeMiddle,QString("数据传输"));
+    this->maintaincePortsDataPage->setMyBase(uLargeMiddle,QString("数据\n传输"));
     this->maintaincePortsDataPage->hide();
 
     this->maintainceHMICheckPage = new MaintainceHMICheckPage(this);
-    this->maintainceHMICheckPage->setMyBase(uHuge,QString("像素检查"));
+    this->maintainceHMICheckPage->setMyBase(uHuge,QString("像素\n检查"));
     this->maintainceHMICheckPage->hide();
 
     this->maintainceTCMSStatesPage = new MaintainceTCMSStatesPage(this);
-    this->maintainceTCMSStatesPage->setMyBase(uLargeMiddleTrainGraph,QString("传输检查"));
+    this->maintainceTCMSStatesPage->setMyBase(uLargeMiddleTrainGraph,QString("传输\n检查"));
     this->maintainceTCMSStatesPage->hide();
 
     this->maintainceHMIInitsetPage = new MaintainceHMIInitsetPage(this);
-    this->maintainceHMIInitsetPage->setMyBase(uLargeMiddle,QString("HMI设置"));
+    this->maintainceHMIInitsetPage->setMyBase(uLargeMiddle,QString("HMI\n设置"));
     this->maintainceHMIInitsetPage->hide();
 
 
 
     this->maintainceVersionPage = new MaintainceVersionPage(this);
-    this->maintainceVersionPage->setMyBase(uLargeMiddleTrainGraph,QString("软件版本"));
+    this->maintainceVersionPage->setMyBase(uLargeMiddleTrainGraph,QString("软件\n版本"));
     this->maintainceVersionPage->hide();
 
     this->maintainceWheelsetPage = new MaintainceWheelsetPage(this);
-    this->maintainceWheelsetPage->setMyBase(uLargeMiddleTrainGraph,QString("轮径设置"));
+    this->maintainceWheelsetPage->setMyBase(uLargeMiddleTrainGraph,QString("轮径\n设置"));
     this->maintainceWheelsetPage->hide();
 
     this->maintainceDatetimesetPage = new MaintainceDatetimesetPage(this);
-    this->maintainceDatetimesetPage->setMyBase(uLargeMiddle,QString("时间设定"));
+    this->maintainceDatetimesetPage->setMyBase(uLargeMiddle,QString("时间\n设定"));
     this->maintainceDatetimesetPage->hide();
 
     this->maintainceLoadPage = new MaintainceLoadPage(this);
@@ -152,7 +152,7 @@ Widget::Widget(QWidget *parent) :
     this->maintainceLoadPage->hide();
 
     this->maintainceRunDistancePage = new MaintainceRunDistancePage(this);
-    this->maintainceRunDistancePage->setMyBase(uLargeMiddleTrainGraph,QString("行驶距离"));
+    this->maintainceRunDistancePage->setMyBase(uLargeMiddleTrainGraph,QString("行驶\n距离"));
     this->maintainceRunDistancePage->hide();
 
     this->maintainceConsumptionPage = new MaintainceConsumptionPage(this);
@@ -160,27 +160,27 @@ Widget::Widget(QWidget *parent) :
     this->maintainceConsumptionPage->hide();
 
     this->maintainceACPRunPage = new MaintainceACPRunPage(this);
-    this->maintainceACPRunPage->setMyBase(uLargeMiddleTrainGraph,QString("空压机"));
+    this->maintainceACPRunPage->setMyBase(uLargeMiddleTrainGraph,QString("空压机\n运行"));
     this->maintainceACPRunPage->hide();
 
     this->maintainceBCUTestPage = new MaintainceBCUTestPage(this);
-    this->maintainceBCUTestPage->setMyBase(uLargeMiddleTrainGraph,QString("制动自检"));
+    this->maintainceBCUTestPage->setMyBase(uLargeMiddleTrainGraph,QString("制动\n自检"));
     this->maintainceBCUTestPage->hide();
 
     this->vehicleCutoffPage = new VehicleCutoffPage(this);
-    this->vehicleCutoffPage->setMyBase(uLargeMiddle,QString("切除页面"));
+    this->vehicleCutoffPage->setMyBase(uLargeMiddle,QString("切除\n页面"));
     this->vehicleCutoffPage->hide();
 
     this->vehicleResetPage = new VehicleResetPage(this);
-    this->vehicleResetPage->setMyBase(uLargeMiddle,QString("复位页面"));
+    this->vehicleResetPage->setMyBase(uLargeMiddle,QString("复位\n页面"));
     this->vehicleResetPage->hide();
 
     this->vehiclePowerResetPage = new VehiclePowerResetPage(this);
-    this->vehiclePowerResetPage->setMyBase(uLargeMiddle,QString("液磁复位"));
+    this->vehiclePowerResetPage->setMyBase(uLargeMiddle,QString("液磁\n复位"));
     this->vehiclePowerResetPage->hide();
 
     this->maintainceAllPortsPage = new MaintainceAllPortsPage(this);
-    this->maintainceAllPortsPage->setMyBase(uHuge,QString("数据端口"));
+    this->maintainceAllPortsPage->setMyBase(uHuge,QString("数据\n端口"));
     this->maintainceAllPortsPage->hide();
 
     this->vehicleEBCUPage = new VehicleEBCUPage(this);
@@ -208,36 +208,36 @@ Widget::Widget(QWidget *parent) :
     this->vehicleACPage2->hide();
 
     this->maintainceRIOMDetailPage = new MaintainceRIOMDetailPage(this);
-    this->maintainceRIOMDetailPage->setMyBase(uLargeMiddle,QString("接口信号"));
+    this->maintainceRIOMDetailPage->setMyBase(uLargeMiddle,QString("接口\n信号"));
     this->maintainceRIOMDetailPage->hide();
 
     this->vehiclePasswordPage = new VehiclePasswordPage(this);
-    this->vehiclePasswordPage->setMyBase(uLargeMiddle,QString("密码页面"));
+    this->vehiclePasswordPage->setMyBase(uLargeMiddle,QString("密码\n页面"));
     this->vehiclePasswordPage->hide();
 
     this->vehicleBypassPage = new VehicleBypassPage(this);
-    this->vehicleBypassPage->setMyBase(uMiddleTrainGraph,QString("旁路页面"));
+    this->vehicleBypassPage->setMyBase(uMiddleTrainGraph,QString("旁路\n页面"));
     this->vehicleBypassPage->hide();
 
     this->maintainceTrainNumSetPage = new MaintainceTrainNumSetPage(this);
-    this->maintainceTrainNumSetPage->setMyBase(uMiddleTrainGraph,QString("车号设定"));
+    this->maintainceTrainNumSetPage->setMyBase(uMiddleTrainGraph,QString("车号\n设定"));
     this->maintainceTrainNumSetPage->hide();
 
     this->vehicleWMSPage = new VehicleWMSPage(this);
-    this->vehicleWMSPage->setMyBase(uLargeMiddle,QString("细水雾"));
+    this->vehicleWMSPage->setMyBase(uLargeMiddle,QString("火灾\n报警"));
     this->vehicleWMSPage->hide();
 
     this->maintainceDataManagementPage = new MaintainceDataManagementPage(this);
-    this->maintainceDataManagementPage->setMyBase(uLargeMiddle,QString("数据管理"));
+    this->maintainceDataManagementPage->setMyBase(uLargeMiddle,QString("数据\n管理"));
     this->maintainceDataManagementPage->hide();
 
     this->vehicleCurrentFaultPage = new VehicleCurrentFaultPage(this);
-    this->vehicleCurrentFaultPage->setMyBase(uMiddle,QString("当前车况"));
+    this->vehicleCurrentFaultPage->setMyBase(uMiddle,QString("当前\n车况"));
     this->vehicleCurrentFaultPage->GetcrrcFaultInfo(crrcFault);
     this->vehicleCurrentFaultPage->hide();
 
     this->vehicleHistoryFaultPage = new VehicleHistoryFaultPage(this);
-    this->vehicleHistoryFaultPage->setMyBase(uMiddle,QString("故障履历"));
+    this->vehicleHistoryFaultPage->setMyBase(uMiddle,QString("故障\n履历"));
     this->vehicleHistoryFaultPage->GetcrrcFaultInfo(crrcFault);
     this->vehicleHistoryFaultPage->hide();
 
@@ -250,11 +250,11 @@ Widget::Widget(QWidget *parent) :
     this->vehicleUnactivePage->hide();
 
     this->maintainceFaultShowPage = new MaintainceFaultShowPage(this);
-    this->maintainceFaultShowPage->setMyBase(uLargeMiddle,QString("故障筛选"));
+    this->maintainceFaultShowPage->setMyBase(uLargeMiddle,QString("故障\n筛选"));
     this->maintainceFaultShowPage->hide();
 
     this->maintainceFaultQueryPage = new MaintainceFaultQueryPage(this);
-    this->maintainceFaultQueryPage->setMyBase(uLargeMiddle,QString("故障筛选"));
+    this->maintainceFaultQueryPage->setMyBase(uLargeMiddle,QString("故障\n筛选"));
     this->maintainceFaultQueryPage->hide();
 
     this->widgets.insert(uVehicleRunStatePage,this->vehicleRunStatePage);

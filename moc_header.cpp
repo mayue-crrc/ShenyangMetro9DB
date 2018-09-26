@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'header.h'
 **
-** Created: Wed Jun 27 08:48:16 2018
+** Created: Wed Sep 26 11:37:58 2018
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

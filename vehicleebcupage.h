@@ -23,6 +23,7 @@ private:
     void setlabelstates(QLabel* lbl,bool state,bool isonline);
     void setlabelstates(QLabel* lbl,bool p1,bool p2,bool isonline);
     void setonlinestates(QLabel* lbl,bool state);
+    void setHoldlabelstates(QLabel* lbl,bool state,bool isonline);
 
 private slots:
     void on_NextPageBtn_pressed();
