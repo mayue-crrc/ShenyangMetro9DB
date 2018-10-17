@@ -261,8 +261,11 @@ public:
                 DT1CT_TCMSRunTimeMonth_U8,DT1CT_TCMSRunTimeDay_U8,
                 DT1CT_DistanceTimeYear_U8,DT1CT_DistanceTimeMonth_U8,DT1CT_DistanceTimeDay_U8;
     unsigned short int DT1CT_TCMSRunTimeToday_U16,DT1CT_TCMSDistanceToday_U16;
+
     //CCU-ERM
-    bool CTDT_Mp1ADDLowPanto_B1,CTDT_Mp2ADDLowPanto_B1;
+    bool CTDT_Mp1ADDLowPanto_B1,CTDT_Mp2ADDLowPanto_B1,
+         CTDT_ACM1InnerSC_B1,CTDT_ACM2InnerSC_B1,CTDT_ACM3InnerSC_B1,CTDT_ACM4InnerSC_B1,
+         CTDT_ACM1OuterSC_B1,CTDT_ACM2OuterSC_B1,CTDT_ACM3OuterSC_B1,CTDT_ACM4OuterSC_B1;
 
 
 
@@ -656,6 +659,9 @@ public:
                     AX4CT_SWVersion1_I16,AX4CT_SWVersion2_I16,AX4CT_SWVersion3_I16,AX4CT_SWVersion4_I16;
     bool AX4CT_AuxInvVoltageValid_B1, AX4CT_ACMLineActived_B1,AX4CT_DCVoltageValid_B1,AX4CT_BatteryTempValid_B1
             ,AX4CT_BCMFlt_B1,AX4CT_BCMCharging_B1;
+    //CCU-ACM
+    bool CTAX1_ShortCurcuitCheck_B1,CTAX2_ShortCurcuitCheck_B1,CTAX3_ShortCurcuitCheck_B1,CTAX4_ShortCurcuitCheck_B1;
+
 
     //HVAC - CCU 9i0
     //HVAC1

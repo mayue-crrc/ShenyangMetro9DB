@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'vehicleresetpage.h'
 **
-** Created: Tue Sep 25 15:17:14 2018
+** Created: Wed Oct 17 10:10:57 2018
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

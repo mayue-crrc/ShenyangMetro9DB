@@ -18,7 +18,9 @@ public:
 private:
     Ui::VehicleSIVPage *ui;
     void setlabelstates(QLabel* lbl,bool state,bool isonline);
-    void setlabelstates(QLabel* lbl,int states,bool isonline);
+    void setlabelstates(QLabel* lbl,bool state1,bool state2,bool isonline);
+
+    void setlabelstates(QLabel* lbl,int states,bool isonline,bool selftest);
     void setlabelstates(QLabel* lbl,bool valid,float value,int per,bool isonline);
 };
 

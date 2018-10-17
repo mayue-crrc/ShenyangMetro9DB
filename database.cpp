@@ -82,7 +82,7 @@ Database::Database()
     HMiCT_ACDETestStartFlag_B1 = false;
 
     HMiCT_HMISWVerH_U8 = 2;
-    HMiCT_HMISWVerL_U8 = 19;
+    HMiCT_HMISWVerL_U8 = 20;
 
     for(int i =0; i< 12;i++)
     {
@@ -1234,7 +1234,14 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         //CCU-CRM FAULT
         this->CTDT_Mp1ADDLowPanto_B1 = crrcMvb->getBool(0x318,3,3);
         this->CTDT_Mp2ADDLowPanto_B1 = crrcMvb->getBool(0x318,3,4);
-
+        this->CTDT_ACM1InnerSC_B1 = crrcMvb->getBool(0x318,8,0);
+        this->CTDT_ACM2InnerSC_B1 = crrcMvb->getBool(0x318,8,1);
+        this->CTDT_ACM3InnerSC_B1 = crrcMvb->getBool(0x318,8,2);
+        this->CTDT_ACM4InnerSC_B1 = crrcMvb->getBool(0x318,8,3);
+        this->CTDT_ACM1OuterSC_B1 = crrcMvb->getBool(0x318,8,4);
+        this->CTDT_ACM2OuterSC_B1 = crrcMvb->getBool(0x318,8,5);
+        this->CTDT_ACM3OuterSC_B1 = crrcMvb->getBool(0x318,8,6);
+        this->CTDT_ACM4OuterSC_B1 = crrcMvb->getBool(0x318,8,7);
     }
 
 
@@ -1389,6 +1396,12 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->AX4CT_BatteryTempValid_B1 = this->crrcMvb->getBool(0x521,31,1);
         this->AX4CT_BCMFlt_B1 = this->crrcMvb->getBool(0x521,30,0);
         this->AX4CT_BCMCharging_B1 = this->crrcMvb->getBool(0x521,30,1);
+
+        this->CTAX1_ShortCurcuitCheck_B1  =this->crrcMvb->getBool(0x509,12,5);
+        this->CTAX2_ShortCurcuitCheck_B1  =this->crrcMvb->getBool(0x519,12,5);
+        this->CTAX3_ShortCurcuitCheck_B1  =this->crrcMvb->getBool(0x509,12,5);
+        this->CTAX4_ShortCurcuitCheck_B1  =this->crrcMvb->getBool(0x509,12,5);
+
     }
 
     /////*******HVAC -- CCU**********///////

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'vehicleunactivepage.h'
 **
-** Created: Tue Sep 25 15:17:30 2018
+** Created: Wed Oct 17 10:11:10 2018
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
