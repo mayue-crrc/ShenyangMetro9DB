@@ -19,7 +19,7 @@ public:
 private:
     Ui::VehicleCutoffPage *ui;
     void updatePage();
-    void setlabelstates(QLabel* lbl,int states,bool isonline);
+    void setlabelstates(QLabel* lbl,int states,bool state2,bool isonline);
     void setlabelstates(QLabel* lbl,bool state,bool state2,bool isonline);
     void setlabelstates(QLabel* lbl,bool state);
 

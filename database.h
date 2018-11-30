@@ -637,28 +637,36 @@ public:
     //ACM-CCU 5i1--5i4
     //ACM1
     signed short int AX1CT_DCUALifeSignal1_I16,AX1CT_DCVoltage_I16,AX1CT_AuxInvStatus_I16,AX1CT_AuxInvLoadVoltage_I16,
-                    AX1CT_BatteryTemp_I16,AX1CT_AuxInvLoadCurrent_I16,AX1CT_DCCurrent_I16,
-                    AX1CT_SWVersion1_I16,AX1CT_SWVersion2_I16,AX1CT_SWVersion3_I16,AX1CT_SWVersion4_I16;
+                    AX1CT_BatteryTemp_I16,AX1CT_AuxInvLoadCurrent_I16,AX1CT_DCCurrent_I16,AX1CT_BatteryChargingCurrent_I16,
+                    AX1CT_SWVersion1_I16,AX1CT_SWVersion2_I16,AX1CT_SWVersion3_I16,AX1CT_SWVersion4_I16,
+                    AX1CT_BatteryLineVoltage_I16,AX1CT_BatteryLineCurrent_I16;
     bool AX1CT_AuxInvVoltageValid_B1, AX1CT_ACMLineActived_B1,AX1CT_DCVoltageValid_B1,AX1CT_BatteryTempValid_B1,
-            AX1CT_BCMFlt_B1,AX1CT_BCMCharging_B1;
+            AX1CT_BCMFlt_B1,AX1CT_BCMCharging_B1,AX1CT_AuxInvCutFeedback_B1
+;
     //ACM2
     signed short int AX2CT_DCUALifeSignal1_I16,AX2CT_DCVoltage_I16,AX2CT_AuxInvStatus_I16,AX2CT_AuxInvLoadVoltage_I16,
-                    AX2CT_BatteryTemp_I16,AX2CT_AuxInvLoadCurrent_I16,AX2CT_DCCurrent_I16,
-                    AX2CT_SWVersion1_I16,AX2CT_SWVersion2_I16,AX2CT_SWVersion3_I16,AX2CT_SWVersion4_I16;
+                    AX2CT_BatteryTemp_I16,AX2CT_AuxInvLoadCurrent_I16,AX2CT_DCCurrent_I16,AX2CT_BatteryChargingCurrent_I16,
+                    AX2CT_SWVersion1_I16,AX2CT_SWVersion2_I16,AX2CT_SWVersion3_I16,AX2CT_SWVersion4_I16,
+                    AX2CT_BatteryLineVoltage_I16,AX2CT_BatteryLineCurrent_I16;
+
     bool AX2CT_AuxInvVoltageValid_B1, AX2CT_ACMLineActived_B1,AX2CT_DCVoltageValid_B1,AX2CT_BatteryTempValid_B1
-        ,AX2CT_BCMFlt_B1,AX2CT_BCMCharging_B1;
+        ,AX2CT_BCMFlt_B1,AX2CT_BCMCharging_B1,AX2CT_AuxInvCutFeedback_B1;
     //ACM3
     signed short int AX3CT_DCUALifeSignal1_I16,AX3CT_DCVoltage_I16,AX3CT_AuxInvStatus_I16,AX3CT_AuxInvLoadVoltage_I16,
-                    AX3CT_BatteryTemp_I16,AX3CT_AuxInvLoadCurrent_I16,AX3CT_DCCurrent_I16,
-                    AX3CT_SWVersion1_I16,AX3CT_SWVersion2_I16,AX3CT_SWVersion3_I16,AX3CT_SWVersion4_I16;
+                    AX3CT_BatteryTemp_I16,AX3CT_AuxInvLoadCurrent_I16,AX3CT_DCCurrent_I16,AX3CT_BatteryChargingCurrent_I16,
+                    AX3CT_SWVersion1_I16,AX3CT_SWVersion2_I16,AX3CT_SWVersion3_I16,AX3CT_SWVersion4_I16,
+                    AX3CT_BatteryLineVoltage_I16,AX3CT_BatteryLineCurrent_I16;
+
     bool AX3CT_AuxInvVoltageValid_B1, AX3CT_ACMLineActived_B1,AX3CT_DCVoltageValid_B1,AX3CT_BatteryTempValid_B1
-            ,AX3CT_BCMFlt_B1,AX3CT_BCMCharging_B1;
+            ,AX3CT_BCMFlt_B1,AX3CT_BCMCharging_B1,AX3CT_AuxInvCutFeedback_B1;
     //ACM4
     signed short int AX4CT_DCUALifeSignal1_I16,AX4CT_DCVoltage_I16,AX4CT_AuxInvStatus_I16,AX4CT_AuxInvLoadVoltage_I16,
-                    AX4CT_BatteryTemp_I16,AX4CT_AuxInvLoadCurrent_I16,AX4CT_DCCurrent_I16,
-                    AX4CT_SWVersion1_I16,AX4CT_SWVersion2_I16,AX4CT_SWVersion3_I16,AX4CT_SWVersion4_I16;
+                    AX4CT_BatteryTemp_I16,AX4CT_AuxInvLoadCurrent_I16,AX4CT_DCCurrent_I16,AX4CT_BatteryChargingCurrent_I16,
+                    AX4CT_SWVersion1_I16,AX4CT_SWVersion2_I16,AX4CT_SWVersion3_I16,AX4CT_SWVersion4_I16,
+                    AX4CT_BatteryLineVoltage_I16,AX4CT_BatteryLineCurrent_I16;
+
     bool AX4CT_AuxInvVoltageValid_B1, AX4CT_ACMLineActived_B1,AX4CT_DCVoltageValid_B1,AX4CT_BatteryTempValid_B1
-            ,AX4CT_BCMFlt_B1,AX4CT_BCMCharging_B1;
+            ,AX4CT_BCMFlt_B1,AX4CT_BCMCharging_B1,AX4CT_AuxInvCutFeedback_B1;
     //CCU-ACM
     bool CTAX1_ShortCurcuitCheck_B1,CTAX2_ShortCurcuitCheck_B1,CTAX3_ShortCurcuitCheck_B1,CTAX4_ShortCurcuitCheck_B1;
 
@@ -801,7 +809,15 @@ public:
         ,WSCT_FrameBWaterInTapStatus_B1,WSCT_FrameBWaterOutTapStatus_B1,WSCT_FrameBNi1PressureStatus_B1,
         WSCT_FrameBNi2PressureStatus_B1,WSCT_FrameBWaterHeaterStatus_B1,WSCT_FrameBWaterStatus_B1,
         WSCT_FrameAWaterInTapStatus_B1,WSCT_FrameAWaterOutTapStatus_B1,WSCT_FrameANi1PressureStatus_B1,
-        WSCT_FrameANi2PressureStatus_B1,WSCT_FrameAWaterHeaterStatus_B1,WSCT_FrameAWaterStatus_B1;
+        WSCT_FrameANi2PressureStatus_B1,WSCT_FrameAWaterHeaterStatus_B1,WSCT_FrameAWaterStatus_B1,
+        WSCT_Car6CabDetecterFlt_B1,WSCT_Car6HDetecterFlt_B1,WSCT_Car6RDetecterFlt_B1,WSCT_Car6FDetecterFlt_B1
+        ,WSCT_Car6DDetecterFlt_B1,WSCT_Car6Zone1DetecterFlt_B1,WSCT_Car6Zone2DetecterFlt_B1
+        ,WSCT_Car5RDetecterFlt_B1,WSCT_Car5FDetecterFlt_B1,WSCT_Car5Zone1DetecterFlt_B1,WSCT_Car5Zone2DetecterFlt_B1
+        ,WSCT_Car4RDetecterFlt_B1,WSCT_Car4FDetecterFlt_B1,WSCT_Car4Zone1DetecterFlt_B1,WSCT_Car4Zone2DetecterFlt_B1
+        ,WSCT_Car1CabDetecterFlt_B1,WSCT_Car1HDetecterFlt_B1,WSCT_Car1RDetecterFlt_B1,WSCT_Car1FDetecterFlt_B1
+        ,WSCT_Car1DDetecterFlt_B1,WSCT_Car1Zone1DetecterFlt_B1,WSCT_Car1Zone2DetecterFlt_B1
+        ,WSCT_Car2RDetecterFlt_B1,WSCT_Car2FDetecterFlt_B1,WSCT_Car2Zone1DetecterFlt_B1,WSCT_Car2Zone2DetecterFlt_B1
+        ,WSCT_Car3RDetecterFlt_B1,WSCT_Car3FDetecterFlt_B1,WSCT_Car3Zone1DetecterFlt_B1,WSCT_Car3Zone2DetecterFlt_B1;
     unsigned short int WSCT_TC1Fault,WSCT_MP1Fault,WSCT_M1Fault,WSCT_M2Fault,WSCT_MP2Fault,WSCT_TC2Fault;
 
     //PIS C1/60 C1/61

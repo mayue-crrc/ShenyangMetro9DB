@@ -12,15 +12,72 @@ VehicleHistoryFaultPage::VehicleHistoryFaultPage(QWidget *parent) :
     m_totalPageIndex = 1;
     m_currentPageFaultNum = 0;
     m_totalFaultNum = 0;
+    m_currentButtonsDown = 0;
+    this->ui->BTNClose->raise();
+    this->ui->GROUPBOXFault->hide();
+
+    QList<QPushButton* > m_buttons;
+    m_buttons<< this->ui->BTNRow<<this->ui->BTNRow_2<<this->ui->BTNRow_3<<this->ui->BTNRow_4<<this->ui->BTNRow_5<<
+              this->ui->BTNRow_6<<this->ui->BTNRow_7<<this->ui->BTNRow_8<<this->ui->BTNRow_9;
+
+    foreach(QPushButton* btn,m_buttons)
+    {
+        connect(btn,SIGNAL(pressed()),this,SLOT(ButtonsPressEvent()));
+    }
 }
 
 VehicleHistoryFaultPage::~VehicleHistoryFaultPage()
 {
     delete ui;
 }
+void VehicleHistoryFaultPage::SetFaultFdetail(QString Fdetail)
+{
+    QStringList stringList = Fdetail.split("|");
+    QString t_detail = "";
+    if(stringList.size() > 1)
+    {
+        for(int i = 0; i < stringList.size();i++)
+        {
+            t_detail = t_detail + stringList.at(i)+"\n";
+        }
+        ui->FaultTips->setText(t_detail);//Fdetail);
+    }else
+    {
+        ui->FaultTips->setText(Fdetail);
+
+    }
+
+}
 void VehicleHistoryFaultPage::GetcrrcFaultInfo(CrrcFault* crrcFault)
 {
     m_crrcFault = crrcFault;
+}
+void VehicleHistoryFaultPage::ButtonsPressEvent()
+{
+    if(m_currentPageIndex<m_totalPageIndex)//not last page
+        {
+            m_currentButtonsDown = ((QPushButton*)this->sender())->whatsThis().toInt();
+
+            this->ui->GROUPBOXFault->show();
+            this->SetFaultFdetail(CrrcFault::getCrrcFault()->getHistoryFaultDescription(m_currentButtonsDown+(m_currentPageIndex-1)*MAXCNTPERPAGE));
+            this->ui->Faultname->setText("故障名称: "+CrrcFault::getCrrcFault()->getHistoryFaultCode(m_currentButtonsDown+(m_currentPageIndex-1)*MAXCNTPERPAGE)+"  "+
+                                         CrrcFault::getCrrcFault()->getHistoryFaultName(m_currentButtonsDown+(m_currentPageIndex-1)*MAXCNTPERPAGE));
+        }else//last page
+        {
+
+            if(((QPushButton*)this->sender())->whatsThis().toInt() < m_currentPageFaultNum)//draw fault
+            {
+                m_currentButtonsDown = ((QPushButton*)this->sender())->whatsThis().toInt();
+
+                this->ui->GROUPBOXFault->show();
+                this->SetFaultFdetail(CrrcFault::getCrrcFault()->getHistoryFaultDescription(m_currentButtonsDown+(m_currentPageIndex-1)*MAXCNTPERPAGE));
+                this->ui->Faultname->setText("故障名称: "+CrrcFault::getCrrcFault()->getHistoryFaultCode(m_currentButtonsDown+(m_currentPageIndex-1)*MAXCNTPERPAGE)+"  "+
+                                             CrrcFault::getCrrcFault()->getHistoryFaultName(m_currentButtonsDown+(m_currentPageIndex-1)*MAXCNTPERPAGE));
+            }
+
+        }
+
+
 }
 void VehicleHistoryFaultPage::updatePage()
 {
@@ -155,3 +212,8 @@ void VehicleHistoryFaultPage::on_NextPageBtn_pressed()
         m_currentPageIndex++;
 }
 
+
+void VehicleHistoryFaultPage::on_BTNClose_pressed()
+{
+    this->ui->GROUPBOXFault->hide();
+}

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'vehiclecurrentfaultpage.h'
 **
-** Created: Wed Oct 17 10:11:08 2018
+** Created: Fri Nov 30 11:13:17 2018
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_VehicleCurrentFaultPage[] = {
        4,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -32,15 +32,17 @@ static const uint qt_meta_data_VehicleCurrentFaultPage[] = {
 
  // slots: signature, parameters, type, tag, flags
       25,   24,   24,   24, 0x08,
-      50,   24,   24,   24, 0x08,
+      47,   24,   24,   24, 0x08,
+      72,   24,   24,   24, 0x08,
+      96,   24,   24,   24, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_VehicleCurrentFaultPage[] = {
-    "VehicleCurrentFaultPage\0\0"
+    "VehicleCurrentFaultPage\0\0on_BTNClose_pressed()\0"
     "on_NextPageBtn_pressed()\0"
-    "on_PrePageBtn_pressed()\0"
+    "on_PrePageBtn_pressed()\0ButtonsPressEvent()\0"
 };
 
 const QMetaObject VehicleCurrentFaultPage::staticMetaObject = {
@@ -72,11 +74,13 @@ int VehicleCurrentFaultPage::qt_metacall(QMetaObject::Call _c, int _id, void **_
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: on_NextPageBtn_pressed(); break;
-        case 1: on_PrePageBtn_pressed(); break;
+        case 0: on_BTNClose_pressed(); break;
+        case 1: on_NextPageBtn_pressed(); break;
+        case 2: on_PrePageBtn_pressed(); break;
+        case 3: ButtonsPressEvent(); break;
         default: ;
         }
-        _id -= 2;
+        _id -= 4;
     }
     return _id;
 }

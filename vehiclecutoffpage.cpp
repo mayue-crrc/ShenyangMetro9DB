@@ -41,10 +41,10 @@ void VehicleCutoffPage::updatePage()
 {
 
 
-    setlabelstates(this->ui->ACMStateTC1lbl,this->database->AX1CT_AuxInvStatus_I16,this->database->CTHM_ACU1On_B1);
-    setlabelstates(this->ui->ACMStateM1lbl,this->database->AX2CT_AuxInvStatus_I16,this->database->CTHM_ACU2On_B1);
-    setlabelstates(this->ui->ACMStateM2lbl,this->database->AX3CT_AuxInvStatus_I16,this->database->CTHM_ACU3On_B1);
-    setlabelstates(this->ui->ACMStateTC2lbl,this->database->AX4CT_AuxInvStatus_I16,this->database->CTHM_ACU4On_B1);
+    setlabelstates(this->ui->ACMStateTC1lbl,this->database->AX1CT_AuxInvStatus_I16,this->database->AX1CT_AuxInvCutFeedback_B1,this->database->CTHM_ACU1On_B1);
+    setlabelstates(this->ui->ACMStateM1lbl,this->database->AX2CT_AuxInvStatus_I16,this->database->AX2CT_AuxInvCutFeedback_B1,this->database->CTHM_ACU2On_B1);
+    setlabelstates(this->ui->ACMStateM2lbl,this->database->AX3CT_AuxInvStatus_I16,this->database->AX3CT_AuxInvCutFeedback_B1,this->database->CTHM_ACU3On_B1);
+    setlabelstates(this->ui->ACMStateTC2lbl,this->database->AX4CT_AuxInvStatus_I16,this->database->AX4CT_AuxInvCutFeedback_B1,this->database->CTHM_ACU4On_B1);
 
     setlabelstates(this->ui->EBStateMP1lbl,this->database->TR1CT_EBOK_B1,this->database->CTTR1_EBCutOff_B1,this->database->CTHM_DCUM1On_B1);
     setlabelstates(this->ui->EBStateM1lbl,this->database->TR2CT_EBOK_B1,this->database->CTTR2_EBCutOff_B1,this->database->CTHM_DCUM2On_B1);
@@ -102,11 +102,14 @@ void VehicleCutoffPage::updatePage()
 
 }
 
-void VehicleCutoffPage::setlabelstates(QLabel* lbl,int states,bool isonline)
+void VehicleCutoffPage::setlabelstates(QLabel* lbl,int states,bool states2,bool isonline)
 {
     if(!isonline)
     {
         lbl->setStyleSheet(LABELWHITE);
+    }else if(states2)
+    {
+        lbl->setStyleSheet(LABELRED);//cutout
     }
     else if(states >= 20)
     {
@@ -143,7 +146,7 @@ void VehicleCutoffPage::setlabelstates(QLabel* lbl,bool state,bool state2,bool i
     }
     else if(state2)
     {
-        lbl->setStyleSheet(LABELGRAY);
+        lbl->setStyleSheet(LABELRED);
     }
     else if(state)
     {

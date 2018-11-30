@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclehistoryfaultpage.ui'
 **
-** Created: Wed Sep 26 10:14:32 2018
+** Created: Wed Oct 24 13:51:39 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -14,9 +14,11 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
+#include <QtGui/QGroupBox>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
+#include <QtGui/QTextBrowser>
 #include <QtGui/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -113,6 +115,21 @@ public:
     QLabel *lbl1_21;
     QLabel *endTime_row4;
     QLabel *endTime_row1;
+    QGroupBox *GROUPBOXFault;
+    QLabel *Faultname;
+    QLabel *lbl;
+    QTextBrowser *FaultTips;
+    QLabel *label;
+    QPushButton *BTNClose;
+    QPushButton *BTNRow_5;
+    QPushButton *BTNRow_8;
+    QPushButton *BTNRow;
+    QPushButton *BTNRow_6;
+    QPushButton *BTNRow_3;
+    QPushButton *BTNRow_2;
+    QPushButton *BTNRow_7;
+    QPushButton *BTNRow_4;
+    QPushButton *BTNRow_9;
 
     void setupUi(QWidget *VehicleHistoryFaultPage)
     {
@@ -669,6 +686,94 @@ public:
         endTime_row1->setGeometry(QRect(750, 170, 130, 41));
         endTime_row1->setStyleSheet(QString::fromUtf8("font:16px;"));
         endTime_row1->setAlignment(Qt::AlignCenter);
+        GROUPBOXFault = new QGroupBox(VehicleHistoryFaultPage);
+        GROUPBOXFault->setObjectName(QString::fromUtf8("GROUPBOXFault"));
+        GROUPBOXFault->setGeometry(QRect(212, 180, 621, 321));
+        Faultname = new QLabel(GROUPBOXFault);
+        Faultname->setObjectName(QString::fromUtf8("Faultname"));
+        Faultname->setGeometry(QRect(40, 50, 521, 31));
+        Faultname->setStyleSheet(QString::fromUtf8("color:yellow"));
+        lbl = new QLabel(GROUPBOXFault);
+        lbl->setObjectName(QString::fromUtf8("lbl"));
+        lbl->setGeometry(QRect(0, 0, 600, 300));
+        lbl->setStyleSheet(QString::fromUtf8("color:yellow;\n"
+"border:2px solid white;\n"
+"border-radius:8px;\n"
+"background-color:transparent;"));
+        FaultTips = new QTextBrowser(GROUPBOXFault);
+        FaultTips->setObjectName(QString::fromUtf8("FaultTips"));
+        FaultTips->setGeometry(QRect(40, 90, 521, 151));
+        FaultTips->setStyleSheet(QString::fromUtf8("	    font: 18px \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"color: white;\n"
+"	background-color:black;"));
+        label = new QLabel(GROUPBOXFault);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(270, 10, 91, 31));
+        label->setStyleSheet(QString::fromUtf8("color:red"));
+        BTNClose = new QPushButton(GROUPBOXFault);
+        BTNClose->setObjectName(QString::fromUtf8("BTNClose"));
+        BTNClose->setGeometry(QRect(470, 250, 98, 41));
+        lbl->raise();
+        FaultTips->raise();
+        label->raise();
+        BTNClose->raise();
+        Faultname->raise();
+        BTNRow_5 = new QPushButton(VehicleHistoryFaultPage);
+        BTNRow_5->setObjectName(QString::fromUtf8("BTNRow_5"));
+        BTNRow_5->setGeometry(QRect(30, 330, 861, 41));
+        BTNRow_5->setStyleSheet(QString::fromUtf8("background-color:transparent;border-top: 2px solid transparent;	\n"
+"border-left: 2px solid transparent;\n"
+"border-radius:8px;"));
+        BTNRow_8 = new QPushButton(VehicleHistoryFaultPage);
+        BTNRow_8->setObjectName(QString::fromUtf8("BTNRow_8"));
+        BTNRow_8->setGeometry(QRect(30, 450, 861, 41));
+        BTNRow_8->setStyleSheet(QString::fromUtf8("border-top: 2px solid transparent;	\n"
+"border-left: 2px solid transparent;\n"
+"border-radius:8px;background-color:transparent;"));
+        BTNRow = new QPushButton(VehicleHistoryFaultPage);
+        BTNRow->setObjectName(QString::fromUtf8("BTNRow"));
+        BTNRow->setGeometry(QRect(30, 170, 861, 41));
+        BTNRow->setStyleSheet(QString::fromUtf8("background-color:transparent;	\n"
+"border-top: 2px solid transparent;	\n"
+"border-left: 2px solid transparent;\n"
+"border-radius:8px;"));
+        BTNRow_6 = new QPushButton(VehicleHistoryFaultPage);
+        BTNRow_6->setObjectName(QString::fromUtf8("BTNRow_6"));
+        BTNRow_6->setGeometry(QRect(30, 370, 861, 41));
+        BTNRow_6->setStyleSheet(QString::fromUtf8("background-color:transparent;border-top: 2px solid transparent;	\n"
+"border-left: 2px solid transparent;\n"
+"border-radius:8px;"));
+        BTNRow_3 = new QPushButton(VehicleHistoryFaultPage);
+        BTNRow_3->setObjectName(QString::fromUtf8("BTNRow_3"));
+        BTNRow_3->setGeometry(QRect(30, 250, 861, 41));
+        BTNRow_3->setStyleSheet(QString::fromUtf8("background-color:transparent;border-top: 2px solid transparent;	\n"
+"border-left: 2px solid transparent;\n"
+"border-radius:8px;"));
+        BTNRow_2 = new QPushButton(VehicleHistoryFaultPage);
+        BTNRow_2->setObjectName(QString::fromUtf8("BTNRow_2"));
+        BTNRow_2->setGeometry(QRect(30, 210, 861, 41));
+        BTNRow_2->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
+"border-top: 2px solid transparent;	\n"
+"border-left: 2px solid transparent;\n"
+"border-radius:8px;"));
+        BTNRow_7 = new QPushButton(VehicleHistoryFaultPage);
+        BTNRow_7->setObjectName(QString::fromUtf8("BTNRow_7"));
+        BTNRow_7->setGeometry(QRect(30, 410, 861, 41));
+        BTNRow_7->setStyleSheet(QString::fromUtf8("background-color:transparent;border-top: 2px solid transparent;	\n"
+"border-left: 2px solid transparent;\n"
+"border-radius:8px;"));
+        BTNRow_4 = new QPushButton(VehicleHistoryFaultPage);
+        BTNRow_4->setObjectName(QString::fromUtf8("BTNRow_4"));
+        BTNRow_4->setGeometry(QRect(30, 290, 861, 41));
+        BTNRow_4->setStyleSheet(QString::fromUtf8("background-color:transparent;border-top: 2px solid transparent;	\n"
+"border-left: 2px solid transparent;\n"
+"border-radius:8px;"));
+        BTNRow_9 = new QPushButton(VehicleHistoryFaultPage);
+        BTNRow_9->setObjectName(QString::fromUtf8("BTNRow_9"));
+        BTNRow_9->setGeometry(QRect(30, 490, 861, 41));
+        BTNRow_9->setStyleSheet(QString::fromUtf8("background-color:transparent;border-top: 2px solid transparent;	\n"
+"border-left: 2px solid transparent;\n"
+"border-radius:8px;"));
         lbl1_13->raise();
         lbl1_14->raise();
         lbl1_15->raise();
@@ -758,6 +863,16 @@ public:
         lbl1_21->raise();
         endTime_row4->raise();
         endTime_row1->raise();
+        BTNRow_6->raise();
+        BTNRow_8->raise();
+        BTNRow->raise();
+        BTNRow_2->raise();
+        BTNRow_9->raise();
+        BTNRow_4->raise();
+        BTNRow_3->raise();
+        BTNRow_5->raise();
+        BTNRow_7->raise();
+        GROUPBOXFault->raise();
 
         retranslateUi(VehicleHistoryFaultPage);
 
@@ -856,6 +971,63 @@ public:
         lbl1_21->setText(QApplication::translate("VehicleHistoryFaultPage", "\347\273\223\346\235\237\346\227\266\351\227\264", 0, QApplication::UnicodeUTF8));
         endTime_row4->setText(QString());
         endTime_row1->setText(QString());
+        GROUPBOXFault->setTitle(QApplication::translate("VehicleHistoryFaultPage", "GroupBox", 0, QApplication::UnicodeUTF8));
+        Faultname->setText(QString());
+        lbl->setText(QString());
+        FaultTips->setHtml(QApplication::translate("VehicleHistoryFaultPage", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'\345\276\256\350\275\257\351\233\205\351\273\221'; font-weight:400; font-style:normal;\">\n"
+"<table border=\"0\" style=\"-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;\">\n"
+"<tr>\n"
+"<td style=\"border: none;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p>\n"
+"<p style=\"-qt-paragraph-type:e"
+                        "mpty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p></td></tr></table></body></html>", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("VehicleHistoryFaultPage", "\346\225\205\351\232\234\344\277\241\346\201\257", 0, QApplication::UnicodeUTF8));
+        BTNClose->setText(QApplication::translate("VehicleHistoryFaultPage", "\345\205\263\351\227\255", 0, QApplication::UnicodeUTF8));
+#ifndef QT_NO_WHATSTHIS
+        BTNRow_5->setWhatsThis(QApplication::translate("VehicleHistoryFaultPage", "4", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_WHATSTHIS
+        BTNRow_5->setText(QString());
+#ifndef QT_NO_WHATSTHIS
+        BTNRow_8->setWhatsThis(QApplication::translate("VehicleHistoryFaultPage", "7", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_WHATSTHIS
+        BTNRow_8->setText(QString());
+#ifndef QT_NO_WHATSTHIS
+        BTNRow->setWhatsThis(QApplication::translate("VehicleHistoryFaultPage", "0", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_WHATSTHIS
+        BTNRow->setText(QString());
+#ifndef QT_NO_WHATSTHIS
+        BTNRow_6->setWhatsThis(QApplication::translate("VehicleHistoryFaultPage", "5", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_WHATSTHIS
+        BTNRow_6->setText(QString());
+#ifndef QT_NO_WHATSTHIS
+        BTNRow_3->setWhatsThis(QApplication::translate("VehicleHistoryFaultPage", "2", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_WHATSTHIS
+        BTNRow_3->setText(QString());
+#ifndef QT_NO_WHATSTHIS
+        BTNRow_2->setWhatsThis(QApplication::translate("VehicleHistoryFaultPage", "1", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_WHATSTHIS
+        BTNRow_2->setText(QString());
+#ifndef QT_NO_WHATSTHIS
+        BTNRow_7->setWhatsThis(QApplication::translate("VehicleHistoryFaultPage", "6", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_WHATSTHIS
+        BTNRow_7->setText(QString());
+#ifndef QT_NO_WHATSTHIS
+        BTNRow_4->setWhatsThis(QApplication::translate("VehicleHistoryFaultPage", "3", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_WHATSTHIS
+        BTNRow_4->setText(QString());
+#ifndef QT_NO_WHATSTHIS
+        BTNRow_9->setWhatsThis(QApplication::translate("VehicleHistoryFaultPage", "8", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_WHATSTHIS
+        BTNRow_9->setText(QString());
     } // retranslateUi
 
 };

@@ -16,6 +16,7 @@
 #include "vehicleresethelppage.h"
 #include "ctrlbrightnessadjust.h"
 #include "vehiclebcuhelppage2.h"
+#include "vehicleacuhelppage2.h"
 namespace Ui {
     class Header;
 }
@@ -44,6 +45,7 @@ private:
 
     VehicleDCUHelpPage* vehicleDCUHelpPage;
     VehicleACUHelpPage* vehicleACUHelpPage;
+    VehicleACUHelpPage2* vehicleACUHelpPage2;
     VehicleResetHelpPage* vehicleResetHelpPage;
     CtrlBrightnessAdjust* ctrlBrightnessAdjust;
     CrrcFault* m_crrcFault;

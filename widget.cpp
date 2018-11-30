@@ -44,9 +44,9 @@
 #include "vehiclehistoryfaultpage.h"
 #include "vehicleunactivepage.h"
 #include "ctrlfaultdetailconfirm.h"
-#include "maintaincefaultquerypage.h".h"
+#include "maintaincefaultquerypage.h"
 #include "maintaincefaultshowpage.h"
-
+#include "vehiclesivpage2.h"
 #include "h8.h"
 
 Widget::Widget(QWidget *parent) :
@@ -199,6 +199,10 @@ Widget::Widget(QWidget *parent) :
     this->vehicleSIVPage->setMyBase(uMiddleTrainGraph,QString("辅助"));
     this->vehicleSIVPage->hide();
 
+    this->vehicleSIVPage2 = new VehicleSIVPage2(this);
+    this->vehicleSIVPage2->setMyBase(uMiddleTrainGraph,QString("辅助"));
+    this->vehicleSIVPage2->hide();
+
     this->vehicleACPage = new VehicleACPage(this);
     this->vehicleACPage->setMyBase(uMiddleTrainGraph,QString("空调1"));
     this->vehicleACPage->hide();
@@ -250,11 +254,11 @@ Widget::Widget(QWidget *parent) :
     this->vehicleUnactivePage->hide();
 
     this->maintainceFaultShowPage = new MaintainceFaultShowPage(this);
-    this->maintainceFaultShowPage->setMyBase(uLargeMiddle,QString("故障\n筛选"));
+    this->maintainceFaultShowPage->setMyBase(uLargeMiddle,QString("故障\n记录"));
     this->maintainceFaultShowPage->hide();
 
     this->maintainceFaultQueryPage = new MaintainceFaultQueryPage(this);
-    this->maintainceFaultQueryPage->setMyBase(uLargeMiddle,QString("故障\n筛选"));
+    this->maintainceFaultQueryPage->setMyBase(uLargeMiddle,QString("故障\n记录"));
     this->maintainceFaultQueryPage->hide();
 
     this->widgets.insert(uVehicleRunStatePage,this->vehicleRunStatePage);
@@ -279,6 +283,7 @@ Widget::Widget(QWidget *parent) :
     this->widgets.insert(uVehicleEBCUPage2,this->vehicleEBCUPage2);
     this->widgets.insert(uVehicleDCUPage,this->vehicleDCUPage);
     this->widgets.insert(uVehicleSIVPage,this->vehicleSIVPage);
+    this->widgets.insert(uVehicleSIVPage2,this->vehicleSIVPage2);
     this->widgets.insert(uVehicleACPage,this->vehicleACPage);
     this->widgets.insert(uVehicleACPage2,this->vehicleACPage2);
     this->widgets.insert(uMaintainceRIOMDetailPage,this->maintainceRIOMDetailPage);

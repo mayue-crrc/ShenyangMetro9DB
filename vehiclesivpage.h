@@ -22,6 +22,9 @@ private:
 
     void setlabelstates(QLabel* lbl,int states,bool isonline,bool selftest);
     void setlabelstates(QLabel* lbl,bool valid,float value,int per,bool isonline);
+
+private slots:
+    void on_NextPageBtn_pressed();
 };
 
 #endif // VEHICLESIVPAGE_H

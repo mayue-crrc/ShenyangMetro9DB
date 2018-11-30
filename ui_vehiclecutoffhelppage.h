@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclecutoffhelppage.ui'
 **
-** Created: Fri Jun 8 11:30:02 2018
+** Created: Fri Nov 30 11:16:29 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -186,7 +186,7 @@ public:
         label_25 = new QLabel(VehicleCutOffHelpPage);
         label_25->setObjectName(QString::fromUtf8("label_25"));
         label_25->setGeometry(QRect(470, 20, 101, 51));
-        label_25->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color:white;background-color:gray\n"
+        label_25->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color:white;background-color:red\n"
 ""));
         label_25->setAlignment(Qt::AlignCenter);
         label_26 = new QLabel(VehicleCutOffHelpPage);
@@ -303,7 +303,7 @@ public:
         label_18->setText(QApplication::translate("VehicleCutOffHelpPage", "\345\257\271\351\200\211\345\256\232\350\275\246\350\212\202\350\277\233\350\241\214\345\210\207\351\231\244\346\223\215\344\275\234", 0, QApplication::UnicodeUTF8));
         label_19->setText(QApplication::translate("VehicleCutOffHelpPage", "\345\210\207\351\231\244", 0, QApplication::UnicodeUTF8));
         label_20->setText(QString());
-        label_22->setText(QApplication::translate("VehicleCutOffHelpPage", "ACM\346\225\205\351\232\234", 0, QApplication::UnicodeUTF8));
+        label_22->setText(QApplication::translate("VehicleCutOffHelpPage", "ACM\345\210\207\351\231\244\346\210\226\346\225\205\351\232\234", 0, QApplication::UnicodeUTF8));
         label_23->setText(QApplication::translate("VehicleCutOffHelpPage", "ACM", 0, QApplication::UnicodeUTF8));
         label_24->setText(QApplication::translate("VehicleCutOffHelpPage", "\350\257\245\350\212\202\350\242\253\351\200\211\344\270\255", 0, QApplication::UnicodeUTF8));
         label_25->setText(QApplication::translate("VehicleCutOffHelpPage", "\347\224\265\345\210\266\345\212\250", 0, QApplication::UnicodeUTF8));

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicleebcupage2.ui'
 **
-** Created: Wed Sep 26 15:36:24 2018
+** Created: Wed Oct 24 13:51:38 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

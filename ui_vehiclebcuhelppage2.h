@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclebcuhelppage2.ui'
 **
-** Created: Wed Sep 26 11:37:50 2018
+** Created: Wed Nov 7 08:37:24 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -156,7 +156,7 @@ public:
         label_19 = new QLabel(VehicleBCUHelpPage2);
         label_19->setObjectName(QString::fromUtf8("label_19"));
         label_19->setGeometry(QRect(220, 350, 41, 31));
-        label_19->setStyleSheet(QString::fromUtf8("font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color:white;background-color:lightgreen;"));
+        label_19->setStyleSheet(QString::fromUtf8("font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color:white;background-color:rgb(0,204,0);"));
         label_19->setAlignment(Qt::AlignCenter);
         label = new QLabel(VehicleBCUHelpPage2);
         label->setObjectName(QString::fromUtf8("label"));

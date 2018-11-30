@@ -160,7 +160,7 @@ void MaintainceTCMSStatesPage::updatePage()
 
 void MaintainceTCMSStatesPage::on_returnBtn_pressed()
 {
-    changePage(uVehicleMaintaincePage);
+    changePage(uVehicleRunStatePage);
 }
 void MaintainceTCMSStatesPage::setlabelstates(QLabel* lbl,bool state)
 {

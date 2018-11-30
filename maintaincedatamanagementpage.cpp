@@ -67,7 +67,7 @@ void MaintainceDataManagementPage::on_returnBtn_pressed()
     this->database->HMiCT_SetFlagChecker_U8 = 0x55;
 
     timer->stop();
-    changePage(uVehicleMaintaincePage);
+    changePage(uVehicleRunStatePage);
 }
 void MaintainceDataManagementPage::InputButtonsEvent()
 {

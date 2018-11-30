@@ -453,5 +453,5 @@ void MaintainceRIOMDetailPage::ButtonsPressEvent()
 
 void MaintainceRIOMDetailPage::on_returnBtn_pressed()
 {
-    changePage(uVehicleMaintaincePage);
+    changePage(uVehicleRunStatePage);
 }

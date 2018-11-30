@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicleacpage2.ui'
 **
-** Created: Wed Sep 26 10:14:32 2018
+** Created: Tue Nov 6 13:57:26 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -89,6 +89,9 @@ public:
     QPushButton *ModeStartBtn;
     QLabel *SettingTemplbl_2;
     QLabel *lbl1_19;
+    QLabel *lbl1_20;
+    QLabel *lbl1_21;
+    QLabel *lbl1_22;
 
     void setupUi(QWidget *VehicleACPage2)
     {
@@ -319,77 +322,77 @@ public:
         lbl1_15->setAlignment(Qt::AlignCenter);
         SelectALLBtn = new QPushButton(VehicleACPage2);
         SelectALLBtn->setObjectName(QString::fromUtf8("SelectALLBtn"));
-        SelectALLBtn->setGeometry(QRect(60, 270, 81, 41));
+        SelectALLBtn->setGeometry(QRect(100, 270, 101, 41));
         SelectALLBtn->setFocusPolicy(Qt::NoFocus);
         SelectALLBtn->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;"));
         SelectTC1Btn = new QPushButton(VehicleACPage2);
         SelectTC1Btn->setObjectName(QString::fromUtf8("SelectTC1Btn"));
-        SelectTC1Btn->setGeometry(QRect(190, 270, 81, 41));
+        SelectTC1Btn->setGeometry(QRect(210, 270, 101, 41));
         SelectTC1Btn->setFocusPolicy(Qt::NoFocus);
         SelectTC1Btn->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;"));
         SelectMP1Btn = new QPushButton(VehicleACPage2);
         SelectMP1Btn->setObjectName(QString::fromUtf8("SelectMP1Btn"));
-        SelectMP1Btn->setGeometry(QRect(310, 270, 81, 41));
+        SelectMP1Btn->setGeometry(QRect(320, 270, 101, 41));
         SelectMP1Btn->setFocusPolicy(Qt::NoFocus);
         SelectMP1Btn->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;"));
         SelectM1Btn = new QPushButton(VehicleACPage2);
         SelectM1Btn->setObjectName(QString::fromUtf8("SelectM1Btn"));
-        SelectM1Btn->setGeometry(QRect(430, 270, 81, 41));
+        SelectM1Btn->setGeometry(QRect(430, 270, 101, 41));
         SelectM1Btn->setFocusPolicy(Qt::NoFocus);
         SelectM1Btn->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;"));
         SelectM2Btn = new QPushButton(VehicleACPage2);
         SelectM2Btn->setObjectName(QString::fromUtf8("SelectM2Btn"));
-        SelectM2Btn->setGeometry(QRect(550, 270, 81, 41));
+        SelectM2Btn->setGeometry(QRect(540, 270, 101, 41));
         SelectM2Btn->setFocusPolicy(Qt::NoFocus);
         SelectM2Btn->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;"));
         SelectMP2Btn = new QPushButton(VehicleACPage2);
         SelectMP2Btn->setObjectName(QString::fromUtf8("SelectMP2Btn"));
-        SelectMP2Btn->setGeometry(QRect(670, 270, 81, 41));
+        SelectMP2Btn->setGeometry(QRect(650, 270, 101, 41));
         SelectMP2Btn->setFocusPolicy(Qt::NoFocus);
         SelectMP2Btn->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;"));
         SelectTC2Btn = new QPushButton(VehicleACPage2);
         SelectTC2Btn->setObjectName(QString::fromUtf8("SelectTC2Btn"));
-        SelectTC2Btn->setGeometry(QRect(790, 270, 81, 41));
+        SelectTC2Btn->setGeometry(QRect(760, 270, 101, 41));
         SelectTC2Btn->setFocusPolicy(Qt::NoFocus);
         SelectTC2Btn->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;"));
         ModeAutoColdBtn = new QPushButton(VehicleACPage2);
         ModeAutoColdBtn->setObjectName(QString::fromUtf8("ModeAutoColdBtn"));
-        ModeAutoColdBtn->setGeometry(QRect(370, 340, 91, 41));
+        ModeAutoColdBtn->setGeometry(QRect(210, 340, 101, 41));
         ModeAutoColdBtn->setFocusPolicy(Qt::NoFocus);
         ModeAutoColdBtn->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;"));
         ModeMannulBtn = new QPushButton(VehicleACPage2);
         ModeMannulBtn->setObjectName(QString::fromUtf8("ModeMannulBtn"));
-        ModeMannulBtn->setGeometry(QRect(250, 340, 91, 41));
+        ModeMannulBtn->setGeometry(QRect(320, 340, 101, 41));
         ModeMannulBtn->setFocusPolicy(Qt::NoFocus);
         ModeMannulBtn->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;"));
         ModeVenBtn = new QPushButton(VehicleACPage2);
         ModeVenBtn->setObjectName(QString::fromUtf8("ModeVenBtn"));
-        ModeVenBtn->setGeometry(QRect(490, 340, 91, 41));
+        ModeVenBtn->setGeometry(QRect(430, 340, 101, 41));
         ModeVenBtn->setFocusPolicy(Qt::NoFocus);
         ModeVenBtn->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;"));
         ModeFireBtn = new QPushButton(VehicleACPage2);
         ModeFireBtn->setObjectName(QString::fromUtf8("ModeFireBtn"));
-        ModeFireBtn->setGeometry(QRect(610, 340, 91, 41));
+        ModeFireBtn->setGeometry(QRect(790, 340, 101, 41));
         ModeFireBtn->setFocusPolicy(Qt::NoFocus);
         ModeFireBtn->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;"));
         ModeStopBtn = new QPushButton(VehicleACPage2);
         ModeStopBtn->setObjectName(QString::fromUtf8("ModeStopBtn"));
-        ModeStopBtn->setGeometry(QRect(730, 340, 81, 41));
+        ModeStopBtn->setGeometry(QRect(540, 340, 101, 41));
         ModeStopBtn->setFocusPolicy(Qt::NoFocus);
         ModeStopBtn->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;"));
         ConfirmBtn = new QPushButton(VehicleACPage2);
         ConfirmBtn->setObjectName(QString::fromUtf8("ConfirmBtn"));
-        ConfirmBtn->setGeometry(QRect(730, 410, 81, 71));
+        ConfirmBtn->setGeometry(QRect(800, 410, 81, 71));
         ConfirmBtn->setFocusPolicy(Qt::NoFocus);
         ConfirmBtn->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;"));
         Tempminus1Btn = new QPushButton(VehicleACPage2);
         Tempminus1Btn->setObjectName(QString::fromUtf8("Tempminus1Btn"));
-        Tempminus1Btn->setGeometry(QRect(120, 420, 61, 51));
+        Tempminus1Btn->setGeometry(QRect(210, 420, 91, 51));
         Tempminus1Btn->setFocusPolicy(Qt::NoFocus);
         Tempminus1Btn->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;"));
         SettingTemplbl = new QLabel(VehicleACPage2);
         SettingTemplbl->setObjectName(QString::fromUtf8("SettingTemplbl"));
-        SettingTemplbl->setGeometry(QRect(200, 410, 91, 71));
+        SettingTemplbl->setGeometry(QRect(320, 410, 91, 71));
         SettingTemplbl->setStyleSheet(QString::fromUtf8("background-color:TRANSPARENT;\n"
 "border:2px solid white;\n"
 "border-radius:10px;\n"
@@ -398,12 +401,12 @@ public:
         SettingTemplbl->setAlignment(Qt::AlignCenter);
         Tempplus1Btn = new QPushButton(VehicleACPage2);
         Tempplus1Btn->setObjectName(QString::fromUtf8("Tempplus1Btn"));
-        Tempplus1Btn->setGeometry(QRect(310, 420, 61, 51));
+        Tempplus1Btn->setGeometry(QRect(430, 420, 91, 51));
         Tempplus1Btn->setFocusPolicy(Qt::NoFocus);
         Tempplus1Btn->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;"));
         lbl1_18 = new QLabel(VehicleACPage2);
         lbl1_18->setObjectName(QString::fromUtf8("lbl1_18"));
-        lbl1_18->setGeometry(QRect(390, 420, 111, 21));
+        lbl1_18->setGeometry(QRect(560, 420, 111, 21));
         lbl1_18->setStyleSheet(QString::fromUtf8("background-color:TRANSPARENT;\n"
 "\n"
 "font:14px;\n"
@@ -451,7 +454,7 @@ public:
         ModeStartBtn->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);border-top: 2px solid white;border-left: 2px solid white;"));
         SettingTemplbl_2 = new QLabel(VehicleACPage2);
         SettingTemplbl_2->setObjectName(QString::fromUtf8("SettingTemplbl_2"));
-        SettingTemplbl_2->setGeometry(QRect(60, 400, 481, 91));
+        SettingTemplbl_2->setGeometry(QRect(20, 400, 721, 91));
         SettingTemplbl_2->setStyleSheet(QString::fromUtf8("background-color:TRANSPARENT;\n"
 "border:2px solid white;\n"
 "border-radius:10px;\n"
@@ -460,15 +463,33 @@ public:
         SettingTemplbl_2->setAlignment(Qt::AlignCenter);
         lbl1_19 = new QLabel(VehicleACPage2);
         lbl1_19->setObjectName(QString::fromUtf8("lbl1_19"));
-        lbl1_19->setGeometry(QRect(390, 450, 111, 21));
+        lbl1_19->setGeometry(QRect(560, 450, 111, 21));
         lbl1_19->setStyleSheet(QString::fromUtf8("background-color:TRANSPARENT;\n"
 "\n"
 "font:14px;\n"
 ""));
         lbl1_19->setAlignment(Qt::AlignCenter);
+        lbl1_20 = new QLabel(VehicleACPage2);
+        lbl1_20->setObjectName(QString::fromUtf8("lbl1_20"));
+        lbl1_20->setGeometry(QRect(20, 420, 71, 51));
+        lbl1_20->setStyleSheet(QString::fromUtf8("background-color:TRANSPARENT;\n"
+""));
+        lbl1_20->setAlignment(Qt::AlignCenter);
+        lbl1_21 = new QLabel(VehicleACPage2);
+        lbl1_21->setObjectName(QString::fromUtf8("lbl1_21"));
+        lbl1_21->setGeometry(QRect(20, 270, 71, 51));
+        lbl1_21->setStyleSheet(QString::fromUtf8("background-color:TRANSPARENT;\n"
+""));
+        lbl1_21->setAlignment(Qt::AlignCenter);
+        lbl1_22 = new QLabel(VehicleACPage2);
+        lbl1_22->setObjectName(QString::fromUtf8("lbl1_22"));
+        lbl1_22->setGeometry(QRect(20, 330, 71, 51));
+        lbl1_22->setStyleSheet(QString::fromUtf8("background-color:TRANSPARENT;\n"
+""));
+        lbl1_22->setAlignment(Qt::AlignCenter);
         SettingTemplbl_2->raise();
-        lbl1_14->raise();
         lbl1_15->raise();
+        lbl1_14->raise();
         ACModeMP2lbl->raise();
         ACReduceM2lbl->raise();
         TempM1lbl->raise();
@@ -531,6 +552,9 @@ public:
         UICP2Btn->raise();
         ModeStartBtn->raise();
         lbl1_19->raise();
+        lbl1_20->raise();
+        lbl1_21->raise();
+        lbl1_22->raise();
 
         retranslateUi(VehicleACPage2);
 
@@ -612,6 +636,12 @@ public:
         ModeStartBtn->setText(QApplication::translate("VehicleACPage2", "\345\220\257\345\212\250", 0, QApplication::UnicodeUTF8));
         SettingTemplbl_2->setText(QString());
         lbl1_19->setText(QApplication::translate("VehicleACPage2", "19~28\342\204\203 \345\210\266\345\206\267", 0, QApplication::UnicodeUTF8));
+        lbl1_20->setText(QApplication::translate("VehicleACPage2", "\346\270\251\345\272\246\n"
+"\350\256\276\345\256\232", 0, QApplication::UnicodeUTF8));
+        lbl1_21->setText(QApplication::translate("VehicleACPage2", "\350\275\246\345\216\242\n"
+"\350\256\276\345\256\232", 0, QApplication::UnicodeUTF8));
+        lbl1_22->setText(QApplication::translate("VehicleACPage2", "\346\250\241\345\274\217\n"
+"\350\256\276\345\256\232", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

@@ -82,7 +82,7 @@ Database::Database()
     HMiCT_ACDETestStartFlag_B1 = false;
 
     HMiCT_HMISWVerH_U8 = 2;
-    HMiCT_HMISWVerL_U8 = 20;
+    HMiCT_HMISWVerL_U8 = 24;
 
     for(int i =0; i< 12;i++)
     {
@@ -1234,14 +1234,14 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         //CCU-CRM FAULT
         this->CTDT_Mp1ADDLowPanto_B1 = crrcMvb->getBool(0x318,3,3);
         this->CTDT_Mp2ADDLowPanto_B1 = crrcMvb->getBool(0x318,3,4);
-        this->CTDT_ACM1InnerSC_B1 = crrcMvb->getBool(0x318,8,0);
-        this->CTDT_ACM2InnerSC_B1 = crrcMvb->getBool(0x318,8,1);
-        this->CTDT_ACM3InnerSC_B1 = crrcMvb->getBool(0x318,8,2);
-        this->CTDT_ACM4InnerSC_B1 = crrcMvb->getBool(0x318,8,3);
-        this->CTDT_ACM1OuterSC_B1 = crrcMvb->getBool(0x318,8,4);
-        this->CTDT_ACM2OuterSC_B1 = crrcMvb->getBool(0x318,8,5);
-        this->CTDT_ACM3OuterSC_B1 = crrcMvb->getBool(0x318,8,6);
-        this->CTDT_ACM4OuterSC_B1 = crrcMvb->getBool(0x318,8,7);
+        this->CTDT_ACM1InnerSC_B1 = crrcMvb->getBool(0x318,27,4);
+        this->CTDT_ACM2InnerSC_B1 = crrcMvb->getBool(0x318,27,5);
+        this->CTDT_ACM3InnerSC_B1 = crrcMvb->getBool(0x318,27,6);
+        this->CTDT_ACM4InnerSC_B1 = crrcMvb->getBool(0x318,27,7);
+        this->CTDT_ACM1OuterSC_B1 = crrcMvb->getBool(0x318,27,0);
+        this->CTDT_ACM2OuterSC_B1 = crrcMvb->getBool(0x318,27,1);
+        this->CTDT_ACM3OuterSC_B1 = crrcMvb->getBool(0x318,27,2);
+        this->CTDT_ACM4OuterSC_B1 = crrcMvb->getBool(0x318,27,3);
     }
 
 
@@ -1331,7 +1331,11 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->AX1CT_SWVersion2_I16 = this->crrcMvb->getSignedInt(0x502,22);
         this->AX1CT_SWVersion3_I16 = this->crrcMvb->getSignedInt(0x502,24);
         this->AX1CT_SWVersion4_I16 = this->crrcMvb->getSignedInt(0x502,26);
+        this->AX1CT_BatteryChargingCurrent_I16 = this->crrcMvb->getSignedInt(0x502,12);
+        this->AX1CT_BatteryLineVoltage_I16 = this->crrcMvb->getSignedInt(0x502,8);
+        this->AX1CT_BatteryLineCurrent_I16 = this->crrcMvb->getSignedInt(0x502,10);
 
+        this->AX1CT_AuxInvCutFeedback_B1 = this->crrcMvb->getBool(0x501,28,5);
         this->AX1CT_AuxInvVoltageValid_B1 = this->crrcMvb->getBool(0x501,29,3);
         this->AX1CT_ACMLineActived_B1 = this->crrcMvb->getBool(0x501,29,4);
         this->AX1CT_DCVoltageValid_B1 = this->crrcMvb->getBool(0x501,29,7);
@@ -1351,7 +1355,11 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->AX2CT_SWVersion2_I16 = this->crrcMvb->getSignedInt(0x512,22);
         this->AX2CT_SWVersion3_I16 = this->crrcMvb->getSignedInt(0x512,24);
         this->AX2CT_SWVersion4_I16 = this->crrcMvb->getSignedInt(0x512,26);
+        this->AX2CT_BatteryChargingCurrent_I16 = this->crrcMvb->getSignedInt(0x512,12);
+        this->AX2CT_BatteryLineVoltage_I16 = this->crrcMvb->getSignedInt(0x512,8);
+        this->AX2CT_BatteryLineCurrent_I16 = this->crrcMvb->getSignedInt(0x512,10);
 
+        this->AX2CT_AuxInvCutFeedback_B1 = this->crrcMvb->getBool(0x511,28,5);
         this->AX2CT_AuxInvVoltageValid_B1 = this->crrcMvb->getBool(0x511,29,3);
         this->AX2CT_ACMLineActived_B1 = this->crrcMvb->getBool(0x511,29,4);
         this->AX2CT_DCVoltageValid_B1 = this->crrcMvb->getBool(0x511,29,7);
@@ -1370,7 +1378,11 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->AX3CT_SWVersion2_I16 = this->crrcMvb->getSignedInt(0x532,22);
         this->AX3CT_SWVersion3_I16 = this->crrcMvb->getSignedInt(0x532,24);
         this->AX3CT_SWVersion4_I16 = this->crrcMvb->getSignedInt(0x532,26);
+        this->AX3CT_BatteryChargingCurrent_I16 = this->crrcMvb->getSignedInt(0x532,12);
+        this->AX3CT_BatteryLineVoltage_I16 = this->crrcMvb->getSignedInt(0x532,8);
+        this->AX3CT_BatteryLineCurrent_I16 = this->crrcMvb->getSignedInt(0x532,10);
 
+        this->AX3CT_AuxInvCutFeedback_B1 = this->crrcMvb->getBool(0x531,28,5);
         this->AX3CT_AuxInvVoltageValid_B1 = this->crrcMvb->getBool(0x531,29,3);
         this->AX3CT_ACMLineActived_B1 = this->crrcMvb->getBool(0x531,29,4);
         this->AX3CT_DCVoltageValid_B1 = this->crrcMvb->getBool(0x531,29,7);
@@ -1389,7 +1401,11 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->AX4CT_SWVersion2_I16 = this->crrcMvb->getSignedInt(0x522,22);
         this->AX4CT_SWVersion3_I16 = this->crrcMvb->getSignedInt(0x522,24);
         this->AX4CT_SWVersion4_I16 = this->crrcMvb->getSignedInt(0x522,26);
+        this->AX4CT_BatteryChargingCurrent_I16 = this->crrcMvb->getSignedInt(0x522,12);
+        this->AX4CT_BatteryLineVoltage_I16 = this->crrcMvb->getSignedInt(0x522,8);
+        this->AX4CT_BatteryLineCurrent_I16 = this->crrcMvb->getSignedInt(0x522,10);
 
+        this->AX4CT_AuxInvCutFeedback_B1 = this->crrcMvb->getBool(0x521,28,5);
         this->AX4CT_AuxInvVoltageValid_B1 = this->crrcMvb->getBool(0x521,29,3);
         this->AX4CT_ACMLineActived_B1 = this->crrcMvb->getBool(0x521,29,4);
         this->AX4CT_DCVoltageValid_B1 = this->crrcMvb->getBool(0x521,29,7);
@@ -1399,8 +1415,8 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
 
         this->CTAX1_ShortCurcuitCheck_B1  =this->crrcMvb->getBool(0x509,12,5);
         this->CTAX2_ShortCurcuitCheck_B1  =this->crrcMvb->getBool(0x519,12,5);
-        this->CTAX3_ShortCurcuitCheck_B1  =this->crrcMvb->getBool(0x509,12,5);
-        this->CTAX4_ShortCurcuitCheck_B1  =this->crrcMvb->getBool(0x509,12,5);
+        this->CTAX3_ShortCurcuitCheck_B1  =this->crrcMvb->getBool(0x539,12,5);
+        this->CTAX4_ShortCurcuitCheck_B1  =this->crrcMvb->getBool(0x529,12,5);
 
     }
 
@@ -2349,11 +2365,11 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->BR2CT_BCU3Master_B1 = this->crrcMvb->getBool(0x640,5,0);
         this->BR2CT_BCU4Master_B1 = this->crrcMvb->getBool(0x660,5,0);
 
-        this->BCU1_3Online = (this->BR1CT_BCU1Master_B1 && this->CTHM_BCU1On_B1) ||
-                             (this->BR1CT_BCU2Master_B1 && this->CTHM_BCU2On_B1) ;
+        this->BCU1_3Online = ((this->BR1CT_BCU1Master_B1 && this->CTHM_BCU1On_B1) ||
+                             (this->BR1CT_BCU2Master_B1 && this->CTHM_BCU2On_B1)) ;
 
-        this->BCU4_6Online = (this->BR2CT_BCU3Master_B1 && this->CTHM_BCU3On_B1) ||
-                             (this->BR2CT_BCU4Master_B1 && this->CTHM_BCU4On_B1) ;
+        this->BCU4_6Online = ((this->BR2CT_BCU3Master_B1 && this->CTHM_BCU3On_B1) ||
+                             (this->BR2CT_BCU4Master_B1 && this->CTHM_BCU4On_B1)) ;
 
 
         temp_virtualports.clear();
@@ -2698,6 +2714,43 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
     /////*******WMS -- CCU**********///////
     {
 
+       WSCT_Car6CabDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,10,0);
+       WSCT_Car6HDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,10,1);
+       WSCT_Car6RDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,10,2);
+       WSCT_Car6FDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,10,3);
+       WSCT_Car6DDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,10,4);
+       WSCT_Car6Zone1DetecterFlt_B1 = this->crrcMvb->getBool(0xa60,10,5);
+       WSCT_Car6Zone2DetecterFlt_B1 = this->crrcMvb->getBool(0xa60,10,6);
+
+       WSCT_Car5RDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,11,2);
+       WSCT_Car5FDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,11,3);
+       WSCT_Car5Zone1DetecterFlt_B1 = this->crrcMvb->getBool(0xa60,11,5);
+       WSCT_Car5Zone2DetecterFlt_B1 = this->crrcMvb->getBool(0xa60,11,6);
+
+       WSCT_Car4RDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,12,2);
+       WSCT_Car4FDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,12,3);
+       WSCT_Car4Zone1DetecterFlt_B1 = this->crrcMvb->getBool(0xa60,12,5);
+       WSCT_Car4Zone2DetecterFlt_B1 = this->crrcMvb->getBool(0xa60,12,6);
+
+       WSCT_Car1CabDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,13,0);
+       WSCT_Car1HDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,13,1);
+       WSCT_Car1RDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,13,2);
+       WSCT_Car1FDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,13,3);
+       WSCT_Car1DDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,13,4);
+       WSCT_Car1Zone1DetecterFlt_B1 = this->crrcMvb->getBool(0xa60,13,5);
+       WSCT_Car1Zone2DetecterFlt_B1 = this->crrcMvb->getBool(0xa60,13,6);
+
+       WSCT_Car2RDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,14,2);
+       WSCT_Car2FDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,14,3);
+       WSCT_Car2Zone1DetecterFlt_B1 = this->crrcMvb->getBool(0xa60,14,5);
+       WSCT_Car2Zone2DetecterFlt_B1 = this->crrcMvb->getBool(0xa60,14,6);
+
+       WSCT_Car3RDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,15,2);
+       WSCT_Car3FDetecterFlt_B1 = this->crrcMvb->getBool(0xa60,15,3);
+       WSCT_Car3Zone1DetecterFlt_B1 = this->crrcMvb->getBool(0xa60,15,5);
+       WSCT_Car3Zone2DetecterFlt_B1 = this->crrcMvb->getBool(0xa60,15,6);
+
+
        WSCT_GWSWVersion_U16 = this->crrcMvb->getUnsignedInt(0xa60,4);
        WSCT_ATemperature_U16 = this->crrcMvb->getUnsignedInt(0xa60,6);
        WSCT_BTemperature_U16 = this->crrcMvb->getUnsignedInt(0xa60,8);
@@ -2879,9 +2932,11 @@ void Database::createEBCUList(bool ebcu1Online, bool ebcu2Online, QList<unsigned
         }
 
         // fault signal
-        bool t_bcu1faultvalid = this->crrcMvb->getBool(realports.at(6), i*4+1,0);
-        bool t_bcu2faultvalid = this->crrcMvb->getBool(realports.at(13),i*4+1,0);
-
+        //应大连厂要求屏蔽故障数据有效的逻辑
+        //bool t_bcu1faultvalid = this->crrcMvb->getBool(realports.at(6), i*4+1,0);
+        //bool t_bcu2faultvalid = this->crrcMvb->getBool(realports.at(13),i*4+1,0);
+        bool t_bcu1faultvalid = true;
+        bool t_bcu2faultvalid = true;
         //  edcu1/4 jia i trust logic
         if(
                 (true == ebcu1Online && true == ebcu2Online && t_bcu1master == true && t_bcu1faultvalid == true) ||
@@ -2919,7 +2974,6 @@ void Database::createEBCUList(bool ebcu1Online, bool ebcu2Online, QList<unsigned
             this->crrcMvb->setUnsignedInt32(virtualports.at(6),i*4,0);
             this->crrcMvb->setUnsignedInt32(virtualports.at(6),24,0);
             this->crrcMvb->setUnsignedInt32(virtualports.at(6),25,0);
-
         }
     }
 

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintainceacprunpage.ui'
 **
-** Created: Thu Apr 19 13:14:26 2018
+** Created: Tue Nov 6 13:44:17 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -106,29 +106,29 @@ public:
         label_4->setAlignment(Qt::AlignCenter);
         label_5 = new QLabel(MaintainceACPRunPage);
         label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setGeometry(QRect(210, 50, 101, 71));
+        label_5->setGeometry(QRect(340, 50, 101, 71));
         label_5->setAlignment(Qt::AlignCenter);
         label_6 = new QLabel(MaintainceACPRunPage);
         label_6->setObjectName(QString::fromUtf8("label_6"));
-        label_6->setGeometry(QRect(210, 120, 101, 71));
+        label_6->setGeometry(QRect(340, 120, 101, 71));
         label_6->setAlignment(Qt::AlignCenter);
         label_7 = new QLabel(MaintainceACPRunPage);
         label_7->setObjectName(QString::fromUtf8("label_7"));
-        label_7->setGeometry(QRect(210, 190, 101, 131));
+        label_7->setGeometry(QRect(340, 190, 101, 131));
         label_7->setAlignment(Qt::AlignCenter);
         MP1ACPTotaltimelbl = new QLabel(MaintainceACPRunPage);
         MP1ACPTotaltimelbl->setObjectName(QString::fromUtf8("MP1ACPTotaltimelbl"));
-        MP1ACPTotaltimelbl->setGeometry(QRect(310, 120, 131, 71));
+        MP1ACPTotaltimelbl->setGeometry(QRect(210, 120, 131, 71));
         MP1ACPTotaltimelbl->setStyleSheet(QString::fromUtf8("background-color:blue;font:20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
         MP1ACPTotaltimelbl->setAlignment(Qt::AlignCenter);
         MP1ACPStarttimelbl = new QLabel(MaintainceACPRunPage);
         MP1ACPStarttimelbl->setObjectName(QString::fromUtf8("MP1ACPStarttimelbl"));
-        MP1ACPStarttimelbl->setGeometry(QRect(310, 50, 131, 71));
+        MP1ACPStarttimelbl->setGeometry(QRect(210, 50, 131, 71));
         MP1ACPStarttimelbl->setStyleSheet(QString::fromUtf8("background-color:blue;font:20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
         MP1ACPStarttimelbl->setAlignment(Qt::AlignCenter);
         label_10 = new QLabel(MaintainceACPRunPage);
         label_10->setObjectName(QString::fromUtf8("label_10"));
-        label_10->setGeometry(QRect(310, 190, 131, 131));
+        label_10->setGeometry(QRect(210, 190, 131, 131));
         label_10->setAlignment(Qt::AlignCenter);
         label_8 = new QLabel(MaintainceACPRunPage);
         label_8->setObjectName(QString::fromUtf8("label_8"));
@@ -156,37 +156,37 @@ public:
         label_14->setAlignment(Qt::AlignCenter);
         MP2ACPStarttimelbl = new QLabel(MaintainceACPRunPage);
         MP2ACPStarttimelbl->setObjectName(QString::fromUtf8("MP2ACPStarttimelbl"));
-        MP2ACPStarttimelbl->setGeometry(QRect(640, 50, 131, 71));
+        MP2ACPStarttimelbl->setGeometry(QRect(734, 50, 131, 71));
         MP2ACPStarttimelbl->setStyleSheet(QString::fromUtf8("background-color:blue;font:20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
         MP2ACPStarttimelbl->setAlignment(Qt::AlignCenter);
         MP2ACPTotaltimelbl = new QLabel(MaintainceACPRunPage);
         MP2ACPTotaltimelbl->setObjectName(QString::fromUtf8("MP2ACPTotaltimelbl"));
-        MP2ACPTotaltimelbl->setGeometry(QRect(640, 120, 131, 71));
+        MP2ACPTotaltimelbl->setGeometry(QRect(734, 120, 131, 71));
         MP2ACPTotaltimelbl->setStyleSheet(QString::fromUtf8("background-color:blue;font:20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
         MP2ACPTotaltimelbl->setAlignment(Qt::AlignCenter);
         label_15 = new QLabel(MaintainceACPRunPage);
         label_15->setObjectName(QString::fromUtf8("label_15"));
-        label_15->setGeometry(QRect(640, 190, 131, 131));
+        label_15->setGeometry(QRect(734, 190, 131, 131));
         label_15->setAlignment(Qt::AlignCenter);
         label_16 = new QLabel(MaintainceACPRunPage);
         label_16->setObjectName(QString::fromUtf8("label_16"));
-        label_16->setGeometry(QRect(770, 50, 101, 71));
+        label_16->setGeometry(QRect(640, 50, 101, 71));
         label_16->setAlignment(Qt::AlignCenter);
         label_17 = new QLabel(MaintainceACPRunPage);
         label_17->setObjectName(QString::fromUtf8("label_17"));
-        label_17->setGeometry(QRect(770, 190, 101, 131));
+        label_17->setGeometry(QRect(640, 190, 101, 131));
         label_17->setAlignment(Qt::AlignCenter);
         label_18 = new QLabel(MaintainceACPRunPage);
         label_18->setObjectName(QString::fromUtf8("label_18"));
-        label_18->setGeometry(QRect(770, 120, 101, 71));
+        label_18->setGeometry(QRect(640, 120, 101, 71));
         label_18->setAlignment(Qt::AlignCenter);
         MP1ClearBtn = new QPushButton(MaintainceACPRunPage);
         MP1ClearBtn->setObjectName(QString::fromUtf8("MP1ClearBtn"));
-        MP1ClearBtn->setGeometry(QRect(327, 210, 98, 91));
+        MP1ClearBtn->setGeometry(QRect(230, 210, 98, 91));
         MP1ClearBtn->setFocusPolicy(Qt::NoFocus);
         MP2ClearBtn = new QPushButton(MaintainceACPRunPage);
         MP2ClearBtn->setObjectName(QString::fromUtf8("MP2ClearBtn"));
-        MP2ClearBtn->setGeometry(QRect(656, 210, 98, 91));
+        MP2ClearBtn->setGeometry(QRect(750, 210, 98, 91));
         MP2ClearBtn->setFocusPolicy(Qt::NoFocus);
         label->raise();
         returnBtn->raise();

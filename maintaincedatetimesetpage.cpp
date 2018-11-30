@@ -98,7 +98,7 @@ void MaintainceDatetimesetPage::on_returnBtn_pressed()
     this->ui->ConfirmBtn->setStyleSheet(INPUTBUTTONUP);
     this->database->HMiCT_SAVETime_B1 = false;
     this->database->HMiCT_SetFlagChecker_U8 = 0x55;
-    changePage(uVehicleMaintaincePage);
+    changePage(uVehicleRunStatePage);
 }
 
 void MaintainceDatetimesetPage::on_YearBtn_pressed()

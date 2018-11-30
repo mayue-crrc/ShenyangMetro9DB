@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclewmspage.ui'
 **
-** Created: Tue Jun 19 18:59:19 2018
+** Created: Wed Oct 24 13:51:39 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -114,6 +114,8 @@ public:
     QLabel *Area1MP2lbl_2;
     QLabel *Area1M2lbl_2;
     QLabel *Area1M2lbl_3;
+    QLabel *Area1M2lbl_4;
+    QLabel *PHMP2lbl_3;
 
     void setupUi(QWidget *VehicleWMSPage)
     {
@@ -896,10 +898,10 @@ public:
         PBM2lbl->setAlignment(Qt::AlignCenter);
         PHMP2lbl_2 = new QLabel(VehicleWMSPage);
         PHMP2lbl_2->setObjectName(QString::fromUtf8("PHMP2lbl_2"));
-        PHMP2lbl_2->setGeometry(QRect(900, 420, 81, 41));
+        PHMP2lbl_2->setGeometry(QRect(900, 440, 81, 41));
         PHMP2lbl_2->setStyleSheet(QString::fromUtf8("border-radius:8px;\n"
 "color:white;\n"
-"background-color:green;\n"
+"background-color:yellow;\n"
 "font:20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 ""));
         PHMP2lbl_2->setAlignment(Qt::AlignCenter);
@@ -914,7 +916,7 @@ public:
         Area1MP2lbl_2->setAlignment(Qt::AlignCenter);
         Area1M2lbl_2 = new QLabel(VehicleWMSPage);
         Area1M2lbl_2->setObjectName(QString::fromUtf8("Area1M2lbl_2"));
-        Area1M2lbl_2->setGeometry(QRect(890, 460, 101, 41));
+        Area1M2lbl_2->setGeometry(QRect(880, 480, 121, 41));
         Area1M2lbl_2->setStyleSheet(QString::fromUtf8("color:white;\n"
 "background-color:black;\n"
 "font-size:18px;\n"
@@ -930,7 +932,24 @@ public:
 "\n"
 ""));
         Area1M2lbl_3->setAlignment(Qt::AlignCenter);
-        label->raise();
+        Area1M2lbl_4 = new QLabel(VehicleWMSPage);
+        Area1M2lbl_4->setObjectName(QString::fromUtf8("Area1M2lbl_4"));
+        Area1M2lbl_4->setGeometry(QRect(890, 400, 101, 41));
+        Area1M2lbl_4->setStyleSheet(QString::fromUtf8("color:white;\n"
+"background-color:black;\n"
+"font-size:18px;\n"
+"\n"
+""));
+        Area1M2lbl_4->setAlignment(Qt::AlignCenter);
+        PHMP2lbl_3 = new QLabel(VehicleWMSPage);
+        PHMP2lbl_3->setObjectName(QString::fromUtf8("PHMP2lbl_3"));
+        PHMP2lbl_3->setGeometry(QRect(900, 360, 81, 41));
+        PHMP2lbl_3->setStyleSheet(QString::fromUtf8("border-radius:8px;\n"
+"color:white;\n"
+"background-color:green;\n"
+"font:20px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+""));
+        PHMP2lbl_3->setAlignment(Qt::AlignCenter);
         TrainNumTC1lbl->raise();
         TrainNumMP1lbl->raise();
         TrainNumM2lbl->raise();
@@ -978,7 +997,7 @@ public:
         lbl_5->raise();
         lbl_6->raise();
         lbl_7->raise();
-        returnBtn->raise();
+        label->raise();
         lbl_8->raise();
         lbl_9->raise();
         lbl_10->raise();
@@ -1020,6 +1039,9 @@ public:
         Area1MP2lbl_2->raise();
         Area1M2lbl_2->raise();
         Area1M2lbl_3->raise();
+        Area1M2lbl_4->raise();
+        PHMP2lbl_3->raise();
+        returnBtn->raise();
 
         retranslateUi(VehicleWMSPage);
 
@@ -1133,8 +1155,10 @@ public:
         PBM2lbl->setText(QApplication::translate("VehicleWMSPage", "PB", 0, QApplication::UnicodeUTF8));
         PHMP2lbl_2->setText(QString());
         Area1MP2lbl_2->setText(QString());
-        Area1M2lbl_2->setText(QApplication::translate("VehicleWMSPage", "\346\227\240\347\201\253\347\201\276\346\212\245\350\255\246", 0, QApplication::UnicodeUTF8));
+        Area1M2lbl_2->setText(QApplication::translate("VehicleWMSPage", "\347\201\253\347\201\276\350\256\276\345\244\207\346\225\205\351\232\234", 0, QApplication::UnicodeUTF8));
         Area1M2lbl_3->setText(QApplication::translate("VehicleWMSPage", "\346\234\211\347\201\253\347\201\276\346\212\245\350\255\246", 0, QApplication::UnicodeUTF8));
+        Area1M2lbl_4->setText(QApplication::translate("VehicleWMSPage", "\346\227\240\347\201\253\347\201\276\346\212\245\350\255\246", 0, QApplication::UnicodeUTF8));
+        PHMP2lbl_3->setText(QString());
     } // retranslateUi
 
 };

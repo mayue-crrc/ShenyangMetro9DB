@@ -44,11 +44,6 @@ void VehicleSIVPage::updatePage()
     setlabelstates(this->ui->DCAM1lbl,true,(float)this->database->AX2CT_DCCurrent_I16/10,1,this->database->CTHM_ACU2On_B1);
     setlabelstates(this->ui->DCAM2lbl,true,(float)this->database->AX3CT_DCCurrent_I16/10,1,this->database->CTHM_ACU3On_B1);
     setlabelstates(this->ui->DCATC2lbl,true,(float)this->database->AX4CT_DCCurrent_I16/10,1,this->database->CTHM_ACU4On_B1);
-    //蓄电池温度
-    setlabelstates(this->ui->BCTTC1lbl,this->database->AX1CT_BatteryTempValid_B1,(float)this->database->AX1CT_BatteryTemp_I16/100,2,this->database->CTHM_ACU1On_B1);
-    setlabelstates(this->ui->BCTM1lbl,this->database->AX2CT_BatteryTempValid_B1,(float)this->database->AX2CT_BatteryTemp_I16/100,2,this->database->CTHM_ACU2On_B1);
-    setlabelstates(this->ui->BCTM2lbl,this->database->AX3CT_BatteryTempValid_B1,(float)this->database->AX3CT_BatteryTemp_I16/100,2,this->database->CTHM_ACU3On_B1);
-    setlabelstates(this->ui->BCTTC2lbl,this->database->AX4CT_BatteryTempValid_B1,(float)this->database->AX4CT_BatteryTemp_I16/100,2,this->database->CTHM_ACU4On_B1);
 
     //内部、外部短路
     setlabelstates(this->ui->SCTC1lbl,this->database->CTDT_ACM1InnerSC_B1,this->database->CTDT_ACM1OuterSC_B1,this->database->CTHM_ACU1On_B1);
@@ -145,4 +140,9 @@ void VehicleSIVPage::setlabelstates(QLabel* lbl,bool valid,float value,int per,b
         lbl->setText(QString::number(value,10,per));
         lbl->setStyleSheet(LABELBLUE);
     }
+}
+
+void VehicleSIVPage::on_NextPageBtn_pressed()
+{
+    changePage(uVehicleSIVPage2);
 }

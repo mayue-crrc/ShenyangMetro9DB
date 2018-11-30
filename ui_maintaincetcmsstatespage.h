@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincetcmsstatespage.ui'
 **
-** Created: Wed Jun 20 16:22:24 2018
+** Created: Tue Nov 6 13:44:17 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -560,7 +560,7 @@ public:
         label_2->setText(QString());
         label_3->setText(QApplication::translate("MaintainceTCMSStatesPage", "\345\234\250\347\272\277\357\274\210\344\270\273\357\274\211", 0, QApplication::UnicodeUTF8));
         label_4->setText(QApplication::translate("MaintainceTCMSStatesPage", "\345\234\250\347\272\277\357\274\210\344\273\216\357\274\211", 0, QApplication::UnicodeUTF8));
-        label_5->setText(QApplication::translate("MaintainceTCMSStatesPage", "\347\246\273\347\272\277", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("MaintainceTCMSStatesPage", "\351\200\232\344\277\241\345\274\202\345\270\270", 0, QApplication::UnicodeUTF8));
         label_6->setText(QApplication::translate("MaintainceTCMSStatesPage", "\345\234\250\347\272\277\n"
 "\357\274\210\351\203\250\345\210\206\344\270\273\357\274\211", 0, QApplication::UnicodeUTF8));
         CCULbl_tc1->setText(QApplication::translate("MaintainceTCMSStatesPage", "CCU", 0, QApplication::UnicodeUTF8));

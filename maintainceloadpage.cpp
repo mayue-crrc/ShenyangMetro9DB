@@ -2,25 +2,26 @@
 #include "ui_maintainceloadpage.h"
 //#include "MainGetDefaultPara.h"
 
+#define DECIMALS        4
 MaintainceLoadPage::MaintainceLoadPage(QWidget *parent) :
     MyBase(parent),
     ui(new Ui::MaintainceLoadPage)
 {
     ui->setupUi(this);
 
-    DefaultLoadTC1 = MainGetDefaultPara::getString("/DefaultLoad/load_TC1");
-    DefaultLoadMP1 = MainGetDefaultPara::getString("/DefaultLoad/load_MP1");
-    DefaultLoadM1 = MainGetDefaultPara::getString("/DefaultLoad/load_M1");
-    DefaultLoadM2 = MainGetDefaultPara::getString("/DefaultLoad/load_M2");
-    DefaultLoadMP2 = MainGetDefaultPara::getString("/DefaultLoad/load_MP2");
-    DefaultLoadTC2 = MainGetDefaultPara::getString("/DefaultLoad/load_TC2");
+    DefaultLoadTC1 = MainGetDefaultPara::getString("/DefaultLoad/load_TC1").left(DECIMALS);
+    DefaultLoadMP1 = MainGetDefaultPara::getString("/DefaultLoad/load_MP1").left(DECIMALS);
+    DefaultLoadM1 = MainGetDefaultPara::getString("/DefaultLoad/load_M1").left(DECIMALS);
+    DefaultLoadM2 = MainGetDefaultPara::getString("/DefaultLoad/load_M2").left(DECIMALS);
+    DefaultLoadMP2 = MainGetDefaultPara::getString("/DefaultLoad/load_MP2").left(DECIMALS);
+    DefaultLoadTC2 = MainGetDefaultPara::getString("/DefaultLoad/load_TC2").left(DECIMALS);
 
-    DefaultFullLoadTC1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_TC1");
-    DefaultFullLoadMP1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_MP1");
-    DefaultFullLoadM1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_M1");
-    DefaultFullLoadM2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_M2");
-    DefaultFullLoadMP2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_MP2");
-    DefaultFullLoadTC2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_TC2");
+    DefaultFullLoadTC1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_TC1").left(DECIMALS);
+    DefaultFullLoadMP1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_MP1").left(DECIMALS);
+    DefaultFullLoadM1 = MainGetDefaultPara::getString("/DefaultLoad/fullload_M1").left(DECIMALS);
+    DefaultFullLoadM2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_M2").left(DECIMALS);
+    DefaultFullLoadMP2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_MP2").left(DECIMALS);
+    DefaultFullLoadTC2 = MainGetDefaultPara::getString("/DefaultLoad/fullload_TC2").left(DECIMALS);
 
 //    DefaultLoadTC1=QString::number(31.151);
 //    DefaultLoadMP1=QString::number(33.77);
@@ -38,16 +39,16 @@ MaintainceLoadPage::~MaintainceLoadPage()
 
 void MaintainceLoadPage::on_returnBtn_pressed()
 {
-    changePage(uVehicleMaintaincePage);
+    changePage(uVehicleRunStatePage);
 }
 void MaintainceLoadPage::updatePage()
 {
-    this->ui->TrainWeightTC1lbl->setText(QString::number((float)this->database->CTHM_TC1Load_U16/100,10,2));
-    this->ui->TrainWeightMP1lbl->setText(QString::number((float)this->database->CTHM_MP1Load_U16/100,10,2));
-    this->ui->TrainWeightM1lbl->setText(QString::number((float)this->database->CTHM_M1Load_U16/100,10,2));
-    this->ui->TrainWeightM2lbl->setText(QString::number((float)this->database->CTHM_M2Load_U16/100,10,2));
-    this->ui->TrainWeightMP2lbl->setText(QString::number((float)this->database->CTHM_MP2Load_U16/100,10,2));
-    this->ui->TrainWeightTC2lbl->setText(QString::number((float)this->database->CTHM_TC2Load_U16/100,10,2));
+    this->ui->TrainWeightTC1lbl->setText(QString::number((float)this->database->CTHM_TC1Load_U16/100,10,1));
+    this->ui->TrainWeightMP1lbl->setText(QString::number((float)this->database->CTHM_MP1Load_U16/100,10,1));
+    this->ui->TrainWeightM1lbl->setText(QString::number((float)this->database->CTHM_M1Load_U16/100,10,1));
+    this->ui->TrainWeightM2lbl->setText(QString::number((float)this->database->CTHM_M2Load_U16/100,10,1));
+    this->ui->TrainWeightMP2lbl->setText(QString::number((float)this->database->CTHM_MP2Load_U16/100,10,1));
+    this->ui->TrainWeightTC2lbl->setText(QString::number((float)this->database->CTHM_TC2Load_U16/100,10,1));
 
     this->ui->EmptyTrainWeightTC1lbl->setText(DefaultLoadTC1);
     this->ui->EmptyTrainWeightMP1lbl->setText(DefaultLoadMP1);

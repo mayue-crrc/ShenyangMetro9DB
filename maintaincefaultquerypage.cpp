@@ -51,7 +51,7 @@ void MaintainceFaultQueryPage::SystemSelectEvent()
 }
 void MaintainceFaultQueryPage::on_returnBtn_pressed()
 {
-    changePage(uVehicleMaintaincePage);
+    changePage(uVehicleRunStatePage);
 }
 void MaintainceFaultQueryPage::updatePage()
 {

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'navigator.h'
 **
-** Created: Wed Oct 17 10:10:44 2018
+** Created: Fri Nov 30 11:12:46 2018
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

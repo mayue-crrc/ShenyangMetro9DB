@@ -139,7 +139,7 @@ void MaintainceBCUTestPage::updatePage()
 
 void MaintainceBCUTestPage::on_returnBtn_pressed()
 {
-    changePage(uVehicleMaintaincePage);
+    changePage(uVehicleRunStatePage);
 }
 void MaintainceBCUTestPage::setlabelstates(QLabel* lbl,bool states)
 {

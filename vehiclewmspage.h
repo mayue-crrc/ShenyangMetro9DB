@@ -19,6 +19,8 @@ public:
 private:
     Ui::VehicleWMSPage *ui;
     void setlabelstatus(QLabel* label, bool status);
+    void setlabelstatus(QLabel* label,bool status1, bool status2);
+
     void setlabelstatus1(QLabel* label, bool status);
     void setlabelstatus2(QLabel* label, bool status);
 

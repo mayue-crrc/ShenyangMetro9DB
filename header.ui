@@ -79,7 +79,7 @@ font: 22px, &quot;微软雅黑&quot;;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border: 2px solid rgb(255, 255, 255);
-	font: 18px, &quot;微软雅黑&quot;;
+	font: 16px, &quot;微软雅黑&quot;;
 color:yellow;</string>
    </property>
    <property name="text">
@@ -120,7 +120,7 @@ color:yellow;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border: 2px solid rgb(255, 255, 255);
-	font: 18px, &quot;微软雅黑&quot;;
+	font: 16px, &quot;微软雅黑&quot;;
 color:yellow;</string>
    </property>
    <property name="text">
@@ -161,7 +161,7 @@ color:yellow;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border: 2px solid rgb(255, 255, 255);
-	font: 18px, &quot;微软雅黑&quot;;
+	font: 16px, &quot;微软雅黑&quot;;
 color:yellow;</string>
    </property>
    <property name="text">
@@ -242,7 +242,7 @@ color:yellow;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">	font: 18px, &quot;微软雅黑&quot;;
+    <string notr="true">	font: 16px, &quot;微软雅黑&quot;;
 color:yellow;
 border: 2px solid rgb(255, 255, 255);
 </string>
@@ -284,7 +284,7 @@ border: 2px solid rgb(255, 255, 255);
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">	font: 18px, &quot;微软雅黑&quot;;
+    <string notr="true">	font: 16px, &quot;微软雅黑&quot;;
 color:yellow;border: 2px solid rgb(255, 255, 255);
 </string>
    </property>

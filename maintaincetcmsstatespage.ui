@@ -147,7 +147,7 @@ background-color: rgb(0, 0, 0);
 </string>
    </property>
    <property name="text">
-    <string>离线</string>
+    <string>通信异常</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

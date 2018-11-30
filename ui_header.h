@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'header.ui'
 **
-** Created: Wed Sep 26 13:11:56 2018
+** Created: Wed Oct 24 13:51:37 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -74,7 +74,7 @@ public:
         DrivingMode->setObjectName(QString::fromUtf8("DrivingMode"));
         DrivingMode->setGeometry(QRect(144, 41, 90, 40));
         DrivingMode->setStyleSheet(QString::fromUtf8("border: 2px solid rgb(255, 255, 255);\n"
-"	font: 18px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:yellow;"));
         DrivingMode->setAlignment(Qt::AlignCenter);
         Label2 = new QLabel(Header);
@@ -87,7 +87,7 @@ public:
         NetVoltage->setObjectName(QString::fromUtf8("NetVoltage"));
         NetVoltage->setGeometry(QRect(234, 41, 72, 40));
         NetVoltage->setStyleSheet(QString::fromUtf8("border: 2px solid rgb(255, 255, 255);\n"
-"	font: 18px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:yellow;"));
         NetVoltage->setAlignment(Qt::AlignCenter);
         Label3 = new QLabel(Header);
@@ -100,7 +100,7 @@ public:
         Speed->setObjectName(QString::fromUtf8("Speed"));
         Speed->setGeometry(QRect(306, 41, 84, 40));
         Speed->setStyleSheet(QString::fromUtf8("border: 2px solid rgb(255, 255, 255);\n"
-"	font: 18px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:yellow;"));
         Speed->setAlignment(Qt::AlignCenter);
         Label4 = new QLabel(Header);
@@ -125,7 +125,7 @@ public:
         CurrentStation = new QLabel(Header);
         CurrentStation->setObjectName(QString::fromUtf8("CurrentStation"));
         CurrentStation->setGeometry(QRect(480, 41, 121, 40));
-        CurrentStation->setStyleSheet(QString::fromUtf8("	font: 18px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+        CurrentStation->setStyleSheet(QString::fromUtf8("	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:yellow;\n"
 "border: 2px solid rgb(255, 255, 255);\n"
 ""));
@@ -139,7 +139,7 @@ public:
         NextStation = new QLabel(Header);
         NextStation->setObjectName(QString::fromUtf8("NextStation"));
         NextStation->setGeometry(QRect(601, 41, 121, 40));
-        NextStation->setStyleSheet(QString::fromUtf8("	font: 18px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+        NextStation->setStyleSheet(QString::fromUtf8("	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 "color:yellow;border: 2px solid rgb(255, 255, 255);\n"
 ""));
         NextStation->setAlignment(Qt::AlignCenter);

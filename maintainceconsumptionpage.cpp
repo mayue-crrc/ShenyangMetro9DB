@@ -34,7 +34,7 @@ void MaintainceConsumptionPage::on_returnBtn_pressed()
     this->ui->VVVFClearBtn->setStyleSheet(MCBUTTON_UP);
     this->ui->SIVClearBtn->setStyleSheet(MCBUTTON_UP);
     this->timer2s->stop();
-    changePage(uVehicleMaintaincePage);
+    changePage(uVehicleRunStatePage);
 }
 
 void MaintainceConsumptionPage::on_VVVFClearBtn_pressed()

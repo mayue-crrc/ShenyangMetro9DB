@@ -61,6 +61,12 @@ Header::Header(QWidget *parent) :
     vehicleACUHelpPage->move ((QApplication::desktop()->width() - vehicleACUHelpPage->width())/2,(QApplication::desktop()->height() - vehicleACUHelpPage->height())/2);
     vehicleACUHelpPage->hide();
 
+    vehicleACUHelpPage2 = new VehicleACUHelpPage2();
+    vehicleACUHelpPage2->setGeometry(112,80,vehicleACUHelpPage->width(),vehicleACUHelpPage->height());
+    vehicleACUHelpPage2->setWindowFlags(Qt::FramelessWindowHint);
+    vehicleACUHelpPage2->move ((QApplication::desktop()->width() - vehicleACUHelpPage->width())/2,(QApplication::desktop()->height() - vehicleACUHelpPage->height())/2);
+    vehicleACUHelpPage2->hide();
+
     ctrlBrightnessAdjust = new CtrlBrightnessAdjust();
     ctrlBrightnessAdjust->setGeometry(212,200,ctrlBrightnessAdjust->width(),ctrlBrightnessAdjust->height());
     ctrlBrightnessAdjust->setWindowFlags(Qt::FramelessWindowHint);
@@ -74,27 +80,27 @@ Header::Header(QWidget *parent) :
     faulthelpPage->hide();
 
     m_StationIDHash.insert(1,"怒江公园");
-    m_StationIDHash.insert(2,"淮河街");
-    m_StationIDHash.insert(3,"皇姑屯");
-    m_StationIDHash.insert(4,"北一路");
+    m_StationIDHash.insert(2,"淮河街沈医二院");
+    m_StationIDHash.insert(3,"皇姑屯站");
+    m_StationIDHash.insert(4,"重型文化广场");
     m_StationIDHash.insert(5,"北二路");
     m_StationIDHash.insert(6,"铁西广场");
     m_StationIDHash.insert(7,"兴华公园");
-    m_StationIDHash.insert(8,"辽沈路");
+    m_StationIDHash.insert(8,"沈辽路");
     m_StationIDHash.insert(9,"滑翔");
     m_StationIDHash.insert(10,"吉力湖街");
-    m_StationIDHash.insert(11,"汪河路");
+    m_StationIDHash.insert(11,"大通湖街");
     m_StationIDHash.insert(12,"曹仲");
-    m_StationIDHash.insert(13,"沈苏西路");
+    m_StationIDHash.insert(13,"浑河站");
     m_StationIDHash.insert(14,"胜利南街");
     m_StationIDHash.insert(15,"长白南");
     m_StationIDHash.insert(16,"榆树台");
     m_StationIDHash.insert(17,"金阳大街");
-    m_StationIDHash.insert(18,"浑河堡");
+    m_StationIDHash.insert(18,"彩霞街");
     m_StationIDHash.insert(19,"奥体中心");
-    m_StationIDHash.insert(20,"奥体东");
+    m_StationIDHash.insert(20,"天成街");
     m_StationIDHash.insert(21,"朗日街");
-    m_StationIDHash.insert(22,"浑南大道");
+    m_StationIDHash.insert(22,"长青南街");
     m_StationIDHash.insert(23,"建筑大学");
 
 }
@@ -351,6 +357,18 @@ void Header::on_HelpItemBtn_pressed()
     }else
     {
         this->vehicleACUHelpPage->close();
+    }
+
+    if(this->currentPage == uVehicleSIVPage2)
+    {
+        if(!this->vehicleACUHelpPage2->isActiveWindow())
+        {
+            this->vehicleACUHelpPage2->close();
+        }
+        this->vehicleACUHelpPage2->show();
+    }else
+    {
+        this->vehicleACUHelpPage2->close();
     }
 
     if(this->currentPage == uVehicleEBCUPage2)

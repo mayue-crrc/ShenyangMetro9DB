@@ -46,7 +46,7 @@ QLabel
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:lightgreen</string>
+    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:rgb(0,204,0)</string>
    </property>
    <property name="text">
     <string/>
@@ -232,7 +232,7 @@ border-radius:10px</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:lightgreen;</string>
+    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:rgb(0,204,0);</string>
    </property>
    <property name="text">
     <string/>
@@ -349,7 +349,7 @@ border-radius:10px</string>
     </rect>
    </property>
    <property name="text">
-    <string>停放制动施加</string>
+    <string>停放制动</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -403,7 +403,7 @@ border-radius:10px</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:lightgreen;</string>
+    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:rgb(0,204,0);</string>
    </property>
    <property name="text">
     <string/>
@@ -539,7 +539,7 @@ border-radius:10px</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:lightgreen;</string>
+    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:rgb(0,204,0);</string>
    </property>
    <property name="text">
     <string/>
@@ -727,7 +727,7 @@ border-radius:10px</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:lightgreen;</string>
+    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:rgb(0,204,0);</string>
    </property>
    <property name="text">
     <string/>
@@ -919,7 +919,7 @@ border-radius:10px</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:lightgreen;</string>
+    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:rgb(0,204,0);</string>
    </property>
    <property name="text">
     <string/>
@@ -1033,7 +1033,7 @@ border-radius:10px</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:lightgreen;</string>
+    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:rgb(0,204,0);</string>
    </property>
    <property name="text">
     <string/>

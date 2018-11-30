@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicleresetpage.ui'
 **
-** Created: Thu Jun 21 10:35:32 2018
+** Created: Wed Oct 24 13:51:38 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

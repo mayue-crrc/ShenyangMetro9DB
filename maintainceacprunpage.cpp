@@ -44,7 +44,7 @@ void MaintainceACPRunPage::on_returnBtn_pressed()
     this->database->HMiCT_SetFlagChecker_U8 = 0x55;
 
     timer2s->stop();
-    changePage(uVehicleMaintaincePage);
+    changePage(uVehicleRunStatePage);
 }
 
 void MaintainceACPRunPage::on_MP1ClearBtn_pressed()

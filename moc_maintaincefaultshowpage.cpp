@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'maintaincefaultshowpage.h'
 **
-** Created: Wed Oct 17 10:11:11 2018
+** Created: Fri Nov 30 11:13:21 2018
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_MaintainceFaultShowPage[] = {
        4,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -32,16 +32,20 @@ static const uint qt_meta_data_MaintainceFaultShowPage[] = {
 
  // slots: signature, parameters, type, tag, flags
       25,   24,   24,   24, 0x08,
-      50,   24,   24,   24, 0x08,
+      49,   24,   24,   24, 0x08,
       74,   24,   24,   24, 0x08,
+      98,   24,   24,   24, 0x08,
+     121,   24,   24,   24, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_MaintainceFaultShowPage[] = {
     "MaintainceFaultShowPage\0\0"
+    "on_BTNClose_2_pressed()\0"
     "on_NextPageBtn_pressed()\0"
     "on_PrePageBtn_pressed()\0on_returnBtn_pressed()\0"
+    "ButtonsPressEvent()\0"
 };
 
 const QMetaObject MaintainceFaultShowPage::staticMetaObject = {
@@ -73,12 +77,14 @@ int MaintainceFaultShowPage::qt_metacall(QMetaObject::Call _c, int _id, void **_
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: on_NextPageBtn_pressed(); break;
-        case 1: on_PrePageBtn_pressed(); break;
-        case 2: on_returnBtn_pressed(); break;
+        case 0: on_BTNClose_2_pressed(); break;
+        case 1: on_NextPageBtn_pressed(); break;
+        case 2: on_PrePageBtn_pressed(); break;
+        case 3: on_returnBtn_pressed(); break;
+        case 4: ButtonsPressEvent(); break;
         default: ;
         }
-        _id -= 3;
+        _id -= 5;
     }
     return _id;
 }

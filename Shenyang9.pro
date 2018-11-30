@@ -125,7 +125,9 @@ SOURCES += main.cpp\
     vehicleacuhelppage.cpp \
     vehicleresethelppage.cpp \
     ctrlbrightnessadjust.cpp \
-    vehiclebcuhelppage2.cpp
+    vehiclebcuhelppage2.cpp \
+    vehiclesivpage2.cpp \
+    vehicleacuhelppage2.cpp
 
 HEADERS  += widget.h \
     mybase.h \
@@ -241,7 +243,9 @@ HEADERS  += widget.h \
     vehicleacuhelppage.h \
     vehicleresethelppage.h \
     ctrlbrightnessadjust.h \
-    vehiclebcuhelppage2.h
+    vehiclebcuhelppage2.h \
+    vehiclesivpage2.h \
+    vehicleacuhelppage2.h
 
 FORMS    += widget.ui \
     header.ui \
@@ -301,7 +305,9 @@ FORMS    += widget.ui \
     vehicleacuhelppage.ui \
     vehicleresethelppage.ui \
     ctrlbrightnessadjust.ui \
-    vehiclebcuhelppage2.ui
+    vehiclebcuhelppage2.ui \
+    vehiclesivpage2.ui \
+    vehicleacuhelppage2.ui
 
 RESOURCES += \
     Resource.qrc

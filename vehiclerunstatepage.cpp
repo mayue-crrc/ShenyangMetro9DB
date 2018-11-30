@@ -220,8 +220,8 @@ void VehicleRunStatePage::updateRunStatus()
     //牵引安全未建立
 
     //间壁门蜂鸣器按键
-    if((this->database->HMIPosition == 1 && this->database->DICT_TC2DI4CH17BarrielDoorStutas_B1 == false) ||
-       (this->database->HMIPosition == 2 && this->database->DICT_TC1DI4CH17BarrielDoorStutas_B1 == false))
+    if((this->database->DICT_TC2DI4CH17BarrielDoorStutas_B1 == false) ||
+       (this->database->DICT_TC1DI4CH17BarrielDoorStutas_B1 == false))
     {
         this->ui->BuzzerBtn->show();
         if(this->database->HMiCT_PWDoorAlarmStop_B1)

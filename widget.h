@@ -56,6 +56,7 @@ class CtrlFaultDetailConfirm;
 class MaintainceFaultShowPage;
 class MaintainceFaultQueryFault;
 class MaintainceFaultQueryPage;
+class VehicleSIVPage2;
 
 class Widget : public QWidget
 {
@@ -125,6 +126,7 @@ private:
     VehicleUnactivePage* vehicleUnactivePage;
     MaintainceFaultShowPage* maintainceFaultShowPage;
     MaintainceFaultQueryPage* maintainceFaultQueryPage;
+    VehicleSIVPage2* vehicleSIVPage2;
     void VCUtime2HMI10s();
 
     QTimer* UnactiveTimer60s;

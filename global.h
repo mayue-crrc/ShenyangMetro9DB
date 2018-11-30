@@ -25,7 +25,8 @@
 #define INPUTBUTTONDOWN "color:white;font:18px,\"微软雅黑\";border-top:2px solid  transparent;border-left: 2px solid transparent;border-bottom:2px solid white;border-right: 2px solid white;background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgba(20,108,140,255),stop:0.7 rgba(150,228,40,255) ,stop:1 rgba(20,108,140,255));"
 
 #define PButtonUP    "font: 20px, \"微软雅黑\";color: white;background-color: rgb(0, 128, 128);	border-radius:8px;border-top: 2px solid white;border-left: 2px solid white;"
-#define PButtonDOWN  "font: 20px, \"微软雅黑\";color: black;background-color: rgb(0, 255, 255);	border-radius:8px;border-top: 2px solid  rgb(0, 0, 255);border-left: 2px solid  rgb(0, 0, 255);border-bottom: 2px solid white;border-right: 2px solid white;"
+//#define PButtonDOWN  "font: 20px, \"微软雅黑\";color: black;background-color: rgb(0, 255, 255);	border-radius:8px;border-top: 2px solid  rgb(0, 0, 255);border-left: 2px solid  rgb(0, 0, 255);border-bottom: 2px solid white;border-right: 2px solid white;"
+#define PButtonDOWN  "font: 20px, \"微软雅黑\";color: white;background-color: orange;	border-radius:8px;border-top: 2px solid  orange;border-left: orange;border-bottom: 2px solid white;border-right: 2px solid white;"
 
 #define TC1DIRECT "border-image: url(:/images/images/TC1traingraphDirection.bmp);"
 #define TC2DIRECT "border-image: url(:/images/images/TC2traingraphDirection.bmp);"
@@ -47,7 +48,7 @@
 #define ON_STATE ("border-radius: 12px; border: 1px groove yellow; background-color: rgb(0,255,0);")
 #define OFF_STATE ("border-radius: 12px; border: 1px groove yellow; background-color: gray;")
 
-#define LABELYELLOW "	font: 20px, \"微软雅黑\";color:white;background-color:yellow;"
+#define LABELYELLOW "	font: 20px, \"微软雅黑\";color:black;background-color:yellow;"
 #define LABELGREEN "	font: 20px, \"微软雅黑\";color:white;background-color:green;"
 #define LABELBLUE "	font: 20px, \"微软雅黑\";color:white;background-color:blue;"
 #define LABELGRAY "	font: 20px, \"微软雅黑\";color:white;background-color:gray;"
@@ -56,7 +57,7 @@
 #define LABELWHITE "	font: 20px, \"微软雅黑\";color:black;background-color:white;"
 #define LABELBLACK "	font: 20px, \"微软雅黑\";color:white;background-color:black;"
 #define LABELPINK "	font: 20px, \"微软雅黑\";color:black;background-color:rgb(224,160,192);"
-#define LABELLIGHTGREEN "	font: 20px, \"微软雅黑\";color:white;background-color:lightgreen;"
+#define LABELLIGHTGREEN "	font: 20px, \"微软雅黑\";color:white;background-color:rgb(0,204,0);"
 
 enum pagePosition
 {
@@ -107,6 +108,7 @@ enum pageIndex
     uVehicleUnactivePage,
     uMaintainceFaultQureyPage,
     uMaintainceFaultShowPage,
+    uVehicleSIVPage2,
 
 };
 

@@ -473,7 +473,7 @@ border-radius:8px;
     <string notr="true">background-color:black;</string>
    </property>
    <property name="text">
-    <string>停放制动施加</string>
+    <string>停放制动</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

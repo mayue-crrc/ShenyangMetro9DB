@@ -129,7 +129,7 @@ background-color: rgb(0, 0, 0);
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>340</x>
      <y>50</y>
      <width>101</width>
      <height>71</height>
@@ -145,7 +145,7 @@ background-color: rgb(0, 0, 0);
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>340</x>
      <y>120</y>
      <width>101</width>
      <height>71</height>
@@ -161,7 +161,7 @@ background-color: rgb(0, 0, 0);
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>340</x>
      <y>190</y>
      <width>101</width>
      <height>131</height>
@@ -177,7 +177,7 @@ background-color: rgb(0, 0, 0);
   <widget class="QLabel" name="MP1ACPTotaltimelbl">
    <property name="geometry">
     <rect>
-     <x>310</x>
+     <x>210</x>
      <y>120</y>
      <width>131</width>
      <height>71</height>
@@ -196,7 +196,7 @@ background-color: rgb(0, 0, 0);
   <widget class="QLabel" name="MP1ACPStarttimelbl">
    <property name="geometry">
     <rect>
-     <x>310</x>
+     <x>210</x>
      <y>50</y>
      <width>131</width>
      <height>71</height>
@@ -215,7 +215,7 @@ background-color: rgb(0, 0, 0);
   <widget class="QLabel" name="label_10">
    <property name="geometry">
     <rect>
-     <x>310</x>
+     <x>210</x>
      <y>190</y>
      <width>131</width>
      <height>131</height>
@@ -327,7 +327,7 @@ background-color: rgb(0, 0, 0);
   <widget class="QLabel" name="MP2ACPStarttimelbl">
    <property name="geometry">
     <rect>
-     <x>640</x>
+     <x>734</x>
      <y>50</y>
      <width>131</width>
      <height>71</height>
@@ -346,7 +346,7 @@ background-color: rgb(0, 0, 0);
   <widget class="QLabel" name="MP2ACPTotaltimelbl">
    <property name="geometry">
     <rect>
-     <x>640</x>
+     <x>734</x>
      <y>120</y>
      <width>131</width>
      <height>71</height>
@@ -365,7 +365,7 @@ background-color: rgb(0, 0, 0);
   <widget class="QLabel" name="label_15">
    <property name="geometry">
     <rect>
-     <x>640</x>
+     <x>734</x>
      <y>190</y>
      <width>131</width>
      <height>131</height>
@@ -381,7 +381,7 @@ background-color: rgb(0, 0, 0);
   <widget class="QLabel" name="label_16">
    <property name="geometry">
     <rect>
-     <x>770</x>
+     <x>640</x>
      <y>50</y>
      <width>101</width>
      <height>71</height>
@@ -397,7 +397,7 @@ background-color: rgb(0, 0, 0);
   <widget class="QLabel" name="label_17">
    <property name="geometry">
     <rect>
-     <x>770</x>
+     <x>640</x>
      <y>190</y>
      <width>101</width>
      <height>131</height>
@@ -413,7 +413,7 @@ background-color: rgb(0, 0, 0);
   <widget class="QLabel" name="label_18">
    <property name="geometry">
     <rect>
-     <x>770</x>
+     <x>640</x>
      <y>120</y>
      <width>101</width>
      <height>71</height>
@@ -429,7 +429,7 @@ background-color: rgb(0, 0, 0);
   <widget class="QPushButton" name="MP1ClearBtn">
    <property name="geometry">
     <rect>
-     <x>327</x>
+     <x>230</x>
      <y>210</y>
      <width>98</width>
      <height>91</height>
@@ -446,7 +446,7 @@ background-color: rgb(0, 0, 0);
   <widget class="QPushButton" name="MP2ClearBtn">
    <property name="geometry">
     <rect>
-     <x>656</x>
+     <x>750</x>
      <y>210</y>
      <width>98</width>
      <height>91</height>

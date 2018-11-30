@@ -350,7 +350,7 @@ border-radius:10px</string>
 </string>
    </property>
    <property name="text">
-    <string>ACM故障</string>
+    <string>ACM切除或故障</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -405,7 +405,7 @@ border-radius:10px</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 20px, &quot;微软雅黑&quot;;color:white;background-color:gray
+    <string notr="true">font: 20px, &quot;微软雅黑&quot;;color:white;background-color:red
 </string>
    </property>
    <property name="text">

@@ -13,8 +13,65 @@ MaintainceFaultShowPage::MaintainceFaultShowPage(QWidget *parent) :
     m_totalPageIndex = 1;
     m_currentPageFaultNum = 0;
     m_totalFaultNum = 0;
+    m_currentButtonsDown = 0;
+    this->ui->BTNClose_2->raise();
+    this->ui->GROUPBOXFault->hide();
+
+    QList<QPushButton* > m_buttons;
+    m_buttons<< this->ui->BTNRow<<this->ui->BTNRow_2<<this->ui->BTNRow_3<<this->ui->BTNRow_4<<this->ui->BTNRow_5<<
+              this->ui->BTNRow_6<<this->ui->BTNRow_7<<this->ui->BTNRow_8<<this->ui->BTNRow_9;
+
+    foreach(QPushButton* btn,m_buttons)
+    {
+        connect(btn,SIGNAL(pressed()),this,SLOT(ButtonsPressEvent()));
+    }
+
 }
 
+void MaintainceFaultShowPage::SetFaultFdetail(QString Fdetail)
+{
+    QStringList stringList = Fdetail.split("|");
+    QString t_detail = "";
+    if(stringList.size() > 1)
+    {
+        for(int i = 0; i < stringList.size();i++)
+        {
+            t_detail = t_detail + stringList.at(i)+"\n";
+        }
+        ui->FaultTips_2->setText(t_detail);//Fdetail);
+    }else
+    {
+        ui->FaultTips_2->setText(Fdetail);
+
+    }
+
+
+}
+void MaintainceFaultShowPage::ButtonsPressEvent()
+{
+    if(m_currentPageIndex<m_totalPageIndex)//not last page
+        {
+            m_currentButtonsDown = ((QPushButton*)this->sender())->whatsThis().toInt();
+
+            this->ui->GROUPBOXFault->show();
+            this->SetFaultFdetail(CrrcFault::getCrrcFault()->getHistoryFaultDescription(CrrcFault::getCrrcFault()->getQueryFault()[m_currentButtonsDown+(m_currentPageIndex-1)*MAXCNTPERPAGE]));
+            this->ui->Faultname_2->setText("故障名称: "+CrrcFault::getCrrcFault()->getHistoryFaultCode(CrrcFault::getCrrcFault()->getQueryFault()[m_currentButtonsDown+(m_currentPageIndex-1)*MAXCNTPERPAGE])+"  "+
+                                         CrrcFault::getCrrcFault()->getHistoryFaultName(CrrcFault::getCrrcFault()->getQueryFault()[m_currentButtonsDown+(m_currentPageIndex-1)*MAXCNTPERPAGE]));
+        }else//last page
+        {
+
+            if(((QPushButton*)this->sender())->whatsThis().toInt() < m_currentPageFaultNum)//draw fault
+            {
+                m_currentButtonsDown = ((QPushButton*)this->sender())->whatsThis().toInt();
+
+                this->ui->GROUPBOXFault->show();
+                this->SetFaultFdetail(CrrcFault::getCrrcFault()->getHistoryFaultDescription(CrrcFault::getCrrcFault()->getQueryFault()[m_currentButtonsDown+(m_currentPageIndex-1)*MAXCNTPERPAGE]));
+                this->ui->Faultname_2->setText("故障名称: "+CrrcFault::getCrrcFault()->getHistoryFaultCode(CrrcFault::getCrrcFault()->getQueryFault()[m_currentButtonsDown+(m_currentPageIndex-1)*MAXCNTPERPAGE])+"  "+
+                                             CrrcFault::getCrrcFault()->getHistoryFaultName(CrrcFault::getCrrcFault()->getQueryFault()[m_currentButtonsDown+(m_currentPageIndex-1)*MAXCNTPERPAGE]));
+            }
+
+        }
+}
 MaintainceFaultShowPage::~MaintainceFaultShowPage()
 {
     delete ui;
@@ -172,4 +229,9 @@ void MaintainceFaultShowPage::on_NextPageBtn_pressed()
 {
     if(m_currentPageIndex<m_totalPageIndex)
         m_currentPageIndex++;
+}
+
+void MaintainceFaultShowPage::on_BTNClose_2_pressed()
+{
+    this->ui->GROUPBOXFault->hide();
 }

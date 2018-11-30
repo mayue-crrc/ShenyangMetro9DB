@@ -197,7 +197,7 @@ void MaintaincePortsDataPage::paintEvent(QPaintEvent *)
 
 void MaintaincePortsDataPage::on_returnBtn_pressed()
 {
-    changePage(uVehicleMaintaincePage);
+    changePage(uVehicleRunStatePage);
 }
 void MaintaincePortsDataPage::NumKeyboardEvent()
 {

@@ -2011,7 +2011,7 @@ font:20px  &quot;微软雅黑&quot;;
    <property name="geometry">
     <rect>
      <x>900</x>
-     <y>420</y>
+     <y>440</y>
      <width>81</width>
      <height>41</height>
     </rect>
@@ -2019,7 +2019,7 @@ font:20px  &quot;微软雅黑&quot;;
    <property name="styleSheet">
     <string notr="true">border-radius:8px;
 color:white;
-background-color:green;
+background-color:yellow;
 font:20px  &quot;微软雅黑&quot;;
 </string>
    </property>
@@ -2056,9 +2056,9 @@ font:20px  &quot;微软雅黑&quot;;
   <widget class="QLabel" name="Area1M2lbl_2">
    <property name="geometry">
     <rect>
-     <x>890</x>
-     <y>460</y>
-     <width>101</width>
+     <x>880</x>
+     <y>480</y>
+     <width>121</width>
      <height>41</height>
     </rect>
    </property>
@@ -2070,7 +2070,7 @@ font-size:18px;
 </string>
    </property>
    <property name="text">
-    <string>无火灾报警</string>
+    <string>火灾设备故障</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -2099,7 +2099,52 @@ font-size:18px;
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <zorder>label</zorder>
+  <widget class="QLabel" name="Area1M2lbl_4">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>400</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:black;
+font-size:18px;
+
+</string>
+   </property>
+   <property name="text">
+    <string>无火灾报警</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="PHMP2lbl_3">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>360</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+color:white;
+background-color:green;
+font:20px  &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
   <zorder>TrainNumTC1lbl</zorder>
   <zorder>TrainNumMP1lbl</zorder>
   <zorder>TrainNumM2lbl</zorder>
@@ -2147,7 +2192,7 @@ font-size:18px;
   <zorder>lbl_5</zorder>
   <zorder>lbl_6</zorder>
   <zorder>lbl_7</zorder>
-  <zorder>returnBtn</zorder>
+  <zorder>label</zorder>
   <zorder>lbl_8</zorder>
   <zorder>lbl_9</zorder>
   <zorder>lbl_10</zorder>
@@ -2189,6 +2234,9 @@ font-size:18px;
   <zorder>Area1MP2lbl_2</zorder>
   <zorder>Area1M2lbl_2</zorder>
   <zorder>Area1M2lbl_3</zorder>
+  <zorder>Area1M2lbl_4</zorder>
+  <zorder>PHMP2lbl_3</zorder>
+  <zorder>returnBtn</zorder>
  </widget>
  <resources/>
  <connections/>
