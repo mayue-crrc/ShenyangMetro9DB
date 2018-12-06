@@ -2043,10 +2043,10 @@ background-color:darkgray;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <zorder>lbl1_19</zorder>
   <zorder>lbl1_16</zorder>
-  <zorder>lbl1_15</zorder>
+  <zorder>lbl1_19</zorder>
   <zorder>lbl1_20</zorder>
+  <zorder>lbl1_15</zorder>
   <zorder>lbl1_18</zorder>
   <zorder>lbl1_17</zorder>
   <zorder>lbl1_14</zorder>

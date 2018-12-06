@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicleacpage2.ui'
 **
-** Created: Tue Nov 6 13:57:26 2018
+** Created: Mon Dec 3 08:04:35 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -487,9 +487,9 @@ public:
         lbl1_22->setStyleSheet(QString::fromUtf8("background-color:TRANSPARENT;\n"
 ""));
         lbl1_22->setAlignment(Qt::AlignCenter);
-        SettingTemplbl_2->raise();
         lbl1_15->raise();
         lbl1_14->raise();
+        SettingTemplbl_2->raise();
         ACModeMP2lbl->raise();
         ACReduceM2lbl->raise();
         TempM1lbl->raise();

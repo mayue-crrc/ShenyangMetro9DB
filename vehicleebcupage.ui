@@ -775,7 +775,7 @@ border-radius:8px;
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="SMP2_2lbl">
+  <widget class="QLabel" name="SMP2_1lbl">
    <property name="geometry">
     <rect>
      <x>690</x>
@@ -839,7 +839,7 @@ border-radius:8px;
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="SMP2_1lbl">
+  <widget class="QLabel" name="SMP2_2lbl">
    <property name="geometry">
     <rect>
      <x>650</x>
@@ -1699,11 +1699,11 @@ border-radius:8px;</string>
   <zorder>SMP1_2lbl</zorder>
   <zorder>GM1_2lbl</zorder>
   <zorder>GM2_1lbl</zorder>
-  <zorder>SMP2_2lbl</zorder>
+  <zorder>SMP2_1lbl</zorder>
   <zorder>GTC2_2lbl</zorder>
   <zorder>GTC1_1lbl</zorder>
   <zorder>STC1_2lbl</zorder>
-  <zorder>SMP2_1lbl</zorder>
+  <zorder>SMP2_2lbl</zorder>
   <zorder>SMP1_1lbl</zorder>
   <zorder>SM2_2lbl</zorder>
   <zorder>SM1_1lbl</zorder>

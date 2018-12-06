@@ -1354,9 +1354,9 @@ font:14px;
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <zorder>SettingTemplbl_2</zorder>
   <zorder>lbl1_15</zorder>
   <zorder>lbl1_14</zorder>
+  <zorder>SettingTemplbl_2</zorder>
   <zorder>ACModeMP2lbl</zorder>
   <zorder>ACReduceM2lbl</zorder>
   <zorder>TempM1lbl</zorder>

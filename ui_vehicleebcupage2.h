@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicleebcupage2.ui'
 **
-** Created: Wed Oct 24 13:51:38 2018
+** Created: Tue Dec 4 14:44:58 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -376,11 +376,11 @@ public:
         lbl1_14->setAlignment(Qt::AlignCenter);
         MRPTC1bg1lbl = new QLabel(VehicleEBCUPage2);
         MRPTC1bg1lbl->setObjectName(QString::fromUtf8("MRPTC1bg1lbl"));
-        MRPTC1bg1lbl->setGeometry(QRect(190, 470, 41, 31));
+        MRPTC1bg1lbl->setGeometry(QRect(180, 470, 61, 31));
         MRPTC1bg1lbl->setAlignment(Qt::AlignCenter);
         MRPTC2bg1lbl = new QLabel(VehicleEBCUPage2);
         MRPTC2bg1lbl->setObjectName(QString::fromUtf8("MRPTC2bg1lbl"));
-        MRPTC2bg1lbl->setGeometry(QRect(800, 470, 41, 31));
+        MRPTC2bg1lbl->setGeometry(QRect(790, 470, 61, 31));
         MRPTC2bg1lbl->setAlignment(Qt::AlignCenter);
         lbl1_15 = new QLabel(VehicleEBCUPage2);
         lbl1_15->setObjectName(QString::fromUtf8("lbl1_15"));
@@ -389,28 +389,28 @@ public:
         lbl1_15->setAlignment(Qt::AlignCenter);
         MRPMP1bg1lbl = new QLabel(VehicleEBCUPage2);
         MRPMP1bg1lbl->setObjectName(QString::fromUtf8("MRPMP1bg1lbl"));
-        MRPMP1bg1lbl->setGeometry(QRect(310, 470, 41, 31));
+        MRPMP1bg1lbl->setGeometry(QRect(300, 470, 61, 31));
         MRPMP1bg1lbl->setAlignment(Qt::AlignCenter);
         MRPM1bg1lbl = new QLabel(VehicleEBCUPage2);
         MRPM1bg1lbl->setObjectName(QString::fromUtf8("MRPM1bg1lbl"));
-        MRPM1bg1lbl->setGeometry(QRect(430, 470, 41, 31));
+        MRPM1bg1lbl->setGeometry(QRect(420, 470, 61, 31));
         MRPM1bg1lbl->setAlignment(Qt::AlignCenter);
         MRPM2bg1lbl = new QLabel(VehicleEBCUPage2);
         MRPM2bg1lbl->setObjectName(QString::fromUtf8("MRPM2bg1lbl"));
-        MRPM2bg1lbl->setGeometry(QRect(560, 470, 41, 31));
+        MRPM2bg1lbl->setGeometry(QRect(550, 470, 61, 31));
         MRPM2bg1lbl->setAlignment(Qt::AlignCenter);
         MRPMP2bg1lbl = new QLabel(VehicleEBCUPage2);
         MRPMP2bg1lbl->setObjectName(QString::fromUtf8("MRPMP2bg1lbl"));
-        MRPMP2bg1lbl->setGeometry(QRect(680, 470, 41, 31));
+        MRPMP2bg1lbl->setGeometry(QRect(670, 470, 61, 31));
         MRPMP2bg1lbl->setAlignment(Qt::AlignCenter);
-        lbl1_13->raise();
-        lbl1_11->raise();
         lbl1_8->raise();
-        lbl1_9->raise();
         lbl1_10->raise();
-        lbl1_12->raise();
         lbl1_14->raise();
+        lbl1_12->raise();
+        lbl1_11->raise();
+        lbl1_9->raise();
         lbl1_7->raise();
+        lbl1_13->raise();
         ASPM1_2lbl->raise();
         lbl1_2->raise();
         PLoadMP1lbl->raise();

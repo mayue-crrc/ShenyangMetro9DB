@@ -76,10 +76,10 @@ void VehicleEBCUPage::updatePage()
     setonlinestates(ui->SMP1_2lbl,this->database->BR1CT_MP1Bg2BoogieDataValid_B1);
     setonlinestates(ui->SM1_1lbl,this->database->BR1CT_M1Bg1BoogieDataValid_B1);
 
-    setonlinestates(ui->SM2_2lbl,this->database->BR2CT_M2Bg2BoogieDataValid_B1);
+    setonlinestates(ui->SM2_2lbl,this->database->BR2CT_M2Bg1BoogieDataValid_B1);
     setonlinestates(ui->SMP2_1lbl,this->database->BR2CT_MP2Bg1BoogieDataValid_B1);
     setonlinestates(ui->SMP2_2lbl,this->database->BR2CT_MP2Bg2BoogieDataValid_B1);
-    setonlinestates(ui->STC2_1lbl,this->database->BR2CT_TC2Bg1BoogieDataValid_B1);
+    setonlinestates(ui->STC2_1lbl,this->database->BR2CT_TC2Bg2BoogieDataValid_B1);
 
     //保持制动  粉色＝施加 灰色＝缓解
     setlabelstates(ui->HoldBRKTC1lbl_1,this->database->BR1CT_TC1Bg1HoldingBrkApplied_B1,this->database->BCU1_3Online);

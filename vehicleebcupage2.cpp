@@ -126,7 +126,7 @@ void VehicleEBCUPage2::setlabelstates(QLabel* lbl,bool valid,int value,bool ison
         //lbl->setStyleSheet("background-color:blue;color:white");
     }else
     {
-        lbl->setText(QString::number((float)(value)/100,10,1));
+        lbl->setText(QString::number((float)(value)/100,10,2));
         //lbl->setStyleSheet("background-color:blue;color:white");
     }
 

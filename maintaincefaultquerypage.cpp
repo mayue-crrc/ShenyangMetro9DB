@@ -74,7 +74,6 @@ void MaintainceFaultQueryPage::updatePage()
         setBtnsStyle(this->ui->HVAC,CrrcFault::getCrrcFault()->getFaultCntOfEachSystem("HVAC"));
     }
 
-
 }
 void MaintainceFaultQueryPage::setBtnsStyle(QPushButton* btn,int cnt)
 {

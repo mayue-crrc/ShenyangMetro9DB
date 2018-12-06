@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicleacpage.ui'
 **
-** Created: Tue Nov 6 13:57:26 2018
+** Created: Mon Dec 3 08:04:35 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -686,10 +686,10 @@ public:
         TFJ2TC1_2lbl->setObjectName(QString::fromUtf8("TFJ2TC1_2lbl"));
         TFJ2TC1_2lbl->setGeometry(QRect(230, 260, 30, 31));
         TFJ2TC1_2lbl->setAlignment(Qt::AlignCenter);
-        lbl1_19->raise();
         lbl1_16->raise();
-        lbl1_15->raise();
+        lbl1_19->raise();
         lbl1_20->raise();
+        lbl1_15->raise();
         lbl1_18->raise();
         lbl1_17->raise();
         lbl1_14->raise();
