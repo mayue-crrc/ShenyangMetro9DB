@@ -82,7 +82,7 @@ Database::Database()
     HMiCT_ACDETestStartFlag_B1 = false;
 
     HMiCT_HMISWVerH_U8 = 2;
-    HMiCT_HMISWVerL_U8 = 26;
+    HMiCT_HMISWVerL_U8 = 28;
 
     for(int i =0; i< 12;i++)
     {
@@ -2365,6 +2365,7 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->BR2CT_BCU3Master_B1 = this->crrcMvb->getBool(0x640,5,0);
         this->BR2CT_BCU4Master_B1 = this->crrcMvb->getBool(0x660,5,0);
 
+
         this->BCU1_3Online = ((this->BR1CT_BCU1Master_B1 && this->CTHM_BCU1On_B1) ||
                              (this->BR1CT_BCU2Master_B1 && this->CTHM_BCU2On_B1)) ;
 
@@ -2686,6 +2687,46 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->BR2CT_M2Bg2Fault_U32 = this->crrcMvb->getUnsignedInt32(0xf646,20);
 
         this->BR2CT_24HourNoSelfTest_B1 = this->crrcMvb->getBool(0xf646,25,7);
+
+        //bg online
+        if(BR1CT_BCU2Master_B1)
+        {
+            CTHM_BCULBg1Online_B1 = crrcMvb->getBool(0x219,17,6);
+            CTHM_BCULBg2Online_B1 = crrcMvb->getBool(0x219,17,7);
+            CTHM_BCULBg3Online_B1 = crrcMvb->getBool(0x219,18,0);
+            CTHM_BCULBg4Online_B1 = crrcMvb->getBool(0x219,18,1);
+            CTHM_BCULBg5Online_B1 = crrcMvb->getBool(0x219,18,2);
+            CTHM_BCULBg6Online_B1 = crrcMvb->getBool(0x219,18,3);
+        }else
+        {
+            CTHM_BCULBg1Online_B1 = crrcMvb->getBool(0x219,17,0);
+            CTHM_BCULBg2Online_B1 = crrcMvb->getBool(0x219,17,1);
+            CTHM_BCULBg3Online_B1 = crrcMvb->getBool(0x219,17,2);
+            CTHM_BCULBg4Online_B1 = crrcMvb->getBool(0x219,17,3);
+            CTHM_BCULBg5Online_B1 = crrcMvb->getBool(0x219,17,4);
+            CTHM_BCULBg6Online_B1 = crrcMvb->getBool(0x219,17,5);
+        }
+
+
+        if(BR2CT_BCU4Master_B1)
+        {
+            CTHM_BCURBg1Online_B1 = crrcMvb->getBool(0x219,19,2);
+            CTHM_BCURBg2Online_B1 = crrcMvb->getBool(0x219,19,3);
+            CTHM_BCURBg3Online_B1 = crrcMvb->getBool(0x219,19,4);
+            CTHM_BCURBg4Online_B1 = crrcMvb->getBool(0x219,19,5);
+            CTHM_BCURBg5Online_B1 = crrcMvb->getBool(0x219,19,6);
+            CTHM_BCURBg6Online_B1 = crrcMvb->getBool(0x219,19,7);
+        }else
+        {
+            CTHM_BCURBg1Online_B1 = crrcMvb->getBool(0x219,18,4);
+            CTHM_BCURBg2Online_B1 = crrcMvb->getBool(0x219,18,5);
+            CTHM_BCURBg3Online_B1 = crrcMvb->getBool(0x219,18,6);
+            CTHM_BCURBg4Online_B1 = crrcMvb->getBool(0x219,18,7);
+            CTHM_BCURBg5Online_B1 = crrcMvb->getBool(0x219,19,0);
+            CTHM_BCURBg6Online_B1 = crrcMvb->getBool(0x219,19,1);
+        }
+
+
 
     }
 

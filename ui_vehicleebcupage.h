@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehicleebcupage.ui'
 **
-** Created: Thu Dec 6 13:14:52 2018
+** Created: Thu Dec 13 21:05:35 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -65,17 +65,17 @@ public:
     QLabel *StopBypassM1lbl;
     QLabel *lbl1_4;
     QLabel *lbl1_5;
-    QLabel *STC2_1lbl;
+    QLabel *STC2_2lbl;
     QLabel *SMP1_2lbl;
     QLabel *GM1_2lbl;
-    QLabel *GM2_1lbl;
+    QLabel *GM2_2lbl;
     QLabel *SMP2_1lbl;
-    QLabel *GTC2_2lbl;
+    QLabel *GTC2_1lbl;
     QLabel *GTC1_1lbl;
     QLabel *STC1_2lbl;
     QLabel *SMP2_2lbl;
     QLabel *SMP1_1lbl;
-    QLabel *SM2_2lbl;
+    QLabel *SM2_1lbl;
     QLabel *SM1_1lbl;
     QLabel *HoldBRKM1lbl_1;
     QLabel *HoldBRKMP2lbl_2;
@@ -315,10 +315,10 @@ public:
         lbl1_5->setGeometry(QRect(20, 280, 131, 51));
         lbl1_5->setStyleSheet(QString::fromUtf8("background-color:black;"));
         lbl1_5->setAlignment(Qt::AlignCenter);
-        STC2_1lbl = new QLabel(VehicleEBCUPage);
-        STC2_1lbl->setObjectName(QString::fromUtf8("STC2_1lbl"));
-        STC2_1lbl->setGeometry(QRect(770, 290, 31, 31));
-        STC2_1lbl->setAlignment(Qt::AlignCenter);
+        STC2_2lbl = new QLabel(VehicleEBCUPage);
+        STC2_2lbl->setObjectName(QString::fromUtf8("STC2_2lbl"));
+        STC2_2lbl->setGeometry(QRect(770, 290, 31, 31));
+        STC2_2lbl->setAlignment(Qt::AlignCenter);
         SMP1_2lbl = new QLabel(VehicleEBCUPage);
         SMP1_2lbl->setObjectName(QString::fromUtf8("SMP1_2lbl"));
         SMP1_2lbl->setGeometry(QRect(340, 290, 31, 31));
@@ -327,18 +327,18 @@ public:
         GM1_2lbl->setObjectName(QString::fromUtf8("GM1_2lbl"));
         GM1_2lbl->setGeometry(QRect(460, 290, 31, 31));
         GM1_2lbl->setAlignment(Qt::AlignCenter);
-        GM2_1lbl = new QLabel(VehicleEBCUPage);
-        GM2_1lbl->setObjectName(QString::fromUtf8("GM2_1lbl"));
-        GM2_1lbl->setGeometry(QRect(530, 290, 31, 31));
-        GM2_1lbl->setAlignment(Qt::AlignCenter);
+        GM2_2lbl = new QLabel(VehicleEBCUPage);
+        GM2_2lbl->setObjectName(QString::fromUtf8("GM2_2lbl"));
+        GM2_2lbl->setGeometry(QRect(530, 290, 31, 31));
+        GM2_2lbl->setAlignment(Qt::AlignCenter);
         SMP2_1lbl = new QLabel(VehicleEBCUPage);
         SMP2_1lbl->setObjectName(QString::fromUtf8("SMP2_1lbl"));
         SMP2_1lbl->setGeometry(QRect(690, 290, 31, 31));
         SMP2_1lbl->setAlignment(Qt::AlignCenter);
-        GTC2_2lbl = new QLabel(VehicleEBCUPage);
-        GTC2_2lbl->setObjectName(QString::fromUtf8("GTC2_2lbl"));
-        GTC2_2lbl->setGeometry(QRect(810, 290, 31, 31));
-        GTC2_2lbl->setAlignment(Qt::AlignCenter);
+        GTC2_1lbl = new QLabel(VehicleEBCUPage);
+        GTC2_1lbl->setObjectName(QString::fromUtf8("GTC2_1lbl"));
+        GTC2_1lbl->setGeometry(QRect(810, 290, 31, 31));
+        GTC2_1lbl->setAlignment(Qt::AlignCenter);
         GTC1_1lbl = new QLabel(VehicleEBCUPage);
         GTC1_1lbl->setObjectName(QString::fromUtf8("GTC1_1lbl"));
         GTC1_1lbl->setGeometry(QRect(180, 290, 31, 31));
@@ -355,10 +355,10 @@ public:
         SMP1_1lbl->setObjectName(QString::fromUtf8("SMP1_1lbl"));
         SMP1_1lbl->setGeometry(QRect(300, 290, 31, 31));
         SMP1_1lbl->setAlignment(Qt::AlignCenter);
-        SM2_2lbl = new QLabel(VehicleEBCUPage);
-        SM2_2lbl->setObjectName(QString::fromUtf8("SM2_2lbl"));
-        SM2_2lbl->setGeometry(QRect(570, 290, 31, 31));
-        SM2_2lbl->setAlignment(Qt::AlignCenter);
+        SM2_1lbl = new QLabel(VehicleEBCUPage);
+        SM2_1lbl->setObjectName(QString::fromUtf8("SM2_1lbl"));
+        SM2_1lbl->setGeometry(QRect(570, 290, 31, 31));
+        SM2_1lbl->setAlignment(Qt::AlignCenter);
         SM1_1lbl = new QLabel(VehicleEBCUPage);
         SM1_1lbl->setObjectName(QString::fromUtf8("SM1_1lbl"));
         SM1_1lbl->setGeometry(QRect(420, 290, 31, 31));
@@ -605,17 +605,17 @@ public:
         StopBypassM1lbl->raise();
         lbl1_4->raise();
         lbl1_5->raise();
-        STC2_1lbl->raise();
+        STC2_2lbl->raise();
         SMP1_2lbl->raise();
         GM1_2lbl->raise();
-        GM2_1lbl->raise();
+        GM2_2lbl->raise();
         SMP2_1lbl->raise();
-        GTC2_2lbl->raise();
+        GTC2_1lbl->raise();
         GTC1_1lbl->raise();
         STC1_2lbl->raise();
         SMP2_2lbl->raise();
         SMP1_1lbl->raise();
-        SM2_2lbl->raise();
+        SM2_1lbl->raise();
         SM1_1lbl->raise();
         HoldBRKM1lbl_1->raise();
         HoldBRKMP2lbl_2->raise();
@@ -705,17 +705,17 @@ public:
 "\351\232\224\347\246\273\345\274\200\345\205\263", 0, QApplication::UnicodeUTF8));
         lbl1_5->setText(QApplication::translate("VehicleEBCUPage", "\347\275\221\345\205\263\351\230\200G/\n"
 "\346\231\272\350\203\275\351\230\200S", 0, QApplication::UnicodeUTF8));
-        STC2_1lbl->setText(QApplication::translate("VehicleEBCUPage", "S", 0, QApplication::UnicodeUTF8));
+        STC2_2lbl->setText(QApplication::translate("VehicleEBCUPage", "S", 0, QApplication::UnicodeUTF8));
         SMP1_2lbl->setText(QApplication::translate("VehicleEBCUPage", "S", 0, QApplication::UnicodeUTF8));
         GM1_2lbl->setText(QApplication::translate("VehicleEBCUPage", "G", 0, QApplication::UnicodeUTF8));
-        GM2_1lbl->setText(QApplication::translate("VehicleEBCUPage", "G", 0, QApplication::UnicodeUTF8));
+        GM2_2lbl->setText(QApplication::translate("VehicleEBCUPage", "G", 0, QApplication::UnicodeUTF8));
         SMP2_1lbl->setText(QApplication::translate("VehicleEBCUPage", "S", 0, QApplication::UnicodeUTF8));
-        GTC2_2lbl->setText(QApplication::translate("VehicleEBCUPage", "G", 0, QApplication::UnicodeUTF8));
+        GTC2_1lbl->setText(QApplication::translate("VehicleEBCUPage", "G", 0, QApplication::UnicodeUTF8));
         GTC1_1lbl->setText(QApplication::translate("VehicleEBCUPage", "G", 0, QApplication::UnicodeUTF8));
         STC1_2lbl->setText(QApplication::translate("VehicleEBCUPage", "S", 0, QApplication::UnicodeUTF8));
         SMP2_2lbl->setText(QApplication::translate("VehicleEBCUPage", "S", 0, QApplication::UnicodeUTF8));
         SMP1_1lbl->setText(QApplication::translate("VehicleEBCUPage", "S", 0, QApplication::UnicodeUTF8));
-        SM2_2lbl->setText(QApplication::translate("VehicleEBCUPage", "S", 0, QApplication::UnicodeUTF8));
+        SM2_1lbl->setText(QApplication::translate("VehicleEBCUPage", "S", 0, QApplication::UnicodeUTF8));
         SM1_1lbl->setText(QApplication::translate("VehicleEBCUPage", "S", 0, QApplication::UnicodeUTF8));
         HoldBRKM1lbl_1->setText(QApplication::translate("VehicleEBCUPage", "1", 0, QApplication::UnicodeUTF8));
         HoldBRKMP2lbl_2->setText(QApplication::translate("VehicleEBCUPage", "2", 0, QApplication::UnicodeUTF8));

@@ -213,7 +213,7 @@ void MaintainceRIOMDetailPage::updatePage()
                 <<QString::number(this->database->AICT_TC1AX1AI4)
                 <<QString::number(this->database->AICT_TC1AX1AI5)
                 <<QString::number(this->database->AICT_TC1AX1AI6)
-                <<QString::number((float)this->database->AICT_TC1AX1AI7Grade_U16/256/16,10,2)+"V"
+                <<QString::number((float)this->database->AICT_TC1AX1AI7Grade_U16/273,10,2)+"V"
                 <<QString::number(this->database->AICT_TC1AX1AI8)
 
                 <<QString::number(this->database->AICT_TC2AX1AI1)
@@ -222,7 +222,7 @@ void MaintainceRIOMDetailPage::updatePage()
                 <<QString::number(this->database->AICT_TC2AX1AI4)
                 <<QString::number(this->database->AICT_TC2AX1AI5)
                 <<QString::number(this->database->AICT_TC2AX1AI6)
-                <<QString::number((float)this->database->AICT_TC2AX1AI7Grade_U16/256/16,10,2)+"V"
+                <<QString::number((float)this->database->AICT_TC2AX1AI7Grade_U16/273,10,2)+"V"
                 <<QString::number(this->database->AICT_TC2AX1AI8);
     }
     switch (currentform)

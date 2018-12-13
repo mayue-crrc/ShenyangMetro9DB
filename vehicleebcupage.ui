@@ -711,7 +711,7 @@ border-radius:8px;
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="STC2_1lbl">
+  <widget class="QLabel" name="STC2_2lbl">
    <property name="geometry">
     <rect>
      <x>770</x>
@@ -759,7 +759,7 @@ border-radius:8px;
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="GM2_1lbl">
+  <widget class="QLabel" name="GM2_2lbl">
    <property name="geometry">
     <rect>
      <x>530</x>
@@ -791,7 +791,7 @@ border-radius:8px;
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="GTC2_2lbl">
+  <widget class="QLabel" name="GTC2_1lbl">
    <property name="geometry">
     <rect>
      <x>810</x>
@@ -871,7 +871,7 @@ border-radius:8px;
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="SM2_2lbl">
+  <widget class="QLabel" name="SM2_1lbl">
    <property name="geometry">
     <rect>
      <x>570</x>
@@ -1695,17 +1695,17 @@ border-radius:8px;</string>
   <zorder>StopBypassM1lbl</zorder>
   <zorder>lbl1_4</zorder>
   <zorder>lbl1_5</zorder>
-  <zorder>STC2_1lbl</zorder>
+  <zorder>STC2_2lbl</zorder>
   <zorder>SMP1_2lbl</zorder>
   <zorder>GM1_2lbl</zorder>
-  <zorder>GM2_1lbl</zorder>
+  <zorder>GM2_2lbl</zorder>
   <zorder>SMP2_1lbl</zorder>
-  <zorder>GTC2_2lbl</zorder>
+  <zorder>GTC2_1lbl</zorder>
   <zorder>GTC1_1lbl</zorder>
   <zorder>STC1_2lbl</zorder>
   <zorder>SMP2_2lbl</zorder>
   <zorder>SMP1_1lbl</zorder>
-  <zorder>SM2_2lbl</zorder>
+  <zorder>SM2_1lbl</zorder>
   <zorder>SM1_1lbl</zorder>
   <zorder>HoldBRKM1lbl_1</zorder>
   <zorder>HoldBRKMP2lbl_2</zorder>

@@ -197,7 +197,11 @@ public:
         ,CTHM_FastBrake_B1,CTHM_EmgyBrake_B1,CTHM_Backward_B1,CTHM_Forward_B1,
         CTHM_SAVETimeFedBk_B1,CTHM_SAVETrainNumFedBk_B1,CTHM_SAVELineNumFedBk_B1,CTHM_SAVEFirstStationFedBk_B1
         ,CTHM_SAVELastStationFedBk_B1,CTHM_WorkshopPowerSupply_B1,CTHM_BatteryLow_B1 ,CTHM_AcDeTestOn_B1,CTHM_EmgMode_B1,
-        CTHM_MP1PanStatusUnknown_B1,CTHM_MP2PanStatusUnknown_B1;
+        CTHM_MP1PanStatusUnknown_B1,CTHM_MP2PanStatusUnknown_B1
+        ,CTHM_BCULBg1Online_B1,CTHM_BCULBg2Online_B1,CTHM_BCULBg3Online_B1
+        ,CTHM_BCULBg4Online_B1,CTHM_BCULBg5Online_B1,CTHM_BCULBg6Online_B1
+        ,CTHM_BCURBg1Online_B1,CTHM_BCURBg2Online_B1,CTHM_BCURBg3Online_B1
+        ,CTHM_BCURBg4Online_B1,CTHM_BCURBg5Online_B1,CTHM_BCURBg6Online_B1;
 
     unsigned char CTHM_Grade_U8,CTHM_CurrentStation_U8,CTHM_NextStation_U8
                 ,CTHM_CCU1SWVer_U8,CTHM_CCU1MVBVer_U8,CTHM_CCU1SDBVer_U8,CTHM_CCU1VxWorksVer_U8,CTHM_CCU1FPGAVer_U8
