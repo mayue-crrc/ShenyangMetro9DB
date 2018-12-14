@@ -201,7 +201,15 @@ public:
         ,CTHM_BCULBg1Online_B1,CTHM_BCULBg2Online_B1,CTHM_BCULBg3Online_B1
         ,CTHM_BCULBg4Online_B1,CTHM_BCULBg5Online_B1,CTHM_BCULBg6Online_B1
         ,CTHM_BCURBg1Online_B1,CTHM_BCURBg2Online_B1,CTHM_BCURBg3Online_B1
-        ,CTHM_BCURBg4Online_B1,CTHM_BCURBg5Online_B1,CTHM_BCURBg6Online_B1;
+        ,CTHM_BCURBg4Online_B1,CTHM_BCURBg5Online_B1,CTHM_BCURBg6Online_B1
+        ,CTHM_BCU1Bg1Online_B1,CTHM_BCU1Bg2Online_B1,CTHM_BCU1Bg3Online_B1
+        ,CTHM_BCU1Bg4Online_B1,CTHM_BCU1Bg5Online_B1,CTHM_BCU1Bg6Online_B1
+        ,CTHM_BCU2Bg1Online_B1,CTHM_BCU2Bg2Online_B1,CTHM_BCU2Bg3Online_B1
+        ,CTHM_BCU2Bg4Online_B1,CTHM_BCU2Bg5Online_B1,CTHM_BCU2Bg6Online_B1
+        ,CTHM_BCU3Bg1Online_B1,CTHM_BCU3Bg2Online_B1,CTHM_BCU3Bg3Online_B1
+        ,CTHM_BCU3Bg4Online_B1,CTHM_BCU3Bg5Online_B1,CTHM_BCU3Bg6Online_B1
+        ,CTHM_BCU4Bg1Online_B1,CTHM_BCU4Bg2Online_B1,CTHM_BCU4Bg3Online_B1
+        ,CTHM_BCU4Bg4Online_B1,CTHM_BCU4Bg5Online_B1,CTHM_BCU4Bg6Online_B1;
 
     unsigned char CTHM_Grade_U8,CTHM_CurrentStation_U8,CTHM_NextStation_U8
                 ,CTHM_CCU1SWVer_U8,CTHM_CCU1MVBVer_U8,CTHM_CCU1SDBVer_U8,CTHM_CCU1VxWorksVer_U8,CTHM_CCU1FPGAVer_U8
@@ -850,7 +858,7 @@ private:
 
     void createEDCUList(bool edcu1Online, bool edcu2Online,QList<unsigned short int> virtualports,QList<unsigned short int> realports);
 
-    void createEBCUList(bool ebcu1Online, bool ebcu2Online,QList<unsigned short int> virtualports,QList<unsigned short int> realports);
+    void createEBCUList(unsigned char bgnum,unsigned short realport1,unsigned short realport2,unsigned short virtualport,bool realport1bgonline,bool realport2bgonline);
 
     void copyPort(unsigned short int sink, unsigned short int source);
 
