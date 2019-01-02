@@ -82,7 +82,7 @@ Database::Database()
     HMiCT_ACDETestStartFlag_B1 = false;
 
     HMiCT_HMISWVerH_U8 = 2;
-    HMiCT_HMISWVerL_U8 = 35;
+    HMiCT_HMISWVerL_U8 = 38;
 
     for(int i =0; i< 12;i++)
     {
@@ -854,9 +854,7 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->CTHM_AcDeTime_U16 = crrcMvb->getUnsignedInt(0x21A,12);
         this->CTHM_AcDeTestOn_B1 = crrcMvb->getBool(0x21A,15,0);
 
-        CTHM_TC1Bogie1Select_U8  = crrcMvb->getUnsignedChar(0x219,20);
-
-        //CTHM_TC1Bogie1Select_U8  = crrcMvb->getUnsignedChar(0x21A,20);
+        CTHM_TC1Bogie1Select_U8  = crrcMvb->getUnsignedChar(0x21A,20);
         CTHM_TC1Bogie2Select_U8  = crrcMvb->getUnsignedChar(0x21A,21);
         CTHM_MP1Bogie3Select_U8  = crrcMvb->getUnsignedChar(0x21A,22);
         CTHM_MP1Bogie4Select_U8  = crrcMvb->getUnsignedChar(0x21A,23);
@@ -2577,12 +2575,12 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
 
         this->BR1CT_24HourNoSelfTest_B1 = this->crrcMvb->getBool(0x616,25,7);
 
-        this->createEBCUList(0x660,0x640,0xf640,this->CTHM_TC1Bogie1Select_U8,0);
-        this->createEBCUList(0x661,0x641,0xf641,this->CTHM_TC1Bogie2Select_U8,1);
-        this->createEBCUList(0x662,0x642,0xf642,this->CTHM_MP1Bogie3Select_U8,2);
-        this->createEBCUList(0x663,0x643,0xf643,this->CTHM_MP1Bogie4Select_U8,3);
-        this->createEBCUList(0x664,0x644,0xf644,this->CTHM_M1Bogie5Select_U8,4);
-        this->createEBCUList(0x665,0x645,0xf645,this->CTHM_M1Bogie6Select_U8,5);
+        this->createEBCUList(0x660,0x640,0xf640,this->CTHM_TC2Bogie1Select_U8,0);
+        this->createEBCUList(0x661,0x641,0xf641,this->CTHM_TC2Bogie2Select_U8,1);
+        this->createEBCUList(0x662,0x642,0xf642,this->CTHM_MP2Bogie3Select_U8,2);
+        this->createEBCUList(0x663,0x643,0xf643,this->CTHM_MP2Bogie4Select_U8,3);
+        this->createEBCUList(0x664,0x644,0xf644,this->CTHM_M2Bogie5Select_U8,4);
+        this->createEBCUList(0x665,0x645,0xf645,this->CTHM_M2Bogie6Select_U8,5);
 
         this->BR2CT_TcMVBVersion_U8 = this->crrcMvb->getUnsignedChar(0x646,26);
         this->BR2CT_MMVBVersion_U8 = this->crrcMvb->getUnsignedChar(0x646,27);

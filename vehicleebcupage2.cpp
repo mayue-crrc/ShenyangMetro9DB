@@ -88,10 +88,10 @@ void VehicleEBCUPage2::updatePage()
     //停放制动缸 压力
     setlabelstates(ui->MRPTC1lbl,true,this->database->BR1CT_TC1Bg2TotalPressure_U16,this->database->CTHM_BCULBg2Online_B1);
     setlabelstates(ui->MRPTC2lbl,true,this->database->BR2CT_TC2Bg2TotalPressure_U16,this->database->CTHM_BCURBg2Online_B1);
-    setlabelstates(ui->MRPMP1lbl,true,this->database->BR1CT_M1Bg2TotalPressure_U16,this->database->CTHM_BCULBg4Online_B1);
-    setlabelstates(ui->MRPMP2lbl,true,this->database->BR2CT_M2Bg2TotalPressure_U16,this->database->CTHM_BCURBg4Online_B1);
-    setlabelstates(ui->MRPM1lbl,true,this->database->BR1CT_MP1Bg2TotalPressure_U16,this->database->CTHM_BCULBg6Online_B1);
-    setlabelstates(ui->MRPM2lbl,true,this->database->BR2CT_MP2Bg2TotalPressure_U16,this->database->CTHM_BCURBg6Online_B1);
+    setlabelstates(ui->MRPMP1lbl,true,this->database->BR1CT_MP1Bg2TotalPressure_U16,this->database->CTHM_BCULBg4Online_B1);
+    setlabelstates(ui->MRPMP2lbl,true,this->database->BR2CT_MP2Bg2TotalPressure_U16,this->database->CTHM_BCURBg4Online_B1);
+    setlabelstates(ui->MRPM1lbl,true,this->database->BR1CT_M1Bg2TotalPressure_U16,this->database->CTHM_BCULBg6Online_B1);
+    setlabelstates(ui->MRPM2lbl,true,this->database->BR2CT_M2Bg2TotalPressure_U16,this->database->CTHM_BCURBg6Online_B1);
 
     //MR 压力
     setlabelstates(ui->MRPTC1bg1lbl,true,this->database->BR1CT_TC1Bg1TotalPressure_U16,this->database->CTHM_BCULBg1Online_B1);

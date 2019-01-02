@@ -103,7 +103,10 @@ void CrrcFault::run()
                        t_faultBean.HistoryID = t_circlefaultcnt;
                        t_faultBean.StartTime = m_Localdatetime.toString("yyyy-MM-dd hh:mm:ss");
                        t_faultBean.ID = key;
-                       t_faultBean.IsConfirm = false;
+                       if(_CRRC_QUERY_FAULT_LEVEL < FaultTypeHash[key].FaultLevel)
+                           t_faultBean.IsConfirm = true;
+                       else
+                           t_faultBean.IsConfirm = false;
                        //create insert faultbean hash
                        this->InsertHistoryFaultHash.insert(t_circlefaultcnt,t_faultBean);
                        t_circlefaultcnt++;
