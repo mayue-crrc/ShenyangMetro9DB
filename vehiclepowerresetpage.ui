@@ -94,7 +94,7 @@ background-color: rgb(0, 0, 0);
 }</string>
    </property>
    <property name="text">
-    <string>退出</string>
+    <string>返回</string>
    </property>
   </widget>
   <widget class="QPushButton" name="PowerOndoorBtn">

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclepowerresetpage.ui'
 **
-** Created: Wed Oct 24 13:51:38 2018
+** Created: Wed Dec 26 19:13:13 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -798,7 +798,7 @@ public:
         VehiclePowerResetPage->setWindowTitle(QApplication::translate("VehiclePowerResetPage", "Form", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("VehiclePowerResetPage", "\345\256\242\345\256\244\350\275\246\351\227\250\347\224\265\346\272\220\345\244\215\344\275\215", 0, QApplication::UnicodeUTF8));
         label->setText(QString());
-        returnBtn->setText(QApplication::translate("VehiclePowerResetPage", "\351\200\200\345\207\272", 0, QApplication::UnicodeUTF8));
+        returnBtn->setText(QApplication::translate("VehiclePowerResetPage", "\350\277\224\345\233\236", 0, QApplication::UnicodeUTF8));
         PowerOndoorBtn->setText(QApplication::translate("VehiclePowerResetPage", "\344\270\212\347\224\265", 0, QApplication::UnicodeUTF8));
         PowerOffdoorBtn->setText(QApplication::translate("VehiclePowerResetPage", "\346\226\255\347\224\265", 0, QApplication::UnicodeUTF8));
         Mp2Door1lbl->setText(QApplication::translate("VehiclePowerResetPage", "1", 0, QApplication::UnicodeUTF8));

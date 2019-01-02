@@ -76,7 +76,7 @@ void MaintainceWheelsetPage::on_returnBtn_pressed()
     this->ui->confirmBtn->setStyleSheet(INPUTBUTTONUP);
     this->database->HMiCT_SetFlagChecker_U8 = 0x55;
     resetSaveFlg();
-    changePage(uVehicleRunStatePage);
+    changePage(uVehicleMaintaincePage);
 }
 
 void MaintainceWheelsetPage::on_TC1SelectBtn_pressed()

@@ -385,7 +385,7 @@ border-radius:10px</string>
 </string>
    </property>
    <property name="text">
-    <string>：减载</string>
+    <string>：未知</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

@@ -261,7 +261,7 @@ QPushButton
 }</string>
    </property>
    <property name="text">
-    <string>退出</string>
+    <string>返回</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">

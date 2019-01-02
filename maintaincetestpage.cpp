@@ -97,7 +97,7 @@ void MaintainceTestPage::updatePage()
 
 void MaintainceTestPage::on_returnBtn_pressed()
 {
-    changePage(uVehicleRunStatePage);
+    changePage(uVehicleMaintaincePage);
 }
 void MaintainceTestPage::setlabelstates(QLabel* lbl,bool valid,int value)
 {

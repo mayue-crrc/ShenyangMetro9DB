@@ -19,7 +19,7 @@ public:
 
 private:
     Ui::VehicleEBCUPage2 *ui;
-    void setlabelstates(QLabel* lbl,int value,bool isonline);
+    void setlabelstates2(QLabel* lbl,int value,bool isonline);
     void setlabelstates(QLabel* lbl,bool valid,int value,bool isonline);
     void setlabelstates(QLabel* lbl,bool state,bool isonline);
     void setACPlabelstates(QLabel* lbl,bool state,bool state2);

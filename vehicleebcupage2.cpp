@@ -36,40 +36,40 @@ void VehicleEBCUPage2::on_NextPageBtn_pressed()
 void VehicleEBCUPage2::updatePage()
 {
     //空簧压力 取架1＋2数值
-    setlabelstates(ui->ASPTC1_1lbl,this->database->BR1CT_TC1Bg1AirPresureValid_B1,(this->database->BR1CT_TC1Bg1ASP1AirPressure_U16+this->database->BR1CT_TC1Bg1ASP2AirPressure_U16)/2,this->database->CTHM_BCULBg1Online_B1);
-    setlabelstates(ui->ASPTC1_2lbl,this->database->BR1CT_TC1Bg2AirPresureValid_B1,(this->database->BR1CT_TC1Bg2ASP1AirPressure_U16+this->database->BR1CT_TC1Bg2ASP2AirPressure_U16)/2,this->database->CTHM_BCULBg2Online_B1);
-    setlabelstates(ui->ASPTC2_1lbl,this->database->BR2CT_TC2Bg1AirPresureValid_B1,(this->database->BR2CT_TC2Bg1ASP1AirPressure_U16+this->database->BR2CT_TC2Bg1ASP2AirPressure_U16)/2,this->database->CTHM_BCURBg1Online_B1);
-    setlabelstates(ui->ASPTC2_2lbl,this->database->BR2CT_TC2Bg2AirPresureValid_B1,(this->database->BR2CT_TC2Bg2ASP1AirPressure_U16+this->database->BR2CT_TC2Bg2ASP2AirPressure_U16)/2,this->database->CTHM_BCURBg2Online_B1);
-    setlabelstates(ui->ASPMP1_1lbl,this->database->BR1CT_MP1Bg1AirPresureValid_B1,(this->database->BR1CT_MP1Bg1ASP1AirPressure_U16+this->database->BR1CT_MP1Bg1ASP2AirPressure_U16)/2,this->database->CTHM_BCULBg3Online_B1);
-    setlabelstates(ui->ASPMP1_2lbl,this->database->BR1CT_MP1Bg2AirPresureValid_B1,(this->database->BR1CT_MP1Bg2ASP1AirPressure_U16+this->database->BR1CT_MP1Bg2ASP2AirPressure_U16)/2,this->database->CTHM_BCULBg4Online_B1);
-    setlabelstates(ui->ASPMP2_1lbl,this->database->BR2CT_MP2Bg1AirPresureValid_B1,(this->database->BR2CT_MP2Bg1ASP1AirPressure_U16+this->database->BR2CT_MP2Bg1ASP2AirPressure_U16)/2,this->database->CTHM_BCURBg3Online_B1);
-    setlabelstates(ui->ASPMP2_2lbl,this->database->BR2CT_MP2Bg2AirPresureValid_B1,(this->database->BR2CT_MP2Bg2ASP1AirPressure_U16+this->database->BR2CT_MP2Bg2ASP2AirPressure_U16)/2,this->database->CTHM_BCURBg4Online_B1);
-    setlabelstates(ui->ASPM1_1lbl,this->database->BR1CT_M1Bg1AirPresureValid_B1,(this->database->BR1CT_M1Bg1ASP1AirPressure_U16+this->database->BR1CT_M1Bg1ASP2AirPressure_U16)/2,this->database->CTHM_BCULBg5Online_B1);
-    setlabelstates(ui->ASPM1_2lbl,this->database->BR1CT_M1Bg2AirPresureValid_B1,(this->database->BR1CT_M1Bg2ASP1AirPressure_U16+this->database->BR1CT_M1Bg2ASP2AirPressure_U16)/2,this->database->CTHM_BCULBg6Online_B1);
-    setlabelstates(ui->ASPM2_1lbl,this->database->BR2CT_M2Bg1AirPresureValid_B1,(this->database->BR2CT_M2Bg1ASP1AirPressure_U16+this->database->BR2CT_M2Bg1ASP2AirPressure_U16)/2,this->database->CTHM_BCURBg5Online_B1);
-    setlabelstates(ui->ASPM2_2lbl,this->database->BR2CT_M2Bg2AirPresureValid_B1,(this->database->BR2CT_M2Bg2ASP1AirPressure_U16+this->database->BR2CT_M2Bg2ASP2AirPressure_U16)/2,this->database->CTHM_BCURBg6Online_B1);
+    setlabelstates(ui->ASPTC1_1lbl,true,(this->database->BR1CT_TC1Bg1ASP1AirPressure_U16+this->database->BR1CT_TC1Bg1ASP2AirPressure_U16)/2,this->database->CTHM_BCULBg1Online_B1);
+    setlabelstates(ui->ASPTC1_2lbl,true,(this->database->BR1CT_TC1Bg2ASP1AirPressure_U16+this->database->BR1CT_TC1Bg2ASP2AirPressure_U16)/2,this->database->CTHM_BCULBg2Online_B1);
+    setlabelstates(ui->ASPTC2_1lbl,true,(this->database->BR2CT_TC2Bg1ASP1AirPressure_U16+this->database->BR2CT_TC2Bg1ASP2AirPressure_U16)/2,this->database->CTHM_BCURBg1Online_B1);
+    setlabelstates(ui->ASPTC2_2lbl,true,(this->database->BR2CT_TC2Bg2ASP1AirPressure_U16+this->database->BR2CT_TC2Bg2ASP2AirPressure_U16)/2,this->database->CTHM_BCURBg2Online_B1);
+    setlabelstates(ui->ASPMP1_1lbl,true,(this->database->BR1CT_MP1Bg1ASP1AirPressure_U16+this->database->BR1CT_MP1Bg1ASP2AirPressure_U16)/2,this->database->CTHM_BCULBg3Online_B1);
+    setlabelstates(ui->ASPMP1_2lbl,true,(this->database->BR1CT_MP1Bg2ASP1AirPressure_U16+this->database->BR1CT_MP1Bg2ASP2AirPressure_U16)/2,this->database->CTHM_BCULBg4Online_B1);
+    setlabelstates(ui->ASPMP2_1lbl,true,(this->database->BR2CT_MP2Bg1ASP1AirPressure_U16+this->database->BR2CT_MP2Bg1ASP2AirPressure_U16)/2,this->database->CTHM_BCURBg3Online_B1);
+    setlabelstates(ui->ASPMP2_2lbl,true,(this->database->BR2CT_MP2Bg2ASP1AirPressure_U16+this->database->BR2CT_MP2Bg2ASP2AirPressure_U16)/2,this->database->CTHM_BCURBg4Online_B1);
+    setlabelstates(ui->ASPM1_1lbl,true,(this->database->BR1CT_M1Bg1ASP1AirPressure_U16+this->database->BR1CT_M1Bg1ASP2AirPressure_U16)/2,this->database->CTHM_BCULBg5Online_B1);
+    setlabelstates(ui->ASPM1_2lbl,true,(this->database->BR1CT_M1Bg2ASP1AirPressure_U16+this->database->BR1CT_M1Bg2ASP2AirPressure_U16)/2,this->database->CTHM_BCULBg6Online_B1);
+    setlabelstates(ui->ASPM2_1lbl,true,(this->database->BR2CT_M2Bg1ASP1AirPressure_U16+this->database->BR2CT_M2Bg1ASP2AirPressure_U16)/2,this->database->CTHM_BCURBg5Online_B1);
+    setlabelstates(ui->ASPM2_2lbl,true,(this->database->BR2CT_M2Bg2ASP1AirPressure_U16+this->database->BR2CT_M2Bg2ASP2AirPressure_U16)/2,this->database->CTHM_BCURBg6Online_B1);
 
     //BC压力 取架1压力值
-    setlabelstates(ui->BCPTC1_1lbl,this->database->BR1CT_TC1Bg1BrkAirPresureValid_B1,this->database->BR1CT_TC1Bg1BCP1Pressure_U16,this->database->CTHM_BCULBg1Online_B1);
-    setlabelstates(ui->BCPTC1_2lbl,this->database->BR1CT_TC1Bg2BrkAirPresureValid_B1,this->database->BR1CT_TC1Bg2BCP1Pressure_U16,this->database->CTHM_BCULBg2Online_B1);
-    setlabelstates(ui->BCPTC2_1lbl,this->database->BR2CT_TC2Bg1BrkAirPresureValid_B1,this->database->BR2CT_TC2Bg1BCP1Pressure_U16,this->database->CTHM_BCURBg1Online_B1);
-    setlabelstates(ui->BCPTC2_2lbl,this->database->BR2CT_TC2Bg2BrkAirPresureValid_B1,this->database->BR2CT_TC2Bg2BCP1Pressure_U16,this->database->CTHM_BCURBg2Online_B1);
-    setlabelstates(ui->BCPMP1_1lbl,this->database->BR1CT_MP1Bg1BrkAirPresureValid_B1,this->database->BR1CT_MP1Bg1BCP1Pressure_U16,this->database->CTHM_BCULBg3Online_B1);
-    setlabelstates(ui->BCPMP1_2lbl,this->database->BR1CT_MP1Bg2BrkAirPresureValid_B1,this->database->BR1CT_MP1Bg2BCP1Pressure_U16,this->database->CTHM_BCULBg4Online_B1);
-    setlabelstates(ui->BCPMP2_1lbl,this->database->BR2CT_MP2Bg1BrkAirPresureValid_B1,this->database->BR2CT_MP2Bg1BCP1Pressure_U16,this->database->CTHM_BCURBg3Online_B1);
-    setlabelstates(ui->BCPMP2_2lbl,this->database->BR2CT_MP2Bg2BrkAirPresureValid_B1,this->database->BR2CT_MP2Bg2BCP1Pressure_U16,this->database->CTHM_BCURBg4Online_B1);
-    setlabelstates(ui->BCPM1_1lbl,this->database->BR1CT_M1Bg1BrkAirPresureValid_B1,this->database->BR1CT_M1Bg1BCP1Pressure_U16,this->database->CTHM_BCULBg5Online_B1);
-    setlabelstates(ui->BCPM1_2lbl,this->database->BR1CT_M1Bg2BrkAirPresureValid_B1,this->database->BR1CT_M1Bg2BCP1Pressure_U16,this->database->CTHM_BCULBg6Online_B1);
-    setlabelstates(ui->BCPM2_1lbl,this->database->BR2CT_M2Bg1BrkAirPresureValid_B1,this->database->BR2CT_M2Bg1BCP1Pressure_U16,this->database->CTHM_BCURBg5Online_B1);
-    setlabelstates(ui->BCPM2_2lbl,this->database->BR2CT_M2Bg2BrkAirPresureValid_B1,this->database->BR2CT_M2Bg2BCP1Pressure_U16,this->database->CTHM_BCURBg6Online_B1);
+    setlabelstates(ui->BCPTC1_1lbl,true,this->database->BR1CT_TC1Bg1BCP1Pressure_U16,this->database->CTHM_BCULBg1Online_B1);
+    setlabelstates(ui->BCPTC1_2lbl,true,this->database->BR1CT_TC1Bg2BCP1Pressure_U16,this->database->CTHM_BCULBg2Online_B1);
+    setlabelstates(ui->BCPTC2_1lbl,true,this->database->BR2CT_TC2Bg1BCP1Pressure_U16,this->database->CTHM_BCURBg1Online_B1);
+    setlabelstates(ui->BCPTC2_2lbl,true,this->database->BR2CT_TC2Bg2BCP1Pressure_U16,this->database->CTHM_BCURBg2Online_B1);
+    setlabelstates(ui->BCPMP1_1lbl,true,this->database->BR1CT_MP1Bg1BCP1Pressure_U16,this->database->CTHM_BCULBg3Online_B1);
+    setlabelstates(ui->BCPMP1_2lbl,true,this->database->BR1CT_MP1Bg2BCP1Pressure_U16,this->database->CTHM_BCULBg4Online_B1);
+    setlabelstates(ui->BCPMP2_1lbl,true,this->database->BR2CT_MP2Bg1BCP1Pressure_U16,this->database->CTHM_BCURBg3Online_B1);
+    setlabelstates(ui->BCPMP2_2lbl,true,this->database->BR2CT_MP2Bg2BCP1Pressure_U16,this->database->CTHM_BCURBg4Online_B1);
+    setlabelstates(ui->BCPM1_1lbl,true,this->database->BR1CT_M1Bg1BCP1Pressure_U16,this->database->CTHM_BCULBg5Online_B1);
+    setlabelstates(ui->BCPM1_2lbl,true,this->database->BR1CT_M1Bg2BCP1Pressure_U16,this->database->CTHM_BCULBg6Online_B1);
+    setlabelstates(ui->BCPM2_1lbl,true,this->database->BR2CT_M2Bg1BCP1Pressure_U16,this->database->CTHM_BCURBg5Online_B1);
+    setlabelstates(ui->BCPM2_2lbl,true,this->database->BR2CT_M2Bg2BCP1Pressure_U16,this->database->CTHM_BCURBg6Online_B1);
 
     //载荷 取架1＋2数值
-    setlabelstates(ui->LoadTC1lbl,this->database->BR1CT_TC1Bg1BoogieLoad_U16+this->database->BR1CT_TC1Bg2BoogieLoad_U16,this->database->CTHM_BCULBg2Online_B1&&this->database->CTHM_BCULBg1Online_B1);
-    setlabelstates(ui->LoadTC2lbl,this->database->BR2CT_TC2Bg1BoogieLoad_U16+this->database->BR2CT_TC2Bg2BoogieLoad_U16,this->database->CTHM_BCURBg2Online_B1&&this->database->CTHM_BCURBg1Online_B1);
-    setlabelstates(ui->LoadMP1lbl,this->database->BR1CT_MP1Bg1BoogieLoad_U16+this->database->BR1CT_MP1Bg2BoogieLoad_U16,this->database->CTHM_BCULBg4Online_B1&&this->database->CTHM_BCULBg3Online_B1);
-    setlabelstates(ui->LoadMP2lbl,this->database->BR2CT_MP2Bg1BoogieLoad_U16+this->database->BR2CT_MP2Bg2BoogieLoad_U16,this->database->CTHM_BCURBg4Online_B1&&this->database->CTHM_BCURBg3Online_B1);
-    setlabelstates(ui->LoadM1lbl,this->database->BR1CT_M1Bg1BoogieLoad_U16+this->database->BR1CT_M1Bg2BoogieLoad_U16,this->database->CTHM_BCULBg6Online_B1&&this->database->CTHM_BCULBg5Online_B1);
-    setlabelstates(ui->LoadM2lbl,this->database->BR2CT_M2Bg1BoogieLoad_U16+this->database->BR2CT_M2Bg2BoogieLoad_U16,this->database->CTHM_BCURBg6Online_B1&&this->database->CTHM_BCURBg5Online_B1);
+    setlabelstates2(ui->LoadTC1lbl,this->database->CTHM_TC1Load_U16,true);
+    setlabelstates2(ui->LoadTC2lbl,this->database->CTHM_TC2Load_U16,true);
+    setlabelstates2(ui->LoadMP1lbl,this->database->CTHM_MP1Load_U16,true);
+    setlabelstates2(ui->LoadMP2lbl,this->database->CTHM_MP2Load_U16,true);
+    setlabelstates2(ui->LoadM1lbl,this->database->CTHM_M1Load_U16,true);
+    setlabelstates2(ui->LoadM2lbl,this->database->CTHM_M2Load_U16,true);
 
     //乘车率
 
@@ -86,23 +86,23 @@ void VehicleEBCUPage2::updatePage()
 
 
     //停放制动缸 压力
-    setlabelstates(ui->MRPTC1lbl,this->database->BR1CT_TC1Bg2TotalPresureValid_B1,this->database->BR1CT_TC1Bg2TotalPressure_U16,this->database->CTHM_BCULBg2Online_B1);
-    setlabelstates(ui->MRPTC2lbl,this->database->BR2CT_TC2Bg2TotalPresureValid_B1,this->database->BR2CT_TC2Bg2TotalPressure_U16,this->database->CTHM_BCURBg2Online_B1);
-    setlabelstates(ui->MRPM1lbl,this->database->BR1CT_M1Bg2TotalPresureValid_B1,this->database->BR1CT_M1Bg2TotalPressure_U16,this->database->CTHM_BCULBg4Online_B1);
-    setlabelstates(ui->MRPM2lbl,this->database->BR2CT_M2Bg2TotalPresureValid_B1,this->database->BR2CT_M2Bg2TotalPressure_U16,this->database->CTHM_BCURBg4Online_B1);
-    setlabelstates(ui->MRPMP1lbl,this->database->BR1CT_MP1Bg2TotalPresureValid_B1,this->database->BR1CT_MP1Bg2TotalPressure_U16,this->database->CTHM_BCULBg6Online_B1);
-    setlabelstates(ui->MRPMP2lbl,this->database->BR2CT_MP2Bg2TotalPresureValid_B1,this->database->BR2CT_MP2Bg2TotalPressure_U16,this->database->CTHM_BCURBg6Online_B1);
+    setlabelstates(ui->MRPTC1lbl,true,this->database->BR1CT_TC1Bg2TotalPressure_U16,this->database->CTHM_BCULBg2Online_B1);
+    setlabelstates(ui->MRPTC2lbl,true,this->database->BR2CT_TC2Bg2TotalPressure_U16,this->database->CTHM_BCURBg2Online_B1);
+    setlabelstates(ui->MRPMP1lbl,true,this->database->BR1CT_M1Bg2TotalPressure_U16,this->database->CTHM_BCULBg4Online_B1);
+    setlabelstates(ui->MRPMP2lbl,true,this->database->BR2CT_M2Bg2TotalPressure_U16,this->database->CTHM_BCURBg4Online_B1);
+    setlabelstates(ui->MRPM1lbl,true,this->database->BR1CT_MP1Bg2TotalPressure_U16,this->database->CTHM_BCULBg6Online_B1);
+    setlabelstates(ui->MRPM2lbl,true,this->database->BR2CT_MP2Bg2TotalPressure_U16,this->database->CTHM_BCURBg6Online_B1);
 
     //MR 压力
-    setlabelstates(ui->MRPTC1bg1lbl,this->database->BR1CT_TC1Bg1TotalPresureValid_B1,this->database->BR1CT_TC1Bg1TotalPressure_U16,this->database->CTHM_BCULBg1Online_B1);
-    setlabelstates(ui->MRPMP1bg1lbl,this->database->BR1CT_MP1Bg1TotalPresureValid_B1,this->database->BR1CT_MP1Bg1TotalPressure_U16,this->database->CTHM_BCULBg3Online_B1);
-    setlabelstates(ui->MRPM1bg1lbl,this->database->BR1CT_M1Bg1TotalPresureValid_B1,this->database->BR1CT_M1Bg1TotalPressure_U16,this->database->CTHM_BCULBg5Online_B1);
-    setlabelstates(ui->MRPM2bg1lbl,this->database->BR2CT_M2Bg1TotalPresureValid_B1,this->database->BR2CT_M2Bg1TotalPressure_U16,this->database->CTHM_BCURBg5Online_B1);
-    setlabelstates(ui->MRPMP2bg1lbl,this->database->BR2CT_MP2Bg1TotalPresureValid_B1,this->database->BR2CT_MP2Bg1TotalPressure_U16,this->database->CTHM_BCURBg3Online_B1);
-    setlabelstates(ui->MRPTC2bg1lbl,this->database->BR2CT_TC2Bg1TotalPresureValid_B1,this->database->BR2CT_TC2Bg1TotalPressure_U16,this->database->CTHM_BCURBg1Online_B1);
+    setlabelstates(ui->MRPTC1bg1lbl,true,this->database->BR1CT_TC1Bg1TotalPressure_U16,this->database->CTHM_BCULBg1Online_B1);
+    setlabelstates(ui->MRPMP1bg1lbl,true,this->database->BR1CT_MP1Bg1TotalPressure_U16,this->database->CTHM_BCULBg3Online_B1);
+    setlabelstates(ui->MRPM1bg1lbl,true,this->database->BR1CT_M1Bg1TotalPressure_U16,this->database->CTHM_BCULBg5Online_B1);
+    setlabelstates(ui->MRPM2bg1lbl,true,this->database->BR2CT_M2Bg1TotalPressure_U16,this->database->CTHM_BCURBg5Online_B1);
+    setlabelstates(ui->MRPMP2bg1lbl,true,this->database->BR2CT_MP2Bg1TotalPressure_U16,this->database->CTHM_BCURBg3Online_B1);
+    setlabelstates(ui->MRPTC2bg1lbl,true,this->database->BR2CT_TC2Bg1TotalPressure_U16,this->database->CTHM_BCURBg1Online_B1);
 
 }
-void VehicleEBCUPage2::setlabelstates(QLabel* lbl,int value,bool isonline)
+void VehicleEBCUPage2::setlabelstates2(QLabel* lbl,int value,bool isonline)
 {
     if(!isonline)
     {

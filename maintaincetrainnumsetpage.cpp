@@ -42,7 +42,7 @@ void MaintainceTrainNumSetPage::on_returnBtn_pressed()
     this->ui->ConfirmBtn->setStyleSheet(INPUTBUTTONUP);
     this->database->HMiCT_SAVETrainNum_B1 = false;
     this->database->HMiCT_SetFlagChecker_U8 = 0x55;
-    changePage(uVehicleRunStatePage);
+    changePage(uVehicleMaintaincePage);
 }
 void MaintainceTrainNumSetPage::myKeyPressEvent(QString key)
 {

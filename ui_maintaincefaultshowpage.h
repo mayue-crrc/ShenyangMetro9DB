@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincefaultshowpage.ui'
 **
-** Created: Tue Dec 4 14:10:36 2018
+** Created: Wed Dec 26 19:13:13 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -902,7 +902,7 @@ public:
     void retranslateUi(QWidget *MaintainceFaultShowPage)
     {
         MaintainceFaultShowPage->setWindowTitle(QApplication::translate("MaintainceFaultShowPage", "Form", 0, QApplication::UnicodeUTF8));
-        returnBtn->setText(QApplication::translate("MaintainceFaultShowPage", "\351\200\200\345\207\272", 0, QApplication::UnicodeUTF8));
+        returnBtn->setText(QApplication::translate("MaintainceFaultShowPage", "\350\277\224\345\233\236", 0, QApplication::UnicodeUTF8));
         label_2->setText(QString());
         faultLevel_row9->setText(QString());
         endTime_row8->setText(QString());
@@ -1032,7 +1032,9 @@ public:
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p></td></tr></table></body></html>", 0, QApplication::UnicodeUTF8));
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0;"
+                        " text-indent:0px;\"></p></td></tr></table></body></html>", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("MaintainceFaultShowPage", "\346\225\205\351\232\234\344\277\241\346\201\257", 0, QApplication::UnicodeUTF8));
         BTNClose_2->setText(QApplication::translate("MaintainceFaultShowPage", "\345\205\263\351\227\255", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_WHATSTHIS

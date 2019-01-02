@@ -59,10 +59,10 @@ void MaintainceTCMSStatesPage::updatePage()
     setlabelstates(ui->EDCU11Lbl_tc2,this->database->CTHM_EDCU11On_B1,this->database->DR11CT_MDCUStatus_U8);
     setlabelstates(ui->EDCU12Lbl_tc2,this->database->CTHM_EDCU12On_B1,this->database->DR12CT_MDCUStatus_U8);
 
-    setlabelstates(ui->EBCULbl_tc1,this->database->CTHM_BCU1On_B1,this->database->BR1CT_BCU1Master_B1);
-    setlabelstates(ui->EBCULbl_mp1,this->database->CTHM_BCU2On_B1,this->database->BR1CT_BCU2Master_B1);
-    setlabelstates(ui->EBCULbl_mp2,this->database->CTHM_BCU3On_B1,this->database->BR2CT_BCU3Master_B1);
-    setlabelstates(ui->EBCULbl_tc2,this->database->CTHM_BCU4On_B1,this->database->BR2CT_BCU4Master_B1);
+    setlabelstates(ui->EBCULbl_tc1,this->database->CTHM_BCU1On_B1,this->database->CTHM_BCU1Master);
+    setlabelstates(ui->EBCULbl_mp1,this->database->CTHM_BCU2On_B1,this->database->CTHM_BCU2Master);
+    setlabelstates(ui->EBCULbl_mp2,this->database->CTHM_BCU3On_B1,this->database->CTHM_BCU3Master);
+    setlabelstates(ui->EBCULbl_tc2,this->database->CTHM_BCU4On_B1,this->database->CTHM_BCU4Master);
 
     setlabelstates(ui->WMSLbl_tc2,this->database->CTHM_WMS2On_B1);
 
@@ -160,7 +160,7 @@ void MaintainceTCMSStatesPage::updatePage()
 
 void MaintainceTCMSStatesPage::on_returnBtn_pressed()
 {
-    changePage(uVehicleRunStatePage);
+    changePage(uVehicleMaintaincePage);
 }
 void MaintainceTCMSStatesPage::setlabelstates(QLabel* lbl,bool state)
 {

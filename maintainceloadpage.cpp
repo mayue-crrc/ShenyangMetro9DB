@@ -39,7 +39,7 @@ MaintainceLoadPage::~MaintainceLoadPage()
 
 void MaintainceLoadPage::on_returnBtn_pressed()
 {
-    changePage(uVehicleRunStatePage);
+    changePage(uVehicleMaintaincePage);
 }
 void MaintainceLoadPage::updatePage()
 {

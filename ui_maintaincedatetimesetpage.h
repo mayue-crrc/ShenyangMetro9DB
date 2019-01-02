@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincedatetimesetpage.ui'
 **
-** Created: Wed Oct 24 13:51:38 2018
+** Created: Wed Dec 26 19:13:12 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -192,7 +192,7 @@ public:
     void retranslateUi(QWidget *MaintainceDatetimesetPage)
     {
         MaintainceDatetimesetPage->setWindowTitle(QApplication::translate("MaintainceDatetimesetPage", "Form", 0, QApplication::UnicodeUTF8));
-        returnBtn->setText(QApplication::translate("MaintainceDatetimesetPage", "\351\200\200\345\207\272", 0, QApplication::UnicodeUTF8));
+        returnBtn->setText(QApplication::translate("MaintainceDatetimesetPage", "\350\277\224\345\233\236", 0, QApplication::UnicodeUTF8));
         label->setText(QString());
         YearBtn->setText(QString());
         MonthBtn->setText(QString());

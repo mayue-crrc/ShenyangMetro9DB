@@ -36,6 +36,6 @@ void MaintainceHMICheckPage::on_ColorCheckBtn_pressed()
     }else if(cnt == 2)
     {
         cnt = 0;
-        changePage(uVehicleRunStatePage);
+        changePage(uVehicleMaintaincePage);
     }
 }

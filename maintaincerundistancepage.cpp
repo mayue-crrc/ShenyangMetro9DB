@@ -24,5 +24,5 @@ void MaintainceRunDistancePage::updatePage()
 }
 void MaintainceRunDistancePage::on_returnBtn_pressed()
 {
-    changePage(uVehicleRunStatePage);
+    changePage(uVehicleMaintaincePage);
 }

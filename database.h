@@ -197,26 +197,31 @@ public:
         ,CTHM_FastBrake_B1,CTHM_EmgyBrake_B1,CTHM_Backward_B1,CTHM_Forward_B1,
         CTHM_SAVETimeFedBk_B1,CTHM_SAVETrainNumFedBk_B1,CTHM_SAVELineNumFedBk_B1,CTHM_SAVEFirstStationFedBk_B1
         ,CTHM_SAVELastStationFedBk_B1,CTHM_WorkshopPowerSupply_B1,CTHM_BatteryLow_B1 ,CTHM_AcDeTestOn_B1,CTHM_EmgMode_B1,
-        CTHM_MP1PanStatusUnknown_B1,CTHM_MP2PanStatusUnknown_B1
+        CTHM_MP1PanStatusUnknown_B1,CTHM_MP2PanStatusUnknown_B1,
+        CTHM_BCU1Master,CTHM_BCU2Master,CTHM_BCU3Master,CTHM_BCU4Master
         ,CTHM_BCULBg1Online_B1,CTHM_BCULBg2Online_B1,CTHM_BCULBg3Online_B1
         ,CTHM_BCULBg4Online_B1,CTHM_BCULBg5Online_B1,CTHM_BCULBg6Online_B1
         ,CTHM_BCURBg1Online_B1,CTHM_BCURBg2Online_B1,CTHM_BCURBg3Online_B1
-        ,CTHM_BCURBg4Online_B1,CTHM_BCURBg5Online_B1,CTHM_BCURBg6Online_B1
-        ,CTHM_BCU1Bg1Online_B1,CTHM_BCU1Bg2Online_B1,CTHM_BCU1Bg3Online_B1
-        ,CTHM_BCU1Bg4Online_B1,CTHM_BCU1Bg5Online_B1,CTHM_BCU1Bg6Online_B1
-        ,CTHM_BCU2Bg1Online_B1,CTHM_BCU2Bg2Online_B1,CTHM_BCU2Bg3Online_B1
-        ,CTHM_BCU2Bg4Online_B1,CTHM_BCU2Bg5Online_B1,CTHM_BCU2Bg6Online_B1
-        ,CTHM_BCU3Bg1Online_B1,CTHM_BCU3Bg2Online_B1,CTHM_BCU3Bg3Online_B1
-        ,CTHM_BCU3Bg4Online_B1,CTHM_BCU3Bg5Online_B1,CTHM_BCU3Bg6Online_B1
-        ,CTHM_BCU4Bg1Online_B1,CTHM_BCU4Bg2Online_B1,CTHM_BCU4Bg3Online_B1
-        ,CTHM_BCU4Bg4Online_B1,CTHM_BCU4Bg5Online_B1,CTHM_BCU4Bg6Online_B1;
+        ,CTHM_BCURBg4Online_B1,CTHM_BCURBg5Online_B1,CTHM_BCURBg6Online_B1;
+//        ,CTHM_BCU1Bg1Online_B1,CTHM_BCU1Bg2Online_B1,CTHM_BCU1Bg3Online_B1
+//        ,CTHM_BCU1Bg4Online_B1,CTHM_BCU1Bg5Online_B1,CTHM_BCU1Bg6Online_B1
+//        ,CTHM_BCU2Bg1Online_B1,CTHM_BCU2Bg2Online_B1,CTHM_BCU2Bg3Online_B1
+//        ,CTHM_BCU2Bg4Online_B1,CTHM_BCU2Bg5Online_B1,CTHM_BCU2Bg6Online_B1
+//        ,CTHM_BCU3Bg1Online_B1,CTHM_BCU3Bg2Online_B1,CTHM_BCU3Bg3Online_B1
+//        ,CTHM_BCU3Bg4Online_B1,CTHM_BCU3Bg5Online_B1,CTHM_BCU3Bg6Online_B1
+//        ,CTHM_BCU4Bg1Online_B1,CTHM_BCU4Bg2Online_B1,CTHM_BCU4Bg3Online_B1
+//        ,CTHM_BCU4Bg4Online_B1,CTHM_BCU4Bg5Online_B1,CTHM_BCU4Bg6Online_B1;
 
     unsigned char CTHM_Grade_U8,CTHM_CurrentStation_U8,CTHM_NextStation_U8
                 ,CTHM_CCU1SWVer_U8,CTHM_CCU1MVBVer_U8,CTHM_CCU1SDBVer_U8,CTHM_CCU1VxWorksVer_U8,CTHM_CCU1FPGAVer_U8
                 ,CTHM_CCU2SWVer_U8,CTHM_CCU2MVBVer_U8,CTHM_CCU2SDBVer_U8,CTHM_CCU2VxWorksVer_U8,CTHM_CCU2FPGAVer_U8
                 ,CTHM_WheelDig1FedBk_U8,CTHM_WheelDig2FedBk_U8,CTHM_WheelDig3FedBk_U8
                 ,CTHM_WheelDig4FedBk_U8,CTHM_WheelDig5FedBk_U8,CTHM_WheelDig6FedBk_U8,CTHM_WheelDigReFedBk_U8,
-                CTHM_LineNum_U8,CTHM_TrainNum_U8,CTHM_FirstStationID_U8,CTHM_LastStationID_U8;
+                CTHM_LineNum_U8,CTHM_TrainNum_U8,CTHM_FirstStationID_U8,CTHM_LastStationID_U8,
+                CTHM_TC1Bogie1Select_U8 ,CTHM_TC1Bogie2Select_U8 ,CTHM_MP1Bogie3Select_U8
+                ,CTHM_MP1Bogie4Select_U8 ,CTHM_M1Bogie5Select_U8 ,CTHM_M1Bogie6Select_U8,CTHM_M2Bogie6Select_U8
+                ,CTHM_M2Bogie5Select_U8 ,CTHM_MP2Bogie4Select_U8 ,CTHM_MP2Bogie3Select_U8 ,CTHM_TC2Bogie2Select_U8 ,CTHM_TC2Bogie1Select_U8
+                ;
 
     unsigned short int CTHM_TrainSpeed_U16,CTHM_CatenaryVoltage_U16,CTHM_CatenaryCurrent_U16,CTHM_TrainLimitSpeed_U16;
 
@@ -858,7 +863,8 @@ private:
 
     void createEDCUList(bool edcu1Online, bool edcu2Online,QList<unsigned short int> virtualports,QList<unsigned short int> realports);
 
-    void createEBCUList(unsigned char bgnum,unsigned short realport1,unsigned short realport2,unsigned short virtualport,bool realport1bgonline,bool realport2bgonline);
+    void createEBCUList(unsigned short realport1,unsigned short realport2,
+                        unsigned short virtualport,unsigned char trustIndex,unsigned char bgnum);
 
     void copyPort(unsigned short int sink, unsigned short int source);
 

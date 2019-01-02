@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclehvachelppage.ui'
 **
-** Created: Wed Oct 24 13:51:39 2018
+** Created: Fri Dec 28 10:53:12 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -342,7 +342,7 @@ public:
         label_15->setText(QString());
         label_30->setText(QApplication::translate("VehicleHVACHelpPage", "\357\274\232\346\234\252\345\207\217\350\275\275", 0, QApplication::UnicodeUTF8));
         label_16->setText(QString());
-        label_31->setText(QApplication::translate("VehicleHVACHelpPage", "\357\274\232\345\207\217\350\275\275", 0, QApplication::UnicodeUTF8));
+        label_31->setText(QApplication::translate("VehicleHVACHelpPage", "\357\274\232\346\234\252\347\237\245", 0, QApplication::UnicodeUTF8));
         label_17->setText(QApplication::translate("VehicleHVACHelpPage", "\351\233\206\346\216\247", 0, QApplication::UnicodeUTF8));
         label_19->setText(QApplication::translate("VehicleHVACHelpPage", "\346\234\254\346\216\247", 0, QApplication::UnicodeUTF8));
         label_32->setText(QApplication::translate("VehicleHVACHelpPage", "\357\274\215\357\274\215", 0, QApplication::UnicodeUTF8));

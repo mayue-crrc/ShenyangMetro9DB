@@ -27,7 +27,7 @@ MaintainceVersionPage::~MaintainceVersionPage()
 
 void MaintainceVersionPage::on_returnBtn_pressed()
 {
-    changePage(uVehicleRunStatePage);
+    changePage(uVehicleMaintaincePage);
 }
 void MaintainceVersionPage::updatePage()
 {

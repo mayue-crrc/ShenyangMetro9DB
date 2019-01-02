@@ -82,7 +82,7 @@ Database::Database()
     HMiCT_ACDETestStartFlag_B1 = false;
 
     HMiCT_HMISWVerH_U8 = 2;
-    HMiCT_HMISWVerL_U8 = 30;
+    HMiCT_HMISWVerL_U8 = 35;
 
     for(int i =0; i< 12;i++)
     {
@@ -117,6 +117,8 @@ Database::Database()
 //    DefaultFullLoadM2=QString::number(19.5);
 //    DefaultFullLoadMP2=QString::number(19.5);
 //    DefaultFullLoadTC2=QString::number(17.4);
+
+
 }
 
 void Database::copyPort(unsigned short int sink, unsigned short int source)
@@ -782,6 +784,11 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->CTHM_WMS2On_B1 = crrcMvb->getBool(0x218,10,2);
         this->CTHM_CCUD1On_B1 = crrcMvb->getBool(0x218,10,4);
         this->CTHM_CCUD2On_B1 = crrcMvb->getBool(0x218,10,5);
+        this->CTHM_BCU1Master = crrcMvb->getBool(0x218,11,0);
+        this->CTHM_BCU2Master = crrcMvb->getBool(0x218,11,1);
+        this->CTHM_BCU3Master = crrcMvb->getBool(0x218,11,2);
+        this->CTHM_BCU4Master = crrcMvb->getBool(0x218,11,3);
+
 
         this->CTHM_PIS1Active_B1 = crrcMvb->getBool(0x218,12,0);
         this->CTHM_PIS2Active_B1 = crrcMvb->getBool(0x218,12,1);
@@ -832,36 +839,6 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->CTHM_WheelDig6FedBk_U8 = crrcMvb->getUnsignedChar(0x219,15);
         this->CTHM_WheelDigReFedBk_U8 = crrcMvb->getUnsignedChar(0x219,16);
 
-        //bg online
-
-            CTHM_BCU1Bg1Online_B1 = crrcMvb->getBool(0x219,17,0);
-            CTHM_BCU1Bg2Online_B1 = crrcMvb->getBool(0x219,17,1);
-            CTHM_BCU1Bg3Online_B1 = crrcMvb->getBool(0x219,17,2);
-            CTHM_BCU1Bg4Online_B1 = crrcMvb->getBool(0x219,17,3);
-            CTHM_BCU1Bg5Online_B1 = crrcMvb->getBool(0x219,17,4);
-            CTHM_BCU1Bg6Online_B1 = crrcMvb->getBool(0x219,17,5);
-
-            CTHM_BCU2Bg1Online_B1 = crrcMvb->getBool(0x219,17,6);
-            CTHM_BCU2Bg2Online_B1 = crrcMvb->getBool(0x219,17,7);
-            CTHM_BCU2Bg3Online_B1 = crrcMvb->getBool(0x219,18,0);
-            CTHM_BCU2Bg4Online_B1 = crrcMvb->getBool(0x219,18,1);
-            CTHM_BCU2Bg5Online_B1 = crrcMvb->getBool(0x219,18,2);
-            CTHM_BCU2Bg6Online_B1 = crrcMvb->getBool(0x219,18,3);
-
-            CTHM_BCU3Bg1Online_B1 = crrcMvb->getBool(0x219,18,4);
-            CTHM_BCU3Bg2Online_B1 = crrcMvb->getBool(0x219,18,5);
-            CTHM_BCU3Bg3Online_B1 = crrcMvb->getBool(0x219,18,6);
-            CTHM_BCU3Bg4Online_B1 = crrcMvb->getBool(0x219,18,7);
-            CTHM_BCU3Bg5Online_B1 = crrcMvb->getBool(0x219,19,0);
-            CTHM_BCU3Bg6Online_B1 = crrcMvb->getBool(0x219,19,1);
-
-            CTHM_BCU4Bg1Online_B1 = crrcMvb->getBool(0x219,19,2);
-            CTHM_BCU4Bg2Online_B1 = crrcMvb->getBool(0x219,19,3);
-            CTHM_BCU4Bg3Online_B1 = crrcMvb->getBool(0x219,19,4);
-            CTHM_BCU4Bg4Online_B1 = crrcMvb->getBool(0x219,19,5);
-            CTHM_BCU4Bg5Online_B1 = crrcMvb->getBool(0x219,19,6);
-            CTHM_BCU4Bg6Online_B1 = crrcMvb->getBool(0x219,19,7);
-
         this->CTHM_TC1Load_U16 = crrcMvb->getUnsignedInt(0x219,20);
         this->CTHM_MP1Load_U16 = crrcMvb->getUnsignedInt(0x219,22);
         this->CTHM_M1Load_U16 = crrcMvb->getUnsignedInt(0x219,24);
@@ -876,6 +853,36 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->CTHM_AcDeDistance_U16 = crrcMvb->getUnsignedInt(0x21A,10);
         this->CTHM_AcDeTime_U16 = crrcMvb->getUnsignedInt(0x21A,12);
         this->CTHM_AcDeTestOn_B1 = crrcMvb->getBool(0x21A,15,0);
+
+        CTHM_TC1Bogie1Select_U8  = crrcMvb->getUnsignedChar(0x219,20);
+
+        //CTHM_TC1Bogie1Select_U8  = crrcMvb->getUnsignedChar(0x21A,20);
+        CTHM_TC1Bogie2Select_U8  = crrcMvb->getUnsignedChar(0x21A,21);
+        CTHM_MP1Bogie3Select_U8  = crrcMvb->getUnsignedChar(0x21A,22);
+        CTHM_MP1Bogie4Select_U8  = crrcMvb->getUnsignedChar(0x21A,23);
+        CTHM_M1Bogie5Select_U8   = crrcMvb->getUnsignedChar(0x21A,24);
+        CTHM_M1Bogie6Select_U8   = crrcMvb->getUnsignedChar(0x21A,25);
+        CTHM_M2Bogie6Select_U8   = crrcMvb->getUnsignedChar(0x21A,26);
+        CTHM_M2Bogie5Select_U8   = crrcMvb->getUnsignedChar(0x21A,27);
+        CTHM_MP2Bogie4Select_U8  = crrcMvb->getUnsignedChar(0x21A,28);
+        CTHM_MP2Bogie3Select_U8  = crrcMvb->getUnsignedChar(0x21A,29);
+        CTHM_TC2Bogie2Select_U8  = crrcMvb->getUnsignedChar(0x21A,30);
+        CTHM_TC2Bogie1Select_U8  = crrcMvb->getUnsignedChar(0x21A,31);
+
+        //bg online
+        CTHM_BCULBg1Online_B1 = (CTHM_TC1Bogie1Select_U8==0)?false:true;
+        CTHM_BCULBg2Online_B1 = (CTHM_TC1Bogie2Select_U8==0)?false:true;
+        CTHM_BCULBg3Online_B1 = (CTHM_MP1Bogie3Select_U8==0)?false:true;
+        CTHM_BCULBg4Online_B1 = (CTHM_MP1Bogie4Select_U8==0)?false:true;
+        CTHM_BCULBg5Online_B1 = (CTHM_M1Bogie5Select_U8==0)?false:true;
+        CTHM_BCULBg6Online_B1 = (CTHM_M1Bogie6Select_U8==0)?false:true;
+
+        CTHM_BCURBg1Online_B1 = (CTHM_TC2Bogie1Select_U8==0)?false:true;
+        CTHM_BCURBg2Online_B1 = (CTHM_TC2Bogie2Select_U8==0)?false:true;
+        CTHM_BCURBg3Online_B1 = (CTHM_MP2Bogie3Select_U8==0)?false:true;
+        CTHM_BCURBg4Online_B1 = (CTHM_MP2Bogie4Select_U8==0)?false:true;
+        CTHM_BCURBg5Online_B1 = (CTHM_M2Bogie5Select_U8==0)?false:true;
+        CTHM_BCURBg6Online_B1 = (CTHM_M2Bogie6Select_U8==0)?false:true;
 
         float tmp_pkgtc1 = ((float)this->CTHM_TC1Load_U16/100 - DefaultLoadTC1.toFloat()*1.05);
         float tmp_pkgmp1 = ((float)this->CTHM_MP1Load_U16/100 - DefaultLoadMP1.toFloat()*1.1);
@@ -2410,12 +2417,12 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
 //        this->createEBCUList(this->CTHM_BCU1On_B1,this->CTHM_BCU2On_B1,temp_virtualports,temp_realports);
 
 
-        this->createEBCUList(0,0x610,0x630,0xf610,this->CTHM_BCU1Bg1Online_B1,this->CTHM_BCU2Bg1Online_B1);
-        this->createEBCUList(1,0x611,0x631,0xf611,this->CTHM_BCU1Bg2Online_B1,this->CTHM_BCU2Bg2Online_B1);
-        this->createEBCUList(2,0x612,0x632,0xf612,this->CTHM_BCU1Bg3Online_B1,this->CTHM_BCU2Bg3Online_B1);
-        this->createEBCUList(3,0x613,0x633,0xf613,this->CTHM_BCU1Bg4Online_B1,this->CTHM_BCU2Bg4Online_B1);
-        this->createEBCUList(4,0x614,0x634,0xf614,this->CTHM_BCU1Bg5Online_B1,this->CTHM_BCU2Bg5Online_B1);
-        this->createEBCUList(5,0x615,0x635,0xf615,this->CTHM_BCU1Bg6Online_B1,this->CTHM_BCU2Bg6Online_B1);
+        this->createEBCUList(0x610,0x630,0xf610,this->CTHM_TC1Bogie1Select_U8,0);
+        this->createEBCUList(0x611,0x631,0xf611,this->CTHM_TC1Bogie2Select_U8,1);
+        this->createEBCUList(0x612,0x632,0xf612,this->CTHM_MP1Bogie3Select_U8,2);
+        this->createEBCUList(0x613,0x633,0xf613,this->CTHM_MP1Bogie4Select_U8,3);
+        this->createEBCUList(0x614,0x634,0xf614,this->CTHM_M1Bogie5Select_U8,4);
+        this->createEBCUList(0x615,0x635,0xf615,this->CTHM_M1Bogie6Select_U8,5);
 
         //*****TODO realdata from virual port
         this->BR1CT_TcMVBVersion_U8 = this->crrcMvb->getUnsignedChar(0x616,26);
@@ -2570,18 +2577,12 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
 
         this->BR1CT_24HourNoSelfTest_B1 = this->crrcMvb->getBool(0x616,25,7);
 
-//        temp_virtualports.clear();
-//        temp_realports.clear();
-//        temp_virtualports<<0xf640<<0xf641<<0xf642<<0xf643<<0xf644<<0xf645<<0xf646;
-//        temp_realports<<0x660<<0x661<<0x662<<0x663<<0x664<<0x665<<0x666<<0x640<<0x641<<0x642<<0x643<<0x644<<0x645<<0x646;//EBCU4 default master
-//        this->createEBCUList(this->CTHM_BCU3On_B1,this->CTHM_BCU4On_B1,temp_virtualports,temp_realports);
-
-        this->createEBCUList(0,0x640,0x660,0xf640,this->CTHM_BCU3Bg1Online_B1,this->CTHM_BCU4Bg1Online_B1);
-        this->createEBCUList(1,0x641,0x661,0xf641,this->CTHM_BCU3Bg2Online_B1,this->CTHM_BCU4Bg2Online_B1);
-        this->createEBCUList(2,0x642,0x662,0xf642,this->CTHM_BCU3Bg3Online_B1,this->CTHM_BCU4Bg3Online_B1);
-        this->createEBCUList(3,0x643,0x663,0xf643,this->CTHM_BCU3Bg4Online_B1,this->CTHM_BCU4Bg4Online_B1);
-        this->createEBCUList(4,0x644,0x664,0xf644,this->CTHM_BCU3Bg5Online_B1,this->CTHM_BCU4Bg5Online_B1);
-        this->createEBCUList(5,0x645,0x665,0xf645,this->CTHM_BCU3Bg6Online_B1,this->CTHM_BCU4Bg6Online_B1);
+        this->createEBCUList(0x660,0x640,0xf640,this->CTHM_TC1Bogie1Select_U8,0);
+        this->createEBCUList(0x661,0x641,0xf641,this->CTHM_TC1Bogie2Select_U8,1);
+        this->createEBCUList(0x662,0x642,0xf642,this->CTHM_MP1Bogie3Select_U8,2);
+        this->createEBCUList(0x663,0x643,0xf643,this->CTHM_MP1Bogie4Select_U8,3);
+        this->createEBCUList(0x664,0x644,0xf644,this->CTHM_M1Bogie5Select_U8,4);
+        this->createEBCUList(0x665,0x645,0xf645,this->CTHM_M1Bogie6Select_U8,5);
 
         this->BR2CT_TcMVBVersion_U8 = this->crrcMvb->getUnsignedChar(0x646,26);
         this->BR2CT_MMVBVersion_U8 = this->crrcMvb->getUnsignedChar(0x646,27);
@@ -2734,6 +2735,8 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->BR2CT_M2Bg2Fault_U32 = this->crrcMvb->getUnsignedInt32(0xf646,20);
 
         this->BR2CT_24HourNoSelfTest_B1 = this->crrcMvb->getBool(0x646,25,7);
+
+
     }
 
     /////*******ATC -- CCU**********///////
@@ -2930,27 +2933,30 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         CD2CT_SoftWareVersion4_I16 = this->crrcMvb->getSignedInt(0x828,8);
     }
 }
-void Database::createEBCUList(unsigned char bgnum,unsigned short realport1,unsigned short realport2,unsigned short virtualport,bool realport1bgonline,bool realport2bgonline)
+
+void Database::createEBCUList(unsigned short realport1,unsigned short realport2,unsigned short virtualport,
+                              unsigned char trustIndex,unsigned char bgnum)
 {
 
-    bool t_masterport1 = this->crrcMvb->getBool(realport1, 5,0);
-    bool t_masterport2 = this->crrcMvb->getBool(realport2, 5,0);
+//    bool t_masterport1 = this->crrcMvb->getBool(realport1, 5,0);
+//    bool t_masterport2 = this->crrcMvb->getBool(realport2, 5,0);
 
-    bool t_validport1 = this->crrcMvb->getBool(realport1, 3,1);
-    bool t_validport2 = this->crrcMvb->getBool(realport2, 3,1);
+//    bool t_validport1 = this->crrcMvb->getBool(realport1, 3,1);
+//    bool t_validport2 = this->crrcMvb->getBool(realport2, 3,1);
 
     //  edcu1/4 jia i trust logic
     if(
-            (true == realport1bgonline && true == realport2bgonline && t_masterport1 == true && t_validport1 == true) ||
-            (true == realport1bgonline && true == realport2bgonline && t_masterport1 == false && t_masterport2 == true && t_validport1 == true && t_validport2 == false) ||
-            (true == realport1bgonline && false == realport2bgonline && t_validport1 == true)
+            trustIndex == 1 || trustIndex == 4
+//            (true == realport1bgonline && true == realport2bgonline && t_masterport1 == true && t_validport1 == true) ||
+//            (true == realport1bgonline && true == realport2bgonline && t_masterport1 == false && t_masterport2 == true && t_validport1 == true && t_validport2 == false) ||
+//            (true == realport1bgonline && false == realport2bgonline && t_validport1 == true)
             )
     {
         // data signal
-
         this->copyPort( virtualport,realport1);
+        //resbgonline = realport1bgonline;
         //fault signal
-        this->crrcMvb->setUnsignedInt32(virtualport,bgnum*4,this->crrcMvb->getUnsignedInt32(realport1,bgnum*4));
+        this->crrcMvb->setUnsignedInt32(virtualport-bgnum+6,bgnum*4,this->crrcMvb->getUnsignedInt32(realport1-bgnum+6,bgnum*4));
 
         this->crrcMvb->setBool(virtualport-bgnum+6,bgnum*4+1,6,this->crrcMvb->getBool(realport1-bgnum+6,bgnum*4+1,6));//CAN0 FAULT
         this->crrcMvb->setBool(virtualport-bgnum+6,bgnum*4+1,7,this->crrcMvb->getBool(realport1-bgnum+6,bgnum*4+1,7));//CAN1 FAULT
@@ -2962,14 +2968,17 @@ void Database::createEBCUList(unsigned char bgnum,unsigned short realport1,unsig
     }
     //  edcu2/3 trust logic
     else if(
-            (true == realport1bgonline && true == realport2bgonline && t_masterport1 == true && t_validport1 == false && t_validport2 == true ) ||
-            (true == realport1bgonline && true == realport2bgonline && t_masterport1 == false && t_masterport2 == true && t_validport2 == true) ||
-            (false == realport1bgonline && true == realport2bgonline && t_validport2 == true)
+            trustIndex == 2 || trustIndex == 3
+
+//            (true == realport1bgonline && true == realport2bgonline && t_masterport1 == true && t_validport1 == false && t_validport2 == true ) ||
+//            (true == realport1bgonline && true == realport2bgonline && t_masterport1 == false && t_masterport2 == true && t_validport2 == true) ||
+//            (false == realport1bgonline && true == realport2bgonline && t_validport2 == true)
             )
     {
             this->copyPort( virtualport,realport2);
+            //resbgonline = realport2bgonline;
             //fault signal
-            this->crrcMvb->setUnsignedInt32(virtualport,bgnum*4,this->crrcMvb->getUnsignedInt32(realport2,bgnum*4));
+            this->crrcMvb->setUnsignedInt32(virtualport-bgnum+6,bgnum*4,this->crrcMvb->getUnsignedInt32(realport2-bgnum+6,bgnum*4));
 
             this->crrcMvb->setBool(virtualport-bgnum+6,bgnum*4+1,6,this->crrcMvb->getBool(realport2-bgnum+6,bgnum*4+1,6));//CAN0 FAULT
             this->crrcMvb->setBool(virtualport-bgnum+6,bgnum*4+1,7,this->crrcMvb->getBool(realport2-bgnum+6,bgnum*4+1,7));//CAN1 FAULT
@@ -2981,7 +2990,9 @@ void Database::createEBCUList(unsigned char bgnum,unsigned short realport1,unsig
     }else
     {
             this->copyPort( virtualport,0xfff);
-            this->crrcMvb->setUnsignedInt32(virtualport,bgnum*4,0);
+            this->crrcMvb->setUnsignedInt32(virtualport-bgnum+6,bgnum*4,0);
+            //resbgonline = false;
+
     }
 
 }

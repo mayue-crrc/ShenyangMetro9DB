@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincefaultquerypage.ui'
 **
-** Created: Wed Oct 24 13:51:39 2018
+** Created: Wed Dec 26 19:13:13 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -359,7 +359,7 @@ public:
         MP2->setText(QApplication::translate("MaintainceFaultQueryPage", "MP2", 0, QApplication::UnicodeUTF8));
         TC2->setText(QApplication::translate("MaintainceFaultQueryPage", "TC2", 0, QApplication::UnicodeUTF8));
         label_2->setText(QString());
-        returnBtn->setText(QApplication::translate("MaintainceFaultQueryPage", "\351\200\200\345\207\272", 0, QApplication::UnicodeUTF8));
+        returnBtn->setText(QApplication::translate("MaintainceFaultQueryPage", "\350\277\224\345\233\236", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("MaintainceFaultQueryPage", "\347\263\273\347\273\237", 0, QApplication::UnicodeUTF8));
         TCMS->setText(QApplication::translate("MaintainceFaultQueryPage", "TCMS", 0, QApplication::UnicodeUTF8));
         BCU->setText(QApplication::translate("MaintainceFaultQueryPage", "\345\210\266\345\212\250\347\263\273\347\273\237", 0, QApplication::UnicodeUTF8));

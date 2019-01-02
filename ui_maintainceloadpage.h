@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintainceloadpage.ui'
 **
-** Created: Wed Oct 24 13:51:38 2018
+** Created: Wed Dec 26 19:13:12 2018
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -292,7 +292,7 @@ public:
         TrainWeightM2lbl->setText(QString());
         TrainWeightMP2lbl->setText(QString());
         TrainWeightTC2lbl->setText(QString());
-        returnBtn->setText(QApplication::translate("MaintainceLoadPage", "\351\200\200\345\207\272", 0, QApplication::UnicodeUTF8));
+        returnBtn->setText(QApplication::translate("MaintainceLoadPage", "\350\277\224\345\233\236", 0, QApplication::UnicodeUTF8));
         label->setText(QString());
         label_2->setText(QApplication::translate("MaintainceLoadPage", "\350\275\246\350\276\206\351\207\215\351\207\217\357\274\210t\357\274\211", 0, QApplication::UnicodeUTF8));
         EmptyTrainWeightM1lbl->setText(QString());
