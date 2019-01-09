@@ -2042,6 +2042,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
@@ -2189,7 +2190,6 @@ border-radius:8px;</string>
   <zorder>endTime_row5</zorder>
   <zorder>faultLevel_row2</zorder>
   <zorder>startTime_row1</zorder>
-  <zorder>faultpagelbl</zorder>
   <zorder>faultName_row6</zorder>
   <zorder>NextPageBtn</zorder>
   <zorder>lbl1_17</zorder>
@@ -2227,7 +2227,6 @@ border-radius:8px;</string>
   <zorder>mp1wheel1lbl</zorder>
   <zorder>faultName_row4</zorder>
   <zorder>endTime_row7</zorder>
-  <zorder>faultcntlbl</zorder>
   <zorder>startTime_row9</zorder>
   <zorder>tc1directionlbl</zorder>
   <zorder>faultLevel_row1</zorder>
@@ -2261,6 +2260,8 @@ border-radius:8px;</string>
   <zorder>BTNRow_4</zorder>
   <zorder>BTNRow_9</zorder>
   <zorder>GROUPBOXFault</zorder>
+  <zorder>faultpagelbl</zorder>
+  <zorder>faultcntlbl</zorder>
  </widget>
  <resources/>
  <connections/>

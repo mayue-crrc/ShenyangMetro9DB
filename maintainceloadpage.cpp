@@ -78,12 +78,6 @@ void MaintainceLoadPage::updatePage()
     this->ui->PkgWeightMP2lbl->setText(QString::number(tmp_pkgmp2*1000,10,0));
     this->ui->PkgWeightTC2lbl->setText(QString::number(tmp_pkgtc2*1000,10,0));
 
-    this->ui->PassagerNumTC1lbl->setText(QString::number(tmp_pkgtc1/60*1000,10,0));
-    this->ui->PassagerNumMP1lbl->setText(QString::number(tmp_pkgmp1/60*1000,10,0));
-    this->ui->PassagerNumM1lbl->setText(QString::number(tmp_pkgm1/60*1000,10,0));
-    this->ui->PassagerNumM2lbl->setText(QString::number(tmp_pkgm2/60*1000,10,0));
-    this->ui->PassagerNumMP2lbl->setText(QString::number(tmp_pkgmp2/60*1000,10,0));
-    this->ui->PassagerNumTC2lbl->setText(QString::number(tmp_pkgtc2/60*1000,10,0));
 
     this->ui->PperWeightTC1lbl->setText(this->database->PLoad_TC1+"%");
     this->ui->PperWeightMP1lbl->setText(this->database->PLoad_MP1+"%");
@@ -91,4 +85,12 @@ void MaintainceLoadPage::updatePage()
     this->ui->PperWeightM2lbl->setText(this->database->PLoad_M2+"%");
     this->ui->PperWeightMP2lbl->setText(this->database->PLoad_MP2+"%");
     this->ui->PperWeightTC2lbl->setText(this->database->PLoad_TC2+"%");
+
+
+    this->ui->PassagerNumTC1lbl->setText(QString::number(tmp_pkgtc1/60*1000,10,0));
+    this->ui->PassagerNumMP1lbl->setText(QString::number(tmp_pkgmp1/60*1000,10,0));
+    this->ui->PassagerNumM1lbl->setText(QString::number(tmp_pkgm1/60*1000,10,0));
+    this->ui->PassagerNumM2lbl->setText(QString::number(tmp_pkgm2/60*1000,10,0));
+    this->ui->PassagerNumMP2lbl->setText(QString::number(tmp_pkgmp2/60*1000,10,0));
+    this->ui->PassagerNumTC2lbl->setText(QString::number(tmp_pkgtc2/60*1000,10,0));
 }

@@ -834,6 +834,7 @@ void VehicleRunStatePage::updateTrainStatus()
         //this->ui->Mp2supplylbl->hide();
     }
 
+
     //火灾
     bool Firestatus;
     Firestatus = this->database->WSCT_Car1DFire_B1||this->database->WSCT_Car1FFire_B1||this->database->WSCT_Car1HFire_B1||
@@ -879,6 +880,7 @@ void VehicleRunStatePage::updateTrainStatus()
                  (this->database->DICT_M2DI1CH13PHFire1_B1&&this->database->DICT_M2DI1CH14PHFire2_B1);
     setFireStatus(this->ui->M2FireAlarmlbl,Firestatus,(bool)this->database->WSCT_M2Fault);
     Firestatus = false;
+
 }
 
 void VehicleRunStatePage::updateButtonsStatus()

@@ -82,7 +82,7 @@ Database::Database()
     HMiCT_ACDETestStartFlag_B1 = false;
 
     HMiCT_HMISWVerH_U8 = 2;
-    HMiCT_HMISWVerL_U8 = 38;
+    HMiCT_HMISWVerL_U8 = 39;
 
     for(int i =0; i< 12;i++)
     {
@@ -1811,6 +1811,25 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->DR1_2CT_DCU7ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,6,6);
         this->DR1_2CT_DCU8ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,6,7);
 
+//        this->DR1_2CT_DCU1ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,7,0);
+//        this->DR1_2CT_DCU2ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,7,1);
+//        this->DR1_2CT_DCU3ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,7,2);
+//        this->DR1_2CT_DCU4ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,7,3);
+//        this->DR1_2CT_DCU5ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,7,4);
+//        this->DR1_2CT_DCU6ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,7,5);
+//        this->DR1_2CT_DCU7ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,7,6);
+//        this->DR1_2CT_DCU8ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,7,7);
+
+//        this->DR1_2CT_DCU1ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,8,0);
+//        this->DR1_2CT_DCU2ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,8,1);
+//        this->DR1_2CT_DCU3ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,8,2);
+//        this->DR1_2CT_DCU4ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,8,3);
+//        this->DR1_2CT_DCU5ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,8,4);
+//        this->DR1_2CT_DCU6ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,8,5);
+//        this->DR1_2CT_DCU7ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,8,6);
+//        this->DR1_2CT_DCU8ObstacleDetcted_B1 = crrcMvb->getBool(0xf711,8,7);
+
+
         this->DR1_2CT_DCU1TotallyClose_B1 = crrcMvb->getBool(0xf711,9,0);
         this->DR1_2CT_DCU2TotallyClose_B1 = crrcMvb->getBool(0xf711,9,1);
         this->DR1_2CT_DCU3TotallyClose_B1 = crrcMvb->getBool(0xf711,9,2);
@@ -1820,14 +1839,14 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->DR1_2CT_DCU7TotallyClose_B1 = crrcMvb->getBool(0xf711,9,6);
         this->DR1_2CT_DCU8TotallyClose_B1 = crrcMvb->getBool(0xf711,9,7);
 
-        this->DR1_2CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf711,10,0);
-        this->DR1_2CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf711,10,1);
-        this->DR1_2CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf711,10,2);
-        this->DR1_2CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf711,10,3);
-        this->DR1_2CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf711,10,4);
-        this->DR1_2CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf711,10,5);
-        this->DR1_2CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf711,10,6);
-        this->DR1_2CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf711,10,7);
+        this->DR1_2CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf711,10,0)|| crrcMvb->getBool(0xf711,7,0)|| crrcMvb->getBool(0xf711,8,0);
+        this->DR1_2CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf711,10,1)|| crrcMvb->getBool(0xf711,7,1)|| crrcMvb->getBool(0xf711,8,1);
+        this->DR1_2CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf711,10,2)|| crrcMvb->getBool(0xf711,7,2)|| crrcMvb->getBool(0xf711,8,2);
+        this->DR1_2CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf711,10,3)|| crrcMvb->getBool(0xf711,7,3)|| crrcMvb->getBool(0xf711,8,3);
+        this->DR1_2CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf711,10,4)|| crrcMvb->getBool(0xf711,7,4)|| crrcMvb->getBool(0xf711,8,4);
+        this->DR1_2CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf711,10,5)|| crrcMvb->getBool(0xf711,7,5)|| crrcMvb->getBool(0xf711,8,5);
+        this->DR1_2CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf711,10,6)|| crrcMvb->getBool(0xf711,7,6)|| crrcMvb->getBool(0xf711,8,6);
+        this->DR1_2CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf711,10,7)|| crrcMvb->getBool(0xf711,7,7)|| crrcMvb->getBool(0xf711,8,7);
 
         this->DR1_2CT_DCU1GreenInputFeedback_B1 = crrcMvb->getBool(0xf711,27,0);
         this->DR1_2CT_DCU2GreenInputFeedback_B1 = crrcMvb->getBool(0xf711,27,1);
@@ -1917,14 +1936,24 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->DR3_4CT_DCU7TotallyClose_B1 = crrcMvb->getBool(0xf731,9,6);
         this->DR3_4CT_DCU8TotallyClose_B1 = crrcMvb->getBool(0xf731,9,7);
 
-        this->DR3_4CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,0);
-        this->DR3_4CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,1);
-        this->DR3_4CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,2);
-        this->DR3_4CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,3);
-        this->DR3_4CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,4);
-        this->DR3_4CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,5);
-        this->DR3_4CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,6);
-        this->DR3_4CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,7);
+//        this->DR3_4CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,0);
+//        this->DR3_4CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,1);
+//        this->DR3_4CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,2);
+//        this->DR3_4CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,3);
+//        this->DR3_4CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,4);
+//        this->DR3_4CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,5);
+//        this->DR3_4CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,6);
+//        this->DR3_4CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,7);
+
+        this->DR3_4CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,0)|| crrcMvb->getBool(0xf731,7,0)|| crrcMvb->getBool(0xf731,8,0);
+        this->DR3_4CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,1)|| crrcMvb->getBool(0xf731,7,1)|| crrcMvb->getBool(0xf731,8,1);
+        this->DR3_4CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,2)|| crrcMvb->getBool(0xf731,7,2)|| crrcMvb->getBool(0xf731,8,2);
+        this->DR3_4CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,3)|| crrcMvb->getBool(0xf731,7,3)|| crrcMvb->getBool(0xf731,8,3);
+        this->DR3_4CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,4)|| crrcMvb->getBool(0xf731,7,4)|| crrcMvb->getBool(0xf731,8,4);
+        this->DR3_4CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,5)|| crrcMvb->getBool(0xf731,7,5)|| crrcMvb->getBool(0xf731,8,5);
+        this->DR3_4CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,6)|| crrcMvb->getBool(0xf731,7,6)|| crrcMvb->getBool(0xf731,8,6);
+        this->DR3_4CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf731,10,7)|| crrcMvb->getBool(0xf731,7,7)|| crrcMvb->getBool(0xf731,8,7);
+
 
         this->DR3_4CT_DCU1GreenInputFeedback_B1 = crrcMvb->getBool(0xf731,27,0);
         this->DR3_4CT_DCU2GreenInputFeedback_B1 = crrcMvb->getBool(0xf731,27,1);
@@ -2015,14 +2044,23 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->DR5_6CT_DCU7TotallyClose_B1 = crrcMvb->getBool(0xf751,9,6);
         this->DR5_6CT_DCU8TotallyClose_B1 = crrcMvb->getBool(0xf751,9,7);
 
-        this->DR5_6CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,0);
-        this->DR5_6CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,1);
-        this->DR5_6CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,2);
-        this->DR5_6CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,3);
-        this->DR5_6CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,4);
-        this->DR5_6CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,5);
-        this->DR5_6CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,6);
-        this->DR5_6CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,7);
+//        this->DR5_6CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,0);
+//        this->DR5_6CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,1);
+//        this->DR5_6CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,2);
+//        this->DR5_6CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,3);
+//        this->DR5_6CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,4);
+//        this->DR5_6CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,5);
+//        this->DR5_6CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,6);
+//        this->DR5_6CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,7);
+
+        this->DR5_6CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,0)|| crrcMvb->getBool(0xf751,7,0)|| crrcMvb->getBool(0xf751,8,0);
+        this->DR5_6CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,1)|| crrcMvb->getBool(0xf751,7,1)|| crrcMvb->getBool(0xf751,8,1);
+        this->DR5_6CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,2)|| crrcMvb->getBool(0xf751,7,2)|| crrcMvb->getBool(0xf751,8,2);
+        this->DR5_6CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,3)|| crrcMvb->getBool(0xf751,7,3)|| crrcMvb->getBool(0xf751,8,3);
+        this->DR5_6CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,4)|| crrcMvb->getBool(0xf751,7,4)|| crrcMvb->getBool(0xf751,8,4);
+        this->DR5_6CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,5)|| crrcMvb->getBool(0xf751,7,5)|| crrcMvb->getBool(0xf751,8,5);
+        this->DR5_6CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,6)|| crrcMvb->getBool(0xf751,7,6)|| crrcMvb->getBool(0xf751,8,6);
+        this->DR5_6CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf751,10,7)|| crrcMvb->getBool(0xf751,7,7)|| crrcMvb->getBool(0xf751,8,7);
 
         this->DR5_6CT_DCU1GreenInputFeedback_B1 = crrcMvb->getBool(0xf751,27,0);
         this->DR5_6CT_DCU2GreenInputFeedback_B1 = crrcMvb->getBool(0xf751,27,1);
@@ -2112,14 +2150,24 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->DR7_8CT_DCU7TotallyClose_B1 = crrcMvb->getBool(0xf771,9,6);
         this->DR7_8CT_DCU8TotallyClose_B1 = crrcMvb->getBool(0xf771,9,7);
 
-        this->DR7_8CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,0);
-        this->DR7_8CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,1);
-        this->DR7_8CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,2);
-        this->DR7_8CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,3);
-        this->DR7_8CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,4);
-        this->DR7_8CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,5);
-        this->DR7_8CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,6);
-        this->DR7_8CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,7);
+//        this->DR7_8CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,0);
+//        this->DR7_8CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,1);
+//        this->DR7_8CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,2);
+//        this->DR7_8CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,3);
+//        this->DR7_8CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,4);
+//        this->DR7_8CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,5);
+//        this->DR7_8CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,6);
+//        this->DR7_8CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,7);
+
+        this->DR7_8CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,0)|| crrcMvb->getBool(0xf771,7,0)|| crrcMvb->getBool(0xf771,8,0);
+        this->DR7_8CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,1)|| crrcMvb->getBool(0xf771,7,1)|| crrcMvb->getBool(0xf771,8,1);
+        this->DR7_8CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,2)|| crrcMvb->getBool(0xf771,7,2)|| crrcMvb->getBool(0xf771,8,2);
+        this->DR7_8CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,3)|| crrcMvb->getBool(0xf771,7,3)|| crrcMvb->getBool(0xf771,8,3);
+        this->DR7_8CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,4)|| crrcMvb->getBool(0xf771,7,4)|| crrcMvb->getBool(0xf771,8,4);
+        this->DR7_8CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,5)|| crrcMvb->getBool(0xf771,7,5)|| crrcMvb->getBool(0xf771,8,5);
+        this->DR7_8CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,6)|| crrcMvb->getBool(0xf771,7,6)|| crrcMvb->getBool(0xf771,8,6);
+        this->DR7_8CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf771,10,7)|| crrcMvb->getBool(0xf771,7,7)|| crrcMvb->getBool(0xf771,8,7);
+
 
         this->DR7_8CT_DCU1GreenInputFeedback_B1 = crrcMvb->getBool(0xf771,27,0);
         this->DR7_8CT_DCU2GreenInputFeedback_B1 = crrcMvb->getBool(0xf771,27,1);
@@ -2209,14 +2257,24 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->DR9_10CT_DCU7TotallyClose_B1 = crrcMvb->getBool(0xf791,9,6);
         this->DR9_10CT_DCU8TotallyClose_B1 = crrcMvb->getBool(0xf791,9,7);
 
-        this->DR9_10CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,0);
-        this->DR9_10CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,1);
-        this->DR9_10CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,2);
-        this->DR9_10CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,3);
-        this->DR9_10CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,4);
-        this->DR9_10CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,5);
-        this->DR9_10CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,6);
-        this->DR9_10CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,7);
+//        this->DR9_10CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,0);
+//        this->DR9_10CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,1);
+//        this->DR9_10CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,2);
+//        this->DR9_10CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,3);
+//        this->DR9_10CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,4);
+//        this->DR9_10CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,5);
+//        this->DR9_10CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,6);
+//        this->DR9_10CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,7);
+
+        this->DR9_10CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,0)|| crrcMvb->getBool(0xf791,7,0)|| crrcMvb->getBool(0xf791,8,0);
+        this->DR9_10CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,1)|| crrcMvb->getBool(0xf791,7,1)|| crrcMvb->getBool(0xf791,8,1);
+        this->DR9_10CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,2)|| crrcMvb->getBool(0xf791,7,2)|| crrcMvb->getBool(0xf791,8,2);
+        this->DR9_10CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,3)|| crrcMvb->getBool(0xf791,7,3)|| crrcMvb->getBool(0xf791,8,3);
+        this->DR9_10CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,4)|| crrcMvb->getBool(0xf791,7,4)|| crrcMvb->getBool(0xf791,8,4);
+        this->DR9_10CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,5)|| crrcMvb->getBool(0xf791,7,5)|| crrcMvb->getBool(0xf791,8,5);
+        this->DR9_10CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,6)|| crrcMvb->getBool(0xf791,7,6)|| crrcMvb->getBool(0xf791,8,6);
+        this->DR9_10CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf791,10,7)|| crrcMvb->getBool(0xf791,7,7)|| crrcMvb->getBool(0xf791,8,7);
+
 
         this->DR9_10CT_DCU1GreenInputFeedback_B1 = crrcMvb->getBool(0xf791,27,0);
         this->DR9_10CT_DCU2GreenInputFeedback_B1 = crrcMvb->getBool(0xf791,27,1);
@@ -2306,14 +2364,24 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->DR11_12CT_DCU7TotallyClose_B1 = crrcMvb->getBool(0xf7b1,9,6);
         this->DR11_12CT_DCU8TotallyClose_B1 = crrcMvb->getBool(0xf7b1,9,7);
 
-        this->DR11_12CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,0);
-        this->DR11_12CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,1);
-        this->DR11_12CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,2);
-        this->DR11_12CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,3);
-        this->DR11_12CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,4);
-        this->DR11_12CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,5);
-        this->DR11_12CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,6);
-        this->DR11_12CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,7);
+//        this->DR11_12CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,0);
+//        this->DR11_12CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,1);
+//        this->DR11_12CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,2);
+//        this->DR11_12CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,3);
+//        this->DR11_12CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,4);
+//        this->DR11_12CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,5);
+//        this->DR11_12CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,6);
+//        this->DR11_12CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,7);
+
+        this->DR11_12CT_DCU1TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,0)|| crrcMvb->getBool(0xf7b1,7,0)|| crrcMvb->getBool(0xf7b1,8,0);
+        this->DR11_12CT_DCU2TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,1)|| crrcMvb->getBool(0xf7b1,7,1)|| crrcMvb->getBool(0xf7b1,8,1);
+        this->DR11_12CT_DCU3TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,2)|| crrcMvb->getBool(0xf7b1,7,2)|| crrcMvb->getBool(0xf7b1,8,2);
+        this->DR11_12CT_DCU4TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,3)|| crrcMvb->getBool(0xf7b1,7,3)|| crrcMvb->getBool(0xf7b1,8,3);
+        this->DR11_12CT_DCU5TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,4)|| crrcMvb->getBool(0xf7b1,7,4)|| crrcMvb->getBool(0xf7b1,8,4);
+        this->DR11_12CT_DCU6TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,5)|| crrcMvb->getBool(0xf7b1,7,5)|| crrcMvb->getBool(0xf7b1,8,5);
+        this->DR11_12CT_DCU7TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,6)|| crrcMvb->getBool(0xf7b1,7,6)|| crrcMvb->getBool(0xf7b1,8,6);
+        this->DR11_12CT_DCU8TotallyOpen_B1 = crrcMvb->getBool(0xf7b1,10,7)|| crrcMvb->getBool(0xf7b1,7,7)|| crrcMvb->getBool(0xf7b1,8,7);
+
 
         this->DR11_12CT_DCU1GreenInputFeedback_B1 = crrcMvb->getBool(0xf7b1,27,0);
         this->DR11_12CT_DCU2GreenInputFeedback_B1 = crrcMvb->getBool(0xf7b1,27,1);

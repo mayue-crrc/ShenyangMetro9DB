@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'maintainceconsumptionpage.h'
 **
-** Created: Wed Dec 26 19:13:44 2018
+** Created: Wed Jan 9 08:24:49 2019
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

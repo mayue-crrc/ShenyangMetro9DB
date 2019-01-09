@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincefaultshowpage.ui'
 **
-** Created: Wed Dec 26 19:13:13 2018
+** Created: Mon Jan 7 11:38:15 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -821,7 +821,6 @@ public:
         endTime_row5->raise();
         faultLevel_row2->raise();
         startTime_row1->raise();
-        faultpagelbl->raise();
         faultName_row6->raise();
         NextPageBtn->raise();
         lbl1_17->raise();
@@ -859,7 +858,6 @@ public:
         mp1wheel1lbl->raise();
         faultName_row4->raise();
         endTime_row7->raise();
-        faultcntlbl->raise();
         startTime_row9->raise();
         tc1directionlbl->raise();
         faultLevel_row1->raise();
@@ -893,6 +891,8 @@ public:
         BTNRow_4->raise();
         BTNRow_9->raise();
         GROUPBOXFault->raise();
+        faultpagelbl->raise();
+        faultcntlbl->raise();
 
         retranslateUi(MaintainceFaultShowPage);
 
@@ -1034,7 +1034,8 @@ public:
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0;"
-                        " text-indent:0px;\"></p></td></tr></table></body></html>", 0, QApplication::UnicodeUTF8));
+                        " text-indent:0px;\"></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p></td></tr></table></body></html>", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("MaintainceFaultShowPage", "\346\225\205\351\232\234\344\277\241\346\201\257", 0, QApplication::UnicodeUTF8));
         BTNClose_2->setText(QApplication::translate("MaintainceFaultShowPage", "\345\205\263\351\227\255", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_WHATSTHIS
