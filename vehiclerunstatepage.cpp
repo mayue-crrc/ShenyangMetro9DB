@@ -296,62 +296,62 @@ void VehicleRunStatePage::updateTrainStatus()
 
     // B Status
     QList<bool> Bstatus;
-    Bstatus<<database->DICT_TC1DI3CH1Bg1CutOff_B1<<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_TC1Bg1Fault_U32&0xff7fffff)
+    Bstatus<<database->DICT_TC1DI3CH3EBCUCutOff_B1<<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_TC1Bg1Fault_U32&0xff7fffff)
             <<database->BR1CT_TC1Bg1AirBrkApplied_B1<<database->BR1CT_TC1Bg1AirBrkRlsed_B1;
     setBStatus(this->ui->Tc1bg1lbl,Bstatus);
 
     Bstatus.clear();
-    Bstatus<<database->DICT_TC1DI3CH2Bg2CutOff_B1<<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_TC1Bg2Fault_U32&0xff7fffff)
+    Bstatus<<database->DICT_TC1DI3CH3EBCUCutOff_B1<<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_TC1Bg2Fault_U32&0xff7fffff)
             <<database->BR1CT_TC1Bg2AirBrkApplied_B1<<database->BR1CT_TC1Bg2AirBrkRlsed_B1;
     setBStatus(this->ui->Tc1bg2lbl,Bstatus);
 
     Bstatus.clear();
-    Bstatus<<database->DICT_MP1DI1CH6Bg1CutOff_B1<<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_MP1Bg1Fault_U32&0xff7fffff)
+    Bstatus<<database->DICT_MP1DI1CH8BrkAllCutOff_B1<<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_MP1Bg1Fault_U32&0xff7fffff)
             <<database->BR1CT_MP1Bg1AirBrkApplied_B1<<database->BR1CT_MP1Bg1AirBrkRlsed_B1;
     setBStatus(this->ui->Mp1bg1lbl,Bstatus);
 
     Bstatus.clear();
-    Bstatus<<database->DICT_MP1DI1CH7Bg2CutOff_B1<<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_MP1Bg2Fault_U32&0xff7fffff)
+    Bstatus<<database->DICT_MP1DI1CH8BrkAllCutOff_B1<<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_MP1Bg2Fault_U32&0xff7fffff)
             <<database->BR1CT_MP1Bg2AirBrkApplied_B1<<database->BR1CT_MP1Bg2AirBrkRlsed_B1;
     setBStatus(this->ui->Mp1bg2lbl,Bstatus);
 
     Bstatus.clear();
-    Bstatus<<database->DICT_M1DI1CH1Bg1CutOff_B1<<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_M1Bg1Fault_U32&0xff7fffff)
+    Bstatus<<database->DICT_M1DI1CH3BrkAllCutOff_B1<<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_M1Bg1Fault_U32&0xff7fffff)
             <<database->BR1CT_M1Bg1AirBrkApplied_B1<<database->BR1CT_M1Bg1AirBrkRlsed_B1;
     setBStatus(this->ui->M1bg1lbl,Bstatus);
 
     Bstatus.clear();
-    Bstatus<<database->DICT_M1DI1CH2Bg2CutOff_B1<<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_M1Bg2Fault_U32&0xff7fffff)
+    Bstatus<<database->DICT_M1DI1CH3BrkAllCutOff_B1<<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_M1Bg2Fault_U32&0xff7fffff)
             <<database->BR1CT_M1Bg2AirBrkApplied_B1<<database->BR1CT_M1Bg2AirBrkRlsed_B1;
     setBStatus(this->ui->M1bg2lbl,Bstatus);
 
     Bstatus.clear();
-    Bstatus<<database->DICT_M2DI1CH1Bg1CutOff_B1<<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_M2Bg1Fault_U32&0xff7fffff)
+    Bstatus<<database->DICT_M2DI1CH3BrkAllCutOff_B1<<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_M2Bg1Fault_U32&0xff7fffff)
             <<database->BR2CT_M2Bg1AirBrkApplied_B1<<database->BR2CT_M2Bg1AirBrkRlsed_B1;
     setBStatus(this->ui->M2bg1lbl,Bstatus);
 
     Bstatus.clear();
-    Bstatus<<database->DICT_M2DI1CH2Bg2CutOff_B1<<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_M2Bg2Fault_U32&0xff7fffff)
+    Bstatus<<database->DICT_M2DI1CH3BrkAllCutOff_B1<<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_M2Bg2Fault_U32&0xff7fffff)
             <<database->BR2CT_M2Bg2AirBrkApplied_B1<<database->BR2CT_M2Bg2AirBrkRlsed_B1;
     setBStatus(this->ui->M2bg2lbl,Bstatus);
 
     Bstatus.clear();
-    Bstatus<<database->DICT_MP2DI1CH6Bg1CutOff_B1<<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_MP2Bg1Fault_U32&0xff7fffff)
+    Bstatus<<database->DICT_MP2DI1CH8BrkAllCutOff_B1<<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_MP2Bg1Fault_U32&0xff7fffff)
             <<database->BR2CT_MP2Bg1AirBrkApplied_B1<<database->BR2CT_MP2Bg1AirBrkRlsed_B1;
     setBStatus(this->ui->Mp2bg1lbl,Bstatus);
 
     Bstatus.clear();
-    Bstatus<<database->DICT_MP2DI1CH7Bg2CutOff_B1<<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_MP2Bg2Fault_U32&0xff7fffff)
+    Bstatus<<database->DICT_MP2DI1CH8BrkAllCutOff_B1<<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_MP2Bg2Fault_U32&0xff7fffff)
             <<database->BR2CT_MP2Bg2AirBrkApplied_B1<<database->BR2CT_MP2Bg2AirBrkRlsed_B1;
     setBStatus(this->ui->Mp2bg2lbl,Bstatus);
 
     Bstatus.clear();
-    Bstatus<<database->DICT_TC2DI3CH1Bg1CutOff_B1<<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_TC2Bg1Fault_U32&0xff7fffff)
+    Bstatus<<database->DICT_TC2DI3CH3EBCUCutOff_B1<<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_TC2Bg1Fault_U32&0xff7fffff)
             <<database->BR2CT_TC2Bg1AirBrkApplied_B1<<database->BR2CT_TC2Bg1AirBrkRlsed_B1;
     setBStatus(this->ui->Tc2bg1lbl,Bstatus);
 
     Bstatus.clear();
-    Bstatus<<database->DICT_TC2DI3CH2Bg2CutOff_B1<<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_TC2Bg2Fault_U32&0xff7fffff)
+    Bstatus<<database->DICT_TC2DI3CH3EBCUCutOff_B1<<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_TC2Bg2Fault_U32&0xff7fffff)
             <<database->BR2CT_TC2Bg2AirBrkApplied_B1<<database->BR2CT_TC2Bg2AirBrkRlsed_B1;
     setBStatus(this->ui->Tc2bg2lbl,Bstatus);
 
