@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclerunstatepage.ui'
 **
-** Created: Fri Jan 4 13:47:28 2019
+** Created: Fri Jan 11 08:31:36 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -214,6 +214,7 @@ public:
     QLabel *LoadM2lbl;
     QPushButton *ResetPageBtn;
     QPushButton *BuzzerBtn;
+    QLabel *Mp2supplylbl;
 
     void setupUi(QWidget *VehicleRunStatePage)
     {
@@ -1734,6 +1735,11 @@ public:
 "border:2px solid white;\n"
 "background-color: yellow;\n"
 "border-radius: 15px;"));
+        Mp2supplylbl = new QLabel(VehicleRunStatePage);
+        Mp2supplylbl->setObjectName(QString::fromUtf8("Mp2supplylbl"));
+        Mp2supplylbl->setGeometry(QRect(660, 380, 31, 31));
+        Mp2supplylbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/supply.bmp);"));
+        Mp2supplylbl->setAlignment(Qt::AlignCenter);
 
         retranslateUi(VehicleRunStatePage);
 
@@ -1947,6 +1953,7 @@ public:
 "\347\225\214\351\235\242", 0, QApplication::UnicodeUTF8));
         BuzzerBtn->setText(QApplication::translate("VehicleRunStatePage", "\351\227\264\345\243\201\351\227\250\345\274\200\n"
 "\350\234\202\351\270\243\345\231\250", 0, QApplication::UnicodeUTF8));
+        Mp2supplylbl->setText(QString());
     } // retranslateUi
 
 };

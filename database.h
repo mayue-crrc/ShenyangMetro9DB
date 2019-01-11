@@ -196,7 +196,7 @@ public:
         ,CTHM_TC1Active_B1,CTHM_TC2Active_B1,CTHM_Traction_B1,CTHM_Brake_B1
         ,CTHM_FastBrake_B1,CTHM_EmgyBrake_B1,CTHM_Backward_B1,CTHM_Forward_B1,
         CTHM_SAVETimeFedBk_B1,CTHM_SAVETrainNumFedBk_B1,CTHM_SAVELineNumFedBk_B1,CTHM_SAVEFirstStationFedBk_B1
-        ,CTHM_SAVELastStationFedBk_B1,CTHM_WorkshopPowerSupply_B1,CTHM_BatteryLow_B1 ,CTHM_AcDeTestOn_B1,CTHM_EmgMode_B1,
+        ,CTHM_SAVELastStationFedBk_B1,CTHM_WorkshopPowerSupplyMP1_B1,CTHM_WorkshopPowerSupplyMP2_B1,CTHM_BatteryLow_B1 ,CTHM_AcDeTestOn_B1,CTHM_EmgMode_B1,
         CTHM_MP1PanStatusUnknown_B1,CTHM_MP2PanStatusUnknown_B1,
         CTHM_BCU1Master,CTHM_BCU2Master,CTHM_BCU3Master,CTHM_BCU4Master
         ,CTHM_BCULBg1Online_B1,CTHM_BCULBg2Online_B1,CTHM_BCULBg3Online_B1

@@ -824,16 +824,20 @@ void VehicleRunStatePage::updateTrainStatus()
     this->ui->LoadTC2lbl->setText(this->database->PLoad_TC2+"%");
 
     //车间电源
-    if(this->database->CTHM_WorkshopPowerSupply_B1)
+    if(this->database->CTHM_WorkshopPowerSupplyMP1_B1)
     {
         this->ui->Mp1supplylbl->show();
-        //this->ui->Mp2supplylbl->show();
     }else
     {
         this->ui->Mp1supplylbl->hide();
-        //this->ui->Mp2supplylbl->hide();
     }
-
+    if(this->database->CTHM_WorkshopPowerSupplyMP2_B1)
+    {
+        this->ui->Mp2supplylbl->show();
+    }else
+    {
+        this->ui->Mp2supplylbl->hide();
+    }
 
     //火灾
     bool Firestatus;

@@ -802,7 +802,9 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->CTHM_EmgyBrake_B1 = crrcMvb->getBool(0x218,13,3);
         this->CTHM_Backward_B1 = crrcMvb->getBool(0x218,13,4);
         this->CTHM_Forward_B1 = crrcMvb->getBool(0x218,13,5);
-        this->CTHM_WorkshopPowerSupply_B1 = crrcMvb->getBool(0x218,13,6);
+        this->CTHM_WorkshopPowerSupplyMP1_B1 = crrcMvb->getBool(0x218,13,6);
+        this->CTHM_WorkshopPowerSupplyMP2_B1 = crrcMvb->getBool(0x218,12,3);
+
         this->CTHM_BatteryLow_B1 = crrcMvb->getBool(0x218,13,7);
         this->CTHM_MP1PanStatusUnknown_B1 = crrcMvb->getBool(0x218,14,0);
         this->CTHM_MP2PanStatusUnknown_B1 = crrcMvb->getBool(0x218,14,1);

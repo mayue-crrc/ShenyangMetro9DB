@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'vehicleebcupage2.h'
 **
-** Created: Wed Jan 9 08:24:56 2019
+** Created: Fri Jan 11 08:33:59 2019
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
