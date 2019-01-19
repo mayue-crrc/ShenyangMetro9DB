@@ -62,8 +62,7 @@ QLabel
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:rgb(0,128,128);
-</string>
+    <string notr="true">   font: 16px, &quot;微软雅黑&quot;;color:white;background-color:rgb(0,80,180);border:1px solid black</string>
    </property>
    <property name="text">
     <string>手动</string>
@@ -249,10 +248,10 @@ border-radius:10px</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:red</string>
+    <string notr="true">font: 16px, &quot;微软雅黑&quot;;color:white;background-color:orange</string>
    </property>
    <property name="text">
-    <string>急风</string>
+    <string>紧急通风</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

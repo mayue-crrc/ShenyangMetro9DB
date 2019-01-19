@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclebypasspage.ui'
 **
-** Created: Wed Oct 24 13:51:39 2018
+** Created: Mon Jan 14 11:31:24 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -575,7 +575,7 @@ public:
         ALLTrainCloseTC2lbl_2->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
         ALLTrainCloseTC1lbl_2->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
         AlarmTC1lbl->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
-        LBL1_4->setText(QApplication::translate("VehicleBypassPage", "\350\255\246\346\203\225\350\243\205\347\275\256\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
+        LBL1_4->setText(QApplication::translate("VehicleBypassPage", "\350\255\246\346\203\225\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
         AlarmTC2lbl->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));
         linelbl1_4->setText(QString());
         AlarmTC2lbl_2->setText(QApplication::translate("VehicleBypassPage", "\346\227\201\350\267\257", 0, QApplication::UnicodeUTF8));

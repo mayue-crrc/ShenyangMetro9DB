@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincewheelsetpage.ui'
 **
-** Created: Wed Oct 24 13:51:38 2018
+** Created: Sat Jan 19 10:06:57 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -407,7 +407,7 @@ public:
         ALLSelectBtn->setText(QApplication::translate("MaintainceWheelsetPage", "\346\211\200\346\234\211\350\275\264", 0, QApplication::UnicodeUTF8));
         lbl7->setText(QApplication::translate("MaintainceWheelsetPage", "\350\275\256\345\276\204\350\256\276\345\256\232\345\200\274", 0, QApplication::UnicodeUTF8));
         WheelVallbl->setText(QString());
-        lbl7_2->setText(QApplication::translate("MaintainceWheelsetPage", "(770--850mm)", 0, QApplication::UnicodeUTF8));
+        lbl7_2->setText(QApplication::translate("MaintainceWheelsetPage", "(770--845mm)", 0, QApplication::UnicodeUTF8));
         TC1Wheellbl->setText(QApplication::translate("MaintainceWheelsetPage", "840", 0, QApplication::UnicodeUTF8));
         TC2Wheellbl->setText(QApplication::translate("MaintainceWheelsetPage", "840", 0, QApplication::UnicodeUTF8));
         TC1Wheelinputlbl->setText(QApplication::translate("MaintainceWheelsetPage", "--", 0, QApplication::UnicodeUTF8));

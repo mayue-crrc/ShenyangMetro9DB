@@ -2,13 +2,14 @@
 #include "ui_vehicleacpage2.h"
 
 #define HVACMODEAUTO    "	font: 16px, \"微软雅黑\";color:white;background-color:green;border:1px solid black"
-#define HVACMODEMANNAL    "     font: 16px, \"微软雅黑\";color:white;background-color:darkgreen;border:1px solid black"
+#define HVACMODEMANNAL    "     font: 16px, \"微软雅黑\";color:white;background-color:rgb(0,80,180);border:1px solid black"
 #define HVACMODEVEN    "        font: 16px, \"微软雅黑\";color:white;background-color:rgb(243,81,180);border:1px solid black"
-#define HVACMODEEMVEN    "	font: 16px, \"微软雅黑\";color:white;background-color:red;border:1px solid black"
+#define HVACMODEEMVEN    "	font: 16px, \"微软雅黑\";color:white;background-color:orange;border:1px solid black"
 #define HVACMODESTOP    "	font: 16px, \"微软雅黑\";color:white;background-color:black;border:1px solid white"
 #define HVACMODEUNKNOWN    "	font: 16px, \"微软雅黑\";color:black;background-color:white;border:1px solid black"
 #define HVACMODEFIRE    "	font: 16px, \"微软雅黑\";color:white;background-color:red;border:1px solid black"
 #define HVACMODEPRE    "	font: 16px, \"微软雅黑\";black:white;background-color:lightblue;border:1px solid black"
+
 
 
 VehicleACPage2::VehicleACPage2(QWidget *parent) :
@@ -296,6 +297,10 @@ void VehicleACPage2::setlabelstates(QLabel* lbl,QList<bool> states)
         lbl->setText("--");
         lbl->setStyleSheet(HVACMODEUNKNOWN);
     }
+    else if(states.at(4))
+    {
+        lbl->setStyleSheet(HVACMODEEMVEN);
+        lbl->setText("紧急通风");}
     if(states.at(6))
     {
         lbl->setText("火灾");
@@ -305,11 +310,7 @@ void VehicleACPage2::setlabelstates(QLabel* lbl,QList<bool> states)
     {
         lbl->setText("停机");
         lbl->setStyleSheet(HVACMODESTOP);
-    }
-    else if(states.at(4))
-    {
-        lbl->setStyleSheet(HVACMODEEMVEN);
-        lbl->setText("紧急通风");
+
     }else if(states.at(3))
     {
         lbl->setStyleSheet(HVACMODEAUTO);

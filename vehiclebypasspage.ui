@@ -455,7 +455,7 @@ color: white;
 </string>
    </property>
    <property name="text">
-    <string>警惕装置旁路</string>
+    <string>警惕旁路</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

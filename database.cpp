@@ -82,7 +82,7 @@ Database::Database()
     HMiCT_ACDETestStartFlag_B1 = false;
 
     HMiCT_HMISWVerH_U8 = 2;
-    HMiCT_HMISWVerL_U8 = 39;
+    HMiCT_HMISWVerL_U8 = 43;
 
     for(int i =0; i< 12;i++)
     {
@@ -1347,10 +1347,10 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->TR4CT_Slide_B1 = this->crrcMvb->getBool(0x480,14,7);
 
         //CCU-DCU
-        this->CTTR1_EBCutOff_B1 = this->crrcMvb->getBool(0x499,29,1);
-        this->CTTR2_EBCutOff_B1 = this->crrcMvb->getBool(0x4c9,29,1);
-        this->CTTR3_EBCutOff_B1 = this->crrcMvb->getBool(0x4d9,29,1);
-        this->CTTR4_EBCutOff_B1 = this->crrcMvb->getBool(0x489,29,1);
+        this->CTTR1_EBCutOff_B1 = this->crrcMvb->getBool(0x49A,28,6);
+        this->CTTR2_EBCutOff_B1 = this->crrcMvb->getBool(0x4cA,28,6);
+        this->CTTR3_EBCutOff_B1 = this->crrcMvb->getBool(0x4dA,28,6);
+        this->CTTR4_EBCutOff_B1 = this->crrcMvb->getBool(0x48A,28,6);
 
     }
 

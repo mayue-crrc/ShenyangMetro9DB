@@ -192,7 +192,7 @@ void MaintainceWheelsetPage::setAllBtn(WHEELSELECT BtnID)
 void MaintainceWheelsetPage::on_confirmBtn_pressed()
 {
     int tmp_value = this->ui->WheelVallbl->text().toInt();
-    if(tmp_value > 850 || tmp_value < 770)
+    if(tmp_value > 845 || tmp_value < 770)
     {
         this->warnningDialog->show();
         return;

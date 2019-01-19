@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclesivpage2.ui'
 **
-** Created: Fri Nov 30 11:16:29 2018
+** Created: Sat Jan 19 10:04:11 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -26,28 +26,20 @@ class Ui_VehicleSIVPage2
 public:
     QLabel *BCTTC2lbl;
     QLabel *BCTTC1lbl;
-    QLabel *BCTM1lbl;
     QLabel *LBLBCCChargeCurrentTC1;
-    QLabel *BCTM2lbl;
     QLabel *lbl1_12;
     QLabel *lbl1_19;
     QLabel *lbl1_20;
     QLabel *LBLBCCChargeCurrentTC2;
-    QLabel *LBLBCCChargeCurrentM1;
     QLabel *lbl1_6;
-    QLabel *LBLBCCChargeCurrentM2;
     QLabel *lbl1_21;
     QLabel *LBLBCCVoltageTC1;
     QLabel *lbl1_22;
-    QLabel *LBLBCCVoltageM2;
     QLabel *LBLBCCVoltageTC2;
-    QLabel *LBLBCCVoltageM1;
     QLabel *lbl1_23;
     QLabel *LBLBCCCurrentTC1;
     QLabel *lbl1_24;
-    QLabel *LBLBCCCurrentM2;
     QLabel *LBLBCCCurrentTC2;
-    QLabel *LBLBCCCurrentM1;
     QLabel *lbl1_13;
     QPushButton *NextPageBtn;
 
@@ -80,18 +72,10 @@ public:
         BCTTC1lbl->setObjectName(QString::fromUtf8("BCTTC1lbl"));
         BCTTC1lbl->setGeometry(QRect(210, 320, 61, 31));
         BCTTC1lbl->setAlignment(Qt::AlignCenter);
-        BCTM1lbl = new QLabel(VehicleSIVPage2);
-        BCTM1lbl->setObjectName(QString::fromUtf8("BCTM1lbl"));
-        BCTM1lbl->setGeometry(QRect(410, 320, 61, 31));
-        BCTM1lbl->setAlignment(Qt::AlignCenter);
         LBLBCCChargeCurrentTC1 = new QLabel(VehicleSIVPage2);
         LBLBCCChargeCurrentTC1->setObjectName(QString::fromUtf8("LBLBCCChargeCurrentTC1"));
         LBLBCCChargeCurrentTC1->setGeometry(QRect(210, 80, 61, 31));
         LBLBCCChargeCurrentTC1->setAlignment(Qt::AlignCenter);
-        BCTM2lbl = new QLabel(VehicleSIVPage2);
-        BCTM2lbl->setObjectName(QString::fromUtf8("BCTM2lbl"));
-        BCTM2lbl->setGeometry(QRect(560, 320, 61, 31));
-        BCTM2lbl->setAlignment(Qt::AlignCenter);
         lbl1_12 = new QLabel(VehicleSIVPage2);
         lbl1_12->setObjectName(QString::fromUtf8("lbl1_12"));
         lbl1_12->setGeometry(QRect(180, 335, 681, 2));
@@ -111,19 +95,11 @@ public:
         LBLBCCChargeCurrentTC2->setObjectName(QString::fromUtf8("LBLBCCChargeCurrentTC2"));
         LBLBCCChargeCurrentTC2->setGeometry(QRect(760, 80, 61, 31));
         LBLBCCChargeCurrentTC2->setAlignment(Qt::AlignCenter);
-        LBLBCCChargeCurrentM1 = new QLabel(VehicleSIVPage2);
-        LBLBCCChargeCurrentM1->setObjectName(QString::fromUtf8("LBLBCCChargeCurrentM1"));
-        LBLBCCChargeCurrentM1->setGeometry(QRect(410, 80, 61, 31));
-        LBLBCCChargeCurrentM1->setAlignment(Qt::AlignCenter);
         lbl1_6 = new QLabel(VehicleSIVPage2);
         lbl1_6->setObjectName(QString::fromUtf8("lbl1_6"));
         lbl1_6->setGeometry(QRect(20, 320, 151, 31));
         lbl1_6->setStyleSheet(QString::fromUtf8("background-color:black;"));
         lbl1_6->setAlignment(Qt::AlignCenter);
-        LBLBCCChargeCurrentM2 = new QLabel(VehicleSIVPage2);
-        LBLBCCChargeCurrentM2->setObjectName(QString::fromUtf8("LBLBCCChargeCurrentM2"));
-        LBLBCCChargeCurrentM2->setGeometry(QRect(560, 80, 61, 31));
-        LBLBCCChargeCurrentM2->setAlignment(Qt::AlignCenter);
         lbl1_21 = new QLabel(VehicleSIVPage2);
         lbl1_21->setObjectName(QString::fromUtf8("lbl1_21"));
         lbl1_21->setGeometry(QRect(20, 150, 151, 51));
@@ -138,18 +114,10 @@ public:
         lbl1_22->setGeometry(QRect(180, 175, 681, 2));
         lbl1_22->setStyleSheet(QString::fromUtf8("background-color:white;"));
         lbl1_22->setAlignment(Qt::AlignCenter);
-        LBLBCCVoltageM2 = new QLabel(VehicleSIVPage2);
-        LBLBCCVoltageM2->setObjectName(QString::fromUtf8("LBLBCCVoltageM2"));
-        LBLBCCVoltageM2->setGeometry(QRect(560, 160, 61, 31));
-        LBLBCCVoltageM2->setAlignment(Qt::AlignCenter);
         LBLBCCVoltageTC2 = new QLabel(VehicleSIVPage2);
         LBLBCCVoltageTC2->setObjectName(QString::fromUtf8("LBLBCCVoltageTC2"));
         LBLBCCVoltageTC2->setGeometry(QRect(760, 160, 61, 31));
         LBLBCCVoltageTC2->setAlignment(Qt::AlignCenter);
-        LBLBCCVoltageM1 = new QLabel(VehicleSIVPage2);
-        LBLBCCVoltageM1->setObjectName(QString::fromUtf8("LBLBCCVoltageM1"));
-        LBLBCCVoltageM1->setGeometry(QRect(410, 160, 61, 31));
-        LBLBCCVoltageM1->setAlignment(Qt::AlignCenter);
         lbl1_23 = new QLabel(VehicleSIVPage2);
         lbl1_23->setObjectName(QString::fromUtf8("lbl1_23"));
         lbl1_23->setGeometry(QRect(20, 230, 151, 51));
@@ -164,18 +132,10 @@ public:
         lbl1_24->setGeometry(QRect(180, 255, 681, 2));
         lbl1_24->setStyleSheet(QString::fromUtf8("background-color:white;"));
         lbl1_24->setAlignment(Qt::AlignCenter);
-        LBLBCCCurrentM2 = new QLabel(VehicleSIVPage2);
-        LBLBCCCurrentM2->setObjectName(QString::fromUtf8("LBLBCCCurrentM2"));
-        LBLBCCCurrentM2->setGeometry(QRect(560, 240, 61, 31));
-        LBLBCCCurrentM2->setAlignment(Qt::AlignCenter);
         LBLBCCCurrentTC2 = new QLabel(VehicleSIVPage2);
         LBLBCCCurrentTC2->setObjectName(QString::fromUtf8("LBLBCCCurrentTC2"));
         LBLBCCCurrentTC2->setGeometry(QRect(760, 240, 61, 31));
         LBLBCCCurrentTC2->setAlignment(Qt::AlignCenter);
-        LBLBCCCurrentM1 = new QLabel(VehicleSIVPage2);
-        LBLBCCCurrentM1->setObjectName(QString::fromUtf8("LBLBCCCurrentM1"));
-        LBLBCCCurrentM1->setGeometry(QRect(410, 240, 61, 31));
-        LBLBCCCurrentM1->setAlignment(Qt::AlignCenter);
         lbl1_13 = new QLabel(VehicleSIVPage2);
         lbl1_13->setObjectName(QString::fromUtf8("lbl1_13"));
         lbl1_13->setGeometry(QRect(910, 250, 101, 151));
@@ -193,30 +153,22 @@ public:
 "color:black;\n"
 "background-color:orange;\n"
 "border-radius:8px;"));
-        lbl1_22->raise();
-        lbl1_12->raise();
         lbl1_19->raise();
+        lbl1_12->raise();
+        lbl1_22->raise();
         lbl1_24->raise();
         BCTTC2lbl->raise();
         BCTTC1lbl->raise();
-        BCTM1lbl->raise();
         LBLBCCChargeCurrentTC1->raise();
-        BCTM2lbl->raise();
         lbl1_20->raise();
         LBLBCCChargeCurrentTC2->raise();
-        LBLBCCChargeCurrentM1->raise();
         lbl1_6->raise();
-        LBLBCCChargeCurrentM2->raise();
         lbl1_21->raise();
         LBLBCCVoltageTC1->raise();
-        LBLBCCVoltageM2->raise();
         LBLBCCVoltageTC2->raise();
-        LBLBCCVoltageM1->raise();
         lbl1_23->raise();
         LBLBCCCurrentTC1->raise();
-        LBLBCCCurrentM2->raise();
         LBLBCCCurrentTC2->raise();
-        LBLBCCCurrentM1->raise();
         lbl1_13->raise();
         NextPageBtn->raise();
 
@@ -230,31 +182,23 @@ public:
         VehicleSIVPage2->setWindowTitle(QApplication::translate("VehicleSIVPage2", "Form", 0, QApplication::UnicodeUTF8));
         BCTTC2lbl->setText(QString());
         BCTTC1lbl->setText(QString());
-        BCTM1lbl->setText(QString());
         LBLBCCChargeCurrentTC1->setText(QString());
-        BCTM2lbl->setText(QString());
         lbl1_12->setText(QString());
         lbl1_19->setText(QString());
         lbl1_20->setText(QApplication::translate("VehicleSIVPage2", "\350\223\204\347\224\265\346\261\240\345\205\205\347\224\265\346\234\272\n"
 "\347\224\265\346\265\201(A)", 0, QApplication::UnicodeUTF8));
         LBLBCCChargeCurrentTC2->setText(QString());
-        LBLBCCChargeCurrentM1->setText(QString());
         lbl1_6->setText(QApplication::translate("VehicleSIVPage2", "\350\223\204\347\224\265\346\261\240\346\270\251\345\272\246(\342\204\203)", 0, QApplication::UnicodeUTF8));
-        LBLBCCChargeCurrentM2->setText(QString());
         lbl1_21->setText(QApplication::translate("VehicleSIVPage2", "\350\223\204\347\224\265\346\261\240\346\257\215\347\272\277\n"
 "\347\224\265\345\216\213(V)", 0, QApplication::UnicodeUTF8));
         LBLBCCVoltageTC1->setText(QString());
         lbl1_22->setText(QString());
-        LBLBCCVoltageM2->setText(QString());
         LBLBCCVoltageTC2->setText(QString());
-        LBLBCCVoltageM1->setText(QString());
         lbl1_23->setText(QApplication::translate("VehicleSIVPage2", "\350\223\204\347\224\265\346\261\240\346\257\215\347\272\277\n"
 "\347\224\265\346\265\201(A)", 0, QApplication::UnicodeUTF8));
         LBLBCCCurrentTC1->setText(QString());
         lbl1_24->setText(QString());
-        LBLBCCCurrentM2->setText(QString());
         LBLBCCCurrentTC2->setText(QString());
-        LBLBCCCurrentM1->setText(QString());
         lbl1_13->setText(QApplication::translate("VehicleSIVPage2", "\n"
 "\n"
 "\n"

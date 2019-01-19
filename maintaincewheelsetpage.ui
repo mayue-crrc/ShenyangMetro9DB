@@ -437,7 +437,7 @@ font:24px &quot;微软雅黑&quot;;
 </string>
    </property>
    <property name="text">
-    <string>(770--850mm)</string>
+    <string>(770--845mm)</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
