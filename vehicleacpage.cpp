@@ -8,7 +8,7 @@
 #define HVACMODESTOP    "	font: 16px, \"微软雅黑\";color:white;background-color:black;border:1px solid white"
 #define HVACMODEUNKNOWN    "	font: 16px, \"微软雅黑\";color:black;background-color:white;border:1px solid black"
 #define HVACMODEFIRE    "	font: 16px, \"微软雅黑\";color:white;background-color:red;border:1px solid black"
-#define HVACMODEPRE    "	font: 16px, \"微软雅黑\";black:white;background-color:lightblue;border:1px solid black"
+#define HVACMODEPRE    "	font: 16px, \"微软雅黑\";color:white;background-color:lightblue;border:1px solid black"
 
 
 
@@ -31,6 +31,7 @@ void VehicleACPage::updatePage()
          this->database->AC1CT_AutoMode_B1<<this->database->AC1CT_EmVentilation_B1<<this->database->AC1CT_Ventilation_B1<<this->database->AC1CT_OutsideFire_B1
         <<this->database->CTHM_HVAC1On_B1;
     setlabelstates(this->ui->ACModeTC1lbl,tmp);
+
 
     tmp.clear();
     tmp<<this->database->AC2CT_HVACStopped_B1<<this->database->AC2CT_PreWork_B1<<this->database->AC2CT_MannualMode_B1<<
@@ -179,16 +180,18 @@ void VehicleACPage::setlabelstates(QLabel* lbl,QList<bool> states)
         return;
     }
     // off line>>fire>>stop>prework>mannual>auto>emven>ven
-    if(states.at(7))
+    if(!states.at(7))
     {
         lbl->setText("--");
         lbl->setStyleSheet(HVACMODEUNKNOWN);
     }
     else if(states.at(4))
     {
+
         lbl->setStyleSheet(HVACMODEEMVEN);
-        lbl->setText("紧急通风");}
-    if(states.at(6))
+        lbl->setText("紧急通风");
+    }
+    else if(states.at(6))
     {
         lbl->setText("火灾");
         lbl->setStyleSheet(HVACMODEFIRE);
@@ -204,6 +207,7 @@ void VehicleACPage::setlabelstates(QLabel* lbl,QList<bool> states)
         lbl->setText("自动");
     }else if(states.at(1))
     {
+
         lbl->setStyleSheet(HVACMODEPRE);
         lbl->setText("预冷/预暖");
     }else if(states.at(2))
