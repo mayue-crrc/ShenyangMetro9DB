@@ -1,8 +1,11 @@
 #include "maintaincetrainnumsetpage.h"
 #include "ui_maintaincetrainnumsetpage.h"
 
-#define INPUTBUTTONUP   "color:white;font:18px,\"微软雅黑\";border-top:2px solid  white;border-left: 2px solid white;border-bottom:2px solid transparent;border-right: 2px solid transparent;background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgba(150,228,250,255),stop:0.7 rgba(20,108,140,255) ,stop:1 rgba(100,238,240,255));"
-#define INPUTBUTTONDOWN "color:white;font:18px,\"微软雅黑\";border-top:2px solid  transparent;border-left: 2px solid transparent;border-bottom:2px solid white;border-right: 2px solid white;background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgba(20,108,140,255),stop:0.7 rgba(150,228,40,255) ,stop:1 rgba(20,108,140,255));"
+//#define INPUTBUTTONUP   "color:white;font:18px,\"微软雅黑\";border-top:2px solid  white;border-left: 2px solid white;border-bottom:2px solid transparent;border-right: 2px solid transparent;background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgba(150,228,250,255),stop:0.7 rgba(20,108,140,255) ,stop:1 rgba(100,238,240,255));"
+//#define INPUTBUTTONDOWN "color:white;font:18px,\"微软雅黑\";border-top:2px solid  transparent;border-left: 2px solid transparent;border-bottom:2px solid white;border-right: 2px solid white;background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgba(20,108,140,255),stop:0.7 rgba(150,228,40,255) ,stop:1 rgba(20,108,140,255));"
+#define INPUTBUTTONUP    "font: 20px, \"微软雅黑\";color: white;background-color: rgb(0, 128, 128);	border-radius:8px;border-top: 2px solid white;border-left: 2px solid white;"
+//#define PButtonDOWN  "font: 20px, \"微软雅黑\";color: black;background-color: rgb(0, 255, 255);	border-radius:8px;border-top: 2px solid  rgb(0, 0, 255);border-left: 2px solid  rgb(0, 0, 255);border-bottom: 2px solid white;border-right: 2px solid white;"
+#define INPUTBUTTONDOWN  "font: 20px, \"微软雅黑\";color: white;background-color: orange;	border-radius:8px;border-top: 2px solid  orange;border-left: orange;border-bottom: 2px solid white;border-right: 2px solid white;"
 
 
 MaintainceTrainNumSetPage::MaintainceTrainNumSetPage(QWidget *parent) :

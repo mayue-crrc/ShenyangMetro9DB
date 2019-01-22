@@ -1,6 +1,6 @@
 #include "ctrlnuminputmodule.h"
 #include "ui_ctrlnuminputmodule.h"
-
+#include "global.h"
 CtrlNumInputModule::CtrlNumInputModule(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::CtrlNumInputModule)
@@ -13,7 +13,12 @@ CtrlNumInputModule::CtrlNumInputModule(QWidget *parent) :
 
     foreach (QPushButton *button, buttons)
     {
-        connect(button, SIGNAL(clicked()), this, SLOT(NumKeyboardEvent()));
+        connect(button, SIGNAL(released()), this, SLOT(NumKeyboardEvent()));
+    }
+
+    foreach (QPushButton *button, buttons)
+    {
+        connect(button, SIGNAL(pressed()), this, SLOT(NumKeyboardPressEvent()));
     }
 }
 
@@ -23,7 +28,12 @@ CtrlNumInputModule::~CtrlNumInputModule()
 }
 void CtrlNumInputModule::NumKeyboardEvent()
 {
+    (   (QPushButton *)this->sender())->setStyleSheet(PButtonUP);
     QString key = ((QPushButton *)this->sender())->text();
 
     emit this->myKeyPress(key);
+}
+void CtrlNumInputModule::NumKeyboardPressEvent()
+{
+(   (QPushButton *)this->sender())->setStyleSheet(PButtonDOWN);
 }

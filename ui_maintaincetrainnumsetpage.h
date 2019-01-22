@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincetrainnumsetpage.ui'
 **
-** Created: Wed Oct 24 13:51:39 2018
+** Created: Tue Jan 22 13:13:55 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -43,12 +43,7 @@ public:
 "}\n"
 "QPushButton\n"
 "{\n"
-"	border-radius:8px;\n"
-"background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:0.4,stop:0 rgba(150,215,230,255),stop:0.4 rgba(100,170,200,255)\n"
-"spread:pad,x1:0,y1:0.4,x2:0,y2:1,stop:0.4 rgba(52,136,159,255),stop:1 rgba(94,188,216,255));\n"
-"color:rgb(23,176,176);\n"
-"font:28px,\"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
-"border: 1px solid transparent;\n"
+"font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);	border-radius:8px;border-top: 2px solid white;border-left: 2px solid white;\n"
 "}\n"
 "QLabel\n"
 "{\n"
@@ -100,10 +95,7 @@ public:
         ConfirmBtn->setObjectName(QString::fromUtf8("ConfirmBtn"));
         ConfirmBtn->setGeometry(QRect(370, 420, 270, 50));
         ConfirmBtn->setFocusPolicy(Qt::NoFocus);
-        ConfirmBtn->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-" color:white;font:18px,\"\345\276\256\350\275\257\351\233\205\351\273\221\";border-top:2px solid  white;border-left: 2px solid white;border-bottom:2px solid transparent;border-right: 2px solid transparent;background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgba(150,228,250,255),stop:0.7 rgba(20,108,140,255) ,stop:1 rgba(100,238,240,255));\n"
-"}"));
+        ConfirmBtn->setStyleSheet(QString::fromUtf8(""));
         label->raise();
         returnBtn->raise();
         label_2->raise();

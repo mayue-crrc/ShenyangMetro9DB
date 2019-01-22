@@ -1,6 +1,9 @@
 #include "maintaincewheelsetpage.h"
 #include "ui_maintaincewheelsetpage.h"
 
+#define INPUTBUTTONUP    "font: 20px, \"微软雅黑\";color: white;background-color: rgb(0, 128, 128);	border-radius:8px;border-top: 2px solid white;border-left: 2px solid white;"
+//#define PButtonDOWN  "font: 20px, \"微软雅黑\";color: black;background-color: rgb(0, 255, 255);	border-radius:8px;border-top: 2px solid  rgb(0, 0, 255);border-left: 2px solid  rgb(0, 0, 255);border-bottom: 2px solid white;border-right: 2px solid white;"
+#define INPUTBUTTONDOWN  "font: 20px, \"微软雅黑\";color: white;background-color: orange;	border-radius:8px;border-top: 2px solid  orange;border-left: orange;border-bottom: 2px solid white;border-right: 2px solid white;"
 
 
 MaintainceWheelsetPage::MaintainceWheelsetPage(QWidget *parent) :

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'ctrlnuminputmodule.h'
 **
-** Created: Wed Oct 24 13:52:51 2018
+** Created: Tue Jan 22 11:55:06 2019
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_CtrlNumInputModule[] = {
        4,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -35,13 +35,14 @@ static const uint qt_meta_data_CtrlNumInputModule[] = {
 
  // slots: signature, parameters, type, tag, flags
       44,   19,   19,   19, 0x0a,
+      63,   19,   19,   19, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_CtrlNumInputModule[] = {
     "CtrlNumInputModule\0\0key\0myKeyPress(QString)\0"
-    "NumKeyboardEvent()\0"
+    "NumKeyboardEvent()\0NumKeyboardPressEvent()\0"
 };
 
 const QMetaObject CtrlNumInputModule::staticMetaObject = {
@@ -75,9 +76,10 @@ int CtrlNumInputModule::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         switch (_id) {
         case 0: myKeyPress((*reinterpret_cast< QString(*)>(_a[1]))); break;
         case 1: NumKeyboardEvent(); break;
+        case 2: NumKeyboardPressEvent(); break;
         default: ;
         }
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }

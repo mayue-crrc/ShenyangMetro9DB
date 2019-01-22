@@ -21,6 +21,8 @@ private:
 
 public slots:
     void NumKeyboardEvent();
+    void NumKeyboardPressEvent();
+
 signals:
     void myKeyPress(QString key);
 };

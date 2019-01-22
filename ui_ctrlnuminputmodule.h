@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'ctrlnuminputmodule.ui'
 **
-** Created: Wed Oct 24 13:51:38 2018
+** Created: Tue Jan 22 11:54:47 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -47,12 +47,7 @@ public:
 "}\n"
 "QPushButton\n"
 "{\n"
-"background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:0.4,stop:0 rgba(150,215,230,255),stop:0.4 rgba(100,170,200,255)\n"
-"spread:pad,x1:0,y1:0.4,x2:0,y2:1,stop:0.4 rgba(52,136,159,255),stop:1 rgba(94,188,216,255));\n"
-"color:white;\n"
-"font:20px,\"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
-"border:1px solid transparent;\n"
-"border-radius:5px;\n"
+"font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);	border-radius:8px;border-top: 2px solid white;border-left: 2px solid white;\n"
 "}"));
         Num1 = new QPushButton(CtrlNumInputModule);
         Num1->setObjectName(QString::fromUtf8("Num1"));
@@ -63,90 +58,57 @@ public:
         Num2->setObjectName(QString::fromUtf8("Num2"));
         Num2->setGeometry(QRect(110, 10, 91, 41));
         Num2->setFocusPolicy(Qt::NoFocus);
-        Num2->setStyleSheet(QString::fromUtf8("background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:0.4,stop:0 rgba(150,215,230,255),stop:0.4 rgba(100,170,200,255)\n"
-"spread:pad,x1:0,y1:0.4,x2:0,y2:1,stop:0.4 rgba(52,136,159,255),stop:1 rgba(94,188,216,255));\n"
-"color:white;\n"
-"font:20px,\"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        Num2->setStyleSheet(QString::fromUtf8(""));
         Num3 = new QPushButton(CtrlNumInputModule);
         Num3->setObjectName(QString::fromUtf8("Num3"));
         Num3->setGeometry(QRect(210, 10, 91, 41));
         Num3->setFocusPolicy(Qt::NoFocus);
-        Num3->setStyleSheet(QString::fromUtf8("background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:0.4,stop:0 rgba(150,215,230,255),stop:0.4 rgba(100,170,200,255)\n"
-"spread:pad,x1:0,y1:0.4,x2:0,y2:1,stop:0.4 rgba(52,136,159,255),stop:1 rgba(94,188,216,255));\n"
-"color:white;\n"
-"font:20px,\"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        Num3->setStyleSheet(QString::fromUtf8(""));
         Num6 = new QPushButton(CtrlNumInputModule);
         Num6->setObjectName(QString::fromUtf8("Num6"));
         Num6->setGeometry(QRect(210, 60, 91, 41));
         Num6->setFocusPolicy(Qt::NoFocus);
-        Num6->setStyleSheet(QString::fromUtf8("background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:0.4,stop:0 rgba(150,215,230,255),stop:0.4 rgba(100,170,200,255)\n"
-"spread:pad,x1:0,y1:0.4,x2:0,y2:1,stop:0.4 rgba(52,136,159,255),stop:1 rgba(94,188,216,255));\n"
-"color:white;\n"
-"font:20px,\"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        Num6->setStyleSheet(QString::fromUtf8(""));
         Num5 = new QPushButton(CtrlNumInputModule);
         Num5->setObjectName(QString::fromUtf8("Num5"));
         Num5->setGeometry(QRect(110, 60, 91, 41));
         Num5->setFocusPolicy(Qt::NoFocus);
-        Num5->setStyleSheet(QString::fromUtf8("background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:0.4,stop:0 rgba(150,215,230,255),stop:0.4 rgba(100,170,200,255)\n"
-"spread:pad,x1:0,y1:0.4,x2:0,y2:1,stop:0.4 rgba(52,136,159,255),stop:1 rgba(94,188,216,255));\n"
-"color:white;\n"
-"font:20px,\"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        Num5->setStyleSheet(QString::fromUtf8(""));
         Num4 = new QPushButton(CtrlNumInputModule);
         Num4->setObjectName(QString::fromUtf8("Num4"));
         Num4->setGeometry(QRect(10, 60, 91, 41));
         Num4->setFocusPolicy(Qt::NoFocus);
-        Num4->setStyleSheet(QString::fromUtf8("background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:0.4,stop:0 rgba(150,215,230,255),stop:0.4 rgba(100,170,200,255)\n"
-"spread:pad,x1:0,y1:0.4,x2:0,y2:1,stop:0.4 rgba(52,136,159,255),stop:1 rgba(94,188,216,255));\n"
-"color:white;\n"
-"font:20px,\"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        Num4->setStyleSheet(QString::fromUtf8(""));
         Num8 = new QPushButton(CtrlNumInputModule);
         Num8->setObjectName(QString::fromUtf8("Num8"));
         Num8->setGeometry(QRect(110, 110, 91, 41));
         Num8->setFocusPolicy(Qt::NoFocus);
-        Num8->setStyleSheet(QString::fromUtf8("background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:0.4,stop:0 rgba(150,215,230,255),stop:0.4 rgba(100,170,200,255)\n"
-"spread:pad,x1:0,y1:0.4,x2:0,y2:1,stop:0.4 rgba(52,136,159,255),stop:1 rgba(94,188,216,255));\n"
-"color:white;\n"
-"font:20px,\"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        Num8->setStyleSheet(QString::fromUtf8(""));
         Num9 = new QPushButton(CtrlNumInputModule);
         Num9->setObjectName(QString::fromUtf8("Num9"));
         Num9->setGeometry(QRect(210, 110, 91, 41));
         Num9->setFocusPolicy(Qt::NoFocus);
-        Num9->setStyleSheet(QString::fromUtf8("background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:0.4,stop:0 rgba(150,215,230,255),stop:0.4 rgba(100,170,200,255)\n"
-"spread:pad,x1:0,y1:0.4,x2:0,y2:1,stop:0.4 rgba(52,136,159,255),stop:1 rgba(94,188,216,255));\n"
-"color:white;\n"
-"font:20px,\"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        Num9->setStyleSheet(QString::fromUtf8(""));
         Num7 = new QPushButton(CtrlNumInputModule);
         Num7->setObjectName(QString::fromUtf8("Num7"));
         Num7->setGeometry(QRect(10, 110, 91, 41));
         Num7->setFocusPolicy(Qt::NoFocus);
-        Num7->setStyleSheet(QString::fromUtf8("background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:0.4,stop:0 rgba(150,215,230,255),stop:0.4 rgba(100,170,200,255)\n"
-"spread:pad,x1:0,y1:0.4,x2:0,y2:1,stop:0.4 rgba(52,136,159,255),stop:1 rgba(94,188,216,255));\n"
-"color:white;\n"
-"font:20px,\"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        Num7->setStyleSheet(QString::fromUtf8(""));
         Num = new QPushButton(CtrlNumInputModule);
         Num->setObjectName(QString::fromUtf8("Num"));
         Num->setGeometry(QRect(110, 160, 91, 41));
         Num->setFocusPolicy(Qt::NoFocus);
-        Num->setStyleSheet(QString::fromUtf8("background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:0.4,stop:0 rgba(150,215,230,255),stop:0.4 rgba(100,170,200,255)\n"
-"spread:pad,x1:0,y1:0.4,x2:0,y2:1,stop:0.4 rgba(52,136,159,255),stop:1 rgba(94,188,216,255));\n"
-"color:white;\n"
-"font:20px,\"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        Num->setStyleSheet(QString::fromUtf8(""));
         Numc = new QPushButton(CtrlNumInputModule);
         Numc->setObjectName(QString::fromUtf8("Numc"));
         Numc->setGeometry(QRect(210, 160, 91, 41));
         Numc->setFocusPolicy(Qt::NoFocus);
-        Numc->setStyleSheet(QString::fromUtf8("background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:0.4,stop:0 rgba(150,215,230,255),stop:0.4 rgba(100,170,200,255)\n"
-"spread:pad,x1:0,y1:0.4,x2:0,y2:1,stop:0.4 rgba(52,136,159,255),stop:1 rgba(94,188,216,255));\n"
-"color:white;\n"
-"font:20px,\"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        Numc->setStyleSheet(QString::fromUtf8(""));
         Num0 = new QPushButton(CtrlNumInputModule);
         Num0->setObjectName(QString::fromUtf8("Num0"));
         Num0->setGeometry(QRect(10, 160, 91, 41));
         Num0->setFocusPolicy(Qt::NoFocus);
-        Num0->setStyleSheet(QString::fromUtf8("background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:0.4,stop:0 rgba(150,215,230,255),stop:0.4 rgba(100,170,200,255)\n"
-"spread:pad,x1:0,y1:0.4,x2:0,y2:1,stop:0.4 rgba(52,136,159,255),stop:1 rgba(94,188,216,255));\n"
-"color:white;\n"
-"font:20px,\"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        Num0->setStyleSheet(QString::fromUtf8(""));
 
         retranslateUi(CtrlNumInputModule);
 

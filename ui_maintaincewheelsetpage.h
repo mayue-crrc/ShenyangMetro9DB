@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincewheelsetpage.ui'
 **
-** Created: Sat Jan 19 10:06:57 2019
+** Created: Tue Jan 22 11:54:47 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -71,8 +71,7 @@ public:
 "}\n"
 "QPushButton\n"
 "{\n"
-" color:white;font:18px,\"\345\276\256\350\275\257\351\233\205\351\273\221\";border-top:2px solid  white;border-left: 2px solid white;border-bottom:2px solid transparent;border-right: 2px solid;\n"
-"border-radius:8px; transparent;background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgba(150,228,250,255),stop:0.7 rgba(20,108,140,255) ,stop:1 rgba(100,238,240,255));\n"
+"font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: rgb(0, 128, 128);	border-radius:8px;border-top: 2px solid white;border-left: 2px solid white;\n"
 "\n"
 "}\n"
 ""));
@@ -194,7 +193,7 @@ public:
         ALLSelectBtn->setObjectName(QString::fromUtf8("ALLSelectBtn"));
         ALLSelectBtn->setGeometry(QRect(100, 150, 101, 41));
         ALLSelectBtn->setFocusPolicy(Qt::NoFocus);
-        ALLSelectBtn->setStyleSheet(QString::fromUtf8("font:18px;"));
+        ALLSelectBtn->setStyleSheet(QString::fromUtf8(""));
         lbl7 = new QLabel(MaintainceWheelsetPage);
         lbl7->setObjectName(QString::fromUtf8("lbl7"));
         lbl7->setGeometry(QRect(290, 140, 131, 61));
