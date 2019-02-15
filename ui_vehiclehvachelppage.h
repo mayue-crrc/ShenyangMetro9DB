@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclehvachelppage.ui'
 **
-** Created: Sat Jan 19 10:04:11 2019
+** Created: Wed Feb 13 09:01:53 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -277,6 +277,7 @@ public:
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setGeometry(QRect(20, 350, 111, 31));
         label_6->setAlignment(Qt::AlignCenter);
+        label_34->raise();
         label_98->raise();
         label_3->raise();
         label_11->raise();
@@ -300,7 +301,6 @@ public:
         label_19->raise();
         label_32->raise();
         label_33->raise();
-        label_34->raise();
         label_4->raise();
         label_18->raise();
         label_5->raise();

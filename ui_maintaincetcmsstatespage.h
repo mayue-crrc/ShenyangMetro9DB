@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincetcmsstatespage.ui'
 **
-** Created: Tue Nov 6 13:44:17 2018
+** Created: Tue Jan 29 08:13:52 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -577,7 +577,7 @@ public:
         RIOMLbl_tc1->setText(QApplication::translate("MaintainceTCMSStatesPage", "RIOM", 0, QApplication::UnicodeUTF8));
         SIVLbl_tc1->setText(QApplication::translate("MaintainceTCMSStatesPage", "ACM", 0, QApplication::UnicodeUTF8));
         ATCLbl_tc1->setText(QApplication::translate("MaintainceTCMSStatesPage", "ATC", 0, QApplication::UnicodeUTF8));
-        EBCULbl_tc1->setText(QApplication::translate("MaintainceTCMSStatesPage", "EBCU", 0, QApplication::UnicodeUTF8));
+        EBCULbl_tc1->setText(QApplication::translate("MaintainceTCMSStatesPage", "BCU", 0, QApplication::UnicodeUTF8));
         WMSLbl_tc2->setText(QApplication::translate("MaintainceTCMSStatesPage", "WMS", 0, QApplication::UnicodeUTF8));
         ACULbl_tc1->setText(QApplication::translate("MaintainceTCMSStatesPage", "HVAC", 0, QApplication::UnicodeUTF8));
         PIDSLbl_tc1->setText(QApplication::translate("MaintainceTCMSStatesPage", "PIDS", 0, QApplication::UnicodeUTF8));
@@ -589,7 +589,7 @@ public:
         EDCU4Lbl_mp1->setText(QApplication::translate("MaintainceTCMSStatesPage", "EDCU4", 0, QApplication::UnicodeUTF8));
         DCULbl_mp1->setText(QApplication::translate("MaintainceTCMSStatesPage", "DCU", 0, QApplication::UnicodeUTF8));
         EDCU5Lbl_m1->setText(QApplication::translate("MaintainceTCMSStatesPage", "EDCU5", 0, QApplication::UnicodeUTF8));
-        EBCULbl_mp1->setText(QApplication::translate("MaintainceTCMSStatesPage", "EBCU", 0, QApplication::UnicodeUTF8));
+        EBCULbl_mp1->setText(QApplication::translate("MaintainceTCMSStatesPage", "BCU", 0, QApplication::UnicodeUTF8));
         RIOMLbl_m1->setText(QApplication::translate("MaintainceTCMSStatesPage", "RIOM", 0, QApplication::UnicodeUTF8));
         ACULbl_m1->setText(QApplication::translate("MaintainceTCMSStatesPage", "HVAC", 0, QApplication::UnicodeUTF8));
         EDCU6Lbl_m1->setText(QApplication::translate("MaintainceTCMSStatesPage", "EDCU6", 0, QApplication::UnicodeUTF8));
@@ -598,14 +598,14 @@ public:
         RIOMLbl_m2->setText(QApplication::translate("MaintainceTCMSStatesPage", "RIOM", 0, QApplication::UnicodeUTF8));
         ACULbl_m2->setText(QApplication::translate("MaintainceTCMSStatesPage", "HVAC", 0, QApplication::UnicodeUTF8));
         DCULbl_m2->setText(QApplication::translate("MaintainceTCMSStatesPage", "DCU", 0, QApplication::UnicodeUTF8));
-        EBCULbl_mp2->setText(QApplication::translate("MaintainceTCMSStatesPage", "EBCU", 0, QApplication::UnicodeUTF8));
+        EBCULbl_mp2->setText(QApplication::translate("MaintainceTCMSStatesPage", "BCU", 0, QApplication::UnicodeUTF8));
         EDCU7Lbl_m2->setText(QApplication::translate("MaintainceTCMSStatesPage", "EDCU7", 0, QApplication::UnicodeUTF8));
         EDCU9Lbl_mp2->setText(QApplication::translate("MaintainceTCMSStatesPage", "EDCU9", 0, QApplication::UnicodeUTF8));
         RIOMLbl_mp2->setText(QApplication::translate("MaintainceTCMSStatesPage", "RIOM", 0, QApplication::UnicodeUTF8));
         ACULbl_mp2->setText(QApplication::translate("MaintainceTCMSStatesPage", "HVAC", 0, QApplication::UnicodeUTF8));
         EDCU10Lbl_mp2->setText(QApplication::translate("MaintainceTCMSStatesPage", "EDCU10", 0, QApplication::UnicodeUTF8));
         DCULbl_mp2->setText(QApplication::translate("MaintainceTCMSStatesPage", "DCU", 0, QApplication::UnicodeUTF8));
-        EBCULbl_tc2->setText(QApplication::translate("MaintainceTCMSStatesPage", "EBCU", 0, QApplication::UnicodeUTF8));
+        EBCULbl_tc2->setText(QApplication::translate("MaintainceTCMSStatesPage", "BCU", 0, QApplication::UnicodeUTF8));
         RIOMLbl_tc2->setText(QApplication::translate("MaintainceTCMSStatesPage", "RIOM", 0, QApplication::UnicodeUTF8));
         PIDSLbl_tc2->setText(QApplication::translate("MaintainceTCMSStatesPage", "PIDS", 0, QApplication::UnicodeUTF8));
         ACULbl_tc2->setText(QApplication::translate("MaintainceTCMSStatesPage", "HVAC", 0, QApplication::UnicodeUTF8));

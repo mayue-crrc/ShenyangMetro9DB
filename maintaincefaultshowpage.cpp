@@ -27,6 +27,23 @@ MaintainceFaultShowPage::MaintainceFaultShowPage(QWidget *parent) :
     }
 
 }
+void MaintainceFaultShowPage::getQueryStr(QString str, QueryType type)
+{
+    this->m_QueryStr = str;
+    this->m_type = type;
+}
+void MaintainceFaultShowPage::showEvent(QShowEvent *)
+{
+    qDebug()<<m_QueryStr;
+    switch (this->m_type){
+    case System:
+        CrrcFault::getCrrcFault()->getQueryFaultOfEachSystem(m_QueryStr);
+        break;
+    case Positon:
+        CrrcFault::getCrrcFault()->getQueryFaultOfEachVehicle(m_QueryStr);
+        break;
+    }
+}
 
 void MaintainceFaultShowPage::SetFaultFdetail(QString Fdetail)
 {
@@ -86,6 +103,15 @@ void MaintainceFaultShowPage::updatePage()
 {
     if(!CrrcFault::getCrrcFault()->isRunning())
         return;
+
+    switch (this->m_type){
+    case System:
+        CrrcFault::getCrrcFault()->getQueryFaultOfEachSystem(m_QueryStr);
+        break;
+    case Positon:
+        CrrcFault::getCrrcFault()->getQueryFaultOfEachVehicle(m_QueryStr);
+        break;
+    }
 
     CrrcFault* m_crrcFault = CrrcFault::getCrrcFault();
     m_totalFaultNum = m_crrcFault->getQueryFault().size();

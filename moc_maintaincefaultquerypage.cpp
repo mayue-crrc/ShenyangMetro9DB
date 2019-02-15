@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'maintaincefaultquerypage.h'
 **
-** Created: Fri Jan 11 08:34:14 2019
+** Created: Fri Feb 15 15:22:33 2019
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,23 +23,27 @@ static const uint qt_meta_data_MaintainceFaultQueryPage[] = {
        4,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       1,       // signalCount
+
+ // signals: signature, parameters, type, tag, flags
+      28,   26,   25,   25, 0x05,
 
  // slots: signature, parameters, type, tag, flags
-      26,   25,   25,   25, 0x08,
-      49,   25,   25,   25, 0x08,
-      68,   25,   25,   25, 0x08,
+      58,   25,   25,   25, 0x08,
+      81,   25,   25,   25, 0x08,
+     100,   25,   25,   25, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_MaintainceFaultQueryPage[] = {
-    "MaintainceFaultQueryPage\0\0"
+    "MaintainceFaultQueryPage\0\0,\0"
+    "QueryFault(QString,QueryType)\0"
     "on_returnBtn_pressed()\0TrainSelectEvent()\0"
     "SystemSelectEvent()\0"
 };
@@ -73,13 +77,21 @@ int MaintainceFaultQueryPage::qt_metacall(QMetaObject::Call _c, int _id, void **
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: on_returnBtn_pressed(); break;
-        case 1: TrainSelectEvent(); break;
-        case 2: SystemSelectEvent(); break;
+        case 0: QueryFault((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QueryType(*)>(_a[2]))); break;
+        case 1: on_returnBtn_pressed(); break;
+        case 2: TrainSelectEvent(); break;
+        case 3: SystemSelectEvent(); break;
         default: ;
         }
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
+}
+
+// SIGNAL 0
+void MaintainceFaultQueryPage::QueryFault(QString _t1, QueryType _t2)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_END_MOC_NAMESPACE

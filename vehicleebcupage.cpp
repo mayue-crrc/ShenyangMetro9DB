@@ -82,18 +82,18 @@ void VehicleEBCUPage::updatePage()
 
 
     //保持制动  粉色＝施加 灰色＝缓解
-    setlabelstates(ui->HoldBRKTC1lbl_1,this->database->BR1CT_TC1Bg1HoldingBrkApplied_B1,this->database->CTHM_BCULBg1Online_B1);
-    setlabelstates(ui->HoldBRKTC1lbl_2,this->database->BR1CT_TC1Bg2HoldingBrkApplied_B1,this->database->CTHM_BCULBg2Online_B1);
-    setlabelstates(ui->HoldBRKMP1lbl_1,this->database->BR1CT_MP1Bg1HoldingBrkApplied_B1,this->database->CTHM_BCULBg3Online_B1);
-    setlabelstates(ui->HoldBRKMP1lbl_2,this->database->BR1CT_MP1Bg2HoldingBrkApplied_B1,this->database->CTHM_BCULBg4Online_B1);
-    setlabelstates(ui->HoldBRKM1lbl_1,this->database->BR1CT_M1Bg1HoldingBrkApplied_B1,this->database->CTHM_BCULBg5Online_B1);
-    setlabelstates(ui->HoldBRKM1lbl_2,this->database->BR1CT_M1Bg2HoldingBrkApplied_B1,this->database->CTHM_BCULBg6Online_B1);
-    setlabelstates(ui->HoldBRKM2lbl_1,this->database->BR2CT_M2Bg1HoldingBrkApplied_B1,this->database->CTHM_BCURBg5Online_B1);
-    setlabelstates(ui->HoldBRKM2lbl_2,this->database->BR2CT_M2Bg2HoldingBrkApplied_B1,this->database->CTHM_BCURBg6Online_B1);
-    setlabelstates(ui->HoldBRKMP2lbl_1,this->database->BR2CT_MP2Bg1HoldingBrkApplied_B1,this->database->CTHM_BCURBg3Online_B1);
-    setlabelstates(ui->HoldBRKMP2lbl_2,this->database->BR2CT_MP2Bg2HoldingBrkApplied_B1,this->database->CTHM_BCURBg4Online_B1);
-    setlabelstates(ui->HoldBRKTC2lbl_1,this->database->BR2CT_TC2Bg1HoldingBrkApplied_B1,this->database->CTHM_BCURBg1Online_B1);
-    setlabelstates(ui->HoldBRKTC2lbl_2,this->database->BR2CT_TC2Bg2HoldingBrkApplied_B1,this->database->CTHM_BCURBg2Online_B1);
+    setHoldlabelstates(ui->HoldBRKTC1lbl_1,this->database->BR1CT_TC1Bg1HoldingBrkApplied_B1,this->database->CTHM_BCULBg1Online_B1);
+    setHoldlabelstates(ui->HoldBRKTC1lbl_2,this->database->BR1CT_TC1Bg2HoldingBrkApplied_B1,this->database->CTHM_BCULBg2Online_B1);
+    setHoldlabelstates(ui->HoldBRKMP1lbl_1,this->database->BR1CT_MP1Bg1HoldingBrkApplied_B1,this->database->CTHM_BCULBg3Online_B1);
+    setHoldlabelstates(ui->HoldBRKMP1lbl_2,this->database->BR1CT_MP1Bg2HoldingBrkApplied_B1,this->database->CTHM_BCULBg4Online_B1);
+    setHoldlabelstates(ui->HoldBRKM1lbl_1,this->database->BR1CT_M1Bg1HoldingBrkApplied_B1,this->database->CTHM_BCULBg5Online_B1);
+    setHoldlabelstates(ui->HoldBRKM1lbl_2,this->database->BR1CT_M1Bg2HoldingBrkApplied_B1,this->database->CTHM_BCULBg6Online_B1);
+    setHoldlabelstates(ui->HoldBRKM2lbl_1,this->database->BR2CT_M2Bg1HoldingBrkApplied_B1,this->database->CTHM_BCURBg5Online_B1);
+    setHoldlabelstates(ui->HoldBRKM2lbl_2,this->database->BR2CT_M2Bg2HoldingBrkApplied_B1,this->database->CTHM_BCURBg6Online_B1);
+    setHoldlabelstates(ui->HoldBRKMP2lbl_1,this->database->BR2CT_MP2Bg1HoldingBrkApplied_B1,this->database->CTHM_BCURBg3Online_B1);
+    setHoldlabelstates(ui->HoldBRKMP2lbl_2,this->database->BR2CT_MP2Bg2HoldingBrkApplied_B1,this->database->CTHM_BCURBg4Online_B1);
+    setHoldlabelstates(ui->HoldBRKTC2lbl_1,this->database->BR2CT_TC2Bg1HoldingBrkApplied_B1,this->database->CTHM_BCURBg1Online_B1);
+    setHoldlabelstates(ui->HoldBRKTC2lbl_2,this->database->BR2CT_TC2Bg2HoldingBrkApplied_B1,this->database->CTHM_BCURBg2Online_B1);
 
     //整车制动隔离 6模块采集RIOM整车整车制动隔离信号 绿色＝正常 灰色＝隔离
 

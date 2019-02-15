@@ -261,6 +261,10 @@ Widget::Widget(QWidget *parent) :
     this->maintainceFaultQueryPage->setMyBase(uLargeMiddle,QString("故障\n记录"));
     this->maintainceFaultQueryPage->hide();
 
+    connect(this->maintainceFaultQueryPage,SIGNAL(QueryFault(QString,QueryType)),
+            this->maintainceFaultShowPage,SLOT(getQueryStr(QString,QueryType)));
+
+
     this->widgets.insert(uVehicleRunStatePage,this->vehicleRunStatePage);
     this->widgets.insert(uVehicleMaintaincePage,this->vehicleMaintaincePage);
     this->widgets.insert(uMaintaincePortsDataPage,this->maintaincePortsDataPage);

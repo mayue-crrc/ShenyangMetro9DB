@@ -468,7 +468,7 @@ background-color: rgb(0, 0, 0);
 </string>
    </property>
    <property name="text">
-    <string>EBCU</string>
+    <string>BCU</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -707,7 +707,7 @@ background-color: rgb(0, 0, 0);
 </string>
    </property>
    <property name="text">
-    <string>EBCU</string>
+    <string>BCU</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -887,7 +887,7 @@ background-color: rgb(0, 0, 0);
 </string>
    </property>
    <property name="text">
-    <string>EBCU</string>
+    <string>BCU</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -1026,7 +1026,7 @@ background-color: rgb(0, 0, 0);
 </string>
    </property>
    <property name="text">
-    <string>EBCU</string>
+    <string>BCU</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

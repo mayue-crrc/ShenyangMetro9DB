@@ -123,7 +123,7 @@ void MaintainceAllPortsPage::ButtonsPressEvent()
     {
         this->m_PortsList = ACUPorts;
 
-    }else if(BtnName == "EBCU")
+    }else if(BtnName == "BCU")
     {
         this->m_PortsList = EBCUPorts;
 

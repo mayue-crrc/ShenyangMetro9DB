@@ -38,14 +38,16 @@ MaintainceFaultQueryPage::~MaintainceFaultQueryPage()
 void MaintainceFaultQueryPage::TrainSelectEvent()
 {
     m_TrainSelect = ((QPushButton *)this->sender())->objectName();
-    CrrcFault::getCrrcFault()->getQueryFaultOfEachVehicle(m_TrainSelect);
+    emit QueryFault(m_TrainSelect,Positon);
+    //CrrcFault::getCrrcFault()->getQueryFaultOfEachVehicle(m_TrainSelect);
     changePage(uMaintainceFaultShowPage);
 
 }
 void MaintainceFaultQueryPage::SystemSelectEvent()
 {
     m_SysSelect = ((QPushButton *)this->sender())->objectName();
-    CrrcFault::getCrrcFault()->getQueryFaultOfEachSystem(m_SysSelect);
+    emit QueryFault(m_SysSelect,System);
+    //CrrcFault::getCrrcFault()->getQueryFaultOfEachSystem(m_SysSelect);
     changePage(uMaintainceFaultShowPage);
 
 }

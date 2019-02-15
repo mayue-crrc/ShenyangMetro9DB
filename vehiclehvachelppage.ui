@@ -729,6 +729,7 @@ border-radius:10px</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <zorder>label_34</zorder>
   <zorder>label_98</zorder>
   <zorder>label_3</zorder>
   <zorder>label_11</zorder>
@@ -752,7 +753,6 @@ border-radius:10px</string>
   <zorder>label_19</zorder>
   <zorder>label_32</zorder>
   <zorder>label_33</zorder>
-  <zorder>label_34</zorder>
   <zorder>label_4</zorder>
   <zorder>label_18</zorder>
   <zorder>label_5</zorder>

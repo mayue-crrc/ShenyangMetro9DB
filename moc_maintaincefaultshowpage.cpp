@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'maintaincefaultshowpage.h'
 **
-** Created: Fri Jan 11 08:34:13 2019
+** Created: Fri Feb 15 15:22:32 2019
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_MaintainceFaultShowPage[] = {
        4,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   14, // methods
+       6,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -36,6 +36,7 @@ static const uint qt_meta_data_MaintainceFaultShowPage[] = {
       74,   24,   24,   24, 0x08,
       98,   24,   24,   24, 0x08,
      121,   24,   24,   24, 0x08,
+     150,  141,   24,   24, 0x0a,
 
        0        // eod
 };
@@ -45,7 +46,8 @@ static const char qt_meta_stringdata_MaintainceFaultShowPage[] = {
     "on_BTNClose_2_pressed()\0"
     "on_NextPageBtn_pressed()\0"
     "on_PrePageBtn_pressed()\0on_returnBtn_pressed()\0"
-    "ButtonsPressEvent()\0"
+    "ButtonsPressEvent()\0str,type\0"
+    "getQueryStr(QString,QueryType)\0"
 };
 
 const QMetaObject MaintainceFaultShowPage::staticMetaObject = {
@@ -82,9 +84,10 @@ int MaintainceFaultShowPage::qt_metacall(QMetaObject::Call _c, int _id, void **_
         case 2: on_PrePageBtn_pressed(); break;
         case 3: on_returnBtn_pressed(); break;
         case 4: ButtonsPressEvent(); break;
+        case 5: getQueryStr((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QueryType(*)>(_a[2]))); break;
         default: ;
         }
-        _id -= 5;
+        _id -= 6;
     }
     return _id;
 }

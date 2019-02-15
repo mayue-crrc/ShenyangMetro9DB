@@ -315,10 +315,10 @@ void VehicleACPage2::setlabelstates(QLabel* lbl,QList<bool> states)
     {
         lbl->setStyleSheet(HVACMODEAUTO);
         lbl->setText("自动");
-    }else if(states.at(1))
-    {
-        lbl->setStyleSheet(HVACMODEPRE);
-        lbl->setText("预冷/预暖");
+//    }else if(states.at(1))
+//    {
+//        lbl->setStyleSheet(HVACMODEPRE);
+//        lbl->setText("预冷/预暖");
     }else if(states.at(2))
     {
         lbl->setStyleSheet(HVACMODEMANNAL);

@@ -191,7 +191,7 @@ border-radius:8px;
     <string notr="true"/>
    </property>
    <property name="text">
-    <string>EBCU</string>
+    <string>BCU</string>
    </property>
   </widget>
   <widget class="QPushButton" name="PIDSBtn">

@@ -26,6 +26,8 @@ private slots:
 
     void TrainSelectEvent();
     void SystemSelectEvent();
+signals:
+    void QueryFault(QString,QueryType);
 };
 
 #endif // MAINTAINCEFAULTQUERYPAGE_H

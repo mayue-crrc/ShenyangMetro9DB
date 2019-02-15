@@ -111,7 +111,11 @@ enum pageIndex
     uVehicleSIVPage2,
 
 };
-
+enum QueryType{
+    System = 1,
+    Positon,
+    Code
+};
 #define _LOG qDebug() << QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss") << __FILE__ << __LINE__
 
 #endif // GLOBAL_H

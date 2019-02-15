@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintainceallportspage.ui'
 **
-** Created: Wed Oct 24 13:51:38 2018
+** Created: Tue Jan 29 08:13:52 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -151,7 +151,7 @@ public:
         HMIBtn->setText(QApplication::translate("MaintainceAllPortsPage", "HMI", 0, QApplication::UnicodeUTF8));
         ERMBtn->setText(QApplication::translate("MaintainceAllPortsPage", "ERM", 0, QApplication::UnicodeUTF8));
         ACUBtn->setText(QApplication::translate("MaintainceAllPortsPage", "ACU", 0, QApplication::UnicodeUTF8));
-        EBCUBtn->setText(QApplication::translate("MaintainceAllPortsPage", "EBCU", 0, QApplication::UnicodeUTF8));
+        EBCUBtn->setText(QApplication::translate("MaintainceAllPortsPage", "BCU", 0, QApplication::UnicodeUTF8));
         PIDSBtn->setText(QApplication::translate("MaintainceAllPortsPage", "PIDS", 0, QApplication::UnicodeUTF8));
         EDCUBtn->setText(QApplication::translate("MaintainceAllPortsPage", "EDCU", 0, QApplication::UnicodeUTF8));
         CCUDBtn->setText(QApplication::translate("MaintainceAllPortsPage", "CCU-D", 0, QApplication::UnicodeUTF8));
