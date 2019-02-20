@@ -13,6 +13,10 @@ MaintainceConsumptionPage::MaintainceConsumptionPage(QWidget *parent) :
     m_VVVFClear = m_SIVClear = false;
     timer2s = new QTimer;
     connect(timer2s,SIGNAL(timeout()),this,SLOT(timer2sEvent()));
+    this->ui->ConfirmBtn->hide();
+    this->ui->SIVClearBtn->hide();
+    this->ui->VVVFClearBtn->hide();
+
 }
 
 MaintainceConsumptionPage::~MaintainceConsumptionPage()
@@ -22,18 +26,18 @@ MaintainceConsumptionPage::~MaintainceConsumptionPage()
 
 void MaintainceConsumptionPage::on_returnBtn_pressed()
 {
-    this->m_VVVFClear = false;
-    this->database->HMiCT_DCURunClear_B1 = false;
+//    this->m_VVVFClear = false;
+//    this->database->HMiCT_DCURunClear_B1 = false;
 
-    this->m_SIVClear = false;
-    this->database->HMiCT_ACMRunClear_B1 = false;
+//    this->m_SIVClear = false;
+//    this->database->HMiCT_ACMRunClear_B1 = false;
 
-    this->database->HMiCT_SetFlagChecker_U8 = 0x55;
+//    this->database->HMiCT_SetFlagChecker_U8 = 0x55;
 
-    this->ui->ConfirmBtn->setStyleSheet(MCBUTTON_UP);
-    this->ui->VVVFClearBtn->setStyleSheet(MCBUTTON_UP);
-    this->ui->SIVClearBtn->setStyleSheet(MCBUTTON_UP);
-    this->timer2s->stop();
+//    this->ui->ConfirmBtn->setStyleSheet(MCBUTTON_UP);
+//    this->ui->VVVFClearBtn->setStyleSheet(MCBUTTON_UP);
+//    this->ui->SIVClearBtn->setStyleSheet(MCBUTTON_UP);
+//    this->timer2s->stop();
     changePage(uVehicleMaintaincePage);
 }
 

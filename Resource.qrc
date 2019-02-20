@@ -84,5 +84,8 @@
         <file>images/doornormalbtn.png</file>
         <file>images/faulthelp.bmp</file>
         <file>images/HBApply.png</file>
+        <file>images/supplyground.jpg</file>
+        <file>images/TC1Active.png</file>
+        <file>images/TC2Active.png</file>
     </qresource>
 </RCC>

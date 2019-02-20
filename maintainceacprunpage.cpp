@@ -13,6 +13,9 @@ MaintainceACPRunPage::MaintainceACPRunPage(QWidget *parent) :
     timer2s = new QTimer;
 
     connect(timer2s,SIGNAL(timeout()),this,SLOT(timer2sEvent()));
+    this->ui->MP1ClearBtn->hide();
+    this->ui->MP2ClearBtn->hide();
+
 }
 
 MaintainceACPRunPage::~MaintainceACPRunPage()
@@ -37,13 +40,13 @@ void MaintainceACPRunPage::updatePage()
 }
 void MaintainceACPRunPage::on_returnBtn_pressed()
 {
-    this->database->HMiCT_TC1APClear_B1 = false;
-    this->database->HMiCT_TC2APClear_B1 = false;
-    this->ui->MP1ClearBtn->setStyleSheet(PButtonUP);
-    this->ui->MP2ClearBtn->setStyleSheet(PButtonUP);
-    this->database->HMiCT_SetFlagChecker_U8 = 0x55;
+//    this->database->HMiCT_TC1APClear_B1 = false;
+//    this->database->HMiCT_TC2APClear_B1 = false;
+//    this->ui->MP1ClearBtn->setStyleSheet(PButtonUP);
+//    this->ui->MP2ClearBtn->setStyleSheet(PButtonUP);
+//    this->database->HMiCT_SetFlagChecker_U8 = 0x55;
 
-    timer2s->stop();
+//    timer2s->stop();
     changePage(uVehicleMaintaincePage);
 }
 

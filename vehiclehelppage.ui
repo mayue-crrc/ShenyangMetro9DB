@@ -62,7 +62,7 @@ QLabel
     </rect>
    </property>
    <property name="text">
-    <string>DCU</string>
+    <string>MCM</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -2312,7 +2312,7 @@ border:2px solid white ;
    <property name="geometry">
     <rect>
      <x>600</x>
-     <y>410</y>
+     <y>390</y>
      <width>111</width>
      <height>31</height>
     </rect>
@@ -2328,7 +2328,7 @@ border:2px solid white ;
    <property name="geometry">
     <rect>
      <x>720</x>
-     <y>380</y>
+     <y>360</y>
      <width>25</width>
      <height>91</height>
     </rect>
@@ -2377,6 +2377,119 @@ border:2px solid white ;
    </property>
    <property name="text">
     <string>弓状态未知</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_96">
+   <property name="geometry">
+    <rect>
+     <x>638</x>
+     <y>210</y>
+     <width>35</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/images/supplyground.jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_124">
+   <property name="geometry">
+    <rect>
+     <x>629</x>
+     <y>240</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 16px, &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>接地</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_125">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>210</y>
+     <width>35</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/images/unsupply.bmp);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_126">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>240</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 16px, &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>保护盖打开</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_127">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>480</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/images/TC2Active.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_128">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>480</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>钥匙激活</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -2504,6 +2617,12 @@ border:2px solid white ;
   <zorder>label_121</zorder>
   <zorder>label_122</zorder>
   <zorder>label_123</zorder>
+  <zorder>label_96</zorder>
+  <zorder>label_124</zorder>
+  <zorder>label_125</zorder>
+  <zorder>label_126</zorder>
+  <zorder>label_127</zorder>
+  <zorder>label_128</zorder>
  </widget>
  <resources/>
  <connections/>

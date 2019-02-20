@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclerunstatepage.ui'
 **
-** Created: Fri Jan 11 08:31:36 2019
+** Created: Wed Feb 20 22:01:34 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -215,6 +215,8 @@ public:
     QPushButton *ResetPageBtn;
     QPushButton *BuzzerBtn;
     QLabel *Mp2supplylbl;
+    QLabel *LBL_TC1Key;
+    QLabel *LBL_TC2Key;
 
     void setupUi(QWidget *VehicleRunStatePage)
     {
@@ -1740,6 +1742,20 @@ public:
         Mp2supplylbl->setGeometry(QRect(660, 380, 31, 31));
         Mp2supplylbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/supply.bmp);"));
         Mp2supplylbl->setAlignment(Qt::AlignCenter);
+        LBL_TC1Key = new QLabel(VehicleRunStatePage);
+        LBL_TC1Key->setObjectName(QString::fromUtf8("LBL_TC1Key"));
+        LBL_TC1Key->setGeometry(QRect(140, 110, 28, 20));
+        LBL_TC1Key->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/TC1Active.png);\n"
+"background-color:transparent;\n"
+""));
+        LBL_TC1Key->setAlignment(Qt::AlignCenter);
+        LBL_TC2Key = new QLabel(VehicleRunStatePage);
+        LBL_TC2Key->setObjectName(QString::fromUtf8("LBL_TC2Key"));
+        LBL_TC2Key->setGeometry(QRect(845, 110, 28, 20));
+        LBL_TC2Key->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/TC2Active.png);\n"
+"background-color:transparent;\n"
+""));
+        LBL_TC2Key->setAlignment(Qt::AlignCenter);
 
         retranslateUi(VehicleRunStatePage);
 
@@ -1954,6 +1970,8 @@ public:
         BuzzerBtn->setText(QApplication::translate("VehicleRunStatePage", "\351\227\264\345\243\201\351\227\250\345\274\200\n"
 "\350\234\202\351\270\243\345\231\250", 0, QApplication::UnicodeUTF8));
         Mp2supplylbl->setText(QString());
+        LBL_TC1Key->setText(QString());
+        LBL_TC2Key->setText(QString());
     } // retranslateUi
 
 };

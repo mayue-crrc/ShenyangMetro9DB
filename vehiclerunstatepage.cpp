@@ -59,6 +59,7 @@
 
 #define SUPPLYON "border-image: url(:/images/images/supply.bmp);"
 #define SUPPLYOFF "border-image: url(:/images/images/unsupply.bmp);"
+#define SUPPLYGROUND "border-image: url(:/images/images/supplyground.jpg);"
 
 #define FIREALARM "border-image: url(:/images/images/FireAlarm.png);"
 #define FIREOFFLINE LABELWHITE
@@ -270,27 +271,27 @@ void VehicleRunStatePage::updateTrainStatus()
 {
     //PB Status
     QList<bool> PBstatus;
-    PBstatus<<database->DICT_TC1DI3CH10ParkingBrkCutOff_B1<<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<database->BR1CT_TC1Bg2ParkingBrkRlsed_B1;
+    PBstatus<<database->DICT_TC1DI3CH10ParkingBrkCutOff_B1<<database->CTHM_BCULBg2Online_B1<<database->BR1CT_TC1Bg2ParkingBrkRlsed_B1;
     setPBStatus(this->ui->Tc1BCUlbl,PBstatus);
 
     PBstatus.clear();
-    PBstatus<<database->DICT_MP1DI1CH10ParkingBrkCutOff_B1<<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<database->BR1CT_MP1Bg2ParkingBrkRlsed_B1;
+    PBstatus<<database->DICT_MP1DI1CH10ParkingBrkCutOff_B1<<database->CTHM_BCULBg4Online_B1<<database->BR1CT_MP1Bg2ParkingBrkRlsed_B1;
     setPBStatus(this->ui->Mp1BCUlbl,PBstatus);
 
     PBstatus.clear();
-    PBstatus<<database->DICT_M1DI1CH5ParkingBrkCutOff_B1<<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<database->BR1CT_M1Bg2ParkingBrkRlsed_B1;
+    PBstatus<<database->DICT_M1DI1CH5ParkingBrkCutOff_B1<<database->CTHM_BCULBg6Online_B1<<database->BR1CT_M1Bg2ParkingBrkRlsed_B1;
     setPBStatus(this->ui->M1BCUlbl,PBstatus);
 
     PBstatus.clear();
-    PBstatus<<database->DICT_TC2DI3CH10ParkingBrkCutOff_B1<<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<database->BR2CT_TC2Bg2ParkingBrkRlsed_B1;
+    PBstatus<<database->DICT_TC2DI3CH10ParkingBrkCutOff_B1<<database->CTHM_BCURBg2Online_B1<<database->BR2CT_TC2Bg2ParkingBrkRlsed_B1;
     setPBStatus(this->ui->Tc2BCUlbl,PBstatus);
 
     PBstatus.clear();
-    PBstatus<<database->DICT_MP2DI1CH10ParkingBrkCutOff_B1<<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<database->BR2CT_MP2Bg2ParkingBrkRlsed_B1;
+    PBstatus<<database->DICT_MP2DI1CH10ParkingBrkCutOff_B1<<database->CTHM_BCURBg4Online_B1<<database->BR2CT_MP2Bg2ParkingBrkRlsed_B1;
     setPBStatus(this->ui->Mp2BCUlbl,PBstatus);
 
     PBstatus.clear();
-    PBstatus<<database->DICT_M2DI1CH5ParkingBrkCutOff_B1<<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<database->BR2CT_M2Bg2ParkingBrkRlsed_B1;
+    PBstatus<<database->DICT_M2DI1CH5ParkingBrkCutOff_B1<<database->CTHM_BCURBg6Online_B1<<database->BR2CT_M2Bg2ParkingBrkRlsed_B1;
     setPBStatus(this->ui->M2BCUlbl,PBstatus);
 
 
@@ -819,6 +820,20 @@ void VehicleRunStatePage::updateTrainStatus()
         this->ui->Tc2Cablbl->setStyleSheet(KEYNOACTIVE);
     }
 
+    if(this->database->DICT_TC1DI2CH24CabKey_B1)
+    {
+        this->ui->LBL_TC1Key->show();
+    }else {
+        this->ui->LBL_TC1Key->hide();
+    }
+
+    if(this->database->DICT_TC2DI2CH24CabKey_B1)
+    {
+        this->ui->LBL_TC2Key->show();
+    }else {
+        this->ui->LBL_TC2Key->hide();
+    }
+
     //新风温度
     this->ui->OutTempTC1lbl->setText(QString::number(this->database->AC1CT_ReturnAirTemp_U8-30)+"℃");
     this->ui->OutTempMP1lbl->setText(QString::number(this->database->AC2CT_ReturnAirTemp_U8-30)+"℃");
@@ -836,18 +851,36 @@ void VehicleRunStatePage::updateTrainStatus()
     this->ui->LoadTC2lbl->setText(this->database->PLoad_TC2+"%");
 
     //车间电源
-    if(this->database->CTHM_WorkshopPowerSupplyMP1_B1)
+
+    if(!(this->database->TR1CT_IESContacterQ1_B1||this->database->TR1CT_IESContacterQ2_B1))
     {
         this->ui->Mp1supplylbl->show();
-    }else
+        this->ui->Mp1supplylbl->setStyleSheet(SUPPLYON);
+    }else if(!this->database->TR1CT_IESContacterQ1_B1||this->database->TR1CT_IESContacterQ2_B1)
     {
+        this->ui->Mp1supplylbl->show();
+        this->ui->Mp1supplylbl->setStyleSheet(SUPPLYGROUND);
+    }else if(this->database->DICT_MP1DI1CH21BatteryCoverOpen_B1)
+    {
+        this->ui->Mp1supplylbl->show();
+        this->ui->Mp1supplylbl->setStyleSheet(SUPPLYOFF);
+    }else {
         this->ui->Mp1supplylbl->hide();
     }
-    if(this->database->CTHM_WorkshopPowerSupplyMP2_B1)
+
+    if(!(this->database->TR4CT_IESContacterQ1_B1||this->database->TR4CT_IESContacterQ2_B1))
     {
         this->ui->Mp2supplylbl->show();
-    }else
+        this->ui->Mp2supplylbl->setStyleSheet(SUPPLYON);
+    }else if(!this->database->TR4CT_IESContacterQ1_B1||this->database->TR4CT_IESContacterQ2_B1)
     {
+        this->ui->Mp2supplylbl->show();
+        this->ui->Mp2supplylbl->setStyleSheet(SUPPLYGROUND);
+    }else if(this->database->DICT_MP2DI1CH21BatteryCoverOpen_B1)
+    {
+        this->ui->Mp2supplylbl->show();
+        this->ui->Mp2supplylbl->setStyleSheet(SUPPLYOFF);
+    }else {
         this->ui->Mp2supplylbl->hide();
     }
 
@@ -1000,7 +1033,7 @@ void VehicleRunStatePage::setPBStatus(QLabel* lbl,QList<bool> status)
     if(status.at(0))
     {
         lbl->setStyleSheet(PBBYPASS);
-    }else if(status.at(1))
+    }else if(!status.at(1))
     {
         lbl->setStyleSheet(PBUNKNOWN);
     }else if(status.at(2))

@@ -148,7 +148,7 @@ void MaintainceVersionPage::updatePage()
     case VEDCUPAGE:
         {
             QList<QString> namestr,versionstr;
-            namestr<<"奇数GW"<<"偶数GW"<<"DCU1"<<"DCU2"<<"DCU3"<<"DCU4"<<"DCU5"<<"DCU6"<<"DCU7"<<"DCU8";
+            namestr<<"奇数GW"<<"偶数GW"<<"EDCU1"<<"EDCU2"<<"EDCU3"<<"EDCU4"<<"EDCU5"<<"EDCU6"<<"EDCU7"<<"EDCU8";
             versionstr<<QString::number(this->database->DR1_2CT_SwVersion1_U8/16)+"."+QString::number(this->database->DR1_2CT_SwVersion1_U8%16)
                     <<QString::number(this->database->DR3_4CT_SwVersion1_U8/16)+"."+QString::number(this->database->DR3_4CT_SwVersion1_U8%16)
                     <<QString::number(this->database->DR5_6CT_SwVersion1_U8/16)+"."+QString::number(this->database->DR5_6CT_SwVersion1_U8%16)

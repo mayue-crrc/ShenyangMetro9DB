@@ -82,7 +82,7 @@ Database::Database()
     HMiCT_ACDETestStartFlag_B1 = false;
 
     HMiCT_HMISWVerH_U8 = 2;
-    HMiCT_HMISWVerL_U8 = 48;
+    HMiCT_HMISWVerL_U8 = 49;
 
     for(int i =0; i< 12;i++)
     {
@@ -1345,6 +1345,12 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->TR4CT_Motor3Temp_I16  =this->crrcMvb->getSignedInt(0x482,10);
         this->TR4CT_Motor4Temp_I16  =this->crrcMvb->getSignedInt(0x482,12);
         this->TR4CT_Slide_B1 = this->crrcMvb->getBool(0x480,14,7);
+
+        TR1CT_IESContacterQ2_B1 = this->crrcMvb->getBool(0x491,31,1);
+        TR1CT_IESContacterQ1_B1 = this->crrcMvb->getBool(0x491,31,2);
+        TR4CT_IESContacterQ2_B1 = this->crrcMvb->getBool(0x481,31,1);
+        TR4CT_IESContacterQ1_B1 = this->crrcMvb->getBool(0x481,31,2);
+
 
         //CCU-DCU
         this->CTTR1_EBCutOff_B1 = this->crrcMvb->getBool(0x49A,28,6);

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclehelppage.ui'
 **
-** Created: Fri Jan 11 08:40:50 2019
+** Created: Wed Feb 20 22:01:34 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -146,6 +146,12 @@ public:
     QLabel *label_121;
     QLabel *label_122;
     QLabel *label_123;
+    QLabel *label_96;
+    QLabel *label_124;
+    QLabel *label_125;
+    QLabel *label_126;
+    QLabel *label_127;
+    QLabel *label_128;
 
     void setupUi(QWidget *VehicleHelpPage)
     {
@@ -821,11 +827,11 @@ public:
         label_119->setAlignment(Qt::AlignCenter);
         label_120 = new QLabel(VehicleHelpPage);
         label_120->setObjectName(QString::fromUtf8("label_120"));
-        label_120->setGeometry(QRect(600, 410, 111, 31));
+        label_120->setGeometry(QRect(600, 390, 111, 31));
         label_120->setAlignment(Qt::AlignCenter);
         label_121 = new QLabel(VehicleHelpPage);
         label_121->setObjectName(QString::fromUtf8("label_121"));
-        label_121->setGeometry(QRect(720, 380, 25, 91));
+        label_121->setGeometry(QRect(720, 360, 25, 91));
         label_121->setStyleSheet(QString::fromUtf8("background-color:orange;"));
         label_121->setAlignment(Qt::AlignCenter);
         label_122 = new QLabel(VehicleHelpPage);
@@ -839,6 +845,37 @@ public:
         label_123->setStyleSheet(QString::fromUtf8("	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 ""));
         label_123->setAlignment(Qt::AlignCenter);
+        label_96 = new QLabel(VehicleHelpPage);
+        label_96->setObjectName(QString::fromUtf8("label_96"));
+        label_96->setGeometry(QRect(638, 210, 35, 31));
+        label_96->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/supplyground.jpg);"));
+        label_96->setAlignment(Qt::AlignCenter);
+        label_124 = new QLabel(VehicleHelpPage);
+        label_124->setObjectName(QString::fromUtf8("label_124"));
+        label_124->setGeometry(QRect(629, 240, 51, 21));
+        label_124->setStyleSheet(QString::fromUtf8("	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+""));
+        label_124->setAlignment(Qt::AlignCenter);
+        label_125 = new QLabel(VehicleHelpPage);
+        label_125->setObjectName(QString::fromUtf8("label_125"));
+        label_125->setGeometry(QRect(700, 210, 35, 31));
+        label_125->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/unsupply.bmp);"));
+        label_125->setAlignment(Qt::AlignCenter);
+        label_126 = new QLabel(VehicleHelpPage);
+        label_126->setObjectName(QString::fromUtf8("label_126"));
+        label_126->setGeometry(QRect(680, 240, 81, 21));
+        label_126->setStyleSheet(QString::fromUtf8("	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+""));
+        label_126->setAlignment(Qt::AlignCenter);
+        label_127 = new QLabel(VehicleHelpPage);
+        label_127->setObjectName(QString::fromUtf8("label_127"));
+        label_127->setGeometry(QRect(710, 480, 31, 20));
+        label_127->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/TC2Active.png);"));
+        label_127->setAlignment(Qt::AlignCenter);
+        label_128 = new QLabel(VehicleHelpPage);
+        label_128->setObjectName(QString::fromUtf8("label_128"));
+        label_128->setGeometry(QRect(600, 480, 111, 21));
+        label_128->setAlignment(Qt::AlignCenter);
         label_98->raise();
         pushButton->raise();
         label->raise();
@@ -961,6 +998,12 @@ public:
         label_121->raise();
         label_122->raise();
         label_123->raise();
+        label_96->raise();
+        label_124->raise();
+        label_125->raise();
+        label_126->raise();
+        label_127->raise();
+        label_128->raise();
 
         retranslateUi(VehicleHelpPage);
 
@@ -971,7 +1014,7 @@ public:
     {
         VehicleHelpPage->setWindowTitle(QApplication::translate("VehicleHelpPage", "Form", 0, QApplication::UnicodeUTF8));
         pushButton->setText(QApplication::translate("VehicleHelpPage", "\350\277\224\345\233\236", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("VehicleHelpPage", "DCU", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("VehicleHelpPage", "MCM", 0, QApplication::UnicodeUTF8));
         label_2->setText(QApplication::translate("VehicleHelpPage", "\347\251\272\346\260\224\345\210\266\345\212\250", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("VehicleHelpPage", "\345\201\234\346\224\276\345\210\266\345\212\250", 0, QApplication::UnicodeUTF8));
         label_4->setText(QApplication::translate("VehicleHelpPage", "ACM", 0, QApplication::UnicodeUTF8));
@@ -1096,6 +1139,12 @@ public:
         label_121->setText(QString());
         label_122->setText(QString());
         label_123->setText(QApplication::translate("VehicleHelpPage", "\345\274\223\347\212\266\346\200\201\346\234\252\347\237\245", 0, QApplication::UnicodeUTF8));
+        label_96->setText(QString());
+        label_124->setText(QApplication::translate("VehicleHelpPage", "\346\216\245\345\234\260", 0, QApplication::UnicodeUTF8));
+        label_125->setText(QString());
+        label_126->setText(QApplication::translate("VehicleHelpPage", "\344\277\235\346\212\244\347\233\226\346\211\223\345\274\200", 0, QApplication::UnicodeUTF8));
+        label_127->setText(QString());
+        label_128->setText(QApplication::translate("VehicleHelpPage", "\351\222\245\345\214\231\346\277\200\346\264\273", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

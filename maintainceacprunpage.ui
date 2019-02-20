@@ -110,22 +110,6 @@ background-color: rgb(0, 0, 0);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>190</y>
-     <width>181</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
@@ -149,22 +133,6 @@ background-color: rgb(0, 0, 0);
      <y>120</y>
      <width>101</width>
      <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_7">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>190</y>
-     <width>101</width>
-     <height>131</height>
     </rect>
    </property>
    <property name="text">
@@ -212,22 +180,6 @@ background-color: rgb(0, 0, 0);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_10">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>190</y>
-     <width>131</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
@@ -260,22 +212,6 @@ background-color: rgb(0, 0, 0);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_11">
-   <property name="geometry">
-    <rect>
-     <x>440</x>
-     <y>190</y>
-     <width>101</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_12">
    <property name="geometry">
     <rect>
@@ -299,22 +235,6 @@ background-color: rgb(0, 0, 0);
      <y>50</y>
      <width>101</width>
      <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_14">
-   <property name="geometry">
-    <rect>
-     <x>540</x>
-     <y>190</y>
-     <width>101</width>
-     <height>131</height>
     </rect>
    </property>
    <property name="text">
@@ -362,22 +282,6 @@ background-color: rgb(0, 0, 0);
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_15">
-   <property name="geometry">
-    <rect>
-     <x>734</x>
-     <y>190</y>
-     <width>131</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_16">
    <property name="geometry">
     <rect>
@@ -385,22 +289,6 @@ background-color: rgb(0, 0, 0);
      <y>50</y>
      <width>101</width>
      <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_17">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>190</y>
-     <width>101</width>
-     <height>131</height>
     </rect>
    </property>
    <property name="text">
@@ -464,24 +352,17 @@ background-color: rgb(0, 0, 0);
   <zorder>returnBtn</zorder>
   <zorder>label_2</zorder>
   <zorder>label_3</zorder>
-  <zorder>label_4</zorder>
   <zorder>label_5</zorder>
   <zorder>label_6</zorder>
-  <zorder>label_7</zorder>
   <zorder>MP1ACPTotaltimelbl</zorder>
   <zorder>MP1ACPStarttimelbl</zorder>
-  <zorder>label_10</zorder>
   <zorder>label_8</zorder>
   <zorder>label_9</zorder>
-  <zorder>label_11</zorder>
   <zorder>label_12</zorder>
   <zorder>label_13</zorder>
-  <zorder>label_14</zorder>
   <zorder>MP2ACPStarttimelbl</zorder>
   <zorder>MP2ACPTotaltimelbl</zorder>
-  <zorder>label_15</zorder>
   <zorder>label_16</zorder>
-  <zorder>label_17</zorder>
   <zorder>label_18</zorder>
   <zorder>MP1ClearBtn</zorder>
   <zorder>MP2ClearBtn</zorder>
