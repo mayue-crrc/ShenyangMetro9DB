@@ -661,7 +661,7 @@ unsigned int CrrcFault::getFaultCntOfEachVehicle(QString str)
     int t_size = this->historyFaultList.size();
     for(int i = 0;i<t_size;i++)
     {
-        if(FaultTypeHash[this->historyFaultList[i].ID].FaultPosition.trimmed() == str)
+        if(FaultTypeHash.value(this->historyFaultList[i].ID).FaultPosition.trimmed() == str)
             res++;
     }
     return res;
@@ -674,7 +674,7 @@ unsigned int CrrcFault::getFaultCntOfEachSystem(QString str)
     int t_size = this->historyFaultList.size();
     for(int i = 0;i<t_size;i++)
     {
-        if(FaultTypeHash[this->historyFaultList[i].ID].FaultDevice.trimmed() == str)
+        if(FaultTypeHash.value(this->historyFaultList[i].ID).FaultDevice.trimmed() == str)
             res++;
     }
     return res;
@@ -688,7 +688,7 @@ void CrrcFault::getQueryFaultOfEachSystem(QString str)
     for(int i = 0;i<t_size;i++)
     {
         //将historyfaultlist中的HID的下脚标传给筛选显示页面，筛选显示页面通过list中脚标位置，get出faulttype信息。
-        if(FaultTypeHash[this->historyFaultList[i].ID].FaultDevice.trimmed() == str)
+        if(FaultTypeHash.value(this->historyFaultList[i].ID).FaultDevice.trimmed() == str)
             QueryList.push_back(i);
     }
 }
@@ -699,7 +699,7 @@ void CrrcFault::getQueryFaultOfEachVehicle(QString str)
     int t_size = this->historyFaultList.size();
     for(int i = 0;i<t_size;i++)
     {
-        if(FaultTypeHash[this->historyFaultList[i].ID].FaultPosition.trimmed() == str)
+        if(FaultTypeHash.value(this->historyFaultList[i].ID).FaultPosition.trimmed() == str)
             QueryList.push_back(i);
 
             //QueryList.push_front(this->historyFaultList[i].HistoryID);

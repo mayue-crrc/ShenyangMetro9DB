@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclerunstatepage.ui'
 **
-** Created: Wed Feb 20 22:01:34 2019
+** Created: Wed Mar 13 14:40:24 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -217,6 +217,7 @@ public:
     QLabel *Mp2supplylbl;
     QLabel *LBL_TC1Key;
     QLabel *LBL_TC2Key;
+    QLabel *LBLPanPump;
 
     void setupUi(QWidget *VehicleRunStatePage)
     {
@@ -1756,6 +1757,15 @@ public:
 "background-color:transparent;\n"
 ""));
         LBL_TC2Key->setAlignment(Qt::AlignCenter);
+        LBLPanPump = new QLabel(VehicleRunStatePage);
+        LBLPanPump->setObjectName(QString::fromUtf8("LBLPanPump"));
+        LBLPanPump->setGeometry(QRect(940, 330, 81, 70));
+        LBLPanPump->setStyleSheet(QString::fromUtf8("font: 18px  \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"color: black;\n"
+"border:2px solid white;\n"
+"background-color: yellow;\n"
+"border-radius: 15px;"));
+        LBLPanPump->setAlignment(Qt::AlignCenter);
 
         retranslateUi(VehicleRunStatePage);
 
@@ -1972,6 +1982,9 @@ public:
         Mp2supplylbl->setText(QString());
         LBL_TC1Key->setText(QString());
         LBL_TC2Key->setText(QString());
+        LBLPanPump->setText(QApplication::translate("VehicleRunStatePage", "2\350\275\246 5\350\275\246\n"
+"\345\215\207\345\274\223\346\263\265\n"
+"\345\267\245\344\275\234", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

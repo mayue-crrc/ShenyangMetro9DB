@@ -78,7 +78,7 @@ Header::Header(QWidget *parent) :
     faulthelpPage->setWindowFlags(Qt::FramelessWindowHint);
     faulthelpPage->move ((QApplication::desktop()->width() - faulthelpPage->width())/2,(QApplication::desktop()->height() - faulthelpPage->height())/2);
     faulthelpPage->hide();
-
+/*
     m_StationIDHash.insert(1,"怒江公园");
     m_StationIDHash.insert(2,"怒江公园");
     m_StationIDHash.insert(3,"怒江公园");
@@ -154,6 +154,30 @@ Header::Header(QWidget *parent) :
     m_StationIDHash.insert(44,"虚拟3库线");
     m_StationIDHash.insert(74,"虚拟站台2");
     m_StationIDHash.insert(75,"虚拟站台3");
+    */
+    m_StationIDHash.insert(1,"怒江公园");
+    m_StationIDHash.insert(2,"淮河街沈医二院");
+    m_StationIDHash.insert(3,"皇姑屯站");
+    m_StationIDHash.insert(4,"重型文化广场");
+    m_StationIDHash.insert(5,"北二路");
+    m_StationIDHash.insert(6,"铁西广场");
+    m_StationIDHash.insert(7,"兴华公园");
+    m_StationIDHash.insert(8,"沈辽路");
+    m_StationIDHash.insert(9,"滑翔");
+    m_StationIDHash.insert(10,"吉力湖街");
+    m_StationIDHash.insert(11,"大通湖街");
+    m_StationIDHash.insert(12,"曹仲");
+    m_StationIDHash.insert(13,"浑河站");
+    m_StationIDHash.insert(14,"胜利南街");
+    m_StationIDHash.insert(15,"长白南");
+    m_StationIDHash.insert(16,"榆树台");
+    m_StationIDHash.insert(17,"金阳大街");
+    m_StationIDHash.insert(18,"彩霞街");
+    m_StationIDHash.insert(19,"奥体中心");
+    m_StationIDHash.insert(20,"天成街");
+    m_StationIDHash.insert(21,"朗日街");
+    m_StationIDHash.insert(22,"长青南街");
+    m_StationIDHash.insert(23,"建筑大学");
 }
 
 Header::~Header()
@@ -174,7 +198,10 @@ void Header::updatePage()
     this->ui->Speed->setText(QString::number(this->database->CTHM_TrainSpeed_U16/10));
 
     QString tmp ;
-    if(this->database->CTHM_ATC1On_B1)
+    if((!this->database->CTHM_ATC1On_B1) || this->database->DICT_TC1DI2CH7ATCCutOff_B1||this->database->DICT_TC2DI2CH7ATCCutOff_B1)
+    {
+        tmp = "人工驾驶";
+    }else
     {
         if(this->database->ATCT_ATBMode_B1)
         {
@@ -201,9 +228,6 @@ void Header::updatePage()
         {
             tmp = "--";
         }
-    }else
-    {
-        tmp = "人工驾驶";
     }
 
     this->ui->DrivingMode->setText(tmp);

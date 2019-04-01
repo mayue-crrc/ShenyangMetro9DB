@@ -58,6 +58,7 @@
 #define BCMUNKONWN "border-image: url(:/images/images/BCMunknown.bmp);"
 
 #define SUPPLYON "border-image: url(:/images/images/supply.bmp);"
+#define SUPPLYWORKSHOP "border-image: url(:/images/images/workshop.bmp);"
 #define SUPPLYOFF "border-image: url(:/images/images/unsupply.bmp);"
 #define SUPPLYGROUND "border-image: url(:/images/images/supplyground.jpg);"
 
@@ -210,6 +211,24 @@ void VehicleRunStatePage::updateRunStatus()
     {
         this->ui->WashModelbl->hide();
     }
+    //初次升弓泵工作
+   if(this->database->CTHM_Mp1RIOMGWOn_B1&&this->database->DICT_MP1DI1CH1FirstTimePanPumpOn_B1&&
+      this->database->CTHM_Mp2RIOMGWOn_B1&&this->database->DICT_MP2DI1CH1FirstTimePanPumpOn_B1)
+    {
+        this->ui->LBLPanPump->setText("2车 5车\n升弓泵\n工作");
+        this->ui->LBLPanPump->show();
+    }else if(this->database->CTHM_Mp1RIOMGWOn_B1&&this->database->DICT_MP1DI1CH1FirstTimePanPumpOn_B1)
+    {
+        this->ui->LBLPanPump->setText("2车\n升弓泵\n工作");
+        this->ui->LBLPanPump->show();
+    }else if(this->database->CTHM_Mp2RIOMGWOn_B1&&this->database->DICT_MP2DI1CH1FirstTimePanPumpOn_B1)
+    {
+        this->ui->LBLPanPump->setText("5车\n升弓泵\n工作");
+        this->ui->LBLPanPump->show();
+    }else
+    {
+        this->ui->LBLPanPump->hide();
+    }
     //母线接触器断开
     if(this->database->DICT_M1DI1CH16LineContacterClosed_B1 == true)
     {
@@ -298,73 +317,73 @@ void VehicleRunStatePage::updateTrainStatus()
     // B Status
     QList<bool> Bstatus;
     Bstatus<<(database->DICT_TC1DI3CH3EBCUCutOff_B1||database->DICT_TC1DI3CH1Bg1CutOff_B1)
-            <<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_TC1Bg1Fault_U32&0xff7fffff)
+            <<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_TC1Bg1Fault_U32&0xf87fffff)
             <<database->BR1CT_TC1Bg1AirBrkApplied_B1<<database->BR1CT_TC1Bg1AirBrkRlsed_B1;
     setBStatus(this->ui->Tc1bg1lbl,Bstatus);
 
     Bstatus.clear();
     Bstatus<<(database->DICT_TC1DI3CH3EBCUCutOff_B1||database->DICT_TC1DI3CH2Bg2CutOff_B1)
-            <<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_TC1Bg2Fault_U32&0xff7fffff)
+            <<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_TC1Bg2Fault_U32&0xf87fffff)
             <<database->BR1CT_TC1Bg2AirBrkApplied_B1<<database->BR1CT_TC1Bg2AirBrkRlsed_B1;
     setBStatus(this->ui->Tc1bg2lbl,Bstatus);
 
     Bstatus.clear();
     Bstatus<<(database->DICT_MP1DI1CH8BrkAllCutOff_B1||database->DICT_MP1DI1CH6Bg1CutOff_B1)
-            <<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_MP1Bg1Fault_U32&0xff7fffff)
+            <<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_MP1Bg1Fault_U32&0xf87fffff)
             <<database->BR1CT_MP1Bg1AirBrkApplied_B1<<database->BR1CT_MP1Bg1AirBrkRlsed_B1;
     setBStatus(this->ui->Mp1bg1lbl,Bstatus);
 
     Bstatus.clear();
     Bstatus<<(database->DICT_MP1DI1CH8BrkAllCutOff_B1||database->DICT_MP1DI1CH7Bg2CutOff_B1)
-            <<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_MP1Bg2Fault_U32&0xff7fffff)
+            <<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_MP1Bg2Fault_U32&0xf87fffff)
             <<database->BR1CT_MP1Bg2AirBrkApplied_B1<<database->BR1CT_MP1Bg2AirBrkRlsed_B1;
     setBStatus(this->ui->Mp1bg2lbl,Bstatus);
 
     Bstatus.clear();
     Bstatus<<(database->DICT_M1DI1CH3BrkAllCutOff_B1||database->DICT_M1DI1CH1Bg1CutOff_B1)
-            <<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_M1Bg1Fault_U32&0xff7fffff)
+            <<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_M1Bg1Fault_U32&0xf87fffff)
             <<database->BR1CT_M1Bg1AirBrkApplied_B1<<database->BR1CT_M1Bg1AirBrkRlsed_B1;
     setBStatus(this->ui->M1bg1lbl,Bstatus);
 
     Bstatus.clear();
     Bstatus<<(database->DICT_M1DI1CH3BrkAllCutOff_B1||database->DICT_M1DI1CH2Bg2CutOff_B1)
-            <<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_M1Bg2Fault_U32&0xff7fffff)
+            <<!(database->CTHM_BCU1On_B1||database->CTHM_BCU2On_B1)<<(bool)(database->BR1CT_M1Bg2Fault_U32&0xf87fffff)
             <<database->BR1CT_M1Bg2AirBrkApplied_B1<<database->BR1CT_M1Bg2AirBrkRlsed_B1;
     setBStatus(this->ui->M1bg2lbl,Bstatus);
 
     Bstatus.clear();
     Bstatus<<(database->DICT_M2DI1CH3BrkAllCutOff_B1||database->DICT_M2DI1CH1Bg1CutOff_B1)
-            <<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_M2Bg1Fault_U32&0xff7fffff)
+            <<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_M2Bg1Fault_U32&0xf87fffff)
             <<database->BR2CT_M2Bg1AirBrkApplied_B1<<database->BR2CT_M2Bg1AirBrkRlsed_B1;
     setBStatus(this->ui->M2bg1lbl,Bstatus);
 
     Bstatus.clear();
     Bstatus<<(database->DICT_M2DI1CH3BrkAllCutOff_B1||database->DICT_M2DI1CH2Bg2CutOff_B1)
-            <<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_M2Bg2Fault_U32&0xff7fffff)
+            <<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_M2Bg2Fault_U32&0xf87fffff)
             <<database->BR2CT_M2Bg2AirBrkApplied_B1<<database->BR2CT_M2Bg2AirBrkRlsed_B1;
     setBStatus(this->ui->M2bg2lbl,Bstatus);
 
     Bstatus.clear();
     Bstatus<<(database->DICT_MP2DI1CH8BrkAllCutOff_B1||database->DICT_MP2DI1CH6Bg1CutOff_B1)
-            <<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_MP2Bg1Fault_U32&0xff7fffff)
+            <<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_MP2Bg1Fault_U32&0xf87fffff)
             <<database->BR2CT_MP2Bg1AirBrkApplied_B1<<database->BR2CT_MP2Bg1AirBrkRlsed_B1;
     setBStatus(this->ui->Mp2bg1lbl,Bstatus);
 
     Bstatus.clear();
     Bstatus<<(database->DICT_MP2DI1CH8BrkAllCutOff_B1||database->DICT_MP2DI1CH7Bg2CutOff_B1)
-            <<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_MP2Bg2Fault_U32&0xff7fffff)
+            <<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_MP2Bg2Fault_U32&0xf87fffff)
             <<database->BR2CT_MP2Bg2AirBrkApplied_B1<<database->BR2CT_MP2Bg2AirBrkRlsed_B1;
     setBStatus(this->ui->Mp2bg2lbl,Bstatus);
 
     Bstatus.clear();
     Bstatus<<(database->DICT_TC2DI3CH3EBCUCutOff_B1||database->DICT_TC2DI3CH1Bg1CutOff_B1)
-            <<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_TC2Bg1Fault_U32&0xff7fffff)
+            <<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_TC2Bg1Fault_U32&0xf87fffff)
             <<database->BR2CT_TC2Bg1AirBrkApplied_B1<<database->BR2CT_TC2Bg1AirBrkRlsed_B1;
     setBStatus(this->ui->Tc2bg1lbl,Bstatus);
 
     Bstatus.clear();
     Bstatus<<(database->DICT_TC2DI3CH3EBCUCutOff_B1||database->DICT_TC2DI3CH2Bg2CutOff_B1)
-            <<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_TC2Bg2Fault_U32&0xff7fffff)
+            <<!(database->CTHM_BCU3On_B1||database->CTHM_BCU4On_B1)<<(bool)(database->BR2CT_TC2Bg2Fault_U32&0xf87fffff)
             <<database->BR2CT_TC2Bg2AirBrkApplied_B1<<database->BR2CT_TC2Bg2AirBrkRlsed_B1;
     setBStatus(this->ui->Tc2bg2lbl,Bstatus);
 
@@ -854,13 +873,20 @@ void VehicleRunStatePage::updateTrainStatus()
 
     if(!(this->database->TR1CT_IESContacterQ1_B1||this->database->TR1CT_IESContacterQ2_B1))
     {
-        this->ui->Mp1supplylbl->show();
-        this->ui->Mp1supplylbl->setStyleSheet(SUPPLYON);
+        if(this->database->CTHM_WorkshopPowerSupplyMP1_B1)
+        {
+            this->ui->Mp1supplylbl->show();
+            this->ui->Mp1supplylbl->setStyleSheet(SUPPLYON);
+        }else {
+            this->ui->Mp1supplylbl->show();
+            this->ui->Mp1supplylbl->setStyleSheet(SUPPLYWORKSHOP);
+        }
+
     }else if(!this->database->TR1CT_IESContacterQ1_B1||this->database->TR1CT_IESContacterQ2_B1)
     {
         this->ui->Mp1supplylbl->show();
         this->ui->Mp1supplylbl->setStyleSheet(SUPPLYGROUND);
-    }else if(this->database->DICT_MP1DI1CH21BatteryCoverOpen_B1)
+    }else if(!this->database->DICT_MP1DI1CH21BatteryCoverOpen_B1)
     {
         this->ui->Mp1supplylbl->show();
         this->ui->Mp1supplylbl->setStyleSheet(SUPPLYOFF);
@@ -870,13 +896,19 @@ void VehicleRunStatePage::updateTrainStatus()
 
     if(!(this->database->TR4CT_IESContacterQ1_B1||this->database->TR4CT_IESContacterQ2_B1))
     {
-        this->ui->Mp2supplylbl->show();
-        this->ui->Mp2supplylbl->setStyleSheet(SUPPLYON);
+        if(this->database->CTHM_WorkshopPowerSupplyMP2_B1)
+        {
+            this->ui->Mp2supplylbl->show();
+            this->ui->Mp2supplylbl->setStyleSheet(SUPPLYON);
+        }else {
+            this->ui->Mp2supplylbl->show();
+            this->ui->Mp2supplylbl->setStyleSheet(SUPPLYWORKSHOP);
+        }
     }else if(!this->database->TR4CT_IESContacterQ1_B1||this->database->TR4CT_IESContacterQ2_B1)
     {
         this->ui->Mp2supplylbl->show();
         this->ui->Mp2supplylbl->setStyleSheet(SUPPLYGROUND);
-    }else if(this->database->DICT_MP2DI1CH21BatteryCoverOpen_B1)
+    }else if(!this->database->DICT_MP2DI1CH21BatteryCoverOpen_B1)
     {
         this->ui->Mp2supplylbl->show();
         this->ui->Mp2supplylbl->setStyleSheet(SUPPLYOFF);
@@ -991,8 +1023,8 @@ void VehicleRunStatePage::updateButtonsStatus()
     }
     //fire button
 
-    bool Firestatus ;
-   Firestatus = this->database->WSCT_Car1DFire_B1||this->database->WSCT_Car1FFire_B1||this->database->WSCT_Car1HFire_B1||
+    bool Firestatus1 ,Firestatus2;
+   Firestatus1 = this->database->WSCT_Car1DFire_B1||this->database->WSCT_Car1FFire_B1||this->database->WSCT_Car1HFire_B1||
          this->database->WSCT_Car1RFire_B1||this->database->WSCT_Car1CabFire_B1||
          this->database->WSCT_Car1Zone1HeavyFire_B1||this->database->WSCT_Car1Zone2HeavyFire_B1||
          this->database->WSCT_Car1Zone1LightFire_B1||this->database->WSCT_Car1Zone2LightFire_B1||
@@ -1018,9 +1050,23 @@ void VehicleRunStatePage::updateButtonsStatus()
          this->database->WSCT_Car4Zone1HeavyFire_B1||this->database->WSCT_Car4Zone2HeavyFire_B1||
          this->database->WSCT_Car4Zone1LightFire_B1||this->database->WSCT_Car4Zone2LightFire_B1||
          (this->database->DICT_M2DI1CH13PHFire1_B1&&this->database->DICT_M2DI1CH14PHFire2_B1);
-    if(Firestatus)
+
+
+   //Firestatus2 = database->WSCT_Car4FFire_B1
+   Firestatus2 =
+   database->WSCT_FrameBWaterInTapStatus_B1||database->WSCT_FrameBWaterOutTapStatus_B1||
+   database->WSCT_FrameBNi1PressureStatus_B1||database->WSCT_FrameBNi2PressureStatus_B1||
+   database->WSCT_FrameBWaterHeaterStatus_B1||database->WSCT_FrameBWaterStatus_B1||
+   database->WSCT_FrameAWaterInTapStatus_B1||database->WSCT_FrameAWaterOutTapStatus_B1||
+   database->WSCT_FrameANi1PressureStatus_B1||database->WSCT_FrameANi2PressureStatus_B1||
+   database->WSCT_FrameAWaterHeaterStatus_B1||database->WSCT_FrameAWaterStatus_B1;
+    if(Firestatus1)
     {
         this->ui->FirePageBtn->setStyleSheet(PButtonFIRE);
+    }else if(Firestatus2)
+    {
+        this->ui->FirePageBtn->setStyleSheet(PButtonALARM);
+
     }else
     {
         this->ui->FirePageBtn->setStyleSheet(PButtonUP);

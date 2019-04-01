@@ -34,7 +34,6 @@ void MaintainceFaultShowPage::getQueryStr(QString str, QueryType type)
 }
 void MaintainceFaultShowPage::showEvent(QShowEvent *)
 {
-    qDebug()<<m_QueryStr;
     switch (this->m_type){
     case System:
         CrrcFault::getCrrcFault()->getQueryFaultOfEachSystem(m_QueryStr);

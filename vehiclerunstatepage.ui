@@ -4272,6 +4272,31 @@ background-color:transparent;
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QLabel" name="LBLPanPump">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>330</y>
+     <width>81</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18px  &quot;微软雅黑&quot;;
+color: black;
+border:2px solid white;
+background-color: yellow;
+border-radius: 15px;</string>
+   </property>
+   <property name="text">
+    <string>2车 5车
+升弓泵
+工作</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

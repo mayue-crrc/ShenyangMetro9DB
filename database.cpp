@@ -82,7 +82,7 @@ Database::Database()
     HMiCT_ACDETestStartFlag_B1 = false;
 
     HMiCT_HMISWVerH_U8 = 2;
-    HMiCT_HMISWVerL_U8 = 49;
+    HMiCT_HMISWVerL_U8 = 56;
 
     for(int i =0; i< 12;i++)
     {
@@ -898,12 +898,12 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         tmp_pkgmp2 = tmp_pkgmp2>0?tmp_pkgmp2:0;
         tmp_pkgtc2 = tmp_pkgtc2>0?tmp_pkgtc2:0;
 
-        PLoad_TC1 = QString::number((float)(tmp_pkgtc1/(DefaultFullLoadTC1.toFloat()))*100,10,1);
-        PLoad_MP1 = QString::number((float)(tmp_pkgmp1/(DefaultFullLoadMP1.toFloat()))*100,10,1);
-        PLoad_M1 = QString::number((float)(tmp_pkgm1/(DefaultFullLoadM1.toFloat()))*100,10,1);
-        PLoad_M2 = QString::number((float)(tmp_pkgm2/(DefaultFullLoadM2.toFloat()))*100,10,1);
-        PLoad_MP2 = QString::number((float)(tmp_pkgmp2/(DefaultFullLoadMP2.toFloat()))*100,10,1);
-        PLoad_TC2 = QString::number((float)(tmp_pkgtc2/(DefaultFullLoadTC2.toFloat()))*100,10,1);
+        PLoad_TC1 = QString::number((float)((tmp_pkgtc1/(DefaultFullLoadTC1.toFloat()))*100>=3)?(((float)tmp_pkgtc1/(DefaultFullLoadTC1.toFloat()))*100):0,10,0);
+        PLoad_MP1 = QString::number((float)((tmp_pkgmp1/(DefaultFullLoadMP1.toFloat()))*100>=3)?(((float)tmp_pkgmp1/(DefaultFullLoadMP1.toFloat()))*100):0,10,0);
+        PLoad_M1 = QString::number((float)((tmp_pkgm1/(DefaultFullLoadM1.toFloat()))*100>=3)?(((float)tmp_pkgm1/(DefaultFullLoadM1.toFloat()))*100):0,10,0);
+        PLoad_M2 = QString::number((float)((tmp_pkgm2/(DefaultFullLoadM2.toFloat()))*100>=3)?(((float)tmp_pkgm2/(DefaultFullLoadM2.toFloat()))*100):0,10,0);
+        PLoad_MP2 = QString::number((float)((tmp_pkgmp2/(DefaultFullLoadMP2.toFloat()))*100>=3)?(((float)tmp_pkgmp2/(DefaultFullLoadMP2.toFloat()))*100):0,10,0);
+        PLoad_TC2 = QString::number((float)((tmp_pkgtc2/(DefaultFullLoadTC2.toFloat()))*100>=3)?(((float)tmp_pkgtc2/(DefaultFullLoadTC2.toFloat()))*100):0,10,0);
     }
 
     /////*******HMI -- CCU**********///////
@@ -3208,7 +3208,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
         // 门1 trust
         if (this->crrcMvb->getBool(realport1_1, 0, 7) && true == edcu1Online )//门控器1-1有效
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,1,this->crrcMvb->getUnsignedChar(realport1_1,1));
             // state byte
             // version
@@ -3224,7 +3224,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
         }
         else if (this->crrcMvb->getBool(realport2_1, 0, 7) && true == edcu2Online)//门控器2-1有效
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,1,this->crrcMvb->getUnsignedChar(realport2_1,1));
             // state byte
             // version
@@ -3238,7 +3238,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
             this->crrcMvb->setBool(virtualport2,28,0,this->crrcMvb->getBool(realport2_2,28,0));
         }else
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,1,0);
             // state byte
             // version
@@ -3255,7 +3255,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
         // 门2 trust
         if (this->crrcMvb->getBool(realport1_1, 0, 6)  && true == edcu1Online)//门控器1-2有效
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,2,this->crrcMvb->getUnsignedChar(realport1_1,2));
             // state byte
             // version
@@ -3270,7 +3270,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
         }
         else if (this->crrcMvb->getBool(realport2_1, 0, 6) && true == edcu2Online)//门控器2-2有效
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,2,this->crrcMvb->getUnsignedChar(realport2_1,2));
             // state byte
             // version
@@ -3284,7 +3284,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
             this->crrcMvb->setBool(virtualport2,28,1,this->crrcMvb->getBool(realport2_2,28,1));
         }else
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,2,0);
             // state byte
             // version
@@ -3301,7 +3301,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
         // 门3 trust
         if (this->crrcMvb->getBool(realport1_1, 0, 5) && true == edcu1Online)//门控器1-3有效
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,3,this->crrcMvb->getUnsignedChar(realport1_1,3));
             // state byte
             // version
@@ -3316,7 +3316,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
         }
         else if (this->crrcMvb->getBool(realport2_1, 0, 5) && true == edcu2Online)//门控器2-3有效
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,3,this->crrcMvb->getUnsignedChar(realport2_1,3));
             // state byte
             // version
@@ -3330,7 +3330,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
             this->crrcMvb->setBool(virtualport2,28,2,this->crrcMvb->getBool(realport2_2,28,2));
         }else
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,3,0);
             // state byte
             // version
@@ -3347,7 +3347,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
         // 门4 trust
         if (this->crrcMvb->getBool(realport1_1, 0, 4) && true == edcu1Online)//门控器1-4有效
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,4,this->crrcMvb->getUnsignedChar(realport1_1,4));
             // state byte
             // version
@@ -3362,7 +3362,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
         }
         else if (this->crrcMvb->getBool(realport2_1, 0, 4) && true == edcu2Online)//门控器2-4有效
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,4,this->crrcMvb->getUnsignedChar(realport2_1,4));
             // state byte
             // version
@@ -3376,7 +3376,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
             this->crrcMvb->setBool(virtualport2,28,3,this->crrcMvb->getBool(realport2_2,28,3));
         }else
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,4,0);
             // state byte
             // version
@@ -3393,7 +3393,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
         // 门5 trust
         if (this->crrcMvb->getBool(realport1_1, 0, 3) && true == edcu1Online)//门控器1-5有效
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,5,this->crrcMvb->getUnsignedChar(realport1_1,5));
             // state byte
             // version
@@ -3408,7 +3408,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
         }
         else if (this->crrcMvb->getBool(realport2_1, 0, 3) && true == edcu2Online)//门控器2-5有效
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,5,this->crrcMvb->getUnsignedChar(realport2_1,5));
             // state byte
             // version
@@ -3422,7 +3422,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
             this->crrcMvb->setBool(virtualport2,28,4,this->crrcMvb->getBool(realport2_2,28,4));
         }else
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,5,0);
             // state byte
             // version
@@ -3439,7 +3439,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
         // 门6 trust
         if (this->crrcMvb->getBool(realport1_1, 0, 2) && true == edcu1Online)//门控器1-6有效
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,6,this->crrcMvb->getUnsignedChar(realport1_1,6));
             // state byte
             // version
@@ -3454,7 +3454,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
         }
         else if (this->crrcMvb->getBool(realport2_1, 0, 2) && true == edcu2Online)//门控器2-6有效
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,6,this->crrcMvb->getUnsignedChar(realport2_1,6));
             // state byte
             // version
@@ -3468,7 +3468,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
             this->crrcMvb->setBool(virtualport2,28,5,this->crrcMvb->getBool(realport2_2,28,5));
         }else
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,6,0);
             // state byte
             // version
@@ -3485,7 +3485,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
         // 门7 trust
         if (this->crrcMvb->getBool(realport1_1, 0, 1) && true == edcu1Online)//门控器1-7有效
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,7,this->crrcMvb->getUnsignedChar(realport1_1,7));
             // state byte
             // version
@@ -3500,7 +3500,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
         }
         else if (this->crrcMvb->getBool(realport2_1, 0, 1) && true == edcu2Online)//门控器2-7有效
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,7,this->crrcMvb->getUnsignedChar(realport2_1,7));
             // state byte
             // version
@@ -3514,7 +3514,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
             this->crrcMvb->setBool(virtualport2,28,6,this->crrcMvb->getBool(realport2_2,28,6));
         }else
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,7,0);
             // state byte
             // version
@@ -3531,7 +3531,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
         // 门8 trust
         if (this->crrcMvb->getBool(realport1_1, 0, 0) && true == edcu1Online)//门控器1-8有效
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,8,this->crrcMvb->getUnsignedChar(realport1_1,8));
             // state byte
             // version
@@ -3546,7 +3546,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
         }
         else if (this->crrcMvb->getBool(realport2_1, 0, 0) && true == edcu2Online)//门控器2-8有效
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,8,this->crrcMvb->getUnsignedChar(realport2_1,8));
             // state byte
             // version
@@ -3560,7 +3560,7 @@ void Database::createEDCUList(bool edcu1Online, bool edcu2Online, QList<unsigned
             this->crrcMvb->setBool(virtualport2,28,7,this->crrcMvb->getBool(realport2_2,28,7));
         }else
         {
-            // fault byte   5 fault boolean
+            // fault byte   6 fault boolean
             this->crrcMvb->setUnsignedChar(virtualport1,8,0);
             // state byte
             // version

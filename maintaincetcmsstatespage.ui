@@ -627,7 +627,7 @@ background-color: rgb(0, 0, 0);
 </string>
    </property>
    <property name="text">
-    <string>EDCU3</string>
+    <string>EDCU1</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -647,7 +647,7 @@ background-color: rgb(0, 0, 0);
 </string>
    </property>
    <property name="text">
-    <string>EDCU4</string>
+    <string>EDCU2</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -687,7 +687,7 @@ background-color: rgb(0, 0, 0);
 </string>
    </property>
    <property name="text">
-    <string>EDCU5</string>
+    <string>EDCU1</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -767,7 +767,7 @@ background-color: rgb(0, 0, 0);
 </string>
    </property>
    <property name="text">
-    <string>EDCU6</string>
+    <string>EDCU2</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -807,7 +807,7 @@ background-color: rgb(0, 0, 0);
 </string>
    </property>
    <property name="text">
-    <string>EDCU8</string>
+    <string>EDCU2</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -907,7 +907,7 @@ background-color: rgb(0, 0, 0);
 </string>
    </property>
    <property name="text">
-    <string>EDCU7</string>
+    <string>EDCU1</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -927,7 +927,7 @@ background-color: rgb(0, 0, 0);
 </string>
    </property>
    <property name="text">
-    <string>EDCU9</string>
+    <string>EDCU1</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -986,7 +986,7 @@ background-color: rgb(0, 0, 0);
 </string>
    </property>
    <property name="text">
-    <string>EDCU10</string>
+    <string>EDCU2</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -1106,7 +1106,7 @@ background-color: rgb(0, 0, 0);
 </string>
    </property>
    <property name="text">
-    <string>EDCU11</string>
+    <string>EDCU1</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -1146,7 +1146,7 @@ background-color: rgb(0, 0, 0);
 </string>
    </property>
    <property name="text">
-    <string>EDCU12</string>
+    <string>EDCU2</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

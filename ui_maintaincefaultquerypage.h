@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincefaultquerypage.ui'
 **
-** Created: Wed Dec 26 19:13:13 2018
+** Created: Mon Mar 11 11:21:04 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -66,6 +66,8 @@ public:
     QLabel *label_4;
     QLabel *label_5;
     QPushButton *TCMSFaultBtn_3;
+    QLabel *tc1directionlbl;
+    QLabel *tc2directionlbl;
 
     void setupUi(QWidget *MaintainceFaultQueryPage)
     {
@@ -342,6 +344,16 @@ public:
         TCMSFaultBtn_3->setFocusPolicy(Qt::NoFocus);
         TCMSFaultBtn_3->setStyleSheet(QString::fromUtf8("	background-color: gray;\n"
 ""));
+        tc1directionlbl = new QLabel(MaintainceFaultQueryPage);
+        tc1directionlbl->setObjectName(QString::fromUtf8("tc1directionlbl"));
+        tc1directionlbl->setGeometry(QRect(130, 40, 51, 51));
+        tc1directionlbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/TC1traingraphDirection.bmp);"));
+        tc1directionlbl->setAlignment(Qt::AlignCenter);
+        tc2directionlbl = new QLabel(MaintainceFaultQueryPage);
+        tc2directionlbl->setObjectName(QString::fromUtf8("tc2directionlbl"));
+        tc2directionlbl->setGeometry(QRect(855, 40, 51, 51));
+        tc2directionlbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/TC2traingraphDirection.bmp);"));
+        tc2directionlbl->setAlignment(Qt::AlignCenter);
 
         retranslateUi(MaintainceFaultQueryPage);
 
@@ -393,6 +405,8 @@ public:
         label_4->setText(QApplication::translate("MaintainceFaultQueryPage", "\350\256\260\345\275\225", 0, QApplication::UnicodeUTF8));
         label_5->setText(QApplication::translate("MaintainceFaultQueryPage", "\346\234\252\350\256\260\345\275\225", 0, QApplication::UnicodeUTF8));
         TCMSFaultBtn_3->setText(QString());
+        tc1directionlbl->setText(QString());
+        tc2directionlbl->setText(QString());
     } // retranslateUi
 
 };

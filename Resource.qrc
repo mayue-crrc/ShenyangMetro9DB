@@ -87,5 +87,6 @@
         <file>images/supplyground.jpg</file>
         <file>images/TC1Active.png</file>
         <file>images/TC2Active.png</file>
+        <file>images/workshop.bmp</file>
     </qresource>
 </RCC>
