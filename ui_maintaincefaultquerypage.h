@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintaincefaultquerypage.ui'
 **
-** Created: Mon Mar 11 11:21:04 2019
+** Created: Wed Apr 3 16:50:10 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -363,13 +363,13 @@ public:
     void retranslateUi(QWidget *MaintainceFaultQueryPage)
     {
         MaintainceFaultQueryPage->setWindowTitle(QApplication::translate("MaintainceFaultQueryPage", "Form", 0, QApplication::UnicodeUTF8));
-        TC1->setText(QApplication::translate("MaintainceFaultQueryPage", "TC1", 0, QApplication::UnicodeUTF8));
+        TC1->setText(QApplication::translate("MaintainceFaultQueryPage", "1\350\275\246", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("MaintainceFaultQueryPage", "\350\275\246\350\276\206", 0, QApplication::UnicodeUTF8));
-        MP1->setText(QApplication::translate("MaintainceFaultQueryPage", "MP1", 0, QApplication::UnicodeUTF8));
-        M1->setText(QApplication::translate("MaintainceFaultQueryPage", "M1", 0, QApplication::UnicodeUTF8));
-        M2->setText(QApplication::translate("MaintainceFaultQueryPage", "M2", 0, QApplication::UnicodeUTF8));
-        MP2->setText(QApplication::translate("MaintainceFaultQueryPage", "MP2", 0, QApplication::UnicodeUTF8));
-        TC2->setText(QApplication::translate("MaintainceFaultQueryPage", "TC2", 0, QApplication::UnicodeUTF8));
+        MP1->setText(QApplication::translate("MaintainceFaultQueryPage", "2\350\275\246", 0, QApplication::UnicodeUTF8));
+        M1->setText(QApplication::translate("MaintainceFaultQueryPage", "3\350\275\246", 0, QApplication::UnicodeUTF8));
+        M2->setText(QApplication::translate("MaintainceFaultQueryPage", "4\350\275\246", 0, QApplication::UnicodeUTF8));
+        MP2->setText(QApplication::translate("MaintainceFaultQueryPage", "5\350\275\246", 0, QApplication::UnicodeUTF8));
+        TC2->setText(QApplication::translate("MaintainceFaultQueryPage", "6\350\275\246", 0, QApplication::UnicodeUTF8));
         label_2->setText(QString());
         returnBtn->setText(QApplication::translate("MaintainceFaultQueryPage", "\350\277\224\345\233\236", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("MaintainceFaultQueryPage", "\347\263\273\347\273\237", 0, QApplication::UnicodeUTF8));

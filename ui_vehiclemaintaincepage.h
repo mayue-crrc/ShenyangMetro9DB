@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclemaintaincepage.ui'
 **
-** Created: Wed Oct 24 13:51:38 2018
+** Created: Wed Apr 3 16:45:58 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -188,7 +188,7 @@ public:
         BrakeTestBtn->setFocusPolicy(Qt::NoFocus);
         RuntestBtn = new QPushButton(VehicleMaintaincePage);
         RuntestBtn->setObjectName(QString::fromUtf8("RuntestBtn"));
-        RuntestBtn->setGeometry(QRect(860, 540, 150, 60));
+        RuntestBtn->setGeometry(QRect(990, 210, 21, 21));
         RuntestBtn->setFocusPolicy(Qt::NoFocus);
         RuntestBtn->setStyleSheet(QString::fromUtf8("background-color:black;\n"
 "color:black;\n"
@@ -199,7 +199,7 @@ public:
         TCMSStateBtn->setFocusPolicy(Qt::NoFocus);
         HMIInitBtn = new QPushButton(VehicleMaintaincePage);
         HMIInitBtn->setObjectName(QString::fromUtf8("HMIInitBtn"));
-        HMIInitBtn->setGeometry(QRect(690, 390, 150, 60));
+        HMIInitBtn->setGeometry(QRect(890, 550, 100, 30));
         HMIInitBtn->setFocusPolicy(Qt::NoFocus);
         HMIInitBtn->setStyleSheet(QString::fromUtf8("background-color:black;\n"
 "color:black;\n"
@@ -210,7 +210,7 @@ public:
         DataManagementBtn->setFocusPolicy(Qt::NoFocus);
         AllDataBtn = new QPushButton(VehicleMaintaincePage);
         AllDataBtn->setObjectName(QString::fromUtf8("AllDataBtn"));
-        AllDataBtn->setGeometry(QRect(690, 260, 150, 60));
+        AllDataBtn->setGeometry(QRect(765, 550, 100, 30));
         AllDataBtn->setFocusPolicy(Qt::NoFocus);
         AllDataBtn->setStyleSheet(QString::fromUtf8("background-color:black;\n"
 "color:black;\n"

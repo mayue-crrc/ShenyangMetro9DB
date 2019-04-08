@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maintainceallportspage.ui'
 **
-** Created: Tue Jan 29 08:13:52 2019
+** Created: Wed Apr 3 10:22:07 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -150,7 +150,7 @@ public:
         RIOMBtn->setText(QApplication::translate("MaintainceAllPortsPage", "RIOM", 0, QApplication::UnicodeUTF8));
         HMIBtn->setText(QApplication::translate("MaintainceAllPortsPage", "HMI", 0, QApplication::UnicodeUTF8));
         ERMBtn->setText(QApplication::translate("MaintainceAllPortsPage", "ERM", 0, QApplication::UnicodeUTF8));
-        ACUBtn->setText(QApplication::translate("MaintainceAllPortsPage", "ACU", 0, QApplication::UnicodeUTF8));
+        ACUBtn->setText(QApplication::translate("MaintainceAllPortsPage", "HVAC", 0, QApplication::UnicodeUTF8));
         EBCUBtn->setText(QApplication::translate("MaintainceAllPortsPage", "BCU", 0, QApplication::UnicodeUTF8));
         PIDSBtn->setText(QApplication::translate("MaintainceAllPortsPage", "PIDS", 0, QApplication::UnicodeUTF8));
         EDCUBtn->setText(QApplication::translate("MaintainceAllPortsPage", "EDCU", 0, QApplication::UnicodeUTF8));
@@ -158,7 +158,7 @@ public:
         SIVBtn->setText(QApplication::translate("MaintainceAllPortsPage", "ACM", 0, QApplication::UnicodeUTF8));
         WMSATCBtn->setText(QApplication::translate("MaintainceAllPortsPage", "WMS\n"
 "ATC", 0, QApplication::UnicodeUTF8));
-        DCUBtn->setText(QApplication::translate("MaintainceAllPortsPage", "DCU", 0, QApplication::UnicodeUTF8));
+        DCUBtn->setText(QApplication::translate("MaintainceAllPortsPage", "MCM", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

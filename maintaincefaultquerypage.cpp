@@ -37,7 +37,7 @@ MaintainceFaultQueryPage::~MaintainceFaultQueryPage()
 
 void MaintainceFaultQueryPage::TrainSelectEvent()
 {
-    m_TrainSelect = ((QPushButton *)this->sender())->objectName();
+    m_TrainSelect = ((QPushButton *)this->sender())->text();
     emit QueryFault(m_TrainSelect,Positon);
     //CrrcFault::getCrrcFault()->getQueryFaultOfEachVehicle(m_TrainSelect);
     changePage(uMaintainceFaultShowPage);
@@ -59,12 +59,12 @@ void MaintainceFaultQueryPage::updatePage()
 {
     if(CrrcFault::getCrrcFault()->isRunning())
     {
-        setBtnsStyle(this->ui->TC1,CrrcFault::getCrrcFault()->getFaultCntOfEachVehicle("TC1"));
-        setBtnsStyle(this->ui->MP1,CrrcFault::getCrrcFault()->getFaultCntOfEachVehicle("MP1"));
-        setBtnsStyle(this->ui->M1,CrrcFault::getCrrcFault()->getFaultCntOfEachVehicle("M1"));
-        setBtnsStyle(this->ui->M2,CrrcFault::getCrrcFault()->getFaultCntOfEachVehicle("M2"));
-        setBtnsStyle(this->ui->MP2,CrrcFault::getCrrcFault()->getFaultCntOfEachVehicle("MP2"));
-        setBtnsStyle(this->ui->TC2,CrrcFault::getCrrcFault()->getFaultCntOfEachVehicle("TC2"));
+        setBtnsStyle(this->ui->TC1,CrrcFault::getCrrcFault()->getFaultCntOfEachVehicle("1车"));
+        setBtnsStyle(this->ui->MP1,CrrcFault::getCrrcFault()->getFaultCntOfEachVehicle("2车"));
+        setBtnsStyle(this->ui->M1,CrrcFault::getCrrcFault()->getFaultCntOfEachVehicle("3车"));
+        setBtnsStyle(this->ui->M2,CrrcFault::getCrrcFault()->getFaultCntOfEachVehicle("4车"));
+        setBtnsStyle(this->ui->MP2,CrrcFault::getCrrcFault()->getFaultCntOfEachVehicle("5车"));
+        setBtnsStyle(this->ui->TC2,CrrcFault::getCrrcFault()->getFaultCntOfEachVehicle("6车"));
 
         setBtnsStyle(this->ui->TCMS,CrrcFault::getCrrcFault()->getFaultCntOfEachSystem("TCMS"));
         setBtnsStyle(this->ui->BCU,CrrcFault::getCrrcFault()->getFaultCntOfEachSystem("BCU"));

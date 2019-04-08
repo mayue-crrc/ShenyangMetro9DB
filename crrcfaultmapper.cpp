@@ -20,7 +20,7 @@ bool CrrcFaultMapper::InsertHistoryFault(QHash<quint32,FaultBean>& inserthash)
     char *zErrMsg = 0;
     int rc = sqlite3_exec(databaseHistoryFault,"begin",0,0,&zErrMsg);
 
-    foreach(unsigned short int key,inserthash.keys() )
+    foreach(unsigned int key,inserthash.keys() )
     {
         QString ssm;
         ssm="insert into fault_history (History_ID,ID,start_time,end_time,confirm)" "values ("+QString::number(key)+","
@@ -51,7 +51,7 @@ bool CrrcFaultMapper::UpdateHistoryFault(QHash<quint32,FaultBean>& updatehash)
     char *zErrMsg = 0;
     int rc = sqlite3_exec(databaseHistoryFault,"begin",0,0,&zErrMsg);
 
-    foreach(unsigned short int key,updatehash.keys() )
+    foreach(unsigned int key,updatehash.keys() )
     {
         QString ssm;
         ssm = "update fault_history set end_time = '"+ updatehash[key].EndTime +"' where History_ID = "+QString::number(key);

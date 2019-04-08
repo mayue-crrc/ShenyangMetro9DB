@@ -420,10 +420,10 @@ font: 20px, &quot;微软雅黑&quot;;
   <widget class="QPushButton" name="RuntestBtn">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>540</y>
-     <width>150</width>
-     <height>60</height>
+     <x>990</x>
+     <y>210</y>
+     <width>21</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="focusPolicy">
@@ -457,10 +457,10 @@ border:black solid;</string>
   <widget class="QPushButton" name="HMIInitBtn">
    <property name="geometry">
     <rect>
-     <x>690</x>
-     <y>390</y>
-     <width>150</width>
-     <height>60</height>
+     <x>890</x>
+     <y>550</y>
+     <width>100</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="focusPolicy">
@@ -494,10 +494,10 @@ border:black solid;</string>
   <widget class="QPushButton" name="AllDataBtn">
    <property name="geometry">
     <rect>
-     <x>690</x>
-     <y>260</y>
-     <width>150</width>
-     <height>60</height>
+     <x>765</x>
+     <y>550</y>
+     <width>100</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="focusPolicy">

@@ -109,7 +109,7 @@ void MaintainceVersionPage::updatePage()
     case VTCUPAGE:
         {
             QList<QString> namestr,versionstr;
-            namestr<<"DCU"<<"BCU"<<"ACM"<<"CCU-D\n牵引记录仪"<<""<<""<<""<<""<<""<<"";
+            namestr<<"MCM"<<"BCU"<<"ACM"<<"CCU-D\n牵引记录仪"<<""<<""<<""<<""<<""<<"";
             versionstr<<"--"<<QString::number(this->database->TR1CT_DCUMVersion_I16)<<QString::number(this->database->TR2CT_DCUMVersion_I16)
                       <<QString::number(this->database->TR3CT_DCUMVersion_I16)<<QString::number(this->database->TR4CT_DCUMVersion_I16)<<"--"
                       <<QString::number(this->database->BR1CT_TcMVBVersion_U8/16)+"."+QString::number(this->database->BR1CT_TcMVBVersion_U8%16)<<"--"

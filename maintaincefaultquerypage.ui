@@ -47,7 +47,7 @@ QLabel
     <enum>Qt::NoFocus</enum>
    </property>
    <property name="text">
-    <string>TC1</string>
+    <string>1车</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -79,7 +79,7 @@ QLabel
     <enum>Qt::NoFocus</enum>
    </property>
    <property name="text">
-    <string>MP1</string>
+    <string>2车</string>
    </property>
   </widget>
   <widget class="QPushButton" name="M1">
@@ -95,7 +95,7 @@ QLabel
     <enum>Qt::NoFocus</enum>
    </property>
    <property name="text">
-    <string>M1</string>
+    <string>3车</string>
    </property>
   </widget>
   <widget class="QPushButton" name="M2">
@@ -111,7 +111,7 @@ QLabel
     <enum>Qt::NoFocus</enum>
    </property>
    <property name="text">
-    <string>M2</string>
+    <string>4车</string>
    </property>
   </widget>
   <widget class="QPushButton" name="MP2">
@@ -127,7 +127,7 @@ QLabel
     <enum>Qt::NoFocus</enum>
    </property>
    <property name="text">
-    <string>MP2</string>
+    <string>5车</string>
    </property>
   </widget>
   <widget class="QPushButton" name="TC2">
@@ -143,7 +143,7 @@ QLabel
     <enum>Qt::NoFocus</enum>
    </property>
    <property name="text">
-    <string>TC2</string>
+    <string>6车</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">

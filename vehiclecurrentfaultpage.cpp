@@ -89,7 +89,6 @@ void VehicleCurrentFaultPage::updatePage()
     this->ui->faultcntlbl->setText(QString::number(m_totalFaultNum)+" 条故障记录");
 
 
-
     m_totalPageIndex = (m_crrcFault->getCurrentFaultListSize()-1)/MAXCNTPERPAGE+1;
     if(m_crrcFault->getCurrentFaultListSize()%MAXCNTPERPAGE == 0 )
     {
@@ -200,17 +199,17 @@ void VehicleCurrentFaultPage::updatePage()
     t_tc1cnt=t_mp1cnt=t_m1cnt=t_m2cnt=t_mp2cnt=t_tc2cnt=0;
     for(int i = 0; i < m_totalFaultNum;i++)
     {
-        if(this->m_crrcFault->getCurrentFaultPosition(i) == "TC1")
+        if(this->m_crrcFault->getCurrentFaultPosition(i) == "1车")
             t_tc1cnt++;
-        if(this->m_crrcFault->getCurrentFaultPosition(i) == "MP1")
+        if(this->m_crrcFault->getCurrentFaultPosition(i) == "2车")
             t_mp1cnt++;
-        if(this->m_crrcFault->getCurrentFaultPosition(i) == "M1")
+        if(this->m_crrcFault->getCurrentFaultPosition(i) == "3车")
             t_m1cnt++;
-        if(this->m_crrcFault->getCurrentFaultPosition(i) == "M2")
+        if(this->m_crrcFault->getCurrentFaultPosition(i) == "4车")
             t_m2cnt++;
-        if(this->m_crrcFault->getCurrentFaultPosition(i) == "MP2")
+        if(this->m_crrcFault->getCurrentFaultPosition(i) == "5车")
             t_mp2cnt++;
-        if(this->m_crrcFault->getCurrentFaultPosition(i) == "TC2")
+        if(this->m_crrcFault->getCurrentFaultPosition(i) == "6车")
             t_tc2cnt++;
 
     }

@@ -603,15 +603,19 @@ void Widget::showEvent(QShowEvent *)
             crrcMvb->addSinkPort(0x524,uFCode3,1024);
 
             //CCU-SIV
+            crrcMvb->addSinkPort(0x508,uFCode2,32);
             crrcMvb->addSinkPort(0x509,uFCode3,64);
             crrcMvb->addSinkPort(0x50A,uFCode3,1024);
 
+            crrcMvb->addSinkPort(0x518,uFCode2,32);
             crrcMvb->addSinkPort(0x519,uFCode3,64);
             crrcMvb->addSinkPort(0x51A,uFCode3,1024);
 
+            crrcMvb->addSinkPort(0x538,uFCode2,32);
             crrcMvb->addSinkPort(0x539,uFCode3,64);
             crrcMvb->addSinkPort(0x53A,uFCode3,1024);
 
+            crrcMvb->addSinkPort(0x528,uFCode2,32);
             crrcMvb->addSinkPort(0x529,uFCode3,64);
             crrcMvb->addSinkPort(0x52A,uFCode3,1024);
 

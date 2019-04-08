@@ -172,7 +172,7 @@ border-radius:8px;
     <string notr="true"/>
    </property>
    <property name="text">
-    <string>ACU</string>
+    <string>HVAC</string>
    </property>
   </widget>
   <widget class="QPushButton" name="EBCUBtn">
@@ -306,7 +306,7 @@ ATC</string>
     <string notr="true"/>
    </property>
    <property name="text">
-    <string>DCU</string>
+    <string>MCM</string>
    </property>
   </widget>
  </widget>
