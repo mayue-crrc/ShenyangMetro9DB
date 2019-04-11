@@ -992,17 +992,23 @@ void VehicleRunStatePage::updateButtonsStatus()
     }
     //液磁复位按键
     bool tmp = false;
-    for (int i = 0; i<12 ;i++)
-    {
-        tmp = tmp||this->database->HMiCT_PowerOFF_B1[i]||this->database->HMiCT_PowerON_B1[i];
-    }
+//    for (int i = 0; i<12 ;i++)
+//    {
+//        tmp = tmp||this->database->HMiCT_PowerOFF_B1[i]||this->database->HMiCT_PowerON_B1[i];
+//    }
+    tmp=this->database->DICT_TC1DI5CH19PngBroadcastStatus_B1&&this->database->DICT_MP1DI1CH15PngBroadcastStatus_B1
+        &&this->database->DICT_M1DI1CH11PngBroadcastStatus_B1&&this->database->DICT_M2DI1CH11PngBroadcastStatus_B1
+        &&this->database->DICT_MP2DI1CH15PngBroadcastStatus_B1&&this->database->DICT_TC2DI5CH19PngBroadcastStatus_B1
+        &&this->database->DICT_TC1DI5CH20DoorPowerStatus_B1&&this->database->DICT_MP1DI1CH16DoorPowerStatus_B1
+        &&this->database->DICT_M1DI1CH12DoorPowerStatus_B1&&this->database->DICT_M2DI1CH12DoorPowerStatus_B1
+        &&this->database->DICT_MP2DI1CH16DoorPowerStatus_B1&&this->database->DICT_TC2DI5CH20DoorPowerStatus_B1;
     if(tmp)
     {
-        this->ui->LMResetPageBtn->setStyleSheet(PButtonALARM);
+        this->ui->LMResetPageBtn->setStyleSheet(PButtonUP);
 
     }else
     {
-        this->ui->LMResetPageBtn->setStyleSheet(PButtonUP);
+        this->ui->LMResetPageBtn->setStyleSheet(PButtonALARM);
 
     }
 
