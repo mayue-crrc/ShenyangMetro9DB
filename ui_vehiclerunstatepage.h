@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclerunstatepage.ui'
 **
-** Created: Wed Mar 13 14:40:24 2019
+** Created: Tue Apr 16 15:47:16 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -218,6 +218,10 @@ public:
     QLabel *LBL_TC1Key;
     QLabel *LBL_TC2Key;
     QLabel *LBLPanPump;
+    QLabel *Mp1FootPumplbl;
+    QLabel *Mp1FrontDoorCantCloselbl;
+    QLabel *Mp2FrontDoorCantCloselbl;
+    QLabel *Mp2FootPumplbl;
 
     void setupUi(QWidget *VehicleRunStatePage)
     {
@@ -813,7 +817,7 @@ public:
         Mp1Motor1lbl->setAlignment(Qt::AlignCenter);
         Mp1supplylbl = new QLabel(VehicleRunStatePage);
         Mp1supplylbl->setObjectName(QString::fromUtf8("Mp1supplylbl"));
-        Mp1supplylbl->setGeometry(QRect(320, 380, 31, 31));
+        Mp1supplylbl->setGeometry(QRect(320, 380, 26, 26));
         Mp1supplylbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/supply.bmp);"));
         Mp1supplylbl->setAlignment(Qt::AlignCenter);
         M1Door6lbl = new QLabel(VehicleRunStatePage);
@@ -1740,7 +1744,7 @@ public:
 "border-radius: 15px;"));
         Mp2supplylbl = new QLabel(VehicleRunStatePage);
         Mp2supplylbl->setObjectName(QString::fromUtf8("Mp2supplylbl"));
-        Mp2supplylbl->setGeometry(QRect(660, 380, 31, 31));
+        Mp2supplylbl->setGeometry(QRect(660, 380, 26, 26));
         Mp2supplylbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/supply.bmp);"));
         Mp2supplylbl->setAlignment(Qt::AlignCenter);
         LBL_TC1Key = new QLabel(VehicleRunStatePage);
@@ -1766,6 +1770,28 @@ public:
 "background-color: yellow;\n"
 "border-radius: 15px;"));
         LBLPanPump->setAlignment(Qt::AlignCenter);
+        Mp1FootPumplbl = new QLabel(VehicleRunStatePage);
+        Mp1FootPumplbl->setObjectName(QString::fromUtf8("Mp1FootPumplbl"));
+        Mp1FootPumplbl->setGeometry(QRect(290, 380, 26, 26));
+        Mp1FootPumplbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/footpump.bmp);\n"
+""));
+        Mp1FootPumplbl->setAlignment(Qt::AlignCenter);
+        Mp1FrontDoorCantCloselbl = new QLabel(VehicleRunStatePage);
+        Mp1FrontDoorCantCloselbl->setObjectName(QString::fromUtf8("Mp1FrontDoorCantCloselbl"));
+        Mp1FrontDoorCantCloselbl->setGeometry(QRect(350, 380, 26, 26));
+        Mp1FrontDoorCantCloselbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);"));
+        Mp1FrontDoorCantCloselbl->setAlignment(Qt::AlignCenter);
+        Mp2FrontDoorCantCloselbl = new QLabel(VehicleRunStatePage);
+        Mp2FrontDoorCantCloselbl->setObjectName(QString::fromUtf8("Mp2FrontDoorCantCloselbl"));
+        Mp2FrontDoorCantCloselbl->setGeometry(QRect(630, 380, 26, 26));
+        Mp2FrontDoorCantCloselbl->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);\n"
+""));
+        Mp2FrontDoorCantCloselbl->setAlignment(Qt::AlignCenter);
+        Mp2FootPumplbl = new QLabel(VehicleRunStatePage);
+        Mp2FootPumplbl->setObjectName(QString::fromUtf8("Mp2FootPumplbl"));
+        Mp2FootPumplbl->setGeometry(QRect(690, 380, 26, 26));
+        Mp2FootPumplbl->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/footpump.bmp);"));
+        Mp2FootPumplbl->setAlignment(Qt::AlignCenter);
 
         retranslateUi(VehicleRunStatePage);
 
@@ -1985,6 +2011,10 @@ public:
         LBLPanPump->setText(QApplication::translate("VehicleRunStatePage", "2\350\275\246 5\350\275\246\n"
 "\345\215\207\345\274\223\346\263\265\n"
 "\345\267\245\344\275\234", 0, QApplication::UnicodeUTF8));
+        Mp1FootPumplbl->setText(QString());
+        Mp1FrontDoorCantCloselbl->setText(QApplication::translate("VehicleRunStatePage", "PH", 0, QApplication::UnicodeUTF8));
+        Mp2FrontDoorCantCloselbl->setText(QApplication::translate("VehicleRunStatePage", "PH", 0, QApplication::UnicodeUTF8));
+        Mp2FootPumplbl->setText(QString());
     } // retranslateUi
 
 };

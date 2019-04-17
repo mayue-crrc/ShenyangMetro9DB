@@ -962,6 +962,28 @@ void VehicleRunStatePage::updateTrainStatus()
     setFireStatus(this->ui->M2FireAlarmlbl,Firestatus,(bool)this->database->WSCT_M2Fault);
     Firestatus = false;
 
+    //FOOTPUMP
+    if(this->database->DICT_MP1DI1CH2FootPumpOn_B1)
+        this->ui->Mp1FootPumplbl->show();
+    else
+        this->ui->Mp1FootPumplbl->hide();
+
+    if(this->database->DICT_MP2DI1CH2FootPumpOn_B1)
+        this->ui->Mp2FootPumplbl->show();
+    else
+        this->ui->Mp2FootPumplbl->hide();
+
+    //前舱门
+    if(this->database->TR1CT_FrontDoorCantCloseFlt_B1)
+        this->ui->Mp1FrontDoorCantCloselbl->show();
+    else
+        this->ui->Mp1FrontDoorCantCloselbl->hide();
+
+    if(this->database->TR4CT_FrontDoorCantCloseFlt_B1)
+        this->ui->Mp2FrontDoorCantCloselbl->show();
+    else
+        this->ui->Mp2FrontDoorCantCloselbl->hide();
+
 }
 
 void VehicleRunStatePage::updateButtonsStatus()

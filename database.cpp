@@ -82,7 +82,7 @@ Database::Database()
     HMiCT_ACDETestStartFlag_B1 = false;
 
     HMiCT_HMISWVerH_U8 = 2;
-    HMiCT_HMISWVerL_U8 = 59;
+    HMiCT_HMISWVerL_U8 = 60;
 
     for(int i =0; i< 12;i++)
     {
@@ -1350,7 +1350,8 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         TR1CT_IESContacterQ1_B1 = this->crrcMvb->getBool(0x491,31,2);
         TR4CT_IESContacterQ2_B1 = this->crrcMvb->getBool(0x481,31,1);
         TR4CT_IESContacterQ1_B1 = this->crrcMvb->getBool(0x481,31,2);
-
+        TR1CT_FrontDoorCantCloseFlt_B1 = this->crrcMvb->getBool(0x494,5,1);
+        TR4CT_FrontDoorCantCloseFlt_B1 = this->crrcMvb->getBool(0x484,5,1);
 
         //CCU-DCU
         this->CTTR1_EBCutOff_B1 = this->crrcMvb->getBool(0x49A,28,6);

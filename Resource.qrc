@@ -88,5 +88,6 @@
         <file>images/TC1Active.png</file>
         <file>images/TC2Active.png</file>
         <file>images/workshop.bmp</file>
+        <file>images/footpump.bmp</file>
     </qresource>
 </RCC>

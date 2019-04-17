@@ -1676,8 +1676,8 @@ color:black;
     <rect>
      <x>320</x>
      <y>380</y>
-     <width>31</width>
-     <height>31</height>
+     <width>26</width>
+     <height>26</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -4216,8 +4216,8 @@ border-radius: 15px;</string>
     <rect>
      <x>660</x>
      <y>380</y>
-     <width>31</width>
-     <height>31</height>
+     <width>26</width>
+     <height>26</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -4292,6 +4292,84 @@ border-radius: 15px;</string>
     <string>2车 5车
 升弓泵
 工作</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Mp1FootPumplbl">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>380</y>
+     <width>26</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/images/footpump.bmp);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Mp1FrontDoorCantCloselbl">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>380</y>
+     <width>26</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>PH</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Mp2FrontDoorCantCloselbl">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>380</y>
+     <width>26</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>PH</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Mp2FootPumplbl">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>380</y>
+     <width>26</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/images/footpump.bmp);</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

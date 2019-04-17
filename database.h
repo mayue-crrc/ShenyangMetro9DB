@@ -671,7 +671,8 @@ public:
     TR4CT_Motor1Temp_I16,TR4CT_Motor2Temp_I16,TR4CT_Motor3Temp_I16,TR4CT_Motor4Temp_I16;
     bool TR4CT_TBEValid_B1,TR4CT_DivContacterClose_B1,TR4CT_HSCBClose_B1,TR4CT_EBOK_B1,TR4CT_Slide_B1;
 
-    bool TR1CT_IESContacterQ2_B1,TR1CT_IESContacterQ1_B1,TR4CT_IESContacterQ2_B1,TR4CT_IESContacterQ1_B1;
+    bool TR1CT_IESContacterQ2_B1,TR1CT_IESContacterQ1_B1,TR4CT_IESContacterQ2_B1,TR4CT_IESContacterQ1_B1,
+    TR1CT_FrontDoorCantCloseFlt_B1,TR4CT_FrontDoorCantCloseFlt_B1;
 
     // CCU-DCU 4i9-4ia
     bool CTTR1_EBCutOff_B1,CTTR2_EBCutOff_B1,CTTR3_EBCutOff_B1,CTTR4_EBCutOff_B1;
