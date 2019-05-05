@@ -19,7 +19,7 @@ public:
 private:
     Ui::VehicleResetPage *ui;
     int DCU2sTimer,ACM2sTimer;
-    void setlabelstates(QLabel* lbl,int states,bool isonline);
+    void setlabelstates(QLabel* lbl,int status,bool isonline);
 
     QList<QPushButton *> buttons;
     bool Buttonstatus[6];

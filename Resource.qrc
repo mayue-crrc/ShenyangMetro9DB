@@ -89,5 +89,7 @@
         <file>images/TC2Active.png</file>
         <file>images/workshop.bmp</file>
         <file>images/footpump.bmp</file>
+        <file>images/Motorbraking.png</file>
+        <file>images/Motorcutout.png</file>
     </qresource>
 </RCC>

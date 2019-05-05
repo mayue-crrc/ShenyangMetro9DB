@@ -82,7 +82,7 @@ Database::Database()
     HMiCT_ACDETestStartFlag_B1 = false;
 
     HMiCT_HMISWVerH_U8 = 2;
-    HMiCT_HMISWVerL_U8 = 61;
+    HMiCT_HMISWVerL_U8 = 62;
 
     for(int i =0; i< 12;i++)
     {
@@ -1353,11 +1353,21 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         TR1CT_FrontDoorCantCloseFlt_B1 = this->crrcMvb->getBool(0x494,5,1);
         TR4CT_FrontDoorCantCloseFlt_B1 = this->crrcMvb->getBool(0x484,5,1);
 
+        TR1CT_MaxAvailbleEB_I16 = this->crrcMvb->getSignedInt(0x491,22);
+        TR2CT_MaxAvailbleEB_I16 = this->crrcMvb->getSignedInt(0x4c1,22);
+        TR3CT_MaxAvailbleEB_I16 = this->crrcMvb->getSignedInt(0x4d1,22);
+        TR4CT_MaxAvailbleEB_I16 = this->crrcMvb->getSignedInt(0x481,22);
+
         //CCU-DCU
         this->CTTR1_EBCutOff_B1 = this->crrcMvb->getBool(0x49A,28,6);
         this->CTTR2_EBCutOff_B1 = this->crrcMvb->getBool(0x4cA,28,6);
         this->CTTR3_EBCutOff_B1 = this->crrcMvb->getBool(0x4dA,28,6);
         this->CTTR4_EBCutOff_B1 = this->crrcMvb->getBool(0x48A,28,6);
+
+        this->TR1_EBApply = TR1CT_EBOK_B1 && CTTR1_EBCutOff_B1 && (TR1CT_MaxAvailbleEB_I16>0?true:false) && (TR1CT_TractionStatus_I16 == 9?true:false);
+        this->TR2_EBApply = TR2CT_EBOK_B1 && CTTR2_EBCutOff_B1 && (TR2CT_MaxAvailbleEB_I16>0?true:false) && (TR2CT_TractionStatus_I16 == 9?true:false);
+        this->TR3_EBApply = TR3CT_EBOK_B1 && CTTR3_EBCutOff_B1 && (TR3CT_MaxAvailbleEB_I16>0?true:false) && (TR3CT_TractionStatus_I16 == 9?true:false);
+        this->TR4_EBApply = TR4CT_EBOK_B1 && CTTR4_EBCutOff_B1 && (TR4CT_MaxAvailbleEB_I16>0?true:false) && (TR4CT_TractionStatus_I16 == 9?true:false);
 
     }
 

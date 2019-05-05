@@ -672,7 +672,9 @@ public:
     bool TR4CT_TBEValid_B1,TR4CT_DivContacterClose_B1,TR4CT_HSCBClose_B1,TR4CT_EBOK_B1,TR4CT_Slide_B1;
 
     bool TR1CT_IESContacterQ2_B1,TR1CT_IESContacterQ1_B1,TR4CT_IESContacterQ2_B1,TR4CT_IESContacterQ1_B1,
-    TR1CT_FrontDoorCantCloseFlt_B1,TR4CT_FrontDoorCantCloseFlt_B1;
+    TR1CT_FrontDoorCantCloseFlt_B1,TR4CT_FrontDoorCantCloseFlt_B1,TR1_EBApply,TR2_EBApply,TR3_EBApply,TR4_EBApply;
+    signed short int TR1CT_MaxAvailbleEB_I16,TR2CT_MaxAvailbleEB_I16,TR3CT_MaxAvailbleEB_I16,TR4CT_MaxAvailbleEB_I16;
+
 
     // CCU-DCU 4i9-4ia
     bool CTTR1_EBCutOff_B1,CTTR2_EBCutOff_B1,CTTR3_EBCutOff_B1,CTTR4_EBCutOff_B1;

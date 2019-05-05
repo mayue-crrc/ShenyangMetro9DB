@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclecutoffhelppage.ui'
 **
-** Created: Fri Nov 30 11:16:29 2018
+** Created: Sun May 5 10:29:31 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -55,6 +55,8 @@ public:
     QLabel *label_31;
     QLabel *label_32;
     QLabel *label_33;
+    QLabel *label_34;
+    QLabel *label_35;
 
     void setupUi(QWidget *VehicleCutOffHelpPage)
     {
@@ -185,13 +187,13 @@ public:
         label_24->setAlignment(Qt::AlignCenter);
         label_25 = new QLabel(VehicleCutOffHelpPage);
         label_25->setObjectName(QString::fromUtf8("label_25"));
-        label_25->setGeometry(QRect(470, 20, 101, 51));
+        label_25->setGeometry(QRect(630, 20, 101, 51));
         label_25->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color:white;background-color:red\n"
 ""));
         label_25->setAlignment(Qt::AlignCenter);
         label_26 = new QLabel(VehicleCutOffHelpPage);
         label_26->setObjectName(QString::fromUtf8("label_26"));
-        label_26->setGeometry(QRect(450, 80, 141, 21));
+        label_26->setGeometry(QRect(610, 80, 141, 21));
         label_26->setStyleSheet(QString::fromUtf8("	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 ""));
         label_26->setAlignment(Qt::AlignCenter);
@@ -247,6 +249,17 @@ public:
         label_33->setStyleSheet(QString::fromUtf8("	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
 ""));
         label_33->setAlignment(Qt::AlignCenter);
+        label_34 = new QLabel(VehicleCutOffHelpPage);
+        label_34->setObjectName(QString::fromUtf8("label_34"));
+        label_34->setGeometry(QRect(450, 80, 141, 21));
+        label_34->setStyleSheet(QString::fromUtf8("	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+""));
+        label_34->setAlignment(Qt::AlignCenter);
+        label_35 = new QLabel(VehicleCutOffHelpPage);
+        label_35->setObjectName(QString::fromUtf8("label_35"));
+        label_35->setGeometry(QRect(470, 20, 101, 51));
+        label_35->setStyleSheet(QString::fromUtf8("font: 20px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color: white;background-color: gray;"));
+        label_35->setAlignment(Qt::AlignCenter);
         label_98->raise();
         pushButton->raise();
         label->raise();
@@ -278,6 +291,8 @@ public:
         label_31->raise();
         label_32->raise();
         label_33->raise();
+        label_34->raise();
+        label_35->raise();
 
         retranslateUi(VehicleCutOffHelpPage);
 
@@ -318,6 +333,8 @@ public:
         label_31->setText(QApplication::translate("VehicleCutOffHelpPage", "\346\216\247\345\210\266\346\214\207\344\273\244\346\234\252\345\217\221\345\207\272", 0, QApplication::UnicodeUTF8));
         label_32->setText(QApplication::translate("VehicleCutOffHelpPage", "ACM", 0, QApplication::UnicodeUTF8));
         label_33->setText(QApplication::translate("VehicleCutOffHelpPage", "ACM\345\276\205\346\234\272", 0, QApplication::UnicodeUTF8));
+        label_34->setText(QApplication::translate("VehicleCutOffHelpPage", "\347\224\265\345\210\266\345\212\250\344\270\215\345\217\257\347\224\250", 0, QApplication::UnicodeUTF8));
+        label_35->setText(QApplication::translate("VehicleCutOffHelpPage", "\347\224\265\345\210\266\345\212\250", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

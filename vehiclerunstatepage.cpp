@@ -10,10 +10,12 @@
 #define DOORUNKNOW "background-color: rgb(255,255,255);border:2px solid rgb(255,255,153);font: 20px  \"微软雅黑\";color:rgba(0,0,0,255);"
 
 
-#define TCUFAULT "border-image: url(:/images/images/MotorFault.png);"
-#define TCURUN "border-image: url(:/images/images/MotorRun.png);"
-#define TCUSTOP "border-image: url(:/images/images/MotorStop.png);"
-#define TCUUNKNOW "border-image: url(:/images/images/MotorUnknow.png);"
+#define TCUFAULT "border-image: url(:/images/images/MotorFault.png);background-color:transparent;"
+#define TCURUN "border-image: url(:/images/images/MotorRun.png);background-color:transparent;"
+#define TCUSTOP "border-image: url(:/images/images/MotorStop.png);background-color:transparent;"
+#define TCUUNKNOW "border-image: url(:/images/images/MotorUnknow.png);background-color:transparent;"
+#define TCUBRAKING "border-image: url(:/images/images/Motorbraking.png);background-color:transparent;"
+#define TCUCUTOUT "border-image: url(:/images/images/Motorcutout.png);background-color:transparent;"
 
 #define PANTODOWNMP1 "border-image: url(:/images/images/PantoDownMP1.bmp);"
 #define PANTOUPMP1 "border-image: url(:/images/images/PantoUpMP1.bmp);"
@@ -416,10 +418,10 @@ void VehicleRunStatePage::updateTrainStatus()
     }
 
     //Motor status
-    setMotorStatus(this->ui->Mp1Motor1lbl,database->CTHM_DCUM1On_B1,database->TR1CT_TractionStatus_I16);
-    setMotorStatus(this->ui->M1Motor1lbl,database->CTHM_DCUM2On_B1,database->TR2CT_TractionStatus_I16);
-    setMotorStatus(this->ui->M2Motor1lbl,database->CTHM_DCUM3On_B1,database->TR3CT_TractionStatus_I16);
-    setMotorStatus(this->ui->Mp2Motor1lbl,database->CTHM_DCUM4On_B1,database->TR4CT_TractionStatus_I16);
+    setMotorStatus(this->ui->Mp1Motor1lbl,database->CTHM_DCUM1On_B1,database->TR1CT_TractionStatus_I16,this->database->TR1_EBApply);
+    setMotorStatus(this->ui->M1Motor1lbl,database->CTHM_DCUM2On_B1,database->TR2CT_TractionStatus_I16,this->database->TR2_EBApply);
+    setMotorStatus(this->ui->M2Motor1lbl,database->CTHM_DCUM3On_B1,database->TR3CT_TractionStatus_I16,this->database->TR3_EBApply);
+    setMotorStatus(this->ui->Mp2Motor1lbl,database->CTHM_DCUM4On_B1,database->TR4CT_TractionStatus_I16,this->database->TR4_EBApply);
 
     // HSCB status
     setHSCBStatus(this->ui->Mp1Breakerlbl,database->CTHM_DCUM1On_B1,database->TR1CT_HSCBClose_B1);
@@ -1141,19 +1143,25 @@ void VehicleRunStatePage::setBStatus(QLabel* lbl,QList<bool> status)
         lbl->setStyleSheet(BUNKNOWN);
     }
 }
-void VehicleRunStatePage::setMotorStatus(QLabel *lbl, bool isunknown, signed short int status)
+void VehicleRunStatePage::setMotorStatus(QLabel *lbl, bool isunknown, signed short int status,bool ebapply)
 {
-    // unknown >> fault >> run >> stop
+    // unknown >> cutout>>fault<<braking >> run >> stop
     if(!isunknown)
     {
         lbl->setStyleSheet(TCUUNKNOW);
-    }else if(status >= 20 )
+    }else if(status <= 31 &&status >= 30 )
+    {
+        lbl->setStyleSheet(TCUCUTOUT);
+    }else if(status <= 29 &&status >= 20 )
     {
         lbl->setStyleSheet(TCUFAULT);
+    }else if(ebapply)
+    {
+        lbl->setStyleSheet(TCUBRAKING);
     }else if(status == 9)
     {
         lbl->setStyleSheet(TCURUN);
-    }else if(status >= 4 && status <= 12)
+    }else if(status >= 1 && status <= 12)
     {
         lbl->setStyleSheet(TCUSTOP);
     }else

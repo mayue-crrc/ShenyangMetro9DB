@@ -189,21 +189,19 @@ void VehicleResetPage::on_VVVFMP1Btn_pressed()
     this->ui->VVVFMP1Btn->setDisabled(true);
 }
 
-void VehicleResetPage::setlabelstates(QLabel* lbl,int states,bool isonline)
+void VehicleResetPage::setlabelstates(QLabel* lbl,int status,bool isonline)
 {
+    // unknown >> cutout>>fault<<braking >> run >> stop
     if(!isonline)
     {
         lbl->setStyleSheet(LABELWHITE);
-    }
-    else if(states >= 20)
+    }else if(status >= 20 )
     {
         lbl->setStyleSheet(LABELRED);
-    }
-    else if(states == 9)
+    }else if(status == 9)
     {
         lbl->setStyleSheet(LABELGREEN);
-
-    }else if(states <= 12  &&  states>=4)
+    }else if(status >= 4 && status <= 12)
     {
         lbl->setStyleSheet(LABELGRAY);
     }else

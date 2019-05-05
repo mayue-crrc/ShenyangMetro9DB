@@ -28,7 +28,7 @@ private:
 
     void setPBStatus(QLabel* lbl,QList<bool> status);
     void setBStatus(QLabel* lbl,QList<bool> status);
-    void setMotorStatus(QLabel* lbl,bool isunknown,signed short int status);
+    void setMotorStatus(QLabel* lbl,bool isunknown,signed short int status,bool ebapply);
     void setHSCBStatus(QLabel* lbl,bool isunknown,bool status);
     void setACPStatus(QLabel* lbl,QList<bool> status);
     void setSIVStatus(QLabel* lbl,bool isunknown,signed short int status);

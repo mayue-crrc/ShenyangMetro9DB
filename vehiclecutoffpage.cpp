@@ -144,9 +144,13 @@ void VehicleCutoffPage::setlabelstates(QLabel* lbl,bool state,bool state2,bool i
     {
         lbl->setStyleSheet(LABELWHITE);
     }
-    else if(state2)
+    else if(state2 && !state)
     {
         lbl->setStyleSheet(LABELRED);
+    }
+    else if(!state)
+    {
+        lbl->setStyleSheet(LABELGRAY);
     }
     else if(state)
     {
