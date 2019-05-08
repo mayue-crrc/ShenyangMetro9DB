@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclehvachelppage.ui'
 **
-** Created: Wed Feb 13 09:01:53 2019
+** Created: Wed May 8 08:13:32 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -61,6 +61,8 @@ public:
     QLabel *label_39;
     QLabel *label_24;
     QLabel *label_6;
+    QLabel *label_40;
+    QLabel *label_41;
 
     void setupUi(QWidget *VehicleHVACHelpPage)
     {
@@ -277,6 +279,17 @@ public:
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setGeometry(QRect(20, 350, 111, 31));
         label_6->setAlignment(Qt::AlignCenter);
+        label_40 = new QLabel(VehicleHVACHelpPage);
+        label_40->setObjectName(QString::fromUtf8("label_40"));
+        label_40->setGeometry(QRect(520, 410, 31, 31));
+        label_40->setStyleSheet(QString::fromUtf8("font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";color:white;background-color:gray"));
+        label_40->setAlignment(Qt::AlignCenter);
+        label_41 = new QLabel(VehicleHVACHelpPage);
+        label_41->setObjectName(QString::fromUtf8("label_41"));
+        label_41->setGeometry(QRect(560, 410, 61, 31));
+        label_41->setStyleSheet(QString::fromUtf8("	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+""));
+        label_41->setAlignment(Qt::AlignCenter);
         label_34->raise();
         label_98->raise();
         label_3->raise();
@@ -314,6 +327,8 @@ public:
         label_39->raise();
         label_24->raise();
         label_6->raise();
+        label_40->raise();
+        label_41->raise();
 
         retranslateUi(VehicleHVACHelpPage);
 
@@ -360,6 +375,8 @@ public:
         label_39->setText(QApplication::translate("VehicleHVACHelpPage", "\357\274\232\346\234\252\347\237\245", 0, QApplication::UnicodeUTF8));
         label_24->setText(QApplication::translate("VehicleHVACHelpPage", "\357\274\215\357\274\215", 0, QApplication::UnicodeUTF8));
         label_6->setText(QApplication::translate("VehicleHVACHelpPage", "\350\256\276\345\256\232\346\270\251\345\272\246", 0, QApplication::UnicodeUTF8));
+        label_40->setText(QString());
+        label_41->setText(QApplication::translate("VehicleHVACHelpPage", "\357\274\232\345\201\234\346\234\272", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

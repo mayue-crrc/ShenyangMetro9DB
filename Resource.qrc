@@ -91,5 +91,6 @@
         <file>images/footpump.bmp</file>
         <file>images/Motorbraking.png</file>
         <file>images/Motorcutout.png</file>
+        <file>images/TCUcutout.png</file>
     </qresource>
 </RCC>

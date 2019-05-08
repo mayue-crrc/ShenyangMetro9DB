@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'vehiclepowerresetpage.h'
 **
-** Created: Sun May 5 14:15:47 2019
+** Created: Wed May 8 08:14:51 2019
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

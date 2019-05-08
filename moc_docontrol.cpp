@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'docontrol.h'
 **
-** Created: Wed Oct 24 13:52:56 2018
+** Created: Wed May 8 08:14:53 2019
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

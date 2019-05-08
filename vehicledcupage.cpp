@@ -80,21 +80,47 @@ void VehicleDCUPage::setlabelstates(QLabel* lbl,bool state,bool isonline)
         lbl->setStyleSheet(LABELGRAY);
     }
 }
-void VehicleDCUPage::setlabelstates(QLabel* lbl,int states,bool isonline)
+void VehicleDCUPage::setlabelstates(QLabel* lbl,int status,bool isonline,bool ebapply)
 {
+//    if(!isonline)
+//    {
+//        lbl->setStyleSheet(LABELWHITE);
+//    }
+//    else if(states >= 20)
+//    {
+//        lbl->setStyleSheet(LABELRED);
+//    }
+//    else if(states == 9)
+//    {
+//        lbl->setStyleSheet(LABELGREEN);
+
+//    }else if(states <= 12  &&  states>=4)
+//    {
+//        lbl->setStyleSheet(LABELGRAY);
+//    }else
+//    {
+//        lbl->setStyleSheet(LABELWHITE);
+//    }
+
+
+
+    // unknown >> cutout>>fault<<braking >> run >> stop
     if(!isonline)
     {
         lbl->setStyleSheet(LABELWHITE);
-    }
-    else if(states >= 20)
+    }else if(status <= 31 &&status >= 30 )
+    {
+        lbl->setStyleSheet("border-image: url(:/images/images/TCUcutout.png);");
+    }else if(status <= 29 &&status >= 20 )
     {
         lbl->setStyleSheet(LABELRED);
-    }
-    else if(states == 9)
+    }else if(ebapply)
+    {
+        lbl->setStyleSheet(LABELPINK);
+    }else if(status == 9)
     {
         lbl->setStyleSheet(LABELGREEN);
-
-    }else if(states <= 12  &&  states>=4)
+    }else if(status >= 1 && status <= 12)
     {
         lbl->setStyleSheet(LABELGRAY);
     }else

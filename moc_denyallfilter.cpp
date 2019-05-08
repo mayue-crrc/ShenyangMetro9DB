@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'denyallfilter.h'
 **
-** Created: Wed Oct 24 13:53:08 2018
+** Created: Wed May 8 08:15:10 2019
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

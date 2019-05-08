@@ -20,7 +20,7 @@ public:
 private:
     Ui::VehicleDCUPage *ui;
     void setlabelstates(QLabel* lbl,bool state,bool isonline);
-    void setlabelstates(QLabel* lbl,int state,bool isonline);
+    void setlabelstates(QLabel* lbl,int status,bool isonline,bool ebapply);
     void setlabelstates(QLabel* lbl,bool valid,float value,int per,bool isonline);
 };
 

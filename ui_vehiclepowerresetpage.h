@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclepowerresetpage.ui'
 **
-** Created: Wed Dec 26 19:13:13 2018
+** Created: Wed May 8 08:13:31 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

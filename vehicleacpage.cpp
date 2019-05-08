@@ -241,7 +241,7 @@ void VehicleACPage::setlabelstates(QLabel* lbl,bool states1,bool states2,bool is
         lbl->setStyleSheet(LABELGREEN);
     }else
     {
-        lbl->setStyleSheet(LABELWHITE);
+        lbl->setStyleSheet(LABELGRAY);
     }
 }
 void VehicleACPage::setlabelstates(QLabel* lbl,bool states,bool isonline)

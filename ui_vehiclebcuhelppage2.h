@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclebcuhelppage2.ui'
 **
-** Created: Wed Nov 7 08:37:24 2018
+** Created: Wed May 8 08:13:32 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
