@@ -677,7 +677,8 @@ public:
 
 
     // CCU-DCU 4i9-4ia
-    bool CTTR1_EBCutOff_B1,CTTR2_EBCutOff_B1,CTTR3_EBCutOff_B1,CTTR4_EBCutOff_B1;
+    bool CTTR1_EBCutOff_B1,CTTR2_EBCutOff_B1,CTTR3_EBCutOff_B1,CTTR4_EBCutOff_B1,
+    CTTR1_Brake_B1,CTTR2_Brake_B1,CTTR3_Brake_B1,CTTR4_Brake_B1;
 
 
     //ACM-CCU 5i1--5i4

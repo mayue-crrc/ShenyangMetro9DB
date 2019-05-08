@@ -1364,10 +1364,15 @@ void Database::updateDatabse(CrrcMvb* crrcMvb)
         this->CTTR3_EBCutOff_B1 = this->crrcMvb->getBool(0x4dA,28,6);
         this->CTTR4_EBCutOff_B1 = this->crrcMvb->getBool(0x48A,28,6);
 
-        this->TR1_EBApply = TR1CT_EBOK_B1 && CTTR1_EBCutOff_B1 && (TR1CT_MaxAvailbleEB_I16>0?true:false) && (TR1CT_TractionStatus_I16 == 9?true:false);
-        this->TR2_EBApply = TR2CT_EBOK_B1 && CTTR2_EBCutOff_B1 && (TR2CT_MaxAvailbleEB_I16>0?true:false) && (TR2CT_TractionStatus_I16 == 9?true:false);
-        this->TR3_EBApply = TR3CT_EBOK_B1 && CTTR3_EBCutOff_B1 && (TR3CT_MaxAvailbleEB_I16>0?true:false) && (TR3CT_TractionStatus_I16 == 9?true:false);
-        this->TR4_EBApply = TR4CT_EBOK_B1 && CTTR4_EBCutOff_B1 && (TR4CT_MaxAvailbleEB_I16>0?true:false) && (TR4CT_TractionStatus_I16 == 9?true:false);
+        this->CTTR1_Brake_B1 = this->crrcMvb->getBool(0x498,15,2);
+        this->CTTR2_Brake_B1 = this->crrcMvb->getBool(0x4c8,15,2);
+        this->CTTR3_Brake_B1 = this->crrcMvb->getBool(0x4d8,15,2);
+        this->CTTR4_Brake_B1 = this->crrcMvb->getBool(0x488,15,2);
+
+        this->TR1_EBApply = TR1CT_EBOK_B1 && CTTR1_Brake_B1 && (TR1CT_DCUMBrkForce_I16<0?true:false) && (TR1CT_TractionStatus_I16 == 9?true:false);
+        this->TR2_EBApply = TR2CT_EBOK_B1 && CTTR2_Brake_B1 && (TR2CT_DCUMBrkForce_I16<0?true:false) && (TR2CT_TractionStatus_I16 == 9?true:false);
+        this->TR3_EBApply = TR3CT_EBOK_B1 && CTTR3_Brake_B1 && (TR3CT_DCUMBrkForce_I16<0?true:false) && (TR3CT_TractionStatus_I16 == 9?true:false);
+        this->TR4_EBApply = TR4CT_EBOK_B1 && CTTR4_Brake_B1 && (TR4CT_DCUMBrkForce_I16<0?true:false) && (TR4CT_TractionStatus_I16 == 9?true:false);
 
     }
 

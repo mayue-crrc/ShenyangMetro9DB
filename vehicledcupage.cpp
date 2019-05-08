@@ -34,10 +34,10 @@ void VehicleDCUPage::updatePage()
     setlabelstates(this->ui->KMM2lbl,this->database->TR3CT_DivContacterClose_B1,this->database->CTHM_DCUM3On_B1);
     setlabelstates(this->ui->KMMP2lbl,this->database->TR4CT_DivContacterClose_B1,this->database->CTHM_DCUM4On_B1);
 
-    setlabelstates(this->ui->TCUIVMP1lbl,this->database->TR1CT_TractionStatus_I16,this->database->CTHM_DCUM1On_B1);
-    setlabelstates(this->ui->TCUIVM1lbl,this->database->TR2CT_TractionStatus_I16,this->database->CTHM_DCUM2On_B1);
-    setlabelstates(this->ui->TCUIVM2lbl,this->database->TR3CT_TractionStatus_I16,this->database->CTHM_DCUM3On_B1);
-    setlabelstates(this->ui->TCUIVMP2lbl,this->database->TR4CT_TractionStatus_I16,this->database->CTHM_DCUM4On_B1);
+    setlabelstates(this->ui->TCUIVMP1lbl,this->database->TR1CT_TractionStatus_I16,this->database->CTHM_DCUM1On_B1,this->database->TR1_EBApply);
+    setlabelstates(this->ui->TCUIVM1lbl,this->database->TR2CT_TractionStatus_I16,this->database->CTHM_DCUM2On_B1,this->database->TR2_EBApply);
+    setlabelstates(this->ui->TCUIVM2lbl,this->database->TR3CT_TractionStatus_I16,this->database->CTHM_DCUM3On_B1,this->database->TR3_EBApply);
+    setlabelstates(this->ui->TCUIVMP2lbl,this->database->TR4CT_TractionStatus_I16,this->database->CTHM_DCUM4On_B1,this->database->TR4_EBApply);
 
     setlabelstates(this->ui->MOTORIMP1lbl,true,(float)this->database->TR1CT_MotorCurrent_I16/10,1,this->database->CTHM_DCUM1On_B1);
     setlabelstates(this->ui->MOTORIM1lbl,true,(float)this->database->TR2CT_MotorCurrent_I16/10,1,this->database->CTHM_DCUM2On_B1);
