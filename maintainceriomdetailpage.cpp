@@ -36,10 +36,10 @@ MaintainceRIOMDetailPage::MaintainceRIOMDetailPage(QWidget *parent) :
     this->ui->TCDI1Btn->setStyleSheet(PButtonDOWN);
     QList <QString> Di1name;
     Di1name
-            <<"向前"<<"向后"<<"牵引"<<"制动(低)"<<"快速制动(低)"<<"司机室钥匙激活"
-            <<"警惕旁路"<<"警惕动作6s"<<"警惕动作3s"<<"警惕按钮继电器"<<"警惕试验按钮"<<"紧急制动按钮"
+            <<"向前"<<"向后"<<"牵引"<<"制动(低)"<<"快速制动(低)"<<"司机室钥匙继电器激活"
+            <<"警惕旁路"<<"警惕动作6s"<<"警惕动作3s"<<"警惕继电器"<<"警惕试验按钮"<<"紧急制动按钮"
             <<"紧急环线旁路"<<"紧急环线短接"<<"紧急制动"<<"洗车模式"<<"紧急运行模式"<<"回送模式"
-            <<"头车激活(低)"<<"尾车激活(低)"<<"零速信号"<<"50%牵引"<<"50%制动"<<"牵引安全";
+            <<"头车激活"<<"尾车激活"<<"零速信号"<<"50%牵引"<<"50%制动"<<"牵引安全";
     this->di1->initialName(Di1name,"DI1","TC");
 
     this->setDataType();
@@ -126,7 +126,7 @@ void MaintainceRIOMDetailPage::updatePage()
         TCDI2Data<<this->database->DICT_TC1DI2CH1Forward_B1<<this->database->DICT_TC1DI2CH2Backward_B1<<this->database->DICT_TC1DI2CH3Traction_B1
                 <<this->database->DICT_TC1DI2CH4Brake_B1<<this->database->DICT_TC1DI2CH5QuickBrk_B1<<this->database->DICT_TC1DI2CH6CabActive_B1
                 <<this->database->DICT_TC1DI2CH7ATCCutOff_B1<<this->database->DICT_TC1DI2CH8ZVRD_B1<<this->database->DICT_TC1DI2CH9FRD1_B1
-                <<this->database->DICT_TC1DI2CH10BMButton_B1<<this->database->DICT_TC1DI2CH11RMButton_B1<<this->database->DICT_TC1DI2CH12ATBButton_B1
+                <<SPARE<<SPARE<<this->database->DICT_TC1DI2CH12ATBButton_B1
                 <<this->database->DICT_TC1DI2CH13ATOButton_B1<<this->database->DICT_TC1DI2CH14BMMode_B1<<this->database->DICT_TC1DI2CH15RMMode_B1
                 <<this->database->DICT_TC1DI2CH16ATCReset_B1<<this->database->DICT_TC1DI2CH17ATCTraction_B1<<this->database->DICT_TC1DI2CH18ATCBrake_B1
                 <<this->database->DICT_TC1DI2CH19CompressorOperition_B1<<this->database->DICT_TC1DI2CH20ComOverflow_B1<<this->database->DICT_TC1DI2CH21ComHeating_B1
@@ -135,7 +135,7 @@ void MaintainceRIOMDetailPage::updatePage()
                 <<this->database->DICT_TC2DI2CH1Forward_B1<<this->database->DICT_TC2DI2CH2Backward_B1<<this->database->DICT_TC2DI2CH3Traction_B1
                 <<this->database->DICT_TC2DI2CH4Brake_B1<<this->database->DICT_TC2DI2CH5QuickBrk_B1<<this->database->DICT_TC2DI2CH6CabActive_B1
                 <<this->database->DICT_TC2DI2CH7ATCCutOff_B1<<this->database->DICT_TC2DI2CH8ZVRD_B1<<this->database->DICT_TC2DI2CH9FRD1_B1
-                <<this->database->DICT_TC2DI2CH10BMButton_B1<<this->database->DICT_TC2DI2CH11RMButton_B1<<this->database->DICT_TC2DI2CH12ATBButton_B1
+                <<SPARE<<SPARE<<this->database->DICT_TC2DI2CH12ATBButton_B1
                 <<this->database->DICT_TC2DI2CH13ATOButton_B1<<this->database->DICT_TC2DI2CH14BMMode_B1<<this->database->DICT_TC2DI2CH15RMMode_B1
                 <<this->database->DICT_TC2DI2CH16ATCReset_B1<<this->database->DICT_TC2DI2CH17ATCTraction_B1<<this->database->DICT_TC2DI2CH18ATCBrake_B1
                 <<this->database->DICT_TC2DI2CH19CompressorOperition_B1<<this->database->DICT_TC2DI2CH20ComOverflow_B1<<this->database->DICT_TC2DI2CH21ComHeating_B1
@@ -279,10 +279,10 @@ void MaintainceRIOMDetailPage::ButtonsPressEvent()
 
         QList <QString> Di1name;
         Di1name
-                <<"向前"<<"向后"<<"牵引"<<"制动(低)"<<"快速制动(低)"<<"司机室钥匙激活"
-                <<"警惕旁路"<<"警惕动作6s"<<"警惕动作3s"<<"警惕按钮继电器"<<"警惕试验按钮"<<"紧急制动按钮"
+                <<"向前"<<"向后"<<"牵引"<<"制动(低)"<<"快速制动(低)"<<"司机室钥匙继电器激活"
+                <<"警惕旁路"<<"警惕动作6s"<<"警惕动作3s"<<"警惕继电器"<<"警惕试验按钮"<<"紧急制动按钮"
                 <<"紧急环线旁路"<<"紧急环线短接"<<"紧急制动"<<"洗车模式"<<"紧急运行模式"<<"回送模式"
-                <<"头车激活(低)"<<"尾车激活(低)"<<"零速信号"<<"50%牵引"<<"50%制动"<<"牵引安全";
+                <<"头车激活"<<"尾车激活"<<"零速信号"<<"50%牵引"<<"50%制动"<<"牵引安全";
         this->di1->initialName(Di1name,"DI1","TC");
         this->di1->show();
         this->do1->hide();
@@ -294,10 +294,10 @@ void MaintainceRIOMDetailPage::ButtonsPressEvent()
 
         QList <QString> Di2name;
         Di2name
-                <<"向前"<<"向后"<<"牵引"<<"制动(低)"<<"快速制动(低)"<<"司机室钥匙激活"
-                <<"ATC切除"<<"ZVRD"<<"FRD1"<<"BM按钮动作"<<"RM按钮动作"<<"ATB按钮动作"
+                <<"向前"<<"向后"<<"牵引"<<"制动(低)"<<"快速制动(低)"<<"司机室继电器钥匙激活"
+                <<"ATC切除"<<"ZVRD"<<"FRD1"<<"保留"<<"保留"<<"ATB按钮动作"
                 <<"ATO按钮动作"<<"BM继电器"<<"RM继电器"<<"ATC复位"<<"牵引(信号)"<<"制动(信号)"
-                <<"空压机运行"<<"空压机过流"<<"空压机润滑油加热"<<"空压机供电异常"<<"车辆零速旁路"<<"司机室钥匙";
+                <<"空压机运行"<<"空压机过流"<<"空压机润滑油加热"<<"空压机供电异常"<<"车辆零速旁路"<<"司机钥匙";
         this->di1->initialName(Di2name,"DI2","TC");
         this->di1->show();
         this->do1->hide();
@@ -311,7 +311,7 @@ void MaintainceRIOMDetailPage::ButtonsPressEvent()
         Di3name <<"转向架1切除"<<"转向架2切除"<<"整车制动切除"<<"非零速信号"<<"88km/h信号"<<"总风压力低(低)"
                 <<"停放制动施加按钮"<<"停放制动缓解按钮"<<"停放制动状态(整车)"<<"停放制动切除"<<"停放制动旁路"<<"强迫缓解按钮"
                 <<"制动不缓解故障(整车)"<<"制动不缓解故障旁路"<<"制动缓解(整车)"<<"制动缓解旁路"<<"保持制动施加(整车)"<<"保持制动切除"
-                <<"蓄电池供电断路器"<<"蓄电池控制断路器"<<"DC110V投入"<<"水雾启动"<<"阀门测试"<<"阀门复位";
+                <<"BQC动作"<<"蓄电池断路器"<<"蓄电池控制断路器"<<"水雾启动"<<"阀门测试"<<"阀门复位";
         this->di1->initialName(Di3name,"DI3","TC");
         this->di1->show();
         this->do1->hide();
@@ -326,7 +326,7 @@ void MaintainceRIOMDetailPage::ButtonsPressEvent()
         QList <QString> Di4name;
         Di4name<<"自动开关门"<<"自动开手动关"<<"手动开手动关"<<"右门使能"<<"左门使能"<<"零速使能"<<"开左门"
                 <<"开右门"<<"关左门"<<"关右门"<<"客室门全关好"<<"客室门安全线旁路"<<"司机室左门状态"
-                <<"司机室右门状态"<<"司机室门全关好"<<"司机室门安全线旁路"<<"间壁门状态"<<"门选"<<"升弓指令"
+                <<"司机室右门状态"<<"司机室门全关好"<<"司机室门安全线旁路"<<"间壁门状态"<<"门选零位"<<"升弓指令"
                 <<"降弓指令"<<"本端受电弓切除按钮"<<"远端受电弓切除按钮"<<"ADD切除"<<"保留";
         this->di1->initialName(Di4name,"DI4","TC");
         this->di1->show();
@@ -386,8 +386,8 @@ void MaintainceRIOMDetailPage::ButtonsPressEvent()
         currentform = MP_DI;
 
         QList <QString> Di1name;
-        Di1name<<"初次升弓泵工作"<<"脚踏泵塞门切除"<<"升弓到位"<<"降弓到位"<<"ADD及降弓继电器"<<"转向架1切除"
-                <<"转向架2切除"<<"整车制动切除"<<"保留"<<"停放制动切除"<<"照明驱动电源1故障"<<"照明驱动电源2故障"
+        Di1name<<"初次升弓泵工作"<<"脚踏泵塞门"<<"升弓到位"<<"降弓到位"<<"ADD及降弓继电器+升弓继电器"<<"转向架1隔离"
+                <<"转向架2隔离"<<"整车制动隔离"<<"保留"<<"停放制动切除"<<"照明驱动电源1故障"<<"照明驱动电源2故障"
                 <<"照明驱动电源3故障"<<"照明驱动电源4故障"<<"客室广播空开"<<"车门系统空开"<<"高速断路器电源1"<<"高速断路器电源2"
                 <<"受电弓控制"<<"牵引升弓使能"<<"车间电源保护盖打开(低)"<<"PH火灾检测1"<<"PH火灾检测2"<<"保留";
         this->di1->initialName(Di1name,"DI1","MP");
@@ -415,8 +415,8 @@ void MaintainceRIOMDetailPage::ButtonsPressEvent()
         currentform = M_DI;
 
         QList <QString> Di1name;
-        Di1name<<"转向架1切除"<<"转向架2切除"<<"整车制动切除"<<"保留"<<"停放制动切除"<<"照明驱动电源1故障"
-                <<"照明驱动电源2故障"<<"照明驱动电源3故障"<<"照明驱动电源4故障"<<"母线接触器空开"<<"列车广系统空开"<<"车门系统空开"
+        Di1name<<"转向架1隔离"<<"转向架2隔离"<<"整车制动隔离"<<"保留"<<"停放制动隔离"<<"照明驱动电源1故障"
+                <<"照明驱动电源2故障"<<"照明驱动电源3故障"<<"照明驱动电源4故障"<<"母线接触器空开"<<"列广系统空开"<<"车门系统空开"
                 <<"PB火灾检测1"<<"PB火灾检测2"<<"保持制动施加（单元）"<<"母线接触器闭合"<<"保留"<<"保留"
                 <<"保留"<<"保留"<<"保留"<<"保留"<<"保留"<<"保留";
         this->di1->initialName(Di1name,"DI1","M");
