@@ -2724,6 +2724,45 @@ color:black</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QLabel" name="label_140">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>230</y>
+     <width>35</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/images/SIVCutout.bmp);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_141">
+   <property name="geometry">
+    <rect>
+     <x>387</x>
+     <y>260</y>
+     <width>40</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 16px, &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>切除</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
   <zorder>label_98</zorder>
   <zorder>pushButton</zorder>
   <zorder>label</zorder>
@@ -2864,6 +2903,8 @@ color:black</string>
   <zorder>label_137</zorder>
   <zorder>label_138</zorder>
   <zorder>label_139</zorder>
+  <zorder>label_140</zorder>
+  <zorder>label_141</zorder>
  </widget>
  <resources/>
  <connections/>

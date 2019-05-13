@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclehelppage.ui'
 **
-** Created: Wed May 8 08:13:32 2019
+** Created: Mon May 13 09:13:14 2019
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -164,6 +164,8 @@ public:
     QLabel *label_137;
     QLabel *label_138;
     QLabel *label_139;
+    QLabel *label_140;
+    QLabel *label_141;
 
     void setupUi(QWidget *VehicleHelpPage)
     {
@@ -949,6 +951,17 @@ public:
         label_139->setGeometry(QRect(443, 20, 35, 31));
         label_139->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/Motorcutout.png);"));
         label_139->setAlignment(Qt::AlignCenter);
+        label_140 = new QLabel(VehicleHelpPage);
+        label_140->setObjectName(QString::fromUtf8("label_140"));
+        label_140->setGeometry(QRect(390, 230, 35, 31));
+        label_140->setStyleSheet(QString::fromUtf8("border-image: url(:/images/images/SIVCutout.bmp);"));
+        label_140->setAlignment(Qt::AlignCenter);
+        label_141 = new QLabel(VehicleHelpPage);
+        label_141->setObjectName(QString::fromUtf8("label_141"));
+        label_141->setGeometry(QRect(387, 260, 40, 21));
+        label_141->setStyleSheet(QString::fromUtf8("	font: 16px, \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+""));
+        label_141->setAlignment(Qt::AlignCenter);
         label_98->raise();
         pushButton->raise();
         label->raise();
@@ -1089,6 +1102,8 @@ public:
         label_137->raise();
         label_138->raise();
         label_139->raise();
+        label_140->raise();
+        label_141->raise();
 
         retranslateUi(VehicleHelpPage);
 
@@ -1248,6 +1263,8 @@ public:
         label_137->setText(QString());
         label_138->setText(QApplication::translate("VehicleHelpPage", "\351\232\224\347\246\273", 0, QApplication::UnicodeUTF8));
         label_139->setText(QString());
+        label_140->setText(QString());
+        label_141->setText(QApplication::translate("VehicleHelpPage", "\345\210\207\351\231\244", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

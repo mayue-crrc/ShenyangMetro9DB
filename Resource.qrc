@@ -92,5 +92,6 @@
         <file>images/Motorbraking.png</file>
         <file>images/Motorcutout.png</file>
         <file>images/TCUcutout.png</file>
+        <file>images/SIVCutout.bmp</file>
     </qresource>
 </RCC>

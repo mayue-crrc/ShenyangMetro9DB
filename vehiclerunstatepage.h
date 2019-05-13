@@ -31,7 +31,7 @@ private:
     void setMotorStatus(QLabel* lbl,bool isunknown,signed short int status,bool ebapply);
     void setHSCBStatus(QLabel* lbl,bool isunknown,bool status);
     void setACPStatus(QLabel* lbl,QList<bool> status);
-    void setSIVStatus(QLabel* lbl,bool isunknown,signed short int status);
+    void setSIVStatus(QLabel* lbl,bool isunknown,signed short int status,bool iscutout);
     void setBCMStatus(QLabel* lbl,QList<bool> status);
     void setDOORStatus(QLabel* lbl,QList<bool> status);
     void setDOORsubStatus(QLabel* lbl,bool status);

@@ -53,6 +53,7 @@
 #define SIVRUN "border-image: url(:/images/images/SIVRun.bmp);"
 #define SIVSTOP "border-image: url(:/images/images/SIVStop.bmp);"
 #define SIVUNKONWN "border-image: url(:/images/images/SIVUnknow.bmp);"
+#define SIVCUTOUT "border-image: url(:/images/images/SIVCutout.bmp);"
 
 #define BCMFAULT "border-image: url(:/images/images/BCMfault.bmp);"
 #define BCMRUN "border-image: url(:/images/images/BCMrun.bmp);"
@@ -441,10 +442,10 @@ void VehicleRunStatePage::updateTrainStatus()
     setACPStatus(this->ui->Tc2Acplbl,ACPstatus);
 
     //SIV status
-    setSIVStatus(this->ui->Tc1SIVlbl,database->CTHM_ACU1On_B1,database->AX1CT_AuxInvStatus_I16);
-    setSIVStatus(this->ui->M1SIVlbl,database->CTHM_ACU2On_B1,database->AX2CT_AuxInvStatus_I16);
-    setSIVStatus(this->ui->M2SIVlbl,database->CTHM_ACU3On_B1,database->AX3CT_AuxInvStatus_I16);
-    setSIVStatus(this->ui->Tc2SIVlbl,database->CTHM_ACU4On_B1,database->AX4CT_AuxInvStatus_I16);
+    setSIVStatus(this->ui->Tc1SIVlbl,database->CTHM_ACU1On_B1,database->AX1CT_AuxInvStatus_I16,this->database->AX1CT_AuxInvCutFeedback_B1);
+    setSIVStatus(this->ui->M1SIVlbl,database->CTHM_ACU2On_B1,database->AX2CT_AuxInvStatus_I16,this->database->AX2CT_AuxInvCutFeedback_B1);
+    setSIVStatus(this->ui->M2SIVlbl,database->CTHM_ACU3On_B1,database->AX3CT_AuxInvStatus_I16,this->database->AX3CT_AuxInvCutFeedback_B1);
+    setSIVStatus(this->ui->Tc2SIVlbl,database->CTHM_ACU4On_B1,database->AX4CT_AuxInvStatus_I16,this->database->AX4CT_AuxInvCutFeedback_B1);
     //BCM status
     QList<bool> BCMstatus;
     BCMstatus<<database->CTHM_ACU1On_B1<<database->AX1CT_BCMFlt_B1<<database->AX1CT_BCMCharging_B1;
@@ -1201,12 +1202,15 @@ void VehicleRunStatePage::setACPStatus(QLabel* lbl,QList<bool> status)
         lbl->setStyleSheet(ACPSTOP);
     }
 }
-void VehicleRunStatePage::setSIVStatus(QLabel *lbl, bool isunknown, signed short int status)
+void VehicleRunStatePage::setSIVStatus(QLabel *lbl, bool isunknown, signed short int status,bool iscutout)
 {
     // unknown >> fault >> run >> stop
     if(!isunknown)
     {
         lbl->setStyleSheet(SIVUNKONWN);
+    }else if(iscutout)
+    {
+        lbl->setStyleSheet(SIVCUTOUT);
     }else if(status >= 20 )
     {
         lbl->setStyleSheet(SIVFAULT);
