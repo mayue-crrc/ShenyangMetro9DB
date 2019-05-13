@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'appender.h'
 **
-** Created: Wed May 8 08:15:06 2019
+** Created: Mon May 13 10:17:58 2019
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

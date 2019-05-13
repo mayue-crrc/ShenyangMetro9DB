@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'warnningdialog.h'
 **
-** Created: Wed May 8 08:14:55 2019
+** Created: Mon May 13 10:17:54 2019
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

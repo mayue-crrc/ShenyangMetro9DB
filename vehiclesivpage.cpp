@@ -16,10 +16,10 @@ VehicleSIVPage::~VehicleSIVPage()
 void VehicleSIVPage::updatePage()
 {
     //ACM 状态
-    setlabelstates(this->ui->ACMTC1lbl,this->database->AX1CT_AuxInvStatus_I16,this->database->CTHM_ACU1On_B1,this->database->CTAX1_ShortCurcuitCheck_B1);
-    setlabelstates(this->ui->ACMM1lbl,this->database->AX2CT_AuxInvStatus_I16,this->database->CTHM_ACU2On_B1,this->database->CTAX2_ShortCurcuitCheck_B1);
-    setlabelstates(this->ui->ACMM2lbl,this->database->AX3CT_AuxInvStatus_I16,this->database->CTHM_ACU3On_B1,this->database->CTAX3_ShortCurcuitCheck_B1);
-    setlabelstates(this->ui->ACMTC2lbl,this->database->AX4CT_AuxInvStatus_I16,this->database->CTHM_ACU4On_B1,this->database->CTAX4_ShortCurcuitCheck_B1);
+    setlabelACMstates(this->ui->ACMTC1lbl,this->database->AX1CT_AuxInvStatus_I16,this->database->CTHM_ACU1On_B1,this->database->CTAX1_ShortCurcuitCheck_B1,this->database->AX1CT_AuxInvCutFeedback_B1);
+    setlabelACMstates(this->ui->ACMM1lbl,this->database->AX2CT_AuxInvStatus_I16,this->database->CTHM_ACU2On_B1,this->database->CTAX2_ShortCurcuitCheck_B1,this->database->AX2CT_AuxInvCutFeedback_B1);
+    setlabelACMstates(this->ui->ACMM2lbl,this->database->AX3CT_AuxInvStatus_I16,this->database->CTHM_ACU3On_B1,this->database->CTAX3_ShortCurcuitCheck_B1,this->database->AX3CT_AuxInvCutFeedback_B1);
+    setlabelACMstates(this->ui->ACMTC2lbl,this->database->AX4CT_AuxInvStatus_I16,this->database->CTHM_ACU4On_B1,this->database->CTAX4_ShortCurcuitCheck_B1,this->database->AX4CT_AuxInvCutFeedback_B1);
 
     //负载电压
     setlabelstates(this->ui->LOADVTC1lbl,this->database->AX1CT_AuxInvVoltageValid_B1,(float)this->database->AX1CT_AuxInvLoadVoltage_I16/10,1,this->database->CTHM_ACU1On_B1);
@@ -98,11 +98,14 @@ void VehicleSIVPage::setlabelstates(QLabel* lbl,bool state1,bool state2,bool iso
     }
 }
 
-void VehicleSIVPage::setlabelstates(QLabel* lbl,int states,bool isonline,bool selftest)
+void VehicleSIVPage::setlabelACMstates(QLabel* lbl,int states,bool isonline,bool selftest,bool iscutout)
 {
     if(!isonline)
     {
         lbl->setStyleSheet(LABELWHITE);
+    }else if(iscutout)
+    {
+        lbl->setStyleSheet("border-image: url(:/images/images/TCUcutout.png);");
     }
     else if(states >= 20)
     {
